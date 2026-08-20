@@ -1,0 +1,91 @@
+Bundling 6%
+Bundling 17%
+Bundling 64%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/2.pack_' -> '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/2.pack'
+Getting composition
+Composition          Anim17-PasTransparent
+Codec                h264
+Output               animations/verdant/Anim17-PasTransparent.mp4
+Concurrency          4x
+Rendered 0/60
+Rendered 1/60, time remaining: 13m 22s
+Rendered 2/60, time remaining: 27m 11s
+Rendered 3/60, time remaining: 26m 27s
+Rendered 4/60, time remaining: 23m 3s
+Rendered 5/60, time remaining: 19m 35s
+Rendered 6/60, time remaining: 18m 58s
+Rendered 7/60, time remaining: 19m 34s
+Rendered 8/60, time remaining: 18m 22s
+Rendered 9/60, time remaining: 22m 38s
+Rendered 10/60, time remaining: 20m 29s
+Rendered 11/60, time remaining: 18m 50s
+Rendered 12/60, time remaining: 17m 2s
+Rendered 13/60, time remaining: 17m 25s
+Rendered 14/60, time remaining: 15m 50s
+Rendered 15/60, time remaining: 14m 49s
+Rendered 16/60, time remaining: 13m 38s
+Rendered 17/60, time remaining: 13m 24s
+Rendered 18/60, time remaining: 12m 24s
+Rendered 19/60, time remaining: 11m 31s
+Rendered 20/60, time remaining: 10m 43s
+Rendered 21/60, time remaining: 10m 18s
+Rendered 22/60, time remaining: 9m 37s
+Rendered 23/60, time remaining: 8m 59s
+Rendered 24/60, time remaining: 8m 25s
+Rendered 25/60, time remaining: 8m 6s
+Rendered 26/60, time remaining: 7m 35s
+Rendered 27/60, time remaining: 7m 7s
+Rendered 28/60, time remaining: 6m 46s
+Rendered 29/60, time remaining: 6m 29s
+Rendered 30/60, time remaining: 6m 4s
+Rendered 31/60, time remaining: 5m 43s
+Rendered 32/60, time remaining: 5m 26s
+Rendered 33/60, time remaining: 5m 10s
+Rendered 34/60, time remaining: 4m 50s
+Rendered 35/60, time remaining: 4m 32s
+Rendered 36/60, time remaining: 4m 16s
+Rendered 37/60, time remaining: 4m 2s
+Rendered 38/60, time remaining: 3m 45s
+Rendered 39/60, time remaining: 3m 31s
+Rendered 40/60, time remaining: 3m 18s
+Rendered 41/60, time remaining: 3m 6s
+Rendered 42/60, time remaining: 2m 53s
+Rendered 43/60, time remaining: 2m 40s
+Rendered 44/60, time remaining: 2m 29s
+Rendered 45/60, time remaining: 2m 19s
+Rendered 46/60, time remaining: 2m 7s
+Rendered 47/60, time remaining: 1m 55s
+Rendered 48/60, time remaining: 1m 45s
+Rendered 49/60, time remaining: 1m 35s
+Rendered 50/60, time remaining: 1m 25s
+Rendered 51/60, time remaining: 1m 15s
+Rendered 52/60, time remaining: 1m 6s
+Rendered 53/60, time remaining: 57s
+Rendered 54/60, time remaining: 48s
+Rendered 55/60, time remaining: 39s
+Rendered 56/60, time remaining: 31s
+Rendered 57/60, time remaining: 22s
+Rendered 58/60, time remaining: 15s
+Rendered 59/60, time remaining: 7s
+Rendered 60/60
+Encoded 2/60
+Encoded 2/60
+Encoded 2/60
+Encoded 3/60
+Encoded 4/60
+Encoded 11/60
+Encoded 18/60
+Encoded 26/60
+Encoded 34/60
+Encoded 38/60
+Encoded 50/60
+Encoded 50/60
+Encoded 60/60
++                    animations/verdant/Anim17-PasTransparent.mp4 931.3 kB

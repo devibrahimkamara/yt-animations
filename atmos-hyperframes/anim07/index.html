@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        background: #030818;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        overflow: hidden;
+        width: 1920px;
+        height: 1080px;
+        perspective: 1200px;
+      }
+
+      .aurora { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+      .aurora-blob { position: absolute; border-radius: 50%; filter: blur(140px); }
+      .blob-1 { width: 750px; height: 750px; background: rgba(20,60,220,0.6); top: -220px; left: -80px; }
+      .blob-2 { width: 650px; height: 650px; background: rgba(40,90,255,0.5); bottom: -200px; right: -80px; }
+      .blob-mid { width: 500px; height: 500px; background: rgba(80,40,200,0.2); top: calc(50% - 250px); left: calc(50% - 250px); }
+
+      /* ── TITLE AREA ─────────────────────────────────────────── */
+      .title-area {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 20;
+        opacity: 0;
+      }
+
+      .title-tag {
+        font-size: 36px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.65);
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+      }
+
+      .title-main {
+        font-size: 52px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        text-shadow: 0 0 40px rgba(48,96,255,0.5);
+      }
+
+      /* ── CARD FAN STAGE ─────────────────────────────────────── */
+      .fan-stage {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+      }
+
+      /* ── NICHE CARD ─────────────────────────────────────────── */
+      .niche-card {
+        position: absolute;
+        width: 360px;
+        border-radius: 28px;
+        overflow: hidden;
+        border: 2px solid rgba(80,130,255,0.3);
+        box-shadow:
+          0 0 40px rgba(48,96,255,0.15),
+          0 20px 60px rgba(0,0,0,0.5),
+          inset 0 1px 0 rgba(255,255,255,0.08);
+        opacity: 0;
+        transform-origin: center bottom;
+        will-change: transform;
+      }
+
+      .card-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+
+      .card-content {
+        position: relative;
+        z-index: 1;
+        padding: 32px 28px 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        height: 200px;
+      }
+
+      .card-emoji {
+        font-size: 68px;
+        line-height: 1;
+      }
+
+      .card-niche-name {
+        font-size: 42px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      .card-usage {
+        font-size: 26px;
+        font-weight: 600;
+        color: rgba(136,170,255,0.85);
+        letter-spacing: 0.01em;
+        line-height: 1.3;
+      }
+
+      /* Holographic shimmer overlay */
+      .card-holo {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+        border-radius: 28px;
+      }
+
+      /* ── SCAN LIGHT ─────────────────────────────────────────── */
+      .scan-light {
+        position: absolute;
+        top: 0; bottom: 0;
+        width: 80px;
+        background: linear-gradient(90deg,
+          transparent 0%,
+          rgba(255,255,255,0.08) 40%,
+          rgba(255,255,255,0.15) 50%,
+          rgba(255,255,255,0.08) 60%,
+          transparent 100%);
+        pointer-events: none;
+        z-index: 30;
+        opacity: 0;
+      }
+
+      /* ── BOTTOM CAPTION ─────────────────────────────────────── */
+      .bottom-caption {
+        position: absolute;
+        bottom: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 34px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.55);
+        letter-spacing: 0.06em;
+        white-space: nowrap;
+        z-index: 20;
+        opacity: 0;
+      }
+
+      /* Reg marks */
+      .reg { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+      .rc { position: absolute; width: 24px; height: 24px; opacity: 0.2; }
+      .rc.tl { top: 28px; left: 28px; border-top: 2px solid rgba(136,170,255,0.8); border-left: 2px solid rgba(136,170,255,0.8); }
+      .rc.tr { top: 28px; right: 28px; border-top: 2px solid rgba(136,170,255,0.8); border-right: 2px solid rgba(136,170,255,0.8); }
+      .rc.bl { bottom: 28px; left: 28px; border-bottom: 2px solid rgba(136,170,255,0.8); border-left: 2px solid rgba(136,170,255,0.8); }
+      .rc.br { bottom: 28px; right: 28px; border-bottom: 2px solid rgba(136,170,255,0.8); border-right: 2px solid rgba(136,170,255,0.8); }
+    </style>
+  </head>
+  <body>
+    <div data-composition-id="atmos-anim07" data-start="0" data-width="1920" data-height="1080">
+
+      <div class="aurora">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-mid"></div>
+      </div>
+
+      <div class="reg">
+        <div class="rc tl"></div><div class="rc tr"></div>
+        <div class="rc bl"></div><div class="rc br"></div>
+      </div>
+
+      <!-- Title -->
+      <div class="title-area" id="title-area">
+        <div class="title-tag">Exemples de niches</div>
+        <div class="title-main">Une niche = une app = des revenus</div>
+      </div>
+
+      <!-- Card fan -->
+      <div class="fan-stage" id="fan-stage">
+
+        <!-- Cards defined inline — JS will animate positions -->
+        <div class="niche-card" id="nc-1">
+          <div class="card-bg" style="background:linear-gradient(145deg,rgba(20,40,140,0.9),rgba(8,16,80,0.95))"></div>
+          <div class="card-holo" id="holo-1"></div>
+          <div class="card-content">
+            <div class="card-emoji">✂️</div>
+            <div class="card-niche-name">Salon de<br>coiffure</div>
+            <div class="card-usage">RDV + caisse + fidélité</div>
+          </div>
+        </div>
+
+        <div class="niche-card" id="nc-2">
+          <div class="card-bg" style="background:linear-gradient(145deg,rgba(40,20,100,0.9),rgba(20,10,60,0.95))"></div>
+          <div class="card-holo" id="holo-2"></div>
+          <div class="card-content">
+            <div class="card-emoji">🍽️</div>
+            <div class="card-niche-name">Restaurant</div>
+            <div class="card-usage">Commandes + stock + facturation</div>
+          </div>
+        </div>
+
+        <div class="niche-card" id="nc-3">
+          <div class="card-bg" style="background:linear-gradient(145deg,rgba(60,15,80,0.9),rgba(30,8,50,0.95))"></div>
+          <div class="card-holo" id="holo-3"></div>
+          <div class="card-content">
+            <div class="card-emoji">💅</div>
+            <div class="card-niche-name">Institut<br>beauté</div>
+            <div class="card-usage">Planning + fidélité clients</div>
+          </div>
+        </div>
+
+        <div class="niche-card" id="nc-4">
+          <div class="card-bg" style="background:linear-gradient(145deg,rgba(10,50,30,0.9),rgba(5,30,15,0.95))"></div>
+          <div class="card-holo" id="holo-4"></div>
+          <div class="card-content">
+            <div class="card-emoji">🏋️</div>
+            <div class="card-niche-name">Salle de<br>sport</div>
+            <div class="card-usage">Abonnements + présences</div>
+          </div>
+        </div>
+
+        <div class="niche-card" id="nc-5">
+          <div class="card-bg" style="background:linear-gradient(145deg,rgba(60,30,10,0.9),rgba(40,20,5,0.95))"></div>
+          <div class="card-holo" id="holo-5"></div>
+          <div class="card-content">
+            <div class="card-emoji">🩺</div>
+            <div class="card-niche-name">Cabinet<br>médical</div>
+            <div class="card-usage">Agenda + dossiers patients</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scan light -->
+      <div class="scan-light" id="scan-light"></div>
+
+      <!-- Bottom caption -->
+      <div class="bottom-caption" id="bottom-caption">Des dizaines de niches disponibles...</div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+
+        const duration = 16;
+
+        // Fan positions — cards spread from center like dealing a deck
+        // cx=960, cy=540, card height 200
+        const cardPositions = [
+          { id: 'nc-1', x: 960 - 820, y: 420, rot: -10, borderColor: 'rgba(48,96,255,0.5)'  },
+          { id: 'nc-2', x: 960 - 420, y: 380, rot: -5,  borderColor: 'rgba(139,92,246,0.5)' },
+          { id: 'nc-3', x: 960 - 180, y: 370, rot: 0,   borderColor: 'rgba(236,72,153,0.5)' },
+          { id: 'nc-4', x: 960 + 60,  y: 380, rot: 5,   borderColor: 'rgba(34,197,94,0.5)'  },
+          { id: 'nc-5', x: 960 + 300, y: 420, rot: 10,  borderColor: 'rgba(255,215,0,0.5)'  },
+        ];
+
+        // Holo gradients per card
+        const holoGradients = [
+          'linear-gradient(135deg, rgba(48,96,255,0.2) 0%, transparent 60%)',
+          'linear-gradient(135deg, rgba(139,92,246,0.2) 0%, transparent 60%)',
+          'linear-gradient(135deg, rgba(236,72,153,0.2) 0%, transparent 60%)',
+          'linear-gradient(135deg, rgba(34,197,94,0.2) 0%, transparent 60%)',
+          'linear-gradient(135deg, rgba(255,215,0,0.2) 0%, transparent 60%)',
+        ];
+
+        cardPositions.forEach((pos, i) => {
+          const el = document.getElementById(pos.id);
+          el.style.left = pos.x + 'px';
+          el.style.top = pos.y + 'px';
+          el.style.borderColor = pos.borderColor;
+
+          const holo = document.getElementById('holo-' + (i+1));
+          holo.style.background = holoGradients[i];
+        });
+
+        const tl = gsap.timeline({ paused: true });
+
+        // Aurora
+        tl.to('.blob-1', { x: 60, y: 50, duration: 3.2, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.2)-1 }, 0);
+        tl.to('.blob-2', { x: -50, y: -40, duration: 3.8, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.8)-1 }, 0.5);
+        tl.to('.blob-mid', { scale: 1.4, duration: 2.5, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/2.5)-1 }, 0.3);
+
+        // Reg marks
+        tl.fromTo('.reg', { opacity: 0 }, { opacity: 1, duration: 0.5, ease: 'power1.out' }, 0.1);
+
+        // Title
+        tl.fromTo('#title-area', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.7, ease: 'expo.out' }, 0.3);
+
+        // ── CARDS DEAL FROM CENTER ──────────────────────────────
+        cardPositions.forEach((pos, i) => {
+          const el = document.getElementById(pos.id);
+
+          // All cards start at center
+          gsap.set(el, { left: (960 - 150) + 'px', top: '490px', rotation: 0 });
+
+          tl.fromTo(el,
+            { opacity: 0, scale: 0.7, rotation: 0 },
+            {
+              opacity: 1, scale: 1,
+              left: pos.x + 'px', top: pos.y + 'px',
+              rotation: pos.rot,
+              duration: 0.65, ease: 'expo.out'
+            },
+            1.0 + i * 0.22
+          );
+        });
+
+        // ── HOLOGRAPHIC SHIMMER on each card ───────────────────
+        cardPositions.forEach((pos, i) => {
+          const holo = document.getElementById('holo-' + (i+1));
+          tl.to(holo, {
+            opacity: 0.7,
+            duration: 0.8, ease: 'sine.inOut',
+            yoyo: true, repeat: Math.floor((duration - 3.0) / 0.8) - 1
+          }, 3.0 + i * 0.2);
+        });
+
+        // ── CARDS FLOAT TOGETHER ───────────────────────────────
+        cardPositions.forEach((pos, i) => {
+          const el = document.getElementById(pos.id);
+          tl.to(el, {
+            y: -12,
+            duration: 1.8 + i * 0.15, ease: 'sine.inOut',
+            yoyo: true, repeat: Math.floor((duration - 4.5) / (1.8 + i * 0.15)) - 1
+          }, 4.5);
+        });
+
+        // ── SCAN LIGHT SWEEPS ──────────────────────────────────
+        tl.fromTo('#scan-light',
+          { opacity: 0, x: -80 },
+          { opacity: 1, x: 0, duration: 0.2, ease: 'power1.out' },
+          7.5
+        );
+        tl.to('#scan-light', { x: 1920 + 80, duration: 1.8, ease: 'power1.inOut' }, 7.5);
+        tl.to('#scan-light', { opacity: 0, duration: 0.2, ease: 'power1.in' }, 9.1);
+
+        // Cards illuminate in cascade after scan
+        cardPositions.forEach((pos, i) => {
+          const el = document.getElementById(pos.id);
+          tl.to(el, {
+            boxShadow: '0 0 60px rgba(48,96,255,0.4), 0 20px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1)',
+            duration: 0.35, ease: 'power2.out'
+          }, 9.2 + i * 0.18);
+        });
+
+        // ── CARDS SUBTLE VIBRATION TOGETHER ───────────────────
+        tl.to('.niche-card', {
+          scale: 1.025,
+          duration: 0.6, ease: 'sine.inOut',
+          yoyo: true, repeat: Math.floor((duration - 10.5) / 0.6) - 1
+        }, 10.5);
+
+        // ── BOTTOM CAPTION ─────────────────────────────────────
+        tl.fromTo('#bottom-caption',
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.7, ease: 'expo.out' },
+          11.0
+        );
+
+        // Fade out
+        tl.to(['#fan-stage', '#title-area', '#bottom-caption'],
+          { opacity: 0, duration: 0.6, ease: 'power2.in' }, 15.1);
+        tl.to('.aurora', { opacity: 0, duration: 0.8, ease: 'power1.in' }, 15.1);
+
+        window.__timelines['atmos-anim07'] = tl;
+      </script>
+    </div>
+  </body>
+</html>

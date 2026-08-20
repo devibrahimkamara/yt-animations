@@ -1,0 +1,138 @@
+Bundling 6%
+Bundling 17%
+Bundling 64%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/4.pack_' -> '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/4.pack'
+Getting composition
+Composition          Anim04-PlusDArgent
+Codec                h264
+Output               animations/verdant/Anim04-PlusDArgent.mp4
+Concurrency          4x
+Rendered 0/60
+ProtocolError: Protocol error (Page.bringToFront): Target closed. https://www.remotion.dev/docs/target-closed
+    at CDPSession._onClosed (/Users/ibrahimkamara/yt-animations/node_modules/@remotion/renderer/dist/browser/Connection.js:224:42)
+    at #onMessage (/Users/ibrahimkamara/yt-animations/node_modules/@remotion/renderer/dist/browser/Connection.js:85:25)
+    at WebSocket.<anonymous> (/Users/ibrahimkamara/yt-animations/node_modules/@remotion/renderer/dist/browser/NodeWebSocketTransport.js:58:32)
+    at callListener (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/event-target.js:290:14)
+    at WebSocket.onMessage (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/event-target.js:209:9)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/websocket.js:1211:20)
+    at Receiver.emit (node:events:519:28)
+    at Receiver.dataMessage (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/receiver.js:594:14)
+    at Receiver.getData (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/receiver.js:496:10) {
+  code: undefined,
+  originalMessage: ''
+}
+Rendered 1/60, time remaining: 1h 47m 57s
+Rendered 2/60, time remaining: 1h 18m 6s
+Rendered 3/60, time remaining: 59m 58s
+Rendered 4/60, time remaining: 47m 25s
+Rendered 5/60, time remaining: 39m 59s
+Rendered 6/60, time remaining: 33m 33s
+Rendered 7/60, time remaining: 32m 8s
+Rendered 8/60, time remaining: 27m 56s
+Rendered 9/60, time remaining: 24m 53s
+Rendered 10/60, time remaining: 23m 20s
+Rendered 11/60, time remaining: 21m 16s
+Rendered 12/60, time remaining: 19m 20s
+Rendered 13/60, time remaining: 17m 41s
+Rendered 14/60, time remaining: 16m 30s
+Rendered 15/60, time remaining: 15m 55s
+Rendered 16/60, time remaining: 14m 40s
+Rendered 17/60, time remaining: 13m 41s
+Rendered 18/60, time remaining: 12m 55s
+Rendered 19/60, time remaining: 12m 39s
+Rendered 20/60, time remaining: 11m 45s
+Rendered 21/60, time remaining: 11m 3s
+Rendered 22/60, time remaining: 10m 29s
+Rendered 23/60, time remaining: 10m 5s
+Rendered 24/60, time remaining: 9m 30s
+Rendered 25/60, time remaining: 9m 0s
+Rendered 26/60, time remaining: 8m 26s
+Rendered 27/60, time remaining: 8m 18s
+Rendered 28/60, time remaining: 7m 52s
+Rendered 29/60, time remaining: 7m 28s
+Rendered 30/60, time remaining: 6m 59s
+Rendered 31/60, time remaining: 6m 40s
+Rendered 32/60, time remaining: 6m 26s
+Rendered 33/60, time remaining: 6m 6s
+Rendered 34/60, time remaining: 5m 47s
+Rendered 35/60, time remaining: 5m 28s
+Rendered 36/60, time remaining: 5m 15s
+Rendered 37/60, time remaining: 4m 57s
+Rendered 38/60, time remaining: 4m 40s
+Rendered 39/60, time remaining: 4m 23s
+Rendered 40/60, time remaining: 4m 11s
+Rendered 41/60, time remaining: 3m 54s
+Rendered 42/60, time remaining: 3m 40s
+Rendered 43/60, time remaining: 3m 25s
+Rendered 44/60, time remaining: 3m 9s
+Rendered 45/60, time remaining: 2m 55s
+Rendered 46/60, time remaining: 2m 42s
+Rendered 47/60, time remaining: 2m 29s
+Rendered 48/60, time remaining: 2m 15s
+Rendered 49/60, time remaining: 2m 2s
+Rendered 50/60, time remaining: 1m 49s
+Rendered 51/60, time remaining: 1m 38s
+Rendered 52/60, time remaining: 1m 26s
+Rendered 53/60, time remaining: 1m 14s
+Rendered 54/60, time remaining: 1m 2s
+Rendered 55/60, time remaining: 52s
+Rendered 56/60, time remaining: 41s
+Rendered 57/60, time remaining: 30s
+Rendered 58/60, time remaining: 19s
+Rendered 59/60, time remaining: 9s
+Rendered 60/60
+Encoded 1/60
+Encoded 1/60
+Encoded 1/60
+Encoded 1/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 4/60
+Encoded 5/60
+Encoded 7/60
+Encoded 7/60
+Encoded 9/60
+Encoded 9/60
+Encoded 12/60
+Encoded 13/60
+Encoded 14/60
+Encoded 18/60
+Encoded 18/60
+Encoded 18/60
+Encoded 18/60
+Encoded 18/60
+Encoded 18/60
+Encoded 19/60
+Encoded 22/60
+Encoded 24/60
+Encoded 26/60
+Encoded 26/60
+Encoded 28/60
+Encoded 30/60
+Encoded 30/60
+Encoded 38/60
+Encoded 42/60
+Encoded 50/60
+Encoded 50/60
+Encoded 50/60
+Encoded 50/60
+Encoded 60/60
++                    animations/verdant/Anim04-PlusDArgent.mp4 866.3 kB

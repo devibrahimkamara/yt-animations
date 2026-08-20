@@ -1,0 +1,957 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\froman\fcharset0 Times-Bold;\f2\fmodern\fcharset0 Courier;
+\f3\froman\fcharset0 TimesNewRomanPSMT;\f4\fnil\fcharset0 HelveticaNeue;\f5\froman\fcharset0 TimesNewRomanPS-BoldMT;
+\f6\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red109\green109\blue109;\red0\green0\blue0;
+\red32\green36\blue45;\red162\green55\blue4;\red167\green0\blue20;\red173\green0\blue24;\red14\green110\blue109;
+\red15\green112\blue1;\red16\green19\blue24;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c50196\c50196\c50196;\cssrgb\c0\c0\c0\c84706;
+\cssrgb\c16863\c18824\c23137;\cssrgb\c70196\c29020\c0;\cssrgb\c72157\c3922\c9412;\cssrgb\c74118\c5882\c11765;\cssrgb\c0\c50196\c50196;
+\cssrgb\c0\c50196\c0;\cssrgb\c7843\c9412\c12157;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Voici le brief ultra-d\'e9taill\'e9 pour l'animation 9 \'97 les cartes de chapitre \'ab \'c9TAPE 1 / \'c9TAPE 2 \'bb. C'est la plus courte et la plus r\'e9p\'e9t\'e9e de la s\'e9rie, mais paradoxalement celle qui demande le plus de soin sur les d\'e9tails : elle va appara\'eetre plusieurs fois dans la vid\'e9o et sera le rep\'e8re visuel de toute la structure narrative. Si elle est approximative, \'e7a se verra \'e0 chaque r\'e9p\'e9tition.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Concept en une phrase\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Un intertitre de chapitre s'affiche avec un num\'e9ro d'\'e9tape, un titre, et un indicateur de progression global dans la vid\'e9o \'97 le tout dans un style coh\'e9rent qui s'int\'e8gre comme un syst\'e8me de navigation visuel dans la vid\'e9o. Message visuel : \'ab on passe \'e0 l'\'e9tape suivante, voici o\'f9 on en est \'bb.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Specs globales\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Dur\'e9e totale : 
+\f1\b 3 sec (90 frames)
+\f0\b0  par occurrence. Composition 
+\f2\fs26 1920\'d71080
+\f0\fs24 , fps 
+\f2\fs26 30
+\f0\fs24 . Fond : d\'e9grad\'e9 radial 
+\f2\fs26 #0F172A
+\f0\fs24  
+\f3 \uc0\u8594 
+\f0  
+\f2\fs26 #020617
+\f0\fs24 . Coh\'e9rence maintenue.\
+Point cl\'e9 : cette animation est un 
+\f1\b composant React param\'e9tr\'e9
+\f0\b0 . Tu ne cr\'e9es pas deux animations s\'e9par\'e9es \'97 tu cr\'e9es un seul composant 
+\f2\fs26 <ChapterCard>
+\f0\fs24  avec des props, et tu l'appelles avec des valeurs diff\'e9rentes pour chaque \'e9tape. C'est l'un des plus grands avantages de Remotion sur les outils classiques.\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f4\fs22 \cf4 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \strokec2 jsx\
+\pard\pardeftab720\partightenfactor0
+\cf5 \strokec5 <\cf6 \strokec6 ChapterCard\cf7 \strokec7 \
+  \cf8 \strokec8 stepNumber\cf7 \strokec7 =\cf5 \strokec5 \{\cf9 \strokec9 1\cf5 \strokec5 \}\cf7 \strokec7 \
+  \cf8 \strokec8 totalSteps\cf7 \strokec7 =\cf5 \strokec5 \{\cf9 \strokec9 5\cf5 \strokec5 \}\cf7 \strokec7 \
+  \cf8 \strokec8 title\cf5 \strokec5 ="\cf10 \strokec10 Choisir la niche\cf5 \strokec5 "\cf7 \strokec7 \
+  \cf8 \strokec8 subtitle\cf5 \strokec5 ="\cf10 \strokec10 La base de tout business\cf5 \strokec5 "\cf7 \strokec7 \
+  \cf8 \strokec8 color\cf5 \strokec5 ="\cf10 \strokec10 #3B82F6\cf5 \strokec5 "\cf7 \strokec7 \
+  \cf8 \strokec8 frame\cf7 \strokec7 =\cf5 \strokec5 \{\cf7 \strokec7 frame\cf5 \strokec5 \}\cf7 \strokec7 \
+\cf5 \strokec5 />\cf11 \strokec11 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Direction artistique\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Style \'e9pur\'e9 et authoritaire \'97 pas de fioriture, pas d'\'e9l\'e9ments d\'e9coratifs superflus. L'intertitre doit \'eatre 
+\f1\b imm\'e9diatement lisible
+\f0\b0  m\'eame pour quelqu'un qui regarde en 1,5\'d7 de vitesse. Il doit ressembler \'e0 un \'e9l\'e9ment d'interface premium, pas \'e0 un titre PowerPoint.\
+Palette : fond de carte 
+\f2\fs26 #0D1B2A
+\f0\fs24 , bordure gauche \'e9paisse en couleur accent (variable selon l'\'e9tape), num\'e9ro d'\'e9tape en couleur accent, titre en blanc pur, sous-titre en gris. Indicateur de progression en bas avec des segments color\'e9s.\
+Syst\'e8me de couleurs par \'e9tape (pour que chaque \'e9tape ait sa propre identit\'e9 chromatique) :\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'c9tape 1 : bleu 
+\f2\fs26 #3B82F6
+\f0\fs24 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'c9tape 2 : violet 
+\f2\fs26 #8B5CF6
+\f0\fs24 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'c9tape 3 : vert 
+\f2\fs26 #10B981
+\f0\fs24 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'c9tape 4 : orange 
+\f2\fs26 #F59E0B
+\f0\fs24 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'c9tape 5 : rose 
+\f2\fs26 #EC4899
+\f0\fs24 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 Ce syst\'e8me de couleurs donne une identit\'e9 visuelle \'e0 chaque grande section de la vid\'e9o. Le spectateur finit par associer inconsciemment une couleur \'e0 une section.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Construction de la sc\'e8ne \'97 disposition g\'e9n\'e9rale\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Trois zones sur l'\'e9cran :\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 Zone haute (y: 0 
+\f5 \uc0\u8594 
+\f1  200px)
+\f0\b0  : vide, espace de respiration.\uc0\u8232 
+\f1\b Zone centrale (y: 200px 
+\f5 \uc0\u8594 
+\f1  760px)
+\f0\b0  : la carte de chapitre, protagoniste.\uc0\u8232 
+\f1\b Zone basse (y: 760px 
+\f5 \uc0\u8594 
+\f1  1080px)
+\f0\b0  : l'indicateur de progression global.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 0 \'97 Pr\'e9paration (frames 0 
+\f5 \uc0\u8594 
+\f1  12)\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\fs24 \cf0 Les particules d'entr\'e9e\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 De f0 \'e0 f12, avant m\'eame que la carte apparaisse, 6 petites particules de la couleur accent (
+\f2\fs26 width: 4px, height: 4px, border-radius: 50%
+\f0\fs24 ) convergent vers le centre de l'\'e9cran depuis des positions al\'e9atoires autour de lui. Chacune part d'une distance de 300 \'e0 500px du centre dans des directions diff\'e9rentes et se d\'e9place vers 
+\f2\fs26 x: 960px, y: 480px
+\f0\fs24  via 
+\f2\fs26 interpolate
+\f0\fs24  lin\'e9aire. Elles disparaissent (
+\f2\fs26 opacity: 1 
+\f6 \uc0\u8594 
+\f2  0
+\f0\fs24 ) dans les 5 derni\'e8res frames de leur trajet. Effet de convocation \'97 comme si la carte \'e9tait invoqu\'e9e par ces particules.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Le flash d'initialisation\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 \'c0 f10, un tr\'e8s bref flash de la couleur accent (
+\f2\fs26 rgba([couleur], 0.08)
+\f0\fs24 ) couvre tout l'\'e9cran pendant 3 frames. Subtil mais il pr\'e9pare l'\'9cil \'e0 la couleur qui va dominer.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 1 \'97 La carte entre (frames 12 
+\f5 \uc0\u8594 
+\f1  50)\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\fs24 \cf0 Dimensions et position de la carte\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs26 \cf0 width: 820px, height: 340px
+\f0\fs24 . Centr\'e9e horizontalement (
+\f2\fs26 left: 550px
+\f0\fs24 ). Position verticale : 
+\f2\fs26 top: 330px
+\f0\fs24  (l\'e9g\'e8rement au-dessus du centre optique de l'\'e9cran \'97 le centre optique per\'e7u est toujours l\'e9g\'e8rement au-dessus du centre g\'e9om\'e9trique).\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Construction visuelle de la carte\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 La bordure gauche
+\f0\b0  : c'est l'\'e9l\'e9ment signature de la carte. Un rectangle 
+\f2\fs26 width: 6px, height: 340px, background: [couleur accent], border-radius: 3px 0 0 3px
+\f0\fs24 . Pas de d\'e9grad\'e9 ici \'97 couleur pleine, nette, affirm\'e9e. Cette bordure est l'\'e9l\'e9ment le plus visible de la carte et identifie instantan\'e9ment l'\'e9tape en cours.\
+
+\f1\b Le fond de la carte
+\f0\b0  : 
+\f2\fs26 background: linear-gradient(135deg, #0D1B2A 0%, #0F2744 100%)
+\f0\fs24 . Rectangle avec 
+\f2\fs26 border-radius: 0 16px 16px 0
+\f0\fs24  (les coins arrondis uniquement \'e0 droite \'97 la gauche est coup\'e9e net par la bordure).\
+
+\f1\b Les lignes de circuit imprim\'e9
+\f0\b0  : dans le fond de la carte, en overlay tr\'e8s discret (
+\f2\fs26 opacity: 0.04
+\f0\fs24 ), quelques lignes horizontales et verticales qui forment un motif de circuit imprim\'e9 g\'e9om\'e9trique simplifi\'e9. Couleur 
+\f2\fs26 [couleur accent]
+\f0\fs24 . Ces lignes sont statiques. Elles donnent une texture tech sans surcharger.\
+
+\f1\b L'ombre port\'e9e
+\f0\b0  : 
+\f2\fs26 box-shadow: 0 0 0 1px rgba([couleur accent], 0.1), 0 24px 80px rgba(0,0,0,0.7), 0 0 120px rgba([couleur accent], 0.06)
+\f0\fs24 . Le glow de couleur accent tr\'e8s doux donne l'impression que la carte \'e9met de la lumi\'e8re.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Animation d'entr\'e9e de la carte\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 Entr\'e9e depuis la gauche
+\f0\b0  : la carte entre depuis 
+\f2\fs26 translateX: -900px
+\f0\fs24  (hors \'e9cran \'e0 gauche) via 
+\f2\fs26 spring(\{ damping: 18, stiffness: 120, mass: 1.2 \})
+\f0\fs24 . Le 
+\f2\fs26 mass: 1.2
+\f0\fs24  donne l\'e9g\'e8rement plus d'inertie \'97 la carte \'ab p\'e8se \'bb quelque chose. Elle entre avec de l'\'e9lan et se stabilise avec un micro-rebond \'e0 peine perceptible (le spring le g\'e8re automatiquement avec ce damping).\
+
+\f1\b D\'e9calage de la bordure
+\f0\b0  : la bordure gauche color\'e9e entre avec 
+\f1\b 6 frames d'avance
+\f0\b0  sur le corps de la carte : elle appara\'eet \'e0 f12 en 
+\f2\fs26 scale Y: 0 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24  (elle pousse de haut en bas, 
+\f2\fs26 transform-origin: top
+\f0\fs24 ) via 
+\f2\fs26 spring(\{ damping: 14, stiffness: 200 \})
+\f0\fs24  sur 18 frames, pendant que le corps de la carte commence \'e0 f18. La bordure arrive en premier, comme si elle \'ab ouvrait la voie \'bb. D\'e9tail de chef.\
+
+\f1\b L'overlay de sweep
+\f0\b0  : pendant les frames d'entr\'e9e de la carte (f18 
+\f3 \uc0\u8594 
+\f0  f35), un sweep lumineux la traverse de gauche \'e0 droite : 
+\f2\fs26 linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent)
+\f0\fs24  en bande de 
+\f2\fs26 160px
+\f0\fs24  qui parcourt 
+\f2\fs26 translateX: -160px 
+\f6 \uc0\u8594 
+\f2  820px
+\f0\fs24 . Initialisation visuelle identique \'e0 l'animation 8 \'97 coh\'e9rence du syst\'e8me.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 2 \'97 Le num\'e9ro d'\'e9tape (frames 28 
+\f5 \uc0\u8594 
+\f1  50)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Le num\'e9ro d'\'e9tape est le premier \'e9l\'e9ment textuel \'e0 appara\'eetre, dans le coin haut-gauche de la carte (\'e0 l'int\'e9rieur, \'e0 
+\f2\fs26 40px
+\f0\fs24  de la bordure gauche, 
+\f2\fs26 28px
+\f0\fs24  du haut).\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Le label \'ab \'c9TAPE \'bb\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 \'c0 f28, le micro-label au-dessus du num\'e9ro appara\'eet : 
+\f1\b \'ab \'c9TAPE \'bb
+\f0\b0 , Inter Bold 
+\f1\b 13px
+\f0\b0 , couleur accent, 
+\f2\fs26 letter-spacing: 0.18em
+\f0\fs24 . 
+\f2\fs26 opacity: 0 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24  + 
+\f2\fs26 translateY: -6px 
+\f6 \uc0\u8594 
+\f2  0
+\f0\fs24  sur 10 frames. Lettres tr\'e8s espac\'e9es, style militaire/institutionnel.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Le num\'e9ro\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 \'c0 f35, le num\'e9ro (
+\f2\fs26 1
+\f0\fs24 , 
+\f2\fs26 2
+\f0\fs24 , 
+\f2\fs26 3
+\f0\fs24 ...) appara\'eet juste sous le label : Inter Black 
+\f1\b 96px
+\f0\b0 , couleur accent. Entr\'e9e : 
+\f2\fs26 scale: 0.6 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24  + 
+\f2\fs26 opacity: 0 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24  via 
+\f2\fs26 spring(\{ damping: 8, stiffness: 160 \})
+\f0\fs24  \'97 rebond notable, le chiffre a de la personnalit\'e9. Largeur du num\'e9ro limit\'e9e \'e0 environ 
+\f2\fs26 80px
+\f0\fs24  pour le 
+\f2\fs26 1
+\f0\fs24  \'97 le reste de l'espace horizontal de la carte est pour le titre.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Le s\'e9parateur vertical\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 \'c0 f42, une ligne verticale 
+\f2\fs26 width: 1px, height: 120px, background: rgba([couleur accent], 0.25)
+\f0\fs24  appara\'eet \'e0 droite du num\'e9ro (
+\f2\fs26 x: 160px
+\f0\fs24  depuis le bord gauche de la carte int\'e9rieure), 
+\f2\fs26 opacity: 0 
+\f6 \uc0\u8594 
+\f2  0.6
+\f0\fs24  sur 8 frames. Elle s\'e9pare visuellement le num\'e9ro du titre.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 3 \'97 Le titre et le sous-titre (frames 42 
+\f5 \uc0\u8594 
+\f1  68)\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\fs24 \cf0 Le titre\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 \'c0 f42, le titre principal appara\'eet \'e0 droite de la ligne s\'e9paratrice : 
+\f1\b \'ab Choisir la niche \'bb
+\f0\b0  (variable selon l'\'e9tape), Inter Black 
+\f1\b 44px
+\f0\b0 , blanc 
+\f2\fs26 #FFFFFF
+\f0\fs24 . Position : 
+\f2\fs26 x: 185px
+\f0\fs24  depuis le bord gauche int\'e9rieur, 
+\f2\fs26 y: 32px
+\f0\fs24  depuis le haut int\'e9rieur. Entr\'e9e : 
+\f2\fs26 translateX: +20px 
+\f6 \uc0\u8594 
+\f2  0
+\f0\fs24  + 
+\f2\fs26 opacity: 0 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24  via 
+\f2\fs26 spring(\{ damping: 14, stiffness: 180 \})
+\f0\fs24 .\
+Le titre ne doit jamais d\'e9passer 25 caract\'e8res pour rester sur une seule ligne \'e0 cette taille. Si le titre est plus long, r\'e9duis \'e0 Inter Black 
+\f1\b 36px
+\f0\b0  et pr\'e9vois un retour \'e0 la ligne automatique.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Le sous-titre\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 \'c0 f52, le sous-titre appara\'eet sous le titre : 
+\f1\b \'ab La base de tout business \'bb
+\f0\b0  (variable), Inter Regular 
+\f1\b 22px
+\f0\b0 , gris 
+\f2\fs26 #64748B
+\f0\fs24 . M\'eame logique d'entr\'e9e, d\'e9cal\'e9e de 10 frames : 
+\f2\fs26 translateX: +20px 
+\f6 \uc0\u8594 
+\f2  0
+\f0\fs24  + 
+\f2\fs26 opacity: 0 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24 .\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Les tags de m\'e9tadonn\'e9es\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 \'c0 f60, dans le bas-gauche de la carte (\'e0 
+\f2\fs26 40px
+\f0\fs24  de la bordure gauche, 
+\f2\fs26 24px
+\f0\fs24  du bas de la carte int\'e9rieure), deux petits tags apparaissent c\'f4te \'e0 c\'f4te en stagger de 4 frames :\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 Tag 1
+\f0\b0  : 
+\f2\fs26 <Clock>
+\f0\fs24  lucide 
+\f2\fs26 12px
+\f0\fs24  + 
+\f1\b \'ab ~2 min \'bb
+\f0\b0  Inter Medium 
+\f2\fs26 13px
+\f0\fs24  \'97 dur\'e9e estim\'e9e de la section. Fond 
+\f2\fs26 rgba(255,255,255,0.06)
+\f0\fs24 , 
+\f2\fs26 border-radius: 6px
+\f0\fs24 , 
+\f2\fs26 padding: 4px 10px
+\f0\fs24 .\
+
+\f1\b Tag 2
+\f0\b0  : 
+\f2\fs26 <Star>
+\f0\fs24  lucide 
+\f2\fs26 12px
+\f0\fs24  couleur accent + 
+\f1\b \'ab Fondamental \'bb
+\f0\b0  (ou autre qualificatif variable selon l'\'e9tape) \'97 niveau d'importance. Fond 
+\f2\fs26 rgba([couleur accent], 0.08)
+\f0\fs24 , 
+\f2\fs26 border-radius: 6px
+\f0\fs24 , 
+\f2\fs26 padding: 4px 10px
+\f0\fs24 .\
+Entr\'e9e des tags : 
+\f2\fs26 scale: 0 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24  via spring rapide 
+\f2\fs26 \{ damping: 14, stiffness: 300 \}
+\f0\fs24 .\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 4 \'97 L'indicateur de progression global (frames 55 
+\f5 \uc0\u8594 
+\f1  75)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 En bas de l'\'e9cran, centr\'e9 horizontalement, un syst\'e8me de progression visuel pour toute la vid\'e9o.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Le label de progression\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 \'c0 f55, au-dessus de la barre : 
+\f1\b \'ab PROGRESSION DE LA VID\'c9O \'bb
+\f0\b0 , Inter Medium 
+\f1\b 12px
+\f0\b0 , gris 
+\f2\fs26 #475569
+\f0\fs24 , 
+\f2\fs26 letter-spacing: 0.1em
+\f0\fs24 . 
+\f2\fs26 opacity: 0 
+\f6 \uc0\u8594 
+\f2  0.7
+\f0\fs24  sur 8 frames.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Les segments de progression\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 \'c0 f60, 5 segments rectangulaires apparaissent en stagger de 3 frames chacun via 
+\f2\fs26 scale X: 0 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24  (
+\f2\fs26 transform-origin: left
+\f0\fs24 ) spring 
+\f2\fs26 \{ damping: 16, stiffness: 200 \}
+\f0\fs24  :\
+Chaque segment : 
+\f2\fs26 width: 140px, height: 8px, border-radius: 4px
+\f0\fs24 . Espacement de 
+\f2\fs26 12px
+\f0\fs24  entre chaque. Ils sont centr\'e9s collectivement (
+\f2\fs26 5 \'d7 140 + 4 \'d7 12 = 748px
+\f0\fs24  
+\f3 \uc0\u8594 
+\f0  
+\f2\fs26 left: (1920-748)/2 = 586px
+\f0\fs24 ).\
+Couleur de chaque segment :\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Segments 
+\f1\b compl\'e9t\'e9s
+\f0\b0  (\'e9tapes avant l'\'e9tape courante) : 
+\f2\fs26 background: [couleur de l'\'e9tape correspondante]
+\f0\fs24 , 
+\f2\fs26 opacity: 1
+\f0\fs24 . Exemple pour \'e9tape 2 : le segment 1 est bleu plein.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Segment 
+\f1\b courant
+\f0\b0  : 
+\f2\fs26 background: [couleur accent courante]
+\f0\fs24 , avec un glow 
+\f2\fs26 box-shadow: 0 0 8px [couleur accent], 0 0 16px rgba([couleur accent], 0.4)
+\f0\fs24 . Il pulse l\'e9g\'e8rement via 
+\f2\fs26 scaleY: 1 
+\f6 \uc0\u8594 
+\f2  1.3 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24  sur 30 frames en boucle pendant le maintien.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Segments 
+\f1\b \'e0 venir
+\f0\b0  : 
+\f2\fs26 background: #1E293B
+\f0\fs24  (gris sombre), 
+\f2\fs26 opacity: 0.5
+\f0\fs24 .\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Les num\'e9ros sous les segments\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 Sous chaque segment (\'e0 
+\f2\fs26 y: +14px
+\f0\fs24 ), le num\'e9ro correspondant : 
+\f2\fs26 1
+\f0\fs24 , 
+\f2\fs26 2
+\f0\fs24 , 
+\f2\fs26 3
+\f0\fs24 , 
+\f2\fs26 4
+\f0\fs24 , 
+\f2\fs26 5
+\f0\fs24 , Inter Medium 
+\f1\b 12px
+\f0\b0 . Couleur : couleur de l'\'e9tape pour les compl\'e9t\'e9s et la courante, 
+\f2\fs26 #334155
+\f0\fs24  pour les \'e0 venir. Apparaissent en m\'eame temps que leurs segments via 
+\f2\fs26 opacity: 0 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24  sur 8 frames.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 5 \'97 Le maintien (frames 68 
+\f5 \uc0\u8594 
+\f1  90)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 22 frames de maintien. Tout est affich\'e9. Le spectateur lit le titre et voit sa position dans la vid\'e9o.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Micro-animations de vie pendant le maintien\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 Le segment courant qui pulse
+\f0\b0  : 
+\f2\fs26 scaleY: 1 
+\f6 \uc0\u8594 
+\f2  1.25 
+\f6 \uc0\u8594 
+\f2  1
+\f0\fs24  via 
+\f2\fs26 Math.sin((frame - 68) / 12) * 0.125 + 1.125
+\f0\fs24 . Pulsation douce, environ 2 fois pendant le maintien.\
+
+\f1\b Le num\'e9ro d'\'e9tape
+\f0\b0  : tr\'e8s l\'e9ger glow qui respire, 
+\f2\fs26 text-shadow: 0 0 20px rgba([couleur accent], 0.3) 
+\f6 \uc0\u8594 
+\f2  0 0 40px rgba([couleur accent], 0.6) 
+\f6 \uc0\u8594 
+\f2  0 0 20px rgba([couleur accent], 0.3)
+\f0\fs24  via 
+\f2\fs26 Math.sin((frame - 68) / 15)
+\f0\fs24 . La respiration du num\'e9ro donne vie \'e0 la carte.\
+
+\f1\b La bordure gauche
+\f0\b0  : m\'eame respiration de glow que le num\'e9ro, l\'e9g\'e8rement d\'e9phas\'e9e (
+\f2\fs26 Math.sin((frame - 68) / 15 + 0.5)
+\f0\fs24 ). La bordure et le num\'e9ro respirent en d\'e9cal\'e9 \'97 comme un battement de c\'9cur.\
+
+\f1\b Le sweep r\'e9siduel
+\f0\b0  : une fois pendant le maintien (\'e0 f75 environ), un tr\'e8s l\'e9ger sweep lumineux traverse \'e0 nouveau la carte (
+\f2\fs26 opacity: 0.02
+\f0\fs24 , bien plus discret que le sweep d'entr\'e9e). Comme si la carte \'ab rafra\'eechissait \'bb ses donn\'e9es.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Variation des contenus par \'e9tape\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Voici les props compl\'e8tes pour chaque occurrence dans la vid\'e9o :\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 \'c9tape 1
+\f0\b0  :\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f4\fs22 \cf4 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf11 \strokec11 stepNumber: 1\
+title: "Choisir la niche"\
+subtitle: "La base de tout business"\
+tag2: "Fondamental"\
+color: "#3B82F6"\
+completedSteps: []\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 \strokec2 \'c9tape 2
+\f0\b0  :\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f4\fs22 \cf4 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf11 \strokec11 stepNumber: 2\
+title: "Cr\'e9er le design"\
+subtitle: "Ce qui va accrocher le client"\
+tag2: "Cr\'e9atif"\
+color: "#8B5CF6"\
+completedSteps: [1]\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 \strokec2 \'c9tape 3
+\f0\b0  (si tu l'utilises) :\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f4\fs22 \cf4 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf11 \strokec11 stepNumber: 3\
+title: "Trouver le fournisseur"\
+subtitle: "La qualit\'e9 fait le bouche-\'e0-oreille"\
+tag2: "Logistique"\
+color: "#10B981"\
+completedSteps: [1, 2]\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 \strokec2 \'c9tape 4
+\f0\b0  (si tu l'utilises) :\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f4\fs22 \cf4 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf11 \strokec11 stepNumber: 4\
+title: "Vendre & promouvoir"\
+subtitle: "L\'e0 o\'f9 l'argent rentre"\
+tag2: "Commercial"\
+color: "#F59E0B"\
+completedSteps: [1, 2, 3]\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 \strokec2 \'c9tape 5
+\f0\b0  (si tu l'utilises) :\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f4\fs22 \cf4 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf11 \strokec11 stepNumber: 5\
+title: "Premier client"\
+subtitle: "L'objectif final"\
+tag2: "Victoire"\
+color: "#EC4899"\
+completedSteps: [1, 2, 3, 4]\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 D\'e9coupage temporel complet\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\fs24 \cf0 Phase\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Frames\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Ce qui se passe\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b0 \cf0 Particules de convocation\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f0 
+\f3 \uc0\u8594 
+\f0  f12\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 6 points convergent vers le centre\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Flash d'initialisation\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f10 
+\f3 \uc0\u8594 
+\f0  f13\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Couleur accent, opacity 0.08\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Bordure gauche entre\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f12 
+\f3 \uc0\u8594 
+\f0  f30\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Scale Y de haut en bas\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Corps de la carte entre\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f18 
+\f3 \uc0\u8594 
+\f0  f45\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Slide depuis gauche, spring avec inertie\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Sweep d'initialisation\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f18 
+\f3 \uc0\u8594 
+\f0  f35\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Bande lumineuse gauche 
+\f3 \uc0\u8594 
+\f0  droite\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Label \'ab \'c9TAPE \'bb\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f28 
+\f3 \uc0\u8594 
+\f0  f38\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Fade + translateY\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Num\'e9ro d'\'e9tape\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f35 
+\f3 \uc0\u8594 
+\f0  f50\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Scale spring avec rebond\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 S\'e9parateur vertical\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f42 
+\f3 \uc0\u8594 
+\f0  f50\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Fade in\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Titre principal\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f42 
+\f3 \uc0\u8594 
+\f0  f55\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Slide depuis droite\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Sous-titre\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f52 
+\f3 \uc0\u8594 
+\f0  f62\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Slide depuis droite d\'e9cal\'e9\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Tags de m\'e9tadonn\'e9es\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f60 
+\f3 \uc0\u8594 
+\f0  f68\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Scale spring rapide stagger\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Label progression\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f55 
+\f3 \uc0\u8594 
+\f0  f63\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Fade in\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Segments de progression\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f60 
+\f3 \uc0\u8594 
+\f0  f75\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Scale X stagger\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2465\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1000\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth4312\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Maintien\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f68 
+\f3 \uc0\u8594 
+\f0  f90\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Pulse segment, glow num\'e9ro, sweep r\'e9siduel\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Param\'e8tres Remotion concrets\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f0\b0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Structure principale : 
+\f2\fs26 const ChapterCard: React.FC<\{stepNumber, totalSteps, title, subtitle, color, tag2, completedSteps, frame\}> = (props) => \{ ... \}
+\f0\fs24 .\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour la bordure qui entre avant le corps : deux 
+\f2\fs26 useCurrentFrame()
+\f0\fs24  distincts ne sont pas n\'e9cessaires \'97 utilise juste 
+\f2\fs26 frame - 12
+\f0\fs24  pour la bordure et 
+\f2\fs26 frame - 18
+\f0\fs24  pour le corps dans leurs 
+\f2\fs26 spring()
+\f0\fs24  respectifs, avec 
+\f2\fs26 Math.max(0, ...)
+\f0\fs24  pour \'e9viter les valeurs n\'e9gatives.\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour le syst\'e8me de couleurs : toutes les valeurs d\'e9riv\'e9es de la couleur accent (rgba avec opacit\'e9, box-shadow, text-shadow) sont calcul\'e9es \'e0 partir de la prop 
+\f2\fs26 color
+\f0\fs24  en extrayant les composantes RGB via une fonction utilitaire 
+\f2\fs26 hexToRgb(color)
+\f0\fs24  
+\f3 \uc0\u8594 
+\f0  
+\f2\fs26 \{r, g, b\}
+\f0\fs24  
+\f3 \uc0\u8594 
+\f0  
+\f2\fs26 rgba($\{r\},$\{g\},$\{b\},$\{opacity\})
+\f0\fs24 .\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour les segments de progression : 
+\f2\fs26 completedSteps.includes(i + 1)
+\f0\fs24  pour d\'e9terminer si un segment est compl\'e9t\'e9, 
+\f2\fs26 i + 1 === stepNumber
+\f0\fs24  pour le courant.\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour le pulse du segment courant : 
+\f2\fs26 const pulse = 1 + Math.sin((frame - 68) / 12) * 0.125
+\f0\fs24  appliqu\'e9 via 
+\f2\fs26 scaleY: pulse
+\f0\fs24  uniquement sur le segment courant et uniquement pendant 
+\f2\fs26 frame >= 68
+\f0\fs24 .\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour les particules : array de 6 objets 
+\f2\fs26 \{angle, distance\}
+\f0\fs24  g\'e9n\'e9r\'e9s une fois 
+\f3 \uc0\u8594 
+\f0  
+\f2\fs26 .map()
+\f0\fs24  sur des 
+\f2\fs26 <div>
+\f0\fs24  dont la position est calcul\'e9e par 
+\f2\fs26 x = 960 + Math.cos(angle) * distance * (1 - t)
+\f0\fs24  o\'f9 
+\f2\fs26 t = interpolate(frame, [0, 12], [0, 1])
+\f0\fs24 .\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Le composant entier dans 
+\f2\fs26 src/components/ChapterCard.tsx
+\f0\fs24 , appel\'e9 depuis 
+\f2\fs26 src/compositions/Step1.tsx
+\f0\fs24 , 
+\f2\fs26 src/compositions/Step2.tsx
+\f0\fs24 , etc. avec les props appropri\'e9es.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Le pi\'e8ge \'e0 \'e9viter\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 La tentation va \'eatre de 
+\f1\b diff\'e9rencier visuellement les occurrences
+\f0\b0  au-del\'e0 du syst\'e8me de couleurs et du contenu \'97 ajouter des \'e9l\'e9ments d\'e9coratifs uniques \'e0 chaque \'e9tape, changer la position de la carte, varier l'animation d'entr\'e9e. R\'e9siste absolument \'e0 \'e7a. La force de cet intertitre vient pr\'e9cis\'e9ment de sa 
+\f1\b r\'e9p\'e9tition identique
+\f0\b0  : le spectateur reconna\'eet le pattern en 0,5 seconde et sait imm\'e9diatement que c'est un intertitre de chapitre. Si chaque occurrence est diff\'e9rente, ce rep\'e8re visuel dispara\'eet et la vid\'e9o perd sa structure apparente.\
+La seule variation autoris\'e9e et souhaitable : la couleur accent, le num\'e9ro, le titre, le sous-titre, et l'\'e9tat des segments de progression. Tout le reste est rigoureusement identique d'une occurrence \'e0 l'autre.\
+}

@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        background: #030818;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        overflow: hidden;
+        width: 1920px;
+        height: 1080px;
+        perspective: 1800px;
+      }
+
+      /* ── AURORA ─────────────────────────────────────────────── */
+      .aurora { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+      .aurora-blob { position: absolute; border-radius: 50%; filter: blur(140px); }
+      .blob-1 { width: 750px; height: 750px; background: rgba(20,60,220,0.65); top: -200px; right: -100px; }
+      .blob-2 { width: 600px; height: 600px; background: rgba(40,90,255,0.5); bottom: -180px; left: 200px; }
+      .blob-3 { width: 400px; height: 400px; background: rgba(100,40,200,0.4); top: calc(50% - 200px); left: calc(50% - 200px); }
+
+      /* ── BACKGROUND DEPTH GRID ──────────────────────────────── */
+      .depth-grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(48,96,255,0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(48,96,255,0.06) 1px, transparent 1px);
+        background-size: 80px 80px;
+        transform: perspective(600px) rotateX(30deg) scaleY(1.8);
+        transform-origin: 50% 100%;
+        opacity: 0;
+      }
+
+      /* ── LEFT COLUMN — Timeline spine ───────────────────────── */
+      .timeline-spine {
+        position: absolute;
+        left: 220px;
+        top: 80px;
+        bottom: 80px;
+        width: 3px;
+        background: linear-gradient(180deg,
+          transparent 0%,
+          rgba(48,96,255,0.8) 10%,
+          rgba(48,96,255,0.6) 90%,
+          transparent 100%);
+        opacity: 0;
+        z-index: 5;
+      }
+
+      /* ── CARDS STACK ────────────────────────────────────────── */
+      .cards-stage {
+        position: absolute;
+        left: 260px;
+        top: 0;
+        right: 120px;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 28px;
+        z-index: 6;
+      }
+
+      .milestone-card {
+        display: flex;
+        align-items: stretch;
+        height: 188px;
+        border-radius: 28px;
+        overflow: hidden;
+        opacity: 0;
+        will-change: transform;
+      }
+
+      /* Year accent strip on left of card */
+      .card-year-strip {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 44px;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        flex-shrink: 0;
+      }
+
+      .card-body {
+        flex: 1;
+        padding: 28px 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        border-left: 1px solid rgba(255,255,255,0.08);
+      }
+
+      .card-tag {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        opacity: 0.75;
+      }
+
+      .card-title {
+        font-size: 52px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      .card-stat {
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        opacity: 0.9;
+      }
+
+      .card-icon {
+        width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 64px;
+        flex-shrink: 0;
+      }
+
+      /* Card theme variants */
+      .card-2020 {
+        background: linear-gradient(135deg, rgba(20,40,140,0.85) 0%, rgba(10,20,80,0.9) 100%);
+        border: 1.5px solid rgba(48,96,255,0.45);
+        box-shadow: 0 0 50px rgba(48,96,255,0.2), 0 12px 40px rgba(0,0,0,0.4);
+      }
+      .card-2020 .card-year-strip { background: rgba(48,96,255,0.2); color: #88aaff; }
+      .card-2020 .card-stat { color: #88aaff; }
+
+      .card-2022 {
+        background: linear-gradient(135deg, rgba(60,20,120,0.85) 0%, rgba(30,10,80,0.9) 100%);
+        border: 1.5px solid rgba(139,92,246,0.45);
+        box-shadow: 0 0 50px rgba(139,92,246,0.2), 0 12px 40px rgba(0,0,0,0.4);
+      }
+      .card-2022 .card-year-strip { background: rgba(139,92,246,0.2); color: #c4b5fd; }
+      .card-2022 .card-stat { color: #c4b5fd; }
+
+      .card-2025 {
+        background: linear-gradient(135deg, rgba(80,40,10,0.85) 0%, rgba(50,25,5,0.9) 100%);
+        border: 1.5px solid rgba(255,215,0,0.5);
+        box-shadow: 0 0 50px rgba(255,215,0,0.25), 0 12px 40px rgba(0,0,0,0.4);
+      }
+      .card-2025 .card-year-strip { background: rgba(255,215,0,0.15); color: #ffd700; }
+      .card-2025 .card-stat { color: #ffd700; }
+
+      .card-2026 {
+        background: linear-gradient(135deg, rgba(10,60,30,0.85) 0%, rgba(5,35,15,0.9) 100%);
+        border: 1.5px solid rgba(34,197,94,0.5);
+        box-shadow: 0 0 60px rgba(34,197,94,0.28), 0 12px 40px rgba(0,0,0,0.4);
+      }
+      .card-2026 .card-year-strip { background: rgba(34,197,94,0.15); color: #22c55e; }
+      .card-2026 .card-stat { color: #22c55e; }
+
+      /* ── CONNECTOR DOTS ─────────────────────────────────────── */
+      .connector-dot {
+        position: absolute;
+        left: 209px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        opacity: 0;
+        z-index: 7;
+      }
+
+      /* ── RIGHT PANEL — Big stat callout ─────────────────────── */
+      .right-panel {
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 420px;
+        text-align: right;
+        z-index: 10;
+        opacity: 0;
+      }
+
+      .right-panel-label {
+        font-size: 22px;
+        font-weight: 600;
+        color: rgba(136,170,255,0.55);
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .right-panel-years {
+        font-size: 90px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.04em;
+        line-height: 0.9;
+        text-shadow: 0 0 60px rgba(48,96,255,0.5);
+      }
+
+      .right-panel-unit {
+        font-size: 30px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.7);
+        letter-spacing: 0.06em;
+        margin-top: 8px;
+      }
+
+      /* Reg marks */
+      .reg { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+      .rc { position: absolute; width: 24px; height: 24px; opacity: 0.2; }
+      .rc.tl { top: 28px; left: 28px; border-top: 2px solid rgba(136,170,255,0.8); border-left: 2px solid rgba(136,170,255,0.8); }
+      .rc.tr { top: 28px; right: 28px; border-top: 2px solid rgba(136,170,255,0.8); border-right: 2px solid rgba(136,170,255,0.8); }
+      .rc.bl { bottom: 28px; left: 28px; border-bottom: 2px solid rgba(136,170,255,0.8); border-left: 2px solid rgba(136,170,255,0.8); }
+      .rc.br { bottom: 28px; right: 28px; border-bottom: 2px solid rgba(136,170,255,0.8); border-right: 2px solid rgba(136,170,255,0.8); }
+
+      .top-tag {
+        position: absolute;
+        top: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        font-weight: 600;
+        color: rgba(136,170,255,0.3);
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        z-index: 20;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-composition-id="atmos-anim03" data-start="0" data-width="1920" data-height="1080">
+
+      <div class="aurora">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-3"></div>
+      </div>
+
+      <div class="depth-grid" id="depth-grid"></div>
+
+      <div class="reg">
+        <div class="rc tl"></div><div class="rc tr"></div>
+        <div class="rc bl"></div><div class="rc br"></div>
+      </div>
+
+      <div class="top-tag">Parcours Ibrahim Kamara</div>
+
+      <!-- Timeline spine -->
+      <div class="timeline-spine" id="spine"></div>
+
+      <!-- Connector dots -->
+      <div class="connector-dot card-2020" id="dot-1" style="top: 166px;"></div>
+      <div class="connector-dot card-2022" id="dot-2" style="top: 382px;"></div>
+      <div class="connector-dot card-2025" id="dot-3" style="top: 598px;"></div>
+      <div class="connector-dot card-2026" id="dot-4" style="top: 814px;"></div>
+
+      <!-- Cards -->
+      <div class="cards-stage">
+        <!-- 2020 -->
+        <div class="milestone-card card-2020" id="card-1">
+          <div class="card-year-strip">2020</div>
+          <div class="card-body">
+            <div class="card-tag">Début</div>
+            <div class="card-title">Lancement du business en ligne</div>
+            <div class="card-stat">💻 Premiers revenus digitaux</div>
+          </div>
+          <div class="card-icon">🚀</div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="milestone-card card-2022" id="card-2">
+          <div class="card-year-strip">2022</div>
+          <div class="card-body">
+            <div class="card-tag">Croissance</div>
+            <div class="card-title">Premières centaines de milliers €</div>
+            <div class="card-stat">💜 +100 000€ générés</div>
+          </div>
+          <div class="card-icon">📈</div>
+        </div>
+
+        <!-- 2025 -->
+        <div class="milestone-card card-2025" id="card-3">
+          <div class="card-year-strip">2025</div>
+          <div class="card-body">
+            <div class="card-tag">Pivot</div>
+            <div class="card-title">Lancement du business d'apps SaaS</div>
+            <div class="card-stat">📱 Premier app lancée</div>
+          </div>
+          <div class="card-icon">⚡</div>
+        </div>
+
+        <!-- 2026 -->
+        <div class="milestone-card card-2026" id="card-4">
+          <div class="card-year-strip">2026</div>
+          <div class="card-body">
+            <div class="card-tag">Maintenant</div>
+            <div class="card-title">Milliers d'euros / mois en apps</div>
+            <div class="card-stat">✅ Business validé & rentable</div>
+          </div>
+          <div class="card-icon">💰</div>
+        </div>
+      </div>
+
+      <!-- Right callout -->
+      <div class="right-panel" id="right-panel">
+        <div class="right-panel-label">En seulement</div>
+        <div class="right-panel-years">6</div>
+        <div class="right-panel-unit">ans d'expérience</div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+
+        const duration = 14;
+
+        const tl = gsap.timeline({ paused: true });
+
+        // Aurora ambient
+        tl.to('.blob-1', { x: -70, y: 60, duration: 3.4, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.4)-1 }, 0);
+        tl.to('.blob-2', { x: 80, y: -50, duration: 2.9, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/2.9)-1 }, 0.6);
+        tl.to('.blob-3', { x: 40, y: 30, duration: 3.7, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.7)-1 }, 0.3);
+
+        // Depth grid fades in
+        tl.fromTo('#depth-grid', { opacity: 0 }, { opacity: 1, duration: 1.0, ease: 'power2.out' }, 0.15);
+
+        // Reg marks
+        tl.fromTo('.reg', { opacity: 0 }, { opacity: 1, duration: 0.5, ease: 'power1.out' }, 0.1);
+        tl.fromTo('.top-tag', { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' }, 0.2);
+
+        // Timeline spine draws downward
+        tl.fromTo('#spine',
+          { opacity: 0, scaleY: 0, transformOrigin: 'top center' },
+          { opacity: 1, scaleY: 1, duration: 1.8, ease: 'power2.out' },
+          0.4
+        );
+
+        // Cards drop from depth (Z perspective) + alternating X offset
+        const cardData = [
+          { id: '#card-1', dotId: '#dot-1', delay: 1.2, xFrom: -60 },
+          { id: '#card-2', dotId: '#dot-2', delay: 2.4, xFrom: 60 },
+          { id: '#card-3', dotId: '#dot-3', delay: 3.6, xFrom: -60 },
+          { id: '#card-4', dotId: '#dot-4', delay: 4.8, xFrom: 60 },
+        ];
+
+        cardData.forEach(({ id, dotId, delay, xFrom }) => {
+          // Card flies in from depth
+          tl.fromTo(id,
+            { opacity: 0, z: 300, x: xFrom, rotationY: xFrom > 0 ? 12 : -12 },
+            { opacity: 1, z: 0, x: 0, rotationY: 0, duration: 0.75, ease: 'expo.out' },
+            delay
+          );
+
+          // Connector dot pops in
+          tl.fromTo(dotId,
+            { opacity: 0, scale: 0 },
+            { opacity: 1, scale: 1, duration: 0.35, ease: 'back.out(2.5)' },
+            delay + 0.1
+          );
+        });
+
+        // Cards subtle float after all landed
+        tl.to(['#card-1', '#card-2', '#card-3', '#card-4'], {
+          y: -6,
+          duration: 2.2, ease: 'sine.inOut',
+          yoyo: true, repeat: Math.floor((duration - 7) / 2.2) - 1,
+          stagger: 0.3
+        }, 7.0);
+
+        // Right panel slides in
+        tl.fromTo('#right-panel',
+          { opacity: 0, x: 40 },
+          { opacity: 1, x: 0, duration: 0.8, ease: 'expo.out' },
+          6.2
+        );
+
+        // Right panel counter pulses
+        tl.to('#right-panel .right-panel-years', {
+          textShadow: '0 0 80px rgba(48,96,255,0.9)',
+          duration: 1.0, ease: 'sine.inOut',
+          yoyo: true, repeat: Math.floor((duration - 6.5) / 1.0) - 1
+        }, 6.5);
+
+        // Final halo unification — all cards glow together
+        tl.to(['.card-2020', '.card-2022', '.card-2025', '.card-2026'], {
+          boxShadow: '0 0 80px rgba(255,215,0,0.2), 0 12px 40px rgba(0,0,0,0.4)',
+          duration: 1.2, ease: 'sine.inOut',
+          stagger: 0.15
+        }, 11.0);
+
+        // Fade out
+        tl.to(['.cards-stage', '#spine', '.connector-dot', '#right-panel'],
+          { opacity: 0, duration: 0.6, ease: 'power2.in' }, 13.2);
+        tl.to('.aurora', { opacity: 0, duration: 0.8, ease: 'power1.in' }, 13.2);
+
+        window.__timelines['atmos-anim03'] = tl;
+      </script>
+    </div>
+  </body>
+</html>

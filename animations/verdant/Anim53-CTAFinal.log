@@ -1,0 +1,209 @@
+Bundling 6%
+Bundling 24%
+Bundling 38%
+Bundling 51%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Getting composition
+Composition          Anim53-CTAFinal
+Codec                h264
+Output               animations/verdant/Anim53-CTAFinal.mp4
+Concurrency          4x
+Rendered 0/150
+ProtocolError: Protocol error (Page.bringToFront): Target closed. https://www.remotion.dev/docs/target-closed
+    at CDPSession._onClosed (/Users/ibrahimkamara/yt-animations/node_modules/@remotion/renderer/dist/browser/Connection.js:224:42)
+    at #onMessage (/Users/ibrahimkamara/yt-animations/node_modules/@remotion/renderer/dist/browser/Connection.js:85:25)
+    at WebSocket.<anonymous> (/Users/ibrahimkamara/yt-animations/node_modules/@remotion/renderer/dist/browser/NodeWebSocketTransport.js:58:32)
+    at callListener (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/event-target.js:290:14)
+    at WebSocket.onMessage (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/event-target.js:209:9)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/websocket.js:1211:20)
+    at Receiver.emit (node:events:519:28)
+    at Receiver.dataMessage (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/receiver.js:594:14)
+    at Receiver.getData (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/receiver.js:496:10) {
+  code: undefined,
+  originalMessage: ''
+}
+Rendered 1/150, time remaining: 1h 14m 8s
+Rendered 2/150, time remaining: 37m 49s
+Rendered 3/150, time remaining: 25m 2s
+Rendered 4/150, time remaining: 18m 49s
+Rendered 5/150, time remaining: 21m 21s
+Rendered 6/150, time remaining: 17m 50s
+Rendered 7/150, time remaining: 15m 11s
+Rendered 8/150, time remaining: 14m 52s
+Rendered 9/150, time remaining: 15m 3s
+Rendered 10/150, time remaining: 13m 36s
+Rendered 11/150, time remaining: 12m 24s
+Rendered 12/150, time remaining: 12m 23s
+Rendered 13/150, time remaining: 12m 29s
+Rendered 14/150, time remaining: 11m 37s
+Rendered 15/150, time remaining: 10m 57s
+Rendered 16/150, time remaining: 10m 53s
+Rendered 17/150, time remaining: 11m 3s
+Rendered 18/150, time remaining: 10m 34s
+Rendered 19/150, time remaining: 10m 2s
+Rendered 20/150, time remaining: 9m 56s
+Rendered 21/150, time remaining: 10m 9s
+Rendered 22/150, time remaining: 9m 44s
+Rendered 23/150, time remaining: 9m 16s
+Rendered 24/150, time remaining: 9m 13s
+Rendered 25/150, time remaining: 9m 33s
+Rendered 26/150, time remaining: 9m 12s
+Rendered 27/150, time remaining: 9m 5s
+Rendered 28/150, time remaining: 8m 42s
+Rendered 29/150, time remaining: 8m 58s
+Rendered 30/150, time remaining: 8m 47s
+Rendered 31/150, time remaining: 8m 33s
+Rendered 32/150, time remaining: 8m 15s
+Rendered 33/150, time remaining: 8m 32s
+Rendered 34/150, time remaining: 8m 19s
+Rendered 35/150, time remaining: 8m 6s
+Rendered 36/150, time remaining: 7m 50s
+Rendered 37/150, time remaining: 8m 19s
+Rendered 38/150, time remaining: 8m 9s
+Rendered 39/150, time remaining: 7m 56s
+Rendered 40/150, time remaining: 7m 46s
+Rendered 41/150, time remaining: 7m 54s
+Rendered 42/150, time remaining: 7m 44s
+Rendered 43/150, time remaining: 7m 33s
+Rendered 44/150, time remaining: 7m 26s
+Rendered 45/150, time remaining: 7m 32s
+Rendered 46/150, time remaining: 7m 23s
+Rendered 47/150, time remaining: 7m 12s
+Rendered 48/150, time remaining: 7m 19s
+Rendered 49/150, time remaining: 7m 9s
+Rendered 50/150, time remaining: 7m 2s
+Rendered 51/150, time remaining: 6m 53s
+Rendered 52/150, time remaining: 6m 57s
+Rendered 53/150, time remaining: 6m 48s
+Rendered 54/150, time remaining: 6m 41s
+Rendered 55/150, time remaining: 6m 32s
+Rendered 56/150, time remaining: 6m 38s
+Rendered 57/150, time remaining: 6m 28s
+Rendered 58/150, time remaining: 6m 21s
+Rendered 59/150, time remaining: 6m 11s
+Rendered 60/150, time remaining: 6m 16s
+Rendered 61/150, time remaining: 6m 11s
+Rendered 62/150, time remaining: 6m 2s
+Rendered 63/150, time remaining: 5m 56s
+Rendered 64/150, time remaining: 5m 56s
+Rendered 65/150, time remaining: 5m 49s
+Rendered 66/150, time remaining: 5m 42s
+Rendered 67/150, time remaining: 5m 37s
+Rendered 68/150, time remaining: 5m 36s
+Rendered 69/150, time remaining: 5m 30s
+Rendered 70/150, time remaining: 5m 23s
+Rendered 71/150, time remaining: 5m 18s
+Rendered 72/150, time remaining: 5m 17s
+Rendered 73/150, time remaining: 5m 12s
+Rendered 74/150, time remaining: 5m 5s
+Rendered 75/150, time remaining: 4m 59s
+Rendered 76/150, time remaining: 4m 59s
+Rendered 77/150, time remaining: 4m 53s
+Rendered 78/150, time remaining: 4m 47s
+Rendered 79/150, time remaining: 4m 47s
+Rendered 80/150, time remaining: 4m 40s
+Rendered 81/150, time remaining: 4m 35s
+Rendered 82/150, time remaining: 4m 30s
+Rendered 83/150, time remaining: 4m 29s
+Rendered 84/150, time remaining: 4m 23s
+Rendered 85/150, time remaining: 4m 18s
+Rendered 86/150, time remaining: 4m 12s
+Rendered 87/150, time remaining: 4m 11s
+Rendered 88/150, time remaining: 4m 5s
+Rendered 89/150, time remaining: 4m 0s
+Rendered 90/150, time remaining: 3m 55s
+Rendered 91/150, time remaining: 3m 53s
+Rendered 92/150, time remaining: 3m 48s
+Rendered 93/150, time remaining: 3m 43s
+Rendered 94/150, time remaining: 3m 38s
+Rendered 95/150, time remaining: 3m 35s
+Rendered 96/150, time remaining: 3m 30s
+Rendered 97/150, time remaining: 3m 24s
+Rendered 98/150, time remaining: 3m 20s
+Rendered 99/150, time remaining: 3m 16s
+Rendered 100/150, time remaining: 3m 12s
+Rendered 101/150, time remaining: 3m 8s
+Rendered 102/150, time remaining: 3m 3s
+Rendered 103/150, time remaining: 2m 59s
+Rendered 104/150, time remaining: 2m 55s
+Rendered 105/150, time remaining: 2m 51s
+Rendered 106/150, time remaining: 2m 45s
+Rendered 107/150, time remaining: 2m 42s
+Rendered 108/150, time remaining: 2m 37s
+Rendered 109/150, time remaining: 2m 34s
+Rendered 110/150, time remaining: 2m 28s
+Rendered 111/150, time remaining: 2m 25s
+Rendered 112/150, time remaining: 2m 20s
+Rendered 113/150, time remaining: 2m 17s
+Rendered 114/150, time remaining: 2m 12s
+Rendered 115/150, time remaining: 2m 8s
+Rendered 116/150, time remaining: 2m 4s
+Rendered 117/150, time remaining: 2m 1s
+Rendered 118/150, time remaining: 1m 56s
+Rendered 119/150, time remaining: 1m 52s
+Rendered 120/150, time remaining: 1m 48s
+Rendered 121/150, time remaining: 1m 45s
+Rendered 122/150, time remaining: 1m 41s
+Rendered 123/150, time remaining: 1m 36s
+Rendered 124/150, time remaining: 1m 33s
+Rendered 125/150, time remaining: 1m 29s
+Rendered 126/150, time remaining: 1m 25s
+Rendered 127/150, time remaining: 1m 21s
+Rendered 128/150, time remaining: 1m 17s
+Rendered 129/150, time remaining: 1m 14s
+Rendered 130/150, time remaining: 1m 10s
+Rendered 131/150, time remaining: 1m 6s
+Rendered 132/150, time remaining: 1m 2s
+Rendered 133/150, time remaining: 59s
+Rendered 134/150, time remaining: 55s
+Rendered 135/150, time remaining: 52s
+Rendered 136/150, time remaining: 48s
+Rendered 137/150, time remaining: 44s
+Rendered 138/150, time remaining: 41s
+Rendered 139/150, time remaining: 37s
+Rendered 140/150, time remaining: 33s
+Rendered 141/150, time remaining: 30s
+Rendered 142/150, time remaining: 26s
+Rendered 143/150, time remaining: 23s
+Rendered 144/150, time remaining: 19s
+Rendered 145/150, time remaining: 16s
+Rendered 146/150, time remaining: 13s
+Rendered 147/150, time remaining: 9s
+Rendered 148/150, time remaining: 6s
+Rendered 149/150, time remaining: 3s
+Rendered 150/150
+Encoded 5/150
+Encoded 7/150
+Encoded 12/150
+Encoded 16/150
+Encoded 21/150
+Encoded 23/150
+Encoded 30/150
+Encoded 34/150
+Encoded 34/150
+Encoded 39/150
+Encoded 48/150
+Encoded 48/150
+Encoded 52/150
+Encoded 60/150
+Encoded 64/150
+Encoded 65/150
+Encoded 76/150
+Encoded 76/150
+Encoded 80/150
+Encoded 88/150
+Encoded 96/150
+Encoded 108/150
+Encoded 112/150
+Encoded 124/150
+Encoded 136/150
+Encoded 150/150
++                    animations/verdant/Anim53-CTAFinal.mp4 1.6 MB

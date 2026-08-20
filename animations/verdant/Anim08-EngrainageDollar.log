@@ -1,0 +1,160 @@
+Bundling 6%
+Bundling 25%
+Bundling 64%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/4.pack_' -> '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/4.pack'
+Getting composition
+Composition          Anim08-EngrainageDollar
+Codec                h264
+Output               animations/verdant/Anim08-EngrainageDollar.mp4
+Concurrency          4x
+Rendered 0/120
+Rendered 1/120, time remaining: 3h 9m 43s
+Rendered 2/120, time remaining: 1h 34m 4s
+Rendered 3/120, time remaining: 1h 9m 47s
+Rendered 4/120, time remaining: 51m 56s
+Rendered 5/120, time remaining: 45m 25s
+Rendered 6/120, time remaining: 38m 22s
+Rendered 7/120, time remaining: 33m 23s
+Rendered 8/120, time remaining: 28m 59s
+Rendered 9/120, time remaining: 28m 21s
+Rendered 10/120, time remaining: 25m 24s
+Rendered 11/120, time remaining: 22m 53s
+Rendered 12/120, time remaining: 21m 37s
+Rendered 13/120, time remaining: 20m 53s
+Rendered 14/120, time remaining: 19m 19s
+Rendered 15/120, time remaining: 17m 52s
+Rendered 16/120, time remaining: 17m 44s
+Rendered 17/120, time remaining: 16m 53s
+Rendered 18/120, time remaining: 15m 52s
+Rendered 19/120, time remaining: 14m 55s
+Rendered 20/120, time remaining: 14m 54s
+Rendered 21/120, time remaining: 14m 20s
+Rendered 22/120, time remaining: 13m 40s
+Rendered 23/120, time remaining: 13m 26s
+Rendered 24/120, time remaining: 13m 1s
+Rendered 25/120, time remaining: 12m 30s
+Rendered 26/120, time remaining: 12m 0s
+Rendered 27/120, time remaining: 11m 57s
+Rendered 28/120, time remaining: 11m 45s
+Rendered 29/120, time remaining: 11m 14s
+Rendered 30/120, time remaining: 11m 0s
+Rendered 31/120, time remaining: 11m 3s
+Rendered 32/120, time remaining: 10m 35s
+Rendered 33/120, time remaining: 10m 11s
+Rendered 34/120, time remaining: 10m 17s
+Rendered 35/120, time remaining: 9m 58s
+Rendered 36/120, time remaining: 9m 38s
+Rendered 37/120, time remaining: 9m 32s
+Rendered 38/120, time remaining: 9m 23s
+Rendered 39/120, time remaining: 9m 5s
+Rendered 40/120, time remaining: 8m 51s
+Rendered 41/120, time remaining: 8m 56s
+Rendered 42/120, time remaining: 8m 38s
+Rendered 43/120, time remaining: 8m 21s
+Rendered 44/120, time remaining: 8m 10s
+Rendered 45/120, time remaining: 8m 15s
+Rendered 46/120, time remaining: 8m 6s
+Rendered 47/120, time remaining: 7m 53s
+Rendered 48/120, time remaining: 7m 38s
+Rendered 49/120, time remaining: 7m 33s
+Rendered 50/120, time remaining: 7m 27s
+Rendered 51/120, time remaining: 7m 16s
+Rendered 52/120, time remaining: 7m 12s
+Rendered 53/120, time remaining: 7m 2s
+Rendered 54/120, time remaining: 6m 56s
+Rendered 55/120, time remaining: 6m 46s
+Rendered 56/120, time remaining: 6m 40s
+Rendered 57/120, time remaining: 6m 38s
+Rendered 58/120, time remaining: 6m 29s
+Rendered 59/120, time remaining: 6m 17s
+Rendered 60/120, time remaining: 6m 19s
+Rendered 61/120, time remaining: 6m 8s
+Rendered 62/120, time remaining: 5m 59s
+Rendered 63/120, time remaining: 5m 57s
+Rendered 64/120, time remaining: 5m 58s
+Rendered 65/120, time remaining: 5m 47s
+Rendered 66/120, time remaining: 5m 38s
+Rendered 67/120, time remaining: 5m 36s
+Rendered 68/120, time remaining: 5m 30s
+Rendered 69/120, time remaining: 5m 23s
+Rendered 70/120, time remaining: 5m 13s
+Rendered 71/120, time remaining: 5m 7s
+Rendered 72/120, time remaining: 5m 2s
+Rendered 73/120, time remaining: 4m 59s
+Rendered 74/120, time remaining: 4m 49s
+Rendered 75/120, time remaining: 4m 41s
+Rendered 76/120, time remaining: 4m 33s
+Rendered 77/120, time remaining: 4m 29s
+Rendered 78/120, time remaining: 4m 23s
+Rendered 79/120, time remaining: 4m 14s
+Rendered 80/120, time remaining: 4m 6s
+Rendered 81/120, time remaining: 4m 0s
+Rendered 82/120, time remaining: 3m 54s
+Rendered 83/120, time remaining: 3m 46s
+Rendered 84/120, time remaining: 3m 38s
+Rendered 85/120, time remaining: 3m 35s
+Rendered 86/120, time remaining: 3m 26s
+Rendered 87/120, time remaining: 3m 20s
+Rendered 88/120, time remaining: 3m 13s
+Rendered 89/120, time remaining: 3m 7s
+Rendered 90/120, time remaining: 2m 59s
+Rendered 91/120, time remaining: 2m 53s
+Rendered 92/120, time remaining: 2m 46s
+Rendered 93/120, time remaining: 2m 40s
+Rendered 94/120, time remaining: 2m 33s
+Rendered 95/120, time remaining: 2m 27s
+Rendered 96/120, time remaining: 2m 20s
+Rendered 97/120, time remaining: 2m 13s
+Rendered 98/120, time remaining: 2m 7s
+Rendered 99/120, time remaining: 2m 1s
+Rendered 100/120, time remaining: 1m 55s
+Rendered 101/120, time remaining: 1m 48s
+Rendered 102/120, time remaining: 1m 42s
+Rendered 103/120, time remaining: 1m 36s
+Rendered 104/120, time remaining: 1m 30s
+Rendered 105/120, time remaining: 1m 24s
+Rendered 106/120, time remaining: 1m 17s
+Rendered 107/120, time remaining: 1m 12s
+Rendered 108/120, time remaining: 1m 6s
+Rendered 109/120, time remaining: 1m 0s
+Rendered 110/120, time remaining: 54s
+Rendered 111/120, time remaining: 49s
+Rendered 112/120, time remaining: 43s
+Rendered 113/120, time remaining: 37s
+Rendered 114/120, time remaining: 32s
+Rendered 115/120, time remaining: 26s
+Rendered 116/120, time remaining: 21s
+Rendered 117/120, time remaining: 15s
+Rendered 118/120, time remaining: 10s
+Rendered 119/120, time remaining: 5s
+Rendered 120/120
+Encoded 1/120
+Encoded 5/120
+Encoded 15/120
+Encoded 15/120
+Encoded 20/120
+Encoded 28/120
+Encoded 28/120
+Encoded 34/120
+Encoded 41/120
+Encoded 41/120
+Encoded 45/120
+Encoded 53/120
+Encoded 53/120
+Encoded 65/120
+Encoded 65/120
+Encoded 73/120
+Encoded 77/120
+Encoded 85/120
+Encoded 93/120
+Encoded 105/120
+Encoded 119/120
+Encoded 120/120
++                    animations/verdant/Anim08-EngrainageDollar.mp4 1.3 MB

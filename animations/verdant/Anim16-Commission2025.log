@@ -1,0 +1,148 @@
+Bundling 6%
+Bundling 18%
+Bundling 64%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/1.pack_' -> '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/1.pack'
+Getting composition
+Composition          Anim16-Commission2025
+Codec                h264
+Output               animations/verdant/Anim16-Commission2025.mp4
+Concurrency          4x
+Rendered 0/90
+Rendered 1/90, time remaining: 14m 39s
+Rendered 2/90, time remaining: 7m 18s
+Rendered 3/90, time remaining: 5m 19s
+Rendered 4/90, time remaining: 4m 12s
+Rendered 5/90, time remaining: 4m 58s
+Rendered 6/90, time remaining: 4m 12s
+Rendered 7/90, time remaining: 3m 52s
+Rendered 8/90, time remaining: 3m 47s
+Rendered 9/90, time remaining: 3m 47s
+Rendered 10/90, time remaining: 3m 29s
+Rendered 11/90, time remaining: 3m 18s
+Rendered 12/90, time remaining: 3m 15s
+Rendered 13/90, time remaining: 3m 14s
+Rendered 14/90, time remaining: 3m 3s
+Rendered 15/90, time remaining: 2m 53s
+Rendered 16/90, time remaining: 2m 57s
+Rendered 17/90, time remaining: 2m 54s
+Rendered 18/90, time remaining: 2m 51s
+Rendered 19/90, time remaining: 2m 48s
+Rendered 20/90, time remaining: 2m 42s
+Rendered 21/90, time remaining: 2m 39s
+Rendered 22/90, time remaining: 2m 35s
+Rendered 23/90, time remaining: 2m 32s
+Rendered 24/90, time remaining: 2m 29s
+Rendered 25/90, time remaining: 2m 24s
+Rendered 26/90, time remaining: 2m 22s
+Rendered 27/90, time remaining: 2m 20s
+Rendered 28/90, time remaining: 2m 16s
+Rendered 29/90, time remaining: 2m 12s
+Rendered 30/90, time remaining: 2m 11s
+Rendered 31/90, time remaining: 2m 10s
+Rendered 32/90, time remaining: 2m 8s
+Rendered 33/90, time remaining: 2m 5s
+Rendered 34/90, time remaining: 2m 6s
+Rendered 35/90, time remaining: 2m 4s
+Rendered 36/90, time remaining: 1m 59s
+Rendered 37/90, time remaining: 1m 56s
+Rendered 38/90, time remaining: 1m 56s
+Rendered 39/90, time remaining: 1m 54s
+Rendered 40/90, time remaining: 1m 49s
+Rendered 41/90, time remaining: 1m 47s
+Rendered 42/90, time remaining: 1m 46s
+Rendered 43/90, time remaining: 1m 44s
+Rendered 44/90, time remaining: 1m 40s
+Rendered 45/90, time remaining: 1m 38s
+Rendered 46/90, time remaining: 1m 36s
+Rendered 47/90, time remaining: 1m 34s
+Rendered 48/90, time remaining: 1m 31s
+Rendered 49/90, time remaining: 1m 30s
+Rendered 50/90, time remaining: 1m 29s
+Rendered 51/90, time remaining: 1m 37s
+Rendered 52/90, time remaining: 1m 36s
+Rendered 53/90, time remaining: 1m 48s
+Rendered 54/90, time remaining: 1m 46s
+Rendered 55/90, time remaining: 1m 53s
+Rendered 56/90, time remaining: 1m 49s
+Rendered 57/90, time remaining: 2m 1s
+Rendered 58/90, time remaining: 1m 55s
+Rendered 59/90, time remaining: 2m 6s
+Rendered 60/90, time remaining: 2m 0s
+Rendered 61/90, time remaining: 2m 1s
+Rendered 62/90, time remaining: 1m 57s
+Rendered 63/90, time remaining: 1m 57s
+Rendered 64/90, time remaining: 1m 51s
+Rendered 65/90, time remaining: 1m 50s
+Rendered 66/90, time remaining: 1m 45s
+Rendered 67/90, time remaining: 1m 44s
+Rendered 68/90, time remaining: 1m 38s
+Rendered 69/90, time remaining: 1m 35s
+Rendered 70/90, time remaining: 1m 30s
+Rendered 71/90, time remaining: 1m 25s
+Rendered 72/90, time remaining: 1m 20s
+Rendered 73/90, time remaining: 1m 15s
+Rendered 74/90, time remaining: 1m 10s
+Rendered 75/90, time remaining: 1m 6s
+Rendered 76/90, time remaining: 1m 1s
+Rendered 77/90, time remaining: 56s
+Rendered 78/90, time remaining: 52s
+Rendered 79/90, time remaining: 47s
+Rendered 80/90, time remaining: 43s
+Rendered 81/90, time remaining: 38s
+Rendered 82/90, time remaining: 33s
+Rendered 83/90, time remaining: 29s
+Rendered 84/90, time remaining: 25s
+Rendered 85/90, time remaining: 21s
+Rendered 86/90, time remaining: 16s
+Rendered 87/90, time remaining: 12s
+Rendered 88/90, time remaining: 8s
+Rendered 89/90, time remaining: 4s
+Rendered 90/90
+Encoded 1/90
+Encoded 1/90
+Encoded 1/90
+Encoded 2/90
+Encoded 5/90
+Encoded 5/90
+Encoded 5/90
+Encoded 9/90
+Encoded 13/90
+Encoded 13/90
+Encoded 14/90
+Encoded 18/90
+Encoded 19/90
+Encoded 19/90
+Encoded 22/90
+Encoded 25/90
+Encoded 31/90
+Encoded 31/90
+Encoded 31/90
+Encoded 31/90
+Encoded 36/90
+Encoded 39/90
+Encoded 43/90
+Encoded 43/90
+Encoded 44/90
+Encoded 47/90
+Encoded 48/90
+Encoded 51/90
+Encoded 55/90
+Encoded 59/90
+Encoded 59/90
+Encoded 66/90
+Encoded 67/90
+Encoded 71/90
+Encoded 71/90
+Encoded 75/90
+Encoded 80/90
+Encoded 83/90
+Encoded 88/90
+Encoded 90/90
++                    animations/verdant/Anim16-Commission2025.mp4 817.8 kB

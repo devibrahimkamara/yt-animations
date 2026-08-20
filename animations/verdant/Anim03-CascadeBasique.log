@@ -1,0 +1,163 @@
+Bundling 6%
+Bundling 17%
+Bundling 64%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/4.pack_' -> '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/4.pack'
+Getting composition
+Composition          Anim03-CascadeBasique
+Codec                h264
+Output               animations/verdant/Anim03-CascadeBasique.mp4
+Concurrency          4x
+Rendered 0/120
+Rendered 1/120, time remaining: 3h 2m 37s
+Rendered 2/120, time remaining: 1h 33m 46s
+Rendered 3/120, time remaining: 1h 1m 59s
+Rendered 4/120, time remaining: 47m 50s
+Rendered 5/120, time remaining: 42m 56s
+Rendered 6/120, time remaining: 36m 54s
+Rendered 7/120, time remaining: 32m 9s
+Rendered 8/120, time remaining: 28m 46s
+Rendered 9/120, time remaining: 26m 54s
+Rendered 10/120, time remaining: 24m 26s
+Rendered 11/120, time remaining: 22m 39s
+Rendered 12/120, time remaining: 21m 21s
+Rendered 13/120, time remaining: 19m 59s
+Rendered 14/120, time remaining: 18m 51s
+Rendered 15/120, time remaining: 17m 32s
+Rendered 16/120, time remaining: 17m 19s
+Rendered 17/120, time remaining: 16m 21s
+Rendered 18/120, time remaining: 15m 20s
+Rendered 19/120, time remaining: 14m 30s
+Rendered 20/120, time remaining: 14m 45s
+Rendered 21/120, time remaining: 13m 57s
+Rendered 22/120, time remaining: 13m 21s
+Rendered 23/120, time remaining: 12m 52s
+Rendered 24/120, time remaining: 12m 42s
+Rendered 25/120, time remaining: 12m 20s
+Rendered 26/120, time remaining: 11m 54s
+Rendered 27/120, time remaining: 11m 44s
+Rendered 28/120, time remaining: 11m 18s
+Rendered 29/120, time remaining: 11m 2s
+Rendered 30/120, time remaining: 10m 44s
+Rendered 31/120, time remaining: 10m 32s
+Rendered 32/120, time remaining: 10m 33s
+Rendered 33/120, time remaining: 10m 17s
+Rendered 34/120, time remaining: 9m 59s
+Rendered 35/120, time remaining: 9m 38s
+Rendered 36/120, time remaining: 9m 43s
+Rendered 37/120, time remaining: 9m 24s
+Rendered 38/120, time remaining: 9m 6s
+Rendered 39/120, time remaining: 9m 1s
+Rendered 40/120, time remaining: 8m 53s
+Rendered 41/120, time remaining: 8m 37s
+Rendered 42/120, time remaining: 8m 33s
+Rendered 43/120, time remaining: 8m 30s
+Rendered 44/120, time remaining: 8m 12s
+Rendered 45/120, time remaining: 8m 1s
+Rendered 46/120, time remaining: 8m 5s
+Rendered 47/120, time remaining: 7m 49s
+Rendered 48/120, time remaining: 7m 34s
+Rendered 49/120, time remaining: 7m 24s
+Rendered 50/120, time remaining: 7m 25s
+Rendered 51/120, time remaining: 7m 13s
+Rendered 52/120, time remaining: 6m 59s
+Rendered 53/120, time remaining: 6m 47s
+Rendered 54/120, time remaining: 6m 49s
+Rendered 55/120, time remaining: 6m 39s
+Rendered 56/120, time remaining: 6m 28s
+Rendered 57/120, time remaining: 6m 19s
+Rendered 58/120, time remaining: 6m 18s
+Rendered 59/120, time remaining: 6m 8s
+Rendered 60/120, time remaining: 5m 57s
+Rendered 61/120, time remaining: 5m 49s
+Rendered 62/120, time remaining: 5m 50s
+Rendered 63/120, time remaining: 5m 39s
+Rendered 64/120, time remaining: 5m 34s
+Rendered 65/120, time remaining: 5m 23s
+Rendered 66/120, time remaining: 5m 21s
+Rendered 67/120, time remaining: 5m 12s
+Rendered 68/120, time remaining: 5m 13s
+Rendered 69/120, time remaining: 5m 3s
+Rendered 70/120, time remaining: 4m 53s
+Rendered 71/120, time remaining: 4m 44s
+Rendered 72/120, time remaining: 4m 45s
+Rendered 73/120, time remaining: 4m 37s
+Rendered 74/120, time remaining: 4m 28s
+Rendered 75/120, time remaining: 4m 19s
+Rendered 76/120, time remaining: 4m 19s
+Rendered 77/120, time remaining: 4m 10s
+Rendered 78/120, time remaining: 4m 3s
+Rendered 79/120, time remaining: 3m 58s
+Rendered 80/120, time remaining: 3m 53s
+Rendered 81/120, time remaining: 3m 45s
+Rendered 82/120, time remaining: 3m 37s
+Rendered 83/120, time remaining: 3m 35s
+Rendered 84/120, time remaining: 3m 27s
+Rendered 85/120, time remaining: 3m 19s
+Rendered 86/120, time remaining: 3m 12s
+Rendered 87/120, time remaining: 3m 8s
+Rendered 88/120, time remaining: 3m 1s
+Rendered 89/120, time remaining: 2m 54s
+Rendered 90/120, time remaining: 2m 47s
+Rendered 91/120, time remaining: 2m 44s
+Rendered 92/120, time remaining: 2m 36s
+Rendered 93/120, time remaining: 2m 30s
+Rendered 94/120, time remaining: 2m 24s
+Rendered 95/120, time remaining: 2m 19s
+Rendered 96/120, time remaining: 2m 12s
+Rendered 97/120, time remaining: 2m 6s
+Rendered 98/120, time remaining: 2m 0s
+Rendered 99/120, time remaining: 1m 55s
+Rendered 100/120, time remaining: 1m 49s
+Rendered 101/120, time remaining: 1m 43s
+Rendered 102/120, time remaining: 1m 37s
+Rendered 103/120, time remaining: 1m 32s
+Rendered 104/120, time remaining: 1m 26s
+Rendered 105/120, time remaining: 1m 20s
+Rendered 106/120, time remaining: 1m 14s
+Rendered 107/120, time remaining: 1m 9s
+Rendered 108/120, time remaining: 1m 3s
+Rendered 109/120, time remaining: 57s
+Rendered 110/120, time remaining: 52s
+Rendered 111/120, time remaining: 47s
+Rendered 112/120, time remaining: 41s
+Rendered 113/120, time remaining: 36s
+Rendered 114/120, time remaining: 30s
+Rendered 115/120, time remaining: 25s
+Rendered 116/120, time remaining: 20s
+Rendered 117/120, time remaining: 15s
+Rendered 118/120, time remaining: 10s
+Rendered 119/120, time remaining: 5s
+Rendered 120/120
+Encoded 4/120
+Encoded 12/120
+Encoded 12/120
+Encoded 24/120
+Encoded 26/120
+Encoded 30/120
+Encoded 33/120
+Encoded 34/120
+Encoded 41/120
+Encoded 45/120
+Encoded 45/120
+Encoded 53/120
+Encoded 57/120
+Encoded 57/120
+Encoded 69/120
+Encoded 69/120
+Encoded 73/120
+Encoded 81/120
+Encoded 85/120
+Encoded 93/120
+Encoded 97/120
+Encoded 105/120
+Encoded 105/120
+Encoded 110/120
+Encoded 120/120
++                    animations/verdant/Anim03-CascadeBasique.mp4 1.2 MB

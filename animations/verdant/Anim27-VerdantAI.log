@@ -1,0 +1,161 @@
+Bundling 6%
+Bundling 24%
+Bundling 38%
+Bundling 51%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/0.pack_' -> '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/0.pack'
+Getting composition
+Composition          Anim27-VerdantAI
+Codec                h264
+Output               animations/verdant/Anim27-VerdantAI.mp4
+Concurrency          4x
+Rendered 0/120
+Rendered 1/120, time remaining: 37m 46s
+Rendered 2/120, time remaining: 19m 2s
+Rendered 3/120, time remaining: 12m 39s
+Rendered 4/120, time remaining: 9m 56s
+Rendered 5/120, time remaining: 11m 57s
+Rendered 6/120, time remaining: 10m 26s
+Rendered 7/120, time remaining: 9m 50s
+Rendered 8/120, time remaining: 8m 35s
+Rendered 9/120, time remaining: 8m 46s
+Rendered 10/120, time remaining: 8m 39s
+Rendered 11/120, time remaining: 7m 58s
+Rendered 12/120, time remaining: 7m 49s
+Rendered 13/120, time remaining: 7m 14s
+Rendered 14/120, time remaining: 7m 14s
+Rendered 15/120, time remaining: 6m 49s
+Rendered 16/120, time remaining: 6m 47s
+Rendered 17/120, time remaining: 6m 25s
+Rendered 18/120, time remaining: 6m 24s
+Rendered 19/120, time remaining: 6m 5s
+Rendered 20/120, time remaining: 6m 6s
+Rendered 21/120, time remaining: 5m 47s
+Rendered 22/120, time remaining: 5m 47s
+Rendered 23/120, time remaining: 5m 34s
+Rendered 24/120, time remaining: 5m 31s
+Rendered 25/120, time remaining: 5m 16s
+Rendered 26/120, time remaining: 5m 17s
+Rendered 27/120, time remaining: 5m 5s
+Rendered 28/120, time remaining: 5m 3s
+Rendered 29/120, time remaining: 4m 50s
+Rendered 30/120, time remaining: 4m 51s
+Rendered 31/120, time remaining: 4m 44s
+Rendered 32/120, time remaining: 4m 34s
+Rendered 33/120, time remaining: 4m 23s
+Rendered 34/120, time remaining: 4m 23s
+Rendered 35/120, time remaining: 4m 18s
+Rendered 36/120, time remaining: 4m 8s
+Rendered 37/120, time remaining: 3m 59s
+Rendered 38/120, time remaining: 3m 58s
+Rendered 39/120, time remaining: 3m 54s
+Rendered 40/120, time remaining: 3m 46s
+Rendered 41/120, time remaining: 3m 37s
+Rendered 42/120, time remaining: 3m 36s
+Rendered 43/120, time remaining: 3m 32s
+Rendered 44/120, time remaining: 3m 25s
+Rendered 45/120, time remaining: 3m 18s
+Rendered 46/120, time remaining: 3m 17s
+Rendered 47/120, time remaining: 3m 13s
+Rendered 48/120, time remaining: 3m 7s
+Rendered 49/120, time remaining: 3m 1s
+Rendered 50/120, time remaining: 2m 59s
+Rendered 51/120, time remaining: 2m 56s
+Rendered 52/120, time remaining: 2m 50s
+Rendered 53/120, time remaining: 2m 45s
+Rendered 54/120, time remaining: 2m 43s
+Rendered 55/120, time remaining: 2m 40s
+Rendered 56/120, time remaining: 2m 36s
+Rendered 57/120, time remaining: 2m 31s
+Rendered 58/120, time remaining: 2m 28s
+Rendered 59/120, time remaining: 2m 26s
+Rendered 60/120, time remaining: 2m 22s
+Rendered 61/120, time remaining: 2m 17s
+Rendered 62/120, time remaining: 2m 15s
+Rendered 63/120, time remaining: 2m 13s
+Rendered 64/120, time remaining: 2m 9s
+Rendered 65/120, time remaining: 2m 5s
+Rendered 66/120, time remaining: 2m 2s
+Rendered 67/120, time remaining: 2m 1s
+Rendered 68/120, time remaining: 1m 57s
+Rendered 69/120, time remaining: 1m 53s
+Rendered 70/120, time remaining: 1m 50s
+Rendered 71/120, time remaining: 1m 49s
+Rendered 72/120, time remaining: 1m 45s
+Rendered 73/120, time remaining: 1m 42s
+Rendered 74/120, time remaining: 1m 39s
+Rendered 75/120, time remaining: 1m 38s
+Rendered 76/120, time remaining: 1m 35s
+Rendered 77/120, time remaining: 1m 32s
+Rendered 78/120, time remaining: 1m 29s
+Rendered 79/120, time remaining: 1m 27s
+Rendered 80/120, time remaining: 1m 24s
+Rendered 81/120, time remaining: 1m 22s
+Rendered 82/120, time remaining: 1m 19s
+Rendered 83/120, time remaining: 1m 18s
+Rendered 84/120, time remaining: 1m 15s
+Rendered 85/120, time remaining: 1m 12s
+Rendered 86/120, time remaining: 1m 10s
+Rendered 87/120, time remaining: 1m 8s
+Rendered 88/120, time remaining: 1m 5s
+Rendered 89/120, time remaining: 1m 3s
+Rendered 90/120, time remaining: 1m 0s
+Rendered 91/120, time remaining: 59s
+Rendered 92/120, time remaining: 56s
+Rendered 93/120, time remaining: 53s
+Rendered 94/120, time remaining: 51s
+Rendered 95/120, time remaining: 49s
+Rendered 96/120, time remaining: 47s
+Rendered 97/120, time remaining: 45s
+Rendered 98/120, time remaining: 42s
+Rendered 99/120, time remaining: 41s
+Rendered 100/120, time remaining: 38s
+Rendered 101/120, time remaining: 36s
+Rendered 102/120, time remaining: 34s
+Rendered 103/120, time remaining: 32s
+Rendered 104/120, time remaining: 30s
+Rendered 105/120, time remaining: 28s
+Rendered 106/120, time remaining: 26s
+Rendered 107/120, time remaining: 24s
+Rendered 108/120, time remaining: 22s
+Rendered 109/120, time remaining: 20s
+Rendered 110/120, time remaining: 18s
+Rendered 111/120, time remaining: 16s
+Rendered 112/120, time remaining: 14s
+Rendered 113/120, time remaining: 12s
+Rendered 114/120, time remaining: 11s
+Rendered 115/120, time remaining: 9s
+Rendered 116/120, time remaining: 7s
+Rendered 117/120, time remaining: 5s
+Rendered 118/120, time remaining: 3s
+Rendered 119/120, time remaining: 1s
+Rendered 120/120
+Encoded 1/120
+Encoded 1/120
+Encoded 2/120
+Encoded 3/120
+Encoded 5/120
+Encoded 5/120
+Encoded 12/120
+Encoded 20/120
+Encoded 32/120
+Encoded 40/120
+Encoded 44/120
+Encoded 52/120
+Encoded 60/120
+Encoded 68/120
+Encoded 76/120
+Encoded 84/120
+Encoded 92/120
+Encoded 100/120
+Encoded 108/120
+Encoded 116/120
+Encoded 120/120
++                    animations/verdant/Anim27-VerdantAI.mp4 964.2 kB

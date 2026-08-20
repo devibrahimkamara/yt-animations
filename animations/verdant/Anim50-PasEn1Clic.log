@@ -1,0 +1,119 @@
+Bundling 6%
+Bundling 24%
+Bundling 38%
+Bundling 51%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/0.pack_' -> '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/0.pack'
+Getting composition
+Composition          Anim50-PasEn1Clic
+Codec                h264
+Output               animations/verdant/Anim50-PasEn1Clic.mp4
+Concurrency          4x
+Rendered 0/75
+Rendered 1/75, time remaining: 40m 12s
+Rendered 2/75, time remaining: 1h 4m 33s
+Rendered 3/75, time remaining: 54m 14s
+Rendered 4/75, time remaining: 43m 38s
+Rendered 5/75, time remaining: 36m 23s
+Rendered 6/75, time remaining: 32m 18s
+Rendered 7/75, time remaining: 28m 6s
+Rendered 8/75, time remaining: 24m 27s
+Rendered 9/75, time remaining: 23m 7s
+Rendered 10/75, time remaining: 21m 13s
+Rendered 11/75, time remaining: 20m 23s
+Rendered 12/75, time remaining: 18m 56s
+Rendered 13/75, time remaining: 17m 45s
+Rendered 14/75, time remaining: 16m 41s
+Rendered 15/75, time remaining: 15m 49s
+Rendered 16/75, time remaining: 14m 58s
+Rendered 17/75, time remaining: 14m 8s
+Rendered 18/75, time remaining: 13m 11s
+Rendered 19/75, time remaining: 12m 55s
+Rendered 20/75, time remaining: 12m 11s
+Rendered 21/75, time remaining: 11m 50s
+Rendered 22/75, time remaining: 11m 9s
+Rendered 23/75, time remaining: 10m 37s
+Rendered 24/75, time remaining: 10m 5s
+Rendered 25/75, time remaining: 9m 47s
+Rendered 26/75, time remaining: 9m 18s
+Rendered 27/75, time remaining: 9m 7s
+Rendered 28/75, time remaining: 8m 45s
+Rendered 29/75, time remaining: 8m 16s
+Rendered 30/75, time remaining: 8m 6s
+Rendered 31/75, time remaining: 7m 44s
+Rendered 32/75, time remaining: 7m 27s
+Rendered 33/75, time remaining: 7m 3s
+Rendered 34/75, time remaining: 6m 54s
+Rendered 35/75, time remaining: 6m 34s
+Rendered 36/75, time remaining: 6m 22s
+Rendered 37/75, time remaining: 6m 11s
+Rendered 38/75, time remaining: 5m 53s
+Rendered 39/75, time remaining: 5m 35s
+Rendered 40/75, time remaining: 5m 24s
+Rendered 41/75, time remaining: 5m 15s
+Rendered 42/75, time remaining: 4m 59s
+Rendered 43/75, time remaining: 4m 43s
+Rendered 44/75, time remaining: 4m 38s
+Rendered 45/75, time remaining: 4m 24s
+Rendered 46/75, time remaining: 4m 9s
+Rendered 47/75, time remaining: 3m 56s
+Rendered 48/75, time remaining: 3m 50s
+Rendered 49/75, time remaining: 3m 37s
+Rendered 50/75, time remaining: 3m 25s
+Rendered 51/75, time remaining: 3m 13s
+Rendered 52/75, time remaining: 3m 6s
+Rendered 53/75, time remaining: 2m 55s
+Rendered 54/75, time remaining: 2m 44s
+Rendered 55/75, time remaining: 2m 34s
+Rendered 56/75, time remaining: 2m 28s
+Rendered 57/75, time remaining: 2m 18s
+Rendered 58/75, time remaining: 2m 8s
+Rendered 59/75, time remaining: 1m 58s
+Rendered 60/75, time remaining: 1m 52s
+Rendered 61/75, time remaining: 1m 43s
+Rendered 62/75, time remaining: 1m 34s
+Rendered 63/75, time remaining: 1m 25s
+Rendered 64/75, time remaining: 1m 19s
+Rendered 65/75, time remaining: 1m 11s
+Rendered 66/75, time remaining: 1m 3s
+Rendered 67/75, time remaining: 55s
+Rendered 68/75, time remaining: 48s
+Rendered 69/75, time remaining: 41s
+Rendered 70/75, time remaining: 34s
+Rendered 71/75, time remaining: 27s
+Rendered 72/75, time remaining: 20s
+Rendered 73/75, time remaining: 13s
+Rendered 74/75, time remaining: 6s
+Rendered 75/75
+Encoded 2/75
+Encoded 2/75
+Encoded 3/75
+Encoded 4/75
+Encoded 4/75
+Encoded 4/75
+Encoded 10/75
+Encoded 16/75
+Encoded 18/75
+Encoded 18/75
+Encoded 30/75
+Encoded 30/75
+Encoded 30/75
+Encoded 42/75
+Encoded 42/75
+Encoded 46/75
+Encoded 54/75
+Encoded 54/75
+Encoded 66/75
+Encoded 66/75
+Encoded 66/75
+Encoded 66/75
+Encoded 66/75
+Encoded 75/75
++                    animations/verdant/Anim50-PasEn1Clic.mp4 1.2 MB

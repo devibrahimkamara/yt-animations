@@ -1,0 +1,830 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #030818;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        overflow: hidden;
+        width: 1920px;
+        height: 1080px;
+      }
+
+      /* ── AURORA BACKGROUND ─────────────────────────────────────── */
+      .aurora {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        pointer-events: none;
+      }
+
+      .aurora-blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(140px);
+        will-change: transform;
+      }
+
+      .blob-1 {
+        width: 700px;
+        height: 700px;
+        background: rgba(20, 60, 220, 0.7);
+        top: -200px;
+        left: -100px;
+      }
+
+      .blob-2 {
+        width: 600px;
+        height: 600px;
+        background: rgba(40, 90, 255, 0.55);
+        bottom: -150px;
+        right: 200px;
+      }
+
+      .blob-3 {
+        width: 500px;
+        height: 500px;
+        background: rgba(10, 30, 160, 0.65);
+        top: calc(50% - 250px);
+        left: calc(50% - 250px);
+      }
+
+      .blob-4 {
+        width: 350px;
+        height: 350px;
+        background: rgba(180, 40, 40, 0.35);
+        top: 100px;
+        left: 30%;
+      }
+
+      /* ── CENTRAL DIVIDING LINE ─────────────────────────────────── */
+      .divider {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 3px;
+        height: 1080px;
+        background: linear-gradient(
+          180deg,
+          transparent 0%,
+          rgba(80, 130, 255, 0.8) 15%,
+          #3060ff 40%,
+          rgba(255, 215, 0, 0.6) 60%,
+          rgba(80, 130, 255, 0.8) 85%,
+          transparent 100%
+        );
+        z-index: 10;
+        transform-origin: center;
+      }
+
+      .divider-glow {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 1080px;
+        background: radial-gradient(
+          ellipse 40px 100% at center,
+          rgba(48, 96, 255, 0.18) 0%,
+          transparent 70%
+        );
+        z-index: 9;
+      }
+
+      /* ── LEFT SIDE — Jealousy / Dark ───────────────────────────── */
+      .side-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 120px 80px 100px;
+        z-index: 5;
+      }
+
+      .side-left-overlay {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 80% 80% at 30% 50%,
+          rgba(150, 20, 20, 0.12) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      /* Silhouette */
+      .silhouette-wrap {
+        position: relative;
+        margin-bottom: 48px;
+      }
+
+      .silhouette {
+        width: 200px;
+        height: 200px;
+        position: relative;
+      }
+
+      /* SVG silhouette of a person sitting with head down */
+      .silhouette svg {
+        width: 200px;
+        height: 200px;
+        filter: drop-shadow(0 0 20px rgba(239, 68, 68, 0.4));
+      }
+
+      /* Thought bubble items */
+      .thought-items {
+        position: absolute;
+        top: -20px;
+        right: -80px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .thought-item {
+        background: linear-gradient(
+          135deg,
+          rgba(239, 68, 68, 0.2),
+          rgba(239, 68, 68, 0.08)
+        );
+        border: 1.5px solid rgba(239, 68, 68, 0.5);
+        border-radius: 50px;
+        padding: 8px 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        white-space: nowrap;
+        backdrop-filter: blur(8px);
+      }
+
+      .thought-icon {
+        font-size: 40px;
+        line-height: 1;
+      }
+
+      .thought-text {
+        font-size: 34px;
+        font-weight: 700;
+        color: rgba(239, 68, 68, 0.9);
+        letter-spacing: 0.02em;
+      }
+
+      /* Left label */
+      .left-label {
+        text-align: center;
+      }
+
+      .left-label-top {
+        font-size: 40px;
+        font-weight: 600;
+        color: rgba(136, 170, 255, 0.75);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+      }
+
+      .left-label-main {
+        font-size: 80px;
+        font-weight: 800;
+        color: #ef4444;
+        letter-spacing: -0.02em;
+        line-height: 1.0;
+        text-shadow: 0 0 40px rgba(239, 68, 68, 0.5);
+      }
+
+      .left-label-sub {
+        font-size: 48px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.75);
+        letter-spacing: -0.01em;
+        margin-top: 10px;
+      }
+
+      /* ── RIGHT SIDE — Success / Gold ───────────────────────────── */
+      .side-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 100px 80px 120px;
+        z-index: 5;
+      }
+
+      .side-right-overlay {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 80% 80% at 70% 50%,
+          rgba(255, 215, 0, 0.08) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      /* App screen */
+      .app-screen {
+        width: 460px;
+        background: linear-gradient(
+          145deg,
+          rgba(20, 40, 120, 0.85) 0%,
+          rgba(10, 20, 60, 0.9) 100%
+        );
+        border: 2px solid rgba(80, 130, 255, 0.35);
+        border-radius: 28px;
+        padding: 36px 40px;
+        box-shadow:
+          0 0 60px rgba(255, 215, 0, 0.2),
+          0 0 120px rgba(255, 215, 0, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        margin-bottom: 40px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .app-top-bar {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+
+      .app-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #3060ff, #22c55e);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+      }
+
+      .app-name {
+        font-size: 26px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.01em;
+      }
+
+      .app-badge {
+        margin-left: auto;
+        background: rgba(34, 197, 94, 0.2);
+        border: 1px solid rgba(34, 197, 94, 0.6);
+        border-radius: 50px;
+        padding: 4px 14px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #22c55e;
+      }
+
+      .app-revenue-label {
+        font-size: 32px;
+        font-weight: 600;
+        color: rgba(136, 170, 255, 0.85);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      .app-revenue-value {
+        font-size: 80px;
+        font-weight: 800;
+        background: linear-gradient(90deg, #ffd700 0%, #fff7aa 50%, #ffd700 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        margin-bottom: 4px;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .app-revenue-period {
+        font-size: 28px;
+        font-weight: 600;
+        color: rgba(255, 215, 0, 0.7);
+        letter-spacing: 0.04em;
+      }
+
+      /* Money raining */
+      .money-rain {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+        border-radius: 28px;
+      }
+
+      .money-bill {
+        position: absolute;
+        font-size: 32px;
+        opacity: 0;
+      }
+
+      /* Right label */
+      .right-label {
+        text-align: center;
+      }
+
+      .right-label-top {
+        font-size: 40px;
+        font-weight: 600;
+        color: rgba(136, 170, 255, 0.75);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+      }
+
+      .right-label-main {
+        font-size: 80px;
+        font-weight: 800;
+        color: #ffd700;
+        letter-spacing: -0.02em;
+        line-height: 1.0;
+        text-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
+      }
+
+      /* ── FINAL TEXT REVEAL ─────────────────────────────────────── */
+      .final-text {
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 20;
+        white-space: nowrap;
+      }
+
+      .final-text-line {
+        font-size: 96px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        text-shadow: 0 0 60px rgba(48, 96, 255, 0.6);
+        opacity: 0;
+        display: inline-block;
+      }
+
+      .final-text-em {
+        color: #3060ff;
+        background: linear-gradient(90deg, #3060ff 0%, #ffd700 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Registration marks — foreground detail */
+      .reg-marks {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      .reg-corner {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        opacity: 0.25;
+      }
+
+      .reg-corner.tl {
+        top: 32px;
+        left: 32px;
+        border-top: 2px solid rgba(136, 170, 255, 0.8);
+        border-left: 2px solid rgba(136, 170, 255, 0.8);
+      }
+
+      .reg-corner.tr {
+        top: 32px;
+        right: 32px;
+        border-top: 2px solid rgba(136, 170, 255, 0.8);
+        border-right: 2px solid rgba(136, 170, 255, 0.8);
+      }
+
+      .reg-corner.bl {
+        bottom: 32px;
+        left: 32px;
+        border-bottom: 2px solid rgba(136, 170, 255, 0.8);
+        border-left: 2px solid rgba(136, 170, 255, 0.8);
+      }
+
+      .reg-corner.br {
+        bottom: 32px;
+        right: 32px;
+        border-bottom: 2px solid rgba(136, 170, 255, 0.8);
+        border-right: 2px solid rgba(136, 170, 255, 0.8);
+      }
+
+      /* Metadata strip */
+      .meta-strip {
+        position: absolute;
+        top: 32px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(136, 170, 255, 0.35);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        z-index: 20;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      data-composition-id="atmos-anim01"
+      data-start="0"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- ── Aurora Background ─────────────────────────────────── -->
+      <div class="aurora">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-3"></div>
+        <div class="aurora-blob blob-4"></div>
+      </div>
+
+      <!-- ── Registration marks ───────────────────────────────── -->
+      <div class="reg-marks">
+        <div class="reg-corner tl"></div>
+        <div class="reg-corner tr"></div>
+        <div class="reg-corner bl"></div>
+        <div class="reg-corner br"></div>
+      </div>
+
+      <!-- ── Metadata strip ───────────────────────────────────── -->
+      <div class="meta-strip">Ibrahim Kamara · SaaS 2026</div>
+
+      <!-- ── Dividing line ────────────────────────────────────── -->
+      <div class="divider-glow"></div>
+      <div class="divider"></div>
+
+      <!-- ── LEFT SIDE — Jealousy ─────────────────────────────── -->
+      <div class="side-left">
+        <div class="side-left-overlay"></div>
+
+        <!-- Silhouette sitting, dejected -->
+        <div class="silhouette-wrap">
+          <div class="silhouette">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Head -->
+              <circle cx="100" cy="42" r="28" fill="rgba(239,68,68,0.7)" />
+              <!-- Body bent forward -->
+              <path
+                d="M72 70 Q100 68 128 70 L118 140 Q100 148 82 140 Z"
+                fill="rgba(239,68,68,0.5)"
+              />
+              <!-- Left arm resting on knees -->
+              <path
+                d="M75 85 Q60 105 68 128"
+                stroke="rgba(239,68,68,0.7)"
+                stroke-width="14"
+                stroke-linecap="round"
+              />
+              <!-- Right arm resting on knees -->
+              <path
+                d="M125 85 Q140 105 132 128"
+                stroke="rgba(239,68,68,0.7)"
+                stroke-width="14"
+                stroke-linecap="round"
+              />
+              <!-- Head tilted down line -->
+              <path
+                d="M86 62 Q100 76 114 62"
+                stroke="rgba(239,68,68,0.4)"
+                stroke-width="3"
+                fill="none"
+              />
+              <!-- Legs -->
+              <path
+                d="M85 140 Q80 165 72 178"
+                stroke="rgba(239,68,68,0.6)"
+                stroke-width="14"
+                stroke-linecap="round"
+              />
+              <path
+                d="M115 140 Q120 165 128 178"
+                stroke="rgba(239,68,68,0.6)"
+                stroke-width="14"
+                stroke-linecap="round"
+              />
+              <!-- Frown lines on face -->
+              <path
+                d="M88 50 Q100 44 112 50"
+                stroke="rgba(20,0,0,0.6)"
+                stroke-width="2.5"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+
+          <!-- Thought items floating beside silhouette -->
+          <div class="thought-items">
+            <div class="thought-item" id="thought-1">
+              <span class="thought-icon">💡</span>
+              <span class="thought-text" style="text-decoration: line-through; text-decoration-color: #ef4444;">Mon idée</span>
+            </div>
+            <div class="thought-item" id="thought-2">
+              <span class="thought-icon">⏰</span>
+              <span class="thought-text">Trop tard...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left label -->
+        <div class="left-label" id="left-label">
+          <div class="left-label-top">C'était</div>
+          <div class="left-label-main">TON IDÉE</div>
+          <div class="left-label-sub">Tu l'as pas lancée</div>
+        </div>
+      </div>
+
+      <!-- ── RIGHT SIDE — Success ──────────────────────────────── -->
+      <div class="side-right">
+        <div class="side-right-overlay"></div>
+
+        <!-- Floating app screen -->
+        <div class="app-screen" id="app-screen">
+          <div class="money-rain" id="money-rain">
+            <span class="money-bill" id="bill-1" style="left: 15%; top: -40px;">💵</span>
+            <span class="money-bill" id="bill-2" style="left: 35%; top: -40px;">💵</span>
+            <span class="money-bill" id="bill-3" style="left: 55%; top: -40px;">💵</span>
+            <span class="money-bill" id="bill-4" style="left: 75%; top: -40px;">💵</span>
+            <span class="money-bill" id="bill-5" style="left: 25%; top: -40px;">💰</span>
+            <span class="money-bill" id="bill-6" style="left: 65%; top: -40px;">💰</span>
+          </div>
+
+          <div class="app-top-bar">
+            <div class="app-icon">📱</div>
+            <div class="app-name">NicheApp Pro</div>
+            <div class="app-badge">✓ Live</div>
+          </div>
+
+          <div class="app-revenue-label">Revenus ce mois</div>
+          <div class="app-revenue-value" id="revenue-value">10 000€</div>
+          <div class="app-revenue-period">/ mois 🚀</div>
+        </div>
+
+        <!-- Right label -->
+        <div class="right-label" id="right-label">
+          <div class="right-label-top">Quelqu'un d'autre</div>
+          <div class="right-label-main">L'A LANCÉE</div>
+        </div>
+      </div>
+
+      <!-- ── FINAL TEXT ────────────────────────────────────────── -->
+      <div class="final-text" id="final-text">
+        <span class="final-text-line" id="final-word-1">Ça aurait pu </span><span class="final-text-line final-text-em" id="final-word-2">être toi.</span>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+
+        const fps = 30;
+        const duration = 11; // seconds
+        // Repeat count for 11-second ambient loops
+        const ambientCycles = Math.floor(duration / 2.4);
+
+        const tl = gsap.timeline({ paused: true });
+
+        // ── AURORA blobs ambient motion ──────────────────────────
+        // Each blob oscillates on its own path — no repeat:-1
+        tl.to(".blob-1", {
+          x: 60, y: 40,
+          duration: 2.8, ease: "sine.inOut",
+          yoyo: true, repeat: Math.floor(duration / 2.8) - 1
+        }, 0);
+        tl.to(".blob-2", {
+          x: -50, y: -35,
+          duration: 3.2, ease: "sine.inOut",
+          yoyo: true, repeat: Math.floor(duration / 3.2) - 1
+        }, 0.4);
+        tl.to(".blob-3", {
+          x: 30, y: 50,
+          duration: 2.5, ease: "sine.inOut",
+          yoyo: true, repeat: Math.floor(duration / 2.5) - 1
+        }, 0.8);
+        tl.to(".blob-4", {
+          x: -40, y: 30,
+          duration: 3.6, ease: "sine.inOut",
+          yoyo: true, repeat: Math.floor(duration / 3.6) - 1
+        }, 0.2);
+
+        // ── META STRIP entrance ──────────────────────────────────
+        tl.fromTo(".meta-strip",
+          { opacity: 0, y: -10 },
+          { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+          0.15
+        );
+
+        // ── REG MARKS fade in ────────────────────────────────────
+        tl.fromTo(".reg-marks",
+          { opacity: 0 },
+          { opacity: 1, duration: 0.8, ease: "power1.out" },
+          0.1
+        );
+
+        // ── DIVIDER LINE draws from center outward ───────────────
+        tl.fromTo(".divider",
+          { scaleY: 0, opacity: 0 },
+          { scaleY: 1, opacity: 1, duration: 0.9, ease: "expo.out", transformOrigin: "center center" },
+          0.2
+        );
+        tl.fromTo(".divider-glow",
+          { opacity: 0 },
+          { opacity: 1, duration: 1.2, ease: "power2.out" },
+          0.3
+        );
+
+        // Divider breathes (width pulse) — jealousy building
+        tl.to(".divider", {
+          scaleX: 2.5, opacity: 0.9,
+          duration: 1.4, ease: "power2.inOut",
+          yoyo: true, repeat: 3
+        }, 5.5);
+
+        // Divider glow pulses in sync
+        tl.to(".divider-glow", {
+          scaleX: 3, opacity: 0.7,
+          duration: 1.4, ease: "power2.inOut",
+          yoyo: true, repeat: 3
+        }, 5.5);
+
+        // ── LEFT SIDE entrance — silhouette and thoughts ─────────
+        tl.fromTo(".silhouette",
+          { opacity: 0, scale: 0.6, rotation: 15 },
+          { opacity: 1, scale: 1, rotation: 0, duration: 0.8, ease: "back.out(1.7)" },
+          0.5
+        );
+
+        tl.fromTo("#thought-1",
+          { opacity: 0, x: 30, scale: 0.7 },
+          { opacity: 1, x: 0, scale: 1, duration: 0.5, ease: "expo.out" },
+          1.1
+        );
+        tl.fromTo("#thought-2",
+          { opacity: 0, x: 30, scale: 0.7 },
+          { opacity: 1, x: 0, scale: 1, duration: 0.5, ease: "expo.out" },
+          1.4
+        );
+
+        tl.fromTo("#left-label",
+          { opacity: 0, y: 30 },
+          { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
+          1.8
+        );
+
+        // Silhouette subtle tremble (dejection shiver)
+        tl.to(".silhouette", {
+          rotation: -3, x: -4,
+          duration: 0.25, ease: "sine.inOut",
+          yoyo: true, repeat: Math.floor(duration / 0.5) - 1
+        }, 2.5);
+
+        // ── RIGHT SIDE entrance — app screen ─────────────────────
+        tl.fromTo("#app-screen",
+          { opacity: 0, y: -50, scale: 0.85 },
+          { opacity: 1, y: 0, scale: 1, duration: 0.9, ease: "expo.out" },
+          0.7
+        );
+
+        // App screen floats gently (starts after entrance ends at 0.7+0.9=1.6s)
+        tl.to("#app-screen", {
+          y: -16,
+          duration: 2.2, ease: "sine.inOut",
+          yoyo: true, repeat: Math.floor((duration - 1.7) / 2.2) - 1
+        }, 1.7);
+
+        // App screen gold glow pulses
+        tl.to("#app-screen", {
+          boxShadow: "0 0 90px rgba(255,215,0,0.38), 0 0 160px rgba(255,215,0,0.14), inset 0 1px 0 rgba(255,255,255,0.1)",
+          duration: 1.6, ease: "sine.inOut",
+          yoyo: true, repeat: Math.floor(duration / 1.6) - 1
+        }, 1.8);
+
+        tl.fromTo("#right-label",
+          { opacity: 0, y: 30 },
+          { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
+          1.4
+        );
+
+        // ── MONEY RAIN ───────────────────────────────────────────
+        const bills = ["#bill-1", "#bill-2", "#bill-3", "#bill-4", "#bill-5", "#bill-6"];
+        const billDelays = [2.2, 2.6, 3.1, 3.5, 2.9, 3.8];
+        bills.forEach((bill, i) => {
+          const startY = -40;
+          const endY = 160;
+          tl.fromTo(bill,
+            { opacity: 0, y: startY, rotation: -15 + (i * 7) },
+            {
+              opacity: 0.9, y: endY,
+              rotation: 10 - (i * 6),
+              duration: 1.4, ease: "power1.in"
+            },
+            billDelays[i]
+          );
+          tl.to(bill,
+            { opacity: 0, duration: 0.2, ease: "power2.in" },
+            billDelays[i] + 1.2
+          );
+          // Second drop
+          tl.fromTo(bill,
+            { opacity: 0, y: startY, rotation: -10 + (i * 5) },
+            {
+              opacity: 0.9, y: endY + 20,
+              rotation: 15 - (i * 4),
+              duration: 1.3, ease: "power1.in"
+            },
+            billDelays[i] + 2.5
+          );
+          tl.to(bill,
+            { opacity: 0, duration: 0.2, ease: "power2.in" },
+            billDelays[i] + 3.5
+          );
+        });
+
+        // ── REVENUE VALUE highlight (gold flash) ─────────────────
+        tl.fromTo("#revenue-value",
+          { opacity: 0, scale: 0.8 },
+          { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.4)" },
+          1.5
+        );
+        tl.to("#revenue-value", {
+          textShadow: "0 0 40px rgba(255,215,0,0.9)",
+          duration: 0.8, ease: "sine.inOut",
+          yoyo: true, repeat: Math.floor(duration / 1.6) - 1
+        }, 2.2);
+
+        // ── JEALOUSY BUILDS — left blob intensifies ──────────────
+        tl.to(".blob-4", {
+          opacity: 0.7, scale: 1.8,
+          duration: 2.0, ease: "power2.inOut"
+        }, 5.0);
+
+        // ── FINAL TEXT REVEAL (letter by letter feel) ────────────
+        tl.fromTo("#final-word-1",
+          { opacity: 0, y: 40, letterSpacing: "0.2em" },
+          { opacity: 1, y: 0, letterSpacing: "-0.02em", duration: 0.7, ease: "expo.out" },
+          7.8
+        );
+        tl.fromTo("#final-word-2",
+          { opacity: 0, y: 40, scale: 0.85 },
+          { opacity: 1, y: 0, scale: 1, duration: 0.8, ease: "back.out(1.6)" },
+          8.3
+        );
+
+        // Final text ambient glow
+        tl.to("#final-word-2", {
+          filter: "brightness(1.3)",
+          duration: 0.7, ease: "sine.inOut",
+          yoyo: true, repeat: Math.ceil((duration - 8.5) / 0.7) - 1
+        }, 8.9);
+
+        // ── FADE OUT at end (final scene exit) ───────────────────
+        tl.to([".side-left", ".side-right", ".divider", ".divider-glow", ".final-text"],
+          { opacity: 0, duration: 0.6, ease: "power2.in" },
+          10.2
+        );
+        tl.to(".aurora",
+          { opacity: 0, duration: 0.8, ease: "power1.in" },
+          10.3
+        );
+
+        window.__timelines["atmos-anim01"] = tl;
+      </script>
+    </div>
+  </body>
+</html>

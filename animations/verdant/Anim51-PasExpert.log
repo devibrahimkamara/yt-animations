@@ -1,0 +1,132 @@
+Bundling 6%
+Bundling 24%
+Bundling 38%
+Bundling 51%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Getting composition
+Composition          Anim51-PasExpert
+Codec                h264
+Output               animations/verdant/Anim51-PasExpert.mp4
+Concurrency          4x
+Rendered 0/75
+ProtocolError: Protocol error (Page.bringToFront): Target closed. https://www.remotion.dev/docs/target-closed
+    at CDPSession._onClosed (/Users/ibrahimkamara/yt-animations/node_modules/@remotion/renderer/dist/browser/Connection.js:224:42)
+    at #onMessage (/Users/ibrahimkamara/yt-animations/node_modules/@remotion/renderer/dist/browser/Connection.js:85:25)
+    at WebSocket.<anonymous> (/Users/ibrahimkamara/yt-animations/node_modules/@remotion/renderer/dist/browser/NodeWebSocketTransport.js:58:32)
+    at callListener (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/event-target.js:290:14)
+    at WebSocket.onMessage (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/event-target.js:209:9)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/websocket.js:1211:20)
+    at Receiver.emit (node:events:519:28)
+    at Receiver.dataMessage (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/receiver.js:594:14)
+    at Receiver.getData (/Users/ibrahimkamara/yt-animations/node_modules/ws/lib/receiver.js:496:10) {
+  code: undefined,
+  originalMessage: ''
+}
+Rendered 1/75, time remaining: 46m 0s
+Rendered 2/75, time remaining: 1h 10m 13s
+Rendered 3/75, time remaining: 55m 39s
+Rendered 4/75, time remaining: 46m 18s
+Rendered 5/75, time remaining: 36m 56s
+Rendered 6/75, time remaining: 34m 1s
+Rendered 7/75, time remaining: 28m 47s
+Rendered 8/75, time remaining: 27m 33s
+Rendered 9/75, time remaining: 25m 46s
+Rendered 10/75, time remaining: 24m 42s
+Rendered 11/75, time remaining: 22m 11s
+Rendered 12/75, time remaining: 21m 46s
+Rendered 13/75, time remaining: 19m 57s
+Rendered 14/75, time remaining: 18m 43s
+Rendered 15/75, time remaining: 17m 11s
+Rendered 16/75, time remaining: 16m 24s
+Rendered 17/75, time remaining: 15m 18s
+Rendered 18/75, time remaining: 14m 31s
+Rendered 19/75, time remaining: 13m 57s
+Rendered 20/75, time remaining: 13m 8s
+Rendered 21/75, time remaining: 12m 31s
+Rendered 22/75, time remaining: 11m 45s
+Rendered 23/75, time remaining: 11m 40s
+Rendered 24/75, time remaining: 10m 58s
+Rendered 25/75, time remaining: 10m 21s
+Rendered 26/75, time remaining: 9m 48s
+Rendered 27/75, time remaining: 9m 43s
+Rendered 28/75, time remaining: 9m 11s
+Rendered 29/75, time remaining: 8m 43s
+Rendered 30/75, time remaining: 8m 26s
+Rendered 31/75, time remaining: 8m 12s
+Rendered 32/75, time remaining: 7m 47s
+Rendered 33/75, time remaining: 7m 23s
+Rendered 34/75, time remaining: 7m 10s
+Rendered 35/75, time remaining: 6m 56s
+Rendered 36/75, time remaining: 6m 35s
+Rendered 37/75, time remaining: 6m 15s
+Rendered 38/75, time remaining: 6m 4s
+Rendered 39/75, time remaining: 5m 52s
+Rendered 40/75, time remaining: 5m 40s
+Rendered 41/75, time remaining: 5m 22s
+Rendered 42/75, time remaining: 5m 7s
+Rendered 43/75, time remaining: 4m 56s
+Rendered 44/75, time remaining: 4m 44s
+Rendered 45/75, time remaining: 4m 29s
+Rendered 46/75, time remaining: 4m 15s
+Rendered 47/75, time remaining: 4m 7s
+Rendered 48/75, time remaining: 3m 54s
+Rendered 49/75, time remaining: 3m 41s
+Rendered 50/75, time remaining: 3m 29s
+Rendered 51/75, time remaining: 3m 21s
+Rendered 52/75, time remaining: 3m 10s
+Rendered 53/75, time remaining: 2m 58s
+Rendered 54/75, time remaining: 2m 47s
+Rendered 55/75, time remaining: 2m 40s
+Rendered 56/75, time remaining: 2m 30s
+Rendered 57/75, time remaining: 2m 20s
+Rendered 58/75, time remaining: 2m 10s
+Rendered 59/75, time remaining: 2m 3s
+Rendered 60/75, time remaining: 1m 53s
+Rendered 61/75, time remaining: 1m 44s
+Rendered 62/75, time remaining: 1m 35s
+Rendered 63/75, time remaining: 1m 28s
+Rendered 64/75, time remaining: 1m 20s
+Rendered 65/75, time remaining: 1m 12s
+Rendered 66/75, time remaining: 1m 3s
+Rendered 67/75, time remaining: 57s
+Rendered 68/75, time remaining: 49s
+Rendered 69/75, time remaining: 41s
+Rendered 70/75, time remaining: 34s
+Rendered 71/75, time remaining: 27s
+Rendered 72/75, time remaining: 20s
+Rendered 73/75, time remaining: 13s
+Rendered 74/75, time remaining: 6s
+Rendered 75/75
+Encoded 1/75
+Encoded 2/75
+Encoded 2/75
+Encoded 2/75
+Encoded 3/75
+Encoded 3/75
+Encoded 4/75
+Encoded 12/75
+Encoded 18/75
+Encoded 18/75
+Encoded 30/75
+Encoded 30/75
+Encoded 34/75
+Encoded 38/75
+Encoded 42/75
+Encoded 46/75
+Encoded 54/75
+Encoded 58/75
+Encoded 66/75
+Encoded 66/75
+Encoded 66/75
+Encoded 66/75
+Encoded 66/75
+Encoded 75/75
++                    animations/verdant/Anim51-PasExpert.mp4 1 MB

@@ -1,0 +1,155 @@
+Bundling 6%
+Bundling 15%
+Bundling 56%
+Bundling 64%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/4.pack_' -> '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/4.pack'
+Getting composition
+Composition          Anim02-ChatGPTLimite
+Codec                h264
+Output               animations/verdant/Anim02-ChatGPTLimite.mp4
+Concurrency          4x
+Rendered 0/90
+Rendered 1/90, time remaining: 2h 39m 2s
+Rendered 2/90, time remaining: 1h 18m 44s
+Rendered 3/90, time remaining: 51m 53s
+Rendered 4/90, time remaining: 39m 1s
+Rendered 5/90, time remaining: 34m 55s
+Rendered 6/90, time remaining: 28m 46s
+Rendered 7/90, time remaining: 24m 24s
+Rendered 8/90, time remaining: 21m 7s
+Rendered 9/90, time remaining: 20m 44s
+Rendered 10/90, time remaining: 18m 29s
+Rendered 11/90, time remaining: 16m 36s
+Rendered 12/90, time remaining: 15m 5s
+Rendered 13/90, time remaining: 15m 6s
+Rendered 14/90, time remaining: 13m 54s
+Rendered 15/90, time remaining: 12m 49s
+Rendered 16/90, time remaining: 11m 52s
+Rendered 17/90, time remaining: 11m 55s
+Rendered 18/90, time remaining: 11m 6s
+Rendered 19/90, time remaining: 10m 26s
+Rendered 20/90, time remaining: 10m 12s
+Rendered 21/90, time remaining: 9m 52s
+Rendered 22/90, time remaining: 9m 24s
+Rendered 23/90, time remaining: 9m 10s
+Rendered 24/90, time remaining: 9m 0s
+Rendered 25/90, time remaining: 8m 33s
+Rendered 26/90, time remaining: 8m 27s
+Rendered 27/90, time remaining: 8m 1s
+Rendered 28/90, time remaining: 7m 53s
+Rendered 29/90, time remaining: 7m 44s
+Rendered 30/90, time remaining: 7m 25s
+Rendered 31/90, time remaining: 7m 19s
+Rendered 32/90, time remaining: 6m 59s
+Rendered 33/90, time remaining: 7m 1s
+Rendered 34/90, time remaining: 6m 44s
+Rendered 35/90, time remaining: 6m 28s
+Rendered 36/90, time remaining: 6m 22s
+Rendered 37/90, time remaining: 6m 14s
+Rendered 38/90, time remaining: 5m 58s
+Rendered 39/90, time remaining: 5m 54s
+Rendered 40/90, time remaining: 5m 47s
+Rendered 41/90, time remaining: 5m 33s
+Rendered 42/90, time remaining: 5m 20s
+Rendered 43/90, time remaining: 5m 22s
+Rendered 44/90, time remaining: 5m 9s
+Rendered 45/90, time remaining: 4m 57s
+Rendered 46/90, time remaining: 4m 45s
+Rendered 47/90, time remaining: 4m 46s
+Rendered 48/90, time remaining: 4m 36s
+Rendered 49/90, time remaining: 4m 27s
+Rendered 50/90, time remaining: 4m 20s
+Rendered 51/90, time remaining: 4m 13s
+Rendered 52/90, time remaining: 4m 4s
+Rendered 53/90, time remaining: 4m 0s
+Rendered 54/90, time remaining: 3m 51s
+Rendered 55/90, time remaining: 3m 42s
+Rendered 56/90, time remaining: 3m 34s
+Rendered 57/90, time remaining: 3m 30s
+Rendered 58/90, time remaining: 3m 22s
+Rendered 59/90, time remaining: 3m 15s
+Rendered 60/90, time remaining: 3m 9s
+Rendered 61/90, time remaining: 3m 1s
+Rendered 62/90, time remaining: 2m 54s
+Rendered 63/90, time remaining: 2m 47s
+Rendered 64/90, time remaining: 2m 42s
+Rendered 65/90, time remaining: 2m 34s
+Rendered 66/90, time remaining: 2m 27s
+Rendered 67/90, time remaining: 2m 21s
+Rendered 68/90, time remaining: 2m 15s
+Rendered 69/90, time remaining: 2m 8s
+Rendered 70/90, time remaining: 2m 2s
+Rendered 71/90, time remaining: 1m 55s
+Rendered 72/90, time remaining: 1m 49s
+Rendered 73/90, time remaining: 1m 43s
+Rendered 74/90, time remaining: 1m 37s
+Rendered 75/90, time remaining: 1m 31s
+Rendered 76/90, time remaining: 1m 24s
+Rendered 77/90, time remaining: 1m 18s
+Rendered 78/90, time remaining: 1m 12s
+Rendered 79/90, time remaining: 1m 6s
+Rendered 80/90, time remaining: 1m 0s
+Rendered 81/90, time remaining: 53s
+Rendered 82/90, time remaining: 47s
+Rendered 83/90, time remaining: 41s
+Rendered 84/90, time remaining: 35s
+Rendered 85/90, time remaining: 29s
+Rendered 86/90, time remaining: 23s
+Rendered 87/90, time remaining: 17s
+Rendered 88/90, time remaining: 11s
+Rendered 89/90, time remaining: 5s
+Rendered 90/90
+Encoded 1/90
+Encoded 2/90
+Encoded 5/90
+Encoded 5/90
+Encoded 9/90
+Encoded 13/90
+Encoded 14/90
+Encoded 15/90
+Encoded 18/90
+Encoded 18/90
+Encoded 18/90
+Encoded 18/90
+Encoded 18/90
+Encoded 23/90
+Encoded 26/90
+Encoded 30/90
+Encoded 30/90
+Encoded 30/90
+Encoded 31/90
+Encoded 34/90
+Encoded 38/90
+Encoded 42/90
+Encoded 42/90
+Encoded 46/90
+Encoded 47/90
+Encoded 54/90
+Encoded 54/90
+Encoded 54/90
+Encoded 58/90
+Encoded 58/90
+Encoded 58/90
+Encoded 59/90
+Encoded 66/90
+Encoded 66/90
+Encoded 70/90
+Encoded 70/90
+Encoded 70/90
+Encoded 74/90
+Encoded 74/90
+Encoded 78/90
+Encoded 78/90
+Encoded 82/90
+Encoded 82/90
+Encoded 82/90
+Encoded 86/90
+Encoded 90/90
++                    animations/verdant/Anim02-ChatGPTLimite.mp4 866.5 kB

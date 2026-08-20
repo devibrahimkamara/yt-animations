@@ -1,0 +1,125 @@
+Bundling 6%
+Bundling 16%
+Bundling 64%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/4.pack_' -> '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/4.pack'
+Getting composition
+Composition          Anim11-JeMontreTout
+Codec                h264
+Output               animations/verdant/Anim11-JeMontreTout.mp4
+Concurrency          4x
+Rendered 0/60
+Rendered 1/60, time remaining: 30m 27s
+Rendered 2/60, time remaining: 1h 8m 31s
+Rendered 3/60, time remaining: 49m 26s
+Rendered 4/60, time remaining: 40m 52s
+Rendered 5/60, time remaining: 33m 53s
+Rendered 6/60, time remaining: 29m 37s
+Rendered 7/60, time remaining: 25m 36s
+Rendered 8/60, time remaining: 23m 30s
+Rendered 9/60, time remaining: 20m 38s
+Rendered 10/60, time remaining: 19m 44s
+Rendered 11/60, time remaining: 17m 48s
+Rendered 12/60, time remaining: 16m 23s
+Rendered 13/60, time remaining: 14m 56s
+Rendered 14/60, time remaining: 14m 0s
+Rendered 15/60, time remaining: 13m 28s
+Rendered 16/60, time remaining: 12m 25s
+Rendered 17/60, time remaining: 11m 38s
+Rendered 18/60, time remaining: 10m 45s
+Rendered 19/60, time remaining: 10m 30s
+Rendered 20/60, time remaining: 9m 56s
+Rendered 21/60, time remaining: 9m 14s
+Rendered 22/60, time remaining: 8m 48s
+Rendered 23/60, time remaining: 8m 25s
+Rendered 24/60, time remaining: 8m 1s
+Rendered 25/60, time remaining: 7m 47s
+Rendered 26/60, time remaining: 7m 18s
+Rendered 27/60, time remaining: 6m 53s
+Rendered 28/60, time remaining: 6m 32s
+Rendered 29/60, time remaining: 6m 24s
+Rendered 30/60, time remaining: 6m 1s
+Rendered 31/60, time remaining: 5m 44s
+Rendered 32/60, time remaining: 5m 29s
+Rendered 33/60, time remaining: 5m 21s
+Rendered 34/60, time remaining: 5m 2s
+Rendered 35/60, time remaining: 4m 48s
+Rendered 36/60, time remaining: 4m 34s
+Rendered 37/60, time remaining: 4m 26s
+Rendered 38/60, time remaining: 4m 9s
+Rendered 39/60, time remaining: 3m 56s
+Rendered 40/60, time remaining: 3m 43s
+Rendered 41/60, time remaining: 3m 30s
+Rendered 42/60, time remaining: 3m 14s
+Rendered 43/60, time remaining: 3m 6s
+Rendered 44/60, time remaining: 2m 53s
+Rendered 45/60, time remaining: 2m 39s
+Rendered 46/60, time remaining: 2m 27s
+Rendered 47/60, time remaining: 2m 17s
+Rendered 48/60, time remaining: 2m 4s
+Rendered 49/60, time remaining: 1m 52s
+Rendered 50/60, time remaining: 1m 42s
+Rendered 51/60, time remaining: 1m 30s
+Rendered 52/60, time remaining: 1m 20s
+Rendered 53/60, time remaining: 1m 8s
+Rendered 54/60, time remaining: 59s
+Rendered 55/60, time remaining: 49s
+Rendered 56/60, time remaining: 38s
+Rendered 57/60, time remaining: 28s
+Rendered 58/60, time remaining: 19s
+Rendered 59/60, time remaining: 9s
+Rendered 60/60
+Encoded 1/60
+Encoded 1/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 3/60
+Encoded 4/60
+Encoded 4/60
+Encoded 6/60
+Encoded 8/60
+Encoded 10/60
+Encoded 14/60
+Encoded 18/60
+Encoded 18/60
+Encoded 18/60
+Encoded 18/60
+Encoded 26/60
+Encoded 30/60
+Encoded 30/60
+Encoded 30/60
+Encoded 30/60
+Encoded 30/60
+Encoded 34/60
+Encoded 36/60
+Encoded 38/60
+Encoded 39/60
+Encoded 42/60
+Encoded 46/60
+Encoded 46/60
+Encoded 50/60
+Encoded 50/60
+Encoded 50/60
+Encoded 50/60
+Encoded 50/60
+Encoded 50/60
+Encoded 50/60
+Encoded 50/60
+Encoded 50/60
+Encoded 50/60
+Encoded 55/60
+Encoded 60/60
++                    animations/verdant/Anim11-JeMontreTout.mp4 852.5 kB

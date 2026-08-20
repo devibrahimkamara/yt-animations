@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        background: #030818;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        overflow: hidden;
+        width: 1920px;
+        height: 1080px;
+      }
+
+      .aurora { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+      .aurora-blob { position: absolute; border-radius: 50%; filter: blur(140px); }
+      .blob-1 { width: 700px; height: 700px; background: rgba(20,60,220,0.6); top: -200px; right: 100px; }
+      .blob-2 { width: 600px; height: 600px; background: rgba(40,90,255,0.45); bottom: -180px; left: 100px; }
+      .blob-gold { width: 350px; height: 350px; background: rgba(255,215,0,0.1); top: calc(50% - 175px); left: calc(50% - 175px); }
+
+      /* ── TOP LABEL ──────────────────────────────────────────── */
+      .top-label {
+        position: absolute;
+        top: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 40px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.7);
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        z-index: 20;
+        opacity: 0;
+      }
+
+      /* ── RADAR SVG ──────────────────────────────────────────── */
+      #radar-canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        opacity: 0;
+      }
+
+      /* ── BUSINESS ICONS ─────────────────────────────────────── */
+      /* All icons positioned absolutely — 10 total, well-spaced */
+      .biz-dot {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 28px;
+        background: linear-gradient(145deg, rgba(20,40,120,0.9), rgba(8,16,60,0.95));
+        border: 2px solid rgba(80,130,255,0.4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        z-index: 8;
+        opacity: 0;
+      }
+
+      .dot-emoji { font-size: 48px; line-height: 1; }
+      .dot-label {
+        font-size: 20px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.8);
+        letter-spacing: 0.02em;
+        text-align: center;
+      }
+
+      /* Target icons (hair salons) — golden treatment */
+      .biz-dot.target {
+        border-color: rgba(255,215,0,0.7);
+        background: linear-gradient(145deg, rgba(60,40,5,0.9), rgba(40,25,3,0.95));
+        box-shadow: 0 0 30px rgba(255,215,0,0.35);
+      }
+      .biz-dot.target .dot-label { color: rgba(255,215,0,0.9); }
+
+      /* ── PHASE LABELS ───────────────────────────────────────── */
+      .phase-strip {
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 20;
+        opacity: 0;
+      }
+
+      .phase-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        opacity: 0.3;
+      }
+      .phase-item.active { opacity: 1; }
+
+      .phase-dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba(136,170,255,0.4);
+        flex-shrink: 0;
+      }
+      .phase-item.active .phase-dot { background: #3060ff; box-shadow: 0 0 12px rgba(48,96,255,0.8); }
+      .phase-item.wave-2.active .phase-dot { background: #22c55e; box-shadow: 0 0 12px rgba(34,197,94,0.8); }
+      .phase-item.wave-3.active .phase-dot { background: #ffd700; box-shadow: 0 0 12px rgba(255,215,0,0.8); }
+
+      .phase-text {
+        font-size: 28px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.5);
+        letter-spacing: 0.04em;
+      }
+      .phase-item.active .phase-text { color: #ffffff; }
+
+      /* ── LOCK-ON LABEL ──────────────────────────────────────── */
+      .lock-label {
+        position: absolute;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 25;
+        opacity: 0;
+      }
+
+      .lock-box {
+        background: linear-gradient(135deg, rgba(80,50,0,0.95), rgba(50,30,0,0.98));
+        border: 2.5px solid rgba(255,215,0,0.85);
+        border-radius: 24px;
+        padding: 24px 56px;
+        box-shadow: 0 0 50px rgba(255,215,0,0.4), 0 0 100px rgba(255,215,0,0.15);
+        white-space: nowrap;
+        text-align: center;
+      }
+
+      .lock-tag {
+        font-size: 26px;
+        font-weight: 700;
+        color: rgba(255,215,0,0.75);
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+
+      .lock-title {
+        font-size: 64px;
+        font-weight: 800;
+        color: #ffd700;
+        letter-spacing: -0.02em;
+        text-shadow: 0 0 40px rgba(255,215,0,0.8);
+      }
+
+      /* ── TARGETING RETICLE ──────────────────────────────────── */
+      .reticle {
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid rgba(255,215,0,0.9);
+        box-shadow: 0 0 30px rgba(255,215,0,0.6), inset 0 0 30px rgba(255,215,0,0.1);
+        z-index: 18;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .reticle-dot {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 14px; height: 14px;
+        border-radius: 50%;
+        background: #ffd700;
+        box-shadow: 0 0 20px rgba(255,215,0,1);
+      }
+
+      /* Reg marks */
+      .reg { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+      .rc { position: absolute; width: 28px; height: 28px; opacity: 0.22; }
+      .rc.tl { top: 32px; left: 32px; border-top: 2px solid rgba(136,170,255,0.8); border-left: 2px solid rgba(136,170,255,0.8); }
+      .rc.tr { top: 32px; right: 32px; border-top: 2px solid rgba(136,170,255,0.8); border-right: 2px solid rgba(136,170,255,0.8); }
+      .rc.bl { bottom: 32px; left: 32px; border-bottom: 2px solid rgba(136,170,255,0.8); border-left: 2px solid rgba(136,170,255,0.8); }
+      .rc.br { bottom: 32px; right: 32px; border-bottom: 2px solid rgba(136,170,255,0.8); border-right: 2px solid rgba(136,170,255,0.8); }
+    </style>
+  </head>
+  <body>
+    <div data-composition-id="atmos-anim05" data-start="0" data-width="1920" data-height="1080">
+
+      <div class="aurora">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-gold"></div>
+      </div>
+
+      <div class="reg">
+        <div class="rc tl"></div><div class="rc tr"></div>
+        <div class="rc bl"></div><div class="rc br"></div>
+      </div>
+
+      <div class="top-label" id="top-label">Trouver ta niche cible</div>
+
+      <!-- Radar SVG -->
+      <svg id="radar-canvas" width="900" height="900" viewBox="0 0 900 900">
+        <circle cx="450" cy="450" r="100" fill="none" stroke="rgba(48,96,255,0.08)" stroke-width="1.5"/>
+        <circle cx="450" cy="450" r="200" fill="none" stroke="rgba(48,96,255,0.07)" stroke-width="1.5"/>
+        <circle cx="450" cy="450" r="300" fill="none" stroke="rgba(48,96,255,0.06)" stroke-width="1.5"/>
+        <circle cx="450" cy="450" r="400" fill="none" stroke="rgba(48,96,255,0.05)" stroke-width="1"/>
+        <line x1="450" y1="60" x2="450" y2="840" stroke="rgba(48,96,255,0.05)" stroke-width="1"/>
+        <line x1="60" y1="450" x2="840" y2="450" stroke="rgba(48,96,255,0.05)" stroke-width="1"/>
+        <!-- Sonar pulses -->
+        <circle id="pulse-1" cx="450" cy="450" r="20" fill="none" stroke="rgba(48,96,255,0.9)" stroke-width="3" opacity="0"/>
+        <circle id="pulse-2" cx="450" cy="450" r="20" fill="none" stroke="rgba(34,197,94,0.9)" stroke-width="3" opacity="0"/>
+        <circle id="pulse-3" cx="450" cy="450" r="20" fill="none" stroke="rgba(255,215,0,0.9)" stroke-width="3.5" opacity="0"/>
+        <circle cx="450" cy="450" r="8" fill="rgba(48,96,255,0.9)" id="center-dot"/>
+      </svg>
+
+      <!-- 10 icons: 6 generic + 4 target (hair salons) — well spaced -->
+      <!-- Generic icons -->
+      <div class="biz-dot" id="d0" style="left:180px;top:160px;"><span class="dot-emoji">🍽️</span><span class="dot-label">Restaurant</span></div>
+      <div class="biz-dot" id="d1" style="left:820px;top:80px;"><span class="dot-emoji">🏋️</span><span class="dot-label">Sport</span></div>
+      <div class="biz-dot" id="d2" style="left:1480px;top:160px;"><span class="dot-emoji">🩺</span><span class="dot-label">Médecin</span></div>
+      <div class="biz-dot" id="d3" style="left:180px;top:780px;"><span class="dot-emoji">👗</span><span class="dot-label">Boutique</span></div>
+      <div class="biz-dot" id="d4" style="left:820px;top:860px;"><span class="dot-emoji">⚖️</span><span class="dot-label">Avocat</span></div>
+      <div class="biz-dot" id="d5" style="left:1480px;top:780px;"><span class="dot-emoji">🦷</span><span class="dot-label">Dentiste</span></div>
+      <!-- Target icons (hair salons) -->
+      <div class="biz-dot target" id="d6" style="left:620px;top:200px;"><span class="dot-emoji">✂️</span><span class="dot-label">Coiffeur</span></div>
+      <div class="biz-dot target" id="d7" style="left:1180px;top:200px;"><span class="dot-emoji">✂️</span><span class="dot-label">Coiffeur</span></div>
+      <div class="biz-dot target" id="d8" style="left:620px;top:720px;"><span class="dot-emoji">✂️</span><span class="dot-label">Coiffeur</span></div>
+      <div class="biz-dot target" id="d9" style="left:1180px;top:720px;"><span class="dot-emoji">✂️</span><span class="dot-label">Coiffeur</span></div>
+
+      <!-- Phase strip -->
+      <div class="phase-strip" id="phase-strip">
+        <div class="phase-item wave-1 active" id="ph1">
+          <div class="phase-dot"></div>
+          <div class="phase-text">Toutes les entreprises</div>
+        </div>
+        <div class="phase-item wave-2" id="ph2">
+          <div class="phase-dot"></div>
+          <div class="phase-text">Petites entreprises</div>
+        </div>
+        <div class="phase-item wave-3" id="ph3">
+          <div class="phase-dot"></div>
+          <div class="phase-text">Ta niche cible</div>
+        </div>
+      </div>
+
+      <!-- Reticle -->
+      <div class="reticle" id="reticle">
+        <div class="reticle-dot"></div>
+      </div>
+
+      <!-- Lock label -->
+      <div class="lock-label" id="lock-label">
+        <div class="lock-box">
+          <div class="lock-tag">✦ Niche verrouillée</div>
+          <div class="lock-title">✂️ Salons de coiffure</div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const duration = 14;
+
+        const tl = gsap.timeline({ paused: true });
+
+        // Aurora
+        tl.to('.blob-1', { x: 60, y: 50, duration: 3.2, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.2)-1 }, 0);
+        tl.to('.blob-2', { x: -50, y: -40, duration: 3.8, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.8)-1 }, 0.7);
+
+        // Reg / top label
+        tl.fromTo('.reg', { opacity: 0 }, { opacity: 1, duration: 0.5 }, 0.1);
+        tl.fromTo('#top-label', { opacity: 0, y: -15 }, { opacity: 1, y: 0, duration: 0.7, ease: 'expo.out' }, 0.3);
+
+        // Radar appears
+        tl.fromTo('#radar-canvas', { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.8, ease: 'expo.out' }, 0.5);
+
+        // Phase strip
+        tl.fromTo('#phase-strip', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.7, ease: 'expo.out' }, 0.8);
+
+        // All icons appear
+        for (let i = 0; i <= 9; i++) {
+          tl.fromTo('#d' + i,
+            { opacity: 0, scale: 0.5 },
+            { opacity: 1, scale: 1, duration: 0.4, ease: 'back.out(1.6)' },
+            0.8 + i * 0.08
+          );
+        }
+
+        // Center dot pulses
+        tl.to('#center-dot', {
+          attr: { r: 20 }, opacity: 0,
+          duration: 1.0, ease: 'power1.out', yoyo: false, repeat: Math.floor(duration/1.0)-1
+        }, 0.6);
+
+        // ── WAVE 1: Blue sonar — reveals all ─────────────────
+        tl.fromTo('#pulse-1',
+          { attr: { r: 20 }, opacity: 0.9 },
+          { attr: { r: 430 }, opacity: 0, duration: 1.6, ease: 'power1.out' },
+          1.8
+        );
+
+        // ── WAVE 2: Green — generic icons dim ─────────────────
+        tl.fromTo('#pulse-2',
+          { attr: { r: 20 }, opacity: 0.9 },
+          { attr: { r: 430 }, opacity: 0, duration: 1.6, ease: 'power1.out' },
+          4.0
+        );
+
+        // Phase 2 becomes active
+        tl.to('#ph1', { opacity: 0.3, duration: 0.4 }, 4.2);
+        tl.to('#ph2', { opacity: 1, duration: 0.4 }, 4.2);
+        tl.to('#ph2 .phase-dot', { background: '#22c55e', boxShadow: '0 0 12px rgba(34,197,94,0.8)', duration: 0.3 }, 4.2);
+        tl.to('#ph2 .phase-text', { color: '#ffffff', duration: 0.3 }, 4.2);
+
+        // Generic icons dim significantly
+        for (let i = 0; i <= 5; i++) {
+          tl.to('#d' + i, { opacity: 0.12, scale: 0.7, duration: 0.5, ease: 'power2.out' }, 4.3 + i * 0.07);
+        }
+
+        // ── WAVE 3: Gold — lock on hair salons ────────────────
+        tl.fromTo('#pulse-3',
+          { attr: { r: 20 }, opacity: 0.9 },
+          { attr: { r: 430 }, opacity: 0, duration: 1.5, ease: 'power1.out' },
+          6.5
+        );
+
+        // Phase 3 active
+        tl.to('#ph2', { opacity: 0.3, duration: 0.4 }, 6.7);
+        tl.to('#ph3', { opacity: 1, duration: 0.4 }, 6.7);
+        tl.to('#ph3 .phase-dot', { background: '#ffd700', boxShadow: '0 0 12px rgba(255,215,0,0.8)', duration: 0.3 }, 6.7);
+        tl.to('#ph3 .phase-text', { color: '#ffd700', duration: 0.3 }, 6.7);
+
+        // Generic icons disappear
+        for (let i = 0; i <= 5; i++) {
+          tl.to('#d' + i, { opacity: 0, scale: 0.3, duration: 0.3, ease: 'power3.in' }, 6.8 + i * 0.04);
+        }
+
+        // Target icons light up
+        for (let i = 6; i <= 9; i++) {
+          tl.to('#d' + i, {
+            scale: 1.3, boxShadow: '0 0 50px rgba(255,215,0,0.7)',
+            borderColor: 'rgba(255,215,0,0.95)',
+            duration: 0.5, ease: 'back.out(1.4)'
+          }, 7.0 + (i-6) * 0.12);
+        }
+
+        // Gold aurora
+        tl.to('.blob-gold', { opacity: 0.45, scale: 3.5, duration: 1.5, ease: 'power2.out' }, 6.5);
+
+        // Reticle zooms in
+        tl.fromTo('#reticle',
+          { opacity: 0.9, width: '900px', height: '900px', left: '510px', top: '90px' },
+          { width: '350px', height: '350px', left: '785px', top: '365px', duration: 1.2, ease: 'expo.inOut' },
+          7.5
+        );
+        tl.to('#reticle', {
+          boxShadow: '0 0 60px rgba(255,215,0,0.8), inset 0 0 60px rgba(255,215,0,0.15)',
+          duration: 0.6, ease: 'sine.inOut', yoyo: true, repeat: Math.floor((duration - 8.8) / 0.6) - 1
+        }, 8.8);
+
+        // Lock label
+        tl.fromTo('#lock-label',
+          { opacity: 0, y: 40, scale: 0.85 },
+          { opacity: 1, y: 0, scale: 1, duration: 0.8, ease: 'expo.out' },
+          9.2
+        );
+
+        // Fade out
+        tl.to(['#radar-canvas', '.biz-dot', '#reticle', '#lock-label', '#phase-strip', '#top-label'],
+          { opacity: 0, duration: 0.6, ease: 'power2.in' }, 13.2);
+        tl.to('.aurora', { opacity: 0, duration: 0.8, ease: 'power1.in' }, 13.2);
+
+        window.__timelines['atmos-anim05'] = tl;
+      </script>
+    </div>
+  </body>
+</html>

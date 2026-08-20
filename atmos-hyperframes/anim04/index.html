@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        background: #030818;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        overflow: hidden;
+        width: 1920px;
+        height: 1080px;
+      }
+
+      .aurora { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+      .aurora-blob { position: absolute; border-radius: 50%; filter: blur(140px); }
+      .blob-1 { width: 700px; height: 700px; background: rgba(20,60,220,0.6); top: -180px; left: -80px; }
+      .blob-2 { width: 600px; height: 600px; background: rgba(40,90,255,0.5); bottom: -160px; right: -80px; }
+      .blob-3 { width: 500px; height: 500px; background: rgba(180,30,30,0.15); top: calc(50% - 250px); left: calc(50% - 250px); }
+
+      /* ── TOP SECTION ────────────────────────────────────────── */
+      .top-label {
+        position: absolute;
+        top: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 40px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.7);
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        z-index: 20;
+        opacity: 0;
+      }
+
+      /* ── CENTER LOGO ────────────────────────────────────────── */
+      .center-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        z-index: 15;
+      }
+
+      .logo-ring {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        border: 3px solid rgba(48,96,255,0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle, rgba(48,96,255,0.18) 0%, rgba(8,16,60,0.85) 70%);
+        box-shadow: 0 0 80px rgba(48,96,255,0.35), 0 0 160px rgba(48,96,255,0.15);
+      }
+
+      .logo-inner {
+        text-align: center;
+      }
+
+      .logo-main-text {
+        font-size: 42px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: 0.04em;
+        line-height: 1.15;
+      }
+
+      .logo-sub {
+        font-size: 22px;
+        font-weight: 600;
+        color: rgba(136,170,255,0.6);
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-top: 10px;
+      }
+
+      /* Orbit ring (decorative) */
+      .orbit-ring {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        border: 1.5px solid rgba(48,96,255,0.12);
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
+
+      /* ── BUSINESS ICONS ─────────────────────────────────────── */
+      .biz-icon {
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        border-radius: 32px;
+        background: linear-gradient(145deg, rgba(20,40,120,0.9), rgba(8,16,60,0.95));
+        border: 2px solid rgba(80,130,255,0.4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        box-shadow: 0 0 30px rgba(48,96,255,0.2);
+        z-index: 10;
+      }
+
+      .biz-emoji {
+        font-size: 60px;
+        line-height: 1;
+      }
+
+      .biz-label {
+        font-size: 24px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.85);
+        letter-spacing: 0.02em;
+        text-align: center;
+      }
+
+      /* ── FINAL MESSAGE ──────────────────────────────────────── */
+      .final-msg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 20;
+        opacity: 0;
+        white-space: nowrap;
+      }
+
+      .final-title {
+        font-size: 110px;
+        font-weight: 800;
+        color: #ef4444;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        text-shadow: 0 0 60px rgba(239,68,68,0.6);
+      }
+
+      .final-sub {
+        font-size: 44px;
+        font-weight: 600;
+        color: rgba(136,170,255,0.75);
+        letter-spacing: 0.02em;
+        margin-top: 16px;
+      }
+
+      /* Shockwave */
+      .shockwave {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 3px solid rgba(48,96,255,0.7);
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        z-index: 12;
+      }
+
+      /* Reg marks */
+      .reg { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+      .rc { position: absolute; width: 28px; height: 28px; opacity: 0.22; }
+      .rc.tl { top: 32px; left: 32px; border-top: 2px solid rgba(136,170,255,0.8); border-left: 2px solid rgba(136,170,255,0.8); }
+      .rc.tr { top: 32px; right: 32px; border-top: 2px solid rgba(136,170,255,0.8); border-right: 2px solid rgba(136,170,255,0.8); }
+      .rc.bl { bottom: 32px; left: 32px; border-bottom: 2px solid rgba(136,170,255,0.8); border-left: 2px solid rgba(136,170,255,0.8); }
+      .rc.br { bottom: 32px; right: 32px; border-bottom: 2px solid rgba(136,170,255,0.8); border-right: 2px solid rgba(136,170,255,0.8); }
+    </style>
+  </head>
+  <body>
+    <div data-composition-id="atmos-anim04" data-start="0" data-width="1920" data-height="1080">
+
+      <div class="aurora">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-3"></div>
+      </div>
+
+      <div class="reg">
+        <div class="rc tl"></div><div class="rc tr"></div>
+        <div class="rc bl"></div><div class="rc br"></div>
+      </div>
+
+      <div class="top-label" id="top-label">Erreur #1 des développeurs</div>
+
+      <!-- Orbit rings (subtle) -->
+      <div class="orbit-ring" style="width:560px;height:560px;"></div>
+      <div class="orbit-ring" style="width:780px;height:780px;"></div>
+
+      <!-- Center logo -->
+      <div class="center-logo" id="center-logo">
+        <div class="logo-ring" id="logo-ring">
+          <div class="logo-inner">
+            <div class="logo-main-text">ALL-IN-ONE<br>PRO</div>
+          </div>
+        </div>
+        <div class="logo-sub">Pour tout le monde</div>
+      </div>
+
+      <!-- 6 Business icons — positioned at fixed clean positions -->
+      <!-- Top-left -->
+      <div class="biz-icon" id="biz-0" style="left:300px;top:160px;">
+        <span class="biz-emoji">💇</span>
+        <span class="biz-label">Coiffeur</span>
+      </div>
+      <!-- Top-center -->
+      <div class="biz-icon" id="biz-1" style="left:880px;top:80px;">
+        <span class="biz-emoji">🍽️</span>
+        <span class="biz-label">Restaurant</span>
+      </div>
+      <!-- Top-right -->
+      <div class="biz-icon" id="biz-2" style="left:1460px;top:160px;">
+        <span class="biz-emoji">🏋️</span>
+        <span class="biz-label">Salle sport</span>
+      </div>
+      <!-- Bottom-left -->
+      <div class="biz-icon" id="biz-3" style="left:300px;top:760px;">
+        <span class="biz-emoji">🩺</span>
+        <span class="biz-label">Médecin</span>
+      </div>
+      <!-- Bottom-center -->
+      <div class="biz-icon" id="biz-4" style="left:880px;top:840px;">
+        <span class="biz-emoji">👗</span>
+        <span class="biz-label">Boutique</span>
+      </div>
+      <!-- Bottom-right -->
+      <div class="biz-icon" id="biz-5" style="left:1460px;top:760px;">
+        <span class="biz-emoji">⚖️</span>
+        <span class="biz-label">Avocat</span>
+      </div>
+
+      <!-- Shockwave -->
+      <div class="shockwave" id="shockwave"></div>
+
+      <!-- Final message -->
+      <div class="final-msg" id="final-msg">
+        <div class="final-title">Trop large = invisible</div>
+        <div class="final-sub">Personne ne se reconnaît dans votre produit</div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const duration = 13;
+
+        const tl = gsap.timeline({ paused: true });
+
+        // Aurora ambient
+        tl.to('.blob-1', { x: 60, y: 50, duration: 3.0, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.0)-1 }, 0);
+        tl.to('.blob-2', { x: -50, y: -40, duration: 3.5, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.5)-1 }, 0.5);
+
+        // Reg marks
+        tl.fromTo('.reg', { opacity: 0 }, { opacity: 1, duration: 0.5 }, 0.1);
+        tl.fromTo('#top-label', { opacity: 0, y: -15 }, { opacity: 1, y: 0, duration: 0.7, ease: 'expo.out' }, 0.3);
+
+        // Logo appears big and confident
+        tl.fromTo('#center-logo',
+          { opacity: 0, scale: 0.5 },
+          { opacity: 1, scale: 1, duration: 0.9, ease: 'back.out(1.6)' },
+          0.6
+        );
+
+        // Logo glow breathes
+        tl.to('#logo-ring', {
+          boxShadow: '0 0 120px rgba(48,96,255,0.55), 0 0 240px rgba(48,96,255,0.2)',
+          duration: 1.5, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/1.5)-1
+        }, 1.0);
+
+        // Orbit rings pulse
+        tl.to('.orbit-ring', {
+          opacity: 0.35, duration: 1.2, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/1.2)-1, stagger: 0.4
+        }, 0.8);
+
+        // Business icons fly in from far outside, one by one
+        const icons = [
+          { id: '#biz-0', fromX: -500, fromY: -300 },
+          { id: '#biz-1', fromX: 0,    fromY: -500 },
+          { id: '#biz-2', fromX: 500,  fromY: -300 },
+          { id: '#biz-3', fromX: -500, fromY: 300  },
+          { id: '#biz-4', fromX: 0,    fromY: 500  },
+          { id: '#biz-5', fromX: 500,  fromY: 300  },
+        ];
+
+        icons.forEach(({ id, fromX, fromY }, i) => {
+          tl.fromTo(id,
+            { opacity: 0, x: fromX, y: fromY, scale: 0.4 },
+            { opacity: 1, x: 0, y: 0, scale: 1, duration: 0.55, ease: 'expo.out' },
+            1.4 + i * 0.18
+          );
+        });
+
+        // Icons gently float after landing
+        tl.to('.biz-icon', {
+          y: -10, duration: 2.0, ease: 'sine.inOut', yoyo: true,
+          repeat: Math.floor((duration - 4.5) / 2.0) - 1, stagger: 0.3
+        }, 4.5);
+
+        // ── REJECTION: icons shake then fly away ──────────────
+        const escapePositions = [
+          { x: -700, y: -500 }, { x: 0, y: -600 }, { x: 700, y: -500 },
+          { x: -700, y: 500 },  { x: 0, y: 600 },  { x: 700, y: 500 },
+        ];
+
+        icons.forEach(({ id }, i) => {
+          const startTime = 5.8 + i * 0.3;
+          // Shake
+          tl.to(id, { x: -12, duration: 0.08, ease: 'sine.inOut', yoyo: true, repeat: 5 }, startTime);
+          // Turn red border
+          tl.to(id, { borderColor: 'rgba(239,68,68,0.9)', duration: 0.15 }, startTime + 0.2);
+          // Fly away fast
+          tl.to(id, {
+            x: escapePositions[i].x, y: escapePositions[i].y,
+            opacity: 0, scale: 0.2,
+            duration: 0.5, ease: 'power3.in'
+          }, startTime + 0.4);
+        });
+
+        // Logo shrinks as icons leave
+        tl.to('#center-logo', { scale: 0.55, duration: 2.5, ease: 'power2.inOut' }, 5.8);
+
+        // Red blob intensifies
+        tl.to('.blob-3', { opacity: 0.55, scale: 2.8, duration: 2.0, ease: 'power2.out' }, 6.5);
+
+        // ── LOGO EXPLODES ─────────────────────────────────────
+        tl.fromTo('#shockwave',
+          { opacity: 0.9, width: '20px', height: '20px' },
+          { opacity: 0, width: '1200px', height: '1200px', duration: 1.0, ease: 'power2.out' },
+          9.5
+        );
+        tl.to('#center-logo', { opacity: 0, scale: 0, duration: 0.35, ease: 'power3.in' }, 9.4);
+
+        // ── FINAL MESSAGE ─────────────────────────────────────
+        tl.fromTo('#final-msg',
+          { opacity: 0, scale: 0.8, y: 30 },
+          { opacity: 1, scale: 1, y: 0, duration: 0.9, ease: 'expo.out' },
+          10.2
+        );
+        tl.to('#final-msg .final-title', {
+          textShadow: '0 0 100px rgba(239,68,68,0.9)',
+          duration: 0.8, ease: 'sine.inOut', yoyo: true,
+          repeat: Math.floor((duration - 10.8) / 0.8) - 1
+        }, 10.8);
+
+        // Fade out
+        tl.to(['#final-msg', '.orbit-ring', '#top-label'], { opacity: 0, duration: 0.6, ease: 'power2.in' }, 12.2);
+        tl.to('.aurora', { opacity: 0, duration: 0.8, ease: 'power1.in' }, 12.2);
+
+        window.__timelines['atmos-anim04'] = tl;
+      </script>
+    </div>
+  </body>
+</html>

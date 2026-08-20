@@ -1,0 +1,503 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        background: #030818;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        overflow: hidden;
+        width: 1920px;
+        height: 1080px;
+      }
+
+      .aurora { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+      .aurora-blob { position: absolute; border-radius: 50%; filter: blur(140px); }
+      .blob-1 { width: 700px; height: 700px; background: rgba(20,60,220,0.6); top: -200px; left: -100px; }
+      .blob-2 { width: 600px; height: 600px; background: rgba(40,90,255,0.45); bottom: -180px; right: -100px; }
+      .blob-red   { width: 400px; height: 400px; background: rgba(239,68,68,0.1); top: calc(50% - 200px); left: calc(25% - 200px); }
+      .blob-green { width: 400px; height: 400px; background: rgba(34,197,94,0.08); top: calc(50% - 200px); left: calc(75% - 200px); }
+
+      /* ── TOP LABEL ──────────────────────────────────────────── */
+      .top-label {
+        position: absolute;
+        top: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 38px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.65);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        z-index: 20;
+        opacity: 0;
+      }
+
+      /* ── STAGE ──────────────────────────────────────────────── */
+      .stage {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+      }
+
+      /* ── PHASE HEADER ───────────────────────────────────────── */
+      .phase-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 32px;
+        opacity: 0;
+      }
+
+      .phase-badge {
+        font-size: 32px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        padding: 10px 28px;
+        border-radius: 50px;
+      }
+      .phase-badge.bad  { background: rgba(239,68,68,0.15); border: 2px solid rgba(239,68,68,0.5); color: #ef4444; }
+      .phase-badge.good { background: rgba(34,197,94,0.15); border: 2px solid rgba(34,197,94,0.5); color: #22c55e; }
+
+      .phase-title {
+        font-size: 44px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+      }
+
+      .phase-price {
+        margin-left: auto;
+        font-size: 56px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        font-variant-numeric: tabular-nums;
+      }
+      .phase-price.bad  { color: #ef4444; }
+      .phase-price.good { color: #22c55e; }
+
+      /* ── SCREEN WRAP ────────────────────────────────────────── */
+      .screen-wrap {
+        width: 1200px;
+        border-radius: 32px;
+        border: 2px solid rgba(80,130,255,0.3);
+        background: linear-gradient(145deg, rgba(20,40,120,0.8), rgba(8,16,60,0.9));
+        box-shadow: 0 0 60px rgba(48,96,255,0.2), 0 0 120px rgba(48,96,255,0.08);
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* ── COMPLEX UI (Phase 1) ────────────────────────────────── */
+      .complex-ui {
+        padding: 40px 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .complex-nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: nowrap;
+        overflow: hidden;
+      }
+
+      .nav-tab {
+        flex: 1;
+        background: rgba(48,96,255,0.12);
+        border: 1.5px solid rgba(48,96,255,0.25);
+        border-radius: 12px;
+        padding: 14px 10px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.75);
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+      }
+      .nav-tab.active {
+        background: rgba(48,96,255,0.25);
+        border-color: rgba(48,96,255,0.6);
+        color: #ffffff;
+      }
+
+      .complex-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+
+      .complex-cell {
+        background: rgba(255,255,255,0.04);
+        border: 1.5px solid rgba(255,255,255,0.08);
+        border-radius: 16px;
+        padding: 22px 24px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .cell-icon-big { font-size: 36px; flex-shrink: 0; }
+      .cell-info { flex: 1; }
+      .cell-name {
+        font-size: 26px;
+        font-weight: 700;
+        color: rgba(136,170,255,0.8);
+        margin-bottom: 4px;
+      }
+      .cell-detail {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgba(136,170,255,0.45);
+      }
+
+      .chaos-warning {
+        position: absolute;
+        background: rgba(239,68,68,0.18);
+        border: 1.5px solid rgba(239,68,68,0.6);
+        border-radius: 12px;
+        padding: 8px 20px;
+        font-size: 22px;
+        font-weight: 800;
+        color: #ef4444;
+      }
+
+      /* ── CLEAN UI (Phase 2) ──────────────────────────────────── */
+      .clean-ui {
+        padding: 40px 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+      }
+
+      .clean-app-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 8px;
+      }
+
+      .clean-logo {
+        width: 64px; height: 64px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #3060ff, #22c55e);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 34px;
+      }
+
+      .clean-app-name {
+        font-size: 44px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+      }
+
+      .clean-feature {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 24px 28px;
+        background: rgba(34,197,94,0.07);
+        border: 2px solid rgba(34,197,94,0.3);
+        border-radius: 20px;
+      }
+
+      .feat-check {
+        width: 48px; height: 48px;
+        border-radius: 50%;
+        background: rgba(34,197,94,0.2);
+        border: 2px solid rgba(34,197,94,0.5);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 26px;
+        flex-shrink: 0;
+        color: #22c55e;
+      }
+
+      .feat-text {
+        font-size: 34px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.01em;
+      }
+
+      /* ── PRICE COMPARISON ───────────────────────────────────── */
+      .price-compare {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        margin-top: 40px;
+        opacity: 0;
+      }
+
+      .price-card {
+        flex: 1;
+        padding: 32px 40px;
+        border-radius: 28px;
+        text-align: center;
+      }
+
+      .price-card.bad {
+        background: rgba(239,68,68,0.1);
+        border: 2px solid rgba(239,68,68,0.45);
+      }
+      .price-card.good {
+        background: rgba(34,197,94,0.1);
+        border: 2px solid rgba(34,197,94,0.45);
+        box-shadow: 0 0 40px rgba(34,197,94,0.2);
+      }
+
+      .price-brand {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+      .price-card.bad  .price-brand { color: rgba(239,68,68,0.7); }
+      .price-card.good .price-brand { color: rgba(34,197,94,0.7); }
+
+      .price-amount {
+        font-size: 80px;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        font-variant-numeric: tabular-nums;
+        line-height: 1;
+      }
+      .price-card.bad  .price-amount { color: #ef4444; text-decoration: line-through; text-decoration-color: rgba(239,68,68,0.7); }
+      .price-card.good .price-amount { color: #22c55e; }
+
+      .price-period {
+        font-size: 28px;
+        font-weight: 600;
+        opacity: 0.6;
+        margin-top: 6px;
+      }
+      .price-card.bad  .price-period { color: #ef4444; }
+      .price-card.good .price-period { color: #22c55e; }
+
+      .arrow-sep {
+        font-size: 72px;
+        font-weight: 800;
+        color: rgba(136,170,255,0.4);
+        flex-shrink: 0;
+      }
+
+      /* Reg marks */
+      .reg { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+      .rc { position: absolute; width: 28px; height: 28px; opacity: 0.22; }
+      .rc.tl { top: 32px; left: 32px; border-top: 2px solid rgba(136,170,255,0.8); border-left: 2px solid rgba(136,170,255,0.8); }
+      .rc.tr { top: 32px; right: 32px; border-top: 2px solid rgba(136,170,255,0.8); border-right: 2px solid rgba(136,170,255,0.8); }
+      .rc.bl { bottom: 32px; left: 32px; border-bottom: 2px solid rgba(136,170,255,0.8); border-left: 2px solid rgba(136,170,255,0.8); }
+      .rc.br { bottom: 32px; right: 32px; border-bottom: 2px solid rgba(136,170,255,0.8); border-right: 2px solid rgba(136,170,255,0.8); }
+    </style>
+  </head>
+  <body>
+    <div data-composition-id="atmos-anim06" data-start="0" data-width="1920" data-height="1080">
+
+      <div class="aurora">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-red"></div>
+        <div class="aurora-blob blob-green"></div>
+      </div>
+      <div class="reg">
+        <div class="rc tl"></div><div class="rc tr"></div>
+        <div class="rc bl"></div><div class="rc br"></div>
+      </div>
+
+      <div class="top-label" id="top-label">Logiciels traditionnels vs Ton App</div>
+
+      <div class="stage">
+
+        <!-- Phase header — shown for each phase -->
+        <div class="phase-header" id="phase-header-1">
+          <div class="phase-badge bad">Avant</div>
+          <div class="phase-title">Logiciel traditionnel</div>
+          <div class="phase-price bad">300€<span style="font-size:36px;font-weight:600">/mois</span></div>
+        </div>
+        <div class="phase-header" id="phase-header-2" style="opacity:0;position:absolute;top:148px;">
+          <div class="phase-badge good">Après</div>
+          <div class="phase-title">Ton App niche</div>
+          <div class="phase-price good">29€<span style="font-size:36px;font-weight:600">/mois ✓</span></div>
+        </div>
+
+        <!-- Screen -->
+        <div class="screen-wrap" id="screen-wrap" style="height:500px;">
+
+          <!-- Complex UI -->
+          <div class="complex-ui" id="complex-ui">
+            <div class="complex-nav">
+              <div class="nav-tab active">Tableau de bord</div>
+              <div class="nav-tab">Comptabilité</div>
+              <div class="nav-tab">RH</div>
+              <div class="nav-tab">Stocks</div>
+              <div class="nav-tab">Rapports</div>
+              <div class="nav-tab">Paramètres</div>
+            </div>
+            <div class="complex-grid">
+              <div class="complex-cell">
+                <span class="cell-icon-big">📊</span>
+                <div class="cell-info">
+                  <div class="cell-name">Analyse financière</div>
+                  <div class="cell-detail">Module 1 sur 47 actifs</div>
+                </div>
+              </div>
+              <div class="complex-cell">
+                <span class="cell-icon-big">👥</span>
+                <div class="cell-info">
+                  <div class="cell-name">Gestion des équipes</div>
+                  <div class="cell-detail">324 paramètres avancés</div>
+                </div>
+              </div>
+              <div class="complex-cell">
+                <span class="cell-icon-big">📋</span>
+                <div class="cell-info">
+                  <div class="cell-name">Contrats & Juridique</div>
+                  <div class="cell-detail">Inutilisé pour vous</div>
+                </div>
+              </div>
+              <div class="complex-cell">
+                <span class="cell-icon-big">🔔</span>
+                <div class="cell-info">
+                  <div class="cell-name">127 notifications</div>
+                  <div class="cell-detail">Configuration requise</div>
+                </div>
+              </div>
+            </div>
+            <!-- Chaos warnings -->
+            <div class="chaos-warning" id="cw1" style="bottom:30px;left:40px;">⚠ Trop complexe</div>
+            <div class="chaos-warning" id="cw2" style="bottom:30px;right:40px;">⚠ Inutile pour toi</div>
+          </div>
+
+          <!-- Clean UI -->
+          <div class="clean-ui" id="clean-ui">
+            <div class="clean-app-header">
+              <div class="clean-logo">✂️</div>
+              <div class="clean-app-name">CoiffeurPro</div>
+            </div>
+            <div class="clean-feature" id="feat-1">
+              <div class="feat-check">✓</div>
+              <div class="feat-text">📅 Gestion des rendez-vous</div>
+            </div>
+            <div class="clean-feature" id="feat-2">
+              <div class="feat-check">✓</div>
+              <div class="feat-text">💳 Caisse simplifiée</div>
+            </div>
+            <div class="clean-feature" id="feat-3">
+              <div class="feat-check">✓</div>
+              <div class="feat-text">🌟 Fidélité clients</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Price comparison -->
+        <div class="price-compare" id="price-compare">
+          <div class="price-card bad">
+            <div class="price-brand">Sage / SAP</div>
+            <div class="price-amount">300€</div>
+            <div class="price-period">/ mois</div>
+          </div>
+          <div class="arrow-sep">→</div>
+          <div class="price-card good">
+            <div class="price-brand">Ton App Niche</div>
+            <div class="price-amount">29€</div>
+            <div class="price-period">/ mois ✓</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const duration = 15;
+
+        const tl = gsap.timeline({ paused: true });
+
+        // Aurora
+        tl.to('.blob-1', { x: 60, y: 50, duration: 3.0, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.0)-1 }, 0);
+        tl.to('.blob-2', { x: -50, y: -40, duration: 3.5, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.5)-1 }, 0.5);
+        tl.to('.blob-red',  { x: -30, y: 20, duration: 2.8, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/2.8)-1 }, 0.3);
+        tl.to('.blob-green',{ x: 30, y: -20, duration: 3.2, ease: 'sine.inOut', yoyo: true, repeat: Math.floor(duration/3.2)-1 }, 0.8);
+
+        // Reg / top label
+        tl.fromTo('.reg', { opacity: 0 }, { opacity: 1, duration: 0.5 }, 0.1);
+        tl.fromTo('#top-label', { opacity: 0, y: -15 }, { opacity: 1, y: 0, duration: 0.6, ease: 'expo.out' }, 0.3);
+
+        // Phase 1 header + screen entrance
+        tl.fromTo('#phase-header-1', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.7, ease: 'expo.out' }, 0.5);
+        tl.fromTo('#screen-wrap', { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.9, ease: 'expo.out' }, 0.7);
+
+        // Nav tabs appear
+        tl.fromTo('.nav-tab', { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, stagger: 0.08, ease: 'power2.out' }, 1.1);
+        // Grid cells appear
+        tl.fromTo('.complex-cell', { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, stagger: 0.1, ease: 'back.out(1.4)' }, 1.5);
+        tl.fromTo(['.chaos-warning'], { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.35, stagger: 0.2, ease: 'back.out(2)' }, 2.4);
+
+        // Screen glows red
+        tl.to('#screen-wrap', {
+          borderColor: 'rgba(239,68,68,0.6)',
+          boxShadow: '0 0 70px rgba(239,68,68,0.28), 0 0 140px rgba(239,68,68,0.1)',
+          duration: 0.8, ease: 'power2.out'
+        }, 3.5);
+
+        // Complex UI melts down
+        tl.to('.nav-tab', { y: 50, opacity: 0, duration: 0.4, stagger: 0.05, ease: 'power2.in' }, 5.0);
+        tl.to('.complex-cell', { y: 60, opacity: 0, scaleY: 0.4, duration: 0.4, stagger: 0.06, ease: 'power3.in' }, 5.2);
+        tl.to(['.chaos-warning'], { y: 70, opacity: 0, duration: 0.35, stagger: 0.1, ease: 'power2.in' }, 5.5);
+        tl.to('#complex-ui', { opacity: 0, duration: 0.3 }, 5.9);
+        tl.set('#complex-ui', { visibility: 'hidden' }, 6.2);
+
+        // Phase 1 header out, phase 2 in
+        tl.to('#phase-header-1', { opacity: 0, y: -15, duration: 0.35 }, 5.4);
+        tl.fromTo('#phase-header-2', { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.6, ease: 'expo.out' }, 6.3);
+
+        // Screen turns green
+        tl.to('#screen-wrap', {
+          borderColor: 'rgba(34,197,94,0.55)',
+          boxShadow: '0 0 70px rgba(34,197,94,0.28), 0 0 140px rgba(34,197,94,0.1)',
+          duration: 0.6, ease: 'power2.out'
+        }, 6.3);
+
+        // Clean UI builds in
+        tl.fromTo('#clean-ui', { opacity: 1 }, { opacity: 1, duration: 0 }, 6.4);
+        tl.fromTo('#clean-ui .clean-app-header', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6, ease: 'expo.out' }, 6.5);
+        tl.fromTo('#feat-1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, ease: 'back.out(1.4)' }, 7.0);
+        tl.fromTo('#feat-2', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, ease: 'back.out(1.4)' }, 7.4);
+        tl.fromTo('#feat-3', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, ease: 'back.out(1.4)' }, 7.8);
+
+        // Price comparison
+        tl.fromTo('#price-compare', { opacity: 0 }, { opacity: 1, duration: 0 }, 9.0);
+        tl.fromTo('.price-card.bad', { opacity: 0, x: -50, scale: 0.8 }, { opacity: 1, x: 0, scale: 1, duration: 0.6, ease: 'expo.out' }, 9.0);
+        tl.fromTo('.arrow-sep', { opacity: 0 }, { opacity: 1, duration: 0.4 }, 9.5);
+        tl.fromTo('.price-card.good', { opacity: 0, x: 50, scale: 0.8 }, { opacity: 1, x: 0, scale: 1, duration: 0.7, ease: 'back.out(1.8)' }, 9.7);
+
+        // Good card pulses
+        tl.to('.price-card.good', {
+          boxShadow: '0 0 60px rgba(34,197,94,0.5), 0 0 120px rgba(34,197,94,0.18)',
+          scale: 1.04,
+          duration: 0.8, ease: 'sine.inOut', yoyo: true,
+          repeat: Math.floor((duration - 10.5) / 0.8) - 1
+        }, 10.5);
+
+        // Fade out
+        tl.to(['.stage', '.top-label', '.aurora'], { opacity: 0, duration: 0.7, ease: 'power2.in' }, 14.1);
+
+        window.__timelines['atmos-anim06'] = tl;
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "remotion-studio",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["node_modules/@remotion/cli/remotion-cli.js", "studio", "--no-open"],
+      "port": 3000
+    },
+    {
+      "name": "atmos-preview",
+      "runtimeExecutable": "hyperframes",
+      "runtimeArgs": ["preview", "atmos-hyperframes", "--port", "3334", "--no-open"],
+      "port": 3334
+    }
+  ]
+}

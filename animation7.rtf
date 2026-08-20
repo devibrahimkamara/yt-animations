@@ -1,0 +1,960 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\froman\fcharset0 Times-Bold;\f2\fmodern\fcharset0 Courier;
+\f3\froman\fcharset0 TimesNewRomanPS-BoldMT;\f4\fnil\fcharset0 Menlo-Regular;\f5\froman\fcharset0 TimesNewRomanPSMT;
+\f6\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red109\green109\blue109;\red0\green0\blue0;
+\red16\green19\blue24;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c50196\c50196\c50196;\cssrgb\c0\c0\c0\c84706;
+\cssrgb\c7843\c9412\c12157;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Voici le brief ultra-d\'e9taill\'e9 pour l'animation 7 \'97 la transition \'ab Pas d'IA \'bb vs \'ab 2026 \'bb. C'est l'animation la plus conceptuelle de la s\'e9rie : elle doit faire ressentir un saut dans le temps et une transformation radicale des possibilit\'e9s en quelques secondes.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Concept en une phrase\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 L'\'e9cran est coup\'e9 en deux par un balayage diagonal qui r\'e9v\'e8le le pr\'e9sent sur le pass\'e9 : \'e0 gauche un monde en noir et blanc avec juste un crayon, \'e0 droite un monde en couleur avec des outils IA qui surgissent en cascade. Message visuel : \'ab le monde a chang\'e9, et ceux qui utilisent ces outils ont un avantage massif \'bb.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Specs globales\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Dur\'e9e totale : 
+\f1\b 5 sec (150 frames)
+\f0\b0 . Composition 
+\f2\fs26 1920\'d71080
+\f0\fs24 , fps 
+\f2\fs26 30
+\f0\fs24 . Cette animation est la seule qui utilise deux fonds diff\'e9rents simultan\'e9ment \'97 c'est sa particularit\'e9 technique et visuelle.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Direction artistique\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Deux univers visuels radicalement oppos\'e9s coexistent \'e0 l'\'e9cran, s\'e9par\'e9s par une ligne de balayage :\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 C\'f4t\'e9 gauche \'97 Le pass\'e9
+\f0\b0  : noir et blanc, 
+\f2\fs26 filter: grayscale(1) brightness(0.7)
+\f0\fs24 . Fond 
+\f2\fs26 #1A1A1A
+\f0\fs24 . Ambiance froide, aust\'e8re, limit\'e9e. Un seul objet : un crayon. Typo : serif vieilli, cr\'e8me 
+\f2\fs26 #E8E0D0
+\f0\fs24 .\
+
+\f1\b C\'f4t\'e9 droit \'97 Le pr\'e9sent
+\f0\b0  : couleurs vives, fond bleu nuit 
+\f2\fs26 #0F172A
+\f0\fs24  avec des accents lumineux. Ambiance tech, dynamique, abondante. Plusieurs ic\'f4nes d'outils IA en couleur. Typo : Inter, blanc et bleu vif.\
+La 
+\f1\b ligne de s\'e9paration
+\f0\b0  entre les deux mondes est le protagoniste de l'animation : un trait diagonal lumineux blanc qui balaie de gauche \'e0 droite et r\'e9v\'e8le le futur sur le pass\'e9.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 0 \'97 \'c9tat initial (frames 0 
+\f3 \uc0\u8594 
+\f1  15)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 L'\'e9cran commence enti\'e8rement dans l'univers du pass\'e9 : fond 
+\f2\fs26 #1A1A1A
+\f0\fs24 , 
+\f2\fs26 filter: grayscale(1) brightness(0.7)
+\f0\fs24  sur toute la composition. Ce n'est pas le fond des animations pr\'e9c\'e9dentes \'97 c'est un gris tr\'e8s sombre, pas le bleu nuit. Ce contraste de fond marque la rupture temporelle.\
+De f0 \'e0 f15, trois \'e9l\'e9ments du pass\'e9 apparaissent en stagger de 5 frames via 
+\f2\fs26 opacity: 0 
+\f4 \uc0\u8594 
+\f2  1
+\f0\fs24  + 
+\f2\fs26 translateY: +20px 
+\f4 \uc0\u8594 
+\f2  0
+\f0\fs24 , spring doux 
+\f2\fs26 \{ damping: 14, stiffness: 100 \}
+\f0\fs24  :\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 \'c9l\'e9ment 1 (f0)
+\f0\b0  : Label en haut au centre. Texte : 
+\f1\b \'ab \'c0 l'\'e9poque \'bb
+\f0\b0 , Playfair Display Italic 36px, cr\'e8me 
+\f2\fs26 #E8E0D0
+\f0\fs24 . Position : 
+\f2\fs26 y: 180px
+\f0\fs24 , centr\'e9.\
+
+\f1\b \'c9l\'e9ment 2 (f5)
+\f0\b0  : Le crayon SVG au centre de l'\'e9cran. Dessin\'e9 en CSS/SVG : corps rectangulaire 
+\f2\fs26 width: 24px, height: 200px
+\f0\fs24 , bois 
+\f2\fs26 #C4A265
+\f0\fs24 , bout m\'e9tal 
+\f2\fs26 #9CA3AF
+\f0\fs24 , mine pointue noire. Centr\'e9 \'e0 
+\f2\fs26 x: 960px, y: 500px
+\f0\fs24 . L\'e9g\'e8re rotation de \uc0\u8722 15\'b0 pour qu'il soit inclin\'e9 comme pos\'e9 sur une table.\
+
+\f1\b \'c9l\'e9ment 3 (f10)
+\f0\b0  : Sous le crayon, un label : 
+\f1\b \'ab Pas d'IA. Pas d'outils. \'bb
+\f0\b0 , Playfair Display Regular 28px, gris clair 
+\f2\fs26 #9CA3AF
+\f0\fs24 . 
+\f2\fs26 y: 680px
+\f0\fs24 , centr\'e9.\
+\'c0 f12, une 
+\f1\b fine ligne de soulignement
+\f0\b0  sous \'ab \'c0 l'\'e9poque \'bb se dessine de gauche \'e0 droite (
+\f2\fs26 width: 0 
+\f4 \uc0\u8594 
+\f2  180px
+\f0\fs24  via interpolate sur 8 frames) en cr\'e8me 
+\f2\fs26 #E8E0D0
+\f0\fs24 , 
+\f2\fs26 height: 1px
+\f0\fs24 .\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 1 \'97 La ligne de balayage arrive (frames 15 
+\f3 \uc0\u8594 
+\f1  30)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 \'c0 f15, la ligne de balayage diagonale entre depuis le bord gauche de l'\'e9cran.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Construction de la ligne diagonale\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 La ligne n'est pas verticale \'97 elle est inclin\'e9e \'e0 
+\f1\b \uc0\u8722 12\'b0
+\f0\b0  (l\'e9g\'e8rement pench\'e9e vers la droite en haut). Ce l\'e9ger angle la rend plus dynamique qu'une simple coupure verticale et rappelle visuellement un mouvement de lame.\
+Techniquement : un 
+\f2\fs26 <div>
+\f0\fs24  de 
+\f2\fs26 width: 6px, height: 1400px
+\f0\fs24  (assez grand pour d\'e9passer l'\'e9cran en haut et en bas vu l'inclinaison), 
+\f2\fs26 background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0) 100%)
+\f0\fs24 , 
+\f2\fs26 transform: rotate(-12deg)
+\f0\fs24 , 
+\f2\fs26 position: absolute
+\f0\fs24 . Il se d\'e9place de 
+\f2\fs26 left: -20px
+\f0\fs24  \'e0 
+\f2\fs26 left: 1920px
+\f0\fs24  via 
+\f2\fs26 interpolate(frame, [15, 95], [-20, 1920])
+\f0\fs24 .\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Le glow de la ligne\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 Derri\'e8re la ligne principale, deux lignes suppl\'e9mentaires identiques mais avec 
+\f2\fs26 opacity: 0.2
+\f0\fs24  et 
+\f2\fs26 width: 40px
+\f0\fs24  (glow large) + 
+\f2\fs26 filter: blur(8px)
+\f0\fs24 , et une autre 
+\f2\fs26 opacity: 0.5
+\f0\fs24  et 
+\f2\fs26 width: 16px
+\f0\fs24  + 
+\f2\fs26 filter: blur(3px)
+\f0\fs24  (glow moyen). Les trois bougent ensemble au m\'eame rythme. R\'e9sultat : la ligne a un halo lumineux qui pr\'e9c\'e8de et suit le trait fin. Effet sabre laser, tr\'e8s premium.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 L'\'e9asing du balayage\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs26 \cf0 Easing.bezier(0.4, 0, 0.2, 1)
+\f0\fs24  : le balayage d\'e9marre rapidement (impression d'un coup de lame) puis ralentit l\'e9g\'e8rement vers f80-f95 pour laisser le temps aux ic\'f4nes IA d'appara\'eetre. La ligne ne s'arr\'eate pas \'97 elle sort par le bord droit \'e0 f95.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 2 \'97 La r\'e9v\'e9lation du pr\'e9sent (frames 15 
+\f3 \uc0\u8594 
+\f1  95)\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\fs24 \cf0 Le clipPath de r\'e9v\'e9lation\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 Tout le c\'f4t\'e9 droit (le monde pr\'e9sent) est masqu\'e9 par un 
+\f2\fs26 clipPath
+\f0\fs24  rectangulaire dont la largeur suit la position de la ligne de balayage : 
+\f2\fs26 width = interpolate(frame, [15, 95], [0, 1920])
+\f0\fs24 . La r\'e9v\'e9lation commence donc \'e0 f15 (0px de large) et couvre tout l'\'e9cran \'e0 f95 (1920px).\
+\'c0 l'int\'e9rieur de ce clipPath, le fond passe au bleu nuit 
+\f2\fs26 #0F172A
+\f0\fs24  \'97 le fond tech premium des autres animations. Pas de grayscale ici.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 La transition du fond\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 Le passage de 
+\f2\fs26 #1A1A1A
+\f0\fs24  (pass\'e9) \'e0 
+\f2\fs26 #0F172A
+\f0\fs24  (pr\'e9sent) se fait via la r\'e9v\'e9lation du clipPath, pas via une transition de couleur. \'c0 gauche de la ligne = pass\'e9 gris. \'c0 droite = pr\'e9sent bleu. La ligne est la fronti\'e8re entre les deux mondes.\
+Pour g\'e9rer \'e7a proprement : deux 
+\f2\fs26 <AbsoluteFill>
+\f0\fs24  superpos\'e9es. La premi\'e8re (pass\'e9) toujours visible, avec 
+\f2\fs26 filter: grayscale(1) brightness(0.7)
+\f0\fs24 . La seconde (pr\'e9sent) par-dessus, masqu\'e9e par le clipPath qui s'ouvre. Le pr\'e9sent \'ab \'e9crase \'bb visuellement le pass\'e9 au fur et \'e0 mesure.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 3 \'97 Les \'e9l\'e9ments du pass\'e9 qui s'estompent (frames 30 
+\f3 \uc0\u8594 
+\f1  75)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Pendant que la ligne avance, les \'e9l\'e9ments du pass\'e9 qui se retrouvent \'ab d\'e9pass\'e9s \'bb par la ligne s'estompent progressivement :\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 Le crayon
+\f0\b0  : quand la ligne passe devant lui (vers f50-f55 selon sa position X), le crayon fait 
+\f2\fs26 opacity: 1 
+\f4 \uc0\u8594 
+\f2  0
+\f0\fs24  sur 20 frames + 
+\f2\fs26 scale: 1 
+\f4 \uc0\u8594 
+\f2  0.8
+\f0\fs24  + l\'e9ger 
+\f2\fs26 translateY: 0 
+\f4 \uc0\u8594 
+\f2  +30px
+\f0\fs24 . Il \'ab tombe \'bb dans le pass\'e9. Simultan\'e9ment, \'e0 sa place dans le monde pr\'e9sent, rien ne le remplace \'97 cet espace vide cr\'e9e une micro-tension avant l'arriv\'e9e des ic\'f4nes IA.\
+
+\f1\b Le label \'ab \'c0 l'\'e9poque \'bb
+\f0\b0  : s'efface \'e0 f40 via 
+\f2\fs26 opacity: 1 
+\f4 \uc0\u8594 
+\f2  0
+\f0\fs24  sur 15 frames.\
+
+\f1\b Le label \'ab Pas d'IA \'bb
+\f0\b0  : s'efface \'e0 f55 via 
+\f2\fs26 opacity: 1 
+\f4 \uc0\u8594 
+\f2  0
+\f0\fs24  sur 15 frames.\
+
+\f1\b La ligne de soulignement
+\f0\b0  : dispara\'eet en 
+\f2\fs26 width: 180px 
+\f4 \uc0\u8594 
+\f2  0
+\f0\fs24  sur 10 frames \'e0 f45.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 4 \'97 Les ic\'f4nes IA qui surgissent (frames 45 
+\f3 \uc0\u8594 
+\f1  110)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 C'est la phase la plus vibrante de l'animation. Les ic\'f4nes d'outils IA surgissent dans la partie d\'e9j\'e0 r\'e9v\'e9l\'e9e du pr\'e9sent, 
+\f1\b juste derri\'e8re la ligne
+\f0\b0  au fur et \'e0 mesure qu'elle avance \'97 comme si la ligne les \'ab lib\'e9rait \'bb.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Les 7 outils IA\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 Chaque outil est une carte CSS arrondie contenant : une ic\'f4ne lucide-react color\'e9e + un label texte. Les cartes sont positionn\'e9es en deux rang\'e9es sur la droite de l'\'e9cran (la partie d\'e9j\'e0 r\'e9v\'e9l\'e9e).\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2340\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2077\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth1673\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\f1\b \cf0 #\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Outil\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Ic\'f4ne lucide\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Couleur accent\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Position (x, y)\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 D\'e9lai apparition\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2340\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2077\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth1673\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b0 \cf0 1\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Claude\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 <Bot>
+\f0\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 #F97316
+\f0\fs24  orange\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 420px, 280px\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f45\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2340\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2077\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth1673\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 2\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 ChatGPT\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 <MessageSquare>
+\f0\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 #10B981
+\f0\fs24  vert\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 680px, 220px\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f52\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2340\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2077\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth1673\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 3\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Midjourney\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 <Image>
+\f0\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 #8B5CF6
+\f0\fs24  violet\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 920px, 300px\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f59\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2340\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2077\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth1673\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 4\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Runway\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 <Film>
+\f0\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 #EC4899
+\f0\fs24  rose\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 560px, 480px\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f66\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2340\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2077\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth1673\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 5\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 ElevenLabs\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 <Mic>
+\f0\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 #F59E0B
+\f0\fs24  or\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 800px, 500px\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f73\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2340\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2077\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth1673\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 6\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Suno\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 <Music>
+\f0\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 #06B6D4
+\f0\fs24  cyan\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 1040px, 420px\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f80\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2340\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2077\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth1673\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 7\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Make\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 <Workflow>
+\f0\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 <#6366F1>
+\f0\fs24  indigo\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 700px, 660px\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f87\cell \lastrow\row
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 Note importante sur les positions X : ces outils apparaissent dans la zone 
+\f1\b d\'e9j\'e0 r\'e9v\'e9l\'e9e
+\f0\b0  par la ligne. Assure-toi que la ligne est bien pass\'e9e devant leur position X avant leur d\'e9lai d'apparition. Avec la ligne qui va de 
+\f2\fs26 x: 0
+\f0\fs24  \'e0 
+\f2\fs26 x: 1920
+\f0\fs24  en 80 frames (f15
+\f5 \uc0\u8594 
+\f0 f95), elle avance de 
+\f2\fs26 24px/frame
+\f0\fs24 . V\'e9rifie que 
+\f2\fs26 positionX < (d\'e9lai - 15) * 24
+\f0\fs24  pour chaque outil.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Construction de chaque carte outil\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs26 \cf0 width: 160px, height: 68px
+\f0\fs24 , 
+\f2\fs26 border-radius: 14px
+\f0\fs24 , 
+\f2\fs26 background: rgba(30, 41, 59, 0.85)
+\f0\fs24 , 
+\f2\fs26 border: 1.5px solid [couleur accent avec opacity 0.4]
+\f0\fs24 , 
+\f2\fs26 backdrop-filter: blur(8px)
+\f0\fs24 , 
+\f2\fs26 box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 0 0 1px [couleur accent avec opacity 0.1]
+\f0\fs24 .\
+\'c0 l'int\'e9rieur, flex row centr\'e9 :\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Ic\'f4ne lucide 
+\f2\fs26 20px
+\f0\fs24 , couleur accent.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Texte label Inter Medium 
+\f2\fs26 16px
+\f0\fs24  blanc 
+\f2\fs26 #F8FAFC
+\f0\fs24 , 
+\f2\fs26 margin-left: 10px
+\f0\fs24 .\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Animation d'apparition de chaque carte\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 Chaque carte arrive depuis 
+\f1\b juste derri\'e8re la ligne
+\f0\b0  : elle part d'une position X l\'e9g\'e8rement \'e0 gauche de sa position finale (
+\f2\fs26 translateX: -30px 
+\f4 \uc0\u8594 
+\f2  0
+\f0\fs24 ) + 
+\f2\fs26 opacity: 0 
+\f4 \uc0\u8594 
+\f2  1
+\f0\fs24  + 
+\f2\fs26 scale: 0.85 
+\f4 \uc0\u8594 
+\f2  1
+\f0\fs24 . Spring : 
+\f2\fs26 \{ damping: 12, stiffness: 180 \}
+\f0\fs24 . Le d\'e9calage de 
+\f2\fs26 \uc0\u8722 30px
+\f0\fs24  fait qu'elles semblent \'ab sortir \'bb de la ligne au moment o\'f9 elle passe.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 La connexion entre les cartes\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 De f90 \'e0 f110, de fines lignes SVG se dessinent entre les cartes (stroke-dashoffset, \'e9paisseur 
+\f2\fs26 1px
+\f0\fs24 , couleur 
+\f2\fs26 rgba(148, 163, 184, 0.2)
+\f0\fs24 ) pour cr\'e9er un r\'e9seau visuel minimaliste entre les outils. \'c7a cr\'e9e l'impression d'un \'e9cosyst\'e8me connect\'e9. Les connexions ne relient pas toutes les cartes \'97 juste 4 \'e0 5 paires proches : 1
+\f5 \uc0\u8596 
+\f0 2, 2
+\f5 \uc0\u8596 
+\f0 3, 1
+\f5 \uc0\u8596 
+\f0 4, 4
+\f5 \uc0\u8596 
+\f0 5, 5
+\f5 \uc0\u8596 
+\f0 6.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 5 \'97 Les labels de titre (frames 80 
+\f3 \uc0\u8594 
+\f1  120)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Une fois que la majorit\'e9 des ic\'f4nes sont apparues et que la ligne a presque fini son balayage (f80+), les grands labels de titre du pr\'e9sent arrivent :\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 Label principal
+\f0\b0  : 
+\f1\b \'ab 2026 \'bb
+\f0\b0 , Inter Black 
+\f1\b 120px
+\f0\b0 , blanc 
+\f2\fs26 #FFFFFF
+\f0\fs24 , centr\'e9 horizontalement, 
+\f2\fs26 y: 120px
+\f0\fs24 . Entr\'e9e : 
+\f2\fs26 scale: 0.8 
+\f4 \uc0\u8594 
+\f2  1
+\f0\fs24  + 
+\f2\fs26 opacity: 0 
+\f4 \uc0\u8594 
+\f2  1
+\f0\fs24  via spring doux 
+\f2\fs26 \{ damping: 18, stiffness: 100 \}
+\f0\fs24  \'e0 f80.\
+
+\f1\b Sous-label
+\f0\b0  : 
+\f1\b \'ab L'IA change tout \'bb
+\f0\b0 , Inter Medium 
+\f1\b 32px
+\f0\b0 , bleu clair 
+\f2\fs26 #93C5FD
+\f0\fs24 , 
+\f2\fs26 y: 245px
+\f0\fs24 , centr\'e9. Appara\'eet \'e0 f90 via 
+\f2\fs26 opacity: 0 
+\f4 \uc0\u8594 
+\f2  1
+\f0\fs24  sur 15 frames, 
+\f2\fs26 translateY: +10px 
+\f4 \uc0\u8594 
+\f2  0
+\f0\fs24 .\
+
+\f1\b Label secondaire droit
+\f0\b0  : 
+\f1\b \'ab + de 50 outils disponibles \'bb
+\f0\b0 , Inter Regular 
+\f1\b 22px
+\f0\b0 , gris 
+\f2\fs26 #64748B
+\f0\fs24 , 
+\f2\fs26 y: 750px
+\f0\fs24 , centr\'e9. Appara\'eet \'e0 f100 via 
+\f2\fs26 opacity: 0 
+\f4 \uc0\u8594 
+\f2  1
+\f0\fs24  sur 12 frames. Donne de la profondeur sans surcharger.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Phase 6 \'97 Le maintien et les micro-animations (frames 110 
+\f3 \uc0\u8594 
+\f1  150)\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\fs24 \cf0 Le maintien\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0 \cf0 \'c0 f110, la sc\'e8ne est compl\'e8te : ligne pass\'e9e, ic\'f4nes toutes visibles, titres affich\'e9s. 40 frames de maintien pour que le spectateur absorbe tout.\
+\pard\pardeftab720\sa319\partightenfactor0
+
+\f1\b \cf0 Les micro-animations de vie pendant le maintien\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 Flottement des cartes outils
+\f0\b0  : chaque carte a un micro-flottement sinuso\'efdal ind\'e9pendant : 
+\f2\fs26 translateY: Math.sin(frame / 18 + i * 0.9) * 4
+\f0\fs24  o\'f9 
+\f2\fs26 i
+\f0\fs24  est l'index de la carte. Chacune bouge l\'e9g\'e8rement \'e0 son propre rythme \'97 l'ensemble vit sans bouger trop.\
+
+\f1\b Pulse des ic\'f4nes
+\f0\b0  : toutes les 45 frames environ (donc une fois pendant le maintien), chaque carte fait un micro-pulse 
+\f2\fs26 scale: 1 
+\f4 \uc0\u8594 
+\f2  1.04 
+\f4 \uc0\u8594 
+\f2  1
+\f0\fs24  d\'e9clench\'e9 \'e0 des moments diff\'e9rents selon son index. Jamais toutes en m\'eame temps.\
+
+\f1\b Particules de fond
+\f0\b0  : 15 petits points lumineux (
+\f2\fs26 width: 2px, height: 2px
+\f0\fs24 , 
+\f2\fs26 border-radius: 50%
+\f0\fs24 ) de couleurs vari\'e9es (bleu, violet, vert, orange \'97 reprenant les couleurs accent des cartes) d\'e9rivent lentement vers le haut dans la zone droite via 
+\f2\fs26 translateY: Math.sin(frame / 25 + i) * 3 - (frame - 110) * 0.3
+\f0\fs24 . Ils cr\'e9ent une ambiance de fond sans jamais distraire du contenu principal.\
+
+\f1\b Halo de \'ab 2026 \'bb
+\f0\b0  : le chiffre \'ab 2026 \'bb gagne progressivement un 
+\f2\fs26 text-shadow: 0 0 30px rgba(147,197,253,0.4)
+\f0\fs24  entre f110 et f130 via 
+\f2\fs26 interpolate
+\f0\fs24  sur l'opacit\'e9 du glow. Subtil mais il donne une pr\'e9sence lumineuse au titre.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 \'c9l\'e9ment bonus \'97 La ligne r\'e9siduelle (frames 95 
+\f3 \uc0\u8594 
+\f1  120)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Quand la ligne principale sort par le bord droit \'e0 f95, elle ne dispara\'eet pas compl\'e8tement. Elle laisse une 
+\f1\b trace r\'e9siduelle
+\f0\b0  : une fine ligne verticale lumineuse qui reste sur le bord droit de l'\'e9cran (
+\f2\fs26 x: 1900px
+\f0\fs24 ), 
+\f2\fs26 width: 2px, height: 1080px
+\f0\fs24 , 
+\f2\fs26 background: linear-gradient(180deg, transparent, rgba(255,255,255,0.15), transparent)
+\f0\fs24 , 
+\f2\fs26 opacity: 0.6 
+\f4 \uc0\u8594 
+\f2  0
+\f0\fs24  sur 25 frames (f95 
+\f5 \uc0\u8594 
+\f0  f120). Comme la tra\'eene d'un \'e9clair. Tr\'e8s subtil mais \'e9l\'e9gant.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 D\'e9coupage temporel complet\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\fs24 \cf0 Phase\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Frames\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Ce qui se passe\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b0 \cf0 \'c9tat initial pass\'e9\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f0 
+\f5 \uc0\u8594 
+\f0  f15\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Fond gris, crayon, labels apparaissent\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Ligne entre + balaye\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f15 
+\f5 \uc0\u8594 
+\f0  f95\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Balayage diagonal gauche 
+\f5 \uc0\u8594 
+\f0  droite\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 R\'e9v\'e9lation clipPath\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f15 
+\f5 \uc0\u8594 
+\f0  f95\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Zone pr\'e9sent s'ouvre derri\'e8re la ligne\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \'c9l\'e9ments pass\'e9 s'effacent\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f30 
+\f5 \uc0\u8594 
+\f0  f75\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Crayon tombe, labels disparaissent\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Ic\'f4ne 1 Claude\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f45\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Sort de derri\'e8re la ligne\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Ic\'f4nes 2-7\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f52 
+\f5 \uc0\u8594 
+\f0  f87\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Stagger de 7 frames\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Connexions r\'e9seau\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f90 
+\f5 \uc0\u8594 
+\f0  f110\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Lignes SVG entre les cartes\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Label \'ab 2026 \'bb\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f80\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Scale spring\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Sous-labels\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f90 
+\f5 \uc0\u8594 
+\f0  f100\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Fade in stagger\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Ligne sort + trace\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f95 
+\f5 \uc0\u8594 
+\f0  f120\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Bord droit, fade out\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2438\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1231\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3612\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Maintien + micro-anims\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 f110 
+\f5 \uc0\u8594 
+\f0  f150\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Flottement, pulse, particules, glow\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Param\'e8tres Remotion concrets\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f0\b0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour le double fond : deux 
+\f2\fs26 <AbsoluteFill>
+\f0\fs24  superpos\'e9es. La premi\'e8re avec 
+\f2\fs26 filter: grayscale(1) brightness(0.7)
+\f0\fs24  contient tous les \'e9l\'e9ments du pass\'e9. La seconde avec 
+\f2\fs26 clipPath="url(#reveal)"
+\f0\fs24  contient tous les \'e9l\'e9ments du pr\'e9sent.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour le clipPath de r\'e9v\'e9lation : 
+\f2\fs26 <clipPath id="reveal"><rect x="0" y="0" width=\{revealWidth\} height="1080"/></clipPath>
+\f0\fs24  o\'f9 
+\f2\fs26 revealWidth = interpolate(frame, [15, 95], [0, 1920], \{extrapolateLeft:'clamp', extrapolateRight:'clamp'\})
+\f0\fs24 .\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour la ligne diagonale : 
+\f2\fs26 <div style=\{\{position:'absolute', left: lineX, top: -200, width: 6, height: 1400, background: 'linear-gradient(...)', transform: 'rotate(-12deg)', transformOrigin: 'top center'\}\}/>
+\f0\fs24  avec ses deux glows.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour les cartes : array de configs + 
+\f2\fs26 .map()
+\f0\fs24  avec 
+\f2\fs26 <ToolCard delay=\{d\} x=\{px\} y=\{py\} label="..." icon=\{Icon\} color="..." frame=\{frame\}/>
+\f0\fs24 .\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour les connexions : array de paires 
+\f2\fs26 [[0,1],[1,2],[0,3],[3,4],[4,5]]
+\f0\fs24  (index des cartes) 
+\f5 \uc0\u8594 
+\f0  trac\'e9 SVG 
+\f2\fs26 <line>
+\f0\fs24  entre 
+\f2\fs26 getPosition(index1)
+\f0\fs24  et 
+\f2\fs26 getPosition(index2)
+\f0\fs24  avec 
+\f2\fs26 stroke-dashoffset
+\f0\fs24  anim\'e9.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour le flottement : 
+\f2\fs26 const floatY = Math.sin(frame / 18 + index * 0.9) * 4
+\f0\fs24  appliqu\'e9 via 
+\f2\fs26 transform: translateY($\{floatY\}px)
+\f0\fs24  sur chaque carte pendant le maintien.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pour le halo de \'ab 2026 \'bb : 
+\f2\fs26 const glowOpacity = interpolate(frame, [110, 130], [0, 0.4], \{extrapolateRight:'clamp'\})
+\f0\fs24  
+\f5 \uc0\u8594 
+\f0  
+\f2\fs26 textShadow: \\
+\f0\fs24 0 0 30px rgba(147,197,253,$\{glowOpacity\})``.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Le pi\'e8ge \'e0 \'e9viter\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b0\fs24 \cf0 Le principal risque technique est la 
+\f1\b gestion du z-index
+\f0\b0  entre les deux 
+\f2\fs26 <AbsoluteFill>
+\f0\fs24 . Les \'e9l\'e9ments du pr\'e9sent (cartes outils, titres) doivent \'eatre dans la seconde AbsoluteFill (avec le clipPath) pour \'eatre r\'e9v\'e9l\'e9s correctement par la ligne. Mais la ligne de balayage elle-m\'eame doit \'eatre 
+\f1\b au-dessus des deux AbsoluteFill
+\f0\b0 , sinon elle se retrouvera masqu\'e9e par le clipPath du pr\'e9sent d\'e8s que celui-ci s'ouvre. Structure recommand\'e9e :\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f6\fs22 \cf4 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf5 \strokec5 <AbsoluteFill> 
+\f5 \uc0\u8592 
+\f0  fond pass\'e9 + \'e9l\'e9ments pass\'e9 (grayscale)\
+<AbsoluteFill clipPath="url(#reveal)"> 
+\f5 \uc0\u8592 
+\f0  fond pr\'e9sent + \'e9l\'e9ments pr\'e9sent\
+<AbsoluteFill> 
+\f5 \uc0\u8592 
+\f0  ligne de balayage uniquement, z-index max\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \strokec2 La ligne doit \'eatre dans son propre 
+\f2\fs26 <AbsoluteFill>
+\f0\fs24  sans clipPath, au-dessus de tout, pour qu'elle reste visible sur les deux mondes simultan\'e9ment pendant le balayage.\
+}

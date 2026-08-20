@@ -1,0 +1,215 @@
+Bundling 6%
+Bundling 24%
+Bundling 38%
+Bundling 51%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/0.pack_' -> '/Users/ibrahimkamara/yt-animations/node_modules/.cache/webpack/remotion-production-4.0.462/2c23024c16c471ec43657ab4d27e280c/0.pack'
+Getting composition
+Composition          Anim47-TitreP3
+Codec                h264
+Output               animations/verdant/Anim47-TitreP3.mp4
+Concurrency          4x
+Rendered 0/120
+Rendered 1/120, time remaining: 1h 11m 5s
+Rendered 2/120, time remaining: 35m 21s
+Rendered 3/120, time remaining: 23m 30s
+Rendered 4/120, time remaining: 17m 52s
+Rendered 5/120, time remaining: 19m 53s
+Rendered 6/120, time remaining: 17m 22s
+Rendered 7/120, time remaining: 14m 45s
+Rendered 8/120, time remaining: 13m 44s
+Rendered 9/120, time remaining: 14m 6s
+Rendered 10/120, time remaining: 12m 42s
+Rendered 11/120, time remaining: 12m 7s
+Rendered 12/120, time remaining: 11m 17s
+Rendered 13/120, time remaining: 11m 23s
+Rendered 14/120, time remaining: 10m 29s
+Rendered 15/120, time remaining: 10m 16s
+Rendered 16/120, time remaining: 9m 41s
+Rendered 17/120, time remaining: 9m 50s
+Rendered 18/120, time remaining: 9m 12s
+Rendered 19/120, time remaining: 9m 2s
+Rendered 20/120, time remaining: 8m 34s
+Rendered 21/120, time remaining: 8m 42s
+Rendered 22/120, time remaining: 8m 19s
+Rendered 23/120, time remaining: 8m 9s
+Rendered 24/120, time remaining: 7m 46s
+Rendered 25/120, time remaining: 8m 2s
+Rendered 26/120, time remaining: 7m 49s
+Rendered 27/120, time remaining: 7m 30s
+Rendered 28/120, time remaining: 7m 10s
+Rendered 29/120, time remaining: 7m 22s
+Rendered 30/120, time remaining: 7m 12s
+Rendered 31/120, time remaining: 6m 54s
+Rendered 32/120, time remaining: 6m 39s
+Rendered 33/120, time remaining: 6m 58s
+Rendered 34/120, time remaining: 6m 44s
+Rendered 35/120, time remaining: 6m 28s
+Rendered 36/120, time remaining: 6m 15s
+Rendered 37/120, time remaining: 6m 29s
+Rendered 38/120, time remaining: 6m 16s
+Rendered 39/120, time remaining: 6m 15s
+Rendered 40/120, time remaining: 6m 3s
+Rendered 41/120, time remaining: 6m 2s
+Rendered 42/120, time remaining: 5m 50s
+Rendered 43/120, time remaining: 5m 51s
+Rendered 44/120, time remaining: 5m 41s
+Rendered 45/120, time remaining: 5m 39s
+Rendered 46/120, time remaining: 5m 37s
+Rendered 47/120, time remaining: 5m 27s
+Rendered 48/120, time remaining: 5m 18s
+Rendered 49/120, time remaining: 5m 16s
+Rendered 50/120, time remaining: 5m 15s
+Rendered 51/120, time remaining: 5m 5s
+Rendered 52/120, time remaining: 4m 55s
+Rendered 53/120, time remaining: 4m 53s
+Rendered 54/120, time remaining: 4m 53s
+Rendered 55/120, time remaining: 4m 44s
+Rendered 56/120, time remaining: 4m 35s
+Rendered 57/120, time remaining: 4m 32s
+Rendered 58/120, time remaining: 4m 33s
+Rendered 59/120, time remaining: 4m 24s
+Rendered 60/120, time remaining: 4m 21s
+Rendered 61/120, time remaining: 4m 13s
+Rendered 62/120, time remaining: 4m 11s
+Rendered 63/120, time remaining: 4m 4s
+Rendered 64/120, time remaining: 4m 0s
+Rendered 65/120, time remaining: 3m 53s
+Rendered 66/120, time remaining: 3m 51s
+Rendered 67/120, time remaining: 3m 45s
+Rendered 68/120, time remaining: 3m 40s
+Rendered 69/120, time remaining: 3m 33s
+Rendered 70/120, time remaining: 3m 31s
+Rendered 71/120, time remaining: 3m 25s
+Rendered 72/120, time remaining: 3m 22s
+Rendered 73/120, time remaining: 3m 18s
+Rendered 74/120, time remaining: 3m 12s
+Rendered 75/120, time remaining: 3m 6s
+Rendered 76/120, time remaining: 3m 4s
+Rendered 77/120, time remaining: 3m 0s
+Rendered 78/120, time remaining: 2m 54s
+Rendered 79/120, time remaining: 2m 49s
+Rendered 80/120, time remaining: 2m 46s
+Rendered 81/120, time remaining: 2m 42s
+Rendered 82/120, time remaining: 2m 36s
+Rendered 83/120, time remaining: 2m 31s
+Rendered 84/120, time remaining: 2m 28s
+Rendered 85/120, time remaining: 2m 24s
+Rendered 86/120, time remaining: 2m 19s
+Rendered 87/120, time remaining: 2m 14s
+Rendered 88/120, time remaining: 2m 11s
+Rendered 89/120, time remaining: 2m 7s
+Rendered 90/120, time remaining: 2m 2s
+Rendered 91/120, time remaining: 1m 57s
+Rendered 92/120, time remaining: 1m 53s
+Rendered 93/120, time remaining: 1m 49s
+Rendered 94/120, time remaining: 1m 45s
+Rendered 95/120, time remaining: 1m 41s
+Rendered 96/120, time remaining: 1m 36s
+Rendered 97/120, time remaining: 1m 32s
+Rendered 98/120, time remaining: 1m 28s
+Rendered 99/120, time remaining: 1m 24s
+Rendered 100/120, time remaining: 1m 19s
+Rendered 101/120, time remaining: 1m 15s
+Rendered 102/120, time remaining: 1m 11s
+Rendered 103/120, time remaining: 1m 7s
+Rendered 104/120, time remaining: 1m 2s
+Rendered 105/120, time remaining: 58s
+Rendered 106/120, time remaining: 54s
+Rendered 107/120, time remaining: 50s
+Rendered 108/120, time remaining: 46s
+Rendered 109/120, time remaining: 42s
+Rendered 110/120, time remaining: 38s
+Rendered 111/120, time remaining: 34s
+Rendered 112/120, time remaining: 30s
+Rendered 113/120, time remaining: 26s
+Rendered 114/120, time remaining: 22s
+Rendered 115/120, time remaining: 19s
+Rendered 116/120, time remaining: 15s
+Rendered 117/120, time remaining: 11s
+Rendered 118/120, time remaining: 7s
+Rendered 119/120, time remaining: 3s
+Rendered 120/120
+Encoded 1/120
+Encoded 2/120
+Encoded 2/120
+Encoded 3/120
+Encoded 4/120
+Encoded 6/120
+Encoded 8/120
+Encoded 10/120
+Encoded 12/120
+Encoded 16/120
+Encoded 16/120
+Encoded 16/120
+Encoded 16/120
+Encoded 20/120
+Encoded 21/120
+Encoded 23/120
+Encoded 24/120
+Encoded 27/120
+Encoded 31/120
+Encoded 31/120
+Encoded 31/120
+Encoded 31/120
+Encoded 35/120
+Encoded 36/120
+Encoded 39/120
+Encoded 39/120
+Encoded 43/120
+Encoded 43/120
+Encoded 47/120
+Encoded 47/120
+Encoded 48/120
+Encoded 51/120
+Encoded 53/120
+Encoded 55/120
+Encoded 56/120
+Encoded 59/120
+Encoded 59/120
+Encoded 59/120
+Encoded 64/120
+Encoded 67/120
+Encoded 67/120
+Encoded 71/120
+Encoded 71/120
+Encoded 71/120
+Encoded 71/120
+Encoded 71/120
+Encoded 74/120
+Encoded 79/120
+Encoded 83/120
+Encoded 83/120
+Encoded 83/120
+Encoded 83/120
+Encoded 85/120
+Encoded 87/120
+Encoded 91/120
+Encoded 91/120
+Encoded 92/120
+Encoded 95/120
+Encoded 96/120
+Encoded 99/120
+Encoded 99/120
+Encoded 99/120
+Encoded 103/120
+Encoded 107/120
+Encoded 107/120
+Encoded 107/120
+Encoded 107/120
+Encoded 107/120
+Encoded 107/120
+Encoded 107/120
+Encoded 114/120
+Encoded 116/120
+Encoded 119/120
+Encoded 119/120
+Encoded 120/120
++                    animations/verdant/Anim47-TitreP3.mp4 1.1 MB
