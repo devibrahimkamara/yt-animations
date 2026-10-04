@@ -394,7 +394,8 @@ Les composants réutilisables sont dans `src/montage/`.
   - voix enregistrée assez fort.
 
   Sinon, on signale à l'étape 0 ce que ça empêche (exemple : avec une vidéo fusionnée, pas de « Glissé » ni de médaillon qui s'efface).
-- **Étapes techniques internes** (sans validation séparée) : traitement voix, détection des pauses, calcul des gains SFX par rapport à la voix, mesure de fluidité, rendu en PNG / CRF 12, master audio en 2 passes.
+- **Étapes techniques internes** (sans validation séparée) : traitement voix, détection des pauses, calcul des gains SFX par rapport à la voix, mesure de fluidité, rendu, master audio en 2 passes.
+- **Rendu** : toujours via `analysis/tools/render_montage.sh <Composition> <sortie.mp4> [images]`. Réglages validés le 4 octobre 2026 : GPU + JPEG 95 + 3 rendus parallèles, CRF 12, puis master −14 LUFS. Gain mesuré de −46 % à image équivalente (`analysis/bench/RAPPORT.md`). **Avant tout rendu de plus de ~5 min, annoncer la durée et attendre le feu vert d'Ibrahim** : il travaille sur la même machine.
 
 ## 9. Relecture (4 passes, dont une partie automatisée)
 
