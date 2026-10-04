@@ -82,7 +82,7 @@ Les temps de lecture sont calculés pour rester lisibles à ×1,15 (§6bis).
 | 8:00 | 2 pastilles | Ton propre site · Une agence de sites |
 | 8:03 | Rappel discret | Abonne-toi pour la suite |
 | 8:15 | Phrase-clé | la *publicité* |
-| 8:30 | Carte de fin | Ma vidéo : configurer les publicités Google · [LIEN À VENIR] |
+| 8:30 | Carte de fin | Ma vidéo sur la publicité : « J'ai créé cette pub en quelques minutes avec l'IA » · https://www.youtube.com/watch?v=tnSOLVdEio0 (choix d'Ibrahim : la vidéo Google Ads est introuvable) |
 | 8:36 | Final | Code *KAMARA7* · lien en description |
 
 **Pastille de chapitre permanente** en haut à gauche, sur la face cam et l'écran, avec une mini-barre de 5 segments.

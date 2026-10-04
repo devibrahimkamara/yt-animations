@@ -513,6 +513,7 @@ const BeforeAfter: React.FC<{ end: number }> = ({ end }) => {
 };
 
 // ─── Écran de fin : emplacement de la vidéo YouTube (élément d'écran de fin) + code ───
+// Vidéo liée (choix d'Ibrahim) : « J'ai créé cette pub en quelques minutes avec l'IA », youtu.be/tnSOLVdEio0
 const EndCard: React.FC<{ end: number }> = ({ end }) => {
   const t = useT();
   const o = inOut(t, 0, end, 0.6, 0.6);
@@ -523,8 +524,8 @@ const EndCard: React.FC<{ end: number }> = ({ end }) => {
     <AbsoluteFill style={{ opacity: o, fontFamily: FONT }}>
       <AbsoluteFill style={{ background: "linear-gradient(90deg, transparent 38%, rgba(9,11,8,0.82) 60%, rgba(9,11,8,0.92) 100%)" }} />
       <div style={{ position: "absolute", right: 100, top: 200, width: VW, ...b }}>
-        <Eyebrow size={30}>Ma vidéo · la suite</Eyebrow>
-        <div style={{ fontSize: 54, fontWeight: 500, color: INK, letterSpacing: "-0.03em", lineHeight: 1.1, margin: "12px 0 26px" }}>{rich("Configurer les *publicités Google*")}</div>
+        <Eyebrow size={30}>Ma vidéo sur la publicité</Eyebrow>
+        <div style={{ fontSize: 54, fontWeight: 500, color: INK, letterSpacing: "-0.03em", lineHeight: 1.1, margin: "12px 0 26px" }}>{rich("J'ai créé cette *pub* en quelques minutes avec l'IA")}</div>
         {/* Zone réservée à l'élément « vidéo » de l'écran de fin YouTube (16:9) */}
         <div style={{ width: VW, height: VH, borderRadius: 24, border: `3px dashed ${LIME}`, background: "rgba(198,243,109,0.05)", display: "flex", alignItems: "center", justifyContent: "center" }}>
           <svg width={90} height={90} viewBox="0 0 24 24" fill={LIME} opacity={0.8}>
