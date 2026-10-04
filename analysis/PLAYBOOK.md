@@ -316,6 +316,15 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 
 ---
 
+### 6bis. Vitesse finale ×1,15 (choix d'Ibrahim, 4 octobre 2026)
+
+Ibrahim a comparé ×1,00, ×1,10 et ×1,15 sur le hook et sur une démo : il préfère **nettement ×1,15**.
+
+- **Où** : à la toute fin de l'étape 7, sur la vidéo assemblée. Images `setpts=PTS/1.15` et son `atempo=1.15` (la voix garde sa hauteur), puis master −14 LUFS en 2 passes. Une 21:41 devient une 18:52.
+- **Conséquence au montage** : tous les temps de lecture se calculent pour la vitesse finale. Un texte tenu `readTime(mots) × 1,15` à ×1,00 reste lisible une fois accéléré.
+- **Livrables** : sous-titres et chapitres divisés par 1,15 (`*_x1.15.srt`, `chapitres_x1.15.txt`, `description_x1.15.md`). On garde aussi la version ×1,00.
+- **Sponsor** : une démonstration sponsorisée accélérée enfreint la règle 13 et le §1bis. Avant de publier en ×1,15 une vidéo sponsorisée, Ibrahim valide avec le sponsor. Sinon, on n'accélère que les passages hors démo.
+
 ## 7. La restructuration (méthode de l'étape 2 du process)
 
 **Objectif :** réorganiser une vidéo déjà tournée pour améliorer la rétention, sans changer son sens et en la gardant compréhensible. On produit des **propositions**, qu'Ibrahim valide avant toute action (étape 2 du §8). Le résultat propre à chaque vidéo est écrit dans `montages/<slug>/02-restructuration.md`.
@@ -543,9 +552,7 @@ Tout ce qui suit a été testé sur la vidéo AIsa (21:41, montée et livrée en
 - dans `src/montage/Explainers.tsx` : `BrandTiles`, `ChatMock`, `TutoMap`, `Tag`, `IconRow`, `GoogleToAI`, `Teaser`, `NoteCard`, `StepLT`, `TopPill`, `Spotlight`, `PromptCard`, `CheckCard`, `ListCard`, `DataTable`.
 
 **À l'étude** :
-- **Vitesse de lecture globale** (×1,10 / ×1,15 avec `atempo`, la hauteur de voix est conservée). Le test est en attente du choix d'Ibrahim (`montages/aisa/08-livrables/test-vitesse/`).
-  - Mesure AIsa : 231 mots/min, déjà rapide pour du français.
-  - Ne jamais l'appliquer aux démonstrations sponsorisées sans l'accord du sponsor (§1bis).
+
 - **Shorts verticaux** des 4 moments de `shorts.md`, avec une mise en page 9:16 dédiée.
 
 

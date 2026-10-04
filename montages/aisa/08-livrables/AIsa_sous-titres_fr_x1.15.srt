@@ -1,0 +1,1589 @@
+1
+00:00:00,035 --> 00:00:04,243
+Mon site internet a été cité plus de 51 000
+fois dans l'intelligence artificielle.
+
+2
+00:00:05,904 --> 00:00:08,704
+Dans cette vidéo je vais te partager comment
+est-ce que j'arrive à faire de l'argent
+
+3
+00:00:08,722 --> 00:00:12,513
+grâce à des rapports de visibilité IA. Donc
+un rapport de visibilité IA c'est tout
+
+4
+00:00:12,530 --> 00:00:15,748
+simplement un document comme celui que je
+t'affiche à l'écran et dans ce document là
+
+5
+00:00:15,765 --> 00:00:19,643
+on va proposer à une entreprise d'améliorer
+donc sa visibilité dans les moteurs de
+
+6
+00:00:19,661 --> 00:00:23,678
+recherche IA. Donc que ce soit
+ChatGPT, Claude, Perplexity ou Gemini.
+
+7
+00:00:23,817 --> 00:00:27,643
+Donc lorsque au quotidien toi par exemple
+en tant qu'un utilisateur tu poses des
+
+8
+00:00:27,661 --> 00:00:30,878
+questions à l'IA. L'IA va te faire des
+propositions, souvent il peut te faire des
+
+9
+00:00:30,896 --> 00:00:34,078
+propositions de restaurant, il peut te faire
+des propositions de logiciel à utiliser
+
+10
+00:00:34,096 --> 00:00:38,096
+et ces propositions que l'IA te fait eh
+bien elle les trouve le plus souvent dans
+
+11
+00:00:38,113 --> 00:00:40,774
+des bases de données qui sont directement
+sur internet et sur des moteurs de
+
+12
+00:00:40,791 --> 00:00:43,696
+recherche comme Google. Donc il y a un
+business qui est né grâce à ça du coup c'est
+
+13
+00:00:43,713 --> 00:00:47,748
+comment optimiser ton business pour que
+tu sois recommandé dans les IA comme
+
+14
+00:00:47,765 --> 00:00:50,896
+ChatGPT et Claude. Du coup c'est ça qu'on
+va parler aujourd'hui et moi je vais te
+
+15
+00:00:50,913 --> 00:00:53,817
+partager ma propre approche par rapport à
+ce business. Comment j'arrive à générer de
+
+16
+00:00:53,835 --> 00:00:56,757
+l'argent avec ça et comment toi aussi tu
+pourras le faire. En soi je pense que ce
+
+17
+00:00:56,774 --> 00:00:59,852
+business modèle il est assez clair et simple
+et tu comprends pourquoi une entreprise
+
+18
+00:00:59,870 --> 00:01:02,826
+voudrait te payer pour ça. Parce que de nos
+jours il y a des milliards de personnes
+
+19
+00:01:02,843 --> 00:01:06,270
+au quotidien qui utilisent l'intelligence
+artificielle comme outil de recherche.
+
+20
+00:01:06,304 --> 00:01:08,374
+Donc que tu sois, que tu recherches
+un restaurant ou manger,
+
+21
+00:01:08,878 --> 00:01:11,470
+ou est-ce que tu vas le te coiffer, si tu
+cherches les meilleures universités ou
+
+22
+00:01:11,487 --> 00:01:14,600
+allées etc. Tout se passe directement dans
+ChatGPT et dans Claude. Donc limite il
+
+23
+00:01:14,617 --> 00:01:17,522
+y a très peu de personnes maintenant, moi
+y compris, qui vont directement sur Google
+
+24
+00:01:17,539 --> 00:01:20,478
+et faire des recherches sur Google.'est C
+en train de disparaître progressivement.
+
+25
+00:01:20,496 --> 00:01:23,748
+Le référencement sur Google qu'on faisait
+à l'époque où tu voulais vraiment sortir
+
+26
+00:01:23,765 --> 00:01:26,478
+dans les recherches sur Google, eh bien il a
+transitionné maintenant sur l'intelligence
+
+27
+00:01:26,496 --> 00:01:29,696
+artificielle et je vois très peu de personnes
+parler de ce business-là sachant qu'il
+
+28
+00:01:29,713 --> 00:01:32,565
+est assez nouveau. Et là je vais te montrer
+un exemple des statistiques que j'ai pu
+
+29
+00:01:32,583 --> 00:01:36,217
+avoir avec mon propre business. Donc là je
+viens dans cet outil qui s'appelle Bing
+
+30
+00:01:36,235 --> 00:01:40,113
+Webmaster Tool. C'est un outil de Microsoft
+qui t'aide à traquer notamment des
+
+31
+00:01:40,130 --> 00:01:44,078
+performances de, est-ce que tu es cité dans
+l'IA etc. pour ton site internet. Et moi
+
+32
+00:01:44,096 --> 00:01:47,035
+dans mon cas c'est pour mon site internet
+ibrahimkamara.com. J'ai plusieurs autres
+
+33
+00:01:47,052 --> 00:01:49,765
+sites internet aussi que je traque ici.
+Mais on va se concentrer sur ça. Quand je
+
+34
+00:01:49,783 --> 00:01:53,139
+viens ici je vais dans la partie AI Performance
+et là dans la partie AI Performance.
+
+35
+00:01:53,383 --> 00:01:57,365
+Et donc la Microsoft me donne des données
+de citations dans l'IA par rapport à mon
+
+36
+00:01:57,383 --> 00:02:00,548
+site internet et certaines pages de mon site
+internet. Et là juste quand tu vois les
+
+37
+00:02:00,565 --> 00:02:02,078
+données générales, les derniers 3 mois,
+
+38
+00:02:06,357 --> 00:02:09,209
+C'est à dire qu'il a y des personnes qui
+ont posé des questions à l'IA et dans les
+
+39
+00:02:09,226 --> 00:02:13,174
+réponses que l'IA a donné j'ai apparu près
+de 51 000 fois. C'est énorme tu vois.
+
+40
+00:02:13,191 --> 00:02:16,339
+Sachant que c'est mon site ibrahimkamara.com
+sur lequel j'ai pas mal d'articles de
+
+41
+00:02:16,357 --> 00:02:19,957
+blog aussi donc ça joue un rôle. Si je
+mets par exemple les derniers 6 mois tu
+
+42
+00:02:19,974 --> 00:02:23,974
+verras que c'est encore plus énorme. 64 000
+citations dans l'IA et en moyenne j'ai
+
+43
+00:02:23,991 --> 00:02:27,035
+71 pages de mon site qui reviennent à
+chaque fois quand des personnes posent des
+
+44
+00:02:27,052 --> 00:02:30,478
+questions sur l'IA. Et ça c'est les données
+générales si je descends tu pourras voir
+
+45
+00:02:30,496 --> 00:02:34,183
+vraiment les données plus spécifiques qui
+font que des gens tombent sur mon site
+
+46
+00:02:34,200 --> 00:02:37,661
+dans l'IA. Et là il y a des mots-clés comme
+par exemple comment télécharger de la
+
+47
+00:02:37,678 --> 00:02:41,835
+musique. Je pense que j'ai des articles de
+blog sur ça que j'ai écrit. Si je clique
+
+48
+00:02:41,852 --> 00:02:45,052
+sur ça j'aurai encore plus de données
+spécifiques voilà. J'ai un article sur mon
+
+49
+00:02:45,070 --> 00:02:48,148
+blog qui s'appelle comment télécharger de
+la musique légalement sur Youtube. Donc
+
+50
+00:02:48,165 --> 00:02:51,017
+quand des personnes font des recherches sur
+ça dans l'IA donc sur l'IA ou Claude. Et
+
+51
+00:02:51,035 --> 00:02:54,026
+bien Claude les références, mon article de
+blog ce qui est vraiment incroyable. Donc
+
+52
+00:02:54,043 --> 00:02:56,617
+là si tu cliques sur le lien tu verras
+l'article en question que j'ai rédigé. Je
+
+53
+00:02:56,635 --> 00:02:59,557
+pense que depuis le mois de mai donc ça
+fait plusieurs mois que j'ai rédigé cet
+
+54
+00:02:59,574 --> 00:03:02,600
+article là. Donc là il y a plusieurs
+autres articles qui sont aussi cités par
+
+55
+00:03:02,617 --> 00:03:05,522
+exemple. Donc j'ai des articles sur comment
+écrire un résumé, comment créer une
+
+56
+00:03:05,539 --> 00:03:09,052
+boutique Shopify, comment être éligi pour
+la monetisation Youtube etc. Tout ça ce
+
+57
+00:03:09,070 --> 00:03:12,061
+sont des articles de blog que j'ai créé
+sur mon site internet qui sont super
+
+58
+00:03:12,078 --> 00:03:15,452
+optimisés et qui me permettent d'être cités
+de manière régulière dans l'intelligence
+
+59
+00:03:15,470 --> 00:03:18,757
+artificielle. Et quand tu vois cette courbe
+de graphique tu vois que depuis le mois
+
+60
+00:03:18,774 --> 00:03:21,974
+d'août là je suis dans une période vraiment
+haussière tu vois. Et limite ça avance
+
+61
+00:03:21,991 --> 00:03:24,896
+assez rapidement donc plus les jours avancent
+plus je suis cité dans les IA. Et dans
+
+62
+00:03:24,913 --> 00:03:27,452
+cette vidéo je vais te partager exactement
+comment est-ce que tu vas créer un
+
+63
+00:03:27,470 --> 00:03:31,017
+rapport pour présenter à une entreprise,
+cette idée de business et surtout comment
+
+64
+00:03:31,035 --> 00:03:33,765
+est-ce qu'ils vont te payer pour cela. Un
+point important que tu dois savoir sur
+
+65
+00:03:33,783 --> 00:03:36,948
+comment est-ce qu'on crée un rapport
+de visibilité pour le partager à une
+
+66
+00:03:36,965 --> 00:03:40,548
+entreprise. Déjà le premier point c'est on
+a besoin de données réelles. Le dashboard
+
+67
+00:03:40,565 --> 00:03:43,870
+que je t'ai partagé sur mon site internet
+etc. sur la visibilité. Et bien ce sont
+
+68
+00:03:43,887 --> 00:03:47,174
+des données réelles pareilles dont tu as
+besoin pour pouvoir créer le rapport d'une
+
+69
+00:03:47,191 --> 00:03:50,183
+entreprise. Et ces données réelles là
+on y a accès grâce à plusieurs outils
+
+70
+00:03:50,200 --> 00:03:53,487
+notamment comme par exemple DataForSEO
+qui est un outil qui permet d'analyser
+
+71
+00:03:53,504 --> 00:03:56,583
+vraiment les performances SEO dans le site
+internet. Il y a aussi Semrush qui fait
+
+72
+00:03:56,600 --> 00:04:00,583
+à peu près la même chose. Il y a Ahrefs,
+Similarweb etc. Dans notre cas on va
+
+73
+00:04:00,600 --> 00:04:04,061
+regrouper plusieurs outils et on va
+utiliser ces outils pour analyser donc le
+
+74
+00:04:04,078 --> 00:04:07,626
+business, le site internet, les pages
+Instagram de notre client pour pouvoir créer
+
+75
+00:04:07,643 --> 00:04:10,617
+ce rapport complet. Dans cette vidéo on
+va utiliser une intelligence artificielle
+
+76
+00:04:10,635 --> 00:04:14,670
+qui s'appelle AIsa et c'est cette IA
+qui va nous permettre d'avoir accès à
+
+77
+00:04:14,687 --> 00:04:17,661
+toutes ces différentes données sur ces
+plateformes séparées tu vois. Au lieu d'aller
+
+78
+00:04:17,678 --> 00:04:21,522
+directement sur Semrush, sur DataForSEO,
+tous ces logiciels de manière séparée ce qui
+
+79
+00:04:21,539 --> 00:04:25,157
+prendrait beaucoup trop de temps et serait
+assez complexe. On va juste utiliser AIsa
+
+80
+00:04:25,174 --> 00:04:28,548
+donc il y a une IA qui regroupe tous ces
+logiciels là et plein d'autres aussi. Et
+
+81
+00:04:28,565 --> 00:04:31,452
+nous permet d'avoir accès aux données
+qui transitent dans ces logiciels là.
+
+82
+00:04:33,157 --> 00:04:37,574
+On va débuter le tutoriel et se retrouver
+sur le site de AIsa. Le lien sera dans
+
+83
+00:04:37,591 --> 00:04:40,704
+la description. Donc quand tu arrives tu
+cliques sur tu peux le mettre en français
+
+84
+00:04:40,722 --> 00:04:43,661
+dans mon cas il est en anglais tu cliques
+sur commencer et là normalement ils vont
+
+85
+00:04:43,678 --> 00:04:46,791
+te demander de te connecter. Donc moi je
+pense que j'ai déjà un compte donc tu peux
+
+86
+00:04:46,809 --> 00:04:49,991
+te connecter avec Google ou avec ton adresse
+email et là directement ça va te mettre
+
+87
+00:04:50,009 --> 00:04:53,748
+ce dashboard là. Maintenant important
+lorsque tu vas ouvrir ce dashboard là il va
+
+88
+00:04:53,765 --> 00:04:56,809
+falloir que tu t'active un abonnement parce
+que si tu n'as pas d'abonnement tu ne
+
+89
+00:04:56,826 --> 00:04:59,296
+pourras pas l'utiliser. Normalement si
+tu viens dans billing tu verras les
+
+90
+00:04:59,313 --> 00:05:02,948
+différents plans. Il y a un plan qui
+s'appelle pay as you go c'est-à-dire tu vas
+
+91
+00:05:02,965 --> 00:05:05,991
+juste recharger donc de l'argent dans ton
+compte genre 10 dollars un truc comme ça
+
+92
+00:05:06,009 --> 00:05:08,826
+et ça va progressivement juste utiliser
+ton argent c'est pas un abonnement quand
+
+93
+00:05:08,843 --> 00:05:11,713
+juste tu recharges ton compte. Il y a un
+abonnement qui commence à partir de 39
+
+94
+00:05:11,730 --> 00:05:14,948
+dollars par mois et tu as le plan à 200
+dollars par mois donc tu as le choix donc
+
+95
+00:05:14,965 --> 00:05:18,461
+idéalement tu peux commencer si tu veux
+faire des tests avec le pay as you go et tu
+
+96
+00:05:18,478 --> 00:05:21,070
+recharges ton compte de voilà 10 dollars
+pour recharger le compte c'est très simple
+
+97
+00:05:21,087 --> 00:05:24,217
+il y a aussi un bouton pour ça Add credits
+tu mets le montant que tu veux rajouter tu
+
+98
+00:05:24,235 --> 00:05:27,174
+mets ta carte bancaire et tu rajoutes des
+credits sur ton compte donc jusque là c'est
+
+99
+00:05:27,191 --> 00:05:30,809
+le setup initial à faire par rapport à AIsa
+ensuite le deuxième outil dont on aura
+
+100
+00:05:30,826 --> 00:05:35,817
+besoin c'est Claude Code donc Claude Code
+ce sera notre agent ia qui va utiliser donc
+
+101
+00:05:35,835 --> 00:05:38,965
+AIsa qui est tous les outils pour faire
+l'analyse donc en soi c'est Claude Code qui
+
+102
+00:05:38,983 --> 00:05:42,617
+va faire le travail et il va juste
+utiliser les outils que AIsa donc AIsa lui
+
+103
+00:05:42,635 --> 00:05:46,426
+donne pour pouvoir faire les différentes
+c'est analyser les rapports ia donc Claude
+
+104
+00:05:46,443 --> 00:05:49,991
+code il y a la version en ligne et moi je
+préfère la version desktop parce qu'elle
+
+105
+00:05:50,009 --> 00:05:53,557
+est beaucoup plus efficace donc tu télécharges
+la version Claude Code desktop t'écris
+
+106
+00:05:53,574 --> 00:05:56,896
+juste ça sur google Claude Code desktop et
+tu télécharges qui te convient si c'est
+
+107
+00:05:56,913 --> 00:06:00,513
+pour mac si c'est pour windows et ensuite
+quand tu ouvriras ton Claude Code il
+
+108
+00:06:00,530 --> 00:06:03,887
+ressemblera à ça et là maintenant on va se
+rassurer qu'on est bien bel et bien dans
+
+109
+00:06:03,904 --> 00:06:07,157
+la partie code parce qu'il y a la partie
+Claude Chat où tu discutes normalement avec
+
+110
+00:06:07,174 --> 00:06:10,983
+la partie code est ce qui nous intéresse
+la partie code ensuite avant de débuter
+
+111
+00:06:11,000 --> 00:06:14,617
+tout travail dans le Claude Code moi je te
+conseille de créer un dossier dans lequel
+
+112
+00:06:14,635 --> 00:06:17,922
+tu vas bosser ensuite on va aller dans
+notre dossier utilisateur donc dans mon cas
+
+113
+00:06:17,939 --> 00:06:21,783
+ybrem camera et je crée un nouveau dossier
+et je vais l'appeler par exemple audit ia
+
+114
+00:06:21,800 --> 00:06:26,096
+je crée ce dossier là ensuite je reviens
+dans Claude Code et là ici je laisse local
+
+115
+00:06:26,113 --> 00:06:29,678
+ici c'est là que je vais aller chercher le
+dossier en question et ce sera le dossier
+
+116
+00:06:29,696 --> 00:06:33,504
+audit ia tout le travail qu'on va faire
+dans Claude Code sera enregistré dans ce
+
+117
+00:06:33,522 --> 00:06:35,939
+dossier là pendant cette session donc à
+chaque fois que tu travailles sur un nouveau
+
+118
+00:06:35,957 --> 00:06:39,104
+projet avec Claude Code rassure toi que tu
+changes à chaque fois le dossier ensuite
+
+119
+00:06:39,122 --> 00:06:42,670
+maintenant on va donner un prompt à claude
+donc on va lui donner ce prompt là on va
+
+120
+00:06:42,687 --> 00:06:45,609
+lui dire li à la c'est une documentation
+que je lui donnais donc il va aller lire
+
+121
+00:06:45,626 --> 00:06:49,452
+cette documentation là et je vais lui
+demander de connecter donc AIsa à Claude Code
+
+122
+00:06:49,470 --> 00:06:52,270
+pour qu'on puisse travailler et là pour
+le modèle alors on peut laisser Sonnet
+
+123
+00:06:52,287 --> 00:06:55,591
+parce que si tu mets Opus 5.5 ça va ça va
+bouffer très vite donc on va laisser sur
+
+124
+00:06:55,609 --> 00:07:00,739
+Sonnet 5 pour l'effort on va laisser
+sur sur medium en soi ça va ici pour
+
+125
+00:07:00,757 --> 00:07:04,565
+le mode on va mettre le mode accepte edit
+et on va lancer donc là ce que Claude Code
+
+126
+00:07:04,583 --> 00:07:07,957
+va faire il va faire les recherches par
+rapport à la documentation de AIsa donc
+
+127
+00:07:07,974 --> 00:07:11,783
+comment ça fonctionne etc et lui-même il
+va connecter il va se connecter à AIsa
+
+128
+00:07:11,800 --> 00:07:14,704
+pour qu'on puisse faire les différentes
+analyses donc là on va accepter tout ce qu'il
+
+129
+00:07:14,722 --> 00:07:16,322
+nous demande et on le
+laisse connecter tout ça
+
+130
+00:07:16,339 --> 00:07:23,643
+donc
+
+131
+00:07:23,661 --> 00:07:26,270
+là il a fini la configuration initiale il
+faut maintenant que moi je connecte mon
+
+132
+00:07:26,287 --> 00:07:29,835
+compte AIsa à Claude Code donc sachant que
+j'ai déjà fait mon compte et pour ça il m'a
+
+133
+00:07:29,852 --> 00:07:33,522
+dit de lancer cette commande dans le terminal
+je lui dis ok lance la commande donc
+
+134
+00:07:33,539 --> 00:07:36,165
+il va lancer la commande et normalement ça
+va ouvrir une fenêtre pour que je puisse
+
+135
+00:07:36,183 --> 00:07:41,122
+me connecter donc je
+vais patienter donc là
+
+136
+00:07:41,139 --> 00:07:45,278
+ça a réussi ça a ouvert la commande ok je
+veux dire autoriser et normalement il a pu
+
+137
+00:07:45,296 --> 00:07:49,452
+se connecter avec succès donc on attend
+de voir super là il me dit AIsa est
+
+138
+00:07:49,470 --> 00:07:53,487
+connecté le serveur est authentifié donc là
+on a terminé les étapes de configuration
+
+139
+00:07:53,504 --> 00:07:58,530
+on peut maintenant faire notre première
+analyse de visibilité on va donner un prompt
+
+140
+00:07:58,548 --> 00:08:01,765
+à Claude et on va faire notre première
+analyse de visibilité voici le prompt que je
+
+141
+00:08:01,783 --> 00:08:04,809
+vais donner tu pourras le copier coller je
+lui demandais évalue la visibilité de la
+
+142
+00:08:04,826 --> 00:08:08,843
+marque shine shine pour affaire c'est une
+néobanque c'est une banque en ligne et j'aimerais
+
+143
+00:08:08,861 --> 00:08:12,374
+que tu compares cette visibilité à trois
+de ses concurrents donc il y a Revolut il
+
+144
+00:08:12,391 --> 00:08:16,409
+ya Qonto et il y a Blank qui sont trois
+gros concurrents de shine il va analyser
+
+145
+00:08:16,426 --> 00:08:19,974
+donc les moteurs de recherche il ya notamment
+par rapport au marché français et je
+
+146
+00:08:19,991 --> 00:08:22,774
+vais donner dix questions clients sur
+lesquelles il doit se baser pour cette analyse
+
+147
+00:08:22,791 --> 00:08:25,452
+là donc quelle est la meilleure banque en
+ligne en france et quoi comment créer un
+
+148
+00:08:25,470 --> 00:08:29,574
+compte pro pour freelance etc etc ce prompt
+que je lui donne c'est de me faire une
+
+149
+00:08:29,591 --> 00:08:33,522
+analyse bien évidemment en utilisant l'outil
+AIsa donc je vais lancer ça et on va
+
+150
+00:08:33,539 --> 00:08:35,974
+voir qu'est ce qu'il va nous fourner
+donc là il me dit que je dois d'abord
+
+151
+00:08:35,991 --> 00:08:40,409
+redémarrer mon Claude parce que quand il
+a installé AIsa j'ai pas encore redémarré
+
+152
+00:08:40,426 --> 00:08:43,522
+le Claude du coup ça fonctionne pas encore
+bah du coup je vais le faire je vais
+
+153
+00:08:43,539 --> 00:08:47,435
+fermer complètement le Claude je vais dire
+je peux réessayer normalement ça devrait
+
+154
+00:08:47,713 --> 00:08:50,722
+fonctionner voilà donc là ça fonctionne
+les outils sont maintenant chargés donc là
+
+155
+00:08:50,739 --> 00:08:51,609
+il peut bosser
+
+156
+00:08:57,017 --> 00:09:00,130
+donc là très pertinent ce qui l'a fait
+c'est que il m'a donné une estimation de
+
+157
+00:09:00,148 --> 00:09:02,965
+combien cette analyse complète va me coûter
+avant même de l'affaire comme je t'ai
+
+158
+00:09:02,983 --> 00:09:06,443
+dit dans les débuts par rapport à AIsa
+donc tu auras besoin de mettre des crédits
+
+159
+00:09:06,461 --> 00:09:09,157
+dans ton compte AIsa donc de l'argent ou
+alors de prendre un abonnement et donc à
+
+160
+00:09:09,174 --> 00:09:11,643
+chaque fois que tu vas utiliser pour
+faire des analyses ça va utiliser donc ta
+
+161
+00:09:11,661 --> 00:09:15,748
+balance de crédit et là il me fait comprendre
+que en tout ça va dépenser environ 1,2
+
+162
+00:09:15,765 --> 00:09:19,122
+$ sachant que moi je pense j'ai plus de
+50 $ sur le compte non normalement ça
+
+163
+00:09:19,139 --> 00:09:23,122
+devrait suffire donc je vais lui dire oui
+lance les 12 ok donc là mon Claude Code a
+
+164
+00:09:23,139 --> 00:09:26,861
+fini avec mon rapport de visibilité
+premièrement il m'a donné ce rapport sous forme
+
+165
+00:09:26,878 --> 00:09:30,600
+d'un fichier md qui était un fichier qui
+n'était pas forcément ouvrable à mon niveau
+
+166
+00:09:30,617 --> 00:09:33,348
+parce que c'était juste un fichier avec eux
+du texte comme ça donc ce que je lui ai
+
+167
+00:09:33,365 --> 00:09:36,078
+fait je lui ai dit de me générer un PDF
+pour ce rapport comme ça ce sera beaucoup
+
+168
+00:09:36,096 --> 00:09:38,722
+plus visuel donc c'est quelque chose que
+tu peux aussi faire tu peux aussi lui
+
+169
+00:09:38,739 --> 00:09:42,426
+demander donc il m'a généré le PDF et voici
+le PDF ici et on va l'ouvrir ensemble et
+
+170
+00:09:42,443 --> 00:09:47,522
+on verra à quoi ça ressemble donc voici
+le rapport de visibilité pour la marque
+
+171
+00:09:47,539 --> 00:09:51,470
+shine dans les moteurs de recherche il ya
+donc il a 30 points de mesure il a mesuré
+
+172
+00:09:51,487 --> 00:09:54,878
+trois moteurs différents visiblement ici on
+a un très bon résultat pour cette marque
+
+173
+00:09:54,896 --> 00:09:59,939
+parce que c'est pas une 47 % donc à 97 %
+
+174
+00:09:59,957 --> 00:10:03,191
+des cas elle est citée dans l'IA par
+rapport à ses compétiteurs donc limite ils
+
+175
+00:10:03,209 --> 00:10:06,948
+dominent vraiment les moteurs ya donc si
+tu descends en bas il a précisé qu'il a
+
+176
+00:10:06,965 --> 00:10:11,504
+analysé trois moteurs Perplexity google
+ai et aussi GPT donc là il a expliqué un
+
+177
+00:10:11,522 --> 00:10:15,765
+peu de la méthodologie on s'est basé sur
+dix questions différentes etc etc et là
+
+178
+00:10:15,783 --> 00:10:19,383
+comparé ça à ses trois concurrents et là
+il a fait l'analyse détaillée question par
+
+179
+00:10:19,400 --> 00:10:22,026
+question donc la première question c'était
+quel est le meilleur la meilleure banque
+
+180
+00:10:22,043 --> 00:10:25,470
+pour un auto-entrepreneur le plus souvent
+sur charge et pt il ya shine qui sera en
+
+181
+00:10:25,487 --> 00:10:28,861
+premier ensuite indie etc donc c'est l'ordre
+avec lequel le plus souvent ils sont
+
+182
+00:10:28,878 --> 00:10:31,052
+cités donc le plus souvent quand une
+personne va demander c'est quoi la meilleure
+
+183
+00:10:31,070 --> 00:10:33,974
+banque pour un auto-entrepreneur un
+auto-entrepreneur en france et bien shine qui
+
+184
+00:10:33,991 --> 00:10:37,348
+sera en premier c'est super donc google ai
+shine sera en deuxième donc dans tous les
+
+185
+00:10:37,365 --> 00:10:40,913
+cas ils sont cités pour cette question donc
+c'est super donc par exemple quel est le
+
+186
+00:10:40,930 --> 00:10:43,748
+compte pro à choisir quand on est freelance
+dans charge et pt ils sont cités en
+
+187
+00:10:43,765 --> 00:10:47,209
+deuxième dans google ai mode ils sont
+cités en deuxième dans perplexity ils sont
+
+188
+00:10:47,226 --> 00:10:49,957
+cités en premier tu vois donc pour cette
+question ils sont cités donc limite pour
+
+189
+00:10:49,974 --> 00:10:53,052
+toutes les questions qu'on analysait et
+bien ils sont tout le temps cités dans lia
+
+190
+00:10:53,070 --> 00:10:55,748
+et ça c'est une très bonne chose donc ils
+sont déjà super optimisés donc c'est un
+
+191
+00:10:55,765 --> 00:10:58,878
+rapport comme ça que tu vas présenter à
+une marque pour ensuite pouvoir lui vendre
+
+192
+00:10:58,896 --> 00:11:02,113
+le service donc dans notre cas shine aura
+pas forcément besoin du service tout
+
+193
+00:11:02,130 --> 00:11:05,035
+simplement parce qu'ils sont déjà ultra
+optimisé mais ce business model que je te
+
+194
+00:11:05,052 --> 00:11:08,391
+partage c'est pas pour aller cibler des
+grosses entreprises forcément que eux ils
+
+195
+00:11:08,409 --> 00:11:10,983
+auront pas besoin de ça c'est plus
+vraiment pour aller cibler des entreprises
+
+196
+00:11:11,000 --> 00:11:15,609
+locales qui n'auront pas forcément optimisé
+leur site ou leur entreprise dans lia
+
+197
+00:11:15,626 --> 00:11:18,565
+donc c'est vraiment un business que tu
+vas faire localement pour les entreprises
+
+198
+00:11:18,583 --> 00:11:22,287
+autour de toi donc ça c'est le rapport que
+tu vas présenter à une entreprise et une
+
+199
+00:11:22,304 --> 00:11:25,539
+chose que j'aimerais préciser Claude a pu
+faire toute cette analyse et présenter
+
+200
+00:11:25,557 --> 00:11:29,226
+tous ses résultats limite en mode
+automatique sans que j'ai affaire à la des
+
+201
+00:11:29,243 --> 00:11:32,652
+configurations manuelle tout simplement
+parce qu'il a accès à plusieurs donc de ses
+
+202
+00:11:32,670 --> 00:11:37,765
+bases de données là donc ChatGPT google
+ai perplexity etc grâce à des connexions
+
+203
+00:11:37,783 --> 00:11:41,522
+qu'il a dans AIsa donc sans ça ce serait
+pas possible sans ça j'aurais dû avoir
+
+204
+00:11:41,539 --> 00:11:45,557
+manuellement à connecter perplexity connecter
+tout ça pour pouvoir avoir accès à ces
+
+205
+00:11:45,574 --> 00:11:50,357
+données là donc c'est vraiment un point
+important à préciser ici donc maintenant l'étape
+
+206
+00:11:50,374 --> 00:11:53,765
+suivante c'est quoi lorsque tu présentes un
+rapport de visibilité il ya un client c'est
+
+207
+00:11:53,783 --> 00:11:57,852
+bien beau tu lui dis voici là où ton site
+ou ton business perform dans l'IA et voici
+
+208
+00:11:57,870 --> 00:12:01,035
+les lacunes mais par rapport à ce rapport
+là et bien il ne peut pas prendre des
+
+209
+00:12:01,052 --> 00:12:04,165
+actions donc la suite c'est aussi de lui
+donner un rapport SEO c'est à dire un
+
+210
+00:12:04,183 --> 00:12:07,052
+rapport de qu'est ce qu'il faut réellement
+mettre en place pour améliorer sa
+
+211
+00:12:07,070 --> 00:12:10,774
+visibilité dans les moteurs de recherche
+il ya et pour ça on va continuer toujours
+
+212
+00:12:10,791 --> 00:12:14,113
+avec notre Claude Code on va lui donner un
+prompt et on va lui dire de faire un audit
+
+213
+00:12:14,130 --> 00:12:17,765
+de la performance SEO de toujours la
+même marque donc shine.fr sur le marché
+
+214
+00:12:17,783 --> 00:12:21,435
+francophone et de la comparer à ses
+concurrents quant au blank et aussi Revolut
+
+215
+00:12:21,452 --> 00:12:24,600
+il va utiliser les données officielles
+qui se trouvent dans Similarweb six
+
+216
+00:12:24,617 --> 00:12:27,609
+millards web c'est une grosse plateforme
+qui regroupe beaucoup de données SEO sur
+
+217
+00:12:27,626 --> 00:12:31,696
+les sites internet etc et nous on a accès
+à cette plateforme notamment grâce à AIsa
+
+218
+00:12:31,713 --> 00:12:35,730
+donc il y aura Similarweb et aussi
+DataForSEO qui va DataForSEO lui il va
+
+219
+00:12:35,748 --> 00:12:40,096
+nous donner plus les mots clés et aussi les
+données SEO provenant de google tout ça
+
+220
+00:12:40,113 --> 00:12:43,591
+on aura accès à ça grâce à AIsa donc on n'a
+rien à configurer de nouveau tout ça c'est
+
+221
+00:12:43,609 --> 00:12:47,139
+déjà fait et ensuite donc on va identifier
+cinq problèmes prioritaires on va avoir
+
+222
+00:12:47,157 --> 00:12:51,017
+un plan SEO à mettre en place par rapport
+à cette marque là donc le prompt tu peux
+
+223
+00:12:51,035 --> 00:12:54,165
+le copier coller et tu lances juste le
+prompt et là tu le laisse travailler donc là
+
+224
+00:12:54,183 --> 00:12:58,513
+encore une fois avant de faire les recherches
+SEO il me présente le coût de toute l'opération
+
+225
+00:12:58,530 --> 00:13:02,652
+donc là dans ce cas là l'opération va coûter
+10 dollars donc beaucoup plus que l'état
+
+226
+00:13:02,670 --> 00:13:06,565
+précédent donc c'est un plus gros travail
+il m'a donné un peu les coûts détaillés
+
+227
+00:13:06,583 --> 00:13:11,487
+donc Similarweb, Semrush, DataForSEO
+etc rassure toi que tu as assez donc
+
+228
+00:13:11,504 --> 00:13:14,983
+de crédit dans ton compte AIsa pour couvrir
+à chaque fois les opérations donc moi
+
+229
+00:13:15,000 --> 00:13:18,026
+dans mon cas j'ai assez de crédit donc je
+vais lui dire lance lance tous les appels
+
+230
+00:13:18,043 --> 00:13:21,139
+et là il va bosser sur tout ça ça va ça va
+prendre beaucoup plus de temps que l'étape
+
+231
+00:13:21,157 --> 00:13:24,478
+première donc on va patienter de voir le
+résultat donc là mon Claude a terminé avec
+
+232
+00:13:24,496 --> 00:13:29,052
+le rapport SEO et normalement il m'a mis
+à jour cela dans le même pas dans le même
+
+233
+00:13:29,070 --> 00:13:33,348
+fichier PDF donc je vais ouvrir le même
+dossier PDF le même fichier PDF désolé et je
+
+234
+00:13:33,365 --> 00:13:37,070
+vais descendre tout en bas pour voir la
+partie de la nouvelle analyse SEO qu'il m'a
+
+235
+00:13:37,087 --> 00:13:40,704
+fait donc voici les cinq opportunités
+de contenu pour l'entreprise shine donc
+
+236
+00:13:40,722 --> 00:13:45,209
+combler le vide sur les requêtes pris
+pur ok donc il y a un vide au niveau des
+
+237
+00:13:45,226 --> 00:13:48,635
+requêtes donc il y a des gens qui se
+demandent combien ça coûte sûrement en termes
+
+238
+00:13:48,652 --> 00:13:52,670
+de frais les tarifs par rapport à shine
+donc ça c'est une opportunité de contenu à
+
+239
+00:13:52,687 --> 00:13:57,087
+créer créer des pages de comparatives entre
+shine et d'autres concurrents comme par
+
+240
+00:13:57,104 --> 00:14:02,217
+exemple Blank Qonto Revolut etc
+renforcer la narrative le narrative
+
+241
+00:14:02,235 --> 00:14:06,200
+d'introduction sur Qonto shine c'est à
+dire ok donc ça c'est toujours du contenu
+
+242
+00:14:06,217 --> 00:14:10,287
+comparatif du contenu au niveau des dépôts
+de capitaux donc ça c'est vraiment une
+
+243
+00:14:10,304 --> 00:14:13,765
+partie plus juridique etc donc là il m'a
+analysé vraiment tout ce qu'il y avait
+
+244
+00:14:13,783 --> 00:14:17,522
+comme requêtes SEO et là où il y avait des
+opportunités donc visiblement c'est là où
+
+245
+00:14:17,539 --> 00:14:20,443
+il y a des opportunités c'est voir quoi d'autre
+et là il me propose donc un plan d'action
+
+246
+00:14:20,461 --> 00:14:23,574
+SEO comme ce que je lui ai demandé et c'est
+vraiment un plan d'action assez complet
+
+247
+00:14:23,591 --> 00:14:26,513
+donc déjà il nous présente des différentes
+analyses qu'il a fait au niveau du trafic
+
+248
+00:14:26,530 --> 00:14:30,513
+donc là tu peux voir que shine donc a environ
+un million de visiteurs un million de
+
+249
+00:14:30,530 --> 00:14:34,774
+cent par mois comparé à Qonto qui a beaucoup
+plus plein qui a presque pas du tout
+
+250
+00:14:34,791 --> 00:14:38,722
+de visiteurs 4 300 et Revolut qui vraiment
+domine grave le marché mais par contre
+
+251
+00:14:38,739 --> 00:14:41,800
+quand on revient sur l'analyse ya il bien
+tu vois que shine est beaucoup plus cité
+
+252
+00:14:41,817 --> 00:14:45,243
+dans l'ya par rapport aux autres même
+s'ils ont moins de trafic ils ont moins de
+
+253
+00:14:45,261 --> 00:14:49,887
+trafic notamment ici avec comparé à Revolut
+donc là il m'a si il a comparé un peu
+
+254
+00:14:49,904 --> 00:14:53,052
+différents cas de nos d'acquisition les
+gens qui vont directement sur le site les
+
+255
+00:14:53,070 --> 00:14:56,948
+recherches organiques la publicité payante
+vraiment c'est assez détaillé performance
+
+256
+00:14:56,965 --> 00:15:01,435
+en france les différents mots clés les
+mots clés les comparaisons etc et là il a
+
+257
+00:15:01,452 --> 00:15:05,226
+identifié des problèmes prioritaires au
+niveau du SEO et là il a proposé des
+
+258
+00:15:05,243 --> 00:15:10,200
+nouvelles pages à créer donc sur le site
+de shine pour pouvoir capturer du trafic
+
+259
+00:15:10,217 --> 00:15:14,878
+SEO donc gris tarifaire comparaison avec
+blank donc ça on a parlé de ça au préalable
+
+260
+00:15:14,896 --> 00:15:18,687
+dépôt de capital etc etc quand tu
+présentes un rapport comme ça à une marque
+
+261
+00:15:18,704 --> 00:15:22,374
+vraiment c'est ultra détaillé tu vois non
+seulement c'est basé sur leur sur leurs
+
+262
+00:15:22,391 --> 00:15:26,270
+vraies chiffres sur leurs vraies trafic
+etc donc c'est pas des données que tu as
+
+263
+00:15:26,287 --> 00:15:29,226
+inventé et encore une fois je te précise
+que en temps normal tu ne pourras pas avoir
+
+264
+00:15:29,243 --> 00:15:32,826
+accès à des détails à des rapports aussi
+détaillés si tu n'avais pas des connexions
+
+265
+00:15:32,843 --> 00:15:37,835
+qu'on a notamment ici avec AIsa
+maintenant le dernier point qui est
+
+266
+00:15:37,852 --> 00:15:41,243
+aussi de loin le plus important c'est
+lorsqu'on finit d'avoir cette compétence qu'on
+
+267
+00:15:41,261 --> 00:15:43,748
+sait maintenant comment générer ce genre
+de rapport comment est-ce qu'on va trouver
+
+268
+00:15:43,765 --> 00:15:47,313
+des clients et bien on va trouver des
+clients utilisant aussi Claude Code et AIsa
+
+269
+00:15:47,330 --> 00:15:50,652
+donc on va lui donner un prompt comme ça
+et on va lui dire trouve 10 entreprises en
+
+270
+00:15:50,670 --> 00:15:54,339
+france qui pourraient acheter ce type de
+rapport donc fintech éditeur de logiciels
+
+271
+00:15:54,357 --> 00:15:58,304
+etc et pour chacune tu vas trouver donc les
+contacts des personnes dans l'entreprise
+
+272
+00:15:58,322 --> 00:16:01,678
+grâce à Apollo Apollo qui est un outil de
+prospection donc grâce à ce prompt Claude
+
+273
+00:16:01,696 --> 00:16:04,930
+code va directement aller te trouver
+des clients à qui tu peux présenter ces
+
+274
+00:16:04,948 --> 00:16:07,504
+rapports là et à qui tu peux vendre ce
+service maintenant un point important je t'ai
+
+275
+00:16:07,522 --> 00:16:11,817
+précisé dans la vidéo que ce genre de
+business model il va beaucoup plus marcher
+
+276
+00:16:11,835 --> 00:16:15,122
+avec des entreprises vraiment au niveau
+local pas des grosses entreprises donc moi
+
+277
+00:16:15,139 --> 00:16:18,235
+je vais le préciser dans le prompt voilà
+je lui précise que ça c'est à rien de me
+
+278
+00:16:18,252 --> 00:16:21,000
+dire que voilà je peux présenter ce rapport
+à des grosses entreprises comme Revolut
+
+279
+00:16:21,017 --> 00:16:24,409
+ça c'est à rien parce que un prestataire
+de service vraiment qui n'est pas ne peut
+
+280
+00:16:24,426 --> 00:16:27,365
+pas vendre comme ça des grosses entreprises
+donc logiquement faut se concentrer sur
+
+281
+00:16:27,383 --> 00:16:31,748
+des radires des PME vraiment au niveau local
+donc je vais lancer ce prompt là il va
+
+282
+00:16:31,765 --> 00:16:35,330
+aller me rechercher des clients et il va
+me présenter ça dans un fichier CSV avec
+
+283
+00:16:35,348 --> 00:16:38,948
+les différents prospects les contacts des
+prospects etc etc donc normalement je vais
+
+284
+00:16:38,965 --> 00:16:42,304
+patienter il devrait aussi me présenter
+la liste des coûts avant de débuter genre
+
+285
+00:16:42,322 --> 00:16:45,817
+combien toute opération va me coûter en
+termes de crédit donc le coût total ça va me
+
+286
+00:16:45,835 --> 00:16:51,000
+coûter 0,24 dollars de crédit dans AIsa
+ce qui notamment mon niveau est très très
+
+287
+00:16:51,017 --> 00:16:54,878
+très abordable donc je vais lui dire de
+lancer et d'aller faire les recherches donc
+
+288
+00:16:54,896 --> 00:16:58,583
+là mon Claude a terminé de me trouver des
+entreprises à qui présenter ce de vie là
+
+289
+00:16:58,600 --> 00:17:03,504
+donc il m'a trouvé dix entreprises donc
+des entreprises locales en France en
+
+290
+00:17:03,522 --> 00:17:07,557
+fonction des bas des spécificités que je
+vais demander ensuite dans ces entreprises
+
+291
+00:17:07,574 --> 00:17:10,687
+là il a recherché donc des personnes
+qu'on peut contacter donc idéalement des
+
+292
+00:17:10,704 --> 00:17:14,617
+personnes qui bosse dans le marketing etc
+et il a eu accès à des données grâce à
+
+293
+00:17:14,635 --> 00:17:19,817
+LinkedIn Apollo aussi qui vient directement
+de AIsa donc il a fait des recherches
+
+294
+00:17:19,835 --> 00:17:24,043
+etc le premier document qui m'avait donné
+il a eu un problème il n'avait pas pu
+
+295
+00:17:24,061 --> 00:17:27,348
+avoir accès aux adresses simée de ces
+personnes là même s'il a trouvé donc des
+
+296
+00:17:27,365 --> 00:17:29,730
+contacts de personnes par exemple
+ici ça c'est le fichier CSV
+
+297
+00:17:29,748 --> 00:17:34,896
+qu'il a trouvé Laurent qui
+
+298
+00:17:34,913 --> 00:17:39,261
+visiblement est le directeur du marketing mobile
+mais il n'a pas pu avoir accès à l'adresse
+
+299
+00:17:39,278 --> 00:17:43,209
+email de Laurent du coup ni son compte
+LinkedIn donc là on pourra pas le contacter
+
+300
+00:17:43,226 --> 00:17:46,183
+donc c'est des choses qui peuvent arriver
+donc il n'aura pas forcément accès à
+
+301
+00:17:46,200 --> 00:17:48,426
+toutes les données à certains données qui
+peuvent être manquantes par contre ici
+
+302
+00:17:48,443 --> 00:17:53,226
+pour la banque Memo Bank il a trouvé
+Priscilla qui est head of marketing and
+
+303
+00:17:53,243 --> 00:17:57,000
+communication et il a trouvé son LinkedIn
+donc je peux aller sur son LinkedIn le
+
+304
+00:17:57,017 --> 00:18:00,357
+voir réellement est-ce que c'est vraiment
+ben vrai ok c'est vraiment vrai Priscilla
+
+305
+00:18:00,374 --> 00:18:05,435
+qui travaille à Memo Bank et qui est
+head of marketing tu vois donc il a
+
+306
+00:18:05,452 --> 00:18:09,365
+trouvé je pense sur 10 personnes il a trouvé
+le contact de 5 ou 6 personnes tu vois
+
+307
+00:18:09,383 --> 00:18:14,548
+donc 1 2 3 4 5 6 7 donc il y a 7
+personnes pour lesquelles il a trouvé
+
+308
+00:18:14,565 --> 00:18:17,835
+les contacts et malheureusement il y en a
+trois pour lesquelles il n'a pas trouvé le
+
+309
+00:18:17,852 --> 00:18:20,339
+contact donc c'est des choses qui peuvent
+arriver donc dans ce cas là tu lui dis de
+
+310
+00:18:20,357 --> 00:18:22,739
+chercher des contacts d'autres entreprises
+donc c'est comme ça que tu pourras
+
+311
+00:18:22,757 --> 00:18:26,009
+trouver des contacts et la suite c'est de
+les contacter et pour les contacter tu
+
+312
+00:18:26,026 --> 00:18:29,348
+peux directement le faire encore une fois
+dans ton Claude Code donc tu peux donner
+
+313
+00:18:29,365 --> 00:18:34,148
+accès à ta boîte gmail et contacter ces
+contacts directement par email si tu as
+
+314
+00:18:34,165 --> 00:18:37,487
+accès à leurs emails si tu n'as pas accès
+à leurs emails comme dans mon cas tu peux
+
+315
+00:18:37,504 --> 00:18:41,035
+aussi donner l'accès à LinkedIn donc ton
+compte LinkedIn à ton Claude Code et il
+
+316
+00:18:41,052 --> 00:18:44,635
+pourra faire la prospection directement sur
+LinkedIn je te rappelle que le lien pour
+
+317
+00:18:44,652 --> 00:18:47,817
+la plateforme AIsa et se retrouve dans la
+description si tu as des questions par
+
+318
+00:18:47,835 --> 00:18:50,791
+rapport à tout ce workflow complet
+n'hésite pas à me les poser directement en
+
+319
+00:18:50,809 --> 00:18:51,678
+commentaire
+
