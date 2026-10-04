@@ -64,7 +64,7 @@ export const useT = () => useCurrentFrame() / FPS;
 
 /** Interpolation par paliers temporels avec easing inOut (caméras : jamais d'à-coup). */
 export const keyed = (t: number, times: number[], values: number[], ease = Easing.inOut(Easing.cubic)) =>
-  interpolate(t, times, values, { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
+  times.length < 2 ? values[0] : interpolate(t, times, values, { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
 
 /** Entrée/sortie douce standard : 0→1 sur `inDur`, 1→0 sur les `outDur` dernières secondes. */
 export const inOut = (t: number, start: number, end: number, inDur = 0.35, outDur = 0.35) =>
@@ -145,6 +145,8 @@ export const FocusVeil: React.FC<{ start: number; end: number; blur?: number; da
 // v2 : la fenêtre peut arriver inclinée en perspective (`tilt`) et se redresser.
 export type ViewKey = { t: number; z: number; cx: number; cy: number };
 export type TiltKey = { t: number; rx: number; ry: number };
+/** Zone floutée : temps relatifs à la Sequence de l'écran, coordonnées en pixels de la capture. */
+export type BlurMask = { from: number; to: number; x: number; y: number; w: number; h: number };
 export const WIN_DEFAULT = { x: 104, y: 54, w: 1712, h: 971 }; // mesuré sur la capture AIsa
 
 export const ScreenStage: React.FC<{
@@ -155,7 +157,8 @@ export const ScreenStage: React.FC<{
   dim?: (t: number) => number; // assombrissement 0..1 (pour spotlight / stat)
   blur?: (t: number) => number; // flou de mise au point en px (chiffre héros posé dessus)
   tilt?: TiltKey[]; // inclinaison 3D (degrés), redressée au fil des clés
-}> = ({ src, trimBefore, keys, win = WIN_DEFAULT, dim, blur, tilt }) => {
+  masks?: BlurMask[]; // zones floutées (données personnelles), en pixels de la capture
+}> = ({ src, trimBefore, keys, win = WIN_DEFAULT, dim, blur, tilt, masks = [] }) => {
   const t = useT();
   const ts = keys.map((k) => k.t);
   const z = Math.exp(keyed(t, ts, keys.map((k) => Math.log(k.z))));
@@ -200,6 +203,23 @@ export const ScreenStage: React.FC<{
               muted
               style={{ position: "absolute", left: -win.x, top: -win.y, width: W, height: H, maxWidth: "none", maxHeight: "none" }}
             />
+            {masks
+              .filter((m) => t >= m.from && t < m.to)
+              .map((m, i) => (
+                <div
+                  key={i}
+                  style={{
+                    position: "absolute",
+                    left: m.x - win.x,
+                    top: m.y - win.y,
+                    width: m.w,
+                    height: m.h,
+                    borderRadius: 10,
+                    backdropFilter: "blur(14px) saturate(0.6)",
+                    background: "rgba(140,140,140,0.18)",
+                  }}
+                />
+              ))}
           </div>
         </div>
       </AbsoluteFill>
@@ -487,5 +507,25 @@ export const FacePip: React.FC<{
         />
       </div>
     </AbsoluteFill>
+  );
+};
+
+// ─── Pastille de chapitre permanente ([CHAPTER-PILL]) : en haut à gauche ────────
+export const ChapterPill: React.FC<{ n: number; total: number; title: string; end: number }> = ({ n, total, title, end }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.5, 0.4);
+  return (
+    <div style={{ position: "absolute", left: 44, top: 36, opacity: o, transform: `translateY(${(1 - o) * -10}px)` }}>
+      <div style={{ ...glass, background: "linear-gradient(180deg, rgba(18,22,15,0.9), rgba(18,22,15,0.8))", borderRadius: 999, padding: "14px 26px", display: "flex", alignItems: "center", gap: 16, fontFamily: FONT }}>
+        <span style={{ fontSize: 26, letterSpacing: "0.14em", textTransform: "uppercase", color: LIME, fontWeight: 500 }}>Étape {n}/{total}</span>
+        <span style={{ width: 1, height: 24, background: LINE }} />
+        <span style={{ fontSize: 30, color: INK, fontWeight: 500, letterSpacing: "-0.01em" }}>{title}</span>
+        <span style={{ display: "flex", gap: 5, marginLeft: 6 }}>
+          {Array.from({ length: total }, (_, i) => (
+            <span key={i} style={{ width: 18, height: 5, borderRadius: 3, background: i < n ? LIME : "rgba(255,255,255,0.18)" }} />
+          ))}
+        </span>
+      </div>
+    </div>
   );
 };

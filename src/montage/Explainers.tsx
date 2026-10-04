@@ -364,3 +364,118 @@ export const NoteCard: React.FC<{ eyebrow: string; title: string; meta?: string;
     </div>
   );
 };
+
+// ─── Sous-étape numérotée ([STEP-LT]) : en bas à gauche (le médaillon est à droite) ─
+export const StepLT: React.FC<{ n: number | string; text: string; end: number }> = ({ n, text, end }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.01, 0.4);
+  const b = blurIn(t, 0, 0.45, 26);
+  return (
+    <div style={{ position: "absolute", left: 60, bottom: 64, ...b, opacity: Math.min(o, Number(b.opacity)) }}>
+      <div style={{ ...glass, background: "linear-gradient(180deg, rgba(18,22,15,0.94), rgba(18,22,15,0.88))", borderRadius: 30, padding: "22px 34px 22px 22px", display: "flex", alignItems: "center", gap: 22, fontFamily: FONT }}>
+        <span style={{ width: 66, height: 66, borderRadius: 33, background: LIME, color: "#0d1208", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 36, fontWeight: 600 }}>{n}</span>
+        <span style={{ fontSize: 50, fontWeight: 500, color: INK, letterSpacing: "-0.02em" }}>{rich(text)}</span>
+      </div>
+    </div>
+  );
+};
+
+// ─── Pastille en haut au centre (étiquette, astuce, tendance) ──────────────
+export const TopPill: React.FC<{ text: string; end: number; icon?: "star" | "trend" | "tip"; top?: number }> = ({ text, end, icon = "star", top = 80 }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.01, 0.4);
+  const b = blurIn(t, 0, 0.45, -20);
+  return (
+    <AbsoluteFill style={{ alignItems: "center", paddingTop: top }}>
+      <div style={{ ...b, opacity: Math.min(o, Number(b.opacity)) }}>
+        <Pill size={48} style={{ background: "linear-gradient(180deg, rgba(18,22,15,0.94), rgba(18,22,15,0.88))" }}>
+          {icon === "star" && <Star size={40} />}
+          {icon === "trend" && (
+            <svg width={44} height={44} viewBox="0 0 24 24" fill="none" stroke={LIME} strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 17l6-6 4 4 8-8M15 7h6v6" />
+            </svg>
+          )}
+          {icon === "tip" && <span style={{ fontSize: 30, letterSpacing: "0.14em", color: LIME, textTransform: "uppercase" }}>Astuce</span>}
+          {rich(text)}
+        </Pill>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ─── Mise en avant d'une zone de l'écran ([SPOTLIGHT]) : cadre lime + légende ─
+export const Spotlight: React.FC<{ x: number; y: number; w: number; h: number; caption?: string; end: number }> = ({ x, y, w, h, caption, end }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.3);
+  const sc = 1.04 - 0.04 * keyed(t, [0, 0.35], [0, 1], EASE);
+  return (
+    <AbsoluteFill style={{ opacity: o }}>
+      <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 26, border: `4px solid ${LIME}`, boxShadow: `0 0 0 2000px rgba(9,11,8,0.45), 0 0 40px rgba(198,243,109,0.45)`, transform: `scale(${sc})` }} />
+      {caption && (
+        <div style={{ position: "absolute", left: x, width: w, top: y + h + 22, display: "flex", justifyContent: "center", ...blurIn(t, 0.15, 0.4, 16) }}>
+          <Pill size={44} accent>
+            {caption}
+          </Pill>
+        </div>
+      )}
+    </AbsoluteFill>
+  );
+};
+
+// ─── « Le Prompt décortiqué » ([PROMPT-CARD]) ──────────────────────────────
+export const PromptCard: React.FC<{ parts: { text: string; label?: string; at?: number }[]; end: number; tool?: string }> = ({ parts, end, tool = "Claude Code" }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.01, 0.4);
+  const b = blurIn(t, 0, 0.5, 30);
+  const labels = parts.filter((p) => p.label);
+  return (
+    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: o, fontFamily: FONT }}>
+      <AbsoluteFill style={{ background: "rgba(9,11,8,0.55)" }} />
+      <div style={{ display: "flex", gap: 18, marginBottom: 30, position: "relative" }}>
+        {labels.map((p) => (
+          <div key={p.label} style={blurIn(t, p.at ?? 0, 0.4, 16)}>
+            <Pill size={38} accent={t >= (p.at ?? 0)}>
+              {p.label}
+            </Pill>
+          </div>
+        ))}
+      </div>
+      <div style={{ ...glass, background: "linear-gradient(180deg, rgba(18,22,15,0.96), rgba(18,22,15,0.9))", position: "relative", width: 1500, borderRadius: 40, padding: "40px 54px", ...b, opacity: Math.min(o, Number(b.opacity)) }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 22 }}>
+          <Star size={30} />
+          <Eyebrow size={28}>Le prompt · {tool}</Eyebrow>
+        </div>
+        <div style={{ fontSize: 52, lineHeight: 1.3, fontWeight: 400, color: MUTED, letterSpacing: "-0.015em" }}>
+          {parts.map((p, i) => {
+            const on = p.at !== undefined && t >= p.at;
+            return (
+              <span key={i} style={{ color: on ? INK : p.at === undefined ? INK : MUTED, borderBottom: on ? `4px solid ${LIME}` : "4px solid transparent", transition: "none" }}>
+                {p.text}
+              </span>
+            );
+          })}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ─── Validation ([CHECK]) : « ✓ AIsa connecté » ─────────────────────────────
+export const CheckCard: React.FC<{ text: string; end: number }> = ({ text, end }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.01, 0.4);
+  const ring = keyed(t, [0.1, 0.7], [0, 1], EASE);
+  const tick = keyed(t, [0.45, 0.9], [0, 1], EASE);
+  return (
+    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: o, fontFamily: FONT }}>
+      <AbsoluteFill style={{ background: "rgba(9,11,8,0.5)" }} />
+      <div style={{ ...glass, background: "linear-gradient(180deg, rgba(18,22,15,0.96), rgba(18,22,15,0.9))", position: "relative", borderRadius: 44, padding: "48px 72px", display: "flex", alignItems: "center", gap: 40, ...blurIn(t, 0, 0.45, 26) }}>
+        <svg width={130} height={130} viewBox="0 0 130 130">
+          <circle cx={65} cy={65} r={58} fill="none" stroke={LIME} strokeWidth={6} strokeDasharray={365} strokeDashoffset={365 * (1 - ring)} transform="rotate(-90 65 65)" />
+          <path d="M40 67 L58 84 L92 48" fill="none" stroke={LIME} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" strokeDasharray={80} strokeDashoffset={80 * (1 - tick)} />
+        </svg>
+        <span style={{ fontSize: 96, fontWeight: 500, color: INK, letterSpacing: "-0.04em" }}>{rich(text)}</span>
+      </div>
+    </AbsoluteFill>
+  );
+};

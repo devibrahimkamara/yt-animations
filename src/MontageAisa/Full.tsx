@@ -23,8 +23,9 @@ import {
   blurIn,
   inOut,
   type SfxCue,
+  ChapterPill,
 } from "../montage/lib";
-import { GoogleToAI, IconRow, NoteCard, Teaser } from "../montage/Explainers";
+import { BrandTiles, CheckCard, GoogleToAI, IconRow, NoteCard, PromptCard, Spotlight, StepLT, Teaser, TopPill } from "../montage/Explainers";
 import { HOOK_END, hookMusicLevel, MontageAisaHook, SHIFT } from "./Hook";
 
 export const FULL_DURATION = 1301.0; // audio_v2.wav
@@ -223,6 +224,189 @@ const Block1: React.FC = () => (
   </AbsoluteFill>
 );
 
+
+// ═══ Bloc 2 · étape 2 « Les outils » (4:06 → 9:04,6) ═════════════════════════
+// Avant le carton (312,11 s) : source = T − 6,79 ; après : source = T − 8,79.
+const B2 = B1_END; // 246,0
+const CARD2 = 312.11;
+const B2_END = 544.57;
+const SRC2 = 8.79;
+const s2 = (T: number) => T - (CARD2 + 2.0); // temps relatif à la couche écran après le carton
+// Plans AIsa (valeurs de l'écran) : cartes en pixels de la capture. Caméra fixe z 1,3 ; centre réel (1078, 469)
+// = (1104, 377) ramené dans la fenêtre par le blocage de bord de ScreenStage.
+const PLAN_VIEW = { z: 1.3, cx: 1078, cy: 469 };
+const toScreen = (x: number, y: number, w: number, h: number) => ({
+  x: 960 + (x - PLAN_VIEW.cx) * PLAN_VIEW.z,
+  y: 540 + (y - PLAN_VIEW.cy) * PLAN_VIEW.z,
+  w: w * PLAN_VIEW.z,
+  h: h * PLAN_VIEW.z,
+});
+
+const Block2: React.FC = () => (
+  <AbsoluteFill>
+    {/* Avant le carton : face cam (outils cités), puis le site AIsa */}
+    <At from={285.5} to={CARD2}>
+      <ScreenStage
+        src={SCREEN}
+        trimBefore={285.5 - SRC}
+        keys={[
+          { t: 0, z: 0.64, cx: 960, cy: 540 },
+          { t: 1.8, z: 0.64, cx: 960, cy: 540 },
+          { t: 4.5, z: 0.92, cx: 960, cy: 520 },
+        ]}
+        tilt={[
+          { t: 0, rx: 5, ry: -9 },
+          { t: 1.8, rx: 5, ry: -9 },
+          { t: 4.0, rx: 0, ry: 0 },
+        ]}
+      />
+    </At>
+    <At from={B2} to={CARD2}>
+      <FacePip
+        src={FACE}
+        trimBefore={B2 - SRC}
+        face={FACE_POS}
+        keys={[
+          { t: 0, p: 0 },
+          { t: 286.4 - B2, p: 0 },
+          { t: 287.3 - B2, p: 1 },
+        ]}
+        zoomKeys={[
+          { t: 0, z: 1.05 },
+          { t: 262 - B2, z: 1.0 },
+          { t: 286 - B2, z: 1.04 },
+        ]}
+      />
+    </At>
+    {/* « DataForSEO… SEMrush… Ahrefs, Similarweb » */}
+    <At from={265.3} to={280.5}>
+      <BrandTiles
+        end={280.5 - 265.3}
+        title="Les sources de données"
+        brands={[
+          { name: "DataForSEO", color: "#4F8BF7", at: 265.83 - 265.3 },
+          { name: "Semrush", color: "#FF642D", at: 271.15 - 265.3 },
+          { name: "Ahrefs", color: "#FF8A00", at: 273.31 - 265.3 },
+          { name: "Similarweb", color: "#2E7CF6", at: 274.15 - 265.3 },
+        ]}
+      />
+    </At>
+    <At from={288.6} to={296.6}>
+      <TopPill text="*AIsa* : tous ces outils, un seul accès" end={296.6 - 288.6} />
+    </At>
+
+    {/* Après le carton : la démo (écran + médaillon), données perso floutées */}
+    <At from={CARD2 + 2.0} to={B2_END}>
+      <ScreenStage
+        src={SCREEN}
+        trimBefore={CARD2 + 2.0 - SRC2}
+        keys={[
+          { t: 0, z: 0.92, cx: 960, cy: 540 },
+          { t: s2(335.0), z: 0.92, cx: 960, cy: 540 },
+          { t: s2(337.0), z: 1.0, cx: 960, cy: 470 },
+          { t: s2(343.6), z: 1.0, cx: 960, cy: 470 },
+          { t: s2(345.6), ...PLAN_VIEW },
+          { t: s2(363.0), ...PLAN_VIEW },
+          { t: s2(364.8), z: 0.92, cx: 960, cy: 540 },
+          { t: s2(532.4), z: 0.92, cx: 960, cy: 540 },
+          { t: s2(534.4), z: 1.45, cx: 1150, cy: 790 },
+        ]}
+        masks={[
+          { from: s2(333.5), to: s2(376.5), x: 100, y: 940, w: 310, h: 85 }, // e-mail (bas de la barre AIsa)
+          { from: s2(415.5), to: s2(B2_END + 1), x: 100, y: 270, w: 405, h: 755 }, // historique Claude Code
+          { from: s2(415.5), to: s2(491.0), x: 690, y: 232, w: 935, h: 165 }, // sessions récentes
+          { from: s2(431.4), to: s2(440.9), x: 425, y: 95, w: 1075, h: 680 }, // fenêtre Finder
+        ]}
+      />
+    </At>
+    <At from={CARD2 + 2.0} to={B2_END}>
+      <FacePip src={FACE} trimBefore={CARD2 + 2.0 - SRC2} face={FACE_POS} keys={[{ t: 0, p: 1 }]} />
+    </At>
+
+    {/* Sous-étapes */}
+    <At from={316.6} to={322.0}>
+      <StepLT n={1} text="Créer ton compte *AIsa*" end={322.0 - 316.6} />
+    </At>
+    <At from={343.0} to={347.6}>
+      <StepLT n={2} text="Choisir un plan" end={347.6 - 343.0} />
+    </At>
+    {/* Les 3 plans (valeurs de l'écran) */}
+    <At from={346.2} to={358.0}>
+      <Spotlight {...toScreen(422, 259, 438, 236)} caption="Sans abonnement" end={358.0 - 346.2} />
+    </At>
+    <At from={358.2} to={360.2}>
+      <Spotlight {...toScreen(883, 259, 442, 236)} caption="39 $/mois" end={360.2 - 358.2} />
+    </At>
+    <At from={360.3} to={362.9}>
+      <Spotlight {...toScreen(1344, 259, 442, 236)} caption="200 $/mois" end={362.9 - 360.3} />
+    </At>
+    <At from={370.4} to={375.6}>
+      <StepLT n={3} text="Ajouter des crédits" end={375.6 - 370.4} />
+    </At>
+    <At from={381.4} to={387.6}>
+      <StepLT n={4} text="Installer *Claude Code* (version desktop)" end={387.6 - 381.4} />
+    </At>
+    <At from={429.5} to={435.2}>
+      <StepLT n={5} text="Créer le dossier du projet" end={435.2 - 429.5} />
+    </At>
+    <At from={455.0} to={460.0}>
+      <TopPill icon="tip" text="1 dossier par *projet*" end={460.0 - 455.0} />
+    </At>
+    <At from={460.0} to={465.4}>
+      <StepLT n={6} text="Connecter *AIsa* à Claude Code" end={465.4 - 460.0} />
+    </At>
+    <At from={462.2} to={471.2}>
+      <PromptCard
+        end={471.2 - 462.2}
+        parts={[
+          { text: "Lis https://aisa.one/docs/agent-quickstart.md", label: "Lis la documentation AIsa", at: 464.45 - 462.2 },
+          { text: " et " },
+          { text: "connecte AIsa à Claude Code.", label: "Connecte AIsa à Claude Code", at: 468.51 - 462.2 },
+        ]}
+      />
+    </At>
+    <At from={473.6} to={487.0}>
+      <SettingsPills
+        end={487.0 - 473.6}
+        items={[
+          { k: "Modèle", v: "Sonnet 5", at: 0.05 },
+          { k: "Effort", v: "Medium", at: 481.73 - 473.6 },
+          { k: "Mode", v: "Accept edits", at: 485.29 - 473.6 },
+        ]}
+      />
+    </At>
+    <At from={539.7} to={B2_END}>
+      <CheckCard text="*AIsa* connecté" end={B2_END - 539.7} />
+    </At>
+
+    {/* Pastille de chapitre permanente (masquée par le carton) */}
+    <At from={244.6} to={B2_END}>
+      <ChapterPill n={2} total={5} title="Les outils" end={B2_END - 244.6} />
+    </At>
+    <At from={CARD2} to={CARD2 + 2.0}>
+      <ChapterCard n={2} total={5} title="Préparer *les outils*" end={2.0} />
+    </At>
+  </AbsoluteFill>
+);
+
+const SettingsPills: React.FC<{ items: { k: string; v: string; at: number }[]; end: number }> = ({ items, end }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.01, 0.4);
+  return (
+    <AbsoluteFill style={{ alignItems: "center", paddingTop: 90, opacity: o }}>
+      <div style={{ display: "flex", gap: 20 }}>
+        {items.map((it) => (
+          <div key={it.k} style={blurIn(t, it.at, 0.4, -16)}>
+            <Pill size={44} style={{ background: "linear-gradient(180deg, rgba(18,22,15,0.94), rgba(18,22,15,0.88))" }}>
+              <span style={{ color: "#9ba394" }}>{it.k} :</span> {rich(`*${it.v}*`)}
+            </Pill>
+          </div>
+        ))}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 /** Apparition / disparition floue d'un insert plein cadre. */
 const RevealBox: React.FC<{ end: number; children: React.ReactNode }> = ({ end, children }) => {
   const t = useT();
@@ -277,6 +461,37 @@ const SFX_B1: SfxCue[] = [
   { k: "popNotif03", at: 242.45, gain: 0.5 },
 ];
 
+
+const SFX_B2: SfxCue[] = [
+  { k: "popNotif03", at: 244.7, gain: 0.4 },
+  { k: "popSelectA", at: 265.83 },
+  { k: "popSelectB", at: 271.15 },
+  { k: "popSelectA", at: 273.31, gain: 0.6 },
+  { k: "popSelectB", at: 274.15, gain: 0.6 },
+  { k: "whoosh02", at: 286.5, gain: 0.7 },
+  { k: "popNotif12", at: 288.7 },
+  { k: "whoosh05", at: 312.15 },
+  { k: "impactHitLow", at: 312.55, gain: 0.35 },
+  { k: "confirmNotif13", at: 313.3, gain: 0.6 },
+  { k: "popNotif02", at: 316.7, gain: 0.6 },
+  { k: "popNotif02", at: 343.1, gain: 0.6 },
+  { k: "clickA", at: 346.25 },
+  { k: "clickA", at: 358.25 },
+  { k: "clickA", at: 360.35 },
+  { k: "popNotif02", at: 370.5, gain: 0.6 },
+  { k: "popNotif02", at: 381.5, gain: 0.6 },
+  { k: "popNotif02", at: 429.6, gain: 0.6 },
+  { k: "popNotif12", at: 455.1, gain: 0.7 },
+  { k: "popNotif02", at: 460.1, gain: 0.6 },
+  { k: "whoosh03", at: 462.3, gain: 0.6 },
+  { k: "popSelectA", at: 464.5 },
+  { k: "popSelectB", at: 468.55 },
+  { k: "clickKey", at: 473.7 },
+  { k: "clickKey", at: 481.75 },
+  { k: "clickKey", at: 485.3 },
+  { k: "confirmAchievement", at: 540.2, gain: 0.8 },
+];
+
 const MusicTrack: React.FC<{ k: keyof typeof MUSIC; from: number; to: number; level: (T: number) => number }> = ({ k, from, to, level }) => (
   <Sequence from={f(from)} durationInFrames={f(to - from)} layout="none">
     <Audio src={staticFile(`epidemic/hq/${MUSIC[k].file}`)} volume={(fr) => musicGain(k) * level(fr / 30 + from)} />
@@ -291,6 +506,7 @@ export const MontageAisa: React.FC = () => (
     </Sequence>
     {/* Les blocs sont écrits en temps absolus de la timeline */}
     <Block1 />
+    <Block2 />
     <Sequence from={f(B1)}>
       <Grain />
     </Sequence>
@@ -305,7 +521,9 @@ export const MontageAisa: React.FC = () => (
       to={105.6}
       level={(T) => (T < B1 ? hookMusicLevel(T - SHIFT, true) : interpolate(T, [B1, 100.4, 100.8, 103.9, 104.0, 105.5], [1, 1, 1.35, 1.35, 1.2, 0], clamp))}
     />
-    <MusicTrack k="preuve" from={104.0} to={B1_END} level={(T) => interpolate(T, [104.0, 105.3, 106.8, 107.6], [0, 1.3, 1.3, 1], clamp)} />
+    <MusicTrack k="preuve" from={104.0} to={314.0} level={(T) => interpolate(T, [104.0, 105.3, 106.8, 107.6, 312.0, 313.8], [0, 1.3, 1.3, 1, 1, 0], clamp)} />
+    <MusicTrack k="outils" from={312.1} to={B2_END} level={(T) => interpolate(T, [312.1, 312.9, 314.1, 315.0], [0, 1.3, 1.3, 1], clamp)} />
     <SfxTrack cues={SFX_B1} />
+    <SfxTrack cues={SFX_B2} />
   </AbsoluteFill>
 );
