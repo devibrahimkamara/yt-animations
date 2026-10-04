@@ -1,0 +1,719 @@
+1
+00:00:00,000 --> 00:00:03,860
+Donc le site internet que tu vois à mon
+écran, c'est un site internet professionnel
+
+2
+00:00:03,880 --> 00:00:08,040
+que j'ai créé pour une entreprise et un site
+internet pareil si je dois le facturer,
+
+3
+00:00:08,060 --> 00:00:11,740
+c'est minimum 1000 euros et pas moins. Et
+pour te dire, ce genre de site internet,
+
+4
+00:00:11,840 --> 00:00:15,860
+je peux en créer 10, 20 par jour parce
+que la manière dont je les crée, elle est
+
+5
+00:00:15,880 --> 00:00:19,380
+très simple. Certes le site, il est ultra
+professionnel, mais derrière, c'est l'intelligence
+
+6
+00:00:19,400 --> 00:00:23,600
+artificielle qui m'aide à avoir un résultat
+pareil. Et bien évidemment que j'ai
+
+7
+00:00:23,620 --> 00:00:26,880
+aussi utilisé cette même méthode pour créer
+mon propre site internet. Donc quand tu
+
+8
+00:00:26,900 --> 00:00:31,180
+vas sur mon site internet ibrahimkamara.com,
+tu trouveras un site ultra quali
+
+9
+00:00:31,200 --> 00:00:34,380
+professionnel que j'ai fait moi-même. J'ai
+pas eu besoin d'un développeur web ou
+
+10
+00:00:34,400 --> 00:00:37,360
+quoi que ce soit, c'est un site très
+simple qui convertit, qui est simple,
+
+11
+00:00:37,400 --> 00:00:41,160
+professionnel, à mon image. Et dans ces
+vidéos, je vais te montrer comment est-ce
+
+12
+00:00:41,180 --> 00:00:44,380
+que tu pourras créer un tel site internet
+et surtout comment est-ce que tu pourras
+
+13
+00:00:44,400 --> 00:00:48,360
+faire de l'argent avec cette compétence-là.
+Donc soit en toi-même mettant à jour tes
+
+14
+00:00:48,380 --> 00:00:52,220
+propres sites internet et en arrêtant de
+payer des développeurs pour ça ou alors en
+
+15
+00:00:52,240 --> 00:00:55,460
+faisant des sites internet pour des
+entreprises qui te payeront de l'argent. Pour
+
+16
+00:00:55,480 --> 00:00:58,180
+ceux qui me découvrent aujourd'hui, je
+m'appelle Ibrahim Kamara, je fais des vidéos
+
+17
+00:00:58,200 --> 00:01:02,240
+sur YouTube depuis maintenant 6 ans et sur
+cette chaîne je te documente toutes mes
+
+18
+00:01:02,260 --> 00:01:05,620
+aventures entrepreneuriales pour que tu en
+profites et que tu génères de l'argent.
+
+19
+00:01:05,640 --> 00:01:08,780
+Mais avant, pour créer des sites internet,
+il fallait vraiment avoir un minimum de
+
+20
+00:01:08,800 --> 00:01:12,120
+connaissances en développement informatique
+et tout ça. Mais de nos jours, ce n'est
+
+21
+00:01:12,140 --> 00:01:15,920
+plus le cas avec l'IA comme je vais te
+montrer tout à l'heure. Donc on va aller sur
+
+22
+00:01:15,940 --> 00:01:19,560
+ce site-là, le lien sera dans la description
+et également le premier lien, c'est
+
+23
+00:01:19,580 --> 00:01:24,440
+Hostinger.com. Donc Hostinger, c'est une
+plateforme qui te permet de créer des sites
+
+24
+00:01:24,460 --> 00:01:27,880
+internet. Et notamment de nos jours, grâce
+à leur plateforme, on peut le faire avec
+
+25
+00:01:27,900 --> 00:01:31,740
+l'IA qui est directement intégrée et ça
+devient encore plus facile. Donc t'arrives,
+
+26
+00:01:31,760 --> 00:01:35,420
+tu cliques sur voir les packs et là tu verras
+les différentes offres d'abonnement qu'ils
+
+27
+00:01:35,440 --> 00:01:40,620
+ont. Ils ont une offre à 2,99 par mois, une
+offre à 3,99 par mois et 7,99. Moi je te
+
+28
+00:01:40,640 --> 00:01:44,640
+conseillerais l'offre 3,99 parce que c'est
+celle qu'ils ont le plus boosté parce que
+
+29
+00:01:44,660 --> 00:01:48,960
+c'est une offre illimitée. Pour 3,99 par
+mois, eh bien tu peux créer autant de sites
+
+30
+00:01:48,980 --> 00:01:51,880
+que tu veux. Limite c'est écrit ici, site
+web illimitée. Et je pense que c'est
+
+31
+00:01:51,900 --> 00:01:54,520
+vraiment une promo qui sont en train de
+faire, je pense pas que ça va durer pour
+
+32
+00:01:54,540 --> 00:01:58,480
+toujours. Donc autant profiter, tu peux
+avoir autant de boîtes mails que tu veux
+
+33
+00:01:58,500 --> 00:02:01,900
+pendant un an. Donc des boîtes mails
+professionnels, tu peux avoir un on-domain
+
+34
+00:02:01,920 --> 00:02:07,000
+personnalisé, etc. Support 24 h/24.
+Vraiment c'est une offre vraiment à ne
+
+35
+00:02:07,020 --> 00:02:11,480
+pas rater, 3,99, c'est vraiment des centimes.
+Donc on va sélectionner cette offre-là.
+
+36
+00:02:11,520 --> 00:02:14,460
+Maintenant très important ici, quand
+t'arrives au panier, tu vas devoir choisir la
+
+37
+00:02:14,480 --> 00:02:17,660
+durée de ton abonnement. Si tu prends juste
+un mois d'abonnement, ça va te revenir à
+
+38
+00:02:17,680 --> 00:02:21,620
+très cher. Je te conseillerais de prendre
+minimum 12 mois d'abonnement et tu verras
+
+39
+00:02:21,640 --> 00:02:26,120
+que là ça revient à 3,99 par mois. Et
+honnêtement, pour 12 mois d'abonnement, ça te
+
+40
+00:02:26,140 --> 00:02:31,080
+revient à environ à 47,88 euros, genre un
+an d'abonnement où tu peux créer autant de
+
+41
+00:02:31,100 --> 00:02:34,700
+sites que tu veux. Vraiment c'est presque
+rien. Et en plus, si tu rajoutes le code
+
+42
+00:02:34,720 --> 00:02:38,700
+promo, KAMARA7, tu auras une réduction
+supplémentaire. Moi dans mon cas, ça
+
+43
+00:02:38,720 --> 00:02:41,600
+fonctionne pas parce que je l'ai déjà
+rajouté à mon panier. Sinon, ton normal, ce
+
+44
+00:02:41,620 --> 00:02:44,500
+serait beaucoup plus cher que ça. Donc une
+fois que tu rajoutes mon code, et bien tu
+
+45
+00:02:44,520 --> 00:02:48,160
+peux juste passer à l'étape du paiement, tu
+mets des informations de paiement, tu te
+
+46
+00:02:48,180 --> 00:02:51,200
+crée un compte Hostinger, c'est pas déjà
+fait. Et ensuite, tu peux passer à l'étape
+
+47
+00:02:51,220 --> 00:02:54,280
+suivante de la vidéo. Maintenant arrivés
+sur cette interface, on va choisir le mot
+
+48
+00:02:54,300 --> 00:02:58,200
+de création, soit manuel, soit IA. Bien
+évidemment, on va utiliser IA. Et celle-là
+
+49
+00:02:58,220 --> 00:03:00,820
+maintenant, tu vas mettre une description
+du site que tu souhaites créer. Donc
+
+50
+00:03:00,840 --> 00:03:04,340
+idéalement, si tu veux créer un site internet
+pour ta propre société, tu vas mettre
+
+51
+00:03:04,360 --> 00:03:07,560
+la description de ta société, tes
+informations et tout. Maintenant si tu es un
+
+52
+00:03:07,580 --> 00:03:10,780
+prestataire, tu veux créer le site internet
+pour une société, et bien tu vas mettre
+
+53
+00:03:10,800 --> 00:03:14,320
+toutes les informations de la société, parce
+que la société t'a donnée, pour pouvoir
+
+54
+00:03:14,340 --> 00:03:17,400
+créer leur site. Donc moi dans mon cas, je
+vais mettre dans la peau d'un prestataire
+
+55
+00:03:17,420 --> 00:03:20,020
+qui crée le site pour une société. Et
+ce que je vais faire, je vais écrire un
+
+56
+00:03:20,040 --> 00:03:23,980
+prompt. Je vais demander à Claude de me
+créer un prompt vraiment juste de test avec
+
+57
+00:03:24,000 --> 00:03:27,920
+des infos factices. Donc là, je vais demander
+à Claude de me créer un prompt. Et ce
+
+58
+00:03:27,940 --> 00:03:32,780
+sera un prompt disons une société qui vend
+des kits pour des voitures, tu vas avoir
+
+59
+00:03:32,800 --> 00:03:36,440
+des kits pour personnaliser des voitures
+etc. Disons qu'une société du genre m'a
+
+60
+00:03:36,460 --> 00:03:40,320
+contacté pour créer leur site. On part avec
+ce concept-là. Donc je donne ce prompt-là
+
+61
+00:03:40,340 --> 00:03:43,600
+à mon agent. Tu verras que c'est très
+simple. Honnêtement, cette vidéo, elle fera
+
+62
+00:03:43,620 --> 00:03:46,480
+même pas 10 minutes, tout simplement parce
+que c'est très simple ce processus-là.
+
+63
+00:03:46,500 --> 00:03:49,520
+Donc je mets le prompt ici, je le lance,
+j'attends qu'il travaille. Et en attendant,
+
+64
+00:03:49,660 --> 00:03:53,660
+je te précise aussi que c'est disponible
+sur téléphone. Donc la manipulation que je
+
+65
+00:03:53,680 --> 00:03:56,340
+suis en train de faire sur mon ordinateur,
+tu peux aussi la faire avec un téléphone.
+
+66
+00:03:56,380 --> 00:03:59,520
+Donc tu peux créer des sites internet avec
+ton téléphone. Donc cette compétence, tu
+
+67
+00:03:59,540 --> 00:04:03,100
+n'auras pas d'excuse. Voilà, donc je sais que
+beaucoup de mes abonnés n'ont pas d'ordinateur.
+
+68
+00:04:03,120 --> 00:04:06,240
+Donc vous pourrez aussi en profiter. Donc
+là, il est en train de bosser. On va lui
+
+69
+00:04:06,260 --> 00:04:09,180
+donner le temps. Et lorsque la première
+version du site, elle est prête, on
+
+70
+00:04:09,200 --> 00:04:12,280
+reviendra. Donc là, il est en train de
+traiter ma demande. Là, il m'a posé une
+
+71
+00:04:12,300 --> 00:04:14,960
+question, il me demande, est-ce que je
+souhaite ajouter une fonctionnalité de
+
+72
+00:04:14,980 --> 00:04:18,520
+réservation en ligne? Donc moi, dans mon
+cas, ce n'est pas forcément pertinent. Mais
+
+73
+00:04:18,540 --> 00:04:21,500
+dans ton cas, si ton client souhaite avoir
+une telle fonctionnalité, tu pourras
+
+74
+00:04:21,520 --> 00:04:24,380
+facilement le rajouter ici. Donc là, il
+est en train de bosser sur le site. On va
+
+75
+00:04:24,400 --> 00:04:28,200
+faire une pause et on reviendra quand la
+première version sera prête. Donc là, le
+
+76
+00:04:28,220 --> 00:04:31,760
+single a fini de bosser. Et on va voir
+ensemble un aperçu de cette première version
+
+77
+00:04:31,780 --> 00:04:35,040
+de mon site. Il'y a n même pas de mon site,
+du site de mon client. La page d'accueil
+
+78
+00:04:35,060 --> 00:04:40,280
+est OK. Votre voiture, notre obsession, douze
+ans d'expérience. J'aime bien l'animation
+
+79
+00:04:40,300 --> 00:04:44,520
+avec les chiffres qui augmentent. cinq pôles
+au niveau de la voiture, le covering. C'est
+
+80
+00:04:44,540 --> 00:04:48,580
+très quali. Il a généré des très belles
+images. Il y a les jantes et le pneumatique,
+
+81
+00:04:48,760 --> 00:04:53,240
+un kit de carrosserie. Il a même généré
+des très, très belles images. Honnêtement,
+
+82
+00:04:53,260 --> 00:04:57,580
+le site, il est très épuré. J'aime bien
+l'ambiance noire rouge. Ça marche bien avec
+
+83
+00:04:57,600 --> 00:05:01,860
+l'ambiance automobile et surtout très, très,
+ça fait très luxe en tout cas. Donc là,
+
+84
+00:05:01,880 --> 00:05:04,880
+il met en après, sachant que tu vas mettre
+en avant une société. Donc, idéalement,
+
+85
+00:05:04,900 --> 00:05:08,200
+tu vas mettre les vraies images. Donc là,
+c'est des images. Il y a donc ce n'est pas
+
+86
+00:05:08,220 --> 00:05:11,480
+forcément les images de leur vrai travail.
+Tu vois, donc tu ne vas pas forcément
+
+87
+00:05:11,500 --> 00:05:15,600
+vendre ça. Mais idéalement, tu as les
+vraies images de ton client pour mettre en
+
+88
+00:05:15,620 --> 00:05:19,400
+avant. Mais honnêtement, le rendu, il est
+quali. C'est-à-dire le rendu, premier
+
+89
+00:05:19,420 --> 00:05:23,020
+rendu, après juste un seul prompt, il
+est quali. Un client, s'il a ça, il est
+
+90
+00:05:23,040 --> 00:05:27,280
+satisfait. Donc si je viens dans la partie
+service, voilà les différents services qu'ils
+
+91
+00:05:27,300 --> 00:05:31,420
+offrent. Non, rien à dire. La seule chose
+qui reste à changer sur ce site, ce sont
+
+92
+00:05:31,440 --> 00:05:34,500
+le contenu. Donc par rapport au client,
+mettre son vrai contenu, donc c'est vrai
+
+93
+00:05:34,520 --> 00:05:38,380
+service, c'est vrais images. On va à la
+partie galerie, la partie galerie, pareil.
+
+94
+00:05:38,400 --> 00:05:42,120
+Les vraies images, le produit du client.
+Après, il a y une section à propos, pareil
+
+95
+00:05:42,140 --> 00:05:46,080
+avec les vraies informations de leur
+atelier. Et ensuite, une partie contact.
+
+96
+00:05:46,180 --> 00:05:49,480
+Idéalement, c'est avec leur vraie adresse,
+leur vrai numéro. Et une partie maps, ce
+
+97
+00:05:49,500 --> 00:05:52,500
+qui est aussi super. Donc juste en un
+seul prompt, j'ai eu ce site internet
+
+98
+00:05:52,520 --> 00:05:55,840
+professionnel. Donc tu comprends pourquoi
+je te disais au début que cette vidéo ne
+
+99
+00:05:55,860 --> 00:05:59,060
+va même pas durer. Parce qu'on soit de la
+manipulation, elle est aussi simple que
+
+100
+00:05:59,080 --> 00:06:02,900
+ça. Tu peux créer des sites comme ça, je
+peux en créer 20 par jour, honnêtement.
+
+101
+00:06:02,920 --> 00:06:06,360
+Donc on vit dans une ère où tout est devenu
+facile. Du coup, si je veux faire des
+
+102
+00:06:06,380 --> 00:06:10,780
+modifications sur ce site, tout se passe
+ici, la section prompt. Donc je demande des
+
+103
+00:06:10,800 --> 00:06:14,220
+modifs à faire et il est fait. Je vois par
+exemple une chose que j'aimerais changer.
+
+104
+00:06:14,340 --> 00:06:18,660
+Disons que j'aime bien l'ambiance, voilà,
+noir rouge, etc. qu'il a choisie, mais je
+
+105
+00:06:18,680 --> 00:06:21,600
+vais lui demander de me changer ça. Donc
+là, je lui ai dit, j'aimerais que tu
+
+106
+00:06:21,620 --> 00:06:25,720
+changes les couleurs principales. Là, on
+est sûr du noir rouge et moi, j'aimerais du
+
+107
+00:06:25,740 --> 00:06:29,140
+noir blanc. Donc là, il va redesigner tout
+ce qui est couleur pour s'accorder avec
+
+108
+00:06:29,160 --> 00:06:32,640
+cette nouvelle ambiance noire et blanc. Et
+là, on va patienter et je te montrerai le
+
+109
+00:06:32,660 --> 00:06:36,200
+rendu. Donc là, il a terminé. Je vais
+mettre ça en plein écran et tu verras la
+
+110
+00:06:36,220 --> 00:06:39,340
+différence. Honnêtement, moi, je trouve
+que en noir et blanc, c'est aussi pas mal.
+
+111
+00:06:39,380 --> 00:06:42,300
+Donc tout ce qui était rouge a disparu,
+c'est devenu du blanc. Et c'est même
+
+112
+00:06:42,320 --> 00:06:45,700
+seulement beaucoup plus qualitatif en noir
+et blanc. Donc il n'a rien changé d'autre
+
+113
+00:06:45,720 --> 00:06:48,780
+que les couleurs. Donc c'est aussi simple
+que ça. Donc le site, tu vas le créer de
+
+114
+00:06:48,800 --> 00:06:51,860
+cette manière, tu vas le configurer de
+cette manière. Tous les changements, tu le
+
+115
+00:06:51,880 --> 00:06:55,440
+feras dans la section prompting ici. Et
+quand tu termines que tu es satisfait de ton
+
+116
+00:06:55,460 --> 00:06:59,140
+site, tu cliques sur le bouton publier, tu
+publies. Donc là, il a terminé de publier
+
+117
+00:06:59,160 --> 00:07:03,660
+le site, sauf qu'il y a un nom de domaine,
+une adresse URL temporaire. Donc Marseille
+
+118
+00:07:03,680 --> 00:07:07,860
+Auto, Customisation, etc. Donc si je clique
+sur ça, ça m'enverra direct sur le site.
+
+119
+00:07:08,060 --> 00:07:11,860
+Franchement, quali, professionnel. Ensuite,
+ce qui est important, c'est que dans ton
+
+120
+00:07:11,880 --> 00:07:15,660
+cas, si tu veux livrer ça à un client,
+faudrait qu'il y ait son propre nom de
+
+121
+00:07:15,680 --> 00:07:19,300
+domaine. Donc par exemple, marseilleauto.com,
+genre si c'est ça, le nom de leur
+
+122
+00:07:19,320 --> 00:07:22,700
+société. Et pour cela, tu peux connecter
+un nom de domaine personnalisé, tu peux
+
+123
+00:07:22,720 --> 00:07:26,340
+cliquer sur ça. Et là, ça va te rediriger
+vers cette interface ici. Et là, tu
+
+124
+00:07:26,360 --> 00:07:30,320
+pourras connecter le vrai site internet
+du client. Donc si c'est par exemple
+
+125
+00:07:30,340 --> 00:07:35,780
+marseilleauto.com, etc. Tu pourras directement
+le mettre et le connecter. Mais tu
+
+126
+00:07:35,800 --> 00:07:38,680
+auras besoin de ton client. Si ici, tu
+n'as pas accès au nom de domaine, il va te
+
+127
+00:07:38,700 --> 00:07:41,600
+donner certains accès pour pouvoir le
+connecter. Mais c'est quelque chose de très,
+
+128
+00:07:41,620 --> 00:07:44,600
+très simple. Donc une fois que tu as
+publié le site, là tu as rajouté un nom de
+
+129
+00:07:44,620 --> 00:07:48,060
+domaine personnalisé. Le site est fin.
+Fin prêt, il est public. Les gens peuvent
+
+130
+00:07:48,080 --> 00:07:51,320
+aller le visiter ton site pro. Si demain,
+il y a des bugs, quelque chose ne marche
+
+131
+00:07:51,340 --> 00:07:55,940
+pas. Tu utilises juste Hostinger pour fixer
+ça avec l'IA. Donc tu écris des prompts,
+
+132
+00:07:55,960 --> 00:07:59,560
+l'IA d'Hostinger fixe le site internet,
+il est carré. Donc cette compétence, elle
+
+133
+00:07:59,580 --> 00:08:03,680
+va t'aider à toi. Si toi là, tu as besoin
+de site internet, si tu es un entrepreneur
+
+134
+00:08:03,700 --> 00:08:06,920
+que tu veux mettre à jour ton propre
+site, tu as plus besoin de payer des
+
+135
+00:08:06,940 --> 00:08:10,180
+développeurs pour ça. Maintenant si
+tu as déjà une agence de création
+
+136
+00:08:10,200 --> 00:08:14,320
+de site internet ou alors tu souhaites en
+créer une, c'est une compétence qui va te
+
+137
+00:08:14,340 --> 00:08:17,760
+faciliter la vie. Ensuite, lorsque tu auras
+besoin d'avoir des clients, ce serait
+
+138
+00:08:17,780 --> 00:08:21,140
+important pour toi de maîtriser une compétence
+qu'on appelle la publicité. Donc la
+
+139
+00:08:21,160 --> 00:08:24,540
+publicité, c'est le fait de faire des
+promotions sur internet payantes, bien
+
+140
+00:08:24,560 --> 00:08:29,080
+évidemment, pour avoir des clients. Par
+exemple là, si tu as un service de création
+
+141
+00:08:29,100 --> 00:08:32,100
+de site internet. Donc j'ai déjà fait une
+vidéo sur ça, où je t'explique comment
+
+142
+00:08:32,120 --> 00:08:35,920
+configurer les publicités Google. Je te
+mettrai la vidéo ici, donc le lien de la
+
+143
+00:08:35,940 --> 00:08:39,420
+vidéo ici. Clique sur la vidéo et tu
+seras directement redirigé là-bas. Allez,
+
+144
+00:08:39,440 --> 00:08:40,440
+bisous.
+
