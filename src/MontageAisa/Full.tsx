@@ -25,7 +25,7 @@ import {
   type SfxCue,
   ChapterPill,
 } from "../montage/lib";
-import { BrandTiles, CheckCard, GoogleToAI, IconRow, NoteCard, PromptCard, Spotlight, StepLT, Teaser, TopPill } from "../montage/Explainers";
+import { BrandTiles, CheckCard, DataTable, GoogleToAI, IconRow, ListCard, NoteCard, PromptCard, Spotlight, StepLT, Teaser, TopPill } from "../montage/Explainers";
 import { HOOK_END, hookMusicLevel, MontageAisaHook, SHIFT } from "./Hook";
 
 export const FULL_DURATION = 1301.0; // audio_v2.wav
@@ -552,6 +552,140 @@ const Block3: React.FC = () => (
   </AbsoluteFill>
 );
 
+
+// ═══ Bloc 4 · étape 4 « Le plan d'action SEO » (13:33,9 → 17:55,3) ════════════
+// Carton 813,88–815,88 · source = T − 14,79.
+const CARD4 = B3_END; // 813,88
+const B4_END = 1075.3;
+const s4 = (T: number) => T - (CARD4 + 2.0);
+const PDF_PATH4 = { x: 715, y: 100, w: 520, h: 42 };
+const DIM4: [number, number, number][] = [
+  [843.0, 884.0, 0],
+  [943.4, 981.5, 0.5],
+  [997.2, 1012.5, 0.5],
+];
+
+const Block4: React.FC = () => (
+  <AbsoluteFill>
+    <At from={CARD4 + 2.0} to={B4_END}>
+      <ScreenStage
+        src={SCREEN}
+        trimBefore={CARD4 + 2.0 - 14.79}
+        keys={[
+          { t: 0, z: 0.92, cx: 960, cy: 540 },
+          { t: s4(893.2), z: 0.92, cx: 960, cy: 540 },
+          { t: s4(895.2), z: 1.5, cx: 1100, cy: 414 },
+          { t: s4(903.6), z: 1.5, cx: 1100, cy: 414 },
+          { t: s4(905.6), z: 0.92, cx: 960, cy: 540 },
+          { t: s4(1038.4), z: 0.92, cx: 960, cy: 540 },
+          { t: s4(1040.4), z: 1.3, cx: 1040, cy: 469 },
+          { t: s4(1053.0), z: 1.3, cx: 1040, cy: 469 },
+        ]}
+        dim={(t) => {
+          const T = t + CARD4 + 2.0;
+          return Math.max(...DIM4.map(([a, b, d]) => interpolate(T, [a, a + 0.4, b - 0.4, b], [0, d, d, 0], clamp)));
+        }}
+        masks={[
+          { from: s4(927.0), to: s4(1068.0), ...PDF_PATH4 },
+          { from: s4(926.5), to: s4(933.0), x: 1130, y: 108, w: 490, h: 40 }, // chemin, fenêtre partagée
+        ]}
+      />
+    </At>
+    <At from={CARD4 + 2.0} to={B4_END}>
+      <FacePip
+        src={FACE}
+        trimBefore={CARD4 + 2.0 - 14.79}
+        face={FACE_POS}
+        keys={[
+          { t: 0, p: 1 },
+          { t: s4(1053.8), p: 1 },
+          { t: s4(1054.6), p: 0 },
+        ]}
+        zoomKeys={[
+          { t: 0, z: 1.0 },
+          { t: s4(1054.6), z: 1.0 },
+          { t: s4(B4_END), z: 1.06 },
+        ]}
+      />
+    </At>
+
+    {/* Le prompt (texte exact de l'écran) */}
+    <At from={843.0} to={884.4}>
+      <PromptCard
+        end={884.4 - 843.0}
+        parts={[
+          { text: "Audite la performance SEO de shine.fr sur le marché France", label: "Audit : shine.fr", at: 846.93 - 843.0 },
+          { text: " et compare-la à qonto.com, blank.app et revolut.com (partie Business).", label: "Concurrents : Qonto, Blank, Revolut", at: 850.25 - 843.0 },
+          { text: " Utilise les données officielles Similarweb pour le trafic et DataForSEO pour les mots-clés.", label: "Sources : Similarweb, DataForSEO", at: 852.6 - 843.0 },
+          { text: " Identifie les 5 problèmes les plus prioritaires et recommande 10 nouvelles pages à créer.", label: "Livrable : 5 problèmes + plan d'action", at: 876.5 - 843.0 },
+        ]}
+      />
+    </At>
+    <At from={884.6} to={890.6}>
+      <TopPill icon="star" text="Prompt complet *en description*" end={890.6 - 884.6} />
+    </At>
+    <At from={895.7} to={902.8}>
+      <TopPill icon="star" text="Coût AIsa : ≈ *10,17 $* · 26 appels" end={902.8 - 895.7} />
+    </At>
+
+    {/* Les 5 opportunités (au fil de la voix) */}
+    <At from={943.4} to={981.5}>
+      <ListCard
+        eyebrow="5 opportunités de contenu pour Shine"
+        end={981.5 - 943.4}
+        items={[
+          { text: "Combler le vide sur les requêtes *prix*", at: 0.4 },
+          { text: "Page comparative « Shine vs Blank »", at: 959.13 - 943.4 },
+          { text: "Narratif « Qonto ou Shine »", at: 965.85 - 943.4 },
+          { text: "Dépôt de capital par forme juridique", at: 975.77 - 943.4 },
+          { text: "Positionnement « micro-entreprise » et « freelance »", at: 978.0 - 943.4 },
+        ]}
+      />
+    </At>
+
+    {/* Trafic (valeurs de l'écran, Similarweb) */}
+    <At from={997.2} to={1012.5}>
+      <DataTable
+        eyebrow="Visites par mois · août 2026 · Similarweb"
+        colValue="Visites / mois"
+        colTrend="6 mois"
+        end={1012.5 - 997.2}
+        source="Source : rapport généré avec Claude Code + AIsa"
+        rows={[
+          { label: "shine.fr", value: 1200067, trend: "+20,4 %", good: true, at: 0.4, hero: true },
+          { label: "qonto.com", value: 1623562, trend: "−10,5 %", good: false, at: 1002.65 - 997.2 },
+          { label: "blank.app", value: 4391, trend: "−85,9 %", good: false, at: 1006.65 - 997.2 },
+          { label: "revolut.com", value: 19395126, trend: "+44,3 %", good: true, at: 1007.57 - 997.2 },
+        ]}
+      />
+    </At>
+
+    <At from={1040.8} to={1047.2}>
+      <TopPill icon="star" text="*10 nouvelles pages* à créer" end={1047.2 - 1040.8} />
+    </At>
+    <At from={1059.0} to={1064.4}>
+      <KeyLine
+        end={1064.4 - 1059.0}
+        size={96}
+        words={[
+          { w: "basé", t: 0.25 },
+          { w: "sur", t: 0.55 },
+          { w: "leurs", t: 1.45 },
+          { w: "vrais", t: 1.75, hl: true },
+          { w: "chiffres", t: 2.07, hl: true },
+        ]}
+      />
+    </At>
+
+    <At from={CARD4 + 2.0} to={B4_END}>
+      <ChapterPill n={4} total={5} title="Le plan SEO" end={B4_END - CARD4 - 2.0} />
+    </At>
+    <At from={CARD4} to={CARD4 + 2.0}>
+      <ChapterCard n={4} total={5} title="Le plan d'action *SEO*" end={2.0} size={170} />
+    </At>
+  </AbsoluteFill>
+);
+
 const SettingsPills: React.FC<{ items: { k: string; v: string; at: number }[]; end: number }> = ({ items, end }) => {
   const t = useT();
   const o = inOut(t, 0, end, 0.01, 0.4);
@@ -681,6 +815,34 @@ const SFX_B3: SfxCue[] = [
   { k: "popNotif12", at: 802.1, gain: 0.7 },
 ];
 
+
+const SFX_B4: SfxCue[] = [
+  { k: "whoosh05", at: 813.92 },
+  { k: "impactHitLow", at: 814.3, gain: 0.35 },
+  { k: "confirmNotif13", at: 815.1, gain: 0.6 },
+  { k: "whoosh03", at: 843.1, gain: 0.6 },
+  { k: "popSelectA", at: 846.95 },
+  { k: "popSelectB", at: 850.3 },
+  { k: "popSelectA", at: 852.65 },
+  { k: "popSelectB", at: 876.55 },
+  { k: "popNotif03", at: 884.7, gain: 0.5 },
+  { k: "popNotif12", at: 895.8 },
+  { k: "whoosh03", at: 943.5, gain: 0.6 },
+  { k: "popSelectA", at: 943.85, gain: 0.7 },
+  { k: "popSelectB", at: 959.15, gain: 0.7 },
+  { k: "popSelectA", at: 965.9, gain: 0.7 },
+  { k: "popSelectB", at: 975.8, gain: 0.7 },
+  { k: "popSelectA", at: 978.05, gain: 0.7 },
+  { k: "whoosh03", at: 997.3, gain: 0.6 },
+  { k: "popNotif02", at: 997.65, gain: 0.6 },
+  { k: "popNotif02", at: 1002.7, gain: 0.6 },
+  { k: "popNotif02", at: 1006.7, gain: 0.6 },
+  { k: "popNotif02", at: 1007.6, gain: 0.6 },
+  { k: "popNotif12", at: 1040.9, gain: 0.7 },
+  { k: "whoosh02", at: 1053.9, gain: 0.6 },
+  { k: "popNotif03", at: 1059.3, gain: 0.5 },
+];
+
 const MusicTrack: React.FC<{ k: keyof typeof MUSIC; from: number; to: number; level: (T: number) => number }> = ({ k, from, to, level }) => (
   <Sequence from={f(from)} durationInFrames={f(to - from)} layout="none">
     <Audio src={staticFile(`epidemic/hq/${MUSIC[k].file}`)} volume={(fr) => musicGain(k) * level(fr / 30 + from)} />
@@ -697,6 +859,7 @@ export const MontageAisa: React.FC = () => (
     <Block1 />
     <Block2 />
     <Block3 />
+    <Block4 />
     <Sequence from={f(B1)}>
       <Grain />
     </Sequence>
@@ -719,8 +882,10 @@ export const MontageAisa: React.FC = () => (
       to={B3_END + 0.1}
       level={(T) => interpolate(T, [544.5, 545.4, 546.6, 547.4, 670.5, 670.97, 672.97, 673.9, 696.0, 812.0, 813.8], [0, 1.3, 1.3, 1, 1, 0, 0, 1.15, 1, 1, 0], clamp)}
     />
+    <MusicTrack k="seo" from={813.8} to={B4_END + 0.1} level={(T) => interpolate(T, [813.8, 814.6, 815.9, 816.7, 1073.4, 1075.2], [0, 1.3, 1.3, 1, 1, 0], clamp)} />
     <SfxTrack cues={SFX_B1} />
     <SfxTrack cues={SFX_B2} />
     <SfxTrack cues={SFX_B3} />
+    <SfxTrack cues={SFX_B4} />
   </AbsoluteFill>
 );

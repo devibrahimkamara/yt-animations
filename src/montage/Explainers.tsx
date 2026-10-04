@@ -431,7 +431,7 @@ export const PromptCard: React.FC<{ parts: { text: string; label?: string; at?: 
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: o, fontFamily: FONT }}>
       <AbsoluteFill style={{ background: "rgba(9,11,8,0.55)" }} />
-      <div style={{ display: "flex", gap: 18, marginBottom: 30, position: "relative" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", maxWidth: 1600, gap: 18, marginBottom: 30, position: "relative" }}>
         {labels.map((p) => (
           <div key={p.label} style={blurIn(t, p.at ?? 0, 0.4, 16)}>
             <Pill size={38} accent={t >= (p.at ?? 0)}>
@@ -475,6 +475,81 @@ export const CheckCard: React.FC<{ text: string; end: number }> = ({ text, end }
           <path d="M40 67 L58 84 L92 48" fill="none" stroke={LIME} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" strokeDasharray={80} strokeDashoffset={80 * (1 - tick)} />
         </svg>
         <span style={{ fontSize: 96, fontWeight: 500, color: INK, letterSpacing: "-0.04em" }}>{rich(text)}</span>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ─── Liste numérotée qui se construit au fil de la voix ([LIST-CARD]) ───────
+export const ListCard: React.FC<{ eyebrow: string; items: { text: string; at: number }[]; end: number }> = ({ eyebrow, items, end }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.01, 0.4);
+  const b = blurIn(t, 0, 0.5, 30);
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT }}>
+      <AbsoluteFill style={{ background: "rgba(9,11,8,0.5)" }} />
+      <div style={{ position: "absolute", left: 80, top: 130, width: 1180, ...glass, background: "linear-gradient(180deg, rgba(18,22,15,0.96), rgba(18,22,15,0.9))", borderRadius: 40, padding: "40px 48px", ...b, opacity: Math.min(o, Number(b.opacity)) }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 26 }}>
+          <Star size={30} />
+          <Eyebrow size={30}>{eyebrow}</Eyebrow>
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
+          {items.map((it, i) => (
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: 24, ...blurIn(t, it.at, 0.45, 18) }}>
+              <span style={{ width: 60, height: 60, flexShrink: 0, borderRadius: 18, background: LIME_SOFT, color: LIME, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 32, fontWeight: 500 }}>{i + 1}</span>
+              <span style={{ fontSize: 46, fontWeight: 500, color: INK, letterSpacing: "-0.02em", lineHeight: 1.15 }}>{rich(it.text)}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ─── Tableau de chiffres recréé ([DATA-TABLE]) : lignes au fil de la voix, chiffres qui roulent ─
+export type DataRow = { label: string; value: number; trend: string; good: boolean; at: number; hero?: boolean };
+export const DataTable: React.FC<{ eyebrow: string; colValue: string; colTrend: string; rows: DataRow[]; end: number; source?: string }> = ({ eyebrow, colValue, colTrend, rows, end, source }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.01, 0.4);
+  const b = blurIn(t, 0, 0.5, 30);
+  const fmt = (n: number) => Math.round(n).toLocaleString("fr-FR");
+  return (
+    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: o, fontFamily: FONT }}>
+      <AbsoluteFill style={{ background: "rgba(9,11,8,0.55)" }} />
+      <div style={{ position: "relative", width: 1380, ...glass, background: "linear-gradient(180deg, rgba(18,22,15,0.96), rgba(18,22,15,0.9))", borderRadius: 40, padding: "40px 52px", ...b, opacity: Math.min(o, Number(b.opacity)) }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 24 }}>
+          <Star size={30} />
+          <Eyebrow size={30}>{eyebrow}</Eyebrow>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr 0.6fr", rowGap: 6, fontSize: 30, color: MUTED, paddingBottom: 12, borderBottom: `1px solid ${LINE}` }}>
+          <span>Domaine</span>
+          <span style={{ textAlign: "right" }}>{colValue}</span>
+          <span style={{ textAlign: "right" }}>{colTrend}</span>
+        </div>
+        {rows.map((r) => {
+          const roll = keyed(t, [r.at, r.at + 0.9], [0, 1], Easing.out(Easing.cubic));
+          return (
+            <div
+              key={r.label}
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1.1fr 1fr 0.6fr",
+                alignItems: "center",
+                padding: "18px 14px",
+                margin: "6px -14px 0",
+                borderRadius: 18,
+                background: r.hero ? "rgba(198,243,109,0.09)" : "transparent",
+                border: r.hero ? "1.5px solid rgba(198,243,109,0.35)" : "1.5px solid transparent",
+                ...blurIn(t, r.at, 0.4, 14),
+              }}
+            >
+              <span style={{ fontSize: 50, fontWeight: 500, color: r.hero ? LIME : INK, letterSpacing: "-0.02em" }}>{r.label}</span>
+              <span style={{ fontSize: 56, fontWeight: 500, color: INK, textAlign: "right", fontVariantNumeric: "tabular-nums", letterSpacing: "-0.03em" }}>{fmt(r.value * roll)}</span>
+              <span style={{ fontSize: 44, fontWeight: 500, color: r.good ? "#8ee3a1" : "#ff8a7a", textAlign: "right" }}>{r.trend}</span>
+            </div>
+          );
+        })}
+        {source && <div style={{ fontSize: 28, color: MUTED, marginTop: 18 }}>{source}</div>}
       </div>
     </AbsoluteFill>
   );
