@@ -1,3 +1,7 @@
+import { MontageAisa, FULL_DURATION } from "./MontageAisa/Full";
+import { IdentiteV2Board } from "./identiteV2/Board";
+import { MontageAisaHook, HOOK_END } from "./MontageAisa/Hook";
+import { MontageMinimax, MONTAGE_MINIMAX_FRAMES } from "./MontageMinimax";
 import "./index.css";
 import { Composition } from "remotion";
 import { PartProgress, partProgressSchema } from "./PartProgress";
@@ -138,6 +142,187 @@ import { RecoverItAnim07, recoverItAnim07Schema } from "./RecoverItAnim07";
 import { RecoverItAnim08, recoverItAnim08Schema } from "./RecoverItAnim08";
 import { RecoverItAnim09, recoverItAnim09Schema } from "./RecoverItAnim09";
 import { RecoverItAnim10, recoverItAnim10Schema } from "./RecoverItAnim10";
+// ── VIDÉO HIGGS2 — 10 animations (chaîne YouTube 100 % IA)
+import { Higgs2Anim01FriseVieChaine, higgs2Anim01Schema } from "./Higgs2Anim01FriseVieChaine";
+import { Higgs2Anim02ChaineProductionIA, higgs2Anim02Schema } from "./Higgs2Anim02ChaineProductionIA";
+import { Higgs2Anim03Split2020vs2026, higgs2Anim03Schema } from "./Higgs2Anim03Split2020vs2026";
+import { Higgs2Anim04CTAAbonnementCompteur, higgs2Anim04Schema } from "./Higgs2Anim04CTAAbonnementCompteur";
+import { Higgs2Anim05PodiumPlateformes, higgs2Anim05Schema } from "./Higgs2Anim05PodiumPlateformes";
+import { Higgs2Anim06AnatomieRevenuPub, higgs2Anim06Schema } from "./Higgs2Anim06AnatomieRevenuPub";
+import { Higgs2Anim07PaliersRevenus, higgs2Anim07Schema } from "./Higgs2Anim07PaliersRevenus";
+import { Higgs2Anim08DissolutionVisage, higgs2Anim08Schema } from "./Higgs2Anim08DissolutionVisage";
+import { Higgs2Anim09CerveauEtMembres, higgs2Anim09Schema } from "./Higgs2Anim09CerveauEtMembres";
+import { Higgs2Anim10ClaudeVsChatGPT, higgs2Anim10Schema } from "./Higgs2Anim10ClaudeVsChatGPT";
+// ── VIDÉO FREEBEAT — 7 animations (clips musicaux 100 % IA)
+import { FreebeatAnim01MasqueTypo2026, freebeatAnim01Schema } from "./FreebeatAnim01MasqueTypo2026";
+import { FreebeatAnim02OdometreTarif, freebeatAnim02Schema } from "./FreebeatAnim02OdometreTarif";
+import { FreebeatAnim03RechercheVide, freebeatAnim03Schema } from "./FreebeatAnim03RechercheVide";
+import { FreebeatAnim04DelugeSorties, freebeatAnim04Schema } from "./FreebeatAnim04DelugeSorties";
+import { FreebeatAnim05MurBudget, freebeatAnim05Schema } from "./FreebeatAnim05MurBudget";
+import { FreebeatAnim06ChaineProduction, freebeatAnim06Schema } from "./FreebeatAnim06ChaineProduction";
+import { FreebeatAnim07WipeAvantApres, freebeatAnim07Schema } from "./FreebeatAnim07WipeAvantApres";
+// ── VIDÉO HIGGS — 9 animations (influenceur IA)
+import { HiggsAnim01DesintegrationPixels, higgsAnim01Schema } from "./HiggsAnim01DesintegrationPixels";
+import { HiggsAnim02Compteur40Minutes, higgsAnim02Schema } from "./HiggsAnim02Compteur40Minutes";
+import { HiggsAnim03RailAtoZ, higgsAnim03Schema } from "./HiggsAnim03RailAtoZ";
+import { HiggsAnim04WipeDiagonal, higgsAnim04Schema } from "./HiggsAnim04WipeDiagonal";
+import { HiggsAnim05LigneTemps2020, higgsAnim05Schema } from "./HiggsAnim05LigneTemps2020";
+import { HiggsAnim06BarreAbonnement, higgsAnim06Schema } from "./HiggsAnim06BarreAbonnement";
+import { HiggsAnim07TuyauxRevenus, higgsAnim07Schema } from "./HiggsAnim07TuyauxRevenus";
+import { HiggsAnim08MurDeVerre, higgsAnim08Schema } from "./HiggsAnim08MurDeVerre";
+import { HiggsAnim09MasqueRevelateur, higgsAnim09Schema } from "./HiggsAnim09MasqueRevelateur";
+// ── VIDÉO HIGGS ADOBE — 10 animations (l'IA + Premiere Pro remplacent le monteur)
+import { HiggsAdobeAnim01Courbe3Ans, higgsAdobeAnim01Schema } from "./HiggsAdobeAnim01Courbe3Ans";
+import { HiggsAdobeAnim02QuestionsConvergent, higgsAdobeAnim02Schema } from "./HiggsAdobeAnim02QuestionsConvergent";
+import { HiggsAdobeAnim03TimelineRemplissage, higgsAdobeAnim03Schema } from "./HiggsAdobeAnim03TimelineRemplissage";
+import { HiggsAdobeAnim04MosaiqueScan, higgsAdobeAnim04Schema } from "./HiggsAdobeAnim04MosaiqueScan";
+import { HiggsAdobeAnim05Cassure, higgsAdobeAnim05Schema } from "./HiggsAdobeAnim05Cassure";
+import { HiggsAdobeAnim06AvantMaintenant, higgsAdobeAnim06Schema } from "./HiggsAdobeAnim06AvantMaintenant";
+import { HiggsAdobeAnim07DeuxProfils, higgsAdobeAnim07Schema } from "./HiggsAdobeAnim07DeuxProfils";
+import { HiggsAdobeAnim08BarreProgression, higgsAdobeAnim08Schema } from "./HiggsAdobeAnim08BarreProgression";
+import { HiggsAdobeAnim09StackAssemblage, higgsAdobeAnim09Schema } from "./HiggsAdobeAnim09StackAssemblage";
+import { HiggsAdobeAnim10TamponReference, higgsAdobeAnim10Schema } from "./HiggsAdobeAnim10TamponReference";
+
+// ── VIDÉO PDFELEMENT — 10 animations (analyser un contrat avec l'IA — PDFelement v13)
+import { PdfelementAnim01ScanContratHook, pdfelementAnim01Schema } from "./PdfelementAnim01ScanContratHook";
+import { PdfelementAnim02LoupePetitsCaracteres, pdfelementAnim02Schema } from "./PdfelementAnim02LoupePetitsCaracteres";
+import { PdfelementAnim03CourseIAVsManuel, pdfelementAnim03Schema } from "./PdfelementAnim03CourseIAVsManuel";
+import { PdfelementAnim04UpgradeVersion13Badge, pdfelementAnim04Schema } from "./PdfelementAnim04UpgradeVersion13Badge";
+import { PdfelementAnim05QuatreProfilsGrid, pdfelementAnim05Schema } from "./PdfelementAnim05QuatreProfilsGrid";
+import { PdfelementAnim06CarrouselContratsPerspective, pdfelementAnim06Schema } from "./PdfelementAnim06CarrouselContratsPerspective";
+import { PdfelementAnim07BarreOutilsAllumage, pdfelementAnim07Schema } from "./PdfelementAnim07BarreOutilsAllumage";
+import { PdfelementAnim08RadarDetectionIA, pdfelementAnim08Schema } from "./PdfelementAnim08RadarDetectionIA";
+import { PdfelementAnim09DisclaimerAvocat, pdfelementAnim09Schema } from "./PdfelementAnim09DisclaimerAvocat";
+import { PdfelementAnim10TransitionTutoriel, pdfelementAnim10Schema } from "./PdfelementAnim10TransitionTutoriel";
+
+// ── VIDÉO MAXDROP — 17 animations (marché des compléments alimentaires / marque blanche — sponsor Max Dropshipping)
+import { MaxdropAnim01CompteurEchelle, maxdropAnim01Schema } from "./MaxdropAnim01CompteurEchelle";
+import { MaxdropAnim02Duel2018vs2025, maxdropAnim02Schema } from "./MaxdropAnim02Duel2018vs2025";
+import { MaxdropAnim03EliminationSuspects, maxdropAnim03Schema } from "./MaxdropAnim03EliminationSuspects";
+import { MaxdropAnim04BoucleRachat, maxdropAnim04Schema } from "./MaxdropAnim04BoucleRachat";
+import { MaxdropAnim05TroisSans, maxdropAnim05Schema } from "./MaxdropAnim05TroisSans";
+import { MaxdropAnim06ConstructionBouteille, maxdropAnim06Schema } from "./MaxdropAnim06ConstructionBouteille";
+import { MaxdropAnim07CourbeDecolle, maxdropAnim07Schema } from "./MaxdropAnim07CourbeDecolle";
+import { MaxdropAnim08CausesSobre, maxdropAnim08Schema } from "./MaxdropAnim08CausesSobre";
+import { MaxdropAnim09MurDevientFosse, maxdropAnim09Schema } from "./MaxdropAnim09MurDevientFosse";
+import { MaxdropAnim10MecaniqueMarqueBlanche, maxdropAnim10Schema } from "./MaxdropAnim10MecaniqueMarqueBlanche";
+import { MaxdropAnim11PartageDesTaches, maxdropAnim11Schema } from "./MaxdropAnim11PartageDesTaches";
+import { MaxdropAnim12ReseauMondial, maxdropAnim12Schema } from "./MaxdropAnim12ReseauMondial";
+import { MaxdropAnim13Timeline10Jours, maxdropAnim13Schema } from "./MaxdropAnim13Timeline10Jours";
+import { MaxdropAnim14ChuteDuMOQ, maxdropAnim14Schema } from "./MaxdropAnim14ChuteDuMOQ";
+import { MaxdropAnim15LaboFormulation, maxdropAnim15Schema } from "./MaxdropAnim15LaboFormulation";
+import { MaxdropAnim16CarrouselFormats, maxdropAnim16Schema } from "./MaxdropAnim16CarrouselFormats";
+import { MaxdropAnim17CTAFinal, maxdropAnim17Schema } from "./MaxdropAnim17CTAFinal";
+
+// ── VIDÉO HIGGS BLEN — 8 animations (apprendre Blender avec l'IA)
+import { HiggsBlenAnim01MurRendus, higgsBlenAnim01Schema } from "./HiggsBlenAnim01MurRendus";
+import { HiggsBlenAnim02FicheVide, higgsBlenAnim02Schema } from "./HiggsBlenAnim02FicheVide";
+import { HiggsBlenAnim03ChaosRange, higgsBlenAnim03Schema } from "./HiggsBlenAnim03ChaosRange";
+import { HiggsBlenAnim04Odometre, higgsBlenAnim04Schema } from "./HiggsBlenAnim04Odometre";
+import { HiggsBlenAnim05Constellation, higgsBlenAnim05Schema } from "./HiggsBlenAnim05Constellation";
+import { HiggsBlenAnim06DeuxCourbes, higgsBlenAnim06Schema } from "./HiggsBlenAnim06DeuxCourbes";
+import { HiggsBlenAnim07CarteIdentite, higgsBlenAnim07Schema } from "./HiggsBlenAnim07CarteIdentite";
+import { HiggsBlenAnim08BandeauUnivers, higgsBlenAnim08Schema } from "./HiggsBlenAnim08BandeauUnivers";
+
+// ── VIDÉO HIGGS GPT — 8 animations (GPT-6 Astra + l'outil mystère)
+import { HiggsGptAnim01Rembobinage, higgsGptAnim01Schema } from "./HiggsGptAnim01Rembobinage";
+import { HiggsGptAnim02EquationIncomplete, higgsGptAnim02Schema } from "./HiggsGptAnim02EquationIncomplete";
+import { HiggsGptAnim03TroisVerrous, higgsGptAnim03Schema } from "./HiggsGptAnim03TroisVerrous";
+import { HiggsGptAnim04RampeDates, higgsGptAnim04Schema } from "./HiggsGptAnim04RampeDates";
+import { HiggsGptAnim05MurSuperlatifs, higgsGptAnim05Schema } from "./HiggsGptAnim05MurSuperlatifs";
+import { HiggsGptAnim06CarteAbonnement, higgsGptAnim06Schema } from "./HiggsGptAnim06CarteAbonnement";
+import { HiggsGptAnim07BazookaCrepe, higgsGptAnim07Schema } from "./HiggsGptAnim07BazookaCrepe";
+import { HiggsGptAnim08PlafondVerre, higgsGptAnim08Schema } from "./HiggsGptAnim08PlafondVerre";
+
+// ── VIDÉO HIGGS GPT 6 · 2 — 9 animations (Astra construit une chaîne YouTube)
+import { HiggsGpt2Anim01ChaineQuiSeConstruit, higgsGpt2Anim01Schema } from "./HiggsGpt2Anim01ChaineQuiSeConstruit";
+import { HiggsGpt2Anim02ChaineProduction3Maillons, higgsGpt2Anim02Schema } from "./HiggsGpt2Anim02ChaineProduction3Maillons";
+import { HiggsGpt2Anim03CompteurEffortZero, higgsGpt2Anim03Schema } from "./HiggsGpt2Anim03CompteurEffortZero";
+import { HiggsGpt2Anim04BarreProgressionChapitres, higgsGpt2Anim04Schema } from "./HiggsGpt2Anim04BarreProgressionChapitres";
+import { HiggsGpt2Anim05CarteAbonnementFlip, higgsGpt2Anim05Schema } from "./HiggsGpt2Anim05CarteAbonnementFlip";
+import { HiggsGpt2Anim06DeverrouillageModele, higgsGpt2Anim06Schema } from "./HiggsGpt2Anim06DeverrouillageModele";
+import { HiggsGpt2Anim07ModuleClipse, higgsGpt2Anim07Schema } from "./HiggsGpt2Anim07ModuleClipse";
+import { HiggsGpt2Anim08MosaiqueCapacites, higgsGpt2Anim08Schema } from "./HiggsGpt2Anim08MosaiqueCapacites";
+import { HiggsGpt2Anim09FlecheDescription, higgsGpt2Anim09Schema } from "./HiggsGpt2Anim09FlecheDescription";
+
+// ── VIDÉO HIGGS GPT 6 · 3 — 7 animations (maison IA + méthode immobilier 2026)
+import { HiggsGpt3Anim01ScanMetadonnees, higgsGpt3Anim01Schema } from "./HiggsGpt3Anim01ScanMetadonnees";
+import { HiggsGpt3Anim02RailAZ, higgsGpt3Anim02Schema } from "./HiggsGpt3Anim02RailAZ";
+import { HiggsGpt3Anim03DoubleColonneBudget, higgsGpt3Anim03Schema } from "./HiggsGpt3Anim03DoubleColonneBudget";
+import { HiggsGpt3Anim04CarteIdentite, higgsGpt3Anim04Schema } from "./HiggsGpt3Anim04CarteIdentite";
+import { HiggsGpt3Anim05MosaiqueMiniatures, higgsGpt3Anim05Schema } from "./HiggsGpt3Anim05MosaiqueMiniatures";
+import { HiggsGpt3Anim06JaugeAbonnement, higgsGpt3Anim06Schema } from "./HiggsGpt3Anim06JaugeAbonnement";
+import { HiggsGpt3Anim07AssemblagePipeline, higgsGpt3Anim07Schema } from "./HiggsGpt3Anim07AssemblagePipeline";
+
+// ── VIDÉO HIGGS AFTER — 9 animations (IA + After Effects)
+import { HiggsAfterAnim01SplitEchec, higgsAfterAnim01Schema } from "./HiggsAfterAnim01SplitEchec";
+import { HiggsAfterAnim02EquationIAAE, higgsAfterAnim02Schema } from "./HiggsAfterAnim02EquationIAAE";
+import { HiggsAfterAnim03DeuxPiliers, higgsAfterAnim03Schema } from "./HiggsAfterAnim03DeuxPiliers";
+import { HiggsAfterAnim04MosaiqueZoom, higgsAfterAnim04Schema } from "./HiggsAfterAnim04MosaiqueZoom";
+import { HiggsAfterAnim05CourbeDifficulte, higgsAfterAnim05Schema } from "./HiggsAfterAnim05CourbeDifficulte";
+import { HiggsAfterAnim06ChecklistFloutee, higgsAfterAnim06Schema } from "./HiggsAfterAnim06ChecklistFloutee";
+import { HiggsAfterAnim07CarteAbonnementOdometre, higgsAfterAnim07Schema } from "./HiggsAfterAnim07CarteAbonnementOdometre";
+import { HiggsAfterAnim08MorphFenetre, higgsAfterAnim08Schema } from "./HiggsAfterAnim08MorphFenetre";
+import { HiggsAfterAnim09SchemaConnexion, higgsAfterAnim09Schema } from "./HiggsAfterAnim09SchemaConnexion";
+
+// ── VIDÉO PIPPIT — 6 animations (affiliation via IA 100 % réaliste) ──
+import { PippitAnim01FicheDictionnaire, pippitAnim01Schema } from "./PippitAnim01FicheDictionnaire";
+import { PippitAnim02CircuitCommission, pippitAnim02Schema } from "./PippitAnim02CircuitCommission";
+import { PippitAnim03TamponPasBesoin, pippitAnim03Schema } from "./PippitAnim03TamponPasBesoin";
+import { PippitAnim04MorphingOrdiTelephone, pippitAnim04Schema } from "./PippitAnim04MorphingOrdiTelephone";
+import { PippitAnim05DeflouCompteurZero, pippitAnim05Schema } from "./PippitAnim05DeflouCompteurZero";
+import { PippitAnim06AbsorptionIA, pippitAnim06Schema } from "./PippitAnim06AbsorptionIA";
+// ── VIDÉO HIGGS MARKETING — 10 animations
+import { HiggsMarketingAnim01EtiquettePrix, higgsMarketingAnim01Schema } from "./HiggsMarketingAnim01EtiquettePrix";
+import { HiggsMarketingAnim02CourbeSaison, higgsMarketingAnim02Schema } from "./HiggsMarketingAnim02CourbeSaison";
+import { HiggsMarketingAnim03CircuitArgent, higgsMarketingAnim03Schema } from "./HiggsMarketingAnim03CircuitArgent";
+import { HiggsMarketingAnim04MurOffres, higgsMarketingAnim04Schema } from "./HiggsMarketingAnim04MurOffres";
+import { HiggsMarketingAnim05MachinePrenoms, higgsMarketingAnim05Schema } from "./HiggsMarketingAnim05MachinePrenoms";
+import { HiggsMarketingAnim06ImplosionOutils, higgsMarketingAnim06Schema } from "./HiggsMarketingAnim06ImplosionOutils";
+import { HiggsMarketingAnim07TerminalWhoami, higgsMarketingAnim07Schema } from "./HiggsMarketingAnim07TerminalWhoami";
+import { HiggsMarketingAnim08BoutonPhysique, higgsMarketingAnim08Schema } from "./HiggsMarketingAnim08BoutonPhysique";
+import { HiggsMarketingAnim09CadenasModele, higgsMarketingAnim09Schema } from "./HiggsMarketingAnim09CadenasModele";
+import { HiggsMarketingAnim10BalanceRentabilite, higgsMarketingAnim10Schema } from "./HiggsMarketingAnim10BalanceRentabilite";
+// ── VIDÉO HIGGS API — 9 animations
+import { HiggsApiAnim01PlanArchitecte, higgsApiAnim01Schema } from "./HiggsApiAnim01PlanArchitecte";
+import { HiggsApiAnim02ProliferationLogiciels, higgsApiAnim02Schema } from "./HiggsApiAnim02ProliferationLogiciels";
+import { HiggsApiAnim03ReleveBancaire, higgsApiAnim03Schema } from "./HiggsApiAnim03ReleveBancaire";
+import { HiggsApiAnim04BalayageProfils, higgsApiAnim04Schema } from "./HiggsApiAnim04BalayageProfils";
+import { HiggsApiAnim05BasculePrix, higgsApiAnim05Schema } from "./HiggsApiAnim05BasculePrix";
+import { HiggsApiAnim06DeuxEmplacements, higgsApiAnim06Schema } from "./HiggsApiAnim06DeuxEmplacements";
+import { HiggsApiAnim07MurGeneration, higgsApiAnim07Schema } from "./HiggsApiAnim07MurGeneration";
+import { HiggsApiAnim08OutilBrique, higgsApiAnim08Schema } from "./HiggsApiAnim08OutilBrique";
+import { HiggsApiAnim09TuyauAPI, higgsApiAnim09Schema } from "./HiggsApiAnim09TuyauAPI";
+import { HiggsOpusAnim01PelliculeFilm, higgsOpusAnim01Schema } from "./HiggsOpusAnim01PelliculeFilm";
+import { HiggsOpusAnim02SchemaConnexionMCP, higgsOpusAnim02Schema } from "./HiggsOpusAnim02SchemaConnexionMCP";
+import { HiggsOpusAnim03RoadmapEtapes, higgsOpusAnim03Schema } from "./HiggsOpusAnim03RoadmapEtapes";
+import { HiggsOpusAnim04CalendrierSeptembre, higgsOpusAnim04Schema } from "./HiggsOpusAnim04CalendrierSeptembre";
+import { HiggsOpusAnim05BalanceCoutCredits, higgsOpusAnim05Schema } from "./HiggsOpusAnim05BalanceCoutCredits";
+import { HiggsOpusAnim06PromesseRealite, higgsOpusAnim06Schema } from "./HiggsOpusAnim06PromesseRealite";
+import { HiggsOpusAnim07CtaAbonnementPouce, higgsOpusAnim07Schema } from "./HiggsOpusAnim07CtaAbonnementPouce";
+import { HiggsOpusAnim08TransitionWipe, higgsOpusAnim08Schema } from "./HiggsOpusAnim08TransitionWipe";
+import { AisaAnim01RapportFlip3D, aisaAnim01Schema } from "./AisaAnim01RapportFlip3D";
+import { AisaAnim02OrbiteMoteursIA, aisaAnim02Schema } from "./AisaAnim02OrbiteMoteursIA";
+import { AisaAnim03ConversationRestaurants, aisaAnim03Schema } from "./AisaAnim03ConversationRestaurants";
+import { AisaAnim04SourcesVersNoyauIA, aisaAnim04Schema } from "./AisaAnim04SourcesVersNoyauIA";
+import { AisaAnim05ClassementRemontee, aisaAnim05Schema } from "./AisaAnim05ClassementRemontee";
+import { AisaAnim06GlobeUtilisateurs, aisaAnim06Schema } from "./AisaAnim06GlobeUtilisateurs";
+import { AisaAnim07RecherchesQuotidien, aisaAnim07Schema } from "./AisaAnim07RecherchesQuotidien";
+import { AisaAnim08BalanceGoogleVsIA, aisaAnim08Schema } from "./AisaAnim08BalanceGoogleVsIA";
+import { AisaAnim09SeoVersGeo, aisaAnim09Schema } from "./AisaAnim09SeoVersGeo";
+import { AisaAnim10OceanBleu, aisaAnim10Schema } from "./AisaAnim10OceanBleu";
+import { AisaAnim11TransitionStatistiques, aisaAnim11Schema } from "./AisaAnim11TransitionStatistiques";
+import { Atmos22Anim01QuestionReecrite, atmos22Anim01Schema } from "./Atmos22Anim01QuestionReecrite";
+import { Atmos22Anim02AvalancheIdees, atmos22Anim02Schema } from "./Atmos22Anim02AvalancheIdees";
+import { Atmos22Anim03Prompt47Idees, atmos22Anim03Schema } from "./Atmos22Anim03Prompt47Idees";
+import { Atmos22Anim04Elimination47a1, atmos22Anim04Schema } from "./Atmos22Anim04Elimination47a1";
+import { Atmos22Anim05TimelineDocumentee, atmos22Anim05Schema } from "./Atmos22Anim05TimelineDocumentee";
+import { Atmos22Anim06LowerThirdAnnees, atmos22Anim06Schema } from "./Atmos22Anim06LowerThirdAnnees";
+import { Atmos22Anim07AbonneCinetique, atmos22Anim07Schema } from "./Atmos22Anim07AbonneCinetique";
+import { Atmos22Anim08TroisFaussesExcuses, atmos22Anim08Schema } from "./Atmos22Anim08TroisFaussesExcuses";
+import { Atmos22Anim09ChargementBloque, atmos22Anim09Schema } from "./Atmos22Anim09ChargementBloque";
+import { Atmos22Anim10DispersionFocus, atmos22Anim10Schema } from "./Atmos22Anim10DispersionFocus";
+import { Atmos22Anim11RegleCompteRebours, atmos22Anim11Schema } from "./Atmos22Anim11RegleCompteRebours";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -1570,6 +1755,2016 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         durationInFrames={150}
         defaultProps={{}}
+      />
+
+      {/* ── VIDÉO HIGGS2 — 10 animations ── */}
+      <Composition
+        id="Higgs2Anim01FriseVieChaine"
+        component={Higgs2Anim01FriseVieChaine}
+        schema={higgs2Anim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{
+          startDate: "28 juillet 2020",
+          endYear: 2026,
+          yearsCount: 6,
+          badgeText: "100 % de mes revenus",
+        }}
+      />
+      <Composition
+        id="Higgs2Anim02ChaineProductionIA"
+        component={Higgs2Anim02ChaineProductionIA}
+        schema={higgs2Anim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={330}
+        defaultProps={{
+          modules: [
+            { label: "Script", icon: "📝" },
+            { label: "Voix off", icon: "🎙️" },
+            { label: "Vidéo", icon: "🎬" },
+            { label: "Miniature", icon: "🖼️" },
+            { label: "Publication", icon: "🚀" },
+          ],
+          badgeText: "0 % humain",
+        }}
+      />
+      <Composition
+        id="Higgs2Anim03Split2020vs2026"
+        component={Higgs2Anim03Split2020vs2026}
+        schema={higgs2Anim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{
+          leftLabel: "2020",
+          rightLabel: "2026",
+          tools: [
+            { name: "Claude", color: "#D97757", icon: "🧠" },
+            { name: "Génération vidéo", color: "#3060ff", icon: "🎬" },
+            { name: "Publication auto", color: "#22c55e", icon: "🚀" },
+          ],
+        }}
+      />
+      <Composition
+        id="Higgs2Anim04CTAAbonnementCompteur"
+        component={Higgs2Anim04CTAAbonnementCompteur}
+        schema={higgs2Anim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={{
+          baseCount: 128409,
+          buttonIdle: "S'abonner",
+          buttonDone: "Abonné ✓",
+        }}
+      />
+      <Composition
+        id="Higgs2Anim05PodiumPlateformes"
+        component={Higgs2Anim05PodiumPlateformes}
+        schema={higgs2Anim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={255}
+        defaultProps={{ badgeText: "€ / 1 000 vues" }}
+      />
+      <Composition
+        id="Higgs2Anim06AnatomieRevenuPub"
+        component={Higgs2Anim06AnatomieRevenuPub}
+        schema={higgs2Anim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{ finalEuros: 8, finalCaption: "1 000 vues" }}
+      />
+      <Composition
+        id="Higgs2Anim07PaliersRevenus"
+        component={Higgs2Anim07PaliersRevenus}
+        schema={higgs2Anim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={300}
+        defaultProps={{
+          niches: ["Lifestyle", "Tech", "Make Money"],
+          viewRatio: 420,
+        }}
+      />
+      <Composition
+        id="Higgs2Anim08DissolutionVisage"
+        component={Higgs2Anim08DissolutionVisage}
+        schema={higgs2Anim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{ finalText: "Sans jamais te montrer" }}
+      />
+      <Composition
+        id="Higgs2Anim09CerveauEtMembres"
+        component={Higgs2Anim09CerveauEtMembres}
+        schema={higgs2Anim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={330}
+        defaultProps={{
+          centerLabel: "Claude",
+          modules: [
+            { label: "Générateur de script", icon: "📝" },
+            { label: "Générateur de vidéo", icon: "🎬" },
+            { label: "Voix", icon: "🎙️" },
+            { label: "Miniature", icon: "🖼️" },
+            { label: "Publication auto", icon: "🚀" },
+          ],
+        }}
+      />
+      <Composition
+        id="Higgs2Anim10ClaudeVsChatGPT"
+        component={Higgs2Anim10ClaudeVsChatGPT}
+        schema={higgs2Anim10Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{
+          leftName: "Claude",
+          leftFeature: "Raisonnement long, style naturel",
+          rightName: "ChatGPT",
+          rightFeature: "Large écosystème d'outils",
+        }}
+      />
+
+      {/* ── VIDÉO FREEBEAT — 7 animations ── */}
+      <Composition
+        id="FreebeatAnim01MasqueTypo2026"
+        component={FreebeatAnim01MasqueTypo2026}
+        schema={freebeatAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={{ topWord: "BUSINESS", year: "2026" }}
+      />
+      <Composition
+        id="FreebeatAnim02OdometreTarif"
+        component={FreebeatAnim02OdometreTarif}
+        schema={freebeatAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{ suffix: "€", label: "par vidéo livrée" }}
+      />
+      <Composition
+        id="FreebeatAnim03RechercheVide"
+        component={FreebeatAnim03RechercheVide}
+        schema={freebeatAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{
+          query: "clip vidéo IA pour artiste",
+          stampText: "quasi personne n'en parle",
+        }}
+      />
+      <Composition
+        id="FreebeatAnim04DelugeSorties"
+        component={FreebeatAnim04DelugeSorties}
+        schema={freebeatAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={255}
+        defaultProps={{ target: 120000, label: "titres publiés chaque jour" }}
+      />
+      <Composition
+        id="FreebeatAnim05MurBudget"
+        component={FreebeatAnim05MurBudget}
+        schema={freebeatAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{
+          label1: "Clip vidéo classique",
+          value1: "5 000 € – 30 000 €",
+          label2: "Budget d'un artiste indé",
+          value2: "200 €",
+          bracketText: "l'écart où tu te places",
+        }}
+      />
+      <Composition
+        id="FreebeatAnim06ChaineProduction"
+        component={FreebeatAnim06ChaineProduction}
+        schema={freebeatAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={{
+          steps: [
+            { label: "Le son de l'artiste", icon: "🎵" },
+            { label: "Le prompt", icon: "✍️" },
+            { label: "Images IA", icon: "🖼️" },
+            { label: "Montage", icon: "🎬" },
+            { label: "Clip livré", icon: "📦" },
+          ],
+        }}
+      />
+      <Composition
+        id="FreebeatAnim07WipeAvantApres"
+        component={FreebeatAnim07WipeAvantApres}
+        schema={freebeatAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{
+          leftLabel: "Tournage classique",
+          rightLabel: "Généré par IA",
+          stampText: "100 % généré par IA",
+        }}
+      />
+
+      {/* ════════════════════════════════════════════════
+          VIDÉO HIGGS — 9 ANIMATIONS (influenceur IA)
+          ════════════════════════════════════════════════ */}
+      <Composition
+        id="HiggsAnim01DesintegrationPixels"
+        component={HiggsAnim01DesintegrationPixels}
+        schema={higgsAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={96}
+        defaultProps={{ text: "N'EXISTE PAS", portraitSrc: undefined }}
+      />
+      <Composition
+        id="HiggsAnim02Compteur40Minutes"
+        component={HiggsAnim02Compteur40Minutes}
+        schema={higgsAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={105}
+        defaultProps={{
+          targetMinutes: 40,
+          unit: "MINUTES",
+          compareLabel: "Shooting photo classique",
+          compareTime: "3 semaines",
+          compareCost: "2 400 €",
+        }}
+      />
+      <Composition
+        id="HiggsAnim03RailAtoZ"
+        component={HiggsAnim03RailAtoZ}
+        schema={higgsAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{
+          steps: ["Créer le visage", "Générer le contenu", "Faire parler", "Monétiser"],
+        }}
+      />
+      <Composition
+        id="HiggsAnim04WipeDiagonal"
+        component={HiggsAnim04WipeDiagonal}
+        schema={higgsAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={120}
+        defaultProps={{ leftLabel: "LE CRÉER", rightLabel: "LE MONÉTISER" }}
+      />
+      <Composition
+        id="HiggsAnim05LigneTemps2020"
+        component={HiggsAnim05LigneTemps2020}
+        schema={higgsAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={{
+          years: [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+          centerYear: 2026,
+          finalText: "6 ANS SUR INTERNET",
+        }}
+      />
+      <Composition
+        id="HiggsAnim06BarreAbonnement"
+        component={HiggsAnim06BarreAbonnement}
+        schema={higgsAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={84}
+        defaultProps={{ idleLabel: "S'ABONNER", doneLabel: "ABONNÉ" }}
+      />
+      <Composition
+        id="HiggsAnim07TuyauxRevenus"
+        component={HiggsAnim07TuyauxRevenus}
+        schema={higgsAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={135}
+        defaultProps={{ finalValue: 4200, suffix: " €" }}
+      />
+      <Composition
+        id="HiggsAnim08MurDeVerre"
+        component={HiggsAnim08MurDeVerre}
+        schema={higgsAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{
+          line1: "Ils veulent se lancer.",
+          line2: "Ils ne veulent pas se montrer.",
+        }}
+      />
+      <Composition
+        id="HiggsAnim09MasqueRevelateur"
+        component={HiggsAnim09MasqueRevelateur}
+        schema={higgsAnim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={105}
+        defaultProps={{ faceSrc: undefined }}
+      />
+
+      {/* ════════════════════════════════════════════════
+          VIDÉO HIGGS ADOBE — 10 ANIMATIONS
+          (l'IA + Adobe Premiere Pro remplacent le monteur vidéo)
+          ════════════════════════════════════════════════ */}
+      <Composition
+        id="HiggsAdobeAnim01Courbe3Ans"
+        component={HiggsAdobeAnim01Courbe3Ans}
+        schema={higgsAdobeAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{ milestones: ["2023", "2024", "2025", "2026"] }}
+      />
+      <Composition
+        id="HiggsAdobeAnim02QuestionsConvergent"
+        component={HiggsAdobeAnim02QuestionsConvergent}
+        schema={higgsAdobeAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={165}
+        defaultProps={{ question: "L'IA va-t-elle remplacer les monteurs vidéo ?" }}
+      />
+      <Composition
+        id="HiggsAdobeAnim03TimelineRemplissage"
+        component={HiggsAdobeAnim03TimelineRemplissage}
+        schema={higgsAdobeAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{ target: 78, unit: "%" }}
+      />
+      <Composition
+        id="HiggsAdobeAnim04MosaiqueScan"
+        component={HiggsAdobeAnim04MosaiqueScan}
+        schema={higgsAdobeAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsAdobeAnim05Cassure"
+        component={HiggsAdobeAnim05Cassure}
+        schema={higgsAdobeAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={120}
+        defaultProps={{ word: "LACUNES" }}
+      />
+      <Composition
+        id="HiggsAdobeAnim06AvantMaintenant"
+        component={HiggsAdobeAnim06AvantMaintenant}
+        schema={higgsAdobeAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={285}
+        defaultProps={{
+          leftHeader: "MONTEUR VIDÉO",
+          rightHeader: "IA",
+          tasks: ["Sous-titres", "Découpe des silences", "Étalonnage", "Transitions", "Sound design"],
+        }}
+      />
+      <Composition
+        id="HiggsAdobeAnim07DeuxProfils"
+        component={HiggsAdobeAnim07DeuxProfils}
+        schema={higgsAdobeAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{
+          card1: { label: "CRÉATEUR", value: 12, unit: "h / semaine", caption: "de temps libéré" },
+          card2: { label: "PRESTATAIRE", value: 2400, unit: "$ / mois", caption: "de revenu en plus" },
+        }}
+      />
+      <Composition
+        id="HiggsAdobeAnim08BarreProgression"
+        component={HiggsAdobeAnim08BarreProgression}
+        schema={higgsAdobeAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={90}
+        defaultProps={{ fillPercent: 15 }}
+      />
+      <Composition
+        id="HiggsAdobeAnim09StackAssemblage"
+        component={HiggsAdobeAnim09StackAssemblage}
+        schema={higgsAdobeAnim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{ premiereLogo: "higgs-adobe/premiere-pro.png", pluginLabel: "PLUGIN IA" }}
+      />
+      <Composition
+        id="HiggsAdobeAnim10TamponReference"
+        component={HiggsAdobeAnim10TamponReference}
+        schema={higgsAdobeAnim10Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={135}
+        defaultProps={{ topText: "STANDARD DE", bottomText: "L'INDUSTRIE" }}
+      />
+
+      {/* ════════════════════════════════════════════════
+          VIDÉO PDFELEMENT — 10 ANIMATIONS
+          (analyser un contrat avec l'IA — fonctionnalité Agreement de PDFelement v13)
+          ════════════════════════════════════════════════ */}
+      <Composition
+        id="PdfelementAnim01ScanContratHook"
+        component={PdfelementAnim01ScanContratHook}
+        schema={pdfelementAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{
+          clauses: [
+            { label: "Clause de non-concurrence", yPct: 0.35 },
+            { label: "Pénalité 15 %", yPct: 0.55 },
+            { label: "Renouvellement automatique", yPct: 0.75 },
+          ],
+          badgeStartFrames: [30, 55, 80],
+        }}
+      />
+      <Composition
+        id="PdfelementAnim02LoupePetitsCaracteres"
+        component={PdfelementAnim02LoupePetitsCaracteres}
+        schema={pdfelementAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={165}
+        defaultProps={{ trapSentence: "Le prestataire renonce à tout recours" }}
+      />
+      <Composition
+        id="PdfelementAnim03CourseIAVsManuel"
+        component={PdfelementAnim03CourseIAVsManuel}
+        schema={pdfelementAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{
+          manualLabel: "À LA MAIN",
+          aiLabel: "AVEC L'IA",
+          manualSeconds: 2700,
+          aiSeconds: 90,
+        }}
+      />
+      <Composition
+        id="PdfelementAnim04UpgradeVersion13Badge"
+        component={PdfelementAnim04UpgradeVersion13Badge}
+        schema={pdfelementAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={135}
+        defaultProps={{
+          fromVersion: 12,
+          toVersion: 13,
+          badgeTag: "NOUVEAU",
+          badgeName: "Agreement",
+        }}
+      />
+      <Composition
+        id="PdfelementAnim05QuatreProfilsGrid"
+        component={PdfelementAnim05QuatreProfilsGrid}
+        schema={pdfelementAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{
+          profiles: [
+            { name: "Freelance", emoji: "💼" },
+            { name: "Entrepreneur", emoji: "🚀" },
+            { name: "Étudiant", emoji: "🎓" },
+            { name: "Salarié", emoji: "🏢" },
+          ],
+        }}
+      />
+      <Composition
+        id="PdfelementAnim06CarrouselContratsPerspective"
+        component={PdfelementAnim06CarrouselContratsPerspective}
+        schema={pdfelementAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{
+          contracts: [
+            { title: "Contrat de service", emoji: "🤝" },
+            { title: "Contrat de travail", emoji: "💼" },
+            { title: "Contrat fournisseur", emoji: "🚚" },
+          ],
+        }}
+      />
+      <Composition
+        id="PdfelementAnim07BarreOutilsAllumage"
+        component={PdfelementAnim07BarreOutilsAllumage}
+        schema={pdfelementAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={165}
+        defaultProps={{
+          tools: [
+            { start: 12, emoji: "✏️", label: "Éditer le texte", extraScale: 1.25, damping: 8, rotate: false },
+            { start: 51, emoji: "📐", label: "Modifier la mise en page", extraScale: 1.3, damping: 6, rotate: false },
+            { start: 90, emoji: "🔄", label: "Convertir", extraScale: 1.25, damping: 8, rotate: true },
+          ],
+        }}
+      />
+      <Composition
+        id="PdfelementAnim08RadarDetectionIA"
+        component={PdfelementAnim08RadarDetectionIA}
+        schema={pdfelementAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{
+          markers: [
+            { label: "Risque élevé", x: 700, y: 340, lx: 300, ly: 170 },
+            { label: "Date limite", x: 1270, y: 380, lx: 1620, ly: 170 },
+            { label: "Montant", x: 630, y: 730, lx: 300, ly: 930 },
+            { label: "Résiliation", x: 1250, y: 770, lx: 1620, ly: 930 },
+          ],
+        }}
+      />
+      <Composition
+        id="PdfelementAnim09DisclaimerAvocat"
+        component={PdfelementAnim09DisclaimerAvocat}
+        schema={pdfelementAnim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={135}
+        defaultProps={{ message: "Ne remplace pas un avocat", stampText: "Avertissement" }}
+      />
+      <Composition
+        id="PdfelementAnim10TransitionTutoriel"
+        component={PdfelementAnim10TransitionTutoriel}
+        schema={pdfelementAnim10Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={60}
+        defaultProps={{ word: "TUTORIEL" }}
+      />
+
+      {/* ════════════════════════════════════════════════
+          VIDÉO MAXDROP — 17 ANIMATIONS
+          (marché des compléments alimentaires / marque blanche — sponsor Max Dropshipping)
+          ════════════════════════════════════════════════ */}
+      <Composition
+        id="MaxdropAnim01CompteurEchelle"
+        component={MaxdropAnim01CompteurEchelle}
+        schema={maxdropAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{
+          target: 3_000_000_000,
+          currency: "€",
+          subtitle: "Marché européen des compléments alimentaires — 2025",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim02Duel2018vs2025"
+        component={MaxdropAnim02Duel2018vs2025}
+        schema={maxdropAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{
+          leftYear: "2018",
+          rightYear: "2025",
+          leftPct: 46,
+          rightPct: 61,
+          deltaLabel: "+15 points en 7 ans",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim03EliminationSuspects"
+        component={MaxdropAnim03EliminationSuspects}
+        schema={maxdropAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={{ suspects: ["IA", "CRYPTO", "DROPSHIPPING CLASSIQUE"] }}
+      />
+      <Composition
+        id="MaxdropAnim04BoucleRachat"
+        component={MaxdropAnim04BoucleRachat}
+        schema={maxdropAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={300}
+        defaultProps={{
+          mainLabel: "Taux de rachat le plus élevé",
+          subLabel: "du e-commerce",
+          buyWord: "Achat n°",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim05TroisSans"
+        component={MaxdropAnim05TroisSans}
+        schema={maxdropAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={330}
+        defaultProps={{
+          items: [
+            { icon: "factory", text: "Sans usine" },
+            { icon: "warehouse", text: "Sans stock" },
+            { icon: "cash", text: "Sans gros budget" },
+          ],
+        }}
+      />
+      <Composition
+        id="MaxdropAnim06ConstructionBouteille"
+        component={MaxdropAnim06ConstructionBouteille}
+        schema={maxdropAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{ labelText: "COMPLÉMENTS ALIMENTAIRES" }}
+      />
+      <Composition
+        id="MaxdropAnim07CourbeDecolle"
+        component={MaxdropAnim07CourbeDecolle}
+        schema={maxdropAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={300}
+        defaultProps={{
+          years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
+          calloutText: "3 Md€ (France seule)",
+          covidLabel: "COVID",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim08CausesSobre"
+        component={MaxdropAnim08CausesSobre}
+        schema={maxdropAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={360}
+        defaultProps={{
+          centerText: "Pourquoi maintenant ?",
+          branches: ["Stress", "Fatigue", "Sommeil", "Santé mentale"],
+        }}
+      />
+      <Composition
+        id="MaxdropAnim09MurDevientFosse"
+        component={MaxdropAnim09MurDevientFosse}
+        schema={maxdropAnim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={480}
+        defaultProps={{
+          wallLabel: "Réglementation UE",
+          abandonLabel: "99% abandonnent",
+          advantageLabel: "Moins de concurrence pour ceux qui passent",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim10MecaniqueMarqueBlanche"
+        component={MaxdropAnim10MecaniqueMarqueBlanche}
+        schema={maxdropAnim10Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={390}
+        defaultProps={{
+          topLabel: "LE PARTENAIRE",
+          bottomLabel: "TOI",
+          stamps: ["Certifié UE", "Formule validée", "Fabrication"],
+          bottomSteps: ["Ton logo", "Ton étiquette", "Ton carton"],
+          finalText: "Ta marque.",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim11PartageDesTaches"
+        component={MaxdropAnim11PartageDesTaches}
+        schema={maxdropAnim11Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={420}
+        defaultProps={{
+          leftLabel: "TOI",
+          rightLabel: "MAX DROPSHIPPING",
+          cards: [
+            { label: "Logo", side: "left" },
+            { label: "Certifications", side: "right" },
+            { label: "Branding", side: "left" },
+            { label: "Fabrication", side: "right" },
+            { label: "Site internet", side: "left" },
+            { label: "Packaging", side: "right" },
+            { label: "Marketing", side: "left" },
+            { label: "Logistique", side: "right" },
+          ],
+          leftFootnote: "Ce que tu contrôles",
+          rightFootnote: "Ce qu'ils gèrent pour toi",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim12ReseauMondial"
+        component={MaxdropAnim12ReseauMondial}
+        schema={maxdropAnim12Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={330}
+        defaultProps={{ counterTarget: 10000, counterLabel: "marques e-commerce" }}
+      />
+      <Composition
+        id="MaxdropAnim13Timeline10Jours"
+        component={MaxdropAnim13Timeline10Jours}
+        schema={maxdropAnim13Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={360}
+        defaultProps={{
+          milestones: [
+            { label: "Choix de la formule", emoji: "🧪", frac: 0.06, appear: 40 },
+            { label: "Envoi du branding", emoji: "🎨", frac: 0.22, appear: 115 },
+            { label: "Impression packaging", emoji: "📦", frac: 0.5, appear: 190 },
+            { label: "Produit prêt", emoji: "✅", frac: 1, appear: 265 },
+          ],
+          finalText: "10 jours.",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim14ChuteDuMOQ"
+        component={MaxdropAnim14ChuteDuMOQ}
+        schema={maxdropAnim14Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={300}
+        defaultProps={{
+          classicLabel: "Fournisseur classique",
+          moqLabel: "MOQ 1 000 unités",
+          maxLabel: "Max Dropshipping",
+          noMinLabel: "Pas de minimum.",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim15LaboFormulation"
+        component={MaxdropAnim15LaboFormulation}
+        schema={maxdropAnim15Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={390}
+        defaultProps={{
+          ingredients: ["Vitamine D", "Magnésium", "Zinc", "Ashwagandha"],
+          stampText: "Approuvé UE",
+          finalText: "Formule sur-mesure : 15 jours et +",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim16CarrouselFormats"
+        component={MaxdropAnim16CarrouselFormats}
+        schema={maxdropAnim16Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={360}
+        defaultProps={{
+          formats: [
+            { label: "Capsules", emoji: "💊" },
+            { label: "Tablettes", emoji: "🟠" },
+            { label: "Poudre", emoji: "🥄" },
+            { label: "Gummies", emoji: "🐻" },
+            { label: "Energy drink", emoji: "🥤" },
+          ],
+          finalText: "Tous les formats.",
+        }}
+      />
+      <Composition
+        id="MaxdropAnim17CTAFinal"
+        component={MaxdropAnim17CTAFinal}
+        schema={maxdropAnim17Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={{ linkText: "🔗 Max Dropshipping — lien en description" }}
+      />
+
+      {/* ── VIDÉO HIGGS BLEN — 8 ANIMATIONS (apprendre Blender avec l'IA) ── */}
+      <Composition
+        id="HiggsBlenAnim01MurRendus"
+        component={HiggsBlenAnim01MurRendus}
+        schema={higgsBlenAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{
+          renderTiles: [],
+          stampText: "100 % Blender",
+          stampSubText: "0 heure d'expérience",
+        }}
+      />
+      <Composition
+        id="HiggsBlenAnim02FicheVide"
+        component={HiggsBlenAnim02FicheVide}
+        schema={higgsBlenAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={255}
+        defaultProps={{
+          header: "Fiche compétence",
+          counterLabel: "Heures sur Blender",
+          criteria: [
+            "Jamais installé le logiciel",
+            "Jamais ouvert un tutoriel",
+            "Aucune formation suivie",
+          ],
+          stampText: "Débutant total",
+        }}
+      />
+      <Composition
+        id="HiggsBlenAnim03ChaosRange"
+        component={HiggsBlenAnim03ChaosRange}
+        schema={higgsBlenAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={{
+          prompt: "crée-moi un donut réaliste en 3D",
+          leftTitle: "Interface professionnelle",
+          rightTitle: "Toi",
+          buttonLabel: "Générer",
+        }}
+      />
+      <Composition
+        id="HiggsBlenAnim04Odometre"
+        component={HiggsBlenAnim04Odometre}
+        schema={higgsBlenAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={285}
+        defaultProps={{
+          offers: [
+            { poste: "Artiste 3D", studio: "Studio Nordic 3D", tarif: "3 800 €/mois" },
+            { poste: "Motion Designer", studio: "Atelier Motion", tarif: "650 €/jour" },
+            { poste: "Character Artist", studio: "PixelForge Games", tarif: "4 200 €/mois" },
+            { poste: "Générateur d'assets 3D", studio: "Freelance Hub", tarif: "1 200 €/projet" },
+            { poste: "Environment Artist", studio: "Northlight Studio", tarif: "3 500 €/mois" },
+            { poste: "Lookdev / Shading", studio: "Atelier Rendu", tarif: "700 €/jour" },
+            { poste: "Rigger 3D", studio: "Marionette FX", tarif: "3 900 €/mois" },
+            { poste: "Hard Surface Artist", studio: "ForgeWorks", tarif: "4 100 €/mois" },
+            { poste: "Archviz 3D", studio: "Studio Perspective", tarif: "2 800 €/mois" },
+            { poste: "Prop Artist", studio: "Handmade Assets", tarif: "600 €/jour" },
+          ],
+          heroSalary: "3800",
+          heroUnit: "€/mois",
+          heroPoste: "Artiste 3D",
+          heroStudio: "Studio Nordic 3D",
+        }}
+      />
+      <Composition
+        id="HiggsBlenAnim05Constellation"
+        component={HiggsBlenAnim05Constellation}
+        schema={higgsBlenAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={330}
+        defaultProps={{
+          centerLabel: "Blender",
+          branches: [
+            "Jeux vidéo",
+            "Films d'animation",
+            "Pub & VFX",
+            "Architecture 3D",
+            "Produit & packaging",
+          ],
+        }}
+      />
+      <Composition
+        id="HiggsBlenAnim06DeuxCourbes"
+        component={HiggsBlenAnim06DeuxCourbes}
+        schema={higgsBlenAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{
+          xLabel: "Temps",
+          yLabel: "Niveau",
+          redTitle: "Apprendre seul",
+          redValue: "2 ans",
+          greenTitle: "Avec l'IA",
+          greenValue: "1 après-midi",
+        }}
+      />
+      <Composition
+        id="HiggsBlenAnim07CarteIdentite"
+        component={HiggsBlenAnim07CarteIdentite}
+        schema={higgsBlenAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={{
+          name: "Ibrahim Camara",
+          tagline: "Compétences pour gagner de l'argent en ligne",
+          subscribeLabel: "S'abonner",
+        }}
+      />
+      <Composition
+        id="HiggsBlenAnim08BandeauUnivers"
+        component={HiggsBlenAnim08BandeauUnivers}
+        schema={higgsBlenAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{
+          row1: [],
+          row2: [],
+          row3: [],
+          heroWord: "La référence",
+          subtitle: "Studios, jeux vidéo, films d'animation",
+        }}
+      />
+
+      {/* ── VIDÉO HIGGS GPT — 8 ANIMATIONS (GPT-6 Astra + l'outil mystère) ── */}
+      <Composition
+        id="HiggsGptAnim01Rembobinage"
+        component={HiggsGptAnim01Rembobinage}
+        schema={higgsGptAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={165}
+        defaultProps={{ badgeText: "100 % GPT-6 Astra" }}
+      />
+      <Composition
+        id="HiggsGptAnim02EquationIncomplete"
+        component={HiggsGptAnim02EquationIncomplete}
+        schema={higgsGptAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{
+          astraLabel: "GPT-6 Astra",
+          slotLabel: "?",
+          resultLabel: "La vidéo",
+        }}
+      />
+      <Composition
+        id="HiggsGptAnim03TroisVerrous"
+        component={HiggsGptAnim03TroisVerrous}
+        schema={higgsGptAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{ numbers: ["01", "02", "03"] }}
+      />
+      <Composition
+        id="HiggsGptAnim04RampeDates"
+        component={HiggsGptAnim04RampeDates}
+        schema={higgsGptAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{
+          days: ["1", "2", "3", "4", "5", "6", "7"],
+          releaseLabel: "SORTIE OFFICIELLE",
+          todayLabel: "AUJOURD'HUI",
+        }}
+      />
+      <Composition
+        id="HiggsGptAnim05MurSuperlatifs"
+        component={HiggsGptAnim05MurSuperlatifs}
+        schema={higgsGptAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={225}
+        defaultProps={{
+          banners: [
+            "LE MODÈLE LE PLUS PUISSANT JAMAIS CRÉÉ",
+            "UNE RÉVOLUTION SANS PRÉCÉDENT",
+            "DES CAPACITÉS INÉGALÉES",
+            "LE PLUS AVANCÉ DE L'HISTOIRE",
+            "UNE PERFORMANCE HISTORIQUE",
+            "JAMAIS VU AUPARAVANT",
+            "UN BOND TECHNOLOGIQUE MAJEUR",
+          ],
+          stampText: "Baratin",
+        }}
+      />
+      <Composition
+        id="HiggsGptAnim06CarteAbonnement"
+        component={HiggsGptAnim06CarteAbonnement}
+        schema={higgsGptAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{
+          planName: "GPT-6 Astra",
+          planSub: "ChatGPT Plus",
+          unlimitedLabel: "ILLIMITÉ",
+        }}
+      />
+      <Composition
+        id="HiggsGptAnim07BazookaCrepe"
+        component={HiggsGptAnim07BazookaCrepe}
+        schema={higgsGptAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={300}
+        defaultProps={{
+          leftQuestion: "Comment faire des crêpes ?",
+          rightLabel: "Raisonnement complexe",
+        }}
+      />
+      <Composition
+        id="HiggsGptAnim08PlafondVerre"
+        component={HiggsGptAnim08PlafondVerre}
+        schema={higgsGptAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{ word: "LIMITATIONS" }}
+      />
+
+      {/* ── VIDÉO HIGGS GPT 6 · 2 — 9 animations (Astra construit une chaîne) ── */}
+      <Composition
+        id="HiggsGpt2Anim01ChaineQuiSeConstruit"
+        component={HiggsGpt2Anim01ChaineQuiSeConstruit}
+        schema={higgsGpt2Anim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{
+          channelName: "Ma Chaîne YouTube",
+          subscribeLabel: "S'abonner",
+          subCountLabel: "0 abonnés",
+        }}
+      />
+      <Composition
+        id="HiggsGpt2Anim02ChaineProduction3Maillons"
+        component={HiggsGpt2Anim02ChaineProduction3Maillons}
+        schema={higgsGpt2Anim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={{ titles: ["NICHE", "SCRIPT + VIDÉO", "PUBLICATION"] }}
+      />
+      <Composition
+        id="HiggsGpt2Anim03CompteurEffortZero"
+        component={HiggsGpt2Anim03CompteurEffortZero}
+        schema={higgsGpt2Anim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={{ label: "Ton travail" }}
+      />
+      <Composition
+        id="HiggsGpt2Anim04BarreProgressionChapitres"
+        component={HiggsGpt2Anim04BarreProgressionChapitres}
+        schema={higgsGpt2Anim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={165}
+        defaultProps={{ anticipationText: "la partie la plus importante" }}
+      />
+      <Composition
+        id="HiggsGpt2Anim05CarteAbonnementFlip"
+        component={HiggsGpt2Anim05CarteAbonnementFlip}
+        schema={higgsGpt2Anim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={255}
+        defaultProps={{
+          planName: "ChatGPT Pro",
+          price: 20,
+          benefits: [
+            "Accès à GPT-6 Astra",
+            "Extension Higgsfield compatible",
+            "Génération illimitée",
+          ],
+        }}
+      />
+      <Composition
+        id="HiggsGpt2Anim06DeverrouillageModele"
+        component={HiggsGpt2Anim06DeverrouillageModele}
+        schema={higgsGpt2Anim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{ models: ["GPT-5", "GPT-5.2", "GPT-6", "GPT-6 Astra"] }}
+      />
+      <Composition
+        id="HiggsGpt2Anim07ModuleClipse"
+        component={HiggsGpt2Anim07ModuleClipse}
+        schema={higgsGpt2Anim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{ gainLabel: "+300% de capacités" }}
+      />
+      <Composition
+        id="HiggsGpt2Anim08MosaiqueCapacites"
+        component={HiggsGpt2Anim08MosaiqueCapacites}
+        schema={higgsGpt2Anim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{
+          labels: ["Vidéos IA", "Photos IA", "Animations IA", "Films réalistes"],
+        }}
+      />
+      <Composition
+        id="HiggsGpt2Anim09FlecheDescription"
+        component={HiggsGpt2Anim09FlecheDescription}
+        schema={higgsGpt2Anim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={135}
+        defaultProps={{ text: "Lien dans la description" }}
+      />
+
+      {/* ── VIDÉO HIGGS GPT 6 · 3 — 7 animations (maison IA + méthode immobilier 2026) ── */}
+      <Composition
+        id="HiggsGpt3Anim01ScanMetadonnees"
+        component={HiggsGpt3Anim01ScanMetadonnees}
+        schema={higgsGpt3Anim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={{
+          model: "nano banana pro",
+          prompt: "villa moderne, golden hour",
+          cost: "0,03 €",
+          stamp: "100 % GÉNÉRÉ PAR IA",
+        }}
+      />
+      <Composition
+        id="HiggsGpt3Anim02RailAZ"
+        component={HiggsGpt3Anim02RailAZ}
+        schema={higgsGpt3Anim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={204}
+        defaultProps={{
+          station1: "Générer les images",
+          station2: "Animer les plans",
+          station3: "Monétiser",
+        }}
+      />
+      <Composition
+        id="HiggsGpt3Anim03DoubleColonneBudget"
+        component={HiggsGpt3Anim03DoubleColonneBudget}
+        schema={higgsGpt3Anim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{ leftTotal: 1200, rightTotal: 15, delta: "-98%" }}
+      />
+      <Composition
+        id="HiggsGpt3Anim04CarteIdentite"
+        component={HiggsGpt3Anim04CarteIdentite}
+        schema={higgsGpt3Anim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{
+          name: "Ibrahim Camara",
+          activity: "Business en ligne depuis 2020",
+          company: "Nova Media Lab",
+        }}
+      />
+      <Composition
+        id="HiggsGpt3Anim05MosaiqueMiniatures"
+        component={HiggsGpt3Anim05MosaiqueMiniatures}
+        schema={higgsGpt3Anim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={165}
+        defaultProps={{ channelInitials: "IC" }}
+      />
+      <Composition
+        id="HiggsGpt3Anim06JaugeAbonnement"
+        component={HiggsGpt3Anim06JaugeAbonnement}
+        schema={higgsGpt3Anim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={135}
+        defaultProps={{
+          channelInitials: "IC",
+          subscribeLabel: "S'ABONNER",
+          subscribedLabel: "ABONNÉ",
+          subCount: 48200,
+        }}
+      />
+      <Composition
+        id="HiggsGpt3Anim07AssemblagePipeline"
+        component={HiggsGpt3Anim07AssemblagePipeline}
+        schema={higgsGpt3Anim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{
+          block1: "Génération d'images",
+          block2: "Animation",
+          block3: "Voix off",
+          block4: "Montage final",
+        }}
+      />
+
+      {/* ── VIDÉO HIGGS AFTER — 9 animations (IA + After Effects) ── */}
+      <Composition
+        id="HiggsAfterAnim01SplitEchec"
+        component={HiggsAfterAnim01SplitEchec}
+        schema={higgsAfterAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsAfterAnim02EquationIAAE"
+        component={HiggsAfterAnim02EquationIAAE}
+        schema={higgsAfterAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsAfterAnim03DeuxPiliers"
+        component={HiggsAfterAnim03DeuxPiliers}
+        schema={higgsAfterAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsAfterAnim04MosaiqueZoom"
+        component={HiggsAfterAnim04MosaiqueZoom}
+        schema={higgsAfterAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsAfterAnim05CourbeDifficulte"
+        component={HiggsAfterAnim05CourbeDifficulte}
+        schema={higgsAfterAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsAfterAnim06ChecklistFloutee"
+        component={HiggsAfterAnim06ChecklistFloutee}
+        schema={higgsAfterAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={165}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsAfterAnim07CarteAbonnementOdometre"
+        component={HiggsAfterAnim07CarteAbonnementOdometre}
+        schema={higgsAfterAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsAfterAnim08MorphFenetre"
+        component={HiggsAfterAnim08MorphFenetre}
+        schema={higgsAfterAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsAfterAnim09SchemaConnexion"
+        component={HiggsAfterAnim09SchemaConnexion}
+        schema={higgsAfterAnim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{}}
+      />
+
+      {/* ── VIDÉO PIPPIT — 6 animations ── */}
+      <Composition
+        id="PippitAnim01FicheDictionnaire"
+        component={PippitAnim01FicheDictionnaire}
+        schema={pippitAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{
+          word: "af·fi·li·a·tion",
+          pos: "(n.f.)",
+          definitionWords: ["Promouvoir", "un", "produit", "ou", "un", "service"],
+          highlightedWord: "Promouvoir",
+        }}
+      />
+      <Composition
+        id="PippitAnim02CircuitCommission"
+        component={PippitAnim02CircuitCommission}
+        schema={pippitAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{ amount: 30 }}
+      />
+      <Composition
+        id="PippitAnim03TamponPasBesoin"
+        component={PippitAnim03TamponPasBesoin}
+        schema={pippitAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={135}
+        defaultProps={{ stampText: "PAS BESOIN" }}
+      />
+      <Composition
+        id="PippitAnim04MorphingOrdiTelephone"
+        component={PippitAnim04MorphingOrdiTelephone}
+        schema={pippitAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={{ finalText: "C'est tout." }}
+      />
+      <Composition
+        id="PippitAnim05DeflouCompteurZero"
+        component={PippitAnim05DeflouCompteurZero}
+        schema={pippitAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={225}
+        defaultProps={{ imageSrc: "", subscriberCount: 1250000 }}
+      />
+      <Composition
+        id="PippitAnim06AbsorptionIA"
+        component={PippitAnim06AbsorptionIA}
+        schema={pippitAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{ labels: ["Script", "Visuels", "Voix", "Montage"], brandName: "pipit.ai" }}
+      />
+
+      {/* ── VIDÉO HIGGS MARKETING — 10 animations (vendre des vidéos IA personnalisées) ── */}
+      <Composition
+        id="HiggsMarketingAnim01EtiquettePrix"
+        component={HiggsMarketingAnim01EtiquettePrix}
+        schema={higgsMarketingAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={135}
+        defaultProps={{ labelText: "Vidéo perso", stampText: "VENDU" }}
+      />
+      <Composition
+        id="HiggsMarketingAnim02CourbeSaison"
+        component={HiggsMarketingAnim02CourbeSaison}
+        schema={higgsMarketingAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{ title: "Demande de vidéos personnalisées", peakLabel: "Noël" }}
+      />
+      <Composition
+        id="HiggsMarketingAnim03CircuitArgent"
+        component={HiggsMarketingAnim03CircuitArgent}
+        schema={higgsMarketingAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{ parentLabel: "Parent", selfLabel: "Toi", childLabel: "Enfant" }}
+      />
+      <Composition
+        id="HiggsMarketingAnim04MurOffres"
+        component={HiggsMarketingAnim04MurOffres}
+        schema={higgsMarketingAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{ finalTitle: "Vidéo perso du Père Noël", finalPrice: "25 €" }}
+      />
+      <Composition
+        id="HiggsMarketingAnim05MachinePrenoms"
+        component={HiggsMarketingAnim05MachinePrenoms}
+        schema={higgsMarketingAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={165}
+        defaultProps={{ finalName: "Aïcha", saleCount: 47 }}
+      />
+      <Composition
+        id="HiggsMarketingAnim06ImplosionOutils"
+        component={HiggsMarketingAnim06ImplosionOutils}
+        schema={higgsMarketingAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{ finalTool: "ChatGPT", finalMessage: "1 seul outil" }}
+      />
+      <Composition
+        id="HiggsMarketingAnim07TerminalWhoami"
+        component={HiggsMarketingAnim07TerminalWhoami}
+        schema={higgsMarketingAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{ name: "Ibrahim Camara", year: "2020" }}
+      />
+      <Composition
+        id="HiggsMarketingAnim08BoutonPhysique"
+        component={HiggsMarketingAnim08BoutonPhysique}
+        schema={higgsMarketingAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={135}
+        defaultProps={{ subscribeLabel: "Abonné" }}
+      />
+      <Composition
+        id="HiggsMarketingAnim09CadenasModele"
+        component={HiggsMarketingAnim09CadenasModele}
+        schema={higgsMarketingAnim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{ modelName: "GPT-6 Astra" }}
+      />
+      <Composition
+        id="HiggsMarketingAnim10BalanceRentabilite"
+        component={HiggsMarketingAnim10BalanceRentabilite}
+        schema={higgsMarketingAnim10Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{ costLabel: "20 €/mois", saleLabel: "1 vidéo vendue", resultLabel: "Rentable" }}
+      />
+      <Composition
+        id="HiggsApiAnim01PlanArchitecte"
+        component={HiggsApiAnim01PlanArchitecte}
+        schema={higgsApiAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsApiAnim02ProliferationLogiciels"
+        component={HiggsApiAnim02ProliferationLogiciels}
+        schema={higgsApiAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsApiAnim03ReleveBancaire"
+        component={HiggsApiAnim03ReleveBancaire}
+        schema={higgsApiAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={270}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsApiAnim04BalayageProfils"
+        component={HiggsApiAnim04BalayageProfils}
+        schema={higgsApiAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsApiAnim05BasculePrix"
+        component={HiggsApiAnim05BasculePrix}
+        schema={higgsApiAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsApiAnim06DeuxEmplacements"
+        component={HiggsApiAnim06DeuxEmplacements}
+        schema={higgsApiAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={255}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsApiAnim07MurGeneration"
+        component={HiggsApiAnim07MurGeneration}
+        schema={higgsApiAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsApiAnim08OutilBrique"
+        component={HiggsApiAnim08OutilBrique}
+        schema={higgsApiAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={225}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsApiAnim09TuyauAPI"
+        component={HiggsApiAnim09TuyauAPI}
+        schema={higgsApiAnim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={330}
+        defaultProps={{}}
+      />
+      <Composition
+        id="HiggsOpusAnim01PelliculeFilm"
+        component={HiggsOpusAnim01PelliculeFilm}
+        schema={higgsOpusAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={{
+          promptText: "Crée un court métrage cinématique sur le lancement d'Opus 5.5",
+          badgeText: "Opus 5.5",
+          summaryText: "1 PROMPT = 1 FILM",
+        }}
+      />
+      <Composition
+        id="HiggsOpusAnim02SchemaConnexionMCP"
+        component={HiggsOpusAnim02SchemaConnexionMCP}
+        schema={higgsOpusAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={{
+          opusLabel: "Opus 5.5",
+          mcpLabel: "MCP",
+          higgsfieldLabel: "Higgsfield",
+          footerText: "Généré automatiquement",
+        }}
+      />
+      <Composition
+        id="HiggsOpusAnim03RoadmapEtapes"
+        component={HiggsOpusAnim03RoadmapEtapes}
+        schema={higgsOpusAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={{
+          steps: ["Le prompt", "La connexion MCP", "La génération", "Le résultat"],
+          finalBadge: "RÉPLICABLE PAR TOI AUSSI",
+        }}
+      />
+      <Composition
+        id="HiggsOpusAnim04CalendrierSeptembre"
+        component={HiggsOpusAnim04CalendrierSeptembre}
+        schema={higgsOpusAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={105}
+        defaultProps={{
+          days: ["18", "19", "20", "21", "22"],
+          month: "SEPT",
+          stampText: "NOUVEAU",
+        }}
+      />
+      <Composition
+        id="HiggsOpusAnim05BalanceCoutCredits"
+        component={HiggsOpusAnim05BalanceCoutCredits}
+        schema={higgsOpusAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={{
+          fableLabel: "Fable",
+          opusLabel: "Opus 5.5",
+          powerTitle: "PUISSANCE",
+          costTitle: "COÛT EN CRÉDITS",
+          gapText: "BEAUCOUP MOINS CHER",
+        }}
+      />
+      <Composition
+        id="HiggsOpusAnim06PromesseRealite"
+        component={HiggsOpusAnim06PromesseRealite}
+        schema={higgsOpusAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={120}
+        defaultProps={{
+          title: "Ce qu'Anthropic annonce",
+          points: ["Aussi puissant que Fable", "Moins cher en crédits"],
+          testLabel: "À TESTER",
+        }}
+      />
+      <Composition
+        id="HiggsOpusAnim07CtaAbonnementPouce"
+        component={HiggsOpusAnim07CtaAbonnementPouce}
+        schema={higgsOpusAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={135}
+        defaultProps={{
+          subscribeLabel: "S'ABONNER",
+          subscribedLabel: "ABONNÉ",
+        }}
+      />
+      <Composition
+        id="HiggsOpusAnim08TransitionWipe"
+        component={HiggsOpusAnim08TransitionWipe}
+        schema={higgsOpusAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={36}
+        defaultProps={{}}
+      />
+      <Composition
+        id="AisaAnim01RapportFlip3D"
+        component={AisaAnim01RapportFlip3D}
+        schema={aisaAnim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={aisaAnim01Schema.parse({})}
+      />
+      <Composition
+        id="AisaAnim02OrbiteMoteursIA"
+        component={AisaAnim02OrbiteMoteursIA}
+        schema={aisaAnim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={aisaAnim02Schema.parse({})}
+      />
+      <Composition
+        id="AisaAnim03ConversationRestaurants"
+        component={AisaAnim03ConversationRestaurants}
+        schema={aisaAnim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={aisaAnim03Schema.parse({})}
+      />
+      <Composition
+        id="AisaAnim04SourcesVersNoyauIA"
+        component={AisaAnim04SourcesVersNoyauIA}
+        schema={aisaAnim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={aisaAnim04Schema.parse({})}
+      />
+      <Composition
+        id="AisaAnim05ClassementRemontee"
+        component={AisaAnim05ClassementRemontee}
+        schema={aisaAnim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={aisaAnim05Schema.parse({})}
+      />
+      <Composition
+        id="AisaAnim06GlobeUtilisateurs"
+        component={AisaAnim06GlobeUtilisateurs}
+        schema={aisaAnim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={aisaAnim06Schema.parse({})}
+      />
+      <Composition
+        id="AisaAnim07RecherchesQuotidien"
+        component={AisaAnim07RecherchesQuotidien}
+        schema={aisaAnim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={240}
+        defaultProps={aisaAnim07Schema.parse({})}
+      />
+      <Composition
+        id="AisaAnim08BalanceGoogleVsIA"
+        component={AisaAnim08BalanceGoogleVsIA}
+        schema={aisaAnim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={aisaAnim08Schema.parse({})}
+      />
+      <Composition
+        id="AisaAnim09SeoVersGeo"
+        component={AisaAnim09SeoVersGeo}
+        schema={aisaAnim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={aisaAnim09Schema.parse({})}
+      />
+      <Composition
+        id="AisaAnim10OceanBleu"
+        component={AisaAnim10OceanBleu}
+        schema={aisaAnim10Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={aisaAnim10Schema.parse({})}
+      />
+      <Composition
+        id="AisaAnim11TransitionStatistiques"
+        component={AisaAnim11TransitionStatistiques}
+        schema={aisaAnim11Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={120}
+        defaultProps={aisaAnim11Schema.parse({})}
+      />
+      <Composition id="IdentiteV2Board" component={IdentiteV2Board} fps={30} width={1920} height={1080} durationInFrames={7} />
+      <Composition id="MontageAisa" component={MontageAisa} fps={30} width={1920} height={1080} durationInFrames={Math.round(FULL_DURATION * 30)} />
+      <Composition
+        id="MontageAisaHook"
+        component={MontageAisaHook}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={Math.round(HOOK_END * 30)}
+      />
+      <Composition
+        id="MontageMinimax"
+        component={MontageMinimax}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={MONTAGE_MINIMAX_FRAMES}
+      />
+      <Composition
+        id="Atmos22Anim01QuestionReecrite"
+        component={Atmos22Anim01QuestionReecrite}
+        schema={atmos22Anim01Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={atmos22Anim01Schema.parse({})}
+      />
+      <Composition
+        id="Atmos22Anim02AvalancheIdees"
+        component={Atmos22Anim02AvalancheIdees}
+        schema={atmos22Anim02Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={atmos22Anim02Schema.parse({})}
+      />
+      <Composition
+        id="Atmos22Anim03Prompt47Idees"
+        component={Atmos22Anim03Prompt47Idees}
+        schema={atmos22Anim03Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={210}
+        defaultProps={atmos22Anim03Schema.parse({})}
+      />
+      <Composition
+        id="Atmos22Anim04Elimination47a1"
+        component={Atmos22Anim04Elimination47a1}
+        schema={atmos22Anim04Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={165}
+        defaultProps={atmos22Anim04Schema.parse({})}
+      />
+      <Composition
+        id="Atmos22Anim05TimelineDocumentee"
+        component={Atmos22Anim05TimelineDocumentee}
+        schema={atmos22Anim05Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={120}
+        defaultProps={atmos22Anim05Schema.parse({})}
+      />
+      <Composition
+        id="Atmos22Anim06LowerThirdAnnees"
+        component={Atmos22Anim06LowerThirdAnnees}
+        schema={atmos22Anim06Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={atmos22Anim06Schema.parse({})}
+      />
+      <Composition
+        id="Atmos22Anim07AbonneCinetique"
+        component={Atmos22Anim07AbonneCinetique}
+        schema={atmos22Anim07Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={105}
+        defaultProps={atmos22Anim07Schema.parse({})}
+      />
+      <Composition
+        id="Atmos22Anim08TroisFaussesExcuses"
+        component={Atmos22Anim08TroisFaussesExcuses}
+        schema={atmos22Anim08Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={180}
+        defaultProps={atmos22Anim08Schema.parse({})}
+      />
+      <Composition
+        id="Atmos22Anim09ChargementBloque"
+        component={Atmos22Anim09ChargementBloque}
+        schema={atmos22Anim09Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={atmos22Anim09Schema.parse({})}
+      />
+      <Composition
+        id="Atmos22Anim10DispersionFocus"
+        component={Atmos22Anim10DispersionFocus}
+        schema={atmos22Anim10Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={150}
+        defaultProps={atmos22Anim10Schema.parse({})}
+      />
+      <Composition
+        id="Atmos22Anim11RegleCompteRebours"
+        component={Atmos22Anim11RegleCompteRebours}
+        schema={atmos22Anim11Schema}
+        fps={30}
+        width={1920}
+        height={1080}
+        durationInFrames={195}
+        defaultProps={atmos22Anim11Schema.parse({})}
       />
     </>
   );

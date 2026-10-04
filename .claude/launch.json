@@ -4,14 +4,38 @@
     {
       "name": "remotion-studio",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["node_modules/@remotion/cli/remotion-cli.js", "studio", "--no-open"],
-      "port": 3000
+      "runtimeArgs": [
+        "node_modules/@remotion/cli/remotion-cli.js",
+        "studio",
+        "--no-open",
+        "--port",
+        "3001"
+      ],
+      "port": 3001
     },
     {
       "name": "atmos-preview",
       "runtimeExecutable": "hyperframes",
-      "runtimeArgs": ["preview", "atmos-hyperframes", "--port", "3334", "--no-open"],
+      "runtimeArgs": [
+        "preview",
+        "atmos-hyperframes",
+        "--port",
+        "3334",
+        "--no-open"
+      ],
       "port": 3334
+    },
+    {
+      "name": "sons-ecoute",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "3456",
+        "--directory",
+        "public"
+      ],
+      "port": 3456
     }
   ]
 }

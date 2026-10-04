@@ -1,0 +1,92 @@
+[
+ {
+  "out": 0.0,
+  "src_in": 133.68,
+  "src_out_or_dur": 138.47,
+  "label": "COLD OPEN · 51 000 citations (phrase entière)"
+ },
+ {
+  "out": 4.79,
+  "src_in": null,
+  "src_out_or_dur": 2.0,
+  "label": "SUSPENSE · fondu au noir + « … »"
+ },
+ {
+  "out": 6.79,
+  "src_in": 0.0,
+  "src_out_or_dur": 305.32,
+  "label": null
+ },
+ {
+  "out": 312.11,
+  "src_in": null,
+  "src_out_or_dur": 2.0,
+  "label": "CARTON · Étape 2/5 · Préparer les outils"
+ },
+ {
+  "out": 314.11,
+  "src_in": 305.32,
+  "src_out_or_dur": 535.78,
+  "label": null
+ },
+ {
+  "out": 544.57,
+  "src_in": null,
+  "src_out_or_dur": 2.0,
+  "label": "CARTON · Étape 3/5 · Le rapport de visibilité IA"
+ },
+ {
+  "out": 546.57,
+  "src_in": 535.78,
+  "src_out_or_dur": 660.18,
+  "label": null
+ },
+ {
+  "out": 670.97,
+  "src_in": null,
+  "src_out_or_dur": 2.0,
+  "label": "RESPIRATION · le rapport arrive"
+ },
+ {
+  "out": 672.97,
+  "src_in": 660.18,
+  "src_out_or_dur": 801.09,
+  "label": null
+ },
+ {
+  "out": 813.88,
+  "src_in": null,
+  "src_out_or_dur": 2.0,
+  "label": "CARTON · Étape 4/5 · Le plan d'action SEO"
+ },
+ {
+  "out": 815.88,
+  "src_in": 801.09,
+  "src_out_or_dur": 1060.51,
+  "label": null
+ },
+ {
+  "out": 1075.3,
+  "src_in": null,
+  "src_out_or_dur": 2.0,
+  "label": "CARTON · Étape 5/5 · Trouver des clients"
+ },
+ {
+  "out": 1077.3,
+  "src_in": 1060.51,
+  "src_out_or_dur": 1155.83,
+  "label": null
+ },
+ {
+  "out": 1172.62,
+  "src_in": null,
+  "src_out_or_dur": 2.0,
+  "label": "SHOWCASE · 10 prospects trouvés"
+ },
+ {
+  "out": 1174.62,
+  "src_in": 1155.83,
+  "src_out_or_dur": 1282.22,
+  "label": null
+ }
+]
