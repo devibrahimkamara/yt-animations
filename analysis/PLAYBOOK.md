@@ -539,6 +539,13 @@ Tout ce qui suit a été testé sur la vidéo AIsa (21:41, montée et livrée en
   - on vérifie l'alignement voix ↔ timeline par corrélation : il doit être de 0,0 ms.
 
 ### 13.4 Rendu
+- **Règle d'Ibrahim (4 octobre 2026) : aucun rendu sur le Mac.** Tout rendu, qu'il s'agisse d'images de contrôle, de prototypes, de blocs ou de la vidéo finale, se fait sur le serveur.
+  - **Pourquoi** : sur le Mac, chaque image refait le bundle (20–40 s) et occupe la machine pendant qu'Ibrahim travaille. Sur le serveur, il n'y a qu'un bundle et les images partent en parallèle : 11 images en 1 min 25 s, envoi compris.
+  - **Restent sur le Mac** les opérations de quelques secondes qui ne sont pas des rendus Remotion : extraire une image d'une source avec ffmpeg, faire une mesure, préparer l'audio, faire une planche-contact.
+  - `analysis/cloud/sync.sh <IP> <slug>` envoie le code et les médias de la vidéo. Seuls les fichiers modifiés partent.
+  - `analysis/cloud/stills_remote.sh <IP> <slug> <Composition> <dossier> t1 t2 …` produit les images de contrôle : 1 bundle, 8 images en parallèle, puis rapatriement.
+  - Prototypes et blocs : `render_remote.sh` ou `chain_blocs.sh`.
+  - Si le serveur est éteint, Claude demande à Ibrahim avant tout rendu local.
 - **Réglages** : `analysis/tools/render_montage.sh`, soit GPU + JPEG 95 + 3 rendus en parallèle, CRF 12. Gain de −46 % mesuré (`analysis/bench/RAPPORT.md`).
 - **Serveur loué**, scripts dans `analysis/cloud/` :
   - un serveur Ubuntu 24.04, clé SSH `~/.ssh/hetzner_remotion` ;

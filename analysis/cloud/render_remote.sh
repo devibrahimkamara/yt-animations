@@ -1,6 +1,6 @@
 #!/bin/bash
 # Test de rendu sur serveur loué : envoie le projet, rend, rapatrie, compare au rendu local.
-# Usage : render_remote.sh <IP> <Composition> <premiere-derniere> <sortie_locale.mp4> [concurrency]
+# Usage : SLUG=<slug> render_remote.sh <IP> <Composition> <premiere-derniere> <sortie_locale.mp4> [concurrency]
 set -euo pipefail
 IP=$1; COMP=$2; FRAMES=$3; OUT=$4; CONC=${5:-32}
 KEY=~/.ssh/hetzner_remotion
@@ -8,15 +8,8 @@ SSH="ssh -i $KEY -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=30 -
 ROOT=/Users/ibrahimkamara/yt-animations; cd "$ROOT"
 now() { python3 -c "import time;print(time.time())"; }
 t0=$(now)
-# 1. Code (sans node_modules : réinstallé sous Linux) + seulement les médias utiles
-rsync -az -e "ssh -i $KEY" --delete --exclude node_modules --exclude out --exclude public \
-  src package.json package-lock.json tsconfig.json remotion.config.ts root@$IP:/root/rendu/
-$SSH "mkdir -p /root/rendu/public/montage/aisa /root/rendu/public/epidemic"
-rsync -az -e "ssh -i $KEY" \
-  public/montage/aisa/face_full_dn.mp4 public/montage/aisa/screen_full.mp4 public/montage/aisa/voice_full.wav \
-  public/montage/aisa/face_0-70_dn.mp4 public/montage/aisa/screen_125-150.mp4 public/montage/aisa/screen_655-700.mp4 \
-  root@$IP:/root/rendu/public/montage/aisa/
-rsync -az -e "ssh -i $KEY" public/epidemic/hq root@$IP:/root/rendu/public/epidemic/
+# 1. Code + médias de la vidéo (SLUG=<slug>, défaut aisa), npm si besoin
+"$(dirname "$0")/sync.sh" "$IP" "${SLUG:-aisa}" >/dev/null
 t1=$(now)
 $SSH -n "cd /root/rendu && [ -d node_modules/@remotion/cli ] || npm ci --silent --no-audit --no-fund >/dev/null 2>&1 || npm install --silent --no-audit --no-fund >/dev/null"
 t2=$(now)
