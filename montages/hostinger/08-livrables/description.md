@@ -1,12 +1,11 @@
 # Description YouTube · Hostinger, version ×1,00 (brouillon à valider)
 
-> Les liens entre crochets sont à remplacer : [LIEN HOSTINGER] (ton lien partenaire), [LIEN RESSOURCES] (dossier des ressources).
+> Titre : J'ai créé un site à 1 000 € en un seul prompt IA
 
 Ce site, je le facture minimum 1 000 €… et je l'ai créé en un seul prompt. Dans cette vidéo, je te montre comment créer un site internet professionnel avec Hostinger et l'IA, le modifier, le publier avec un nom de domaine, et comment transformer cette compétence en argent.
 
-🔗 Hostinger (créateur de sites IA) : [LIEN HOSTINGER]
-🎟️ Code promo **KAMARA7** : réduction supplémentaire sur ton premier achat
-📦 Toutes les ressources (prompt du site, version à adapter, checklist, questionnaire client) : [LIEN RESSOURCES]
+🔗 Hostinger (créateur de sites IA) : https://www.hostinger.com/kamara10
+🎟️ Code promo KAMARA7 : réduction supplémentaire sur ton premier achat
 
 ━━━━━━━━━━━━━━━━━━
 LE PROMPT DE LA VIDÉO
@@ -18,7 +17,7 @@ Structure : accueil avec image forte d'un véhicule customisé · page Services 
 Design : esthétique sombre et racée (noir, gris anthracite, accents rouge ou orange), typographie moderne et impactante, inspirée des sites automobiles premium.
 Fonctionnalités : galerie photo optimisée, responsive mobile, formulaire de devis, SEO local (Marseille).
 
-→ La version complète et la version à adapter à ton client sont dans les ressources.
+→ Une version à adapter à ton client : remplace la ville, les services et le style par ceux de ton client.
 
 Le prompt pour passer le site en noir et blanc :
 J'aimerais que tu changes les couleurs principales, là on est sur du noir/rouge. J'aimerais du noir/blanc.

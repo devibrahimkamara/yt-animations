@@ -14,3 +14,7 @@
 **Sponsor** : cocher « Contient une promotion rémunérée » ; code KAMARA7.
 
 Contrôles : 3 blocs au nombre d'images exact (2246 + 5770 + 7575), voix alignée à 0,0 ms (4 points), aucun noir, aucun gel ≥ 10 s.
+
+## Publication
+Programmée via YouTube Studio (Chrome) le **4 octobre 2026 à 23:00 (Jakarta, GMT+7)** : https://youtu.be/wKGdpPgRKKE
+Titre « J'ai créé un site à 1 000 € en un seul prompt IA », promotion rémunérée cochée, sous-titres FR, écran de fin à 7:23 (vidéo pub + S'abonner).
