@@ -4,7 +4,7 @@
 
 *Règle sponsor : la démo Hostinger reste intacte, on habille autour. Valeurs reprises de l'écran : `[SCREEN-TRUTH]`.*
 
-*Statut : 🔒 à valider. Points prioritaires : l'orthographe des textes (§1), la musique (page d'écoute) et le floutage (§4).*
+*Statut : ✅ textes validés par Ibrahim (4 octobre 2026), musique en attente. Points prioritaires : l'orthographe des textes (§1), la musique (page d'écoute) et le floutage (§4).*
 
 ## 0. Retours de la marque (4 octobre 2026), intégrés
 
@@ -13,9 +13,9 @@ Hostinger a relu le brouillon non répertorié (youtu.be/c63DhWvjpfU). Ses temps
 | # | Demande de la marque | Ce qu'on fait | Où (timeline ×1,00) |
 |---|---|---|---|
 | M1 | Au début, ne pas montrer l'accueil Hostinger mais **le site dont tu parles** | Déjà prévu (action 1 de l'étape 2), et étendu : on ne voit **plus du tout** l'accueil Hostinger avant la démo. Site du garage (0:00–0:22), ibrahimkamara.com (0:22–0:38), puis face cam avec phrases-clés jusqu'à 1:15 | 0:00 – 1:15 |
-| M2 | À 1:35, montrer **la page https://www.hostinger.com/fr/recommended/ai-builder-lp** au lieu de l'accueil | Pendant « on va aller sur ce site-là… hostinger.com… l'IA directement intégrée », l'écran montre la **page du créateur de sites IA** (défilement lent, héros avec le champ de prompt, puis les avantages). On revient sur la capture au moment où les offres s'affichent (2,99 / 3,99 / 7,99). Le zoom sur « Voir les packs » est supprimé : ce bouton n'existe que sur l'accueil | 1:15 – 1:36 (source 93,7 – 114,6) |
+| M2 | À 1:35, montrer **la page https://www.hostinger.com/fr/recommended/ai-builder-lp** au lieu de l'accueil | Pendant « on va aller sur ce site-là… hostinger.com… l'IA directement intégrée », l'écran montre la **page du créateur de sites IA** (défilement lent, héros avec le champ de prompt, puis les avantages). On revient sur la capture au moment où les offres s'affichent (2,99 / 3,99 / 7,99). Le bouton « Voir les packs » existe aussi sur cette page (en haut à droite) : le zoom au mot « tu cliques sur voir les packs » est gardé | 1:15 – 1:36 (source 93,7 – 114,6) |
 
-⚠️ **Capture de la page en français à fournir** : Hostinger redirige selon le pays de connexion (ton Mac reçoit la version indonésienne, le serveur la version finnoise). Voir la question 4 du §5.
+✅ Capture pleine page en français (VPN France, cookies refusés) : `04-plan/lp/ai-builder-lp_fr_full.png` (1920 × 8126).
 
 ## Les blocs de production
 
@@ -50,7 +50,7 @@ Les temps de lecture sont calculés pour rester lisibles à ×1,15 (§6bis).
 |---|---|---|
 | 1:15 | Pastille de chapitre (fixe) | Étape 1/5 · Hostinger |
 | 1:16 | Pastille | Lien + code *KAMARA7* en description |
-| 1:16 → 1:36 | **Page du créateur IA** (demande M2) | défilement lent de hostinger.com/fr/recommended/ai-builder-lp ; cadre sur le champ de prompt au mot « l'IA directement intégrée » |
+| 1:16 → 1:36 | **Page du créateur IA** (demande M2) | défilement lent de hostinger.com/fr/recommended/ai-builder-lp ; cadre sur le champ de prompt au mot « l'IA directement intégrée », puis zoom sur « Voir les packs » |
 | 1:36 | Cadres sur les offres (valeurs de l'écran) | Premium · 2,99 €/mois — **Unlimited · 3,99 €/mois** — Cloud Startup · 7,99 €/mois |
 | 1:50 | Légende sur Unlimited | Sites web *illimités* |
 | 2:18 | Cadre | Durée : 12 mois → 3,99 €/mois |
