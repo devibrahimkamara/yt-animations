@@ -777,7 +777,7 @@ const Block5: React.FC = () => (
         src={SCREEN}
         trimBefore={SHOW5 + 2.0 - 18.79}
         keys={[{ t: 0, z: 0.92, cx: 960, cy: 540 }]}
-        masks={[{ from: s5b(1197.2), to: s5b(1264.6), x: 104, y: 226, w: 1712, h: 800 }]}
+        masks={[{ from: s5b(1197.2), to: s5b(1264.6), x: 104, y: 192, w: 1712, h: 834 }]}
       />
     </At>
     <At from={SHOW5 + 2.0} to={1301.0}>
