@@ -80,6 +80,7 @@ const Body: React.FC<{ embedded?: boolean }> = ({ embedded }) => (
           { t: 6.3, z: 1.45, cx: 1000, cy: 610 },
           { t: 8.06, z: 1.5, cx: 1000, cy: 600 },
         ]}
+        masks={[{ from: 0, to: 9, x: 715, y: 100, w: 420, h: 38 }]} // chemin du fichier (nom d'utilisateur)
         tilt={[
           { t: 0, rx: 5, ry: -9 },
           { t: 0.5, rx: 5, ry: -9 },

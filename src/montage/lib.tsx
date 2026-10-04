@@ -370,7 +370,7 @@ export const Stat: React.FC<{
 };
 
 /** Carton d'étape ([CHAPTER]) : ✦, sur-titre « Étape n sur N », titre avec *mot* en serif. */
-export const ChapterCard: React.FC<{ n: number; total: number; title: string; end: number }> = ({ n, total, title, end }) => {
+export const ChapterCard: React.FC<{ n?: number; total?: number; title: string; end: number; size?: number; eyebrow?: string }> = ({ n, total, title, end, size = 210, eyebrow }) => {
   const t = useT();
   const o = inOut(t, 0, end, 0.01, 0.45);
   const line = keyed(t, [0.7, 1.2], [0, 1], EASE);
@@ -382,9 +382,9 @@ export const ChapterCard: React.FC<{ n: number; total: number; title: string; en
           <Star size={64} spin={(1 - keyed(t, [0, 0.8], [0, 1], EASE)) * -90} />
         </div>
         <Eyebrow size={36} style={blurIn(t, 0.2)}>
-          Étape {n} sur {total}
+          {eyebrow ?? `Étape ${n} sur ${total}`}
         </Eyebrow>
-        <div style={{ fontSize: 210, fontWeight: 500, letterSpacing: "-0.05em", lineHeight: 1, ...blurIn(t, 0.35, 0.55, 26) }}>{rich(title, INK)}</div>
+        <div style={{ fontSize: size, fontWeight: 500, letterSpacing: "-0.05em", lineHeight: 1.02, maxWidth: 1700, textAlign: "center", ...blurIn(t, 0.35, 0.55, 26) }}>{rich(title, INK)}</div>
         <div style={{ width: 120 * line, height: 4, borderRadius: 2, background: LIME, marginTop: 20, boxShadow: `0 0 20px ${LIME}` }} />
       </AbsoluteFill>
       <Grain />

@@ -389,6 +389,169 @@ const Block2: React.FC = () => (
   </AbsoluteFill>
 );
 
+
+// ═══ Bloc 3 · étape 3 « Le rapport de visibilité IA » (9:04,6 → 13:33,9) ═════
+// Carton 544,57–546,57 · source = T − 10,79 jusqu'à la respiration (670,97–672,97), puis T − 12,79.
+const CARD3 = B2_END; // 544,57
+const RESP3 = 670.97;
+const B3_END = 813.88;
+const s3a = (T: number) => T - (CARD3 + 2.0);
+const s3b = (T: number) => T - (RESP3 + 2.0);
+const SIDEBAR = { x: 100, y: 270, w: 405, h: 755 };
+const PDF_PATH = { x: 715, y: 100, w: 420, h: 38 };
+const STAT97: [number, number] = [688.4, 695.2];
+
+const Block3: React.FC = () => (
+  <AbsoluteFill>
+    {/* A · Claude Code : le prompt, le redémarrage, le devis */}
+    <At from={CARD3 + 2.0} to={RESP3}>
+      <ScreenStage
+        src={SCREEN}
+        trimBefore={CARD3 + 2.0 - 10.79}
+        keys={[
+          { t: 0, z: 0.92, cx: 960, cy: 540 },
+          { t: s3a(621.0), z: 0.92, cx: 960, cy: 540 },
+          { t: s3a(623.0), z: 1.5, cx: 1129, cy: 482 },
+          { t: s3a(652.4), z: 1.5, cx: 1129, cy: 482 },
+          { t: s3a(654.4), z: 0.92, cx: 960, cy: 540 },
+        ]}
+        masks={[
+          { from: 0, to: s3a(597.6), ...SIDEBAR },
+          { from: s3a(605.1), to: s3a(RESP3) + 1, ...SIDEBAR },
+        ]}
+      />
+    </At>
+    <At from={CARD3 + 2.0} to={RESP3}>
+      <FacePip
+        src={FACE}
+        trimBefore={CARD3 + 2.0 - 10.79}
+        face={FACE_POS}
+        keys={[
+          { t: 0, p: 1 },
+          { t: s3a(596.6), p: 1 },
+          { t: s3a(597.4), p: 0 },
+          { t: s3a(605.4), p: 0 },
+          { t: s3a(606.2), p: 1 },
+        ]}
+        zoomKeys={[{ t: 0, z: 1.03 }]}
+      />
+    </At>
+    <At from={553.0} to={578.6}>
+      <PromptCard
+        end={578.6 - 553.0}
+        parts={[
+          { text: "Évalue la visibilité de la marque Shine (shine.fr, néobanque pour indépendants)", label: "Marque : Shine", at: 557.8 - 553.0 },
+          { text: " face à trois concurrents : Qonto, Revolut Business et Blank,", label: "Concurrents : Revolut, Qonto, Blank", at: 564.47 - 553.0 },
+          { text: " dans les moteurs de réponse IA disponibles via AIsa. Marché : France.", label: "Marché : France", at: 573.89 - 553.0 },
+          { text: " Utilise ces 10 questions de clients…", label: "Base : 10 questions clients", at: 575.19 - 553.0 },
+        ]}
+      />
+    </At>
+    <At from={578.8} to={584.6}>
+      <TopPill icon="star" text="Prompt complet *en description*" end={584.6 - 578.8} />
+    </At>
+    <At from={645.8} to={652.4}>
+      <TopPill icon="star" text="Coût AIsa : ≈ *1,29 $* · 12 appels" end={652.4 - 645.8} />
+    </At>
+
+    {/* Respiration : l'image se pose, la musique se coupe */}
+    <At from={RESP3} to={RESP3 + 2.0}>
+      <ChapterCard eyebrow="Le résultat" title="Le *rapport*" end={2.0} size={180} />
+    </At>
+
+    {/* B · le rapport PDF, puis Claude Code */}
+    <At from={RESP3 + 2.0} to={B3_END}>
+      <ScreenStage
+        src={SCREEN}
+        trimBefore={RESP3 + 2.0 - 12.79}
+        keys={[
+          { t: 0, z: 0.8, cx: 960, cy: 540 },
+          { t: s3b(676.4), z: 0.8, cx: 960, cy: 540 },
+          { t: s3b(678.4), z: 1.5, cx: 990, cy: 520 },
+          { t: s3b(695.6), z: 1.5, cx: 990, cy: 520 },
+          { t: s3b(697.6), z: 0.92, cx: 960, cy: 540 },
+          { t: s3b(710.6), z: 0.92, cx: 960, cy: 540 },
+          { t: s3b(712.6), z: 1.35, cx: 1130, cy: 560 },
+          { t: s3b(735.0), z: 1.35, cx: 1130, cy: 560 },
+          { t: s3b(737.0), z: 0.92, cx: 960, cy: 540 },
+        ]}
+        tilt={[
+          { t: 0, rx: 4, ry: -7 },
+          { t: 1.6, rx: 0, ry: 0 },
+        ]}
+        dim={(t) => interpolate(t + RESP3 + 2.0, [STAT97[0] - 0.1, STAT97[0] + 0.4, STAT97[1] - 0.5, STAT97[1]], [0, 0.75, 0.75, 0], clamp)}
+        blur={(t) => interpolate(t + RESP3 + 2.0, [STAT97[0] - 0.1, STAT97[0] + 0.5, STAT97[1] - 0.5, STAT97[1]], [0, 9, 9, 0], clamp)}
+        masks={[
+          { from: 0, to: s3b(784.0), ...PDF_PATH },
+          { from: s3b(783.0), to: s3b(B3_END) + 1, ...SIDEBAR },
+        ]}
+      />
+    </At>
+    <At from={RESP3 + 2.0} to={B3_END}>
+      <FacePip
+        src={FACE}
+        trimBefore={RESP3 + 2.0 - 12.79}
+        face={FACE_POS}
+        keys={[
+          { t: 0, p: 1 },
+          { t: s3b(756.2), p: 1 },
+          { t: s3b(757.0), p: 0 },
+          { t: s3b(782.6), p: 0 },
+          { t: s3b(783.4), p: 1 },
+        ]}
+        zoomKeys={[
+          { t: 0, z: 1.0 },
+          { t: s3b(757.0), z: 1.0 },
+          { t: s3b(782.6), z: 1.06 },
+        ]}
+      />
+    </At>
+    <At from={STAT97[0]} to={STAT97[1]}>
+      <Stat
+        value={97}
+        start={0.3}
+        end={STAT97[1] - STAT97[0]}
+        format={(n) => `${Math.round(n)} %`}
+        label="de citation pour *Shine*"
+        context="30 points de mesure · 3 moteurs IA"
+      />
+    </At>
+    <At from={698.0} to={705.6}>
+      <BrandTiles
+        end={705.6 - 698.0}
+        title="3 moteurs analysés"
+        brands={[
+          { name: "Perplexity", color: "#20B8CD", at: 0.6 },
+          { name: "Google AI Mode", color: "#4E86F7", at: 699.87 - 698.0 },
+          { name: "ChatGPT", color: "#10A37F", at: 701.41 - 698.0 },
+        ]}
+      />
+    </At>
+    <At from={770.5} to={775.4}>
+      <KeyLine
+        end={775.4 - 770.5}
+        size={96}
+        words={[
+          { w: "cible", t: 0.2 },
+          { w: "les", t: 0.5 },
+          { w: "entreprises", t: 0.81, hl: true },
+          { w: "locales", t: 1.15, hl: true },
+        ]}
+      />
+    </At>
+    <At from={802.0} to={808.6}>
+      <TopPill icon="star" text="Possible grâce aux connexions *AIsa*" end={808.6 - 802.0} />
+    </At>
+
+    <At from={CARD3 + 2.0} to={B3_END}>
+      <ChapterPill n={3} total={5} title="Le rapport" end={B3_END - CARD3 - 2.0} />
+    </At>
+    <At from={CARD3} to={CARD3 + 2.0}>
+      <ChapterCard n={3} total={5} title="Le rapport de *visibilité IA*" end={2.0} size={150} />
+    </At>
+  </AbsoluteFill>
+);
+
 const SettingsPills: React.FC<{ items: { k: string; v: string; at: number }[]; end: number }> = ({ items, end }) => {
   const t = useT();
   const o = inOut(t, 0, end, 0.01, 0.4);
@@ -492,6 +655,32 @@ const SFX_B2: SfxCue[] = [
   { k: "confirmAchievement", at: 540.2, gain: 0.8 },
 ];
 
+
+const SFX_B3: SfxCue[] = [
+  { k: "whoosh05", at: 544.62 },
+  { k: "impactHitLow", at: 545.0, gain: 0.35 },
+  { k: "confirmNotif13", at: 545.8, gain: 0.6 },
+  { k: "whoosh03", at: 553.1, gain: 0.6 },
+  { k: "popSelectA", at: 557.85 },
+  { k: "popSelectB", at: 564.5 },
+  { k: "popSelectA", at: 573.95 },
+  { k: "popSelectB", at: 575.25 },
+  { k: "popNotif03", at: 578.9, gain: 0.5 },
+  { k: "whoosh02", at: 596.7, gain: 0.6 },
+  { k: "whoosh01", at: 605.5, gain: 0.5 },
+  { k: "popNotif12", at: 645.9 },
+  { k: "riserSuspense", at: 672.9, gain: 0.45 },
+  { k: "riserClean", at: 688.75, gain: 0.45 },
+  { k: "impactDeep", at: 688.8, gain: 0.8 },
+  { k: "popSelectA", at: 698.6 },
+  { k: "popSelectB", at: 699.9 },
+  { k: "popSelectA", at: 701.45 },
+  { k: "whoosh03", at: 757.0, gain: 0.6 },
+  { k: "popNotif03", at: 770.75, gain: 0.5 },
+  { k: "whoosh02", at: 782.9, gain: 0.6 },
+  { k: "popNotif12", at: 802.1, gain: 0.7 },
+];
+
 const MusicTrack: React.FC<{ k: keyof typeof MUSIC; from: number; to: number; level: (T: number) => number }> = ({ k, from, to, level }) => (
   <Sequence from={f(from)} durationInFrames={f(to - from)} layout="none">
     <Audio src={staticFile(`epidemic/hq/${MUSIC[k].file}`)} volume={(fr) => musicGain(k) * level(fr / 30 + from)} />
@@ -507,6 +696,7 @@ export const MontageAisa: React.FC = () => (
     {/* Les blocs sont écrits en temps absolus de la timeline */}
     <Block1 />
     <Block2 />
+    <Block3 />
     <Sequence from={f(B1)}>
       <Grain />
     </Sequence>
@@ -522,8 +712,15 @@ export const MontageAisa: React.FC = () => (
       level={(T) => (T < B1 ? hookMusicLevel(T - SHIFT, true) : interpolate(T, [B1, 100.4, 100.8, 103.9, 104.0, 105.5], [1, 1, 1.35, 1.35, 1.2, 0], clamp))}
     />
     <MusicTrack k="preuve" from={104.0} to={314.0} level={(T) => interpolate(T, [104.0, 105.3, 106.8, 107.6, 312.0, 313.8], [0, 1.3, 1.3, 1, 1, 0], clamp)} />
-    <MusicTrack k="outils" from={312.1} to={B2_END} level={(T) => interpolate(T, [312.1, 312.9, 314.1, 315.0], [0, 1.3, 1.3, 1], clamp)} />
+    <MusicTrack k="outils" from={312.1} to={546.4} level={(T) => interpolate(T, [312.1, 312.9, 314.1, 315.0, 544.4, 546.2], [0, 1.3, 1.3, 1, 1, 0], clamp)} />
+    <MusicTrack
+      k="rapport"
+      from={544.5}
+      to={B3_END + 0.1}
+      level={(T) => interpolate(T, [544.5, 545.4, 546.6, 547.4, 670.5, 670.97, 672.97, 673.9, 696.0, 812.0, 813.8], [0, 1.3, 1.3, 1, 1, 0, 0, 1.15, 1, 1, 0], clamp)}
+    />
     <SfxTrack cues={SFX_B1} />
     <SfxTrack cues={SFX_B2} />
+    <SfxTrack cues={SFX_B3} />
   </AbsoluteFill>
 );
