@@ -17,9 +17,9 @@ const GRADE = "brightness(1.16) contrast(1.06) saturate(1.05)"; // face cam trè
 const WIN_APP = { x: 108, y: 54, w: 1704, h: 972 };
 const WIN_SITE = { x: 118, y: 172, w: 1683, h: 843 };
 
-// Musique : Bakka (Epidemic 276212), extrait d'écoute en attendant le HQ. −9,9 LUFS → ≈ −29 LUFS.
-const MUSIC_FILE = "epidemic/hostinger/previews/P0_hook__bakka__es276212.mp3";
-const MUSIC_GAIN = Math.pow(10, (-29 - -9.9) / 20);
+// Musique : Bakka (Epidemic 276212), HQ. −9,4 LUFS → ≈ −29 LUFS.
+const MUSIC_FILE = "epidemic/hostinger/hq/m0_hook_bakka.mp3";
+const MUSIC_GAIN = Math.pow(10, (-29 - -9.4) / 20);
 export const hookMusicLevel = (t: number, tail = false) =>
   interpolate(t, [0, 0.4, 8.3, 8.7, 11.3, 11.7, 71.2, 71.5, HOOK_END - 0.5, HOOK_END], [0, 1, 1, 1.25, 1.25, 1, 1, 1.3, 1.3, tail ? 1 : 0], {
     extrapolateLeft: "clamp",
@@ -60,13 +60,13 @@ const SFX: SfxCue[] = [
 ];
 
 /** Dégradé sombre en bas de la face cam : lisibilité des phrases posées sur le t-shirt clair. */
-const Scrim: React.FC<{ end: number }> = ({ end }) => {
+export const Scrim: React.FC<{ end: number }> = ({ end }) => {
   const t = useT();
   return <AbsoluteFill style={{ opacity: inOut(t, 0, end, 0.35, 0.4), background: "linear-gradient(180deg, transparent 45%, rgba(5,7,4,0.55) 72%, rgba(5,7,4,0.85) 100%)" }} />;
 };
 
 /** Deux pastilles au mot (« pour ton entreprise » · « pour des clients »), en bas. */
-const TwoPills: React.FC<{ items: { text: string; at: number }[]; end: number }> = ({ items, end }) => {
+export const TwoPills: React.FC<{ items: { text: string; at: number }[]; end: number }> = ({ items, end }) => {
   const t = useT();
   const o = inOut(t, 0, end, 0.01, 0.4);
   return (

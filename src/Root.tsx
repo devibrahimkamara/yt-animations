@@ -2,6 +2,7 @@ import { MontageAisa, FULL_DURATION } from "./MontageAisa/Full";
 import { IdentiteV2Board } from "./identiteV2/Board";
 import { MontageAisaHook, HOOK_END } from "./MontageAisa/Hook";
 import { MontageHostingerHook, HOOK_END as HOSTINGER_HOOK_END } from "./MontageHostinger/Hook";
+import { MontageHostinger, FULL_DURATION as HOSTINGER_DURATION } from "./MontageHostinger/Full";
 import { MontageMinimax, MONTAGE_MINIMAX_FRAMES } from "./MontageMinimax";
 import "./index.css";
 import { Composition } from "remotion";
@@ -3649,6 +3650,7 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         durationInFrames={Math.round(HOOK_END * 30)}
       />
+      <Composition id="MontageHostinger" component={MontageHostinger} fps={30} width={1920} height={1080} durationInFrames={Math.round(HOSTINGER_DURATION * 30)} />
       <Composition
         id="MontageHostingerHook"
         component={MontageHostingerHook}
