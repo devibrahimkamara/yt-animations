@@ -17,6 +17,8 @@ import {
   INK,
   inOut,
   keyed,
+  KeyLine,
+  MUTED,
   LIME,
   LINE,
   rich,
@@ -29,7 +31,7 @@ import {
   H,
   type SfxCue,
 } from "../montage/lib";
-import { PromptCard, Spotlight, TopPill } from "../montage/Explainers";
+import { PromptCard, Spotlight, StepLT, TopPill } from "../montage/Explainers";
 import { CUT_LEN, HOOK_END, hookMusicLevel, MontageHostingerHook, Scrim, TwoPills } from "./Hook";
 
 export const FULL_DURATION = 519.7; // audio_v1.wav (8:39,7)
@@ -62,6 +64,8 @@ const XF = 1.2; // fondu enchaîné
 const BOOSTS: [number, number][] = [
   [146.5, 152.0], // 47,88 €
   [154.3, 158.2], // code KAMARA7
+  [397.0, 403.8], // avant / après
+  [509.6, 515.0], // écran de fin
 ];
 const boost = (T: number) => 1 + 0.41 * Math.max(0, ...BOOSTS.map(([a, b]) => interpolate(T, [a - 0.3, a + 0.2, b - 0.3, b + 0.3], [0, 1, 1, 0], clamp)));
 const MusicTrack: React.FC = () => (
@@ -478,12 +482,265 @@ const FadeOut: React.FC<{ at: number; end: number; children: React.ReactNode }> 
   return <AbsoluteFill style={{ opacity: interpolate(t, [at, end], [1, 0], clamp) }}>{children}</AbsoluteFill>;
 };
 
+// ─── Avant / après : le même site, rouge puis noir et blanc (rideau) ───
+const WIN_SITE = { x: 118, y: 172, w: 1683, h: 843 };
+const BeforeAfter: React.FC<{ end: number }> = ({ end }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.35, 0.4);
+  // Images fixes de la capture (zone du site) : source 294,5 (rouge) et 416,0 (noir et blanc), côte à côte
+  const w = 860;
+  const h = (WIN_SITE.h / WIN_SITE.w) * w;
+  const top = 310;
+  const card = (file: string, x: number, at: number, label: string, hl: boolean) => (
+    <div style={{ position: "absolute", left: x, top, width: w, ...blurIn(t, at, 0.55, 30) }}>
+      <div style={{ width: w, height: h, borderRadius: 24, overflow: "hidden", border: `${hl ? 3 : 1.5}px solid ${hl ? LIME : LINE}`, boxShadow: hl ? `0 0 60px rgba(198,243,109,0.25)` : "0 40px 90px -30px rgba(0,0,0,0.8)" }}>
+        <Img src={staticFile(`montage/hostinger/${file}`)} style={{ width: w, height: h }} />
+      </div>
+      <div style={{ marginTop: 26, textAlign: "center", fontSize: 44, fontWeight: 500, color: hl ? INK : MUTED, letterSpacing: "-0.02em" }}>{rich(label)}</div>
+    </div>
+  );
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT }}>
+      <Backdrop />
+      <div style={{ position: "absolute", top: 190, width: W, textAlign: "center", ...blurIn(t, 0.1) }}>
+        <Eyebrow size={34}>Un seul prompt</Eyebrow>
+      </div>
+      {card("site_rouge.png", 80, 0.2, "Avant · noir et rouge", false)}
+      {card("site_nb.png", W - 80 - w, 1.3, "Après · *noir et blanc*", true)}
+      <Grain />
+    </AbsoluteFill>
+  );
+};
+
+// ─── Écran de fin : emplacement de la vidéo YouTube (élément d'écran de fin) + code ───
+const EndCard: React.FC<{ end: number }> = ({ end }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.6, 0.6);
+  const b = blurIn(t, 0.3, 0.55, 26);
+  const VW = 720;
+  const VH = 405;
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT }}>
+      <AbsoluteFill style={{ background: "linear-gradient(90deg, transparent 38%, rgba(9,11,8,0.82) 60%, rgba(9,11,8,0.92) 100%)" }} />
+      <div style={{ position: "absolute", right: 100, top: 200, width: VW, ...b }}>
+        <Eyebrow size={30}>Ma vidéo · la suite</Eyebrow>
+        <div style={{ fontSize: 54, fontWeight: 500, color: INK, letterSpacing: "-0.03em", lineHeight: 1.1, margin: "12px 0 26px" }}>{rich("Configurer les *publicités Google*")}</div>
+        {/* Zone réservée à l'élément « vidéo » de l'écran de fin YouTube (16:9) */}
+        <div style={{ width: VW, height: VH, borderRadius: 24, border: `3px dashed ${LIME}`, background: "rgba(198,243,109,0.05)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <svg width={90} height={90} viewBox="0 0 24 24" fill={LIME} opacity={0.8}>
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+      </div>
+      <div style={{ position: "absolute", right: 100, top: 200 + 150 + VH + 40, width: VW, display: "flex", justifyContent: "center", ...blurIn(t, 1.2) }}>
+        <div style={{ ...glass, background: "linear-gradient(180deg, rgba(18,22,15,0.94), rgba(18,22,15,0.88))", borderRadius: 999, padding: "16px 30px", fontSize: 40, fontWeight: 500, color: INK, letterSpacing: "-0.015em", whiteSpace: "nowrap" }}>
+          {rich("Code *KAMARA7* · lien en description")}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ═══ Bloc 2 · Étapes 3 à 5 (le site, modifier, publier) + clients et fin (4:27,2 → 8:39,7) ═══
+const B2 = B1_END; // 267,2
+const B2_END = FULL_DURATION;
+const s2 = (T: number) => T - B2;
+const V_PROMPT2 = view(1.6, 708, 689); // champ de saisie du chat (centre (370, 920) ramené par le blocage)
+const V_DOM = view(1.4, 915, 529);
+const BA: [number, number] = [397.0, 403.8];
+
+const SFX_B2: SfxCue[] = [
+  { k: "whoosh03", at: 267.1 }, // étape 3
+  { k: "confirmNotif13", at: 267.5, gain: 0.7 },
+  { k: "popSelectA", at: 274.4 },
+  { k: "whoosh05", at: 279.3 }, // chiffres
+  { k: "popSelectB", at: 281.9 },
+  { k: "popNotif03", at: 285.3, gain: 0.6 },
+  { k: "popSelectA", at: 300.3 },
+  { k: "popSelectA", at: 324.1 },
+  { k: "popSelectB", at: 336.0 },
+  { k: "popSelectA", at: 340.1 },
+  { k: "popSelectB", at: 345.0 },
+  { k: "popSelectA", at: 348.6 },
+  { k: "whoosh01", at: 350.2 }, // face cam
+  { k: "whoosh02", at: 350.5 },
+  { k: "popNotif02", at: 359.5 },
+  { k: "whoosh03", at: 364.8 }, // étape 4
+  { k: "confirmNotif13", at: 365.3, gain: 0.7 },
+  { k: "whoosh05", at: 379.6 }, // prompt
+  { k: "whoosh02", at: 386.1 },
+  { k: "riserWhoosh", at: 397.0 - 2.66 + 1.6, gain: 0.5 }, // avant/après : le rideau
+  { k: "impactBig", at: 398.5, gain: 0.25 },
+  { k: "whoosh03", at: 413.6 }, // étape 5
+  { k: "confirmNotif13", at: 414.0, gain: 0.7 },
+  { k: "clickA", at: 415.7 }, // Publier
+  { k: "confirmAchievement", at: 418.0, gain: 0.7 }, // publié
+  { k: "popSelectA", at: 419.7 },
+  { k: "popSelectB", at: 440.1 },
+  { k: "whoosh05", at: 447.9 },
+  { k: "popNotif02", at: 449.5 },
+  { k: "whoosh01", at: 455.5 }, // face cam jusqu'à la fin
+  { k: "popNotif03", at: 475.0, gain: 0.6 },
+  { k: "popSelectA", at: 480.4 },
+  { k: "popSelectB", at: 488.0 },
+  { k: "whoosh02", at: 499.4 }, // la publicité
+  { k: "whoosh03", at: 509.5 }, // écran de fin
+];
+
+const SECTIONS: [number, number, number, string][] = [
+  [274.3, 279.2, 1, "Accueil"],
+  [281.8, 286.4, 2, "Services"],
+  [300.2, 305.0, 3, "Galerie"],
+  [324.0, 329.0, 2, "Services"],
+  [335.9, 339.8, 3, "Galerie"],
+  [340.0, 344.7, 4, "À propos"],
+  [344.9, 348.3, 5, "Contact"],
+  [348.5, 350.2, 6, "Carte"],
+];
+
+const Block2: React.FC = () => (
+  <AbsoluteFill>
+    <At from={B2} to={B2_END}>
+      <ScreenStage
+        src={SCREEN}
+        trimBefore={src(B2)}
+        win={WIN_APP}
+        keys={[
+          { t: 0, z: 1.0, cx: 960, cy: 540 },
+          { t: s2(279.0), z: 1.0, cx: 960, cy: 540 },
+          { t: s2(280.0), z: 1.25, cx: 960, cy: 480 },
+          { t: s2(281.6), z: 1.25, cx: 960, cy: 480 },
+          { t: s2(282.6), z: 1.0, cx: 960, cy: 540 },
+          { t: s2(300.0), z: 1.04, cx: 960, cy: 560 },
+          { t: s2(321.0), z: 1.0, cx: 960, cy: 540 },
+          { t: s2(379.4), z: 1.0, cx: 960, cy: 540 },
+          { t: s2(380.6), z: 1.6, cx: 370, cy: 920 },
+          { t: s2(385.0), z: 1.6, cx: 370, cy: 920 },
+          { t: s2(386.2), z: 1.0, cx: 960, cy: 540 },
+          { t: s2(447.6), z: 1.0, cx: 960, cy: 540 },
+          { t: s2(448.6), z: 1.4, cx: 915, cy: 529 },
+          { t: s2(455.0), z: 1.4, cx: 915, cy: 529 },
+          { t: s2(456.0), z: 1.0, cx: 960, cy: 540 },
+        ]}
+      />
+    </At>
+
+    {SECTIONS.map(([a, b, n, label]) => (
+      <At key={`${a}`} from={a} to={b}>
+        <StepLT n={n} text={label} end={b - a} />
+      </At>
+    ))}
+    <At from={285.2} to={289.6}>
+      <TopPill text="Images *générées par l'IA*" end={289.6 - 285.2} />
+    </At>
+
+    {/* Étape 4 : le prompt de modification, puis l'avant / après */}
+    <At from={380.8} to={385.0}>
+      <Spotlight {...V_PROMPT2(118, 870, 505, 82)} end={385.0 - 380.8} />
+    </At>
+    <At from={386.2} to={392.8}>
+      <PromptCard tool="Hostinger" end={392.8 - 386.2} parts={[{ text: "J'aimerais que tu changes les couleurs principales. " }, { text: "Là, on est sur du noir/rouge.", label: "Avant : noir et rouge", at: 0.8 }, { text: " J'aimerais du " }, { text: "noir/blanc.", label: "Après : noir et blanc", at: 2.2 }]} />
+    </At>
+    {/* Étape 5 : publier, URL temporaire, domaine */}
+    <At from={415.6} to={417.9}>
+      <Spotlight {...V1(1722, 66, 80, 38)} caption="Publier" end={417.9 - 415.6} />
+    </At>
+    <At from={419.6} to={423.2}>
+      <Spotlight {...V1(660, 432, 600, 88)} caption="URL temporaire" end={423.2 - 419.6} />
+    </At>
+    <At from={440.0} to={443.4}>
+      <Spotlight {...V1(660, 532, 600, 112)} caption="Domaine personnalisé" end={443.4 - 440.0} />
+    </At>
+    <At from={449.4} to={455.4}>
+      <Spotlight {...V_DOM(380, 508, 1070, 42)} end={455.4 - 449.4} />
+      <TopPill text="Ton domaine : *marseilleauto.com*" end={455.4 - 449.4} />
+    </At>
+
+    {/* Face cam : médaillon, plein cadre pendant le bilan (écran figé), puis plein cadre jusqu'à la fin (page domaine figée 70 s) */}
+    <At from={B2} to={B2_END}>
+      <FacePip
+        src={FACE}
+        trimBefore={src(B2)}
+        face={FACE_POS}
+        grade={GRADE}
+        keys={[
+          { t: 0, p: 1 },
+          { t: s2(350.3), p: 1 },
+          { t: s2(351.2), p: 0 },
+          { t: s2(364.4), p: 0 },
+          { t: s2(365.3), p: 1 },
+          { t: s2(455.6), p: 1 },
+          { t: s2(456.5), p: 0 },
+        ]}
+        zoomKeys={[
+          { t: 0, z: 1.0 },
+          { t: s2(351.2), z: 1.0 },
+          { t: s2(364.4), z: 1.06 },
+          { t: s2(456.5), z: 1.0 },
+          { t: s2(480.0), z: 1.05 },
+          { t: s2(509.0), z: 1.08 },
+          { t: s2(B2_END), z: 1.04 },
+        ]}
+      />
+    </At>
+
+    {/* Avant / après : au-dessus du médaillon */}
+    <At from={BA[0]} to={BA[1]}>
+      <BeforeAfter end={BA[1] - BA[0]} />
+    </At>
+
+    {/* Sur la face cam */}
+    <At from={350.6} to={354.6}>
+      <Scrim end={354.6 - 350.6} />
+      <KeyLineWords end={354.6 - 350.6} words={[{ w: "en", t: 0.15 }, { w: "un", t: 0.3 }, { w: "seul", t: 0.45, hl: true }, { w: "prompt", t: 0.75 }]} />
+    </At>
+    <At from={359.4} to={363.0}>
+      <TopPill text="*20 sites* par jour" end={363.0 - 359.4} />
+    </At>
+    <At from={474.9} to={479.4}>
+      <TopPill text="*Abonne-toi* pour la suite" end={479.4 - 474.9} />
+    </At>
+    <At from={480.0} to={494.8}>
+      <Scrim end={494.8 - 480.0} />
+      <TwoPills
+        end={494.8 - 480.0}
+        items={[
+          { text: "Ton propre site", at: 0.3 },
+          { text: "Une agence de sites", at: 487.9 - 480.0 },
+        ]}
+      />
+    </At>
+    <At from={499.3} to={503.8}>
+      <Scrim end={503.8 - 499.3} />
+      <KeyLineWords end={503.8 - 499.3} words={[{ w: "la", t: 0.2 }, { w: "publicité", t: 0.4, hl: true }]} />
+    </At>
+    <At from={509.6} to={B2_END}>
+      <EndCard end={B2_END - 509.6} />
+    </At>
+
+    {/* Pastilles de chapitre */}
+    <At from={267.4} to={365.0}>
+      <ChapterPill n={3} total={5} title="Le site" end={365.0 - 267.4} />
+    </At>
+    <At from={365.2} to={413.6}>
+      <ChapterPill n={4} total={5} title="Modifier" end={413.6 - 365.2} />
+    </At>
+    <At from={413.9} to={456.0}>
+      <ChapterPill n={5} total={5} title="Publier" end={456.0 - 413.9} />
+    </At>
+    <SfxTrack cues={SFX_B2} />
+  </AbsoluteFill>
+);
+
+const KeyLineWords: React.FC<{ end: number; words: { w: string; t: number; hl?: boolean }[] }> = ({ end, words }) => <KeyLine end={end} size={110} words={words} />;
+
 export const MontageHostinger: React.FC = () => (
   <AbsoluteFill style={{ background: "black" }}>
     <Sequence from={0} durationInFrames={f(HOOK_END + 0.5)}>
       <MontageHostingerHook embedded />
     </Sequence>
     <Block1 />
+    <Block2 />
     <Audio src={staticFile("montage/hostinger/voice_full.wav")} />
     <MusicTrack />
     <Grain />
