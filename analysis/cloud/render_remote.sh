@@ -4,7 +4,7 @@
 set -euo pipefail
 IP=$1; COMP=$2; FRAMES=$3; OUT=$4; CONC=${5:-32}
 KEY=~/.ssh/hetzner_remotion
-SSH="ssh -i $KEY -o StrictHostKeyChecking=accept-new root@$IP"
+SSH="ssh -i $KEY -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=30 -o ServerAliveCountMax=4 root@$IP"
 ROOT=/Users/ibrahimkamara/yt-animations; cd "$ROOT"
 now() { python3 -c "import time;print(time.time())"; }
 t0=$(now)
@@ -22,7 +22,7 @@ $SSH -n "cd /root/rendu && [ -d node_modules/@remotion/cli ] || npm ci --silent 
 t2=$(now)
 # 2. Rendu (pas de GPU sur ce serveur : rendu logiciel, beaucoup de cœurs)
 # Rendu détaché sur le serveur (aucune connexion SSH ouverte pendant le rendu), puis attente du marqueur DONE
-$SSH -n "cd /root/rendu && rm -f raw.mp4 DONE && nohup bash -c 'node node_modules/@remotion/cli/remotion-cli.js render src/index.ts $COMP /root/rendu/raw.mp4 --frames=$FRAMES --codec=h264 --crf=12 --image-format=jpeg --jpeg-quality=95 --concurrency=$CONC --audio-bitrate=320k --log=error > /root/rendu/render.log 2>&1; echo \$? > /root/rendu/DONE' > /dev/null 2>&1 < /dev/null &"
+$SSH -n "cd /root/rendu && rm -f raw.mp4 DONE && setsid nohup bash -c 'node node_modules/@remotion/cli/remotion-cli.js render src/index.ts $COMP /root/rendu/raw.mp4 --frames=$FRAMES --codec=h264 --crf=12 --image-format=jpeg --jpeg-quality=95 --concurrency=$CONC --audio-bitrate=320k --log=error > /root/rendu/render.log 2>&1; echo \$? > /root/rendu/DONE' > /dev/null 2>&1 < /dev/null &"
 until $SSH -n -o ConnectTimeout=15 "test -f /root/rendu/DONE" 2>/dev/null; do sleep 15; done
 echo "rc distant : $($SSH -n cat /root/rendu/DONE)"
 t3=$(now)
