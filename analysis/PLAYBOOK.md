@@ -380,7 +380,7 @@ Les composants réutilisables sont dans `src/montage/`.
 | **5** | **Prototype : les 60 premières secondes** | Rendu complet (image + son + master) de la première minute, au style final | `05-hook/` : la vidéo de 60 s + la planche de vérification | Le **style** (couleurs, typo, zooms, sons, rythme). C'est la porte la plus importante : une fois validé, le style ne change plus pour le reste. |
 | **6** | **Production par blocs** | Rendu bloc par bloc (un chapitre, 1 à 3 min). Avant chaque envoi : mesure de fluidité (à-coups de zoom), vérification du temps de lecture des textes, contrôle visuel des planches. | `06-blocs/bloc-N.mp4`, un par un | **Chaque bloc**. Les retours sur un bloc s'appliquent aux suivants. |
 | **7** | **Assemblage et finitions** | Assemblage, raccords entre blocs, **re-finalisation de la première minute** (montée en dernier, avec tout ce qu'on sait du reste), master −14 LUFS / −1 dBTP, relecture automatique en 4 passes (§9) | `07-final/` : vidéo complète + rapport de relecture (ce qui passe, ce qui a été corrigé) | Le visionnage complet, **sur téléphone** puis au casque |
-| **8** | **Export et livrables** | Export final (1080p ou 4K, débit élevé, AAC 48 kHz), chapitres YouTube définitifs, sous-titres `.srt`, liste de 3 ou 4 moments candidats pour des Shorts (le chiffre, le wow, l'astuce, le teaser) | Le fichier final + `chapitres.txt` + `.srt` + `shorts.md` | Le « bon pour publication » |
+| **8** | **Export et livrables** | Export final (1080p ou 4K, débit élevé, AAC 48 kHz), chapitres YouTube définitifs, sous-titres `.srt` (noms propres corrigés, noms de famille de tiers retirés), liste de 3 ou 4 moments candidats pour des Shorts, et **les ressources de la description** (§8bis) | `08-livrables/` : `chapitres.txt` + `.srt` + `shorts.md` + `description.md` + `ressources/` | Le « bon pour publication » et la liste des ressources |
 | **9** | **Boucle d'apprentissage** (72 h après publication) | Lecture de la courbe de rétention fournie par Ibrahim (capture d'écran ou chiffres) : chute à 30 s, 3 décrochages, pic | Une ligne ajoutée à `analysis/registre.md` + une proposition d'ajustement du playbook | Les ajustements du playbook (§11) |
 
 **Règles du process :**
@@ -396,6 +396,41 @@ Les composants réutilisables sont dans `src/montage/`.
   Sinon, on signale à l'étape 0 ce que ça empêche (exemple : avec une vidéo fusionnée, pas de « Glissé » ni de médaillon qui s'efface).
 - **Étapes techniques internes** (sans validation séparée) : traitement voix, détection des pauses, calcul des gains SFX par rapport à la voix, mesure de fluidité, rendu, master audio en 2 passes.
 - **Rendu** : toujours via `analysis/tools/render_montage.sh <Composition> <sortie.mp4> [images]`. Réglages validés le 4 octobre 2026 : GPU + JPEG 95 + 3 rendus parallèles, CRF 12, puis master −14 LUFS. Gain mesuré de −46 % à image équivalente (`analysis/bench/RAPPORT.md`). **Avant tout rendu de plus de ~5 min, annoncer la durée et attendre le feu vert d'Ibrahim** : il travaille sur la même machine.
+
+### 8bis. Les ressources de la description (règle d'Ibrahim, 4 octobre 2026)
+
+**But :** quelqu'un qui veut reproduire le tutoriel trouve tout dans la description, **sans réfléchir ni retaper quoi que ce soit**.
+
+**Méthode (étape 8) :**
+1. Relire tout le transcript et repérer chaque élément réutilisable :
+   - les prompts donnés à l'outil ;
+   - les réglages (modèle, effort, mode) ;
+   - les liens et outils cités ;
+   - les fichiers produits (CSV, PDF, modèles) ;
+   - les coûts constatés ;
+   - les étapes d'installation ;
+   - tout ce qui a été dit comme « je le mets en description » ou « tu pourras le copier ».
+2. **Les prompts sont recopiés mot pour mot depuis l'écran** (règle `[SCREEN-TRUTH]`), jamais depuis la voix. On rogne la capture sur la zone du prompt pour le lire en entier. Si le prompt exact n'est pas visible à l'écran, on écrit une version prête à l'emploi et on le signale.
+3. Pour chaque prompt, on fournit **deux versions** : celle de la vidéo, et une version à adapter, avec des [CROCHETS] à remplir pour son propre cas.
+4. On ajoute ce qui fait gagner du temps au spectateur :
+   - checklist d'installation ;
+   - modèles de messages (e-mail, LinkedIn) ;
+   - modèles de fichiers ;
+   - mini e-book ou guide si le sujet le demande.
+   Tout est généré par Claude, en fonction de la vidéo.
+5. On écrit `description.md` :
+   - accroche ;
+   - lien sponsor ;
+   - lien vers les ressources ;
+   - les prompts courts en clair ;
+   - les chapitres ;
+   - les outils utilisés ;
+   - les coûts réels ;
+   - un appel à commenter.
+   Les liens inconnus restent entre [CROCHETS], à compléter par Ibrahim.
+6. Livrables : `montages/<slug>/08-livrables/ressources/` (un fichier par ressource, numérotés dans l'ordre de la vidéo) et `description.md`. Ibrahim valide la liste et choisit où les héberger (description, Google Drive, son espace membre).
+
+Exemple de référence : `montages/aisa/08-livrables/` contient 5 prompts, les messages de prospection et la checklist.
 
 ## 9. Relecture (4 passes, dont une partie automatisée)
 
@@ -421,6 +456,14 @@ Les composants réutilisables sont dans `src/montage/`.
 - Archives ou extraits d'autres créateurs sans droits (Martell : F1, Taylor Swift ; Sanji : autres YouTubers).
 - Cartons dupliqués à la main (Martell : libellé de l'habitude 7 sur la 8). Chez nous, tout est généré depuis les données.
 - Musique sur les 3 premières secondes. Effet sonore sur un mot. Voix trop basse.
+- Laisser visible ce qui n'est pas destiné au spectateur. Ça se vérifie sur la planche de l'écran, bloc par bloc. Quatre cas :
+  - les notes de tournage (script, « PROMPT À COLLER », description préparée) ;
+  - le Launchpad ou le Dock ;
+  - un chemin de fichier avec le nom d'utilisateur ;
+  - l'historique ou les sessions d'autres projets.
+- Afficher des données de tiers : noms et e-mails dans un CSV, profil LinkedIn, contacts trouvés par l'IA. On floute à l'image, et on retire les noms de famille des sous-titres.
+- Lancer un rendu de plus de ~5 min sur le Mac d'Ibrahim sans son feu vert. Il travaille dessus.
+- Masteriser chaque bloc puis les recoller. La bande son finale est reconstruite d'un seul tenant, puis masterisée une seule fois (§13).
 
 ---
 
@@ -435,7 +478,76 @@ On tient **une ligne par vidéo** dans `analysis/registre.md` : décrochages, pi
 
 ---
 
+## 13. Production technique : le pipeline validé (vidéo AIsa, 4 octobre 2026)
+
+Tout ce qui suit a été testé sur la vidéo AIsa (21:41, montée et livrée en une journée). On le refait tel quel.
+
+### 13.1 Architecture Remotion
+- **Une seule composition pour toute la vidéo** (`src/MontageAisa/Full.tsx`, modèle à copier) :
+  - écrite en **temps absolus de la timeline** (helper `At from/to`) ;
+  - une fonction `BlockN` par chapitre ;
+  - le prototype de l'étape 5 est intégré en mode `embedded` (sans sa propre voix ni musique).
+- **Voix** : un seul `Audio` pour toute la voix montée (`voice_full.wav`, issue de l'EDL de l'étape 3).
+- **Musiques** : une `MusicTrack` par partie, avec des courbes de niveau en temps absolu et des fondus enchaînés sous les cartons.
+- **SFX** : une liste `SFX_Bn` par bloc.
+- **Correspondance source ↔ timeline** : lue dans `03-audio/edl_v2.json`. Chaque segment a un décalage constant ; chaque carton ou respiration de 2 s ajoute 2 s.
+- **Écran et face cam** sont rendus en entier une fois :
+  - `face_full_dn.mp4` (débruitage `hqdn3d=2:1.5:6:5`, CRF 14) ;
+  - `screen_full.mp4` (copie sans audio) ;
+  - même horloge que la source.
+
+### 13.2 Méthode par bloc (environ 45 min de travail par bloc de 4–5 min)
+1. **Transcript** du bloc avec les temps timeline, puis **planche de l'écran avec les temps exacts**. Une image toutes les 5–6 s, le temps écrit sur chaque vignette. Attention : un `drawtext` sur `t` après `fps` donne des temps faux. Il faut extraire chaque image à son temps.
+2. **Images quadrillées** (grille de 100 px) pour relever les coordonnées des zones de zoom, des chiffres et des zones à flouter.
+3. **Temps des mots** (Whisper) pour caler chaque élément sur la voix.
+4. **Détection des fenêtres parasites** par différence d'images sur une zone (notes, Finder, Launchpad), pour obtenir les intervalles exacts à masquer.
+5. Code, puis **12 images fixes de contrôle** rendues une par une. Jamais en parallèle sur le Mac : la mémoire sature.
+6. Correction, puis rendu du bloc.
+
+### 13.3 Pièges et règles de calcul
+- **Blocage de caméra de `ScreenStage`** : dès que le zoom remplit l'écran, le centre demandé est ramené dans la fenêtre. Pour poser un cadre ou une légende sur l'écran (`Spotlight`), il faut calculer avec le **centre réel bloqué**, pas le centre demandé.
+- **Médaillon** (`FacePip`, en bas à droite, x ≥ 1432, y ≥ 702) : il masque ce qui est dessous. On vérifie que les chiffres zoomés n'y tombent pas, et on décale le centre si besoin.
+- **Flous** : `masks` dans `ScreenStage`, en coordonnées de la capture. Ils suivent la caméra. On prend une marge, car une ligne de tableau peut remonter au défilement.
+- **Un élément qui commence avant la fin d'un bloc** (pastille du chapitre suivant…) impose de re-rendre ce bloc après coup.
+- **Bande son** :
+  - on ne fait pas de rendu audio seul de toute la timeline : plus de 30 min sur le Mac, abandonné ;
+  - on reconstruit la bande son depuis l'audio brut de chaque bloc (`analysis/tools/build_soundtrack.py`) ;
+  - on retire le retard de l'encodeur AAC, **2 048 échantillons au début de chaque bloc** ;
+  - on vérifie l'alignement voix ↔ timeline par corrélation : il doit être de 0,0 ms.
+
+### 13.4 Rendu
+- **Réglages** : `analysis/tools/render_montage.sh`, soit GPU + JPEG 95 + 3 rendus en parallèle, CRF 12. Gain de −46 % mesuré (`analysis/bench/RAPPORT.md`).
+- **Serveur loué**, scripts dans `analysis/cloud/` :
+  - un serveur Ubuntu 24.04, clé SSH `~/.ssh/hetzner_remotion` ;
+  - `setup_server.sh` une fois, puis `chain_blocs.sh <IP> bloc-N:début-fin …` ;
+  - le rendu est **détaché** sur le serveur, avec `ServerAliveInterval` (la box coupe les connexions SSH muettes) ;
+  - mesure sur le bloc 1 : CPX62 (16 vCPU) = 8 min, contre ~12 min pour le Mac optimisé ;
+  - envoi des médias : ~5 min à 33 Mbit/s.
+- **Assemblage** : `analysis/tools/assemble_final.sh`. Il contrôle le nombre d'images de chaque bloc, met les images bout à bout sans réencodage, pose la bande son, puis fait le master −14 LUFS en 2 passes.
+- **Contrôles finaux** :
+  - raccords entre blocs, en images avant/après ;
+  - `blackdetect` et `freezedetect` : un gel de plus de 10 s se justifie ;
+  - alignement voix ;
+  - LUFS et pic.
+
+### 13.5 Sous-titres
+- `analysis/tools/make_srt.py`, à partir des mots Whisper et de l'EDL.
+- Un fichier `corrections.json` par vidéo : marques mal transcrites (ChargeGPT → ChatGPT, cloud code → Claude Code, aissa → AIsa, SameRush → Semrush…) et noms de famille de tiers retirés.
+- 2 lignes de 42 caractères au plus, 6 s au plus.
+- Pas de coupure sur une apostrophe ni au milieu d'un nombre (espace insécable).
+
 ## 12. Feuille de route : composants à construire
+
+**Construits et validés (identité v2, 4 octobre 2026)** :
+- dans `src/montage/lib.tsx` : `ScreenStage` (inclinaison 3D, flou, assombrissement, zones floutées), `FacePip` (« Le Glissé »), `FaceCam`, `KeyLine` (sortie de flou, centrée ou en bas), `FocusVeil`, `Stat`, `ChapterCard`, `ChapterPill`, `Pill`, `Eyebrow`, `Em` / `rich`, `Star`, `Backdrop`, `Grain`, `Reveal`, `SfxTrack`, `MUSIC` / `musicGain` ;
+- dans `src/montage/Explainers.tsx` : `BrandTiles`, `ChatMock`, `TutoMap`, `Tag`, `IconRow`, `GoogleToAI`, `Teaser`, `NoteCard`, `StepLT`, `TopPill`, `Spotlight`, `PromptCard`, `CheckCard`, `ListCard`, `DataTable`.
+
+**À l'étude** :
+- **Vitesse de lecture globale** (×1,10 / ×1,15 avec `atempo`, la hauteur de voix est conservée). Le test est en attente du choix d'Ibrahim (`montages/aisa/08-livrables/test-vitesse/`).
+  - Mesure AIsa : 231 mots/min, déjà rapide pour du français.
+  - Ne jamais l'appliquer aux démonstrations sponsorisées sans l'accord du sponsor (§1bis).
+- **Shorts verticaux** des 4 moments de `shorts.md`, avec une mise en page 9:16 dédiée.
+
 
 Ordre = impact sur les tutos ÷ effort. ✅ = déjà prouvé dans le test MINIMAX v3.
 
