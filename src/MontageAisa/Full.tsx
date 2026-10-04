@@ -24,6 +24,7 @@ import {
   inOut,
   type SfxCue,
   ChapterPill,
+  Backdrop,
 } from "../montage/lib";
 import { BrandTiles, CheckCard, DataTable, GoogleToAI, IconRow, ListCard, NoteCard, PromptCard, Spotlight, StepLT, Teaser, TopPill } from "../montage/Explainers";
 import { HOOK_END, hookMusicLevel, MontageAisaHook, SHIFT } from "./Hook";
@@ -686,6 +687,149 @@ const Block4: React.FC = () => (
   </AbsoluteFill>
 );
 
+
+// ═══ Bloc 5 · étape 5 « Trouver des clients » + fin (17:55,3 → 21:41) ═════════
+// Carton 1075,3–1077,3 · source = T − 16,79 jusqu'au showcase (1172,62–1174,62), puis T − 18,79.
+const CARD5 = B4_END; // 1075,3
+const SHOW5 = 1172.62;
+const s5a = (T: number) => T - (CARD5 + 2.0);
+const s5b = (T: number) => T - (SHOW5 + 2.0);
+const CTA5 = 1262.4;
+
+const Block5: React.FC = () => (
+  <AbsoluteFill>
+    <At from={CARD5 + 2.0} to={SHOW5}>
+      <ScreenStage
+        src={SCREEN}
+        trimBefore={CARD5 + 2.0 - 16.79}
+        keys={[
+          { t: 0, z: 0.92, cx: 960, cy: 540 },
+          { t: s5a(1157.0), z: 0.92, cx: 960, cy: 540 },
+          { t: s5a(1159.0), z: 1.5, cx: 1100, cy: 560 },
+          { t: s5a(1165.0), z: 1.5, cx: 1100, cy: 560 },
+          { t: s5a(1167.0), z: 0.92, cx: 960, cy: 540 },
+        ]}
+      />
+    </At>
+    <At from={CARD5 + 2.0} to={SHOW5}>
+      <FacePip
+        src={FACE}
+        trimBefore={CARD5 + 2.0 - 16.79}
+        face={FACE_POS}
+        keys={[
+          { t: 0, p: 1 },
+          { t: s5a(1111.6), p: 1 },
+          { t: s5a(1112.4), p: 0 },
+          { t: s5a(1141.4), p: 0 },
+          { t: s5a(1142.2), p: 1 },
+        ]}
+        zoomKeys={[
+          { t: 0, z: 1.0 },
+          { t: s5a(1112.4), z: 1.0 },
+          { t: s5a(1141.4), z: 1.07 },
+        ]}
+      />
+    </At>
+    <At from={1079.0} to={1085.0}>
+      <TopPill icon="star" text="L'étape la plus *importante*" end={1085.0 - 1079.0} />
+    </At>
+    <At from={1090.0} to={1111.6}>
+      <PromptCard
+        end={1111.6 - 1090.0}
+        parts={[
+          { text: "Trouve 10 entreprises en France qui pourraient acheter ce type de rapport", label: "Cible : 10 entreprises en France", at: 1091.91 - 1090.0 },
+          { text: " : fintechs et éditeurs de logiciels B2B, entre 11 et 200 salariés.", label: "Secteurs : fintech, éditeurs de logiciels", at: 1095.81 - 1090.0 },
+          { text: " Pour chacune, trouve avec Apollo le décideur marketing (CMO, Head of Marketing ou Head of Growth).", label: "Contacts : décideurs marketing (Apollo)", at: 1102.47 - 1090.0 },
+          { text: " Enregistre le résultat dans prospects.csv.", label: "Livrable : fichier CSV", at: 1107.3 - 1090.0 },
+        ]}
+      />
+    </At>
+    <At from={1136.4} to={1141.3}>
+      <KeyLine
+        end={1141.3 - 1136.4}
+        size={96}
+        words={[
+          { w: "des", t: 0.1 },
+          { w: "PME", t: 0.49, hl: true },
+          { w: "locales,", t: 0.8, hl: true },
+          { w: "pas", t: 1.5 },
+          { w: "des", t: 1.7 },
+          { w: "géants", t: 1.9 },
+        ]}
+      />
+    </At>
+    <At from={1156.0} to={1163.2}>
+      <TopPill icon="star" text="Coût AIsa : ≈ *0,24 $* · 32 appels" end={1163.2 - 1156.0} />
+    </At>
+
+    {/* Showcase : le résultat */}
+    <At from={SHOW5} to={SHOW5 + 2.0}>
+      <AbsoluteFill>
+        <Backdrop />
+        <Stat value={10} start={0.05} end={2.0} format={(n) => `${Math.round(n)}`} label="prospects trouvés pour *0,24 $*" context="Le résultat" />
+        <Grain />
+      </AbsoluteFill>
+    </At>
+
+    {/* Après : la liste, le CSV et LinkedIn (données personnelles floutées) */}
+    <At from={SHOW5 + 2.0} to={1301.0}>
+      <ScreenStage
+        src={SCREEN}
+        trimBefore={SHOW5 + 2.0 - 18.79}
+        keys={[{ t: 0, z: 0.92, cx: 960, cy: 540 }]}
+        masks={[{ from: s5b(1197.2), to: s5b(1264.6), x: 104, y: 226, w: 1712, h: 800 }]}
+      />
+    </At>
+    <At from={SHOW5 + 2.0} to={1301.0}>
+      <FacePip
+        src={FACE}
+        trimBefore={SHOW5 + 2.0 - 18.79}
+        face={FACE_POS}
+        keys={[
+          { t: 0, p: 1 },
+          { t: s5b(CTA5 - 0.8), p: 1 },
+          { t: s5b(CTA5), p: 0 },
+        ]}
+        zoomKeys={[
+          { t: 0, z: 1.0 },
+          { t: s5b(CTA5), z: 1.0 },
+          { t: s5b(1301.0), z: 1.07 },
+        ]}
+      />
+    </At>
+    <At from={1206.8} to={1213.4}>
+      <TopPill icon="star" text="Le fichier *prospects.csv*" end={1213.4 - 1206.8} />
+    </At>
+    <At from={1256.2} to={1262.2}>
+      <TopPill icon="star" text="*7 profils* LinkedIn sur 10 retrouvés" end={1262.2 - 1256.2} />
+    </At>
+    {/* CTA : contacter depuis Claude Code, lien en description, questions en commentaire */}
+    <At from={1276.6} to={1292.8}>
+      <BrandTiles
+        end={1292.8 - 1276.6}
+        title="Contacter depuis Claude Code"
+        brands={[
+          { name: "Gmail", color: "#EA4335", at: 1277.23 - 1276.6 },
+          { name: "LinkedIn", color: "#0A66C2", at: 1286.49 - 1276.6 },
+        ]}
+      />
+    </At>
+    <At from={1293.6} to={1296.6}>
+      <TopPill icon="star" text="Lien *AIsa* en description" end={1296.6 - 1293.6} />
+    </At>
+    <At from={1296.5} to={1301.0}>
+      <TopPill icon="star" text="Pose tes questions *en commentaire*" end={1301.0 - 1296.5 + 0.4} />
+    </At>
+
+    <At from={CARD5 + 2.0} to={CTA5}>
+      <ChapterPill n={5} total={5} title="Trouver des clients" end={CTA5 - CARD5 - 2.0} />
+    </At>
+    <At from={CARD5} to={CARD5 + 2.0}>
+      <ChapterCard n={5} total={5} title="Trouver des *clients*" end={2.0} size={190} />
+    </At>
+  </AbsoluteFill>
+);
+
 const SettingsPills: React.FC<{ items: { k: string; v: string; at: number }[]; end: number }> = ({ items, end }) => {
   const t = useT();
   const o = inOut(t, 0, end, 0.01, 0.4);
@@ -843,6 +987,32 @@ const SFX_B4: SfxCue[] = [
   { k: "popNotif03", at: 1059.3, gain: 0.5 },
 ];
 
+
+const SFX_B5: SfxCue[] = [
+  { k: "whoosh05", at: 1075.34 },
+  { k: "impactHitLow", at: 1075.7, gain: 0.35 },
+  { k: "confirmNotif13", at: 1076.5, gain: 0.6 },
+  { k: "popNotif12", at: 1079.1, gain: 0.7 },
+  { k: "whoosh03", at: 1090.1, gain: 0.6 },
+  { k: "popSelectA", at: 1091.95 },
+  { k: "popSelectB", at: 1095.85 },
+  { k: "popSelectA", at: 1102.5 },
+  { k: "popSelectB", at: 1107.35 },
+  { k: "whoosh03", at: 1111.7, gain: 0.6 },
+  { k: "popNotif03", at: 1136.5, gain: 0.5 },
+  { k: "whoosh02", at: 1141.5, gain: 0.6 },
+  { k: "popNotif12", at: 1156.1 },
+  { k: "riserSuspense", at: 1172.6, gain: 0.45 },
+  { k: "impactBig", at: 1172.7, gain: 0.25 },
+  { k: "popNotif02", at: 1206.9, gain: 0.6 },
+  { k: "confirmAchievement", at: 1256.4, gain: 0.7 },
+  { k: "whoosh03", at: 1261.7, gain: 0.6 },
+  { k: "popSelectA", at: 1277.25 },
+  { k: "popSelectB", at: 1286.5 },
+  { k: "popNotif12", at: 1293.7, gain: 0.7 },
+  { k: "popNotif12", at: 1296.6, gain: 0.7 },
+];
+
 const MusicTrack: React.FC<{ k: keyof typeof MUSIC; from: number; to: number; level: (T: number) => number }> = ({ k, from, to, level }) => (
   <Sequence from={f(from)} durationInFrames={f(to - from)} layout="none">
     <Audio src={staticFile(`epidemic/hq/${MUSIC[k].file}`)} volume={(fr) => musicGain(k) * level(fr / 30 + from)} />
@@ -860,6 +1030,7 @@ export const MontageAisa: React.FC = () => (
     <Block2 />
     <Block3 />
     <Block4 />
+    <Block5 />
     <Sequence from={f(B1)}>
       <Grain />
     </Sequence>
@@ -883,9 +1054,16 @@ export const MontageAisa: React.FC = () => (
       level={(T) => interpolate(T, [544.5, 545.4, 546.6, 547.4, 670.5, 670.97, 672.97, 673.9, 696.0, 812.0, 813.8], [0, 1.3, 1.3, 1, 1, 0, 0, 1.15, 1, 1, 0], clamp)}
     />
     <MusicTrack k="seo" from={813.8} to={B4_END + 0.1} level={(T) => interpolate(T, [813.8, 814.6, 815.9, 816.7, 1073.4, 1075.2], [0, 1.3, 1.3, 1, 1, 0], clamp)} />
+    <MusicTrack
+      k="clients"
+      from={1075.2}
+      to={FULL_DURATION}
+      level={(T) => interpolate(T, [1075.2, 1076.0, 1077.3, 1078.1, 1172.4, 1172.8, 1174.6, 1175.4, 1262.0, 1263.0, 1299.4, 1301.0], [0, 1.3, 1.3, 1, 1, 1.4, 1.4, 1, 1, 1.15, 1.15, 0], clamp)}
+    />
     <SfxTrack cues={SFX_B1} />
     <SfxTrack cues={SFX_B2} />
     <SfxTrack cues={SFX_B3} />
     <SfxTrack cues={SFX_B4} />
+    <SfxTrack cues={SFX_B5} />
   </AbsoluteFill>
 );

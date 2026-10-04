@@ -21,8 +21,10 @@ t1=$(now)
 $SSH -n "cd /root/rendu && [ -d node_modules/@remotion/cli ] || npm ci --silent --no-audit --no-fund >/dev/null 2>&1 || npm install --silent --no-audit --no-fund >/dev/null"
 t2=$(now)
 # 2. Rendu (pas de GPU sur ce serveur : rendu logiciel, beaucoup de cœurs)
-$SSH -n "cd /root/rendu && rm -f raw.mp4 && node node_modules/@remotion/cli/remotion-cli.js render src/index.ts $COMP /root/rendu/raw.mp4 \
-  --frames=$FRAMES --codec=h264 --crf=12 --image-format=jpeg --jpeg-quality=95 --concurrency=$CONC --audio-bitrate=320k --log=error < /dev/null > /root/rendu/render.log 2>&1; echo rc=\$?"
+# Rendu détaché sur le serveur (aucune connexion SSH ouverte pendant le rendu), puis attente du marqueur DONE
+$SSH -n "cd /root/rendu && rm -f raw.mp4 DONE && nohup bash -c 'node node_modules/@remotion/cli/remotion-cli.js render src/index.ts $COMP /root/rendu/raw.mp4 --frames=$FRAMES --codec=h264 --crf=12 --image-format=jpeg --jpeg-quality=95 --concurrency=$CONC --audio-bitrate=320k --log=error > /root/rendu/render.log 2>&1; echo \$? > /root/rendu/DONE' > /dev/null 2>&1 < /dev/null &"
+until $SSH -n -o ConnectTimeout=15 "test -f /root/rendu/DONE" 2>/dev/null; do sleep 15; done
+echo "rc distant : $($SSH -n cat /root/rendu/DONE)"
 t3=$(now)
 rsync -az -e "ssh -i $KEY" root@$IP:/root/rendu/raw.mp4 "$OUT"
 t4=$(now)
