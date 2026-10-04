@@ -74,6 +74,12 @@ Une vidéo d'Ibrahim, c'est **un tuto qui se regarde comme un documentaire premi
 - Les attentes déjà coupées par le monteur (« après quelques minutes… ») restent telles quelles.
 - **La restructuration (étape 2) ne touche que ce qui n'est pas sponsorisé** : hook, transitions, réactions, contexte, CTA de fin.
 - En cas de doute sur un segment, on le traite comme sponsorisé et on pose la question à l'étape 0.
+- **Retours de la marque** (sur un brouillon ou sur le montage), une demande de la marque passe avant les interdits ci-dessus :
+  1. **Recaler les temps.** Si la marque a vu le brouillon brut, ses minutages correspondent à la **source**. On les convertit en temps de timeline avec l'EDL de l'étape 3 (source → T, puis ÷ 1,15 pour la version finale).
+  2. **Relire la phrase dite à cet instant** (transcript). Le visuel demandé doit illustrer ce qui est dit, sans que la voix change.
+  3. **Capturer la page demandée en français et en haute définition.** ⚠️ Les sites des marques redirigent selon le pays de connexion : vérifier la langue, la devise et les prix sur la capture, puis la refaire en France (VPN) si besoin.
+  4. **Consigner chaque demande** dans le plan (`04-plan.md` §0, une ligne par demande : demande, solution, temps). Si le montage est déjà rendu, on ne refait que le bloc concerné, puis on réassemble.
+  5. **Après le montage**, renvoyer à la marque une liste « demande → minutage dans la version finale ».
 
 ---
 
@@ -320,6 +326,7 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 
 Ibrahim a comparé ×1,00, ×1,10 et ×1,15 sur le hook et sur une démo : il préfère **nettement ×1,15**.
 
+- **Statut : standard pour toutes les vidéos** (confirmé par Ibrahim le 4 octobre 2026). On l'applique par défaut, sans redemander.
 - **Où** : à la toute fin de l'étape 7, sur la vidéo assemblée. Images `setpts=PTS/1.15` et son `atempo=1.15` (la voix garde sa hauteur), puis master −14 LUFS en 2 passes. Une 21:41 devient une 18:52.
 - **Conséquence au montage** : tous les temps de lecture se calculent pour la vitesse finale. Un texte tenu `readTime(mots) × 1,15` à ×1,00 reste lisible une fois accéléré.
 - **Livrables** : sous-titres et chapitres divisés par 1,15 (`*_x1.15.srt`, `chapitres_x1.15.txt`, `description_x1.15.md`). On garde aussi la version ×1,00.
@@ -407,6 +414,8 @@ Les composants réutilisables sont dans `src/montage/`.
 - **Rendu** : toujours via `analysis/tools/render_montage.sh <Composition> <sortie.mp4> [images]`. Réglages validés le 4 octobre 2026 : GPU + JPEG 95 + 3 rendus parallèles, CRF 12, puis master −14 LUFS. Gain mesuré de −46 % à image équivalente (`analysis/bench/RAPPORT.md`). **Avant tout rendu de plus de ~5 min, annoncer la durée et attendre le feu vert d'Ibrahim** : il travaille sur la même machine.
 
 ### 8bis. Les ressources de la description (règle d'Ibrahim, 4 octobre 2026)
+
+**Statut : standard pour toutes les vidéos**, généré par défaut à l'étape 8.
 
 **But :** quelqu'un qui veut reproduire le tutoriel trouve tout dans la description, **sans réfléchir ni retaper quoi que ce soit**.
 
