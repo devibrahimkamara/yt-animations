@@ -290,6 +290,11 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 4. **Transitions** : fondu enchaîné de 1 à 2 s **sous le carton d'étape** (le jingle d'étape couvre la jonction).
 5. **Effets sonores** : le **noyau signature** est constant (révélation, porte de chapitre, validation, interface). On peut y ajouter 1 ou 2 accents propres à la vidéo (texture liée au sujet).
 6. **Source** : Epidemic Sound (abonnement Creator d'Ibrahim, chaîne sur liste blanche). Présélection par Claude via le compte d'Ibrahim, écoute et choix par Ibrahim sur une page d'écoute, mixés sous sa voix.
+7. **Téléchargement HQ : c'est Ibrahim qui le fait, à la main** (règle d'Ibrahim, 4 octobre 2026 : c'est plus rapide, et le pilotage du navigateur par Claude buguait beaucoup). Claude n'essaie **jamais** de télécharger depuis le navigateur.
+   - **Claude fournit la liste** : titre, artiste et identifiant Epidemic de chaque morceau choisi (et de chaque effet sonore manquant).
+   - **Ibrahim télécharge** dans `~/Downloads` et prévient.
+   - **Claude range les fichiers** dans `public/epidemic/<slug>/hq/` et mesure leur niveau (LUFS).
+   - En attendant, les prototypes peuvent utiliser les extraits d'écoute (`lqmp3`).
 
 ## 6. Rythme : les chiffres de référence
 

@@ -4,7 +4,7 @@
 
 *Règle sponsor : la démo Hostinger reste intacte, on habille autour. Valeurs reprises de l'écran : `[SCREEN-TRUTH]`.*
 
-*Statut : ✅ textes validés par Ibrahim (4 octobre 2026), musique en attente. Points prioritaires : l'orthographe des textes (§1), la musique (page d'écoute) et le floutage (§4).*
+*Statut : ✅ textes validés par Ibrahim (4 octobre 2026), musique choisie. Points prioritaires : l'orthographe des textes (§1), la musique (page d'écoute) et le floutage (§4).*
 
 ## 0. Retours de la marque (4 octobre 2026), intégrés
 
@@ -104,7 +104,7 @@ Les temps de lecture sont calculés pour rester lisibles à ×1,15 (§6bis).
 | Élément | Plan |
 |---|---|
 | Voix | Traitée (étape 3) : −16 LUFS |
-| **Musique** | ⚠️ **À choisir sur la page d'écoute** (une par partie, 6 parties) : `ecoute-hostinger.html` |
+| **Musique** (choix d'Ibrahim, 4 octobre 2026) | Hook (0:00–1:15) **Bakka** · Étape 1 (1:15–2:52) **Where It All Happened** · Étape 2 (2:52–4:27) **Axon Terminal** · Étape 3 (4:27–6:05) **Bäring** · Étape 4 et 5 (6:05–7:20) **Eighties Lawyer** · Domaine, clients, fin (7:20–fin) **Alta** |
 | SFX | Kit Epidemic validé : signature constante d'une vidéo à l'autre |
 | Remontées | Carte du tuto, cartons, code KAMARA7, avant/après (+3 dB) |
 
