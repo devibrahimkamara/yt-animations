@@ -1,0 +1,1937 @@
+[
+{
+"e0": 0.0,
+"e1": 5.78,
+"m0": 56.475,
+"face": "C0126.MP4",
+"face_t": 44.329,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 14.094
+},
+{
+"e0": 5.78,
+"e1": 7.3,
+"m0": 62.555,
+"face": "C0126.MP4",
+"face_t": 50.409,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 20.174
+},
+{
+"e0": 7.3,
+"e1": 10.62,
+"m0": 64.275,
+"face": "C0126.MP4",
+"face_t": 52.129,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 21.894
+},
+{
+"e0": 10.62,
+"e1": 16.92,
+"m0": 68.428,
+"face": "C0126.MP4",
+"face_t": 56.282,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 26.047
+},
+{
+"e0": 16.92,
+"e1": 18.22,
+"m0": 75.128,
+"face": "C0126.MP4",
+"face_t": 62.982,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 32.747
+},
+{
+"e0": 18.22,
+"e1": 19.88,
+"m0": 77.162,
+"face": "C0126.MP4",
+"face_t": 65.016,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 34.781
+},
+{
+"e0": 19.88,
+"e1": 20.78,
+"m0": 83.955,
+"face": "C0126.MP4",
+"face_t": 71.809,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 41.574
+},
+{
+"e0": 20.78,
+"e1": 21.46,
+"m0": 84.855,
+"face": "C0126.MP4",
+"face_t": 72.709,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 42.474
+},
+{
+"e0": 21.46,
+"e1": 21.88,
+"m0": 104.768,
+"face": "C0126.MP4",
+"face_t": 92.622,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 62.387
+},
+{
+"e0": 21.88,
+"e1": 26.04,
+"m0": 105.188,
+"face": "C0126.MP4",
+"face_t": 93.042,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 62.807
+},
+{
+"e0": 26.04,
+"e1": 28.4,
+"m0": 164.748,
+"face": "C0126.MP4",
+"face_t": 152.602,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 122.367
+},
+{
+"e0": 28.4,
+"e1": 32.58,
+"m0": 167.508,
+"face": "C0126.MP4",
+"face_t": 155.362,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 125.127
+},
+{
+"e0": 32.58,
+"e1": 35.7,
+"m0": 179.655,
+"face": "C0126.MP4",
+"face_t": 167.509,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 137.274
+},
+{
+"e0": 35.7,
+"e1": 36.74,
+"m0": 184.542,
+"face": "C0126.MP4",
+"face_t": 172.396,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 142.161
+},
+{
+"e0": 36.74,
+"e1": 38.92,
+"m0": 185.915,
+"face": "C0126.MP4",
+"face_t": 173.769,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 143.534
+},
+{
+"e0": 38.92,
+"e1": 40.42,
+"m0": 188.362,
+"face": "C0126.MP4",
+"face_t": 176.216,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 145.981
+},
+{
+"e0": 40.42,
+"e1": 42.34,
+"m0": 189.862,
+"face": "C0126.MP4",
+"face_t": 177.716,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 147.481
+},
+{
+"e0": 42.34,
+"e1": 43.19,
+"m0": 192.115,
+"face": "C0126.MP4",
+"face_t": 179.969,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 149.734
+},
+{
+"e0": 43.19,
+"e1": 47.35,
+"m0": 208.132,
+"face": "C0126.MP4",
+"face_t": 195.986,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 165.751
+},
+{
+"e0": 47.35,
+"e1": 49.3,
+"m0": 218.725,
+"face": "C0126.MP4",
+"face_t": 206.579,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 176.344
+},
+{
+"e0": 49.3,
+"e1": 54.62,
+"m0": 220.975,
+"face": "C0126.MP4",
+"face_t": 208.829,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 178.594
+},
+{
+"e0": 54.62,
+"e1": 59.08,
+"m0": 227.262,
+"face": "C0126.MP4",
+"face_t": 215.116,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 184.881
+},
+{
+"e0": 59.08,
+"e1": 59.8,
+"m0": 236.022,
+"face": "C0126.MP4",
+"face_t": 223.876,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 193.641
+},
+{
+"e0": 59.8,
+"e1": 65.35,
+"m0": 236.742,
+"face": "C0126.MP4",
+"face_t": 224.596,
+"screen": "higgs influ2 1.mp4",
+"screen_t": 194.361
+},
+{
+"e0": 65.35,
+"e1": 68.46,
+"m0": 309.092,
+"face": "C0126.MP4",
+"face_t": 296.946,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 26.059
+},
+{
+"e0": 68.46,
+"e1": 72.18,
+"m0": 312.502,
+"face": "C0126.MP4",
+"face_t": 300.356,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 29.469
+},
+{
+"e0": 72.18,
+"e1": 75.53,
+"m0": 316.755,
+"face": "C0126.MP4",
+"face_t": 304.609,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 33.722
+},
+{
+"e0": 75.53,
+"e1": 81.26,
+"m0": 320.638,
+"face": "C0126.MP4",
+"face_t": 308.492,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 37.605
+},
+{
+"e0": 81.26,
+"e1": 81.94,
+"m0": 327.235,
+"face": "C0126.MP4",
+"face_t": 315.089,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 44.202
+},
+{
+"e0": 81.94,
+"e1": 83.18,
+"m0": 382.815,
+"face": "C0126.MP4",
+"face_t": 370.669,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 99.782
+},
+{
+"e0": 83.18,
+"e1": 84.38,
+"m0": 384.055,
+"face": "C0126.MP4",
+"face_t": 371.909,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 101.022
+},
+{
+"e0": 84.38,
+"e1": 85.79,
+"m0": 385.255,
+"face": "C0126.MP4",
+"face_t": 373.109,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 102.222
+},
+{
+"e0": 85.79,
+"e1": 86.28,
+"m0": 403.865,
+"face": "C0126.MP4",
+"face_t": 391.719,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 120.832
+},
+{
+"e0": 86.28,
+"e1": 89.41,
+"m0": 404.355,
+"face": "C0126.MP4",
+"face_t": 392.209,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 121.322
+},
+{
+"e0": 89.41,
+"e1": 89.68,
+"m0": 414.018,
+"face": "C0126.MP4",
+"face_t": 401.872,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 130.985
+},
+{
+"e0": 89.68,
+"e1": 95.46,
+"m0": 414.655,
+"face": "C0126.MP4",
+"face_t": 402.509,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 131.622
+},
+{
+"e0": 95.46,
+"e1": 98.32,
+"m0": 420.768,
+"face": "C0126.MP4",
+"face_t": 408.622,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 137.735
+},
+{
+"e0": 98.32,
+"e1": 103.5,
+"m0": 424.262,
+"face": "C0126.MP4",
+"face_t": 412.116,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 141.229
+},
+{
+"e0": 103.5,
+"e1": 106.02,
+"m0": 429.742,
+"face": "C0126.MP4",
+"face_t": 417.596,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 146.709
+},
+{
+"e0": 106.02,
+"e1": 106.54,
+"m0": 432.795,
+"face": "C0126.MP4",
+"face_t": 420.649,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 149.762
+},
+{
+"e0": 106.54,
+"e1": 110.42,
+"m0": 438.015,
+"face": "C0126.MP4",
+"face_t": 425.869,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 154.982
+},
+{
+"e0": 110.42,
+"e1": 114.14,
+"m0": 442.862,
+"face": "C0126.MP4",
+"face_t": 430.716,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 159.829
+},
+{
+"e0": 114.14,
+"e1": 116.75,
+"m0": 447.282,
+"face": "C0126.MP4",
+"face_t": 435.136,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 164.249
+},
+{
+"e0": 116.75,
+"e1": 118.54,
+"m0": 450.292,
+"face": "C0126.MP4",
+"face_t": 438.146,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 167.259
+},
+{
+"e0": 118.54,
+"e1": 119.16,
+"m0": 471.648,
+"face": "C0126.MP4",
+"face_t": 459.502,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 188.615
+},
+{
+"e0": 119.16,
+"e1": 122.34,
+"m0": 472.268,
+"face": "C0126.MP4",
+"face_t": 460.122,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 189.235
+},
+{
+"e0": 122.34,
+"e1": 128.02,
+"m0": 476.048,
+"face": "C0126.MP4",
+"face_t": 463.902,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 193.015
+},
+{
+"e0": 128.02,
+"e1": 130.62,
+"m0": 482.062,
+"face": "C0126.MP4",
+"face_t": 469.916,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 199.029
+},
+{
+"e0": 130.62,
+"e1": 131.74,
+"m0": 485.262,
+"face": "C0126.MP4",
+"face_t": 473.116,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 202.229
+},
+{
+"e0": 131.74,
+"e1": 137.05,
+"m0": 486.915,
+"face": "C0126.MP4",
+"face_t": 474.769,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 203.882
+},
+{
+"e0": 137.05,
+"e1": 138.54,
+"m0": 492.525,
+"face": "C0126.MP4",
+"face_t": 480.379,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 209.492
+},
+{
+"e0": 138.54,
+"e1": 140.35,
+"m0": 494.382,
+"face": "C0126.MP4",
+"face_t": 482.236,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 211.349
+},
+{
+"e0": 140.35,
+"e1": 141.26,
+"m0": 497.525,
+"face": "C0126.MP4",
+"face_t": 485.379,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 214.492
+},
+{
+"e0": 141.26,
+"e1": 145.01,
+"m0": 499.635,
+"face": "C0126.MP4",
+"face_t": 487.489,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 216.602
+},
+{
+"e0": 145.01,
+"e1": 147.29,
+"m0": 504.085,
+"face": "C0126.MP4",
+"face_t": 491.939,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 221.052
+},
+{
+"e0": 147.29,
+"e1": 149.42,
+"m0": 506.732,
+"face": "C0126.MP4",
+"face_t": 494.586,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 223.699
+},
+{
+"e0": 149.42,
+"e1": 151.35,
+"m0": 509.495,
+"face": "C0126.MP4",
+"face_t": 497.349,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 226.462
+},
+{
+"e0": 151.35,
+"e1": 152.52,
+"m0": 518.725,
+"face": "C0126.MP4",
+"face_t": 506.579,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 235.692
+},
+{
+"e0": 152.52,
+"e1": 153.64,
+"m0": 524.662,
+"face": "C0126.MP4",
+"face_t": 512.516,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 241.629
+},
+{
+"e0": 153.64,
+"e1": 154.78,
+"m0": 530.548,
+"face": "C0126.MP4",
+"face_t": 518.402,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 247.515
+},
+{
+"e0": 154.78,
+"e1": 155.38,
+"m0": 531.688,
+"face": "C0126.MP4",
+"face_t": 519.542,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 248.655
+},
+{
+"e0": 155.38,
+"e1": 156.23,
+"m0": 532.755,
+"face": "C0126.MP4",
+"face_t": 520.609,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 249.722
+},
+{
+"e0": 156.23,
+"e1": 159.46,
+"m0": 539.372,
+"face": "C0126.MP4",
+"face_t": 527.226,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 256.339
+},
+{
+"e0": 159.46,
+"e1": 160.46,
+"m0": 542.835,
+"face": "C0126.MP4",
+"face_t": 530.689,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 259.802
+},
+{
+"e0": 160.46,
+"e1": 162.12,
+"m0": 544.235,
+"face": "C0126.MP4",
+"face_t": 532.089,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 261.202
+},
+{
+"e0": 162.12,
+"e1": 163.58,
+"m0": 546.295,
+"face": "C0126.MP4",
+"face_t": 534.149,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 263.262
+},
+{
+"e0": 163.58,
+"e1": 165.4,
+"m0": 548.888,
+"face": "C0126.MP4",
+"face_t": 536.742,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 265.855
+},
+{
+"e0": 165.4,
+"e1": 170.0,
+"m0": 551.275,
+"face": "C0126.MP4",
+"face_t": 539.129,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 268.242
+},
+{
+"e0": 170.0,
+"e1": 173.76,
+"m0": 556.375,
+"face": "C0126.MP4",
+"face_t": 544.229,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 273.342
+},
+{
+"e0": 173.76,
+"e1": 175.53,
+"m0": 560.435,
+"face": "C0126.MP4",
+"face_t": 548.289,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 277.402
+},
+{
+"e0": 175.53,
+"e1": 176.22,
+"m0": 562.638,
+"face": "C0126.MP4",
+"face_t": 550.492,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 279.605
+},
+{
+"e0": 176.22,
+"e1": 184.28,
+"m0": 563.895,
+"face": "C0126.MP4",
+"face_t": 551.749,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 280.862
+},
+{
+"e0": 184.28,
+"e1": 184.96,
+"m0": 572.655,
+"face": "C0126.MP4",
+"face_t": 560.509,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 289.622
+},
+{
+"e0": 184.96,
+"e1": 186.26,
+"m0": 574.268,
+"face": "C0126.MP4",
+"face_t": 562.122,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 291.235
+},
+{
+"e0": 186.26,
+"e1": 189.08,
+"m0": 578.435,
+"face": "C0126.MP4",
+"face_t": 566.289,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 295.402
+},
+{
+"e0": 189.08,
+"e1": 190.44,
+"m0": 581.755,
+"face": "C0126.MP4",
+"face_t": 569.609,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 298.722
+},
+{
+"e0": 190.44,
+"e1": 192.6,
+"m0": 583.648,
+"face": "C0126.MP4",
+"face_t": 571.502,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 300.615
+},
+{
+"e0": 192.6,
+"e1": 198.21,
+"m0": 587.242,
+"face": "C0126.MP4",
+"face_t": 575.096,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 304.209
+},
+{
+"e0": 198.21,
+"e1": 200.24,
+"m0": 594.452,
+"face": "C0126.MP4",
+"face_t": 582.306,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 311.419
+},
+{
+"e0": 200.24,
+"e1": 201.86,
+"m0": 596.815,
+"face": "C0126.MP4",
+"face_t": 584.669,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 313.782
+},
+{
+"e0": 201.86,
+"e1": 202.68,
+"m0": 598.435,
+"face": "C0126.MP4",
+"face_t": 586.289,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 315.402
+},
+{
+"e0": 202.68,
+"e1": 203.88,
+"m0": 606.055,
+"face": "C0126.MP4",
+"face_t": 593.909,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 323.022
+},
+{
+"e0": 203.88,
+"e1": 206.95,
+"m0": 611.755,
+"face": "C0126.MP4",
+"face_t": 599.609,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 328.722
+},
+{
+"e0": 206.95,
+"e1": 209.34,
+"m0": 615.258,
+"face": "C0126.MP4",
+"face_t": 603.112,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 332.225
+},
+{
+"e0": 209.34,
+"e1": 212.48,
+"m0": 642.348,
+"face": "C0126.MP4",
+"face_t": 630.202,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 359.315
+},
+{
+"e0": 212.48,
+"e1": 213.78,
+"m0": 649.522,
+"face": "C0126.MP4",
+"face_t": 637.376,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 366.489
+},
+{
+"e0": 213.78,
+"e1": 215.38,
+"m0": 650.822,
+"face": "C0126.MP4",
+"face_t": 638.676,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 367.789
+},
+{
+"e0": 215.38,
+"e1": 216.16,
+"m0": 654.722,
+"face": "C0126.MP4",
+"face_t": 642.576,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 371.689
+},
+{
+"e0": 216.16,
+"e1": 218.03,
+"m0": 656.702,
+"face": "C0126.MP4",
+"face_t": 644.556,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 373.669
+},
+{
+"e0": 218.03,
+"e1": 219.58,
+"m0": 671.138,
+"face": "C0126.MP4",
+"face_t": 658.992,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 388.105
+},
+{
+"e0": 219.58,
+"e1": 223.08,
+"m0": 673.388,
+"face": "C0126.MP4",
+"face_t": 661.242,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 390.355
+},
+{
+"e0": 223.08,
+"e1": 225.26,
+"m0": 678.322,
+"face": "C0126.MP4",
+"face_t": 666.176,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 395.289
+},
+{
+"e0": 225.26,
+"e1": 226.38,
+"m0": 681.935,
+"face": "C0126.MP4",
+"face_t": 669.789,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 398.902
+},
+{
+"e0": 226.38,
+"e1": 230.38,
+"m0": 683.455,
+"face": "C0126.MP4",
+"face_t": 671.309,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 400.422
+},
+{
+"e0": 230.38,
+"e1": 231.94,
+"m0": 688.022,
+"face": "C0126.MP4",
+"face_t": 675.876,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 404.989
+},
+{
+"e0": 231.94,
+"e1": 233.12,
+"m0": 695.548,
+"face": "C0126.MP4",
+"face_t": 683.402,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 412.515
+},
+{
+"e0": 233.12,
+"e1": 234.3,
+"m0": 696.995,
+"face": "C0126.MP4",
+"face_t": 684.849,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 413.962
+},
+{
+"e0": 234.3,
+"e1": 235.5,
+"m0": 698.175,
+"face": "C0126.MP4",
+"face_t": 686.029,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 415.142
+},
+{
+"e0": 235.5,
+"e1": 237.92,
+"m0": 700.075,
+"face": "C0126.MP4",
+"face_t": 687.929,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 417.042
+},
+{
+"e0": 237.92,
+"e1": 240.22,
+"m0": 703.962,
+"face": "C0126.MP4",
+"face_t": 691.816,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 420.929
+},
+{
+"e0": 240.22,
+"e1": 241.5,
+"m0": 706.762,
+"face": "C0126.MP4",
+"face_t": 694.616,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 423.729
+},
+{
+"e0": 241.5,
+"e1": 245.9,
+"m0": 709.575,
+"face": "C0126.MP4",
+"face_t": 697.429,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 426.542
+},
+{
+"e0": 245.9,
+"e1": 246.9,
+"m0": 715.342,
+"face": "C0126.MP4",
+"face_t": 703.196,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 432.309
+},
+{
+"e0": 246.9,
+"e1": 248.8,
+"m0": 728.508,
+"face": "C0126.MP4",
+"face_t": 716.362,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 445.475
+},
+{
+"e0": 248.8,
+"e1": 251.68,
+"m0": 731.375,
+"face": "C0126.MP4",
+"face_t": 719.229,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 448.342
+},
+{
+"e0": 251.68,
+"e1": 254.1,
+"m0": 736.655,
+"face": "C0126.MP4",
+"face_t": 724.509,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 453.622
+},
+{
+"e0": 254.1,
+"e1": 256.77,
+"m0": 740.708,
+"face": "C0126.MP4",
+"face_t": 728.562,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 457.675
+},
+{
+"e0": 256.77,
+"e1": 260.13,
+"m0": 760.445,
+"face": "C0126.MP4",
+"face_t": 748.299,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 477.412
+},
+{
+"e0": 260.13,
+"e1": 263.62,
+"m0": 768.938,
+"face": "C0126.MP4",
+"face_t": 756.792,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 485.905
+},
+{
+"e0": 263.62,
+"e1": 265.29,
+"m0": 774.962,
+"face": "C0126.MP4",
+"face_t": 762.816,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 491.929
+},
+{
+"e0": 265.29,
+"e1": 270.0,
+"m0": 778.798,
+"face": "C0126.MP4",
+"face_t": 766.652,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 495.765
+},
+{
+"e0": 270.0,
+"e1": 273.88,
+"m0": 784.308,
+"face": "C0126.MP4",
+"face_t": 772.162,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 501.275
+},
+{
+"e0": 273.88,
+"e1": 276.1,
+"m0": 789.688,
+"face": "C0126.MP4",
+"face_t": 777.542,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 506.655
+},
+{
+"e0": 276.1,
+"e1": 278.94,
+"m0": 814.908,
+"face": "C0126.MP4",
+"face_t": 802.762,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 531.875
+},
+{
+"e0": 278.94,
+"e1": 279.9,
+"m0": 818.282,
+"face": "C0126.MP4",
+"face_t": 806.136,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 535.249
+},
+{
+"e0": 279.9,
+"e1": 282.14,
+"m0": 819.708,
+"face": "C0126.MP4",
+"face_t": 807.562,
+"screen": "higgs influ2 2.mp4",
+"screen_t": 536.675
+},
+{
+"e0": 282.14,
+"e1": 282.52,
+"m0": 971.882,
+"face": "C0127.MP4",
+"face_t": 33.642,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 39.007
+},
+{
+"e0": 282.52,
+"e1": 286.22,
+"m0": 972.262,
+"face": "C0127.MP4",
+"face_t": 34.022,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 39.387
+},
+{
+"e0": 286.22,
+"e1": 288.48,
+"m0": 976.695,
+"face": "C0127.MP4",
+"face_t": 38.455,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 43.82
+},
+{
+"e0": 288.48,
+"e1": 293.04,
+"m0": 979.355,
+"face": "C0127.MP4",
+"face_t": 41.115,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 46.48
+},
+{
+"e0": 293.04,
+"e1": 295.71,
+"m0": 984.748,
+"face": "C0127.MP4",
+"face_t": 46.508,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 51.873
+},
+{
+"e0": 295.71,
+"e1": 297.24,
+"m0": 987.918,
+"face": "C0127.MP4",
+"face_t": 49.678,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 55.043
+},
+{
+"e0": 297.24,
+"e1": 297.69,
+"m0": 989.682,
+"face": "C0127.MP4",
+"face_t": 51.442,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 56.807
+},
+{
+"e0": 297.69,
+"e1": 299.46,
+"m0": 1020.165,
+"face": "C0127.MP4",
+"face_t": 81.925,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 87.29
+},
+{
+"e0": 299.46,
+"e1": 306.42,
+"m0": 1022.302,
+"face": "C0127.MP4",
+"face_t": 84.062,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 89.427
+},
+{
+"e0": 306.42,
+"e1": 308.28,
+"m0": 1029.528,
+"face": "C0127.MP4",
+"face_t": 91.288,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 96.653
+},
+{
+"e0": 308.28,
+"e1": 310.0,
+"m0": 1031.722,
+"face": "C0127.MP4",
+"face_t": 93.482,
+"screen": "higgs influ2 3.mp4",
+"screen_t": 98.847
+},
+{
+"e0": 310.0,
+"e1": 314.18,
+"m0": 1279.742,
+"face": "C0127.MP4",
+"face_t": 341.502,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 18.569
+},
+{
+"e0": 314.18,
+"e1": 317.73,
+"m0": 1284.388,
+"face": "C0127.MP4",
+"face_t": 346.148,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 23.215
+},
+{
+"e0": 317.73,
+"e1": 321.04,
+"m0": 1288.338,
+"face": "C0127.MP4",
+"face_t": 350.098,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 27.165
+},
+{
+"e0": 321.04,
+"e1": 331.78,
+"m0": 1292.048,
+"face": "C0127.MP4",
+"face_t": 353.808,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 30.875
+},
+{
+"e0": 331.78,
+"e1": 332.44,
+"m0": 1303.755,
+"face": "C0127.MP4",
+"face_t": 365.515,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 42.582
+},
+{
+"e0": 332.44,
+"e1": 334.52,
+"m0": 1304.848,
+"face": "C0127.MP4",
+"face_t": 366.608,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 43.675
+},
+{
+"e0": 334.52,
+"e1": 338.74,
+"m0": 1309.095,
+"face": "C0127.MP4",
+"face_t": 370.855,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 47.922
+},
+{
+"e0": 338.74,
+"e1": 343.3,
+"m0": 1325.748,
+"face": "C0127.MP4",
+"face_t": 387.508,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 64.575
+},
+{
+"e0": 343.3,
+"e1": 344.82,
+"m0": 1330.742,
+"face": "C0127.MP4",
+"face_t": 392.502,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 69.569
+},
+{
+"e0": 344.82,
+"e1": 347.54,
+"m0": 1451.962,
+"face": "C0127.MP4",
+"face_t": 513.722,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 190.789
+},
+{
+"e0": 347.54,
+"e1": 350.06,
+"m0": 1454.982,
+"face": "C0127.MP4",
+"face_t": 516.742,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 193.809
+},
+{
+"e0": 350.06,
+"e1": 353.71,
+"m0": 1458.268,
+"face": "C0127.MP4",
+"face_t": 520.028,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 197.095
+},
+{
+"e0": 353.71,
+"e1": 356.8,
+"m0": 1462.618,
+"face": "C0127.MP4",
+"face_t": 524.378,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 201.445
+},
+{
+"e0": 356.8,
+"e1": 360.42,
+"m0": 1466.075,
+"face": "C0127.MP4",
+"face_t": 527.835,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 204.902
+},
+{
+"e0": 360.42,
+"e1": 361.53,
+"m0": 1470.095,
+"face": "C0127.MP4",
+"face_t": 531.855,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 208.922
+},
+{
+"e0": 361.53,
+"e1": 363.5,
+"m0": 1476.972,
+"face": "C0127.MP4",
+"face_t": 538.732,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 215.799
+},
+{
+"e0": 363.5,
+"e1": 366.26,
+"m0": 1479.308,
+"face": "C0127.MP4",
+"face_t": 541.068,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 218.135
+},
+{
+"e0": 366.26,
+"e1": 370.82,
+"m0": 1482.468,
+"face": "C0127.MP4",
+"face_t": 544.228,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 221.295
+},
+{
+"e0": 370.82,
+"e1": 372.5,
+"m0": 1487.428,
+"face": "C0127.MP4",
+"face_t": 549.188,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 226.255
+},
+{
+"e0": 372.5,
+"e1": 374.12,
+"m0": 1489.542,
+"face": "C0127.MP4",
+"face_t": 551.302,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 228.369
+},
+{
+"e0": 374.12,
+"e1": 374.68,
+"m0": 1493.928,
+"face": "C0127.MP4",
+"face_t": 555.688,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 232.755
+},
+{
+"e0": 374.68,
+"e1": 378.38,
+"m0": 1494.755,
+"face": "C0127.MP4",
+"face_t": 556.515,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 233.582
+},
+{
+"e0": 378.38,
+"e1": 379.95,
+"m0": 1498.855,
+"face": "C0127.MP4",
+"face_t": 560.615,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 237.682
+},
+{
+"e0": 379.95,
+"e1": 382.55,
+"m0": 1502.092,
+"face": "C0127.MP4",
+"face_t": 563.852,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 240.919
+},
+{
+"e0": 382.55,
+"e1": 383.56,
+"m0": 1505.025,
+"face": "C0127.MP4",
+"face_t": 566.785,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 243.852
+},
+{
+"e0": 383.56,
+"e1": 386.74,
+"m0": 1525.002,
+"face": "C0127.MP4",
+"face_t": 586.762,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 263.829
+},
+{
+"e0": 386.74,
+"e1": 390.42,
+"m0": 1528.548,
+"face": "C0127.MP4",
+"face_t": 590.308,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 267.375
+},
+{
+"e0": 390.42,
+"e1": 393.08,
+"m0": 1532.728,
+"face": "C0127.MP4",
+"face_t": 594.488,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 271.555
+},
+{
+"e0": 393.08,
+"e1": 398.74,
+"m0": 1557.555,
+"face": "C0127.MP4",
+"face_t": 619.315,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 296.382
+},
+{
+"e0": 398.74,
+"e1": 400.02,
+"m0": 1564.215,
+"face": "C0127.MP4",
+"face_t": 625.975,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 303.042
+},
+{
+"e0": 400.02,
+"e1": 404.63,
+"m0": 1566.462,
+"face": "C0127.MP4",
+"face_t": 628.222,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 305.289
+},
+{
+"e0": 404.63,
+"e1": 407.68,
+"m0": 1571.738,
+"face": "C0127.MP4",
+"face_t": 633.498,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 310.565
+},
+{
+"e0": 407.68,
+"e1": 411.15,
+"m0": 1576.455,
+"face": "C0127.MP4",
+"face_t": 638.215,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 315.282
+},
+{
+"e0": 411.15,
+"e1": 414.66,
+"m0": 1580.425,
+"face": "C0127.MP4",
+"face_t": 642.185,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 319.252
+},
+{
+"e0": 414.66,
+"e1": 417.68,
+"m0": 1584.302,
+"face": "C0127.MP4",
+"face_t": 646.062,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 323.129
+},
+{
+"e0": 417.68,
+"e1": 418.64,
+"m0": 1587.922,
+"face": "C0127.MP4",
+"face_t": 649.682,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 326.749
+},
+{
+"e0": 418.64,
+"e1": 419.54,
+"m0": 1926.215,
+"face": "C0128.MP4",
+"face_t": 29.273,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 665.042
+},
+{
+"e0": 419.54,
+"e1": 424.3,
+"m0": 1927.115,
+"face": "C0128.MP4",
+"face_t": 30.173,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 665.942
+},
+{
+"e0": 424.3,
+"e1": 425.9,
+"m0": 1937.308,
+"face": "C0128.MP4",
+"face_t": 40.366,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 676.135
+},
+{
+"e0": 425.9,
+"e1": 431.31,
+"m0": 1939.475,
+"face": "C0128.MP4",
+"face_t": 42.533,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 678.302
+},
+{
+"e0": 431.31,
+"e1": 432.24,
+"m0": 1945.918,
+"face": "C0128.MP4",
+"face_t": 48.976,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 684.745
+},
+{
+"e0": 432.24,
+"e1": 437.14,
+"m0": 1982.248,
+"face": "C0128.MP4",
+"face_t": 85.306,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 721.075
+},
+{
+"e0": 437.14,
+"e1": 450.01,
+"m0": 1987.782,
+"face": "C0128.MP4",
+"face_t": 90.84,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 726.609
+},
+{
+"e0": 450.01,
+"e1": 453.08,
+"m0": 2001.585,
+"face": "C0128.MP4",
+"face_t": 104.643,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 740.412
+},
+{
+"e0": 453.08,
+"e1": 458.3,
+"m0": 2004.655,
+"face": "C0128.MP4",
+"face_t": 107.713,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 743.482
+},
+{
+"e0": 458.3,
+"e1": 462.33,
+"m0": 2010.342,
+"face": "C0128.MP4",
+"face_t": 113.4,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 749.169
+},
+{
+"e0": 462.33,
+"e1": 464.06,
+"m0": 2021.305,
+"face": "C0128.MP4",
+"face_t": 124.363,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 760.132
+},
+{
+"e0": 464.06,
+"e1": 466.84,
+"m0": 2024.135,
+"face": "C0128.MP4",
+"face_t": 127.193,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 762.962
+},
+{
+"e0": 466.84,
+"e1": 469.02,
+"m0": 2027.482,
+"face": "C0128.MP4",
+"face_t": 130.54,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 766.309
+},
+{
+"e0": 469.02,
+"e1": 470.42,
+"m0": 2032.362,
+"face": "C0128.MP4",
+"face_t": 135.42,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 771.189
+},
+{
+"e0": 470.42,
+"e1": 471.2,
+"m0": 2034.562,
+"face": "C0128.MP4",
+"face_t": 137.62,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 773.389
+},
+{
+"e0": 471.2,
+"e1": 472.88,
+"m0": 2045.608,
+"face": "C0128.MP4",
+"face_t": 148.666,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 784.435
+},
+{
+"e0": 472.88,
+"e1": 474.02,
+"m0": 2047.788,
+"face": "C0128.MP4",
+"face_t": 150.846,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 786.615
+},
+{
+"e0": 474.02,
+"e1": 478.65,
+"m0": 2049.362,
+"face": "C0128.MP4",
+"face_t": 152.42,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 788.189
+},
+{
+"e0": 478.65,
+"e1": 490.21,
+"m0": 2074.725,
+"face": "C0128.MP4",
+"face_t": 177.783,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 813.552
+},
+{
+"e0": 490.21,
+"e1": 495.42,
+"m0": 2099.118,
+"face": "C0128.MP4",
+"face_t": 202.176,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 837.945
+},
+{
+"e0": 495.42,
+"e1": 496.94,
+"m0": 2105.128,
+"face": "C0128.MP4",
+"face_t": 208.186,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 843.955
+},
+{
+"e0": 496.94,
+"e1": 497.44,
+"m0": 2108.048,
+"face": "C0128.MP4",
+"face_t": 211.106,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 846.875
+},
+{
+"e0": 497.44,
+"e1": 498.66,
+"m0": 2108.548,
+"face": "C0128.MP4",
+"face_t": 211.606,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 847.375
+},
+{
+"e0": 498.66,
+"e1": 502.0,
+"m0": 2110.168,
+"face": "C0128.MP4",
+"face_t": 213.226,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 848.995
+},
+{
+"e0": 502.0,
+"e1": 505.9,
+"m0": 2113.508,
+"face": "C0128.MP4",
+"face_t": 216.566,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 852.335
+},
+{
+"e0": 505.9,
+"e1": 506.98,
+"m0": 2117.675,
+"face": "C0128.MP4",
+"face_t": 220.733,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 856.502
+},
+{
+"e0": 506.98,
+"e1": 512.18,
+"m0": 2119.188,
+"face": "C0128.MP4",
+"face_t": 222.246,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 858.015
+},
+{
+"e0": 512.18,
+"e1": 513.7,
+"m0": 2125.355,
+"face": "C0128.MP4",
+"face_t": 228.413,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 864.182
+},
+{
+"e0": 513.7,
+"e1": 518.02,
+"m0": 2127.708,
+"face": "C0128.MP4",
+"face_t": 230.766,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 866.535
+},
+{
+"e0": 518.02,
+"e1": 524.1,
+"m0": 2132.028,
+"face": "C0128.MP4",
+"face_t": 235.086,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 870.855
+},
+{
+"e0": 524.1,
+"e1": 527.17,
+"m0": 2138.642,
+"face": "C0128.MP4",
+"face_t": 241.7,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 877.469
+},
+{
+"e0": 527.17,
+"e1": 535.32,
+"m0": 2142.545,
+"face": "C0128.MP4",
+"face_t": 245.603,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 881.372
+},
+{
+"e0": 535.32,
+"e1": 538.73,
+"m0": 2150.995,
+"face": "C0128.MP4",
+"face_t": 254.053,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 889.822
+},
+{
+"e0": 538.73,
+"e1": 539.5,
+"m0": 2154.405,
+"face": "C0128.MP4",
+"face_t": 257.463,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 893.232
+},
+{
+"e0": 539.5,
+"e1": 542.17,
+"m0": 2155.175,
+"face": "C0128.MP4",
+"face_t": 258.233,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 894.002
+},
+{
+"e0": 542.17,
+"e1": 546.56,
+"m0": 2184.678,
+"face": "C0128.MP4",
+"face_t": 287.736,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 923.505
+},
+{
+"e0": 546.56,
+"e1": 550.16,
+"m0": 2192.535,
+"face": "C0128.MP4",
+"face_t": 295.593,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 931.362
+},
+{
+"e0": 550.16,
+"e1": 556.09,
+"m0": 2196.402,
+"face": "C0128.MP4",
+"face_t": 299.46,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 935.229
+},
+{
+"e0": 556.09,
+"e1": 558.57,
+"m0": 2202.898,
+"face": "C0128.MP4",
+"face_t": 305.956,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 941.725
+},
+{
+"e0": 558.57,
+"e1": 561.77,
+"m0": 2205.678,
+"face": "C0128.MP4",
+"face_t": 308.736,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 944.505
+},
+{
+"e0": 561.77,
+"e1": 564.58,
+"m0": 2209.812,
+"face": "C0128.MP4",
+"face_t": 312.87,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 948.639
+},
+{
+"e0": 564.58,
+"e1": 567.97,
+"m0": 2213.188,
+"face": "C0128.MP4",
+"face_t": 316.246,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 952.015
+},
+{
+"e0": 567.97,
+"e1": 570.28,
+"m0": 2225.578,
+"face": "C0128.MP4",
+"face_t": 328.636,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 964.405
+},
+{
+"e0": 570.28,
+"e1": 571.44,
+"m0": 2236.455,
+"face": "C0128.MP4",
+"face_t": 339.513,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 975.282
+},
+{
+"e0": 571.44,
+"e1": 578.02,
+"m0": 2237.615,
+"face": "C0128.MP4",
+"face_t": 340.673,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 976.442
+},
+{
+"e0": 578.02,
+"e1": 588.08,
+"m0": 2244.195,
+"face": "C0128.MP4",
+"face_t": 347.253,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 983.022
+},
+{
+"e0": 588.08,
+"e1": 593.11,
+"m0": 2272.655,
+"face": "C0128.MP4",
+"face_t": 375.713,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 1011.482
+},
+{
+"e0": 593.11,
+"e1": 593.98,
+"m0": 2280.485,
+"face": "C0128.MP4",
+"face_t": 383.543,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 1019.312
+},
+{
+"e0": 593.98,
+"e1": 595.15,
+"m0": 2281.355,
+"face": "C0128.MP4",
+"face_t": 384.413,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 1020.182
+},
+{
+"e0": 595.15,
+"e1": 597.0,
+"m0": 2283.492,
+"face": "C0128.MP4",
+"face_t": 386.55,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 1022.319
+},
+{
+"e0": 597.0,
+"e1": 599.8,
+"m0": 2285.642,
+"face": "C0128.MP4",
+"face_t": 388.7,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 1024.469
+},
+{
+"e0": 599.8,
+"e1": 604.133,
+"m0": 2290.342,
+"face": "C0128.MP4",
+"face_t": 393.4,
+"screen": "higgs influ2 4.mp4",
+"screen_t": 1029.169
+}
+]
