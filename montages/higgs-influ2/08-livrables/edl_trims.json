@@ -1,0 +1,32 @@
+[
+ {
+  "out": 0,
+  "src_in": 0,
+  "src_out_or_dur": 19.74,
+  "label": ""
+ },
+ {
+  "out": 19.74,
+  "src_in": 21.46,
+  "src_out_or_dur": 71.36,
+  "label": ""
+ },
+ {
+  "out": 69.64,
+  "src_in": 75.53,
+  "src_out_or_dur": 543.17,
+  "label": ""
+ },
+ {
+  "out": 537.28,
+  "src_in": 543.79,
+  "src_out_or_dur": 587.9,
+  "label": ""
+ },
+ {
+  "out": 581.39,
+  "src_in": 591.15,
+  "src_out_or_dur": 604.133,
+  "label": ""
+ }
+]

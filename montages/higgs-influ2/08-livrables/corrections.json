@@ -1,0 +1,10 @@
+{
+ "(?i)\\b(?:hexfield|xfield|x-field|hicksfield|higgs field|higsfield|hixfield)\\b": "Higgsfield",
+ "(?i)\\bcostume marrant\\b": "costume marron",
+ "(?i)\\bgenjutsu\\b": "Genjutsu",
+ "(?i)\\bjenjutsu\\b": "Genjutsu",
+ "(?i)\\bai influencer\\b": "AI Influencer",
+ "(?i)\\bshadow boxing\\b": "shadowboxing",
+ "(?i)\\bgranny spills\\b": "Granny Spills",
+ "(\\d) (\\d{3})\\b": "\\1 \\2"
+}
