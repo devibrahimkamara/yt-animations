@@ -1,0 +1,445 @@
+{
+ "_doc": "Décisions de contenu (passe cut + passe refining), en indices de mots (micro_words.json, inclusifs). Tout le reste est gardé ; les silences sont ensuite traités par derush.py. pass: cut | refining ; doubt: à trancher par Ibrahim.",
+ "cuts": [
+  {
+   "w": [
+    0,
+    3
+   ],
+   "pass": "cut",
+   "why": "consigne avant de filmer (« Je monte mon visage »)"
+  },
+  {
+   "w": [
+    4,
+    38
+   ],
+   "pass": "cut",
+   "why": "3 prises ratées du hook, on garde la 4e"
+  },
+  {
+   "w": [
+    125,
+    189
+   ],
+   "pass": "cut",
+   "why": "6 prises de « Et dans cette vidéo… » + « Ok », on garde la dernière complète"
+  },
+  {
+   "w": [
+    210,
+    275
+   ],
+   "pass": "cut",
+   "why": "prises de la présentation de Jean-Phil + aparté (« je risque de lire tout le script »)"
+  },
+  {
+   "w": [
+    346,
+    354
+   ],
+   "pass": "refining",
+   "why": "redit la phrase d'avant (« il n'est pas réel » après « c'est de l'IA »)",
+   "doubt": true
+  },
+  {
+   "w": [
+    355,
+    355
+   ],
+   "pass": "cut",
+   "why": "« Ok » de reprise"
+  },
+  {
+   "w": [
+    371,
+    383
+   ],
+   "pass": "cut",
+   "why": "phrase confuse qui répète la précédente (« 5 éléments viraux reposent sur 5 éléments… »)"
+  },
+  {
+   "w": [
+    459,
+    471
+   ],
+   "pass": "cut",
+   "why": "« Yo, what's up? », « Ok » et 1re prise de la présentation de la chaîne"
+  },
+  {
+   "w": [
+    505,
+    526
+   ],
+   "pass": "refining",
+   "why": "appel à s'abonner avant la valeur (PLAYBOOK §10) ; il est redit à la fin"
+  },
+  {
+   "w": [
+    559,
+    566
+   ],
+   "pass": "cut",
+   "why": "« Ok, donc étape, ok, ok, ingrédient numéro 1 » : faux départ"
+  },
+  {
+   "w": [
+    576,
+    607
+   ],
+   "pass": "cut",
+   "why": "2 prises de « il faut un personnage reconnaissable », on garde la dernière",
+   "doubt": true
+  },
+  {
+   "w": [
+    690,
+    700
+   ],
+   "pass": "cut",
+   "why": "« ils sont quasiment fond / enfoncés » : 2 prises, on garde la dernière"
+  },
+  {
+   "w": [
+    744,
+    744
+   ],
+   "pass": "cut",
+   "why": "« Ok » de reprise"
+  },
+  {
+   "w": [
+    806,
+    827
+   ],
+   "pass": "refining",
+   "why": "comparaison FIFA : marque tierce (le brief interdit les noms de marques non validés)",
+   "doubt": true
+  },
+  {
+   "w": [
+    903,
+    910
+   ],
+   "pass": "refining",
+   "why": "« on va aller sur bold » dit 2 fois, on garde la 2e"
+  },
+  {
+   "w": [
+    939,
+    943
+   ],
+   "pass": "refining",
+   "why": "« Tu peux choisir le genre » redit « Ensuite, le genre »"
+  },
+  {
+   "w": [
+    970,
+    1012
+   ],
+   "pass": "refining",
+   "why": "énumération des morphologies, déjà visibles à l'écran",
+   "doubt": true
+  },
+  {
+   "w": [
+    1014,
+    1019
+   ],
+   "pass": "cut",
+   "why": "hésitation « la forme que j'aimerais, voilà »"
+  },
+  {
+   "w": [
+    1149,
+    1173
+   ],
+   "pass": "cut",
+   "why": "hésitation sur la couleur des cheveux, on garde « je vais aller avec des cheveux noirs »"
+  },
+  {
+   "w": [
+    1181,
+    1184
+   ],
+   "pass": "refining",
+   "why": "« après c'est mieux » : fin de phrase inutile"
+  },
+  {
+   "w": [
+    1227,
+    1252
+   ],
+   "pass": "cut",
+   "why": "hésitation + aparté en anglais (« Sorry… what is retro? »)"
+  },
+  {
+   "w": [
+    1279,
+    1284
+   ],
+   "pass": "refining",
+   "why": "« ce n'est pas définitif » redit la phrase d'avant"
+  },
+  {
+   "w": [
+    1311,
+    1346
+   ],
+   "pass": "refining",
+   "why": "digression sur les influenceurs enfants (11 s)",
+   "doubt": true
+  },
+  {
+   "w": [
+    1352,
+    1367
+   ],
+   "pass": "cut",
+   "why": "hésitation sur la couleur de peau, on garde « on va dire cette couleur de peau »"
+  },
+  {
+   "w": [
+    1402,
+    1406
+   ],
+   "pass": "cut",
+   "why": "« bah non pas short legs » : hésitation"
+  },
+  {
+   "w": [
+    1418,
+    1423
+   ],
+   "pass": "cut",
+   "why": "« ça va grave dans les détails » : répétition"
+  },
+  {
+   "w": [
+    1495,
+    1503
+   ],
+   "pass": "cut",
+   "why": "« j'ai vraiment envie d'être spécial » dit 2 fois, on garde la 2e"
+  },
+  {
+   "w": [
+    1555,
+    1574
+   ],
+   "pass": "cut",
+   "why": "hésitations (« Ça, c'est quoi ? Non, non, non. Des oreilles complètement… Une brèche. »)"
+  },
+  {
+   "w": [
+    1666,
+    1673
+   ],
+   "pass": "cut",
+   "why": "« Voilà. Donc, une fois que j'ai terminé, » : 1re prise"
+  },
+  {
+   "w": [
+    1698,
+    1806
+   ],
+   "pass": "cut",
+   "why": "info prix incertaine (« il n'est pas gratuit… je pense qu'il est gratuit… ne dis rien… je ne sais pas »)"
+  },
+  {
+   "w": [
+    1829,
+    1865
+   ],
+   "pass": "refining",
+   "why": "on garde la surprise (une femme générée) + l'explication courte, on coupe les hésitations",
+   "doubt": true
+  },
+  {
+   "w": [
+    1881,
+    1914
+   ],
+   "pass": "cut",
+   "why": "« c'est vilain… enlève-moi cette conorax », « Yo », « Ok let's go » et 1re prise de « il a terminé »",
+   "doubt": true
+  },
+  {
+   "w": [
+    1915,
+    1915
+   ],
+   "pass": "cut",
+   "why": "« Ok » de reprise"
+  },
+  {
+   "w": [
+    2024,
+    2051
+   ],
+   "pass": "cut",
+   "why": "attente : « Ok », « Merci » (sous-titres fantômes de Whisper dans le silence), « je n'ai pas perdu l'autre capture ? »"
+  },
+  {
+   "w": [
+    2171,
+    2171
+   ],
+   "pass": "cut",
+   "why": "« Ok » de reprise"
+  },
+  {
+   "w": [
+    2190,
+    2242
+   ],
+   "pass": "cut",
+   "why": "hésitation « bête, pas bête, drôle… » + 1re prise de « j'ai fait quelque chose »"
+  },
+  {
+   "w": [
+    2314,
+    2333
+   ],
+   "pass": "cut",
+   "why": "2 phrases abandonnées, on garde la 3e"
+  },
+  {
+   "w": [
+    2389,
+    2394
+   ],
+   "pass": "cut",
+   "why": "« Et ensuite, tu fais ton personnage » : 1re prise"
+  },
+  {
+   "w": [
+    2425,
+    2439
+   ],
+   "pass": "cut",
+   "why": "2 prises de « on va aller dans Genjutsu », on garde la 3e"
+  },
+  {
+   "w": [
+    2484,
+    2518
+   ],
+   "pass": "cut",
+   "why": "« Tac, tac, tac. Ok. » + contradiction « ça va prendre du temps / non, rapide »"
+  },
+  {
+   "w": [
+    2575,
+    2580
+   ],
+   "pass": "refining",
+   "why": "« On va laisser ça comme ça » redit la phrase d'avant"
+  },
+  {
+   "w": [
+    2618,
+    2662
+   ],
+   "pass": "cut",
+   "why": "attente de génération (« Merci » fantômes, « je vais progresser », « c'est parti »)"
+  },
+  {
+   "w": [
+    2717,
+    2724
+   ],
+   "pass": "cut",
+   "why": "« ok c'est quoi ingrédient numéro 3 ok »"
+  },
+  {
+   "w": [
+    2798,
+    2799
+   ],
+   "pass": "cut",
+   "why": "« il a il a » : répétition"
+  },
+  {
+   "w": [
+    2835,
+    2857
+   ],
+   "pass": "cut",
+   "why": "hésitation sur la partie style (« non pas pas style par contre »)"
+  },
+  {
+   "w": [
+    2931,
+    2954
+   ],
+   "pass": "cut",
+   "why": "« je dois montrer le résultat mais je ne vais pas attendre »",
+   "doubt": true
+  },
+  {
+   "w": [
+    2998,
+    2998
+   ],
+   "pass": "cut",
+   "why": "« Ok » de reprise"
+  },
+  {
+   "w": [
+    3013,
+    3014
+   ],
+   "pass": "cut",
+   "why": "« Ok ? »"
+  },
+  {
+   "w": [
+    3208,
+    3209
+   ],
+   "pass": "cut",
+   "why": "lapsus « ingrédient numéro 1 » au lieu du 5e : on retire le numéro"
+  },
+  {
+   "w": [
+    3313,
+    3349
+   ],
+   "pass": "refining",
+   "why": "marque tierce (Kurt Geiger) + hésitation sur la prononciation"
+  },
+  {
+   "w": [
+    3350,
+    3356
+   ],
+   "pass": "cut",
+   "why": "« Donc tu verras que, mais par contre, » : faux départ"
+  },
+  {
+   "w": [
+    3420,
+    3429
+   ],
+   "pass": "cut",
+   "why": "1re prise de « le lien pour créer ton influenceur »"
+  },
+  {
+   "w": [
+    3497,
+    3497
+   ],
+   "pass": "cut",
+   "why": "« Merci » fantôme après la fin"
+  }
+ ],
+ "flags": [
+  "Brief Higgsfield : la vidéo doit montrer AU MOINS UNE VARIATION générée (tenue, produit ou décor). VÉRIFIÉ dans la capture : le résultat « dans l'espace » n'apparaît jamais. Après le lancement (micro 34:05), l'écran montre la génération, puis ton document de script jusqu'à la fin. → Il faut enregistrer en plus une courte capture (30–60 s) du résultat de la variation, depuis ton historique Higgsfield. Sinon, la vidéo risque de ne pas être validée.",
+  "Brief : mention « partenaire » non dite au micro (le script disait « partenaire de cette vidéo »). Couvert par la case YouTube « promotion rémunérée » + une mention à l'écran au montage.",
+  "Jean-Phil, Granny Spills, la crypto : personnages et faits tiers. Le brief interdit les personnages tiers sans accord : à faire valider par Higgsfield (le script le prévoyait).",
+  "Ingrédient 5 : la partie « produit en main / UGC » du script n'a pas été tournée. La vidéo passe directement de la monétisation à la fin.",
+  "Durée : le brief exige 6 min minimum. À vérifier après les coupes.",
+  "À partir de micro 34:29 (fin de l'ingrédient 3 → fin), l'écran affiche ton document de script. Ce passage sera monté en face cam plein cadre (le script ne doit pas apparaître)."
+ ]
+}

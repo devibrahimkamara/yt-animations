@@ -1,0 +1,34 @@
+{
+ "reference": "audio/higgs inlfu 2.mp3 (micro, 2334.77 s)",
+ "note": "offset = temps micro au début du fichier (s). Mesuré par corrélation au début et au milieu de chaque fichier ; dérive < 5 ms.",
+ "camera": {
+  "C0125.MP4": {
+   "offset": null,
+   "note": "aucune correspondance avec le micro (essai avant le lancement du micro ?) — à vérifier"
+  },
+  "C0126.MP4": {
+   "offset": 12.146
+  },
+  "C0127.MP4": {
+   "offset": 938.24
+  },
+  "C0128.MP4": {
+   "offset": 1896.942
+  }
+ },
+ "capture": {
+  "higgs influ2 1.mp4": {
+   "offset": 42.381
+  },
+  "higgs influ2 2.mp4": {
+   "offset": 283.033,
+   "note": "2940x1912 VFR → normaliser en 1080p30"
+  },
+  "higgs influ2 3.mp4": {
+   "offset": 932.875
+  },
+  "higgs influ2 4.mp4": {
+   "offset": 1261.173
+  }
+ }
+}

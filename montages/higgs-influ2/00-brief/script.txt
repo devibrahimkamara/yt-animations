@@ -1,0 +1,100 @@
+Script : « J'ai cloné l'influenceur IA qui a fait 100 millions de vues »
+Les chiffres datent du 5 octobre 2026, mets-les à jour la veille du tournage. Le texte à dire est en clair, les indications de montage sont entre [crochets].
+
+🖼️ Titre et miniature
+Titre : Ce mec n'existe pas… et il a fait 100 millions de vues (je l'ai cloné)
+Variante : J'ai cloné l'influenceur IA qui a explosé en 2 semaines
+
+Miniature : à gauche, une silhouette floutée en costume marron qui fait du shadowboxing, avec « 100M VUES » en gros. À droite, ton propre personnage IA dans la même pose, et toi au milieu qui pointe. Petit texte : « 0 caméra ».
+
+Les 3 questions que la miniature fait naître (on y répond dans l'intro) :
+
+Qui est ce mec, et comment un faux humain fait 100M de vues ?
+Comment on fabrique un personnage pareil ?
+Est-ce que n'importe qui peut le faire, et en vivre ?
+🎣 HOOK (0:00 – 0:25) : statement hook
+Ce mec n'existe pas.
+Il est apparu il y a deux semaines. 9 vidéos sur TikTok, 250 000 abonnés. Plus de 100 millions de vues entre TikTok et Instagram.
+Et le plus fou, c'est que d'autres comptes ont copié sa formule. L'un d'eux a fait presque 5 millions de vues avec 3 vidéos, et il vend déjà un produit.
+Alors aujourd'hui, je vais faire pareil. Devant toi. Sans caméra, sans costume, sans studio.
+
+[ÉCRAN : compteurs de vues qui défilent, captures des profils, floutées si Higgsfield ne valide pas l'usage. Coupe sèche sur toi.]
+
+🎬 INTRO (0:25 – 1:15)
+Il s'appelle Jean Phil. Un gentleman français en costume marron, moustache, cheveux bouclés, qui fait du shadowboxing avec un sérieux absolu. Internet est devenu fou, la moitié des commentaires se demandent s'il est réel.
+Spoiler : c'est une IA.
+
+Et quand tu regardes de près, ce compte repose sur une recette en 5 ingrédients. Dans cette vidéo, je te les donne un par un, et pour chacun je te montre comment le fabriquer en vrai avec un outil qui s'appelle Higgsfield, partenaire de cette vidéo. Leur nouvel outil, AI Influencer 2.0, fait exactement ce qu'il faut pour répliquer ce genre de compte.
+
+Je teste des outils IA sur cette chaîne depuis des années, plus de 50 millions de vues au compteur, et je t'avoue que celui-là m'a surpris. À la fin de la vidéo, tu auras ton propre personnage et 10 contenus prêts à poster. Tout est faisable avec le lien en description.
+
+[ÉCRAN : mention « Collaboration commerciale » visible, logo Higgsfield issu du Media Kit.]
+
+💎 VALUE : les 5 ingrédients d'un influenceur IA viral
+Ingrédient 1 : un personnage reconnaissable en une demi-seconde (1:15 – 2:30)
+Re-hook : Le premier ingrédient, c'est celui que 90 % des gens ratent quand ils créent un influenceur IA.
+
+Histoire : Va sur TikTok et tape « AI influencer ». Tu verras des centaines de filles parfaites qui se ressemblent toutes. Personne ne s'en souvient. Jean Phil, lui, tu le vois une fois et tu t'en souviens toute ta vie : le costume marron, la moustache, la tête sérieuse. C'est un personnage, pas un joli visage.
+
+Payout : Donc on va créer le nôtre. Je suis sur higgsfield.ai, dans AI Influencer. Ici, je contrôle tout : l'âge, le visage, les cheveux, la morphologie, les accessoires. Moi, je veux [décris ton perso, par ex. « un vieux tonton africain en costume trois-pièces vert, lunettes rondes, canne »]. L'idée, c'est un détail que personne n'a.
+Et le truc important : une fois créé, le personnage est sauvegardé. Il garde le même visage dans chaque vidéo, je n'ai jamais à le recréer.
+
+[ÉCRAN : Character Builder en enregistrement d'écran, réglages en accéléré, perso final en plein écran.]
+
+Ingrédient 2 : un geste signature (2:30 – 3:45)
+Re-hook : Bon, un personnage, c'est bien. Mais un personnage qui ne fait rien, ça ne fait pas de vues.
+
+Histoire : Ce qui a fait exploser Jean Phil, ce n'est pas son visage, c'est son geste. Le shadowboxing. Les gens l'ont repris, remixé, dupliqué. Un geste simple, répétable, un peu absurde, c'est ce qui transforme une vidéo en tendance.
+
+Payout : Et c'est là que ça devient fou. Je me suis filmé 10 secondes avec mon téléphone, dans mon salon, en train de faire mon propre geste. [Montre la vidéo brute, la plus ridicule possible.]
+Je l'envoie dans Higgsfield comme vidéo de référence. Leur moteur s'appelle Genjutsu : il reprend mes mouvements, mon timing et le mouvement de caméra, et il les met sur mon personnage.
+[Lance la génération, coupe, puis révèle le résultat.]
+… Regarde. Même geste, même rythme. Sauf que ce n'est plus moi.
+
+[ÉCRAN : split-screen, toi à gauche, ton perso à droite, synchronisés.]
+
+Ingrédient 3 : la répétition avec variation (3:45 – 5:00)
+Re-hook : Maintenant, le secret que personne ne te dit sur les comptes comme ça.
+
+Histoire : Regarde le compte de Jean Phil de près : c'est presque toujours le même concept, mais le décor change. Les copies font pareil. Le cerveau adore ça : le côté familier le rassure, et la nouveauté le garde devant l'écran. C'est pour ça qu'un compte peut exploser avec 9 vidéos.
+
+Payout : Dans Higgsfield, je garde la performance que je viens de générer et je change seulement les éléments.
+
+Variation 1 : la tenue. [Swap vers un autre costume.]
+Variation 2 : le lieu. [Un rooftop, une rue de Paris, un désert.]
+Variation 3 : un produit en main. Garde-le pour l'ingrédient 5.
+Une seule vidéo de 10 secondes de moi, et j'ai déjà 10 contenus.
+[ÉCRAN : grille de 10 vignettes qui se remplit une par une.]
+
+Ingrédient 4 : le mystère, mais honnête (5:00 – 5:50)
+Re-hook : Le quatrième ingrédient, c'est celui qui fait exploser les commentaires. Mais attention, beaucoup de gens vont se faire avoir dessus.
+
+Histoire : Sous chaque vidéo de Jean Phil, il y a des milliers de commentaires qui débattent : « il est réel », « c'est une IA ». Ce débat a fait plus pour lui que n'importe quelle pub. Sauf que depuis fin août 2026, Instagram oblige les profils dont l'identité principale est une personne IA réaliste à afficher le label « généré par IA ». Sinon, tu perds la visibilité dans les Reels et dans Explorer.
+
+Payout : Donc le mystère ne doit pas porter sur le « est-ce qu'il est réel ? ». Il doit porter sur qui il est. Donne-lui une histoire, une phrase fétiche, une attitude. Jean Phil, c'est le « Oui Madame ». Mets le label IA, et laisse les gens se demander d'où il sort, pas s'il existe.
+
+[ÉCRAN : exemples de bio et de légendes pour ton perso.]
+
+Ingrédient 5 : la monétisation (5:50 – 6:50)
+Re-hook : Et maintenant, la question que tu te poses depuis le début : est-ce que ça rapporte ?
+
+Histoire : Je t'ai parlé d'un compte copieur au début. 3 vidéos, presque 5 millions de vues, et dès la première vague il avait un lien en bio avec une promo. Granny Spills, une mamie IA en tailleur rose, a fait des partenariats avec des marques comme Kurt Geiger.
+Petite mise en garde, quand même : autour de Jean Phil, quelqu'un a lancé une crypto à son nom qui s'est effondrée en quelques jours. Ça, c'est le mauvais côté. N'achète pas et ne fais pas ça.
+
+Payout : La vraie méthode : ta variation avec le produit en main. Un influenceur IA, c'est un acteur dispo 24 h/24 qui peut tenir n'importe quel produit, dans n'importe quel décor. Tu peux vendre ton propre produit, ou proposer à des marques de faire leurs vidéos UGC avec ton perso.
+[ÉCRAN : la variation produit en plein écran.]
+
+🔚 ENDSCREEN (6:50 – 7:20)
+Récap : un personnage reconnaissable, un geste signature, de la répétition avec variation, un mystère honnête et un produit. Tout ça à partir de 10 secondes de vidéo.
+Le lien pour créer ton influenceur IA est le premier lien de la description, et en commentaire épinglé.
+
+Et maintenant que tu as ton personnage, il te manque le plus dur : le poster tous les jours sans y passer ta vie. J'ai fait une vidéo exactement là-dessus, [titre de ta vidéo sur l'automatisation ou les comptes faceless], juste ici. Va la voir, elle te fera gagner des heures.
+
+[ÉCRAN : écran de fin avec la vidéo suggérée.]
+
+À savoir pour le tournage :
+
+Points du brief couverts : site Higgsfield à l'écran, création du perso, vidéo de référence, rendu, au moins une variation, et la mention Genjutsu. Pense à activer le doublage auto en anglais.
+Durée : environ 1 100 mots, donc 7 min à l'oral. C'est au-dessus des 6 min minimum, même si tu coupes un peu au montage.
+Les extraits de Jean Phil ne passent à l'écran que si Higgsfield valide. Sinon, utilise des captures floutées.
+Je n'ai mis que des faits vérifiés. Les seules expériences en « je » sont celles que tu feras pendant le tournage, et le personnage entre crochets est à remplacer par ton idée.
