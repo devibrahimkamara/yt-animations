@@ -226,6 +226,17 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 | `[TILT-DOC]` | Source (article, rapport, page officielle) en carte légèrement inclinée sur l'aurora, phrase-clé surlignée, puis le chiffre en compteur | 1 à 2 s sur le document, puis `[STAT]` |
 | `[ENGAGEMENT]` | Compteurs réels (vues, abonnés, ventes) zoomés au curseur dans l'interface native, commentaires réels **recréés en grand** | Captures natives = preuve sociale |
 
+### 4.4bis Illustrer par le réel : montrer plutôt qu'animer (règle d'Ibrahim, 5 octobre 2026)
+
+**Principe :** quand Ibrahim parle d'une personne, d'un compte, d'un chiffre, d'un article ou d'un produit qui existe, on **le montre pour de vrai** : vraie photo, vraie capture de profil, vraies statistiques (abonnés, vues, likes), vraie vidéo, vrai article. Le motion design ne sert qu'à mettre en valeur ce qui est montré (cadre, zoom, chiffre en roulette), jamais à le remplacer. Le réel apporte crédibilité et confiance ; une animation de quelque chose qu'on pourrait simplement montrer affaiblit la vidéo.
+
+| Étape | Méthode |
+|---|---|
+| **Repérage** (étape 4, plan de montage) | Chaque mention d'un élément réel dans le transcript = une ligne « illustration réelle » dans le plan : quoi montrer, source (URL), à quel mot. Les recherches faites pour le script (sessions Claude, notes d'Ibrahim) sont la première source : les retrouver et les copier dans `00-brief/recherches.md`. |
+| **Collecte** | Captures dans un navigateur sans compte connecté (profils, compteurs, articles) ; miniatures de vidéos par l'accès public officiel (oEmbed TikTok, YouTube) ; captures d'écran des posts. **Jamais de contournement de CAPTCHA ou de connexion** : si une page est bloquée, on garde la partie visible (en-tête du profil) ou on demande à Ibrahim de capturer depuis son compte. Fichiers rangés dans `public/montage/<slug>/captures/`, avec la date de capture. |
+| **Mise en scène** | Carte de capture posée sur un fond assombri (`Shot`), légèrement inclinée, avec une légende courte ; le chiffre clé repris en grand (`[STAT]`) ; plusieurs vidéos d'un compte en éventail. Toujours **l'écran fait foi** (`[SCREEN-TRUTH]`) : le chiffre affiché est celui de la capture. |
+| **Vidéo sponsorisée** | Vérifier le brief : contenus de tiers (personnes, marques, logos) seulement si la marque l'a validé (sinon flou). Ibrahim tranche. |
+
 ### 4.5 Storytelling et illustration
 
 | ID | Élément | Réglages |
