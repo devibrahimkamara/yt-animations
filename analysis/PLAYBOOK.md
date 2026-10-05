@@ -75,7 +75,7 @@ Une vidéo d'Ibrahim, c'est **un tuto qui se regarde comme un documentaire premi
 - **La restructuration (étape 2) ne touche que ce qui n'est pas sponsorisé** : hook, transitions, réactions, contexte, CTA de fin.
 - En cas de doute sur un segment, on le traite comme sponsorisé et on pose la question à l'étape 0.
 - **Retours de la marque** (sur un brouillon ou sur le montage), une demande de la marque passe avant les interdits ci-dessus :
-  1. **Recaler les temps.** Si la marque a vu le brouillon brut, ses minutages correspondent à la **source**. On les convertit en temps de timeline avec l'EDL de l'étape 3 (source → T, puis ÷ 1,15 pour la version finale).
+  1. **Recaler les temps.** Si la marque a vu le brouillon brut, ses minutages correspondent à la **source**. On les convertit en temps de timeline avec l'EDL de l'étape 3 (source → T, puis ÷ la vitesse finale, §6bis).
   2. **Relire la phrase dite à cet instant** (transcript). Le visuel demandé doit illustrer ce qui est dit, sans que la voix change.
   3. **Capturer la page demandée en français et en haute définition.** ⚠️ Les sites des marques redirigent selon le pays de connexion : vérifier la langue, la devise et les prix sur la capture, puis la refaire en France (VPN) si besoin.
   4. **Consigner chaque demande** dans le plan (`04-plan.md` §0, une ligne par demande : demande, solution, temps). Si le montage est déjà rendu, on ne refait que le bloc concerné, puis on réassemble.
@@ -327,15 +327,15 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 
 ---
 
-### 6bis. Vitesse finale ×1,15 (choix d'Ibrahim, 4 octobre 2026)
+### 6bis. Vitesse finale ×1,10 (choix d'Ibrahim, mis à jour le 5 octobre 2026)
 
-Ibrahim a comparé ×1,00, ×1,10 et ×1,15 sur le hook et sur une démo : il préfère **nettement ×1,15**.
+Historique : Ibrahim a comparé ×1,00, ×1,10 et ×1,15 sur le hook et sur une démo, et avait choisi ×1,15 (AIsa, Hostinger). Après avoir revu la vidéo Hostinger publiée, il la trouve un peu trop rapide : **on descend d'un niveau, à ×1,10**.
 
-- **Statut : standard pour toutes les vidéos** (confirmé par Ibrahim le 4 octobre 2026). On l'applique par défaut, sans redemander.
-- **Où** : à la toute fin de l'étape 7, sur la vidéo assemblée. Images `setpts=PTS/1.15` et son `atempo=1.15` (la voix garde sa hauteur), puis master −14 LUFS en 2 passes. Une 21:41 devient une 18:52.
-- **Conséquence au montage** : tous les temps de lecture se calculent pour la vitesse finale. Un texte tenu `readTime(mots) × 1,15` à ×1,00 reste lisible une fois accéléré.
-- **Livrables** : sous-titres et chapitres divisés par 1,15 (`*_x1.15.srt`, `chapitres_x1.15.txt`, `description_x1.15.md`). On garde aussi la version ×1,00.
-- **Sponsor** : une démonstration sponsorisée accélérée enfreint la règle 13 et le §1bis. Avant de publier en ×1,15 une vidéo sponsorisée, Ibrahim valide avec le sponsor. Sinon, on n'accélère que les passages hors démo.
+- **Statut : standard pour toutes les vidéos, à partir de la vidéo qui suit Hostinger**. On l'applique par défaut, sans redemander. Les vidéos déjà publiées ne sont pas régénérées.
+- **Où** : à la toute fin de l'étape 7, sur la vidéo assemblée. Images `setpts=PTS/1.10` et son `atempo=1.10` (la voix garde sa hauteur), puis master −14 LUFS en 2 passes. `analysis/cloud/assemble_remote.sh` applique la vitesse de la variable `SPEED` (défaut 1.10).
+- **Conséquence au montage** : tous les temps de lecture se calculent pour la vitesse finale. Un texte tenu `readTime(mots) × 1,10` à ×1,00 reste lisible une fois accéléré.
+- **Livrables** : sous-titres et chapitres divisés par 1,10 (`*_x1.10.srt`, `chapitres_x1.10.txt`, `description_x1.10.md`). On garde aussi la version ×1,00.
+- **Sponsor** : une démonstration sponsorisée accélérée enfreint la règle 13 et le §1bis. Avant de publier une vidéo sponsorisée accélérée, Ibrahim valide avec le sponsor. Sinon, on n'accélère que les passages hors démo.
 
 ## 7. La restructuration (méthode de l'étape 2 du process)
 
@@ -402,7 +402,7 @@ Les composants réutilisables sont dans `src/montage/`.
 | **6** | **Production par blocs** | Rendu bloc par bloc (un chapitre, 1 à 3 min). Avant chaque envoi : mesure de fluidité (à-coups de zoom), vérification du temps de lecture des textes, contrôle visuel des planches. | `06-blocs/bloc-N.mp4`, un par un | **Chaque bloc**. Les retours sur un bloc s'appliquent aux suivants. |
 | **7** | **Assemblage et finitions** | Assemblage, raccords entre blocs, **re-finalisation de la première minute** (montée en dernier, avec tout ce qu'on sait du reste), master −14 LUFS / −1 dBTP, relecture automatique en 4 passes (§9) | `07-final/` : vidéo complète + rapport de relecture (ce qui passe, ce qui a été corrigé) | Le visionnage complet, **sur téléphone** puis au casque |
 | **8** | **Export et livrables** | Export final (1080p ou 4K, débit élevé, AAC 48 kHz), chapitres YouTube définitifs, sous-titres `.srt` (noms propres corrigés, noms de famille de tiers retirés), liste de 3 ou 4 moments candidats pour des Shorts, et **les ressources de la description** (§8bis) | `08-livrables/` : `chapitres.txt` + `.srt` + `shorts.md` + `description.md` + `ressources/` | Le « bon pour publication » et la liste des ressources |
-| **8ter** | **Mise en ligne** (choix d'Ibrahim, 4 octobre 2026 : par Chrome, pas par l'API) | Dans YouTube Studio, via Claude in Chrome, sur la session déjà connectée d'Ibrahim (aucun identifiant ni jeton manipulé par Claude) : upload de la version ×1,15, titre, description, chapitres, tags, sous-titres `.srt`, case **« Contient une promotion rémunérée »** si sponsor, miniature fournie par Ibrahim, écran de fin. La vidéo reste en **privé ou programmée**. On n'utilise pas l'API YouTube : un projet non audité verrouille les vidéos en privé, et l'écran de fin n'y existe pas. | Un récapitulatif de la mise en ligne (lien Studio, réglages) | **Le clic sur « Publier » : uniquement après un « oui » explicite d'Ibrahim, à chaque vidéo** (et accord de la marque si le contrat le prévoit) |
+| **8ter** | **Mise en ligne** (choix d'Ibrahim, 4 octobre 2026 : par Chrome, pas par l'API) | Dans YouTube Studio, via Claude in Chrome, sur la session déjà connectée d'Ibrahim (aucun identifiant ni jeton manipulé par Claude) : upload de la version accélérée (§6bis), titre, description, chapitres, tags, sous-titres `.srt`, case **« Contient une promotion rémunérée »** si sponsor, miniature fournie par Ibrahim, écran de fin. La vidéo reste en **privé ou programmée**. On n'utilise pas l'API YouTube : un projet non audité verrouille les vidéos en privé, et l'écran de fin n'y existe pas. | Un récapitulatif de la mise en ligne (lien Studio, réglages) | **Le clic sur « Publier » : uniquement après un « oui » explicite d'Ibrahim, à chaque vidéo** (et accord de la marque si le contrat le prévoit) |
 | **9** | **Boucle d'apprentissage** (72 h après publication) | Lecture de la courbe de rétention fournie par Ibrahim (capture d'écran ou chiffres) : chute à 30 s, 3 décrochages, pic | Une ligne ajoutée à `analysis/registre.md` + une proposition d'ajustement du playbook | Les ajustements du playbook (§11) |
 
 **Règles du process :**

@@ -2,6 +2,8 @@
 # Exécuté SUR le serveur par assemble_remote.sh. Usage : assemble_server_side.sh <NomFinal> bloc_raw.mp4:nb_images …
 set -euo pipefail
 NAME=$1; shift
+SPEED=${SPEED:-1.10}  # vitesse finale (PLAYBOOK §6bis)
+SFX=x$SPEED
 cd /root/rendu/blocs
 rm -rf final && mkdir final
 : > final/list.txt
@@ -26,9 +28,9 @@ measure() { # $1 = filtre avant loudnorm
 }
 MI=$(measure "")
 ffmpeg -v error -y -i final/video.mp4 -i final/bande.wav -map 0:v -map 1:a -c:v copy -af "loudnorm=I=-14:TP=-1:LRA=11:$MI:linear=true,aresample=48000" -c:a aac -b:a 320k -movflags +faststart -shortest "final/$NAME.mp4"
-MI2=$(measure "atempo=1.15,")
-ffmpeg -v error -y -i final/video.mp4 -i final/bande.wav -filter_complex "[0:v]setpts=PTS/1.15[v];[1:a]atempo=1.15,loudnorm=I=-14:TP=-1:LRA=11:$MI2:linear=true,aresample=48000[a]" -map "[v]" -map "[a]" -c:v libx264 -crf 14 -preset medium -pix_fmt yuv420p -c:a aac -b:a 320k -movflags +faststart "final/${NAME}_x1.15.mp4"
-for v in "final/$NAME.mp4" "final/${NAME}_x1.15.mp4"; do
+MI2=$(measure "atempo=$SPEED,")
+ffmpeg -v error -y -i final/video.mp4 -i final/bande.wav -filter_complex "[0:v]setpts=PTS/$SPEED[v];[1:a]atempo=$SPEED,loudnorm=I=-14:TP=-1:LRA=11:$MI2:linear=true,aresample=48000[a]" -map "[v]" -map "[a]" -c:v libx264 -crf 14 -preset medium -pix_fmt yuv420p -c:a aac -b:a 320k -movflags +faststart "final/${NAME}_$SFX.mp4"
+for v in "final/$NAME.mp4" "final/${NAME}_$SFX.mp4"; do
   echo "$v : $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$v") s"
   ffmpeg -hide_banner -i "$v" -af ebur128=peak=true -f null - 2>&1 | grep -E "^\s+(I|Peak):" | tail -2
 done
