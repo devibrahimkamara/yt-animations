@@ -1,6 +1,25 @@
-# Playbook de montage — chaîne d'Ibrahim (tutos IA · make money)
+# Playbook de montage — chaîne d'Ibrahim (le cobaye : tests et défis chiffrés · vie d'entrepreneur)
 
-*Version 1 — 4 octobre 2026.*
+*Version 2 — 29 octobre 2026 (version 1 du 4 octobre 2026, tutoriels).*
+
+> **v2 : aligné sur le positionnement des comptes perso, validé par Ibrahim le 29/10/2026.**
+> - Le positionnement sert à trouver les idées, écrire les scripts, tourner **et monter**.
+> - Sources : `~/ibrahim-brand/03-positionnement.md`, `05-formats-a-tester.md`, `scripts-tournage/00-cahier-des-charges.md` et l'analyse `07-playbook-montage-vs-positionnement.md`.
+> - **Ce qui change** :
+>   - le but : un test chiffré, pas un tutoriel ;
+>   - le ton : sérieux mais chill ;
+>   - la musique ;
+>   - le sponsor dans l'histoire ;
+>   - les deux fins ;
+>   - les lignes rouges à l'image ;
+>   - le terrain, les interviews, les compteurs, les formats courts 9:16 ;
+>   - les miniatures ;
+>   - les cases YouTube.
+> - **Piliers** :
+>   - A, « le cobaye » : tests et défis chiffrés, environ 60 % ;
+>   - B, « entre deux mondes » : vie d'entrepreneur, Indonésie, voyages, environ 25 % ;
+>   - C, réponses aux recherches : monétisation, argent en ligne, freelance, environ 15 %.
+> - La checklist d'Ibrahim (`checklist_ibrahim.md`) avait été écrite pour des défis « Jour X/30 ». La v2 revient à cet usage.
 
 **Sources :**
 - analyse image par image de 4 vidéos de référence :
@@ -26,9 +45,9 @@
 
 ## 0. En une page
 
-Une vidéo d'Ibrahim, c'est **un tuto qui se regarde comme un documentaire premium sobre** :
-- la preuve est montrée dans les 5 premières secondes ;
-- un plan visible du tuto sert de fil rouge ;
+Une vidéo d'Ibrahim, c'est **un test réel, avec un enjeu, des règles et des vrais chiffres**. On voit Ibrahim essayer, rater et réussir. L'outil, souvent une IA, est **l'instrument du test, jamais le sujet d'une leçon**. Le ton est **sérieux mais chill**. Concrètement :
+- la preuve est montrée dans les 5 premières secondes (succès ou échec : c'est la fin réelle) ;
+- le **Tableau du défi** (règles, compteur, objectif) sert de fil rouge ;
 - chaque écran est mis en scène, jamais montré brut ;
 - les textes sont lisibles sur un téléphone ;
 - une identité visuelle et sonore reconnaissable en 3 secondes.
@@ -48,7 +67,7 @@ Une vidéo d'Ibrahim, c'est **un tuto qui se regarde comme un documentaire premi
 
 1. **La preuve avant la parole.** Les 3 à 5 premières secondes montrent le résultat réel : le jeu qui tourne, l'app générée, le chiffre. On n'ouvre jamais sur « salut, aujourd'hui… ». *(checklist + recherche : 55 % des spectateurs perdus avant 60 s, chiffre de source secondaire.)*
 2. **La promesse est tenue dans la première minute.** Le titre et la miniature doivent se retrouver dans ce qu'on montre avant 0:60. *(25 % des abandons viennent d'une info attendue qui n'est pas là, TechSmith.)*
-3. **Le plan du tuto est visible.** Un sommaire apparaît dans les 35 premières secondes. Il revient comme tracker à chaque étape, et une pastille « Étape N/T » reste affichée. *(Martell « Habits » et Swadia ; segmentation de Mayer.)*
+3. **Le protocole et le compteur sont visibles.** Règles, budget, durée et enjeu (« sinon… ») sont posés à l'écran et à l'oral avant 60 s. Le **Tableau du défi** (« Jour 3/7 · 152 € / 500 € », « Tentative 2/3 ») revient à chaque palier et reste affiché en pastille. *(checklist d'Ibrahim : compteurs permanents ; 04b point 6.)*
 4. **Jamais deux explications d'affilée** (alternance A/E). Une explication ne dépasse jamais 60 s, avec un changement visuel toutes les 15 à 20 s. *(checklist ; le creux 4:00–6:04 de Martell AI est l'exemple à éviter.)*
 5. **Chaque écran est mis en scène :** établissement, puis plongée, puis tenue. Jamais une capture plein écran brute plus de 2 s. *(Swadia, Sanji.)*
 6. **Tout texte trop petit est recréé en grand** : prompt, commentaire, calcul, réglage. On ne se contente pas de le zoomer. *(Sanji ; c'est la solution au problème mobile.)*
@@ -59,6 +78,10 @@ Une vidéo d'Ibrahim, c'est **un tuto qui se regarde comme un documentaire premi
 11. **Le dernier tiers ne ralentit jamais.** On n'annonce pas la fin. La vidéo se termine sur un renvoi vers une autre vidéo dans les 20 dernières secondes.
 12. **On reste sobre et crédible.** Pas de flèches ni de cercles rouges, pas de néon, pas de confettis. L'IA générée est annoncée comme telle. L'échec reçoit le même traitement graphique que le succès.
 13. **Le contenu sponsorisé est intouchable.** Quand une vidéo est sponsorisée, toutes les présentations et démonstrations du produit ont été validées par la marque. Voir les règles détaillées au §1bis.
+14. **Sérieux mais chill.** On garde les rires, les réactions, les blancs comiques et les ratés. Pas de « mode professeur », pas de suspense sous un passage pratique (§ 5bis).
+15. **On monte la fin réelle.** Les scripts prévoient deux fins (réussite / échec). À l'étape 0, Ibrahim indique celle qui s'est produite. Le hook, la miniature et les compteurs la suivent. Aucune trace de la fin non tournée ne reste.
+16. **Lignes rouges à l'image.** Pas de religion ni de politique, aucun chiffre du business indonésien, jamais de mention des chaînes faceless, et le visage de l'enfant d'Ibrahim n'est pas montré par défaut. Détail au § 4.9.
+17. **Montants en euros.** Tout montant incrusté est en euros. Une conversion en FCFA (taux fixe 1 € = 655,957 FCFA) apparaît en petit, seulement si Ibrahim l'a décidé pour la vidéo.
 
 ### 1bis. Règles des vidéos sponsorisées
 
@@ -67,8 +90,15 @@ Une vidéo d'Ibrahim, c'est **un tuto qui se regarde comme un documentaire premi
 | Couper, raccourcir ou fusionner une démonstration ou une présentation | Zoom, plongée et recadrage sur l'interface (`[SCREEN-STAGE]`), tant que l'élément montré reste visible |
 | Accélérer une démonstration (pas de ×4, pas de time-skip ajouté) | `[SPOTLIGHT]`, `[HIGHLIGHT]`, `[CURSOR]`, `[STEP-LT]`, `[CHAPTER-PILL]`, pastilles et callouts courts placés à côté de l'élément |
 | Réordonner les démonstrations, ou en déplacer une | Effets sonores, musique, jingle, mise en valeur de la voix |
-| Masquer l'interface du produit plus de ~1–2 s (carte plein écran, insert par-dessus) | **Ajouter** du contenu *entre* deux démonstrations (carton d'étape, Carte du tuto, teaser, `[SHOWCASE]` du résultat), ce qui allonge sans rien retirer |
+| Masquer l'interface du produit plus de ~1–2 s (carte plein écran, insert par-dessus) | **Ajouter** du contenu *entre* deux démonstrations (carton de palier, Tableau du défi, teaser, `[SHOWCASE]` du résultat), ce qui allonge sans rien retirer |
 | Modifier ce qui est dit sur le produit | Variante « côte à côte » des cartes recréées (`[PROMPT-CARD]`, `[RECREATE]`) : l'interface reste visible, légèrement assombrie, et la carte se pose à côté |
+
+**Le sponsor dans le positionnement (v2)** :
+- **Place** : intégration vers **1:30-2:00**, de **55 à 90 s**, amenée par une phrase de l'histoire (Fuzay² + LegalPlace, Bekam + LemFi : `04b` § 4). L'autre option : l'outil du sponsor **est** l'instrument du défi, sans annonce séparée (« défi sponsorisé »).
+- **Un sponsor au plus par vidéo.** Jamais de sponsor dans un « je teste les promesses des autres » (L3), un micro-trottoir (C6) ou un compteur sans voix (C9).
+- **On rend la démo intéressante d'abord par l'enjeu**, puis par l'habillage. L'enjeu, c'est ce que l'outil doit réussir, le temps ou l'argent qui reste. Les interdits ci-dessus restent valables.
+- **Une vidéo dédiée devient un défi sponsorisé.** La marque paie, mais la vidéo reste un test avec un résultat montré tel quel, même mauvais. Le partenaire l'accepte par écrit avant le tournage.
+- **La mention « Collaboration commerciale » s'affiche dans la vidéo** quand la loi ou le contrat l'exige (loi du 9 juin 2023). Elle s'affiche en permanence si le format le prévoit, comme C8 version A.
 
 - **Avec des pistes séparées** (face cam / écran), la marque a validé le *contenu*, pas un montage visuel. Donc l'interface est à l'écran **dès qu'il s'y passe une action**, et la face cam plein écran n'est autorisée que pendant les explications où l'écran est figé (validé par Ibrahim sur AIsa).
 - Les attentes déjà coupées par le monteur (« après quelques minutes… ») restent telles quelles.
@@ -114,7 +144,7 @@ Référence complète : `analysis/identite-v2/charte.md`. Planche de référence
 | Interface / clic | `click_select`, `click_classic`, `click_ui_tone`, `click_tech_select` | Clic réel dans une démo, entrée de pastille |
 | Validation | `click_box_check__mk1120` | Case cochée, trait sous un mot, étape terminée |
 | Montée de tension | `riser_trailer__mk790` (2,6 s), `riser_stutter_space__mk1144` (6,5 s) | Les secondes avant un résultat ou une révélation (pic calé sur l'image) |
-| Musique | **Propre à chaque vidéo** (voir §5bis), depuis Epidemic Sound | Une musique par partie, style sérieux. Le kit Mixkit initial est abandonné (jugé « pas premium »). |
+| Musique | **Propre à chaque vidéo** (voir §5bis), depuis Epidemic Sound | Une musique par partie, style sérieux mais chill selon le moment (§ 5bis). Le kit Mixkit initial est abandonné (jugé « pas premium »). |
 | **À créer** | Jingle d'étape de 2 s (motif fixe, monte d'un demi-ton à chaque étape) | Idée de Martell « Habits », rendue originale. Généré une fois, puis réutilisé. |
 
 Tous les gains sont calculés **par rapport à la voix** (pop −9 dB, clic −12 dB, impact −4 dB sous la voix p90). Le **pic** de chaque son est calé sur l'image, grâce à `public/sfx/_analyse.json` (champ `peak_t`).
@@ -122,27 +152,33 @@ Tous les gains sont calculés **par rapport à la voix** (pop −9 dB, clic −1
 ### 2.3 Les 3 gestes signature (ce qui nous rend reconnaissables)
 
 1. **« Le Glissé »** : la face cam rétrécit en carte de verre et glisse vers le médaillon en bas à droite, puis revient. C'est la transition entre « moi » et « l'écran », environ 25 fois par vidéo. *(inspiré de Sanji, sans rotation ou ≤ 5°, trajectoire courbe, ombre douce)*
-2. **« Le Prompt décortiqué »** : le prompt sort de l'interface, se pose en grand sur le fond noir, et chaque partie s'allume en lime au moment où on la nomme, avec des étiquettes françaises (Rôle · Tâche · Format · Contraintes). *(inspiré de Swadia et Sanji, avec des libellés propres à Ibrahim)*
-3. **« La Carte du tuto »** : un schéma de workflow en N blocs (les étapes, chacune avec le logo de l'outil utilisé). Il apparaît dans le hook, revient à chaque étape avec le bloc actif allumé, et son dernier bloc, le résultat, se révèle au climax. *(combine la pyramide de Martell AI, le tracker de Martell « Habits », les piliers de Swadia et le tableau de Sanji, en une seule carte maîtresse)*
+2. **« Le Prompt décortiqué »** : le prompt sort de l'interface, se pose en grand sur le fond noir, et chaque partie s'allume en lime au moment où on la nomme, avec des étiquettes françaises (Rôle · Tâche · Format · Contraintes). *(inspiré de Swadia et Sanji, avec des libellés propres à Ibrahim)* **v2 : réservé à un seul moment clé par vidéo**, la consigne donnée à l'IA du défi (L1, L6). Ce n'est plus un geste répété : le prompt est un élément de l'histoire, pas une leçon.
+3. **« Le Tableau du défi »** (remplace « la Carte du tuto ») : le compteur du test (« Jour N/T », « montant / objectif », « reste X € », « Tentative X/Y ») et les règles en une ligne. Il est construit dans le protocole (avant 60 s), revient à chaque palier, puis se fige sur le chiffre final au verdict, accompagné du son de révélation. Il est alimenté par **le registre du test** (`registre.json` : une ligne par dépense, gain ou palier, avec la capture qui le prouve). Aucun chiffre ne s'affiche sans ligne dans ce registre. *(checklist d'Ibrahim : compteurs permanents Jour X/30 ; `[STAT]` et `[LEDGER]`)*
 
 ---
 
-## 3. Structure d'une vidéo (tuto de 8 à 15 min)
+## 3. Structure d'une vidéo longue (test, défi ou vie d'entrepreneur, de 12 à 20 min)
 
-### 3.1 La timeline type
+Le script de tournage (`~/ibrahim-brand/scripts-tournage/`) donne déjà la structure : il est construit pour la rétention, et on ne le restructure pas (§ 7). Ce tableau sert de **contrôle**, pas de modèle à imposer.
+
+### 3.1 La timeline type (pilier A : test ou défi)
 
 | Moment | Contenu | Type | Densité (plans) | Éléments |
 |---|---|---|---|---|
-| **0:00–0:05** | **Le résultat réel**, plein écran, avec la phrase-choc d'Ibrahim | P | 2 à 3 plans | `[PROOF-OPEN]`, sans musique, puis `[REVEAL]` sur le chiffre ou le mot-clé |
-| 0:05–0:15 | Face cam, promesse en une phrase + tension (doute, enjeu, « sans coder ») | E | 4 à 6 | `[FAUX-MULTICAM]`, `[KCAP]` sur la phrase-thèse, musique qui entre |
-| 0:15–0:35 | **La Carte du tuto** (sommaire en N étapes + prérequis : outil, prix, temps) | T | 8 à 12 | `[TUTO-MAP]` construite étape par étape, logos des outils |
-| 0:35–0:60 | Teaser des moments forts (1 s chacun, sans contexte) + boucle ouverte (« à la fin, je te montre… ») | T | 10 à 15 | `[TEASER]`, pastille « À venir » |
-| 0:60 | Étape 1 | A | — | `[STEP-CARD]` (carton d'étape + tracker) |
-| ~2:30–3:00 | **Re-engagement n°1** : premier résultat intermédiaire spectaculaire | P | — | `[SHOWCASE]` + `[REVEAL]` |
-| Après l'étape 2 | CTA ou sponsor **lié au problème qu'on vient de résoudre**, démontré, ≤ 30 s | S | — | `[CTA-DEMO]` |
-| ~6:00 (ou 2/3) | **Re-engagement n°2** : l'amélioration la plus visuelle ou le moment wow | P | Plan tenu 5 à 15 s | Respiration avant, puis `[REVEAL]` |
-| Dernier tiers | Étapes finales **sans ralentir** ; « la dernière étape, c'est celle que 90 % sautent » | A | Montante | `[STEP-CARD]`, densité maintenue |
-| Fin | Résultat final complet → récap de 10 s (la Carte entièrement allumée) → **renvoi vers une autre vidéo** dans les 20 dernières secondes, sans « au revoir » | P/S | Montante | `[TUTO-MAP]` complète, `[NEXT-VIDEO]` |
+| **0:00–0:05** | **Le résultat réel** (fin réelle : vente, notification, solde, ou le blocage), avec la phrase-choc d'Ibrahim | P | 2 à 3 plans | `[PROOF-OPEN]`, sans musique, puis `[REVEAL]` sur le chiffre |
+| 0:05–0:30 | Retour au début : la promesse du titre et de la miniature tenue, l'enjeu | E | 4 à 6 | `[FAUX-MULTICAM]`, `[KCAP]` sur la phrase-thèse, musique qui entre |
+| 0:30–0:60 | **Le protocole** : règles, budget, durée, enjeu (« sinon… ») | T | 8 à 12 | **Tableau du défi** construit règle par règle |
+| 0:35–0:60 | Teaser des moments forts (1 s chacun, sans contexte) + boucle ouverte (« à la fin, tu vois le vrai bilan ») | T | 10 à 15 | `[TEASER]`, pastille « À venir » |
+| **1:30–2:00** | Sponsor : intégration de 55 à 90 s amenée par l'histoire, **ou** l'outil du sponsor entre comme instrument du défi | S | — | § 1bis |
+| Paliers | « Jour N », « Tentative X/Y » : action, réaction, chiffre | A/P | — | `[STEP-CARD]` « Jour 3/7 », compteur mis à jour |
+| ~25 % / 50 % / 65 % | Re-engagements : 1re vente ou 1er blocage, retournement, moment le plus fort | P | Plan tenu 5 à 15 s | Respiration avant, puis `[REVEAL]` |
+| Dernier tiers | Les derniers paliers **sans ralentir** | A | Montante | Densité maintenue |
+| 3 à 7 dernières minutes | **Le bilan** : recettes, dépenses, frais, bénéfice net. Long, c'est la récompense attendue (`04b` point 8) | P | Montante | `[LEDGER]`, `[PROOF-3T]`, Tableau du défi figé |
+| Fin | Verdict → « ce que je referais autrement » → prochain test (« Commente… ») **ou** renvoi vers une autre vidéo dans les 20 dernières secondes, sans « au revoir » | P/S | Montante | `[NEXT-VIDEO]` |
+
+**Piliers B et C** :
+- **B** (vlog, expatrié, portrait chiffré) : même ouverture sur le moment le plus fort. Le protocole devient « ce que tu vas voir » : lieu, personne, question. Densité plus basse, voir § 4.6.
+- **C** (alerte, monétisation) : preuve Studio à 0:00, puis le constat, puis ce que le spectateur peut faire. Ce n'est jamais un tuto pas à pas.
 
 Événements majeurs (wow, révélation, nouvelle étape) **à ~25 %, 50 % et 65 %** de la durée. Interruption de motif majeure toutes les 60 à 90 s.
 
@@ -169,13 +205,14 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 |---|---|---|
 | `[FAUX-MULTICAM]` | 3 cadrages tirés d'un plan unique : **Large** 100 % · **Serré** 113–116 % centré visage · **Décalé** 110–115 %, visage sur un tiers (pour poser un panneau de l'autre côté) | Coupe **uniquement dans une pause de voix** (Whisper). Changement toutes les 3 à 8 s. Zoom max ~1,16 en 1080p, ~2,0 en 4K. |
 | `[PUSH-IN]` | Zoom progressif sur ~1 plan sur 5 : lent (+4 à +8 % sur 5 à 8 s) sur les phrases-thèses ; plus marqué (+8 à +10 % sur 2 s) seulement dans les 30 premières secondes | `inOut(quad)`, à-coup max mesuré < 0,05 %/frame. Parfois un léger dézoom (−3 %) pour varier. |
-| `[KCAP]` | Sous-titre cinétique **seulement sur la phrase-clé** (1 ou 2 par chapitre), mot par mot, mots-clés en `ACCENT_LIGHT` | 84 px, bas-centre, ombre. Temps de lecture (règle 9). **Jamais sur une capture d'écran.** |
+| `[KCAP]` | Sous-titre cinétique **seulement sur la phrase-clé** (1 ou 2 par chapitre), mot par mot, mots-clés en `ACCENT_LIGHT` | 84 px, bas-centre, ombre. Temps de lecture (règle 9). **Jamais sur une capture d'écran.** v2 : règle des vidéos longues. Pour les formats courts, voir § 14 (sous-titres selon le format). |
 | `[KEYLINE]` | Phrase-clé flottante (2 à 6 mots) dans l'espace vide à côté du visage, côté choisi selon la position du visage | Avec `[FAUX-MULTICAM]` « Décalé ». Alterne gauche/droite pour les énumérations. |
 | `[UNDERLINE]` | Trait `ACCENT` qui se dessine sous les mots-clés à la fin de la phrase | + `click_box_check` |
 | `[GLASS-LIST]` | Liste en verre à droite (visage décalé à gauche), qui se construit au rythme de la voix. Cumulative : elle revient avec un item de plus à chaque retour. | Coches `ACCENT` ou vertes, sortie en glissement vers la droite |
 | `[STAT]` | Chiffre héros ou compteur qui défile (roulette en ease-out) avec une ligne de contexte minuscule (« jour 3 sur 7 », « coût total ») | Le compteur ralentit puis se fige, + `[REVEAL]` (son). Tenu ≥ 3 s. |
 | `[FLOW-LINE]` | Processus en 3 étapes dessiné par un fil lumineux dans l'espace vide (« contacter → attendre → négocier ») | Dessin du trait 0,6 s par segment, libellés en flou → net *(inspiré de Sanji)* |
-| `[SELF-BROLL]` | B-roll réel d'Ibrahim : il tape sur son ordi, il est au téléphone, en coulisses | Prouve qu'il fait vraiment les manipulations. À tourner une fois, à réutiliser. |
+| `[SELF-BROLL]` | B-roll réel d'Ibrahim : il tape sur son ordi, il est au téléphone, en coulisses | Prouve qu'il fait vraiment les manipulations. v2 : **propre à chaque vidéo** (le jour du test, le lieu du tournage). On ne réutilise un plan générique qu'en dernier recours. |
+| `[REACTION]` | Réactions d'Ibrahim gardées entières : rire, surprise, déception, blague, raté | v2, règle 14. Le dérushage ne raccourcit pas ces moments. On les repère à l'étape 1 et on les liste dans `01-analyse.md`. |
 
 ### 4.2bis Démo longue : jamais de temps mort à l'écran (retour d'Ibrahim, 6 octobre 2026)
 
@@ -190,7 +227,9 @@ Une démo où « rien ne se passe à l'écran » pendant plus de **15 s** (même
 
 **Retour face cam** : toutes les 60 à 120 s de démo, pour le « pourquoi », une mise en garde, une réaction ou une transition d'étape.
 
-### 4.2 Démo d'écran (cœur des tutos : ~85 % du temps)
+### 4.2 Démo d'écran (une preuve parmi d'autres)
+
+v2 : l'écran n'est plus le cœur de la vidéo. On le montre **quand il prouve quelque chose ou fait avancer le test** : une décision de l'IA, un gain, un blocage, un résultat généré. Le terrain, la face cam, le vlog, l'interview et les captures de preuve se partagent le reste, selon le script. Les règles ci-dessous s'appliquent à chaque séquence d'écran.
 
 **La séquence de base `[SCREEN-STAGE]`, à chaque entrée dans un écran :**
 1. **Entrée par « Le Glissé »** (`[GLIDE]`) : la face cam devient médaillon et révèle l'écran.
@@ -219,9 +258,9 @@ Une démo où « rien ne se passe à l'écran » pendant plus de **15 s** (même
 | ID | Élément | Réglages |
 |---|---|---|
 | `[GLIDE]` | **Le Glissé**, face cam ↔ médaillon (voir §2.3) | ~1 s, spring amorti, + `pop_*` léger. **La** transition par défaut entre face cam et écran. |
-| `[STEP-CARD]` | Carton d'étape plein écran : un volet aurora monte du bas (0,4 s), « Étape 3/5 » + titre de 3 mots + **la Carte du tuto** avec le bloc actif allumé et une barre de progression | ≤ 2,5 s au total. + `swoosh_vacuum` (pic calé sur le volet) + jingle d'étape. Généré depuis le JSON des étapes : un libellé erroné est impossible. |
-| `[TUTO-MAP]` | **La Carte du tuto** : N blocs reliés (workflow), chaque bloc avec le logo de l'outil et un livrable. Construite dans le hook, rappelée à chaque étape, complète à la fin. | Composant unique, état `activeIndex` |
-| `[CHAPTER-PILL]` | Pastille permanente en haut à gauche sur la face cam : « Étape 2/5 · Générer les visuels », avec une mini-barre segmentée | ≥ 40 px. Masquée pendant les plans écran (où `[STEP-LT]` prend le relais). |
+| `[STEP-CARD]` | Carton de palier plein écran : un volet aurora monte du bas (0,4 s), **« Jour 3/7 »** ou **« Tentative 2/3 »** + titre de 3 mots + le Tableau du défi avec le compteur à jour | ≤ 2,5 s au total. + `swoosh_vacuum` (pic calé sur le volet) + jingle de palier. Généré depuis le registre du test : un libellé ou un chiffre erroné est impossible. |
+| `[DEFI-BOARD]` (remplace `[TUTO-MAP]`) | **Le Tableau du défi** : règles en une ligne, compteur (jour, montant / objectif, reste), état du test. Construit dans le protocole, rappelé à chaque palier, figé au verdict. | Composant unique alimenté par `registre.json`. Le composant `TutoMap` peut servir de base. |
+| `[CHAPTER-PILL]` | Pastille permanente en haut à gauche : **« Jour 2/7 · 48 € / 100 € »** ou « Tentative 2/3 », avec une mini-barre segmentée | ≥ 40 px. Toujours au même endroit dans toutes les vidéos (checklist : « position des compteurs » figée). |
 | `[TEASER]` | « À venir » : 3 ou 4 fragments d'une seconde des moments forts, avec une pastille « À venir » | Dans les 35 à 60 premières secondes uniquement |
 | `[BRIDGE]` | Phrase-pont récapitulative avant chaque étape : « Ton X est prêt, maintenant il faut Y. Étape N. » | Au script. Le carton se cale **automatiquement** sur le mot « étape » du transcript. |
 | `[CHECKLIST]` | Sous-étapes en pastilles qui se cochent à chaque retour (✓ + libellé court) ; les suivantes restent numérotées (boucle ouverte) | + `click_box_check` à chaque coche *(Martell « Habits » : bulles 1-2-3-4)* |
@@ -237,6 +276,9 @@ Une démo où « rien ne se passe à l'écran » pendant plus de **15 s** (même
 | `[SCREEN-TRUTH]` | **En cas d'écart entre un chiffre dit à l'oral et celui affiché dans l'interface, l'écran fait foi** (consigne d'Ibrahim). On affiche et on incruste la valeur de l'écran, sans poser la question. | Pas d'incrustation qui contredise l'interface |
 | `[TILT-DOC]` | Source (article, rapport, page officielle) en carte légèrement inclinée sur l'aurora, phrase-clé surlignée, puis le chiffre en compteur | 1 à 2 s sur le document, puis `[STAT]` |
 | `[ENGAGEMENT]` | Compteurs réels (vues, abonnés, ventes) zoomés au curseur dans l'interface native, commentaires réels **recréés en grand** | Captures natives = preuve sociale |
+| `[PROOF-OWNER]` (v2) | Les preuves de **gains et de dépenses** (banque, Fiverr, ComeUp, Studio, paiements) sont **filmées ou capturées par Ibrahim**, en plan continu, le jour où elles arrivent. Claude ne se connecte jamais à ses comptes. | Chaque capture a sa ligne dans `registre.json` (date, montant, fichier). Jamais de capture refaite ou retouchée. |
+| `[VERDICT-TAG]` (v2) | Verdict en étiquettes sobres : « VRAI » / « ARNAQUE », « ÇA MARCHE » / « ÇA NE MARCHE PAS », couleurs d'état (`#8ee3a1` / `#ff8a7a`) | C1, L3. Jamais de rouge criard ni de flèches. L'échec et le succès ont le même traitement (règle 12). |
+| `[PLAN-VS-RESULT]` (v2) | « Prévu / obtenu » côte à côte : le plan (image clé, référence, consigne) à gauche, le résultat au même instant à droite | Généralise `ResultDuo` (§ 4.2bis). Brief Higgsfield (Frames, References), C8. |
 
 ### 4.4bis Illustrer par le réel : montrer plutôt qu'animer (règle d'Ibrahim, 5 octobre 2026)
 
@@ -259,6 +301,8 @@ Une démo où « rien ne se passe à l'écran » pendant plus de **15 s** (même
 
 ### 4.4ter Regard caméra : quand Ibrahim lit son script, on ne le montre pas (retour d'Ibrahim, 6 octobre 2026)
 
+v2 : les nouveaux scripts sont parlés, souvent en selfie ou sur le terrain. Au tournage, on utilise un prompteur ou des phrases apprises plutôt que la lecture sur l'ordinateur. La règle reste valable pour les passages encore lus. Elle ne s'applique pas aux réactions, aux hésitations ni aux selfies de vlog : ce sont des moments réels.
+
 Sur les passages scriptés (intro mot pour mot, explications lues), Ibrahim lit son ordinateur : il ne regarde pas l'objectif, parce qu'il **prévoit que ces passages seront entièrement illustrés**. Le laisser à l'écran, même sous une illustration posée par-dessus, « n'est pas professionnel ».
 - **Détection automatique à l'étape 1** : `analysis/tools/gaze.py` (MediaPipe, serveur, ~45 s pour 10 min) mesure l'inclinaison de la tête et le regard vers le bas → `lecture_script.json` (critère : tangage lissé < −6,5° ou < −4° avec regard bas > 0,62, sur au moins 1,2 s). Sur Higgs Influ 2 : 0:00–0:18, 1:28–1:46, 5:15–5:26, 5:37–5:49, 9:00–9:11, 9:15–9:20.
 - **Règle** : chaque passage détecté devient une **illustration plein cadre opaque** (vidéos et captures réelles, §4.4bis) qui couvre toute sa durée. La face cam revient dès qu'Ibrahim regarde l'objectif.
@@ -268,16 +312,67 @@ Sur les passages scriptés (intro mot pour mot, explications lues), Ibrahim lit 
 
 | ID | Élément | Réglages |
 |---|---|---|
-| `[STORY-ILLU]` | Anecdotes et métaphores illustrées par des **images IA d'un style maison unique**, toujours le même (proposition : trait encre + une seule couleur `ACCENT`). On peut partir d'une vraie photo d'Ibrahim (img2img). | Le style IA signifie « récit / passé / idée » ; le réel signifie « maintenant / preuve » *(Martell « Habits »)* |
+| `[STORY-ILLU]` | Anecdotes et métaphores illustrées par des **images IA d'un style maison unique**, toujours le même (proposition : trait encre + une seule couleur `ACCENT`). On peut partir d'une vraie photo d'Ibrahim (img2img). | Le style IA signifie « récit / passé / idée » ; le réel signifie « maintenant / preuve » *(Martell « Habits »)*. v2 : **le réel d'abord** (photos, archives, lieux d'Ibrahim). L'IA seulement pour ce qu'on ne peut ni filmer ni retrouver. |
 | `[STORY-BED]` | Une seule nappe musicale un peu plus présente sous une histoire personnelle (−30 dB sous la voix) | Une fois par vidéo au maximum |
-| `[AI-LABEL]` | Tout visuel ou toute voix IA est annoncé comme tel (pastille « Généré par IA ») | Crédibilité, audience européenne |
+| `[AI-LABEL]` | Tout visuel ou toute voix IA est annoncé comme tel (pastille « Généré par IA ») | Crédibilité, audience européenne. **Une seule règle avec la mise en ligne (§ 8ter)** : ce qui est annoncé à l'écran est aussi déclaré dans Studio quand YouTube l'exige. Jamais de voix IA sur ces comptes. |
 
-### 4.6 Appels à l'action
+### 4.6 Terrain et vlog (pilier B ; v2)
+
+Pour C7, L4, L5 et toutes les séquences tournées dehors.
+
+| Élément | Règle |
+|---|---|
+| Image | **Brute assumée** : selfie, vue subjective, téléphone (`04a` § 5). La charte « Noir & Lime » ne s'applique qu'aux inserts : compteur, bilan, carte. |
+| Son | Ambiance réelle du lieu (rue, scooter, bureau) gardée sous la voix. Musique plus basse ou absente quand le lieu « parle ». |
+| Étalonnage | Raccord de peau et de lumière entre les lieux (checklist). Même look dans toute la vidéo. |
+| Repère | Mini-carte ou nom du lieu (ville seulement, si Ibrahim l'a autorisé) à chaque changement de lieu. |
+| Transitions | Pas de « Glissé » (il n'y a pas d'écran d'ordinateur). Coupe franche ou `[WHIP]` pour un changement de lieu. |
+| B-roll de vie | Propre à chaque vidéo : bureau, équipe, trajets, repas. C'est le contenu, pas un remplissage. |
+| Rythme | Plus calme que les tests : plans de 3 à 8 s, respirations plus longues. On garde quand même un événement toutes les 5 à 8 s. |
+
+### 4.7 Interviews et micro-trottoirs (v2)
+
+Pour C4, C6 et L5.
+
+| Élément | Règle |
+|---|---|
+| Consentement | **Aucune image d'invité montée sans autorisation écrite** (image, voix, chiffre) rangée dans `00-brief/autorisations/`. On le vérifie à l'étape 0. Visage flouté si l'invité l'a demandé. |
+| Cadrage | Interview : plan à deux puis plan serré sur l'invité ; deux micros (main + cravate). Micro-trottoir (C6) : **intervieweur hors champ**, seule la main d'Ibrahim et le micro sont visibles. |
+| Bandeau | Prénom · métier · ville. Le montant arrive en grand (`[STAT]`) au moment où il est dit, en euros (règle 17). |
+| Sous-titres | **Un mot géant à la fois** (micro-trottoir) ou 2 à 4 mots blancs au centre (interview). Traduction en français si l'invité parle indonésien ou anglais, relue par l'interprète. |
+| Vitesse | **Pas d'accélération ×1,10** sur les voix d'invités (§ 6bis). |
+| Montage | On ne coupe pas une réponse pour lui faire dire autre chose. Les refus et les silences peuvent rester s'ils sont drôles, jamais pour moquer l'invité. |
+
+### 4.8 Compteurs, chronos et caméra fixe (v2)
+
+Pour L1, L2, L6, C2, C3, C8 et C9.
+
+| Élément | Règle |
+|---|---|
+| Compteur | HUD fixe, toujours au même endroit, animé à chaque mise à jour (roulette + son de révélation). Il est alimenté uniquement par `registre.json`. |
+| Chrono | Minuteur réel, calé sur l'heure de tournage (horodatage des rushes). **Jamais recalculé ni arrangé au montage.** |
+| Caméra fixe longue durée (L6) | Accéléré lissé avec l'horloge réelle à l'écran ; retour en temps réel sur les moments forts ; badge honnête (« ⏩ 14 h »). |
+| Compteur sans voix (C9) | Pas de voix. Le texte porte tout. Musique + sons de caisse ou de notification, montée du compteur jusqu'au verdict, 22 à 32 s. |
+
+### 4.9 Lignes rouges à l'image (v2, règle 16)
+
+On les contrôle **sur la planche de chaque bloc** (§ 9, passe 4) et sur chaque format court.
+
+| Ligne rouge | Ce qu'on fait au montage |
+|---|---|
+| Religion : temples, prières, offrandes, appel à la prière | Couper ou recadrer. Aucun commentaire |
+| Politique : affiches, slogans, débats | Couper ou recadrer |
+| Chiffres du business indonésien : caisse, prix, factures, tableaux, écrans de vente | Flouter la zone (`[BLUR-DATA]`) ou couper. Le business se montre, pas ses chiffres |
+| Visage de l'enfant d'Ibrahim | Pas montré par défaut (de dos, de loin ou flouté) tant qu'Ibrahim n'a pas décidé autrement |
+| Chaînes faceless (faceless-studio) | Jamais visibles : onglets, Studio, Telegram, noms de projets, dossiers |
+| Passants, plaques, visages non autorisés | Flouter |
+
+### 4.10 Appels à l'action
 
 | ID | Élément | Réglages |
 |---|---|---|
-| `[CTA-DEMO]` | CTA **démontré, pas annoncé** : on voit en 6 s le parcours exact (commenter « PROMPT », réponse auto, document reçu) sur un mockup téléphone ou navigateur | Placé après l'étape 2, lié au problème qu'elle vient de résoudre |
-| `[COPY-BADGE]` | Badge « Prompt complet en description » ou « Copier » qui apparaît quand un prompt est terminé | Renvoie vers l'aimant à leads |
+| `[CTA-DEMO]` | CTA **démontré, pas annoncé** : on voit en 6 s le parcours exact (commenter « MOT », réponse auto, document reçu) sur un mockup téléphone ou navigateur | Lié au moment du test qu'il prolonge. Exemples : « Commente LOGO pour choisir le prochain commerce » (C8), « Commente le prochain test » |
+| `[COPY-BADGE]` | Badge « Le registre complet est en description » (ou « Prompt complet en description » quand la consigne compte) | Renvoie vers le dossier du test (§ 8bis) |
 | `[NEXT-VIDEO]` | Renvoi vers une autre vidéo dans les 20 dernières secondes (« la suite logique, c'est… »), coupe sèche | Pas d'outro, pas d'écran de fin ajouté après le contenu |
 
 ---
@@ -300,7 +395,7 @@ Sur les passages scriptés (intro mot pour mot, explications lues), Ibrahim lit 
 - Aucune des 4 vidéos n'utilise d'impact sur les mots-clés après le hook : l'emphase passe par l'image.
 
 **Musique :**
-- Le style : lo-fi, chill-tech ou ambient, **sans voix**, tempo stable de 90 à 115 BPM.
+- Le style : lo-fi, chill-tech ou ambient, **sans voix**, tempo stable de 90 à 115 BPM. **Familles détaillées et usages : § 5bis (v2).**
 - On change de morceau ou de couche aux grands chapitres.
 - Les 4 références montrent deux écoles. Martell et Swadia n'utilisent presque pas de musique (stings seulement). Sanji met une nappe à 30 dB sous la voix 60 % du temps. **Notre choix** : une nappe très basse (Ibrahim veut de la musique), qui s'efface sous les explications denses, plus des stings ou le jingle aux étapes.
 
@@ -330,24 +425,30 @@ Règles : 3 à 6 gestes de mixage par chapitre (pas plus : le contraste s'use) ;
 
 **Principe :** chaque vidéo a **sa propre identité sonore**, construite à partir de son transcript. Chaque partie (intro, puis chaque chapitre ou étape) a **sa propre musique de fond**. L'ensemble reste cohérent : même famille de styles, transitions soignées. On ne réutilise donc pas les mêmes musiques d'une vidéo à l'autre. La **signature de chaîne** (son de révélation, jingle d'étape, sons d'interface) reste constante pour la reconnaissance.
 
-**Le style d'Ibrahim : sérieux.** Ibrahim est un personnage sérieux, la musique doit le porter.
+**Le style d'Ibrahim : sérieux mais chill (v2, 29/10/2026).** On le voit essayer, rater, rire. La musique accompagne l'humeur du moment. **Elle ne fabrique pas de tension sur un passage pratique** : un abonné de longue date a décrit son « corps tendu par le suspense » pendant des informations pratiques (`~/ibrahim-brand/research/02c-voix-audience.md`). *(Remplace « Le style d'Ibrahim : sérieux » de la v1.)*
 
-| ✅ Familles autorisées | ❌ À proscrire |
-|---|---|
-| Suspense minimal (pulsations, tension retenue) | Dubstep, EDM, drops |
-| Enquête / « investigation » (basses pulsées, textures sombres) | House, deep house, trance, « chill beats » |
-| Documentaire / néo-classique (piano, cordes, sobre) | Pop entraînante, ukulélé « corporate happy » |
-| Cinématique minimal / hybride sobre (montées, sans percussions épiques) | Trap, hip-hop énergique |
-| Dark ambient / drones (respirations, moments de révélation) | Tout morceau avec voix ou paroles |
-| Électronique minimale, sérieuse (IDM lente, textures tech) | Orchestral épique massif (couvre la voix) |
+| Moment | ✅ Familles | Exemples d'usage |
+|---|---|---|
+| **Pratique, explication, protocole, vlog** | Lo-fi, chill-tech, acoustique chaleureux, groove léger, électronique douce | Ibrahim pose les règles, travaille, se déplace, parle à son équipe |
+| **Enjeu réel** (avant un résultat, un retrait d'argent, le verdict) | Suspense minimal (pulsations, tension retenue), montée sobre, puis **silence** | Les 20 s avant le chiffre (checklist), le clic « Retirer » |
+| **Bilan, révélation, moment fort** | Néo-classique sobre (piano, cordes), cinématique minimal | Le Tableau du défi qui se fige, le bilan |
+| **Histoire personnelle** | Nappe douce, néo-classique | `[STORY-BED]` |
+
+| ❌ À proscrire |
+|---|
+| Suspense, enquête ou dark ambient **sous un passage pratique** |
+| Dubstep, EDM, drops, trap, hip-hop énergique |
+| Tout morceau avec voix ou paroles |
+| Orchestral épique massif (couvre la voix) |
+| Ukulélé « corporate happy » |
 
 **Méthode (à l'étape 4, « Plan de montage »)** : produire une **fiche identité sonore** dans `montages/<slug>/04-identite-sonore.md`.
 1. **Arc émotionnel par partie**, lu dans le transcript : pour chaque chapitre, son rôle (tension, curiosité, méthode, révélation, climax) et son énergie (1 à 5).
-2. **Une musique par partie**, choisie dans les familles autorisées, avec un rôle clair : par exemple hook en suspense minimal, mise en place en électronique sérieuse discrète, révélation en néo-classique ou cinématique, climax en suspense montant.
+2. **Une musique par partie**, choisie dans les familles autorisées, avec un rôle clair : par exemple hook sur l'enjeu (suspense minimal court), protocole et pratique en lo-fi ou chill-tech, révélation en néo-classique ou cinématique, climax en suspense montant.
 3. **Cohérence** : tempos voisins (±15 BPM entre parties consécutives), tonalités compatibles si possible, énergie qui suit l'arc (jamais de baisse dans le dernier tiers, règle 11).
 4. **Transitions** : fondu enchaîné de 1 à 2 s **sous le carton d'étape** (le jingle d'étape couvre la jonction).
 5. **Effets sonores** : le **noyau signature** est constant (révélation, porte de chapitre, validation, interface). On peut y ajouter 1 ou 2 accents propres à la vidéo (texture liée au sujet).
-6. **Source** : Epidemic Sound (abonnement Creator d'Ibrahim, chaîne sur liste blanche). **Plus de page d'écoute (règle d'Ibrahim, 6 octobre 2026)** : Claude choisit directement **un morceau par partie**, d'après les goûts établis sur les vidéos précédentes (voir les fiches `04-identite-sonore.md` d'AIsa, Hostinger, Higgs Influ 2 : suspense pulsé, ambient/pulses, dark ambient, 90–105 BPM, artistes comme Blue Saga, Out To The World), via l'API publique `https://www.epidemicsound.com/json/search/tracks/?term=` (curl, sans navigateur). Il donne la sélection exacte (titre, artiste, id, rôle) ; Ibrahim télécharge et on passe à la suite.
+6. **Source** : Epidemic Sound (abonnement Creator d'Ibrahim, chaîne sur liste blanche). **Plus de page d'écoute (règle d'Ibrahim, 6 octobre 2026)** : Claude choisit directement **un morceau par partie**, d'après les goûts établis sur les vidéos précédentes (voir les fiches `04-identite-sonore.md` d'AIsa, Hostinger, Higgs Influ 2 : suspense pulsé, ambient/pulses, dark ambient, 90–105 BPM, artistes comme Blue Saga, Out To The World) (goûts de la v1, tutos : en v2, ces familles sont réservées aux moments d'enjeu ; pour le pratique et le vlog, on choisit dans les familles chill du tableau ci-dessus), via l'API publique `https://www.epidemicsound.com/json/search/tracks/?term=` (curl, sans navigateur). Il donne la sélection exacte (titre, artiste, id, rôle) ; Ibrahim télécharge et on passe à la suite.
 7. **Téléchargement HQ : c'est Ibrahim qui le fait, à la main** (règle d'Ibrahim, 4 octobre 2026 : c'est plus rapide, et le pilotage du navigateur par Claude buguait beaucoup). Claude n'essaie **jamais** de télécharger depuis le navigateur.
    - **Claude fournit la liste** : titre, artiste et identifiant Epidemic de chaque morceau choisi (et de chaque effet sonore manquant).
    - **Ibrahim télécharge** dans `~/Downloads` et prévient.
@@ -394,6 +495,7 @@ Historique : Ibrahim a comparé ×1,00, ×1,10 et ×1,15 sur le hook et sur une 
 - **Conséquence au montage** : tous les temps de lecture se calculent pour la vitesse finale. Un texte tenu `readTime(mots) × 1,10` à ×1,00 reste lisible une fois accéléré.
 - **Livrables** : sous-titres et chapitres divisés par 1,10 (`*_x1.10.srt`, `chapitres_x1.10.txt`, `description_x1.10.md`). On garde aussi la version ×1,00.
 - **Sponsor** : une démonstration sponsorisée accélérée enfreint la règle 13 et le §1bis. Avant de publier une vidéo sponsorisée accélérée, Ibrahim valide avec le sponsor. Sinon, on n'accélère que les passages hors démo.
+- **Exceptions (v2)** : pas d'accélération sur les **voix d'invités** (interviews, micro-trottoirs, § 4.7), ni sur les **séquences d'ambiance de vlog** où le lieu « parle » (§ 4.6). La vitesse ×1,10 s'applique à la voix d'Ibrahim et aux séquences d'écran.
 
 ## 7. La restructuration — ÉTAPE SUPPRIMÉE
 
@@ -454,18 +556,18 @@ Les composants réutilisables sont dans `src/montage/`.
 
 | # | Étape | Ce que fait Claude | Livrable remis à Ibrahim | 🔒 Ce qu'Ibrahim valide |
 |---|---|---|---|---|
-| **0** | **Réception et brief** | Inventaire des fichiers : face cam, captures, pistes séparées ?, audio, résolution, débit, fps. Questions de cadrage. | `00-brief.md` : ce qui est reçu, ce qui manque, et le questionnaire : **sponsor ? points imposés ? segments intouchables ?** titre et miniature (la promesse) · liste des étapes du tuto · vidéo vers laquelle renvoyer · captures de preuve disponibles · ressources à mettre en description | Les réponses au questionnaire et la liste des segments intouchables |
+| **0** | **Réception et brief** | Inventaire des fichiers : face cam, captures, pistes séparées ?, audio, résolution, débit, fps. Questions de cadrage. Lecture du **script de tournage** (`~/ibrahim-brand/scripts-tournage/<script>.md`). | `00-brief.md` : ce qui est reçu, ce qui manque, et le questionnaire (v2) : **script et format (L1-L7, C1-C9), pilier (A/B/C) · fin réelle (réussite / échec) · registre du test (`registre.json`) et ses captures · sponsor ? place (1:30-2:00 ou outil du défi), points imposés, segments intouchables · autorisations des invités · lignes rouges repérées au tournage (enfant, lieux, chiffres du business indonésien) · conversion FCFA ou euros seuls ?** · titre et miniature (la promesse) · vidéo vers laquelle renvoyer · ressources à mettre en description | Les réponses au questionnaire, la fin réelle et la liste des segments intouchables |
 | **1** | **Analyse** | Transcription Whisper mot par mot, typage des beats (A/E/P/R/C/S), mesures (visage, pauses, niveaux LUFS, qualité image), repérage des matériaux de hook, des preuves, des pièges et des digressions | `01-analyse.md` : la carte de la vidéo (beats, timecodes, durées), le diagnostic (problèmes de rythme, d'audio, de lisibilité) et les points forts | Le diagnostic (« oui, c'est bien ma vidéo, ces problèmes sont réels ») |
 | ~~**2**~~ | ~~**Restructuration**~~ **SUPPRIMÉE** (décision d'Ibrahim, 6 octobre 2026) | On garde la vidéo **telle qu'Ibrahim l'a tournée** : ordre, texte et durée. Pas de cold open ajouté, pas de déplacement, pas de coupe de contenu, pas d'insertion qui allonge la timeline. On passe directement de l'analyse (1) au montage audio (3). | — | — |
 | **3** | **Montage audio** (la colonne vertébrale) | Application des coupes et déplacements validés. Traitement voix (passe-haut, compression, −16 LUFS), ambiance sous les coupes, silences ramenés à 0,15–0,35 s (hors démonstrations sponsorisées). **Pas encore d'image retravaillée.** | `03-audio/` : la vidéo réordonnée en basse définition avec l'audio traité. « Si elle tient à l'écoute, elle tiendra à l'image. » | L'écoute de bout en bout : ordre, coupes, qualité de la voix |
-| **4** | **Plan de montage** | Pour chaque segment : cadrages et zooms, écrans (points focaux, spotlights), **tous les textes à l'écran mot pour mot**, cartons d'étape, Carte du tuto, inserts, SFX (fichier et instant), musique (morceaux et niveaux), preuves (montants vérifiés). Contrôle des cadences (§6) et des règles (§1). | `04-plan.md` : tableau lisible, chapitre par chapitre, avec les textes exacts (orthographe à valider ici) + `edit-plan.json` | Les choix d'habillage, **l'orthographe de chaque texte**, les morceaux de musique |
+| **4** | **Plan de montage** | Pour chaque segment : cadrages et zooms, écrans (points focaux, spotlights), **tous les textes à l'écran mot pour mot**, cartons de palier, Tableau du défi et compteur (chiffres tirés de `registre.json`), inserts, SFX (fichier et instant), musique (morceaux et niveaux), preuves (montants vérifiés). Contrôle des cadences (§6) et des règles (§1). | `04-plan.md` : tableau lisible, chapitre par chapitre, avec les textes exacts (orthographe à valider ici) + `edit-plan.json` | Les choix d'habillage, **l'orthographe de chaque texte**, les morceaux de musique |
 | **5** | **Prototype : les 60 premières secondes** | Rendu complet (image + son + master) de la première minute, au style final | `05-hook/` : la vidéo de 60 s + la planche de vérification | Le **style** (couleurs, typo, zooms, sons, rythme). C'est la porte la plus importante : une fois validé, le style ne change plus pour le reste. |
 | **6** | **Production par blocs** | Rendu bloc par bloc (un chapitre, 1 à 3 min). Avant chaque envoi : mesure de fluidité (à-coups de zoom), vérification du temps de lecture des textes, contrôle visuel des planches. | `06-blocs/bloc-N.mp4`, un par un | **Chaque bloc**. Les retours sur un bloc s'appliquent aux suivants. |
 | **7** | **Assemblage et finitions** | Assemblage, raccords entre blocs, **re-finalisation de la première minute** (montée en dernier, avec tout ce qu'on sait du reste), master −14 LUFS / −1 dBTP, relecture automatique en 4 passes (§9) | `07-final/` : vidéo complète + rapport de relecture (ce qui passe, ce qui a été corrigé) | Le visionnage complet, **sur téléphone** puis au casque |
-| **8** | **Export et livrables** | Export final (1080p ou 4K, débit élevé, AAC 48 kHz), chapitres YouTube définitifs, sous-titres `.srt` (noms propres corrigés, noms de famille de tiers retirés), liste de 3 ou 4 moments candidats pour des Shorts, et **les ressources de la description** (§8bis) | `08-livrables/` : `chapitres.txt` + `.srt` + `shorts.md` + `description.md` + `ressources/` | Le « bon pour publication » et la liste des ressources |
-| **8bis-M** | **Miniature** (règle d'Ibrahim, 5 octobre 2026 : c'est Claude qui la génère) | Avec **Nano Banana Pro** (Higgsfield, `nano_banana_pro`, 16:9, 2k, 2 variantes), à partir de la photo de visage d'Ibrahim (`analysis/miniatures/visage_*.png`). **Méthode recommandée (retour d'Ibrahim : le brief seul donne un rendu « très nul ») · réplication** : chercher sur YouTube les miniatures des vidéos **les plus vues** sur le même sujet (recherche triée par vues, 10–12 candidates en planche numérotée), Ibrahim choisit, puis on réplique : la miniature de référence + le visage + le prompt d'Ibrahim `analysis/miniatures/prompt_replication.md`, adapté (scène, fond, logos, texte) à notre vidéo. Méthode 1 (brief original sans référence) seulement si Ibrahim fournit déjà une référence visuelle précise. Règles d'identité du visage toujours recopiées telles quelles. Export 1280×720, < 2 Mo. | `09-miniature/` : les variantes + la retenue | Le choix de la miniature |
-| **8bis-M · leçon (Higgs Influ 3, 7 octobre 2026)** | Le prompt de réplication générique a donné un rendu « très nul, rien à voir avec la référence » (personnages réalistes, mise en page perdue). Ce qui a marché : un prompt qui commence par **« Recreate the FIRST image as faithfully as possible… Only change the elements listed below »**, qui **liste explicitement chaque élément à garder** (mise en page, cartes, style 3D, fond, typographie du titre, chiffres, accessoires) puis **chaque élément à remplacer** (visage, personnages, textes exacts). | — | — |
-| **8ter** | **Mise en ligne** (choix d'Ibrahim, 4 octobre 2026 : par Chrome, pas par l'API) | Dans YouTube Studio, via Claude in Chrome, sur la session déjà connectée d'Ibrahim (aucun identifiant ni jeton manipulé par Claude) : upload de la version accélérée (§6bis), titre, description, chapitres, tags, sous-titres `.srt`, **case « promotion rémunérée » sur NON et « Utilisation de l'IA » sur NON, toujours, même pour une vidéo sponsorisée** (règle d'Ibrahim, 20/10/2026 : ces cases font baisser les performances ; la mention de collaboration reste dans la vidéo et la description), miniature fournie par Ibrahim, écran de fin. La vidéo reste en **privé ou programmée**. On n'utilise pas l'API YouTube : un projet non audité verrouille les vidéos en privé, et l'écran de fin n'y existe pas. | Un récapitulatif de la mise en ligne (lien Studio, réglages) | **Le clic sur « Publier » : uniquement après un « oui » explicite d'Ibrahim, à chaque vidéo** (et accord de la marque si le contrat le prévoit) |
+| **8** | **Export et livrables** | Export final (1080p ou 4K, débit élevé, AAC 48 kHz), chapitres YouTube définitifs, sous-titres `.srt` (noms propres corrigés, noms de famille de tiers retirés), les **3 à 5 extraits courts listés dans le script de tournage** (montés selon le § 14), et **les ressources de la description** (§8bis) | `08-livrables/` : `chapitres.txt` + `.srt` + `shorts.md` + `description.md` + `ressources/` | Le « bon pour publication » et la liste des ressources |
+| **8bis-M** | **Miniature** (règle d'Ibrahim, 5 octobre 2026 : c'est Claude qui la génère ; méthode v2 du 29/10/2026) | **Point de départ : la maquette du script de tournage** (cadrage, objet, texte de 3 mots au plus, place du chiffre). **Méthode v2 · structure reprise + objets réels** : on cherche les miniatures les plus vues sur le même format (planche numérotée de 10 à 12, Ibrahim choisit) et on reprend leur **structure** : triptyque, prévu / obtenu, visage + interface de l'IA, montant flouté. On ne recopie jamais l'image elle-même. Les **objets réels du test** (vrai billet, vraie notification de paiement, vraie courbe Studio, vrai lieu) viennent des rushes ou d'une **photo de miniature prise au tournage**. Nano Banana Pro (Higgsfield, `nano_banana_pro`, 16:9, 2k, 2 variantes) sert à composer et à nettoyer, avec les règles d'identité du visage. **Une miniature à chiffre se fait après le test, et le chiffre affiché est celui de la vidéo** (ou flouté). Export 1280×720, < 2 Mo. | `09-miniature/` : les variantes + la retenue | Le choix de la miniature |
+| **8bis-M · leçon (Higgs Influ 3, 7 octobre 2026)** | Le prompt de réplication générique a donné un rendu « très nul, rien à voir avec la référence » (personnages réalistes, mise en page perdue). Ce qui a marché : un prompt qui commence par **« Recreate the FIRST image as faithfully as possible… Only change the elements listed below »**, qui **liste explicitement chaque élément à garder** (mise en page, cartes, style 3D, fond, typographie du titre, chiffres, accessoires) puis **chaque élément à remplacer** (visage, personnages, textes exacts). **v2** : la leçon reste valable pour garder une **mise en page**. On remplace tout le contenu (personnages, logos, chiffres, images) par nos objets réels. Aucun logo, personnage ni image d'un autre créateur ou d'une marque n'est repris (et c'est interdit par les briefs de marque). | — | — |
+| **8ter** | **Mise en ligne** (choix d'Ibrahim, 4 octobre 2026 : par Chrome, pas par l'API) | Dans YouTube Studio, via Claude in Chrome, sur la session déjà connectée d'Ibrahim (aucun identifiant ni jeton manipulé par Claude) : upload de la version accélérée (§6bis), titre, description, chapitres, tags, sous-titres `.srt`, **cases de déclaration (v2, 29/10/2026, remplace la règle du 20/10 « toujours NON ») : « promotion rémunérée » cochée pour toute vidéo sponsorisée (règle YouTube, loi française du 9 juin 2023) ; « Utilisation de l'IA » (contenu modifié ou synthétique réaliste) cochée quand YouTube l'exige, avec la même règle que la pastille `[AI-LABEL]` (§ 4.5) ; la mention de collaboration reste aussi dans la vidéo et la description, et on applique ce que demande le contrat de la marque**, miniature fournie par Ibrahim, écran de fin. La vidéo reste en **privé ou programmée**. On n'utilise pas l'API YouTube : un projet non audité verrouille les vidéos en privé, et l'écran de fin n'y existe pas. | Un récapitulatif de la mise en ligne (lien Studio, réglages) | **Le clic sur « Publier » : uniquement après un « oui » explicite d'Ibrahim, à chaque vidéo** (et accord de la marque si le contrat le prévoit) |
 | **9** | **Boucle d'apprentissage** (72 h après publication) | Lecture de la courbe de rétention fournie par Ibrahim (capture d'écran ou chiffres) : chute à 30 s, 3 décrochages, pic | Une ligne ajoutée à `analysis/registre.md` + une proposition d'ajustement du playbook | Les ajustements du playbook (§11) |
 
 **Règles du process :**
@@ -488,6 +590,15 @@ Les composants réutilisables sont dans `src/montage/`.
 **Statut : standard pour toutes les vidéos**, généré par défaut à l'étape 8.
 
 **But :** quelqu'un qui veut reproduire le tutoriel trouve tout dans la description, **sans réfléchir ni retaper quoi que ce soit**.
+
+**v2 : le dossier du test.** Pour une vidéo de test ou de défi, les ressources deviennent **le dossier du test** :
+- les règles ;
+- le budget ;
+- le registre jour par jour (dépenses, gains, captures) ;
+- le bilan ;
+- « ce que je referais autrement ».
+
+Les prompts n'y figurent que quand la consigne compte pour l'histoire (L1, L6). La méthode ci-dessous reste valable pour ces prompts et pour les vidéos C.
 
 **Méthode (étape 8) :**
 1. Relire tout le transcript et repérer chaque élément réutilisable :
@@ -525,9 +636,10 @@ Exemple de référence : `montages/aisa/08-livrables/` contient 5 prompts, les m
 | Passe | Contrôles | Automatique ? |
 |---|---|---|
 | **1. Rythme** (en accéléré, son coupé) | Aucune plage identique > 10 s · densité variable · pas de ralentissement dans le dernier tiers · cartons d'étape présents et espacés | Oui : mesure des plans et des changements visuels |
-| **2. Structure** | Preuve avant 5 s · Carte du tuto avant 35 s · re-engagement vers 3 min · pas d'E→E · boucles refermées · chapitres YouTube = chapitres visuels | Partiellement : typage des beats |
+| **2. Structure** | Preuve avant 5 s · protocole et Tableau du défi avant 60 s · sponsor vers 1:30-2:00 · re-engagement vers 3 min · pas d'E→E · boucles refermées · chapitres YouTube = chapitres visuels | Partiellement : typage des beats |
 | **3. Son** (casque puis haut-parleur de téléphone) | Rien plus fort que la voix · pas de trou d'ambiance · musique qui descend sous la parole · −14 LUFS / −1 dBTP | Oui pour les niveaux. L'écoute finale reste celle d'Ibrahim. |
-| **4. Lisibilité** (téléphone, bras tendu) | Textes ≥ 44 px · chaque texte tenu assez longtemps · écrans lisibles · aucune donnée perso · rien dans les zones d'interface YouTube | Oui pour tailles et durées. Contrôle visuel des planches. |
+| **4. Lisibilité** (téléphone, bras tendu) | Textes ≥ 44 px · chaque texte tenu assez longtemps · écrans lisibles · aucune donnée perso · rien dans les zones d'interface YouTube · **lignes rouges à l'image (§ 4.9)** · **chaque chiffre affiché a sa ligne dans `registre.json`** · montants en euros | Oui pour tailles et durées. Contrôle visuel des planches. |
+| **+ Positionnement** (v2) | Promesse du titre et de la miniature tenue avant 0:30 · protocole avant 60 s · pas de passage « tuto » de plus de 60 s sans enjeu · sponsor à sa place (§ 1bis) · fin réelle cohérente avec le hook et la miniature · réactions d'Ibrahim gardées · pas de suspense sous un passage pratique | Non : relecture de Claude, puis Ibrahim |
 | **+ Fluidité** | À-coup de zoom < 0,05 %/frame · aucune coupe en plein mot · aucune sortie brutale | Oui (mesure ORB sur le rendu) |
 | **+ Orthographe** | Tous les textes à l'écran relus (coquille vue chez Swadia : « deletage ») | Oui, puis Ibrahim |
 
@@ -556,6 +668,11 @@ Exemple de référence : `montages/aisa/08-livrables/` contient 5 prompts, les m
 - Flouter tout l'écran pour masquer une donnée : on floute la zone, pas ce qu'Ibrahim montre.
 - Une démo de plus de 15 s sans aucun événement à l'écran (§4.2bis).
 - Masteriser chaque bloc puis les recoller. La bande son finale est reconstruite d'un seul tenant, puis masterisée une seule fois (§13).
+- **(v2)** Monter un passage en « tuto » pas à pas sans enjeu : l'outil sert le test, il n'est pas le sujet d'une leçon.
+- **(v2)** Afficher un chiffre sans capture réelle ni ligne dans `registre.json`, ou garder une trace de la fin non tournée.
+- **(v2)** Mettre une musique de suspense sous un passage pratique, ou couper les rires et les ratés d'Ibrahim.
+- **(v2)** Montrer une ligne rouge (§ 4.9) : religion, politique, chiffres du business indonésien, visage de l'enfant, chaînes faceless.
+- **(v2)** Recopier la miniature d'un autre créateur, ou y mettre un chiffre différent de celui de la vidéo.
 
 ---
 
@@ -649,9 +766,14 @@ Tout ce qui suit a été testé sur la vidéo AIsa (21:41, montée et livrée en
 - dans `src/montage/lib.tsx` : `ScreenStage` (inclinaison 3D, flou, assombrissement, zones floutées), `FacePip` (« Le Glissé »), `FaceCam`, `KeyLine` (sortie de flou, centrée ou en bas), `FocusVeil`, `Stat`, `ChapterCard`, `ChapterPill`, `Pill`, `Eyebrow`, `Em` / `rich`, `Star`, `Backdrop`, `Grain`, `Reveal`, `SfxTrack`, `MUSIC` / `musicGain` ;
 - dans `src/montage/Explainers.tsx` : `BrandTiles`, `ChatMock`, `TutoMap`, `Tag`, `IconRow`, `GoogleToAI`, `Teaser`, `NoteCard`, `StepLT`, `TopPill`, `Spotlight`, `PromptCard`, `CheckCard`, `ListCard`, `DataTable`.
 
-**À l'étude** :
-
-- **Shorts verticaux** des 4 moments de `shorts.md`, avec une mise en page 9:16 dédiée.
+**À construire en priorité (v2, 29/10/2026)** :
+- `DefiBoard` (le Tableau du défi) et `ChapterPill` « Jour N » alimentés par `registre.json` ;
+- `Timer` (chrono réel) ;
+- `PlanVsResult` (généralise `ResultDuo`) ;
+- `VerdictTag` ;
+- `LowerThird` interview (prénom · métier · ville) ;
+- `BigWordCaptions` (un mot géant à la fois) ;
+- `VerticalMaster` 9:16 (zones sûres, § 14).
 
 
 Ordre = impact sur les tutos ÷ effort. ✅ = déjà prouvé dans le test MINIMAX v3.
@@ -660,7 +782,7 @@ Ordre = impact sur les tutos ÷ effort. ✅ = déjà prouvé dans le test MINIMA
 |---|---|---|
 | **Lot 0 (fait)** | ✅ `[FAUX-MULTICAM]`, ✅ `[PUSH-IN]` fluide, ✅ `[KCAP]` avec temps de lecture, ✅ insert preuve téléphone, ✅ SFX calés sur le pic, ✅ traitement voix + master −14 LUFS | — |
 | **Lot 1 : démos d'écran** | `[SCREEN-STAGE]` (établissement → plongée → tenue, piloté par points focaux), `[GLIDE]` + `[PIP]`, `[SPOTLIGHT]`, `[GEN-WAIT]` + badge, `[CURSOR]` | Moyen. C'est le plus rentable : 85 % des vidéos. |
-| **Lot 2 : structure** | `[TUTO-MAP]`, `[STEP-CARD]` + jingle, `[CHAPTER-PILL]`, `[STEP-LT]`, `[CHECKLIST]`, `[BRIDGE]` (détection automatique dans le transcript) | Faible à moyen |
+| **Lot 2 : structure** | `[DEFI-BOARD]` (ex-`[TUTO-MAP]`), `[STEP-CARD]` + jingle, `[CHAPTER-PILL]`, `[STEP-LT]`, `[CHECKLIST]`, `[BRIDGE]` (détection automatique dans le transcript) | Faible à moyen |
 | **Lot 3 : lisibilité et preuve** | `[PROMPT-CARD]`, `[RECREATE]`, `[HIGHLIGHT]`, `[SHOWCASE]`, `[STAT]`, `[LEDGER]`, `[PROOF-3T]` | Moyen |
 | **Lot 4 : récit et CTA** | `[GLASS-LIST]`, `[KEYLINE]`, `[FLOW-LINE]`, `[TEASER]`, `[CTA-DEMO]`, `[STORY-ILLU]` (définir le style IA maison) | Moyen |
 | **Lot 5 : outillage** | `edit-plan.json` → Remotion, ducking automatique, contrôles de relecture automatiques, module de restructuration | Moyen |
@@ -670,3 +792,24 @@ Ordre = impact sur les tutos ÷ effort. ✅ = déjà prouvé dans le test MINIMA
 - face cam en 4K si possible ;
 - export d'au moins 20 Mbit/s en 1080p, ou ProRes ;
 - voix enregistrée plus fort (−18 à −12 dBFS en crête).
+
+---
+
+## 14. Formats courts 9:16 (v2, 29/10/2026)
+
+**À quoi ça sert** : les 9 formats courts (C1 à C9) et les 3 à 5 extraits de chaque vidéo longue. Scripts dans `~/ibrahim-brand/scripts-tournage/`.
+
+| Élément | Règle |
+|---|---|
+| Fichier | **Un seul fichier maître** 1080×1920, 30 i/s, sans filigrane, pour TikTok, Instagram Reels et YouTube Shorts. Ce qui change d'une plateforme à l'autre : légende, titre du Short (≤ 100 caractères), couverture du Reel. |
+| Zones sûres | Texte entre **15 % et 75 %** de la hauteur ; marges à droite (boutons) et en bas (légende). |
+| Accroche | La promesse est tenue dans les **5 premières secondes** ; le montant ou l'enjeu est à l'écran dès la 1re seconde (`04a` point 2). Premier changement visuel avant 2 s. |
+| Sous-titres selon le format | **Tests filmés à la main** (C1, C2, C3, C7) : peu ou pas de sous-titres, le texte sert aux chiffres et aux étapes. **Formats parlés** (C4, C5, C6, C8) : sous-titres incrustés, un mot géant à la fois (C6) ou 2 à 4 mots (C4, C5, C8). **C9** : pas de voix, le texte porte tout. Toujours relus. |
+| Image | Brute pour les tests et les vlogs (selfie, vue subjective) ; plus propre pour les interviews (`04a` point 11). Inserts aux couleurs de la charte (compteur, verdict). |
+| Durées | 22 à 32 s (C9) ; 45 s à 2 min (les autres). Si une version de plus de 60 s perd des vues sur Shorts, on prévoit une coupe de 60 s au plus. |
+| Compteurs, verdict, lignes rouges | Mêmes règles qu'en vidéo longue (§ 4.4, 4.8, 4.9 ; règles 15 à 17). |
+| Séries | « Jour N » (C3), « Épisode N » (C7), titre fixe (C4) : **gabarit fixe** (même ouverture, même compteur, même fin), construit une fois et réutilisé. |
+| Son | Voix au-dessus de tout, master −14 LUFS. Musique selon le § 5bis (pas de suspense sur un passage pratique). |
+| Process court | 1. Brief (script + rushes + fin réelle + registre) → 2. 1er montage complet → 3. **validation d'Ibrahim** → 4. légendes, titre, couverture. Pas de prototype ni de blocs. Cible : **≤ 30 min de montage par format court** (checklist). Rendus sur le serveur, jamais sur le Mac. |
+| Extraits d'une vidéo longue | Repris du montage validé (pas de nouveau rendu de l'habillage si possible), recadrés en 9:16 avec le visage ou l'action au centre, accroche réécrite pour les 5 premières secondes. |
+
