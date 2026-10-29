@@ -766,14 +766,17 @@ Tout ce qui suit a été testé sur la vidéo AIsa (21:41, montée et livrée en
 - dans `src/montage/lib.tsx` : `ScreenStage` (inclinaison 3D, flou, assombrissement, zones floutées), `FacePip` (« Le Glissé »), `FaceCam`, `KeyLine` (sortie de flou, centrée ou en bas), `FocusVeil`, `Stat`, `ChapterCard`, `ChapterPill`, `Pill`, `Eyebrow`, `Em` / `rich`, `Star`, `Backdrop`, `Grain`, `Reveal`, `SfxTrack`, `MUSIC` / `musicGain` ;
 - dans `src/montage/Explainers.tsx` : `BrandTiles`, `ChatMock`, `TutoMap`, `Tag`, `IconRow`, `GoogleToAI`, `Teaser`, `NoteCard`, `StepLT`, `TopPill`, `Spotlight`, `PromptCard`, `CheckCard`, `ListCard`, `DataTable`.
 
-**À construire en priorité (v2, 29/10/2026)** :
-- `DefiBoard` (le Tableau du défi) et `ChapterPill` « Jour N » alimentés par `registre.json` ;
-- `Timer` (chrono réel) ;
-- `PlanVsResult` (généralise `ResultDuo`) ;
+**Construits (v2, 29/10/2026), dans `src/montage/Defi.tsx`** (planches de démo `DefiDemoWide` et `DefiDemoVertical` dans `src/montage/DefiDemo.tsx`, données fictives) :
+- **Registre du test** : type `Registre`, `checkRegistre` (refuse un montant sans capture), `etatAt`, `eur`, `registreCues` ;
+- `DefiBoard` (le Tableau du défi) et `DayPill` (« Jour 3/7 · 48 € / 100 € »), alimentés par le registre ;
+- `Timer` (chrono réel, ancres horaires des rushes, accéléré signalé) ;
+- `PlanVsResult` (généralise `ResultDuo`, avec repères ✓ / ✗) ;
 - `VerdictTag` ;
-- `LowerThird` interview (prénom · métier · ville) ;
+- `LowerThird` interview (prénom · métier · ville, montant en euros) ;
 - `BigWordCaptions` (un mot géant à la fois) ;
-- `VerticalMaster` 9:16 (zones sûres, § 14).
+- `VerticalMaster`, `SafeText`, `V_SAFE` et `VerticalCounter` (9:16, zones sûres, § 14).
+
+**Reste** : validation visuelle des planches par Ibrahim (images de contrôle à rendre sur le serveur).
 
 
 Ordre = impact sur les tutos ÷ effort. ✅ = déjà prouvé dans le test MINIMAX v3.
