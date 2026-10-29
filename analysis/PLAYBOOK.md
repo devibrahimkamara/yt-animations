@@ -776,7 +776,7 @@ Tout ce qui suit a été testé sur la vidéo AIsa (21:41, montée et livrée en
 - `BigWordCaptions` (un mot géant à la fois) ;
 - `VerticalMaster`, `SafeText`, `V_SAFE` et `VerticalCounter` (9:16, zones sûres, § 14).
 
-**Reste** : validation visuelle des planches par Ibrahim (images de contrôle à rendre sur le serveur).
+**Style validé par Ibrahim le 29/10/2026** (images de contrôle rendues sur le serveur 65.108.151.88, copie dans `~/ibrahim-brand/montage-v2/`). Ces composants sont désormais le style de référence des vidéos du positionnement.
 
 
 Ordre = impact sur les tutos ÷ effort. ✅ = déjà prouvé dans le test MINIMAX v3.
