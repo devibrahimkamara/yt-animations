@@ -80,7 +80,7 @@ Une vidéo d'Ibrahim, c'est **un test réel, avec un enjeu, des règles et des v
 13. **Le contenu sponsorisé est intouchable.** Quand une vidéo est sponsorisée, toutes les présentations et démonstrations du produit ont été validées par la marque. Voir les règles détaillées au §1bis.
 14. **Sérieux mais chill.** On garde les rires, les réactions, les blancs comiques et les ratés. Pas de « mode professeur », pas de suspense sous un passage pratique (§ 5bis).
 15. **On monte la fin réelle.** Les scripts prévoient deux fins (réussite / échec). À l'étape 0, Ibrahim indique celle qui s'est produite. Le hook, la miniature et les compteurs la suivent. Aucune trace de la fin non tournée ne reste.
-16. **Lignes rouges à l'image.** Pas de religion ni de politique, aucun chiffre du business indonésien, jamais de mention des chaînes faceless, et le visage de l'enfant d'Ibrahim n'est pas montré par défaut. Détail au § 4.9.
+16. **Lignes rouges à l'image.** Pas de religion ni de politique, aucun chiffre du business indonésien, jamais de mention des chaînes faceless, et **jamais le visage de l'enfant d'Ibrahim** (décision d'Ibrahim du 29/10/2026). Détail au § 4.9.
 17. **Montants en euros.** Tout montant incrusté est en euros. Une conversion en FCFA (taux fixe 1 € = 655,957 FCFA) apparaît en petit, seulement si Ibrahim l'a décidé pour la vidéo.
 
 ### 1bis. Règles des vidéos sponsorisées
@@ -363,7 +363,7 @@ On les contrôle **sur la planche de chaque bloc** (§ 9, passe 4) et sur chaque
 | Religion : temples, prières, offrandes, appel à la prière | Couper ou recadrer. Aucun commentaire |
 | Politique : affiches, slogans, débats | Couper ou recadrer |
 | Chiffres du business indonésien : caisse, prix, factures, tableaux, écrans de vente | Flouter la zone (`[BLUR-DATA]`) ou couper. Le business se montre, pas ses chiffres |
-| Visage de l'enfant d'Ibrahim | Pas montré par défaut (de dos, de loin ou flouté) tant qu'Ibrahim n'a pas décidé autrement |
+| Visage de l'enfant d'Ibrahim | **Jamais montré** (décision d'Ibrahim du 29/10/2026) : de dos, hors champ, ou flouté sur toute la durée. On vérifie chaque plan où l'enfant apparaît, même de loin ou en reflet |
 | Chaînes faceless (faceless-studio) | Jamais visibles : onglets, Studio, Telegram, noms de projets, dossiers |
 | Passants, plaques, visages non autorisés | Flouter |
 
