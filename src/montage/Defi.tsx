@@ -86,7 +86,9 @@ export const registreCues = (r: Registre): SfxCue[] =>
 const useRolling = (target: number, previous: number, since: number) => {
   const t = useT();
   const p = keyed(t, [since, since + 0.6], [0, 1], Easing.out(Easing.cubic));
-  return previous + (target - previous) * p;
+  const v = previous + (target - previous) * p;
+  // Pendant le roulement, pas de centimes parasites si les deux valeurs sont rondes.
+  return Number.isInteger(previous) && Number.isInteger(target) ? Math.round(v) : v;
 };
 const prevValue = (r: Registre, t: number, pick: (e: ReturnType<typeof etatAt>) => number) => {
   const now = etatAt(r, t);
@@ -450,18 +452,20 @@ export const VerticalMaster: React.FC<{ children: React.ReactNode; guides?: bool
     {guides && (
       <AbsoluteFill style={{ pointerEvents: "none" }}>
         <div style={{ position: "absolute", left: V_SAFE.left, top: V_SAFE.top, width: V_SAFE.right - V_SAFE.left, height: V_SAFE.bottom - V_SAFE.top, border: "3px dashed rgba(255,80,80,0.8)" }} />
-        <div style={{ position: "absolute", left: V_SAFE.left + 12, top: V_SAFE.top + 8, fontFamily: FONT, fontSize: 26, color: "rgba(255,80,80,0.9)" }}>zone sûre du texte</div>
+        <div style={{ position: "absolute", left: V_SAFE.left, top: V_SAFE.top - 40, fontFamily: FONT, fontSize: 26, color: "rgba(255,80,80,0.9)" }}>zone sûre du texte</div>
       </AbsoluteFill>
     )}
   </AbsoluteFill>
 );
-/** Bloc de texte placé dans la zone sûre : `at` = position verticale (0 = haut de la zone, 1 = bas). */
-export const SafeText: React.FC<{ children: React.ReactNode; at?: number; style?: React.CSSProperties }> = ({ children, at = 0, style }) => (
+/** Bloc de texte placé dans la zone sûre : `at` = position verticale (0 = haut de la zone, 1 = bas).
+ *  `center` = texte centré sur l'écran : marges symétriques (celle de droite, la plus large, des deux côtés). */
+export const SafeText: React.FC<{ children: React.ReactNode; at?: number; center?: boolean; style?: React.CSSProperties }> = ({ children, at = 0, center, style }) => (
   <div
     style={{
       position: "absolute",
-      left: V_SAFE.left,
-      width: V_SAFE.right - V_SAFE.left,
+      left: center ? VW - V_SAFE.right : V_SAFE.left,
+      width: center ? V_SAFE.right - (VW - V_SAFE.right) : V_SAFE.right - V_SAFE.left,
+      textAlign: center ? "center" : undefined,
       top: V_SAFE.top + (V_SAFE.bottom - V_SAFE.top) * at,
       fontFamily: FONT,
       color: INK,
@@ -491,25 +495,25 @@ export const VerticalCounter: React.FC<{ registre: Registre; end: number; show?:
   return (
     <AbsoluteFill style={{ opacity: o }}>
       {accroche && (
-        <SafeText at={0} style={{ textAlign: "center", fontSize: 64, fontWeight: 500, letterSpacing: "-0.02em", lineHeight: 1.12, ...blurIn(t, 0, 0.4, 14) }}>
+        <SafeText at={0} center style={{ fontSize: 64, fontWeight: 500, letterSpacing: "-0.02em", lineHeight: 1.12, ...blurIn(t, 0, 0.4, 14) }}>
           {rich(accroche)}
         </SafeText>
       )}
       {r.jours !== undefined && (
-        <SafeText at={0.24} style={{ textAlign: "center" }}>
+        <SafeText at={0.24} center>
           <Eyebrow size={36}>
             {r.unite ?? "Jour"} {Math.max(e.jour, 1)}/{r.jours}
           </Eyebrow>
         </SafeText>
       )}
-      <SafeText at={0.32} style={{ textAlign: "center" }}>
+      <SafeText at={0.32} center>
         <div style={{ fontSize: 200, fontWeight: 500, letterSpacing: "-0.05em", lineHeight: 1, fontVariantNumeric: "tabular-nums", color: frozen ? LIME : INK, textShadow: frozen ? "0 0 70px rgba(198,243,109,0.4)" : undefined }}>
           {eur(value)}
         </div>
         {goal !== undefined && <div style={{ fontSize: 56, color: MUTED, marginTop: 8 }}>objectif {eur(goal)}</div>}
       </SafeText>
       {e.last && (
-        <SafeText at={0.62} style={{ textAlign: "center", fontSize: 46, color: INK_SOFT, ...blurIn(t, e.lastT, 0.35, 10) }}>
+        <SafeText at={0.62} center style={{ fontSize: 46, color: INK_SOFT, ...blurIn(t, e.lastT, 0.35, 10) }}>
           {e.last.amount !== undefined && (
             <span style={{ color: e.last.amount >= 0 ? GOOD : BAD, fontWeight: 600, marginRight: 12, fontVariantNumeric: "tabular-nums" }}>{eur(e.last.amount, true)}</span>
           )}

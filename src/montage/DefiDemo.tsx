@@ -104,7 +104,7 @@ export const DefiDemoVertical: React.FC<{ guides?: boolean }> = ({ guides = true
         ]}
       />
       <Sequence from={f(3)}>
-        <SafeText at={0.7} style={{ textAlign: "center" }}>
+        <SafeText at={0.7} center>
           <span style={{ fontSize: 40, color: LIME }}>démo · données fictives</span>
         </SafeText>
       </Sequence>
