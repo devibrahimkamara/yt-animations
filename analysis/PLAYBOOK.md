@@ -72,6 +72,7 @@ Une vidéo d'Ibrahim, c'est **un tuto qui se regarde comme un documentaire premi
 
 - **Avec des pistes séparées** (face cam / écran), la marque a validé le *contenu*, pas un montage visuel. Donc l'interface est à l'écran **dès qu'il s'y passe une action**, et la face cam plein écran n'est autorisée que pendant les explications où l'écran est figé (validé par Ibrahim sur AIsa).
 - Les attentes déjà coupées par le monteur (« après quelques minutes… ») restent telles quelles.
+- **Exception validée par Ibrahim (6 octobre 2026) : démo longue et monotone** (Character Builder Higgsfield, 3 min 11 sans aucun événement à l'écran, « on s'ennuie »). On retire les **redites orales** (énumérations d'options, phrases dites deux fois, blancs), **jamais une étape ni un choix montré**, et on rend le reste vivant (§4.2bis). Liste des coupes dans `src/<Montage>/cuts.ts`, montrée à Ibrahim avec le bloc.
 - **La restructuration (étape 2) ne touche que ce qui n'est pas sponsorisé** : hook, transitions, réactions, contexte, CTA de fin.
 - En cas de doute sur un segment, on le traite comme sponsorisé et on pose la question à l'étape 0.
 - **Retours de la marque** (sur un brouillon ou sur le montage), une demande de la marque passe avant les interdits ci-dessus :
@@ -176,6 +177,17 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 | `[FLOW-LINE]` | Processus en 3 étapes dessiné par un fil lumineux dans l'espace vide (« contacter → attendre → négocier ») | Dessin du trait 0,6 s par segment, libellés en flou → net *(inspiré de Sanji)* |
 | `[SELF-BROLL]` | B-roll réel d'Ibrahim : il tape sur son ordi, il est au téléphone, en coulisses | Prouve qu'il fait vraiment les manipulations. À tourner une fois, à réutiliser. |
 
+### 4.2bis Démo longue : jamais de temps mort à l'écran (retour d'Ibrahim, 6 octobre 2026)
+
+Une démo où « rien ne se passe à l'écran » pendant plus de **15 s** (même interface, petits clics, aucune animation) fait chuter la rétention. Ibrahim l'a jugée « ennuyeuse à mourir » sur le Character Builder (3 min 11). Le plan de montage (étape 4) doit prévoir pour chaque démo de plus de 30 s :
+1. **Un cadrage sur la zone utile** : si toute l'action est dans un panneau, on découpe ce panneau et on le pose **en grand** (`ScreenStage` avec `win` = le panneau et `free`), au lieu de montrer la page entière où 80 % ne bouge pas.
+2. **Un objet qui se construit au rythme des choix** dans l'espace libéré : par exemple la **carte joueur façon FIFA** (`PlayerCard`, `src/MontageHiggsInflu2/Illus.tsx`) qui se remplit à chaque caractéristique choisie et révèle le résultat à la fin. Variantes : checklist, jauge, liste de réglages.
+3. **Un événement visuel au moins toutes les 5 à 8 s** : zoom sur le clic, surlignage, pastille, ligne qui se remplit, avec un pop discret.
+4. **Le resserrage du texte** : énumérations d'options, phrases dites deux fois, blancs. Coupes définies dans `cuts.ts` (temps T d'origine), appliquées aux pistes par `analysis/tools/apply_cuts.py` sur le serveur (`*_v2`), tous les temps du montage passant par `T()`. Voir §1bis pour les démos sponsorisées.
+5. **La récompense** : le résultat est révélé (carte, `[SHOWCASE]`), avec un vrai moment sonore (§5ter).
+
+**Résultat généré : le fichier HD plutôt que le lecteur de l'interface (retour d'Ibrahim, 7 octobre 2026).** Le lecteur vidéo des outils web saccade souvent à l'enregistrement (Genjutsu sur Higgs Influ 3). Dès qu'un rendu joue dans l'interface, on montre le **fichier HD téléchargé**, en grand, et à côté de l'original quand il y a une vidéo de référence (`ResultDuo`, synchronisés et bouclés sur la même durée). On demande les rendus HD à l'étape 0.
+
 **Retour face cam** : toutes les 60 à 120 s de démo, pour le « pourquoi », une mise en garde, une réaction ou une transition d'étape.
 
 ### 4.2 Démo d'écran (cœur des tutos : ~85 % du temps)
@@ -198,7 +210,7 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 | `[SHOWCASE]` | Le résultat généré est **sorti de l'interface** et posé en grand sur l'aurora : images en cartes, carrousel pour les séries, vidéo 9:16 centrée avec son propre son | Après chaque génération. C'est la récompense de l'étape. + `[REVEAL]`. |
 | `[CURSOR]` | Curseur agrandi ×1,5 à 2 et lissé, anneau de clic `ACCENT` (~250 ms) + `click_*` | Masqué s'il reste immobile plus de 2 s |
 | `[SCROLL-FAST]` | Long document parcouru en accéléré (flou vertical), avec une tenue de 1 à 2 s sur chaque section nommée | *(Sanji : 28 pages en 10 s)* |
-| `[BLUR-DATA]` | Floutage de l'e-mail, des clés API, soldes, onglets et notifications, ou recadrage serré si c'est plus propre | Vérifié à la passe de relecture 4 |
+| `[BLUR-DATA]` | Floutage de l'e-mail, des clés API, soldes, onglets et notifications, ou recadrage serré si c'est plus propre. **On floute la zone précise, jamais tout l'écran** (retour d'Ibrahim, 6 octobre 2026 : la liste de fichiers du Finder était à flouter, mais le masque couvrait aussi la vidéo qu'il montrait). Avant de poser un masque, se demander : *qu'est-ce qu'Ibrahim montre à cet instant ?* Cela doit rester net. | Vérifié à la passe de relecture 4, sur une image prise au milieu de chaque masque |
 | `[CAUTION]` | Moment « attention ici » : on ralentit volontairement (zoom tenu 3 à 4 s), pastille ⚠️, musique coupée | 3 ou 4 fois par vidéo au maximum, sur la clé API, un réglage caché ou une commande |
 | `[STEP-LT]` | Pastille numérotée + intitulé (« 2 · Connecte ton compte ») en bas à gauche **pendant la démo**, qui survit aux coupes | Version légère du carton d'étape, pour les sous-étapes *(Martell « Habits »)* |
 
@@ -237,6 +249,21 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 | **Mise en scène** | Carte de capture posée sur un fond assombri (`Shot`), légèrement inclinée, avec une légende courte ; le chiffre clé repris en grand (`[STAT]`) ; plusieurs vidéos d'un compte en éventail. Toujours **l'écran fait foi** (`[SCREEN-TRUTH]`) : le chiffre affiché est celui de la capture. |
 | **Vidéo sponsorisée** | Vérifier le brief : contenus de tiers (personnes, marques, logos) seulement si la marque l'a validé (sinon flou). Ibrahim tranche. |
 
+**Règle absolue (retour d'Ibrahim, 6 octobre 2026) : tout ce qu'Ibrahim explique et qu'il n'a pas filmé, on va le capturer.** « Va sur TikTok et tape AI influencer » → on enregistre nous-mêmes la recherche. « Son geste signature, c'est le shadowboxing » → on montre **la vidéo** du shadowboxing, pas une capture fixe. Illustrer, ce n'est pas mettre un texte ou un B-roll générique : ce sont **des captures d'écran qu'on va chercher et des extraits vidéo réels**. Au plan de montage (étape 4), chaque phrase du transcript est passée au crible « qu'est-ce qu'on voit à ce moment-là ? », et la colonne « illustration réelle » n'a pas le droit d'être vide sur une explication.
+
+| Outil | Usage |
+|---|---|
+| `analysis/tools/webcap.mjs` | Chrome de bureau piloté (CDP), rendu ×2 (net en 1080p). `launch` ouvre une fenêtre persistante sur le Mac : **Ibrahim y passe lui-même le CAPTCHA** ou se connecte si besoin (jamais Claude). Puis `shot <url> <png>` (capture) et `record <url> <dossier> <s> [attente] [sélecteur]` (vidéo de l'écran : la vidéo d'un post qui joue, une recherche qui défile avec `SCROLL=px`). Encodage : `ffmpeg -f concat -i frames.txt` + recadrage. Rien n'est téléchargé : on enregistre ce que l'écran affiche. |
+| **Contrôle des captures** | Avant usage : luminance max > 200/255 (une capture prise derrière un voile de CAPTCHA ou de connexion plafonne vers 76 : cartes « assombries », retour d'Ibrahim) ; largeur ≥ 1 200 px pour l'élément montré ; **l'écran fait foi** (le chiffre affiché est celui de la capture du jour, même s'il diffère de l'oral). |
+| **Mise en scène** | Vidéo verticale en plein cadre avec fond flouté (`FullClip`) ; plusieurs vidéos qui jouent en éventail avec leurs vues (`FanClips`) ; capture plein cadre avec zooms et surlignage (`PanShot`). |
+
+### 4.4ter Regard caméra : quand Ibrahim lit son script, on ne le montre pas (retour d'Ibrahim, 6 octobre 2026)
+
+Sur les passages scriptés (intro mot pour mot, explications lues), Ibrahim lit son ordinateur : il ne regarde pas l'objectif, parce qu'il **prévoit que ces passages seront entièrement illustrés**. Le laisser à l'écran, même sous une illustration posée par-dessus, « n'est pas professionnel ».
+- **Détection automatique à l'étape 1** : `analysis/tools/gaze.py` (MediaPipe, serveur, ~45 s pour 10 min) mesure l'inclinaison de la tête et le regard vers le bas → `lecture_script.json` (critère : tangage lissé < −6,5° ou < −4° avec regard bas > 0,62, sur au moins 1,2 s). Sur Higgs Influ 2 : 0:00–0:18, 1:28–1:46, 5:15–5:26, 5:37–5:49, 9:00–9:11, 9:15–9:20.
+- **Règle** : chaque passage détecté devient une **illustration plein cadre opaque** (vidéos et captures réelles, §4.4bis) qui couvre toute sa durée. La face cam revient dès qu'Ibrahim regarde l'objectif.
+- La liste est montrée à Ibrahim dans `01-analyse.md`.
+
 ### 4.5 Storytelling et illustration
 
 | ID | Élément | Réglages |
@@ -260,7 +287,7 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 | Couche | Niveau cible | Comportement |
 |---|---|---|
 | **Voix** | −16 LUFS après traitement (master final −14 LUFS) | Chaîne validée par Ibrahim (AIsa, test A/B/C/D) : **débruitage IA DeepFilterNet doux** (`atten_lim_db=12`, venv `analysis/.venv-df`, Python 3.11) → passe-haut 70 Hz → compression 2:1 légère → normalisation −16 LUFS en 2 passes. **Jamais `afftdn`** (artefacts métalliques, voix jugée dégradée). Les sources arrivent souvent très basses (MINIMAX −26,6 LUFS, AIsa −30,5 LUFS) : à surveiller à chaque vidéo. |
-| **Musique sous la voix** | **12 à 14 dB sous la voix (≈ −29 LUFS)** — retour Ibrahim : 19 dB sous la voix était inaudible | Descend automatiquement dès qu'Ibrahim parle (ducking). Plus basse encore (−25 dB) pendant les explications denses. |
+| **Musique sous la voix** | **≈ −32 LUFS (environ 16 dB sous la voix)**, −31 dans le hook. Retours d'Ibrahim : 19 dB sous la voix était inaudible (AIsa), −29 LUFS « trop fort, prend de la place sur la voix » (Higgs Influ 2, 6 octobre 2026), surtout avec un morceau dense | Les monteurs livrent des cuts presque sans pause : le ducking automatique ne joue presque jamais. Le niveau de base doit donc être juste, et le relief vient du **mixage** (§5ter). Plus basse encore (−3 dB) pendant les manipulations denses. |
 | **Musique sans voix** | 12 à 14 dB sous le niveau de voix | Remonte pendant les montages de résultat, `[GEN-WAIT]` et les cartons d'étape |
 | **Silence musical** | — | Les 3 premières secondes (preuve nue), juste avant le verdict et le moment wow, et pendant `[CAUTION]`. Le contraste vaut n'importe quel effet. |
 | **Effets sonores** | Calculés par rapport à la voix p90 : pop −9 dB, clic −12 dB, impact −4 dB | Un effet = un événement porteur de sens. Jamais 2 dans la même seconde. Jamais sur un mot de la voix (décalé de 100 à 200 ms). Pic calé sur l'image. |
@@ -278,6 +305,26 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 - Les 4 références montrent deux écoles. Martell et Swadia n'utilisent presque pas de musique (stings seulement). Sanji met une nappe à 30 dB sous la voix 60 % du temps. **Notre choix** : une nappe très basse (Ibrahim veut de la musique), qui s'efface sous les explications denses, plus des stings ou le jingle aux étapes.
 
 ---
+
+**Mesurer avant de régler (retour d'Ibrahim, 6 octobre 2026 : « musique et effets encore trop forts »).** Les niveaux de musique et d'effets sont **relatifs à la voix**, jamais absolus. Sur Higgs Influ 2, la voix du cut du monteur arrivait à −29,4 LUFS (et non −16) : une musique réglée à −29 LUFS était donc au niveau de la voix. Méthode :
+1. Mesurer la voix livrée (`ffmpeg -af ebur128`) et la normaliser à −16 LUFS (`loudnorm` 2 passes, linéaire) avant le montage.
+2. Après rendu (audio seul : `remotion render … --codec=wav`, rapide), **soustraire la voix** du mix (même échantillonnage, corrélation ≈ 0,97) et mesurer le reste par section. Cible : musique + effets **15 à 18 dB sous la voix** (hook ≥ 14 dB, démo ~18 dB).
+3. Pour retoucher le son d'un bloc déjà validé à l'image : rendre l'audio seul et le reposer sur la vidéo (pas de nouveau rendu image).
+
+### 5ter. Le mixage audio : la musique joue avec l'émotion (règle d'Ibrahim, 6 octobre 2026)
+
+Mettre des morceaux bout à bout et des effets sonores ne suffit pas. **La musique doit réagir à ce qui est dit** : pauses, coupures, reprises. C'est ce qui donne de l'émotion à la vidéo. Au plan de montage (étape 4), une colonne « mixage » est remplie pour chaque moment fort, et les événements sont codés avec `src/montage/mix.ts` (`MixEvent`, gains multipliés, temps de la timeline).
+
+| Moment | Geste de mixage | Exemple (Higgs Influ 2) |
+|---|---|---|
+| **Passage à l'étape suivante** (« on passe à… », « ingrédient numéro 2 ») | Le morceau en cours **finit en fondu** (1,5 à 2 s) juste avant, ~1 s sans musique avec le whoosh du carton, puis le morceau suivant entre en fondu | Fin de m0 à 75,0 s, m1 entre à 76,4 s |
+| **Révélation, chute, punchline** (« spoiler… », « alors que lui… ») | `stop` : la musique **s'arrête net** (fondu 0,1 s) sur le mot qui précède, silence, l'impact tombe sur la révélation, la musique repart en fondu (~1 s) | « Spoiler » → silence → « c'est de l'IA » + impact |
+| **Phrase importante, mise en garde** | `dip` : la musique s'efface de 5 à 8 dB le temps de la phrase | « le point que 90 % des gens manquent » |
+| **Résultat, moment wow** | `stop` court puis `swell` (+3 dB) avec un son de réussite | Révélation du personnage généré |
+| **Manipulation dense** | `dip` de 3 dB sur toute la séquence | Character Builder |
+| **Respiration sans voix** (illustration, attente) | `swell` de +3 à +4 dB | — |
+
+Règles : 3 à 6 gestes de mixage par chapitre (pas plus : le contraste s'use) ; jamais deux `stop` à moins de 20 s ; les gestes sont listés dans le plan pour validation, puis entendus dans le bloc.
 
 ### 5bis. L'identité sonore propre à chaque vidéo (règle d'Ibrahim, 4 octobre 2026)
 
@@ -300,7 +347,7 @@ Le cycle : action de 0 à 3 s, réaction de 3 à 6 s, respiration de 6 à 9 s, p
 3. **Cohérence** : tempos voisins (±15 BPM entre parties consécutives), tonalités compatibles si possible, énergie qui suit l'arc (jamais de baisse dans le dernier tiers, règle 11).
 4. **Transitions** : fondu enchaîné de 1 à 2 s **sous le carton d'étape** (le jingle d'étape couvre la jonction).
 5. **Effets sonores** : le **noyau signature** est constant (révélation, porte de chapitre, validation, interface). On peut y ajouter 1 ou 2 accents propres à la vidéo (texture liée au sujet).
-6. **Source** : Epidemic Sound (abonnement Creator d'Ibrahim, chaîne sur liste blanche). Présélection par Claude via le compte d'Ibrahim, écoute et choix par Ibrahim sur une page d'écoute, mixés sous sa voix.
+6. **Source** : Epidemic Sound (abonnement Creator d'Ibrahim, chaîne sur liste blanche). **Plus de page d'écoute (règle d'Ibrahim, 6 octobre 2026)** : Claude choisit directement **un morceau par partie**, d'après les goûts établis sur les vidéos précédentes (voir les fiches `04-identite-sonore.md` d'AIsa, Hostinger, Higgs Influ 2 : suspense pulsé, ambient/pulses, dark ambient, 90–105 BPM, artistes comme Blue Saga, Out To The World), via l'API publique `https://www.epidemicsound.com/json/search/tracks/?term=` (curl, sans navigateur). Il donne la sélection exacte (titre, artiste, id, rôle) ; Ibrahim télécharge et on passe à la suite.
 7. **Téléchargement HQ : c'est Ibrahim qui le fait, à la main** (règle d'Ibrahim, 4 octobre 2026 : c'est plus rapide, et le pilotage du navigateur par Claude buguait beaucoup). Claude n'essaie **jamais** de télécharger depuis le navigateur.
    - **Claude fournit la liste** : titre, artiste et identifiant Epidemic de chaque morceau choisi (et de chaque effet sonore manquant).
    - **Ibrahim télécharge** dans `~/Downloads` et prévient.
@@ -348,7 +395,11 @@ Historique : Ibrahim a comparé ×1,00, ×1,10 et ×1,15 sur le hook et sur une 
 - **Livrables** : sous-titres et chapitres divisés par 1,10 (`*_x1.10.srt`, `chapitres_x1.10.txt`, `description_x1.10.md`). On garde aussi la version ×1,00.
 - **Sponsor** : une démonstration sponsorisée accélérée enfreint la règle 13 et le §1bis. Avant de publier une vidéo sponsorisée accélérée, Ibrahim valide avec le sponsor. Sinon, on n'accélère que les passages hors démo.
 
-## 7. La restructuration (méthode de l'étape 2 du process)
+## 7. La restructuration — ÉTAPE SUPPRIMÉE
+
+> **Décision d'Ibrahim (6 octobre 2026, Higgs Influ 3)** : « La vidéo était déjà très bien. Toute la restructuration annule tout. Garde ma vidéo comme elle était. On élimine complètement l'étape de la restructuration. » Ses scripts sont déjà construits pour la rétention (H.I.V.E.) : on ne réordonne pas, on ne coupe pas le contenu, on n'ajoute pas de séquence qui allonge la vidéo. Le travail se fait uniquement par l'habillage, sur la timeline d'origine. La méthode ci-dessous est conservée pour mémoire, **ne plus l'appliquer**.
+
+### (archive) Méthode de l'ancienne étape 2
 
 **Objectif :** réorganiser une vidéo déjà tournée pour améliorer la rétention, sans changer son sens et en la gardant compréhensible. On produit des **propositions**, qu'Ibrahim valide avant toute action (étape 2 du §8). Le résultat propre à chaque vidéo est écrit dans `montages/<slug>/02-restructuration.md`.
 
@@ -392,7 +443,6 @@ Historique : Ibrahim a comparé ×1,00, ×1,10 et ×1,15 sur le hook et sur une 
 **Dossier de travail par vidéo :** `montages/<slug>/` avec :
 - `00-brief.md`
 - `01-analyse.md`
-- `02-restructuration.md`
 - `03-audio/`
 - `04-plan.md` + `edit-plan.json`
 - `05-hook/`
@@ -406,7 +456,7 @@ Les composants réutilisables sont dans `src/montage/`.
 |---|---|---|---|---|
 | **0** | **Réception et brief** | Inventaire des fichiers : face cam, captures, pistes séparées ?, audio, résolution, débit, fps. Questions de cadrage. | `00-brief.md` : ce qui est reçu, ce qui manque, et le questionnaire : **sponsor ? points imposés ? segments intouchables ?** titre et miniature (la promesse) · liste des étapes du tuto · vidéo vers laquelle renvoyer · captures de preuve disponibles · ressources à mettre en description | Les réponses au questionnaire et la liste des segments intouchables |
 | **1** | **Analyse** | Transcription Whisper mot par mot, typage des beats (A/E/P/R/C/S), mesures (visage, pauses, niveaux LUFS, qualité image), repérage des matériaux de hook, des preuves, des pièges et des digressions | `01-analyse.md` : la carte de la vidéo (beats, timecodes, durées), le diagnostic (problèmes de rythme, d'audio, de lisibilité) et les points forts | Le diagnostic (« oui, c'est bien ma vidéo, ces problèmes sont réels ») |
-| **2** | **Restructuration** (§7) | Propositions avant → après dans le respect du §1bis : cold open, Carte du tuto, teasers et boucles, ajouts entre démonstrations, coupes hors sponsor, fin | `02-restructuration.md` : tableau des actions (raison, gain, risque), timeline cible, chapitres YouTube provisoires | Chaque action, une par une (oui / non / modifié) |
+| ~~**2**~~ | ~~**Restructuration**~~ **SUPPRIMÉE** (décision d'Ibrahim, 6 octobre 2026) | On garde la vidéo **telle qu'Ibrahim l'a tournée** : ordre, texte et durée. Pas de cold open ajouté, pas de déplacement, pas de coupe de contenu, pas d'insertion qui allonge la timeline. On passe directement de l'analyse (1) au montage audio (3). | — | — |
 | **3** | **Montage audio** (la colonne vertébrale) | Application des coupes et déplacements validés. Traitement voix (passe-haut, compression, −16 LUFS), ambiance sous les coupes, silences ramenés à 0,15–0,35 s (hors démonstrations sponsorisées). **Pas encore d'image retravaillée.** | `03-audio/` : la vidéo réordonnée en basse définition avec l'audio traité. « Si elle tient à l'écoute, elle tiendra à l'image. » | L'écoute de bout en bout : ordre, coupes, qualité de la voix |
 | **4** | **Plan de montage** | Pour chaque segment : cadrages et zooms, écrans (points focaux, spotlights), **tous les textes à l'écran mot pour mot**, cartons d'étape, Carte du tuto, inserts, SFX (fichier et instant), musique (morceaux et niveaux), preuves (montants vérifiés). Contrôle des cadences (§6) et des règles (§1). | `04-plan.md` : tableau lisible, chapitre par chapitre, avec les textes exacts (orthographe à valider ici) + `edit-plan.json` | Les choix d'habillage, **l'orthographe de chaque texte**, les morceaux de musique |
 | **5** | **Prototype : les 60 premières secondes** | Rendu complet (image + son + master) de la première minute, au style final | `05-hook/` : la vidéo de 60 s + la planche de vérification | Le **style** (couleurs, typo, zooms, sons, rythme). C'est la porte la plus importante : une fois validé, le style ne change plus pour le reste. |
@@ -414,10 +464,12 @@ Les composants réutilisables sont dans `src/montage/`.
 | **7** | **Assemblage et finitions** | Assemblage, raccords entre blocs, **re-finalisation de la première minute** (montée en dernier, avec tout ce qu'on sait du reste), master −14 LUFS / −1 dBTP, relecture automatique en 4 passes (§9) | `07-final/` : vidéo complète + rapport de relecture (ce qui passe, ce qui a été corrigé) | Le visionnage complet, **sur téléphone** puis au casque |
 | **8** | **Export et livrables** | Export final (1080p ou 4K, débit élevé, AAC 48 kHz), chapitres YouTube définitifs, sous-titres `.srt` (noms propres corrigés, noms de famille de tiers retirés), liste de 3 ou 4 moments candidats pour des Shorts, et **les ressources de la description** (§8bis) | `08-livrables/` : `chapitres.txt` + `.srt` + `shorts.md` + `description.md` + `ressources/` | Le « bon pour publication » et la liste des ressources |
 | **8bis-M** | **Miniature** (règle d'Ibrahim, 5 octobre 2026 : c'est Claude qui la génère) | Avec **Nano Banana Pro** (Higgsfield, `nano_banana_pro`, 16:9, 2k, 2 variantes), à partir de la photo de visage d'Ibrahim (`analysis/miniatures/visage_*.png`). **Méthode recommandée (retour d'Ibrahim : le brief seul donne un rendu « très nul ») · réplication** : chercher sur YouTube les miniatures des vidéos **les plus vues** sur le même sujet (recherche triée par vues, 10–12 candidates en planche numérotée), Ibrahim choisit, puis on réplique : la miniature de référence + le visage + le prompt d'Ibrahim `analysis/miniatures/prompt_replication.md`, adapté (scène, fond, logos, texte) à notre vidéo. Méthode 1 (brief original sans référence) seulement si Ibrahim fournit déjà une référence visuelle précise. Règles d'identité du visage toujours recopiées telles quelles. Export 1280×720, < 2 Mo. | `09-miniature/` : les variantes + la retenue | Le choix de la miniature |
-| **8ter** | **Mise en ligne** (choix d'Ibrahim, 4 octobre 2026 : par Chrome, pas par l'API) | Dans YouTube Studio, via Claude in Chrome, sur la session déjà connectée d'Ibrahim (aucun identifiant ni jeton manipulé par Claude) : upload de la version accélérée (§6bis), titre, description, chapitres, tags, sous-titres `.srt`, case **« Contient une promotion rémunérée »** si sponsor, miniature fournie par Ibrahim, écran de fin. La vidéo reste en **privé ou programmée**. On n'utilise pas l'API YouTube : un projet non audité verrouille les vidéos en privé, et l'écran de fin n'y existe pas. | Un récapitulatif de la mise en ligne (lien Studio, réglages) | **Le clic sur « Publier » : uniquement après un « oui » explicite d'Ibrahim, à chaque vidéo** (et accord de la marque si le contrat le prévoit) |
+| **8bis-M · leçon (Higgs Influ 3, 7 octobre 2026)** | Le prompt de réplication générique a donné un rendu « très nul, rien à voir avec la référence » (personnages réalistes, mise en page perdue). Ce qui a marché : un prompt qui commence par **« Recreate the FIRST image as faithfully as possible… Only change the elements listed below »**, qui **liste explicitement chaque élément à garder** (mise en page, cartes, style 3D, fond, typographie du titre, chiffres, accessoires) puis **chaque élément à remplacer** (visage, personnages, textes exacts). | — | — |
+| **8ter** | **Mise en ligne** (choix d'Ibrahim, 4 octobre 2026 : par Chrome, pas par l'API) | Dans YouTube Studio, via Claude in Chrome, sur la session déjà connectée d'Ibrahim (aucun identifiant ni jeton manipulé par Claude) : upload de la version accélérée (§6bis), titre, description, chapitres, tags, sous-titres `.srt`, **case « promotion rémunérée » sur NON et « Utilisation de l'IA » sur NON, toujours, même pour une vidéo sponsorisée** (règle d'Ibrahim, 20/10/2026 : ces cases font baisser les performances ; la mention de collaboration reste dans la vidéo et la description), miniature fournie par Ibrahim, écran de fin. La vidéo reste en **privé ou programmée**. On n'utilise pas l'API YouTube : un projet non audité verrouille les vidéos en privé, et l'écran de fin n'y existe pas. | Un récapitulatif de la mise en ligne (lien Studio, réglages) | **Le clic sur « Publier » : uniquement après un « oui » explicite d'Ibrahim, à chaque vidéo** (et accord de la marque si le contrat le prévoit) |
 | **9** | **Boucle d'apprentissage** (72 h après publication) | Lecture de la courbe de rétention fournie par Ibrahim (capture d'écran ou chiffres) : chute à 30 s, 3 décrochages, pic | Une ligne ajoutée à `analysis/registre.md` + une proposition d'ajustement du playbook | Les ajustements du playbook (§11) |
 
 **Règles du process :**
+- **Valider bloc par bloc, même en urgence (règle non négociable, retour d'Ibrahim, 6 octobre 2026).** Sur Higgs Influ 2, la vidéo a été montée d'un bloc pour sortir le soir même : au visionnage, il a fallu reprendre presque tout (face cam pendant la lecture du script, captures fixes au lieu de vidéos, cartes assombries, musique trop forte, démo ennuyeuse, flou sur la mauvaise zone). Le temps « gagné » a été reperdu en retours. **Une date de sortie urgente ne justifie jamais de sauter une validation** : si le délai est intenable, Claude le dit et propose de décaler, il ne bâcle pas.
 - **Une étape = une validation.** Si Ibrahim demande des changements, on corrige et on renvoie le livrable de la même étape. On n'avance pas « en parallèle » sur l'étape suivante.
 - **Les retours se capitalisent.** Tout retour qui vaut pour les vidéos futures est ajouté au playbook (et à la mémoire). Par exemple : « textes trop rapides » est devenu la règle 9.
 - **Le coût est annoncé.** Avant les étapes 1, 5, 6 et 7, Claude donne une estimation (tokens et temps).
@@ -499,6 +551,10 @@ Exemple de référence : `montages/aisa/08-livrables/` contient 5 prompts, les m
   - l'historique ou les sessions d'autres projets.
 - Afficher des données de tiers : noms et e-mails dans un CSV, profil LinkedIn, contacts trouvés par l'IA. On floute à l'image, et on retire les noms de famille des sous-titres.
 - Lancer un rendu de plus de ~5 min sur le Mac d'Ibrahim sans son feu vert. Il travaille dessus.
+- Garder Ibrahim à l'écran pendant qu'il lit son script (§4.4ter), même sous une illustration.
+- Illustrer avec une capture fixe ce qui existe en vidéo (un geste, une tendance, une recherche) : on montre la vidéo (§4.4bis).
+- Flouter tout l'écran pour masquer une donnée : on floute la zone, pas ce qu'Ibrahim montre.
+- Une démo de plus de 15 s sans aucun événement à l'écran (§4.2bis).
 - Masteriser chaque bloc puis les recoller. La bande son finale est reconstruite d'un seul tenant, puis masterisée une seule fois (§13).
 
 ---
@@ -550,6 +606,13 @@ Tout ce qui suit a été testé sur la vidéo AIsa (21:41, montée et livrée en
   - on reconstruit la bande son depuis l'audio brut de chaque bloc (`analysis/tools/build_soundtrack.py`) ;
   - on retire le retard de l'encodeur AAC, **2 048 échantillons au début de chaque bloc** ;
   - on vérifie l'alignement voix ↔ timeline par corrélation : il doit être de 0,0 ms.
+
+- **Dérushage et voix basse (Higgs Influ 3, 6 octobre 2026)** : `derush2.py` coupe à l'énergie. Sur une voix enregistrée bas (−26 LUFS), ses consonnes faibles passent sous le seuil et **des mots disparaissent** (« posté 319 », « partout »…). Toujours lancer le **contrôle des mots perdus** (chaque mot de la transcription littérale et de l'alignement doit tomber dans un segment gardé ou dans une coupe validée) avant d'envoyer l'aperçu de l'étape 3. Si le contrôle échoue : ne couper que les vrais silences (énergie < plancher + 10 dB, aucun mot, ≥ 0,2 s), méthode de `montages/higgs-influ3/03-audio/build_step3.py`. Une prise serrée gagne alors très peu : ne pas promettre de gain de durée avant cette mesure.
+
+- **Commandes enchaînées sur le Mac : jamais de commande dans une variable (Higgs Influ 3, 7 octobre 2026).** Le shell est zsh, qui ne découpe pas `$K` en mots : `K="ssh -i … root@IP"; $K …` échoue (« no such file »). Une chaîne de rendu lancée ainsi s'est arrêtée après la première étape, et 2 h 30 ont été perdues. Pour une chaîne d'étapes (rendu → bande son → assemblage), écrire un **script bash dans un fichier** (`#!/bin/bash`, `set -euo pipefail`) et le lancer en arrière-plan, puis **vérifier qu'il tourne** quelques minutes après.
+
+- **Un seul rendu à la fois sur le serveur (Hostinger Produits, 11 octobre 2026).** `render_remote.sh` écrit toujours dans `/root/rendu/raw.mp4` et `DONE` : deux rendus lancés en même temps s'écrasent (le second fait `rm -f raw.mp4 DONE` pendant que le premier tourne). Avant de lancer un bloc, vérifier qu'aucun `render_remote.sh` ne tourne (`ps aux | grep render_remote`) ; pour enchaîner, un script qui attend la fin du précédent. Ne pas lancer non plus de capture Chrome sur le serveur pendant un rendu.
+- **Captures de pages de marque redirigées selon le pays** : depuis l'Indonésie, hostinger.com/fr redirige vers la version indonésienne. Le serveur (Allemagne) n'a pas suffi (Chrome sans interface bloqué). Ce qui marche : le VPN d'Ibrahim réglé sur la France, puis `webcap.mjs` sur le Mac (vérifier `curl ipinfo.io/country` = FR).
 
 ### 13.4 Rendu
 - **Validation par parties, toujours** : même pressé, on montre la vidéo à Ibrahim **par parties** (blocs ou aperçu découpé) avant la version finale. Tout raccourci du process est annoncé explicitement (retour d'Ibrahim, 5 octobre 2026).
