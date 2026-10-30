@@ -207,3 +207,177 @@ export const CapIntro: React.FC<{
     </AbsoluteFill>
   );
 };
+
+// ════════ Montage complet (étape 6) ════════
+
+/** Plateformes testées sans résultat : cartes sobres, chacune barrée d'un ✗ (même traitement qu'un succès, règle 12). */
+export const FailRow: React.FC<{ end: number; items: { name: string; at: number }[]; title: string; titleAt: number }> = ({ end, items, title, titleAt }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.35);
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT }}>
+      <Backdrop />
+      <div style={{ position: "absolute", top: 300, left: 0, right: 0, display: "flex", justifyContent: "center", gap: 60 }}>
+        {items.map((it, i) => (
+          <div key={i} style={{ ...card, width: 440, padding: "54px 40px", textAlign: "center", ...blurIn(t, it.at, 0.45, 30) }}>
+            <div style={{ fontSize: 64, fontWeight: 500, color: INK, letterSpacing: "-0.03em" }}>{it.name}</div>
+            <div style={{ fontSize: 110, color: "#ff8a7a", marginTop: 18, fontWeight: 600, opacity: keyed(t, [it.at + 0.35, it.at + 0.6], [0, 1], EASE) }}>✗</div>
+          </div>
+        ))}
+      </div>
+      <div style={{ position: "absolute", top: 820, left: 0, right: 0, textAlign: "center", fontSize: 84, fontWeight: 500, color: INK, letterSpacing: "-0.04em", ...blurIn(t, titleAt, 0.45, 20) }}>{rich(title)}</div>
+    </AbsoluteFill>
+  );
+};
+
+/** Chaîne de travail de l'IA, étape par étape ([FLOW-LINE]). */
+export const FlowLine: React.FC<{ end: number; steps: { text: string; at: number }[]; title?: string; titleAt?: number }> = ({ end, steps, title, titleAt = 0 }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.35);
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT }}>
+      <Backdrop />
+      {title && <div style={{ position: "absolute", top: 220, left: 0, right: 0, textAlign: "center", fontSize: 84, fontWeight: 500, color: INK, letterSpacing: "-0.04em", ...blurIn(t, titleAt, 0.45, 20) }}>{rich(title)}</div>}
+      <div style={{ position: "absolute", top: 470, left: 0, right: 0, display: "flex", justifyContent: "center", alignItems: "center", gap: 18 }}>
+        {steps.map((s, i) => {
+          const last = i === steps.length - 1;
+          return (
+            <React.Fragment key={i}>
+              {i > 0 && <div style={{ fontSize: 50, color: MUTED, opacity: keyed(t, [s.at - 0.1, s.at + 0.2], [0, 1]) }}>→</div>}
+              <div style={{ ...card, ...(last ? { background: LIME, color: "#0d1208", border: "none" } : { color: INK }), borderRadius: 26, padding: "30px 34px", fontSize: 44, fontWeight: 500, letterSpacing: "-0.02em", ...blurIn(t, s.at, 0.4, 24) }}>
+                <div style={{ fontSize: 24, letterSpacing: "0.14em", color: last ? "#33441c" : LIME, marginBottom: 8 }}>{i + 1}</div>
+                {s.text}
+              </div>
+            </React.Fragment>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** Capture de téléphone (Telegram) qui défile lentement, légende à gauche. */
+export const PhoneShot: React.FC<{ src: string; iw: number; ih: number; end: number; caption: string; captionAt?: number; eyebrow?: string }> = ({ src, iw, ih, end, caption, captionAt = 0.8, eyebrow }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.35);
+  const w = 470;
+  const h = 940;
+  const sh = (ih * w) / iw;
+  const y = keyed(t, [0.6, end - 0.4], [0, -(sh - h)], (x) => x);
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT }}>
+      <Backdrop />
+      <div style={{ position: "absolute", left: 1180, top: 70, ...blurIn(t, 0, 0.5, 40) }}>
+        <div style={{ ...card, padding: 12, borderRadius: 54 }}>
+          <div style={{ width: w, height: h, borderRadius: 44, overflow: "hidden", position: "relative" }}>
+            <Img src={staticFile(src)} style={{ position: "absolute", left: 0, top: y, width: w, height: sh }} />
+          </div>
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: 150, top: 380, width: 900 }}>
+        {eyebrow && <div style={blurIn(t, 0.3, 0.4, 14)}><Eyebrow size={30}>{eyebrow}</Eyebrow></div>}
+        <div style={{ fontSize: 88, fontWeight: 500, color: INK, letterSpacing: "-0.04em", lineHeight: 1.05, marginTop: 18, ...blurIn(t, captionAt, 0.45, 20) }}>{rich(caption)}</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** Kling 3.0 contre Kling 4.0 : durée maximale d'un clip (15 s contre 30 s). */
+export const DurationBars: React.FC<{ end: number; oldAt: number; newAt?: number; title?: string; titleAt?: number }> = ({ end, oldAt, newAt, title, titleAt = 0 }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.35);
+  const full = 1100;
+  const g1 = keyed(t, [oldAt, oldAt + 0.9], [0, 0.5], EASE);
+  const g2 = newAt !== undefined ? keyed(t, [newAt, newAt + 1.1], [0, 1], EASE) : 0;
+  const row = (label: string, g: number, at: number, secs: string, hi: boolean) => (
+    <div style={{ display: "flex", alignItems: "center", gap: 40, ...blurIn(t, at, 0.4, 20) }}>
+      <div style={{ width: 300, fontSize: 52, color: hi ? INK : MUTED, fontWeight: 500, letterSpacing: "-0.02em" }}>{label}</div>
+      <div style={{ width: full, height: 84, borderRadius: 42, background: "rgba(255,255,255,0.06)", position: "relative" }}>
+        <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: full * g, borderRadius: 42, background: hi ? LIME : "rgba(255,255,255,0.28)" }} />
+      </div>
+      <div style={{ width: 160, fontSize: 64, fontWeight: 500, color: hi ? LIME : INK_SOFT }}>{secs}</div>
+    </div>
+  );
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT }}>
+      <Backdrop />
+      {title && <div style={{ position: "absolute", top: 200, left: 0, right: 0, textAlign: "center", fontSize: 84, fontWeight: 500, color: INK, letterSpacing: "-0.04em", ...blurIn(t, titleAt, 0.45, 20) }}>{rich(title)}</div>}
+      <div style={{ position: "absolute", top: 470, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: 70 }}>
+        {row("Kling 3.0", g1, oldAt, "15 s", false)}
+        {newAt !== undefined && row("Kling 4.0", g2, newAt, "30 s", true)}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** Image posée en carte sur le côté (l'écran reste visible). */
+export const ImageCard: React.FC<{ src: string; end: number; label: string; w?: number; h?: number; side?: "left" | "right" }> = ({ src, end, label, w = 480, h = 600, side = "left" }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.35);
+  return (
+    <div style={{ position: "absolute", [side]: 80, top: 160, opacity: o, fontFamily: FONT, ...blurIn(t, 0, 0.5, 30) }}>
+      <div style={{ ...card, padding: 10 }}>
+        <Img src={staticFile(src)} style={{ width: w, height: h, borderRadius: 22, display: "block", objectFit: "cover" }} />
+      </div>
+      <div style={{ marginTop: 16, ...glass, background: "rgba(14,17,12,0.92)", borderRadius: 999, padding: "12px 28px", display: "inline-block", fontSize: 34, color: INK }}>{rich(label)}</div>
+    </div>
+  );
+};
+
+/** Le clip de la retouche (5 s, 16:9) joué en entier, avec son son. */
+export const ClipCard: React.FC<{ src: string; end: number; caption?: string; volume?: number }> = ({ src, end, caption, volume = 0.5 }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.01, 0.35);
+  return (
+    <AbsoluteFill style={{ opacity: o, justifyContent: "center", alignItems: "center", fontFamily: FONT }}>
+      <Backdrop />
+      <div style={{ ...card, padding: 10 }}>
+        <OffthreadVideo src={staticFile(src)} volume={volume} style={{ width: 1500, height: 844, borderRadius: 22, display: "block" }} />
+      </div>
+      {caption && (
+        <div style={{ position: "absolute", bottom: 40, ...blurIn(t, 0.6, 0.4, 14) }}>
+          <div style={{ ...glass, background: "rgba(14,17,12,0.9)", borderRadius: 999, padding: "12px 30px", fontSize: 34, color: INK }}>{rich(caption)}</div>
+        </div>
+      )}
+    </AbsoluteFill>
+  );
+};
+
+/** Le Tableau du défi en crédits Higgsfield (registre de 04-plan § 3). */
+export const CreditBoard: React.FC<{ end: number; rows: { label: string; value: string; at: number }[]; total: string; totalAt: number; title?: string }> = ({ end, rows, total, totalAt, title }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.35);
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT, justifyContent: "center", alignItems: "center" }}>
+      <Backdrop />
+      <div style={{ ...card, width: 1240, padding: "56px 70px", ...blurIn(t, 0, 0.5, 30) }}>
+        {title && <Eyebrow size={30}>{title}</Eyebrow>}
+        {rows.map((r, i) => (
+          <div key={i} style={{ display: "flex", justifyContent: "space-between", fontSize: 48, color: INK_SOFT, padding: "22px 0", borderBottom: `1px solid ${LINE}`, ...blurIn(t, r.at, 0.4, 16) }}>
+            <span>{rich(r.label)}</span>
+            <span style={{ color: INK }}>{r.value}</span>
+          </div>
+        ))}
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginTop: 30, ...blurIn(t, totalAt, 0.45, 20) }}>
+          <span style={{ fontSize: 52, color: INK, fontWeight: 500 }}>Total</span>
+          <span style={{ fontSize: 110, color: LIME, fontWeight: 500, letterSpacing: "-0.04em" }}>{total}</span>
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** Carte de fin : la prochaine vidéo, sans miniature (titre seul). */
+export const EndCard: React.FC<{ end: number; eyebrow: string; title: string }> = ({ end, eyebrow, title }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.4, 0.01);
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT }}>
+      <AbsoluteFill style={{ background: "rgba(5,7,4,0.72)", backdropFilter: "blur(16px)" }} />
+      <div style={{ position: "absolute", left: 140, top: 330, width: 1100, ...blurIn(t, 0.1, 0.6, 40) }}>
+        <Eyebrow size={32}>{eyebrow}</Eyebrow>
+        <div style={{ ...card, marginTop: 24, padding: "54px 60px", fontSize: 80, fontWeight: 500, color: INK, letterSpacing: "-0.04em", lineHeight: 1.08 }}>{rich(title)}</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
