@@ -67,20 +67,22 @@ Types de beats : A action · E explication · P preuve/résultat · R réaction 
 ### Transcription (marques à corriger dans les sous-titres)
 XFIT / Xfield → **Higgsfield** · Cling / Clean → **Kling** · Trades → **Threads** · Yann Jomondé → (passage faceless) · 780p → **720p**.
 
-## 3. Lecture du script (regard)
-*Détection MediaPipe sur la face en pleine qualité (`01-analyse/gaze_full.json`, 5 images/s, visage trouvé sur 90 % des images) → `lecture_script.json`. Ton ordinateur est posé près de la caméra : quand tu lis, ta tête reste face à l'objectif mais tes yeux se décalent (critère : tête à moins de 10° de l'axe, regard décalé > 0,15, au moins 1,2 s). Quand tu tournes la tête vers l'ordinateur pour manipuler, c'est l'écran qu'on montre, donc pas de souci.*
+## 3. Lecture du script (regard) · corrigé le 30/10/2026
+**Première version fausse** : le critère automatique (« regard décalé ») avait classé 4 min 36 en lecture, dont toute l'intro. Ibrahim l'a vu sur le prototype : on ne voyait jamais son visage.
 
-**4 min 36 de lecture détectées**, en 3 grands blocs (les petits passages de 1 à 4 s pendant la démo sont déjà couverts par l'écran) :
+**Vérification visuelle, image par image** (gros plan des yeux, 1 image/s, planches `01-analyse/yeux/`), sur les 3 passages où l'écran montre le script :
 
-| Bloc | Source | Ce que tu dis | Ce que l'écran montre | Illustration prévue (plein cadre, § 4.4ter) |
-|---|---|---|---|---|
-| **1. L'intro** | 0:00 – 1:39 (tête tournée de 0:00 à 0:09, lecture de 0:09 à 1:39) | Accroche, présentation, tes 2 business, la précision « pas la vraie pub » | Le script ❌ | La pub HD dès 0:00 · les 4 images qui se posent · **19,6 M** en roulette sur la capture Threads · ta page Nova Media Lab · « la pub n'est pas lancée » en carte |
-| **2. Le pont** | 8:18 – 10:53 | Ce qui a raté, ce que fait l'IA, les rapports Telegram, la partie 2, Kling 4.0 contre 3.0, abonnement payant | Le script, puis la page Kling 4.0 ❌ | **Ce qui a raté** : Instagram / TikTok / Facebook en ✗ (cartes) · **ce que fait l'IA** : la chaîne stratégie → création → publication → rapport (`FLOW-LINE`) · **Telegram** : ta capture si tu me l'envoies · **Kling 4.0** : « 15 s → 30 s » en compteur, puis la page Higgsfield (10:40) |
-| **3. La fin** | 18:36 – 19:33 | Verdict, lien, teaser des agents IA, « peace out » | Le script ❌ | Le **Tableau du défi** de la pub (4 moments ✓, coût réel) au verdict · la carte du lien · le teaser « mes agents IA » (tes vraies captures Threads / LinkedIn en éventail) · fin sur une autre vidéo |
+| Passage | Ce qu'on voit | Traitement |
+|---|---|---|
+| **0:00 – 0:08** | Tête tournée vers l'ordinateur : **lecture** | Illustration plein cadre (la pub, les 4 images) |
+| 0:08 – 1:39 | Regard caméra, quelques regards d'1 s vers le bas | **Face cam**, illustrations en inserts |
+| 8:00 – 8:46 | Regard caméra | Face cam + inserts |
+| **8:46 – 9:03** | Yeux baissés : **lecture** (rapports Telegram, chaîne de l'IA) | Illustration plein cadre (capture Telegram) |
+| 9:03 – 10:38 | Regard caméra | Face cam + inserts |
+| 10:38 – 11:23 | Tête vers l'ordinateur (il manipule) | Écran plein cadre (démo) |
+| 18:30 – 19:33 | Regard caméra | Face cam + inserts |
 
-**Petits passages pendant les preuves** (1:56, 2:15, 4:14, 4:52 : 2 à 6 s) : l'écran des statistiques reste en plein cadre, donc rien à ajouter.
-
-**Planche de contrôle** : `01-analyse/planche_regard.jpg` (à 3 s tu regardes l'ordinateur, à 90 s tes yeux sont décalés vers le script).
+Fichier : `01-analyse/lecture_script.json`.
 
 ## 4. Propositions de coupe (🔒 rien n'est coupé sans ton accord)
 

@@ -5,6 +5,9 @@
 ## ✅ Validé par Ibrahim le 30/10/2026
 Tout le plan : textes à l'écran, floutages, **aucune accélération** (vitesse ×1,00), musique, miniature à partir de la maquette du script (étape 8bis).
 
+## ⚠️ Correction du 30/10/2026 : la lecture du script
+Les blocs marqués « tu lis → illustré » (1, 2, 6, 7, 12) reposaient sur une détection fausse. Vérifié à l'œil (`01-analyse.md` § 3) : tu ne lis que de **0:00 à 0:08** et de **8:46 à 9:03**. Partout ailleurs, **face cam**, et les illustrations de ce plan passent en **inserts** (plein cadre court ou à côté du visage). Décision d'Ibrahim : on continue le montage complet ; la 1re minute sera revue avec le reste.
+
 ## 0. Règles de ce montage
 - **Aucune coupe, aucune insertion qui allonge la vidéo.** Tout ce qui est ajouté (pub HD, prévu / obtenu, résultat de la retouche, Telegram) se pose **sur** la voix existante.
 - **Démos sponsorisées intouchables** (§ 1bis) : pas d'accélération, pas de coupe ; on les rend vivantes par le cadrage, les zooms et les pastilles.
