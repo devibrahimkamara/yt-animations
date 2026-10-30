@@ -3,6 +3,7 @@ import { IdentiteV2Board } from "./identiteV2/Board";
 import { DefiDemoVertical, DefiDemoWide } from "./montage/DefiDemo";
 import { HOOK_END as KLING4_HOOK_END, Kling4Hook } from "./MontageHiggsKling4/Hook";
 import { FULL_END as KLING4_FULL_END, Kling4Full } from "./MontageHiggsKling4/Full";
+import { Kling4Thumb } from "./MontageHiggsKling4/Thumb";
 import { MontageAisaHook, HOOK_END } from "./MontageAisa/Hook";
 import { MontageHostingerHook, HOOK_END as HOSTINGER_HOOK_END } from "./MontageHostinger/Hook";
 import { MontageHostinger, FULL_DURATION as HOSTINGER_DURATION } from "./MontageHostinger/Full";
@@ -3648,6 +3649,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="DefiDemoWide" component={DefiDemoWide} fps={30} width={1920} height={1080} durationInFrames={720} />
       <Composition id="Kling4Hook" component={Kling4Hook} fps={30} width={1920} height={1080} durationInFrames={Math.round(KLING4_HOOK_END * 30)} />
       <Composition id="Kling4Full" component={Kling4Full} fps={30} width={1920} height={1080} durationInFrames={Math.round(KLING4_FULL_END * 30)} />
+      <Composition id="Kling4Thumb" component={Kling4Thumb} fps={30} width={1280} height={720} durationInFrames={1} />
       <Composition id="DefiDemoVertical" component={DefiDemoVertical} fps={30} width={1080} height={1920} durationInFrames={480} defaultProps={{ guides: true }} />
       <Composition id="MontageAisa" component={MontageAisa} fps={30} width={1920} height={1080} durationInFrames={Math.round(FULL_DURATION * 30)} />
       <Composition
