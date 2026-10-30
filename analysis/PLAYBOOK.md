@@ -104,6 +104,7 @@ Une vidéo d'Ibrahim, c'est **un test réel, avec un enjeu, des règles et des v
 - Les attentes déjà coupées par le monteur (« après quelques minutes… ») restent telles quelles.
 - **Exception validée par Ibrahim (6 octobre 2026) : démo longue et monotone** (Character Builder Higgsfield, 3 min 11 sans aucun événement à l'écran, « on s'ennuie »). On retire les **redites orales** (énumérations d'options, phrases dites deux fois, blancs), **jamais une étape ni un choix montré**, et on rend le reste vivant (§4.2bis). Liste des coupes dans `src/<Montage>/cuts.ts`, montrée à Ibrahim avec le bloc.
 - **La restructuration (étape 2) ne touche que ce qui n'est pas sponsorisé** : hook, transitions, réactions, contexte, CTA de fin.
+- **Rushes déjà dérushés (règle d'Ibrahim, 30 octobre 2026)** : quand Ibrahim livre une vidéo passée dans son moteur de dérushage (blancs, silences et erreurs déjà coupés), **on ne coupe rien sans son autorisation**. Un passage de contexte qui semble inutile devient une **proposition de coupe** dans `01-analyse.md` (timecodes, raison, durée gagnée), validée ou refusée par Ibrahim avant l'étape 3.
 - En cas de doute sur un segment, on le traite comme sponsorisé et on pose la question à l'étape 0.
 - **Retours de la marque** (sur un brouillon ou sur le montage), une demande de la marque passe avant les interdits ci-dessus :
   1. **Recaler les temps.** Si la marque a vu le brouillon brut, ses minutages correspondent à la **source**. On les convertit en temps de timeline avec l'EDL de l'étape 3 (source → T, puis ÷ la vitesse finale, §6bis).
