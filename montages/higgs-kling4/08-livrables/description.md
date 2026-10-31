@@ -36,7 +36,7 @@ Mots-clés du brief, tous présents : Kling 4.0, Higgsfield, AI video generator,
 ```text
 🎬 Planifie ta scène, puis génère-la avec Kling 4.0 👉 https://higgsfield.ai/s/higgsfield-kling-4-0-yt-ibrahimkamaradaily-f2f-QNZxOS
 
-Depuis quelques semaines, l'IA gère le marketing de mes deux business : mes posts Threads et LinkedIn, et les articles de mes deux blogs. Dans cette vidéo, je te montre mes vrais chiffres, puis je teste une pub vidéo de 30 secondes faite avec Kling 4.0 sur Higgsfield (References, Frames et Edit video au même endroit).
+L'IA gère le marketing de mes business : 19,7 millions de vues sur Threads en 30 jours. Dans cette vidéo, je te montre ces vrais chiffres, puis je crée une pub vidéo de 30 secondes avec Kling 4.0 sur Higgsfield (References, Frames et Edit video au même endroit).
 
 Tu veux une vidéo sur les agents IA qui gèrent mes réseaux ? Dis-le en commentaire 👇
 ```
