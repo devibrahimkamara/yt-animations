@@ -1,31 +1,29 @@
 # Kling 4.0 · textes de mise en ligne (31/10/2026)
 
-Vidéo : `07-final/kling4_final.mp4` (19:33, 1080p, son à −14 LUFS). Miniatures en test A/B (« Tester et comparer » de YouTube Studio) : `09-miniature/miniature_A_r9a.jpg` et `09-miniature/miniature_B_r9b.jpg` (1280×720, Nano Banana Pro, référence 9).
+Vidéo : version courte d'Ibrahim `~/Desktop/higgs kling fin.mp4` (12:40), après le refus de la version longue (`07-final/kling4_final.mp4`, 19:33) par la marque. Miniatures en test A/B (« Tester et comparer » de YouTube Studio) : `09-miniature/miniature_A_r9a.jpg` et `09-miniature/miniature_B_r9b.jpg` (1280×720, Nano Banana Pro, référence 9).
 Lien de suivi Higgsfield (reçu le 31/10/2026) : https://higgsfield.ai/s/higgsfield-kling-4-0-yt-ibrahimkamaradaily-f2f-QNZxOS
 
 ## Titre
 J'ai confié le marketing de mes business à l'IA : voici mes vrais chiffres
 
-## Description
+## Description (version courte d'Ibrahim, 12:40, mise à jour le 31/10/2026)
 ```text
 🎬 Fais ta première scène de 30 secondes avec Kling 4.0 👉 https://higgsfield.ai/s/higgsfield-kling-4-0-yt-ibrahimkamaradaily-f2f-QNZxOS
 Collaboration commerciale avec Higgsfield
 
-Depuis quelques semaines, l'IA gère le marketing de mes deux business : mes posts Threads et LinkedIn, et les articles de mes deux blogs. Dans cette vidéo, je te montre mes vrais chiffres, ce qui a marché et ce qui a raté. Puis je teste la création de contenu avec l'IA : une pub vidéo de 30 secondes, faite avec Kling 4.0 sur Higgsfield. Kling 4.0 génère jusqu'à 30 secondes en un seul clip, et sur Higgsfield tu as les modes References, Frames et Edit video au même endroit. Et toi, quelle partie de ton marketing tu confierais à l'IA en premier ? 👇
+L'IA gère le marketing de mes business, et sur Threads elle m'a fait 19,7 millions de vues en 30 jours. Dans cette vidéo, je te montre ces vrais chiffres, puis je te montre comment je crée du contenu avec l'IA : une pub vidéo de 30 secondes, faite avec Kling 4.0 sur Higgsfield. Kling 4.0 génère jusqu'à 30 secondes en un seul clip, le double de Kling 3.0, et sur Higgsfield tu as les modes References, Frames et Edit video au même endroit. Et toi, quelle partie de ton marketing tu confierais à l'IA en premier ? 👇
 
 Je te montre tout mon workflow sur Higgsfield, un AI video generator : je planifie la pub en 4 images avec les keyframes AI video (le mode Frames), puis je change la tenue d'un personnage avec le multi-reference video (le mode References). Plan à gauche, résultat à droite : tu juges avec moi si cette 30 second AI video respecte mon plan. Un vrai test d'AI filmmaking, avec le coût en crédits affiché sur le bouton Generate. Le mode Edit video, lui, sert à l'AI video editing : modifier un élément d'une vidéo en gardant le reste.
 
 ⏱️ CHAPITRES
 00:00 Est-ce que l'IA peut vraiment gérer le marketing d'un business ?
-01:38 Combien de vues l'IA m'a fait sur Threads ?
-04:00 Qu'est-ce que l'IA a changé sur LinkedIn et sur mes blogs ?
-08:02 Qu'est-ce qui n'a pas marché, et comment l'IA travaille au quotidien ?
-09:30 Qu'est-ce que Kling 4.0 change sur Higgsfield ?
-11:32 Quels sont les 3 modes de Kling 4.0 (References, Frames, Edit video) ?
-13:01 Comment préparer une pub en 4 images ?
-14:25 Est-ce que Kling 4.0 respecte mon plan en mode Frames ?
-17:06 Comment changer une tenue avec le mode References ?
-18:30 Est-ce que j'utiliserais Kling 4.0 pour de vraies pubs ?
+00:28 Combien de vues l'IA m'a fait sur Threads ?
+02:38 Qu'est-ce que Kling 4.0 change sur Higgsfield ?
+04:39 Quels sont les 3 modes de Kling 4.0 (References, Frames, Edit video) ?
+06:08 Comment préparer une pub en 4 images ?
+07:32 Est-ce que Kling 4.0 respecte mon plan en mode Frames ?
+10:13 Comment changer une tenue avec le mode References ?
+11:37 Est-ce que j'utiliserais Kling 4.0 pour de vraies pubs ?
 
 🔗 Essaie Kling 4.0 sur Higgsfield : https://higgsfield.ai/s/higgsfield-kling-4-0-yt-ibrahimkamaradaily-f2f-QNZxOS
 📖 Kling 4.0 sur Higgsfield : https://higgsfield.ai/blog/kling-4-0-on-higgsfield
