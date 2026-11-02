@@ -211,3 +211,68 @@ export const ComboCard: React.FC<{ end: number; leftAt: number; rightAt: number 
     </AbsoluteFill>
   );
 };
+
+/** Un abonnement par plateforme : les tuiles tombent, puis le total. */
+export const SubsCard: React.FC<{ end: number; items: { name: string; at: number }[]; total: string; totalAt: number; title: string }> = ({ end, items, total, totalAt, title }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.35);
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT, justifyContent: "center", alignItems: "center" }}>
+      <div style={{ fontSize: 84, fontWeight: 500, color: INK, letterSpacing: "-0.04em", marginBottom: 56, ...blurIn(t, 0.1, 0.45, 20) }}>{rich(title)}</div>
+      <div style={{ display: "flex", gap: 28 }}>
+        {items.map((it, i) => (
+          <div key={i} style={{ ...card, width: 330, padding: "40px 34px", ...blurIn(t, it.at, 0.45, 30) }}>
+            <div style={{ fontSize: 46, fontWeight: 500, color: INK, letterSpacing: "-0.03em" }}>{it.name}</div>
+            <div style={{ marginTop: 22, display: "inline-block", borderRadius: 999, padding: "8px 20px", border: "1.5px solid rgba(255,138,122,0.5)", color: "#ff8a7a", fontSize: 30 }}>+ 1 abonnement</div>
+          </div>
+        ))}
+      </div>
+      <div style={{ marginTop: 56, ...pillCss, fontSize: 44, padding: "16px 40px", ...blurIn(t, totalAt, 0.45, 16) }}>{rich(total)}</div>
+    </AbsoluteFill>
+  );
+};
+
+/** Carte de conseil plein écran : sur-titre, titre, lignes cochées (✓) ou barrées (✗). */
+export const TipBoard: React.FC<{ end: number; eyebrow: string; title: string; titleAt?: number; rows: { text: string; at: number; ok?: boolean }[] }> = ({ end, eyebrow, title, titleAt = 0.1, rows }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.35);
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT, justifyContent: "center", alignItems: "center" }}>
+      <div style={{ ...card, width: 1300, padding: "60px 72px", ...blurIn(t, 0, 0.5, 30) }}>
+        <Eyebrow size={30}>{eyebrow}</Eyebrow>
+        <div style={{ fontSize: 76, fontWeight: 500, color: INK, letterSpacing: "-0.04em", lineHeight: 1.1, marginTop: 18, ...blurIn(t, titleAt, 0.45, 20) }}>{rich(title)}</div>
+        <div style={{ marginTop: 40 }}>
+          {rows.map((r, i) => (
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, fontSize: 46, color: INK_SOFT, padding: "16px 0", ...blurIn(t, r.at, 0.4, 16) }}>
+              <span style={{ width: 54, height: 54, borderRadius: 27, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 30, fontWeight: 700, background: r.ok === false ? "rgba(255,138,122,0.16)" : "rgba(198,243,109,0.16)", color: r.ok === false ? "#ff8a7a" : LIME }}>{r.ok === false ? "✗" : "✓"}</span>
+              <span>{rich(r.text)}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** La trend d'origine (à gauche, muette) et Awa qui la reprend (à droite, avec son son), en vertical. */
+export const TrendDuo: React.FC<{ end: number; volume?: number }> = ({ end, volume = 1 }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.3);
+  const panel = (src: string, label: string, at: number, muted: boolean, accent: boolean) => (
+    <div style={{ ...blurIn(t, at, 0.45, 26), textAlign: "center" }}>
+      <div style={{ ...card, padding: 10, borderColor: accent ? "rgba(198,243,109,0.45)" : undefined }}>
+        <OffthreadVideo src={staticFile(`${D}/${src}`)} muted={muted} volume={muted ? 0 : volume} style={{ width: 470, height: 836, borderRadius: 22, display: "block", objectFit: "cover" }} />
+      </div>
+      <div style={{ marginTop: 14, fontSize: 28, letterSpacing: "0.14em", textTransform: "uppercase", color: accent ? LIME : INK_SOFT, fontWeight: 500 }}>{label}</div>
+    </div>
+  );
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT, justifyContent: "center", alignItems: "center" }}>
+      <Backdrop />
+      <div style={{ display: "flex", gap: 70, alignItems: "flex-start" }}>
+        {panel("genjutsu_source.mp4", "La trend", 0.05, true, false)}
+        {panel("genjutsu.mp4", "Awa · Genjutsu", 0.2, false, true)}
+      </div>
+    </AbsoluteFill>
+  );
+};

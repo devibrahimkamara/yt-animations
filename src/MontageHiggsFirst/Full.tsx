@@ -3,22 +3,27 @@
 //  - 3 s d'ouverture sur la vidéo d'Abidjan avec son son (brief : ouvrir sur le résultat) ;
 //  - la vidéo d'Abidjan en entier après « tu vas la regarder en entier » (11:16) ;
 //  - la vidéo de Bali en entier après « encore une fois, 105 crédits » (12:52).
-// Les rushes s'arrêtent à 13:21 (« Genjutsu dans le menu d'en haut ») : la démo Genjutsu et la conclusion viendront d'Ibrahim.
+// Puis la fin, reçue le 03/11/2026 : la capture d'écran Genjutsu (sa face cam a planté, voix de la capture nettoyée),
+// le résultat Genjutsu à côté de la trend, et la conclusion filmée.
+// Retours d'Ibrahim du 03/11/2026 : plus aucun passage où il lit à l'écran (0:15-0:37, 11:46-12:20 couverts),
+// des illustrations qui arrivent en douceur (Cover : le visage se floute, l'illustration entre en fondu zoomé,
+// le médaillon reste au-dessus), musique baissée de 3 dB.
 // Le corps (Body) est écrit en temps source ; les morceaux sont posés sur la timeline de sortie par une Sequence décalée.
 import React from "react";
-import { AbsoluteFill, Audio, interpolate, Loop, OffthreadVideo, Sequence, staticFile } from "remotion";
-import { Backdrop, f, FacePip, FocusVeil, Grain, KeyLine, ScreenStage, SfxTrack, SFX_KIT, type BlurMask, type SfxCue, type ViewKey } from "../montage/lib";
+import { AbsoluteFill, Audio, Easing, interpolate, Loop, OffthreadVideo, Sequence, staticFile } from "remotion";
+import { Backdrop, EASE, f, FacePip, FocusVeil, Grain, KeyLine, ScreenStage, SfxTrack, SFX_KIT, useT, type BlurMask, type SfxCue, type ViewKey } from "../montage/lib";
 import { mixGain, type MixEvent } from "../montage/mix";
 import { PlanVsResult } from "../montage/Defi";
-import { StepLT, TopPill } from "../montage/Explainers";
+import { StepLT, TopPill, TutoMap } from "../montage/Explainers";
 import { CornerPill, NameTag, SideStat } from "../MontageHostingerProduits/Illus";
-import { ClipDuo, ComboCard, D, FamilyDuo, FullClip, ImageStage, PriceTag, Slide } from "./Illus";
+import { EndCard } from "../MontageHiggsKling4/Illus";
+import { ClipDuo, ComboCard, D, FamilyDuo, FullClip, ImageStage, PriceTag, Slide, SubsCard, TipBoard, TrendDuo } from "./Illus";
 
 // ─── Timeline : temps source → temps de sortie ───
 const OPEN = 3.0; // ouverture sur Abidjan
 const CUT_A = 676.7; // après « tu vas la regarder en entier. »
 const CUT_B = 772.28; // après « encore une fois, 105 crédits. »
-export const SRC_END = 801.9; // fin des rushes utiles (« Genjutsu dans le menu d'en haut. »)
+export const SRC_END = 801.9; // fin des rushes face + écran (« Genjutsu dans le menu d'en haut. »)
 const ABIDJAN = 15.07;
 const BALI = 15.05;
 // Tout en images entières (pas de dérive d'arrondi entre les morceaux)
@@ -32,7 +37,13 @@ const FI_ABIDJAN = F_OPEN + F_A;
 const FI_BALI = F_OPEN + F_B + F_ABJ;
 const INS_ABIDJAN = FI_ABIDJAN / 30;
 const INS_BALI = FI_BALI / 30;
-export const FULL_FRAMES = F_OPEN + F_END + F_ABJ + F_BALI;
+// La fin : capture Genjutsu (61 s), résultat Genjutsu (15,04 s), conclusion (16 s)
+const SEG = 61.0, GJ = 15.04, CONC = 16.0;
+const F_SEG = f(SEG), F_GJ = f(GJ), F_CONC = f(CONC);
+const FI_SEG = F_OPEN + F_END + F_ABJ + F_BALI;
+const FI_GJ = FI_SEG + F_SEG;
+const FI_CONC = FI_GJ + F_GJ;
+export const FULL_FRAMES = FI_CONC + F_CONC;
 export const FULL_END = FULL_FRAMES / 30;
 
 const FACE = `${D}/face_dn.mp4`;
@@ -46,6 +57,34 @@ const At: React.FC<{ from: number; to: number; children: React.ReactNode }> = ({
   <Sequence from={f(from)} durationInFrames={Math.max(1, f(to) - f(from))} layout="none">
     <AbsoluteFill>{children}</AbsoluteFill>
   </Sequence>
+);
+
+// ─── Transition douce vers une illustration plein écran ───
+// Le dessous (visage ou écran) se floute et s'assombrit d'abord, puis l'illustration entre en fondu, avec un léger dézoom ;
+// sortie inverse. Les enfants gardent leurs temps absolus (Sequence décalée).
+const CoverFx: React.FC<{ end: number; children: React.ReactNode }> = ({ end, children }) => {
+  const t = useT();
+  const ease = Easing.inOut(Easing.cubic);
+  const veil = Math.min(interpolate(t, [0, 0.55], [0, 1], { ...clamp, easing: ease }), interpolate(t, [end - 0.55, end], [1, 0], { ...clamp, easing: ease }));
+  const q = Math.min(interpolate(t, [0.15, 0.8], [0, 1], { ...clamp, easing: EASE }), interpolate(t, [end - 0.6, end - 0.05], [1, 0], { ...clamp, easing: ease }));
+  return (
+    <AbsoluteFill>
+      {veil > 0 && <AbsoluteFill style={{ backdropFilter: `blur(${20 * veil}px)`, background: `rgba(9,11,8,${0.5 * veil})` }} />}
+      <AbsoluteFill style={{ opacity: q, transform: `scale(${1.05 - 0.05 * q})`, filter: q < 0.98 ? `blur(${(1 - q) * 12}px)` : undefined }}>
+        <Backdrop />
+        {children}
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+const Cover: React.FC<{ from: number; to: number; children: React.ReactNode }> = ({ from, to, children }) => (
+  <At from={from} to={to}>
+    <CoverFx end={to - from}>
+      <Sequence from={-f(from)} layout="none">
+        {children}
+      </Sequence>
+    </CoverFx>
+  </At>
 );
 
 // ─── Face cam : plein cadre (p = 0) quand Ibrahim parle à la caméra, médaillon (p = 1) sur l'écran ───
@@ -69,7 +108,40 @@ const FACE_ZOOM = [
   { t: 672.8, z: 1.0 }, { t: 706.3, z: 1.0 }, { t: 707.0, z: 1.07 }, { t: 723.5, z: 1.07 }, { t: 724.2, z: 1.0 }, { t: 730.4, z: 1.0 }, { t: 731.1, z: 1.08 },
   { t: 749.2, z: 1.08 }, { t: 772.4, z: 1.0 }, { t: 784.0, z: 1.0 }, { t: 784.7, z: 1.07 }, { t: 796.6, z: 1.07 },
 ];
-const FaceTrack: React.FC = () => <FacePip src={FACE} trimBefore={0} face={FACE_POS} grade={GRADE} pipScale={0.6} keys={FACE_KEYS} zoomKeys={FACE_ZOOM} />;
+const FaceTrack: React.FC = () => {
+  // le médaillon s'efface en douceur avant la capture Genjutsu (pas de face cam sur ce passage)
+  const o = interpolate(useT(), [SRC_END - 0.7, SRC_END - 0.1], [1, 0], clamp);
+  return (
+    <AbsoluteFill style={{ opacity: o }}>
+      <FacePip src={FACE} trimBefore={0} face={FACE_POS} grade={GRADE} pipScale={0.6} keys={FACE_KEYS} zoomKeys={FACE_ZOOM} />
+    </AbsoluteFill>
+  );
+};
+// Le médaillon posé AU-DESSUS d'une illustration plein écran (Ibrahim reste présent, rien ne recouvre son visage d'un coup)
+const PipOverFx: React.FC<{ from: number; end: number; fade: number }> = ({ from, end, fade }) => {
+  const t = useT();
+  const o = fade > 0 ? Math.min(interpolate(t, [0, fade], [0, 1], { ...clamp, easing: EASE }), interpolate(t, [end - fade, end], [1, 0], clamp)) : 1;
+  return (
+    <AbsoluteFill style={{ opacity: o }}>
+      <FacePip src={FACE} trimBefore={from} face={FACE_POS} grade={GRADE} pipScale={0.6} keys={[{ t: 0, p: 1 }]} />
+    </AbsoluteFill>
+  );
+};
+const PIP_OVER = [
+  { from: 37.4, to: 144.5, fade: 0.6 }, // les modèles (kit média)
+  { from: 162.2, to: 174.4, fade: 0.6 }, // un abonnement par plateforme
+  { from: 476.6, to: 487.4, fade: 0 }, // Awa en grand (déjà en médaillon sur l'écran)
+  { from: 559.0, to: 581.4, fade: 0 }, // la fiche en grand
+];
+const PipOver: React.FC = () => (
+  <>
+    {PIP_OVER.map((w) => (
+      <At key={w.from} from={w.from} to={w.to}>
+        <PipOverFx from={w.from} end={w.to - w.from} fade={w.fade} />
+      </At>
+    ))}
+  </>
+);
 
 // ─── L'écran ───
 const z1 = (t: number): ViewKey => ({ t, z: 1, cx: 960, cy: 540 });
@@ -142,53 +214,80 @@ const Overlays: React.FC = () => (
         ]}
       />
     </At>
-    <At from={21.76} to={27.0}>
-      <FocusVeil start={0} end={5.24} />
-      <KeyLine end={5.24} valign="center" size={118} words={[{ w: "Le", t: 0.9 }, { w: "même", t: 1.0 }, { w: "personnage", t: 1.2, hl: true }, { w: "sur", t: 2.36 }, { w: "plusieurs", t: 2.52 }, { w: "vidéos", t: 2.84 }, { w: "?", t: 3.4 }]} />
+    {/* 0:15 → 2:25 · une seule illustration continue (Ibrahim lisait son écran à 0:15-0:37), médaillon dès 0:37 */}
+    <Cover from={14.6} to={145.0}>
+      <At from={14.6} to={21.76}>
+        <ImageStage src="awa.png" iw={1744} ih={2336} end={7.16} h={800} label="Un personnage réaliste ? *Facile.*" labelAt={1.4} />
+      </At>
+      <At from={21.76} to={27.0}>
+        <KeyLine end={5.24} valign="center" size={118} words={[{ w: "Le", t: 0.9 }, { w: "même", t: 1.0 }, { w: "personnage", t: 1.2, hl: true }, { w: "sur", t: 2.36 }, { w: "plusieurs", t: 2.52 }, { w: "vidéos", t: 2.84 }, { w: "?", t: 3.4 }]} />
+      </At>
+      <At from={27.0} to={36.98}>
+        <TutoMap
+          eyebrow="Ma méthode"
+          title="*4 étapes*, même pour débuter"
+          end={9.98}
+          titleAt={0.1}
+          steps={[
+            { n: 1, label: "Le compte", at: 1.0 },
+            { n: 2, label: "Le personnage", at: 1.3 },
+            { n: 3, label: "La fiche", at: 1.6 },
+            { n: 4, label: "La vidéo", at: 1.9 },
+          ]}
+        />
+      </At>
+      <At from={36.98} to={47.86}>
+        <FamilyDuo end={10.88} title="*2 familles* d'IA" titleAt={0.5} leftAt={2.6} rightAt={6.9} />
+      </At>
+      <At from={47.86} to={51.32}>
+        <Slide src="image_models.png" end={3.46} />
+      </At>
+      <At from={51.32} to={59.4}>
+        <Slide src="m2_nanobanana21.png" end={8.08} />
+      </At>
+      <At from={59.4} to={71.96}>
+        <Slide src="m3_gptimage25.png" end={12.56} />
+      </At>
+      <At from={71.96} to={78.96}>
+        <Slide src="m5_soulcinema15.png" end={7.0} />
+      </At>
+      <At from={78.96} to={90.0}>
+        <Slide src="m4_seedream5pro.png" end={11.04} />
+      </At>
+      <At from={90.0} to={130.5}>
+        <Slide
+          src="video_models.png"
+          end={40.5}
+          hl={[
+            { from: 2.1, to: 15.0, y: 789, x: 160, w: 1600 },
+            { from: 15.0, to: 26.6, y: 669, x: 160, w: 1600 },
+            { from: 26.6, to: 40.5, y: 549, x: 160, w: 1600 },
+          ]}
+        />
+      </At>
+      <At from={130.5} to={145.0}>
+        <ComboCard end={14.5} leftAt={4.9} rightAt={8.4} />
+      </At>
+    </Cover>
+    <At from={145.6} to={151.6}>
+      <NameTag name="Ibrahim Kamara" meta="Business en ligne depuis *2020*" end={6.0} />
     </At>
-    <At from={27.0} to={31.6}>
-      <TopPill text="Ma méthode, *étape par étape*" end={4.6} />
-    </At>
-    <At from={29.4} to={35.8}>
-      <NameTag name="Ibrahim Kamara" meta="Business en ligne depuis *2020*" end={6.4} />
-    </At>
-
-    {/* ══ Les modèles d'images et de vidéos (kit média de la marque) ══ */}
-    <At from={36.98} to={47.86}>
-      <FamilyDuo end={10.88} title="*2 familles* d'IA" titleAt={0.5} leftAt={2.6} rightAt={6.9} />
-    </At>
-    <At from={47.86} to={51.32}>
-      <Slide src="image_models.png" end={3.46} />
-    </At>
-    <At from={51.32} to={59.4}>
-      <Slide src="m2_nanobanana21.png" end={8.08} />
-    </At>
-    <At from={59.4} to={71.96}>
-      <Slide src="m3_gptimage25.png" end={12.56} />
-    </At>
-    <At from={71.96} to={78.96}>
-      <Slide src="m5_soulcinema15.png" end={7.0} />
-    </At>
-    <At from={78.96} to={90.0}>
-      <Slide src="m4_seedream5pro.png" end={11.04} />
-    </At>
-    <At from={90.0} to={130.5}>
-      <Slide
-        src="video_models.png"
-        end={40.5}
-        hl={[
-          { from: 2.1, to: 15.0, y: 789, x: 160, w: 1600 },
-          { from: 15.0, to: 26.6, y: 669, x: 160, w: 1600 },
-          { from: 26.6, to: 40.5, y: 549, x: 160, w: 1600 },
-        ]}
-      />
-    </At>
-    <At from={132.58} to={145.0}>
-      <ComboCard end={12.42} leftAt={2.8} rightAt={6.3} />
-    </At>
-    <At from={161.82} to={168.3}>
-      <TopPill text="Un abonnement par plateforme : vite *cher*" end={6.5} />
-    </At>
+    <Cover from={161.6} to={175.0}>
+      <At from={161.6} to={175.0}>
+        <SubsCard
+          end={13.4}
+          title="Un site *par modèle*"
+          items={[
+            { name: "Nano Banana", at: 0.8 },
+            { name: "GPT Image", at: 1.2 },
+            { name: "Kling", at: 1.6 },
+            { name: "Seedance", at: 2.0 },
+          ]}
+          total="Plusieurs abonnements, *plusieurs sites* à gérer"
+          totalAt={8.7}
+        />
+      </At>
+    </Cover>
     <At from={177.0} to={183.4}>
       <TopPill text="Higgsfield : *tous les modèles* au même endroit" end={6.4} />
     </At>
@@ -238,9 +337,11 @@ const Overlays: React.FC = () => (
     <At from={458.3} to={464.0}>
       <TopPill icon="tip" text="Regarde le prix *avant* de générer" end={5.7} />
     </At>
-    <At from={476.6} to={487.4}>
-      <ImageStage src="awa.png" iw={1744} ih={2336} end={10.8} h={860} label="Awa · *personne ne l'a photographiée*" labelAt={1.0} />
-    </At>
+    <Cover from={476.6} to={487.4}>
+      <At from={476.6} to={487.4}>
+        <ImageStage src="awa.png" iw={1744} ih={2336} end={10.8} h={860} label="Awa · *personne ne l'a photographiée*" labelAt={1.0} />
+      </At>
+    </Cover>
     <At from={490.4} to={497.6}>
       <TopPill icon="tip" text="Pas satisfait ? *Relance* le même prompt" end={7.2} />
     </At>
@@ -255,20 +356,22 @@ const Overlays: React.FC = () => (
     <At from={551.6} to={556.8}>
       <PriceTag what="La fiche · GPT Image 2.5 Sunburst" value="2,75" end={5.2} />
     </At>
-    <At from={559.0} to={581.4}>
-      <ImageStage
-        src="fiche.png"
-        iw={2688}
-        ih={1520}
-        end={22.4}
-        h={900}
-        marks={[
-          { at: 7.1, x0: 0, x1: 0.334, label: "De face" },
-          { at: 7.9, x0: 0.334, x1: 0.634, label: "De profil" },
-          { at: 8.84, x0: 0.634, x1: 1, label: "Gros plan" },
-        ]}
-      />
-    </At>
+    <Cover from={559.0} to={581.4}>
+      <At from={559.0} to={581.4}>
+        <ImageStage
+          src="fiche.png"
+          iw={2688}
+          ih={1520}
+          end={22.4}
+          h={900}
+          marks={[
+            { at: 7.1, x0: 0, x1: 0.334, label: "De face" },
+            { at: 7.9, x0: 0.334, x1: 0.634, label: "De profil" },
+            { at: 8.84, x0: 0.634, x1: 1, label: "Gros plan" },
+          ]}
+        />
+      </At>
+    </Cover>
 
     {/* ══ Étape 4 · la vidéo ══ */}
     <At from={581.66} to={592.0}>
@@ -290,32 +393,49 @@ const Overlays: React.FC = () => (
       <TopPill text="Une vidéo prend *plus de temps* qu'une image" end={7.9} />
     </At>
 
-    {/* ══ La comparaison avec la fiche ══ */}
-    <At from={681.44} to={706.4}>
-      <Backdrop />
-      <PlanVsResult
-        plan={FICHE}
-        result={ABIDJAN_LOOP}
-        end={24.96}
-        planLabel="La fiche personnage"
-        resultLabel="La vidéo Seedance 2.5"
-        checks={[
-          { at: 15.0, label: "Le visage", ok: true },
-          { at: 17.6, label: "La tenue", ok: true },
-          { at: 19.2, label: "Le sac à main", ok: true },
-          { at: 20.4, label: "Les lunettes", ok: true },
-        ]}
-      />
-    </At>
-    <At from={712.9} to={720.0}>
-      <TopPill text="Une erreur ? *Régénère*, en insistant dans le prompt" end={7.1} />
-    </At>
-    <At from={724.2} to={729.9}>
-      <TopPill icon="tip" text="Les premiers essais : *toujours en 720p*" end={5.7} />
-    </At>
-    <At from={730.62} to={737.4}>
-      <TopPill text="L'erreur des débutants : la qualité *max* dès le 1er essai" end={6.8} />
-    </At>
+    {/* ══ La comparaison avec la fiche, puis les conseils (Ibrahim lisait à 11:54-12:20) : une seule illustration continue ══ */}
+    <Cover from={681.44} to={739.9}>
+      <At from={681.44} to={706.4}>
+        <PlanVsResult
+          plan={FICHE}
+          result={ABIDJAN_LOOP}
+          end={24.96}
+          planLabel="La fiche personnage"
+          resultLabel="La vidéo Seedance 2.5"
+          checks={[
+            { at: 15.0, label: "Le visage", ok: true },
+            { at: 17.6, label: "La tenue", ok: true },
+            { at: 19.2, label: "Le sac à main", ok: true },
+            { at: 20.4, label: "Les lunettes", ok: true },
+          ]}
+        />
+      </At>
+      <At from={706.4} to={724.0}>
+        <TipBoard
+          end={17.6}
+          eyebrow="Un détail ne colle pas ?"
+          title="*Régénère* la vidéo"
+          titleAt={0.4}
+          rows={[
+            { text: "Refais une génération", at: 7.5 },
+            { text: "Insiste dans le prompt sur *ce qui n'allait pas*", at: 12.9 },
+          ]}
+        />
+      </At>
+      <At from={724.0} to={739.9}>
+        <TipBoard
+          end={15.9}
+          eyebrow="Astuce"
+          title="Les premiers essais en *720p*"
+          titleAt={0.3}
+          rows={[
+            { text: "Moins cher si ça rate", at: 2.2 },
+            { text: "La qualité max dès le 1er essai", at: 8.4, ok: false },
+            { text: "Tous tes crédits partent", at: 12.4, ok: false },
+          ]}
+        />
+      </At>
+    </Cover>
     <At from={739.92} to={744.6}>
       <FocusVeil start={0} end={4.68} />
       <KeyLine end={4.68} valign="center" size={130} words={[{ w: "Le", t: 0.2 }, { w: "test", t: 0.4 }, { w: "ultime", t: 0.7, hl: true }]} />
@@ -365,22 +485,24 @@ const Body: React.FC = () => (
     <Screens />
     <FaceTrack />
     <Overlays />
+    <PipOver />
     <SfxTrack cues={SFX} />
     <Audio src={staticFile(`${D}/voice.wav`)} />
   </AbsoluteFill>
 );
 
-// ─── Musique (temps de sortie) : coupée pendant les vidéos jouées en entier ───
+// ─── Musique (temps de sortie) : coupée pendant les vidéos jouées en entier ; −3 dB partout (retour d'Ibrahim du 03/11/2026) ───
 const M = "epidemic/higgs-kling4/hq";
 const PARTS = [
-  { file: "m1_contexte_groundhog_day.mp3", from: 3.4, to: 39.6, lufs: -31, src: -9.6, fadeIn: 1.4, fadeOut: 1.4, skip: 0 },
-  { file: "m2_threads_lush_hour.mp3", from: 39.4, to: 197.6, lufs: -33, src: -10.2, fadeIn: 1.4, fadeOut: 1.4, skip: 0 },
-  { file: "m3_linkedin_mango_fizz.mp3", from: 197.2, to: 343.0, lufs: -33, src: -9.5, fadeIn: 1.4, fadeOut: 3.0, skip: 0 },
-  { file: "m3_linkedin_mango_fizz.mp3", from: 340.0, to: 377.6, lufs: -33, src: -9.5, fadeIn: 3.0, fadeOut: 1.2, skip: 20 },
-  { file: "m6_demo_good_intentions.mp3", from: 377.0, to: 527.0, lufs: -35, src: -8.5, fadeIn: 1.4, fadeOut: 3.0, skip: 0 },
-  { file: "m8_references_sunday_brunch.mp3", from: 524.0, to: INS_ABIDJAN, lufs: -35, src: -9.9, fadeIn: 3.0, fadeOut: 0.6, skip: 0 },
-  { file: "m9_verdict_vapor.mp3", from: INS_ABIDJAN + ABIDJAN, to: INS_BALI, lufs: -33, src: -8.6, fadeIn: 1.0, fadeOut: 0.6, skip: 0 },
-  { file: "m5_kling_secure.mp3", from: INS_BALI + BALI, to: FULL_END, lufs: -32, src: -14.5, fadeIn: 1.0, fadeOut: 1.5, skip: 0 },
+  { file: "m1_contexte_groundhog_day.mp3", from: 3.4, to: 39.6, lufs: -34, src: -9.6, fadeIn: 1.4, fadeOut: 1.4, skip: 0 },
+  { file: "m2_threads_lush_hour.mp3", from: 39.4, to: 197.6, lufs: -36, src: -10.2, fadeIn: 1.4, fadeOut: 1.4, skip: 0 },
+  { file: "m3_linkedin_mango_fizz.mp3", from: 197.2, to: 343.0, lufs: -36, src: -9.5, fadeIn: 1.4, fadeOut: 3.0, skip: 0 },
+  { file: "m3_linkedin_mango_fizz.mp3", from: 340.0, to: 377.6, lufs: -36, src: -9.5, fadeIn: 3.0, fadeOut: 1.2, skip: 20 },
+  { file: "m6_demo_good_intentions.mp3", from: 377.0, to: 527.0, lufs: -38, src: -8.5, fadeIn: 1.4, fadeOut: 3.0, skip: 0 },
+  { file: "m8_references_sunday_brunch.mp3", from: 524.0, to: INS_ABIDJAN, lufs: -38, src: -9.9, fadeIn: 3.0, fadeOut: 0.6, skip: 0 },
+  { file: "m9_verdict_vapor.mp3", from: INS_ABIDJAN + ABIDJAN, to: INS_BALI, lufs: -36, src: -8.6, fadeIn: 1.0, fadeOut: 0.6, skip: 0 },
+  { file: "m5_kling_secure.mp3", from: INS_BALI + BALI, to: FI_GJ / 30, lufs: -35, src: -14.5, fadeIn: 1.0, fadeOut: 0.6, skip: 0 },
+  { file: "m1_contexte_groundhog_day.mp3", from: FI_CONC / 30, to: FULL_END, lufs: -36, src: -9.6, fadeIn: 0.8, fadeOut: 2.0, skip: 30 },
 ];
 const MIX: MixEvent[] = [
   { k: "dip", from: OPEN + 21.76, to: OPEN + 27.0, db: 3 }, // la question
@@ -400,8 +522,63 @@ const MusicTrack: React.FC = () => (
   </>
 );
 
+
+// ─── La fin (temps relatifs à chaque morceau) ───
+const SEG_SRC = `${D}/seg.mp4`;
+const FinSeg: React.FC = () => (
+  <AbsoluteFill>
+    <ScreenStage src={SEG_SRC} trimBefore={0} win={WIN} keys={[z1(0), z1(41.6), zk(42.6, 1.5, VID_PANEL.cx, 560), zk(58.6, 1.5, VID_PANEL.cx, 560), zk(59.3, 2.0, GEN_VID.cx, GEN_VID.cy), zk(61, 2.0, GEN_VID.cx, GEN_VID.cy)]} />
+    <At from={0.2} to={5.4}>
+      <TopPill text="Genjutsu · *Motion transfer*" end={5.2} />
+    </At>
+    <At from={5.82} to={17.8}>
+      <TopPill text="La vidéo de référence = *la trend*" end={11.98} />
+    </At>
+    <At from={18.06} to={26.9}>
+      <TopPill icon="tip" text="Presets : les *trends du moment*" end={8.84} />
+    </At>
+    <At from={42.64} to={52.6}>
+      <TopPill text="Ton personnage = *ta fiche*" end={9.96} />
+    </At>
+    <At from={53.08} to={58.9}>
+      <TopPill text="Pas de prompt · *720p*" end={5.82} />
+    </At>
+    <At from={59.3} to={SEG}>
+      <PriceTag what="Genjutsu · 720p" value="105" end={SEG - 59.3} />
+    </At>
+    <SfxTrack
+      cues={[
+        { k: "popSelectA", at: 0.3 }, { k: "popSelectB", at: 5.9 }, { k: "popSelectA", at: 18.1 }, { k: "popSelectB", at: 42.7 }, { k: "popSelectA", at: 53.1 }, { k: "impactDeep", at: 59.6, gain: 0.5 },
+      ].map((c) => ({ ...c, gain: (c.gain ?? SFX_KIT[c.k as keyof typeof SFX_KIT].gain) * 0.6 })) as SfxCue[]}
+    />
+    <Audio src={staticFile(`${D}/seg_voice.wav`)} />
+  </AbsoluteFill>
+);
+
+const CONC_POS = { x: 0.53, y: 0.42 };
+const Conclusion: React.FC = () => (
+  <AbsoluteFill>
+    <FacePip src={`${D}/conclusion.mp4`} trimBefore={0} face={CONC_POS} grade={GRADE} keys={[{ t: 0, p: 0 }]} zoomKeys={[{ t: 0, z: 1.0 }, { t: 5.6, z: 1.0 }, { t: 6.3, z: 1.07 }, { t: 16, z: 1.07 }]} />
+    <At from={1.72} to={5.7}>
+      <TopPill text="Jusqu'à *50 %* de réduction avec mon lien" end={3.98} />
+    </At>
+    <At from={1.9} to={8.8}>
+      <CornerPill text="Lien : 1re ligne de la description" end={6.9} accent />
+    </At>
+    <At from={5.78} to={9.0}>
+      <TopPill text="Un pouce bleu · *abonne-toi*" end={3.22} />
+    </At>
+    <At from={9.16} to={CONC}>
+      <EndCard end={CONC - 9.16} eyebrow="À regarder ensuite" title="Un autre *tutoriel IA*" />
+    </At>
+    <SfxTrack cues={[{ k: "popSelectA", at: 1.8, gain: 0.45 }, { k: "popSelectB", at: 5.85, gain: 0.45 }, { k: "whoosh02", at: 9.2, gain: 0.2 }]} />
+    <Audio src={staticFile(`${D}/conc_voice.wav`)} />
+  </AbsoluteFill>
+);
+
 // Volume des générations jouées en entier : −28,5 LUFS contre −22 pour la voix
 const CLIP_VOL = 1.8;
+const GJ_VOL = 2.5; // Genjutsu : −32,4 LUFS
 
 export const HiggsFirstFull: React.FC = () => (
   <AbsoluteFill style={{ background: "black" }}>
@@ -422,6 +599,16 @@ export const HiggsFirstFull: React.FC = () => (
     </Sequence>
     <Sequence from={FI_BALI} durationInFrames={F_BALI}>
       <FullClip src="bali.mp4" end={BALI} volume={CLIP_VOL} fadeIn={0.25} caption="Même fiche, nouveau prompt · *Bali*" captionAt={0.8} captionEnd={5.0} />
+    </Sequence>
+    {/* la fin : capture Genjutsu, résultat à côté de la trend, conclusion */}
+    <Sequence from={FI_SEG} durationInFrames={F_SEG}>
+      <FinSeg />
+    </Sequence>
+    <Sequence from={FI_GJ} durationInFrames={F_GJ}>
+      <TrendDuo end={GJ} volume={GJ_VOL} />
+    </Sequence>
+    <Sequence from={FI_CONC} durationInFrames={F_CONC}>
+      <Conclusion />
     </Sequence>
     <MusicTrack />
     <Grain />
