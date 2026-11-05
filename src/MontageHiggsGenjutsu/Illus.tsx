@@ -1,7 +1,7 @@
 // Illustrations du montage « Higgsfield Genjutsu for Reels » (refaire des Reels viraux avec l'IA ; sponsor : Higgsfield).
 // Les shorts générés arrivent plus tard : tant qu'un fichier manque, son emplacement affiche une carte « en attente ».
 import React from "react";
-import { AbsoluteFill, Loop, OffthreadVideo, staticFile } from "remotion";
+import { AbsoluteFill, Img, Loop, OffthreadVideo, staticFile } from "remotion";
 import { Backdrop, blurIn, Eyebrow, FONT, glass, INK, INK_SOFT, inOut, keyed, LIME, rich, SHADOW, useT } from "../montage/lib";
 
 export const D = "montage/higgs-genjutsu";
@@ -155,6 +155,28 @@ export const ShortsGrid: React.FC<{ end: number; files: string[]; title: string;
             </Loop>
           </div>
         ))}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** Une vidéo de ma chaîne, façon carte YouTube : la miniature, le titre, les vues. */
+export const VideoCard: React.FC<{ end: number; thumb: string; title: string; meta: string; eyebrow: string; viewsAt?: number }> = ({ end, thumb, title, meta, eyebrow, viewsAt = 1.0 }) => {
+  const t = useT();
+  const o = inOut(t, 0, end, 0.3, 0.35);
+  const s = keyed(t, [0, end], [1.0, 1.03]);
+  return (
+    <AbsoluteFill style={{ opacity: o, fontFamily: FONT, justifyContent: "center", alignItems: "center", paddingRight: 420 }}>
+      <Backdrop />
+      <div style={{ ...blurIn(t, 0, 0.4, 14), marginBottom: 26 }}>
+        <Eyebrow size={30}>{eyebrow}</Eyebrow>
+      </div>
+      <div style={{ ...card, padding: 14, width: 1000, transform: `scale(${s})`, ...blurIn(t, 0.1, 0.5, 30) }}>
+        <Img src={staticFile(`${D}/${thumb}`)} style={{ width: "100%", borderRadius: 20, display: "block" }} />
+        <div style={{ padding: "22px 10px 8px" }}>
+          <div style={{ fontSize: 44, fontWeight: 600, color: INK, letterSpacing: "-0.02em", lineHeight: 1.15 }}>{title}</div>
+          <div style={{ fontSize: 34, color: LIME, marginTop: 10, ...blurIn(t, viewsAt, 0.4, 12) }}>{rich(meta)}</div>
+        </div>
       </div>
     </AbsoluteFill>
   );

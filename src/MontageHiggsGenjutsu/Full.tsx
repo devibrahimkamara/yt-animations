@@ -14,7 +14,7 @@ import { StepLT, TopPill } from "../montage/Explainers";
 import { CornerPill, NameTag, SideStat } from "../MontageHostingerProduits/Illus";
 import { EndCard } from "../MontageHiggsKling4/Illus";
 import { TipBoard } from "../MontageHiggsFirst/Illus";
-import { D, HooksInsert, ReelCard, ReelWall, ShortInsert, ShortsGrid, ShortTrio, type ShortFile } from "./Illus";
+import { D, HooksInsert, ReelCard, ReelWall, ShortInsert, ShortsGrid, ShortTrio, VideoCard, type ShortFile } from "./Illus";
 
 // ─── Les shorts générés (à remplir quand Ibrahim les envoie : fichier dans public/montage/higgs-genjutsu/, durée réelle) ───
 export const SHORTS: Record<"s1" | "s2" | "h1" | "h2" | "h3" | "fix", ShortFile> = {
@@ -118,6 +118,7 @@ const PipOverFx: React.FC<{ from: number; end: number; fade: number }> = ({ from
   );
 };
 const PIP_OVER = [
+  { from: 58.5, to: 69.3, fade: 0.6 }, // ma vidéo n°1 en abonnés
   { from: 285.4, to: 297.5, fade: 0 }, // mes Shorts faceless (déjà en médaillon sur l'écran)
   { from: 322.6, to: 355.7, fade: 0 }, // les 2 fonctions de Genjutsu
 ];
@@ -200,9 +201,11 @@ const Overlays: React.FC = () => (
     <At from={53.4} to={57.8}>
       <TopPill text="1 ou 2 vidéos font *vivre* toute la chaîne" end={4.4} />
     </At>
-    <At from={57.9} to={64.0}>
-      <TopPill icon="trend" text="Ma vidéo n°1 en abonnés : tournée il y a *3 ou 4 ans*" end={6.1} />
-    </At>
+    <Cover from={57.9} to={69.9}>
+      <At from={57.9} to={69.9}>
+        <VideoCard end={12.0} thumb="topvideo/thumb.jpg" eyebrow="Ma vidéo n°1 en abonnés" title="Comment créer une chaîne YouTube monétisable en 2026" meta="*793 883* vues · publiée en octobre 2023" viewsAt={4.0} />
+      </At>
+    </Cover>
     <At from={69.98} to={77.3}>
       <FocusVeil start={0} end={7.32} />
       <KeyLine end={7.32} valign="center" size={112} words={[{ w: "Trouver", t: 0.3 }, { w: "la", t: 0.6 }, { w: "meilleure", t: 0.8 }, { w: "idée", t: 1.1, hl: true }]} />
@@ -405,7 +408,7 @@ const Overlays: React.FC = () => (
 // ─── Son (temps source) ───
 const POPS = [53.5, 58.0, 77.5, 121.7, 129.1, 156.8, 200.9, 225.4, 246.5, 254.7, 276.1, 301.3, 361.1, 365.1, 394.1, 409.5, 453.1, 468.1, 488.1, 524.1, 582.3, 594.1, 612.9, 657.9, 665.2, 699.7, 717.2, 730.1, 767.7, 789.5, 803.7, 806.7, 821.1, 829.8];
 const CLICKS = [310.6, 380.3, 499.6, 568.7, 674.8, 712.3, 753.3, 779.8];
-const WHOOSH = [0.2, 23.85, 35.15, 69.95, 92.95, 110.1, 113.75, 118.2, 285.45, 322.65, 542.25, 834.25];
+const WHOOSH = [0.2, 23.85, 35.15, 57.95, 69.95, 92.95, 110.1, 113.75, 118.2, 285.45, 322.65, 542.25, 834.25];
 const IMPACTS = [98.6, 239.1, 811.6];
 const SFX_SRC: SfxCue[] = [
   ...POPS.map((at, i): SfxCue => ({ k: i % 2 ? "popSelectB" : "popSelectA", at })),
