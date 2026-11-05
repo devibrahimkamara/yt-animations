@@ -1,7 +1,7 @@
 // Illustrations du montage « Higgsfield Genjutsu for Reels » (refaire des Reels viraux avec l'IA ; sponsor : Higgsfield).
 // Les shorts générés arrivent plus tard : tant qu'un fichier manque, son emplacement affiche une carte « en attente ».
 import React from "react";
-import { AbsoluteFill, Img, Loop, OffthreadVideo, staticFile } from "remotion";
+import { AbsoluteFill, Img, Loop, OffthreadVideo, Sequence, staticFile } from "remotion";
 import { Backdrop, blurIn, Eyebrow, FONT, glass, INK, INK_SOFT, inOut, keyed, LIME, rich, SHADOW, useT } from "../montage/lib";
 
 export const D = "montage/higgs-genjutsu";
@@ -128,7 +128,14 @@ export const HooksInsert: React.FC<{ end: number; hooks: ShortFile[]; each: numb
           return (
             <div key={i} style={{ textAlign: "center", opacity: on ? 1 : 0.35, transform: `scale(${on ? s : 0.86})` }}>
               <div style={{ ...card, padding: 8, borderColor: on ? "rgba(198,243,109,0.6)" : undefined }}>
-                <VerticalClip s={h} h={720} muted={!on} />
+                {/* chaque accroche repart de sa 1re image quand vient son tour ; avant, sa carte reste affichée en grisé */}
+                {i > k ? (
+                  <VerticalClip s={h} h={720} muted />
+                ) : (
+                  <Sequence from={Math.round(i * each * 30)} layout="none">
+                    <VerticalClip s={h} h={720} muted={!on} />
+                  </Sequence>
+                )}
               </div>
               <div style={{ marginTop: 16, fontSize: 40, color: on ? LIME : INK_SOFT, fontWeight: 600 }}>Accroche {i + 1}</div>
             </div>

@@ -16,14 +16,15 @@ import { EndCard } from "../MontageHiggsKling4/Illus";
 import { TipBoard } from "../MontageHiggsFirst/Illus";
 import { D, HooksInsert, ReelCard, ReelWall, ShortInsert, ShortsGrid, ShortTrio, VideoCard, type ShortFile } from "./Illus";
 
-// ─── Les shorts générés (à remplir quand Ibrahim les envoie : fichier dans public/montage/higgs-genjutsu/, durée réelle) ───
+// ─── Les shorts générés (reçus le 06/11/2026) : voix de Higgsfield convertie avec ElevenLabs (Loïc pour le double, Esaïe pour
+// l'influenceur) et mots mal prononcés remplacés (montages/higgs-genjutsu/06-voix/patch_words.py) ───
 export const SHORTS: Record<"s1" | "s2" | "h1" | "h2" | "h3" | "fix", ShortFile> = {
-  s1: { src: null, dur: 30, label: "Short 1 · mon double IA" },
-  s2: { src: null, dur: 30, label: "Short 2 · l'influenceur IA" },
-  h1: { src: null, dur: 30, label: "Accroche 1" },
-  h2: { src: null, dur: 30, label: "Accroche 2" },
-  h3: { src: null, dur: 30, label: "Accroche 3" },
-  fix: { src: null, dur: 30, label: "Short 2 corrigé" },
+  s1: { src: "shorts/s1.mp4", dur: 23.0, label: "Short 1 · mon double IA" },
+  s2: { src: "shorts/s2.mp4", dur: 29.85, label: "Short 2 · l'influenceur IA" },
+  h1: { src: "shorts/h1.mp4", dur: 28.85, label: "Accroche 1" },
+  h2: { src: "shorts/h2.mp4", dur: 28.85, label: "Accroche 2" },
+  h3: { src: "shorts/h3.mp4", dur: 28.85, label: "Accroche 3" },
+  fix: { src: "shorts/fix.mp4", dur: 29.0, label: "Short 2 corrigé" },
 };
 const OPEN_EACH = 4; // ouverture : 4 s de chaque short, avec le son
 const HOOK_EACH = 4; // les 3 accroches : les 4 premières secondes de chaque version
