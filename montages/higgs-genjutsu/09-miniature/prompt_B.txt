@@ -1,0 +1,11 @@
+Create a 16:9 YouTube thumbnail that recreates the FIRST image (the reference thumbnail) as faithfully as possible in structure, framing, hierarchy, spacing, lighting logic and visual rhythm, only changing the person, the logos and the text. It must feel like a premium high-CTR remake of the reference, not a new concept.
+
+Keep the reference layout exactly: clean bright off-white studio background with soft light; top-left, two app icons side by side with a big grey plus sign between them, same size and placement as the reference; under them on the left, a small grey uppercase label, then a huge bold dark number with a bright green circular up-arrow badge to its right, exactly like the reference; on the right half, the person in a chest-up crop, smiling broadly at the camera, head slightly tilted, cap on, same scale and position as the reference person, cut by the right edge like the reference.
+
+Person: use my real face from the SECOND image (the only face reference) as the exact identity. Preserve my identity exactly: same face shape, eyes, nose, lips, jawline, skin tone, hairline and facial proportions; it must look like a real photo of me, not an invented person. Keep my glasses if visible in my photos. Wear a simple light-coloured cap and a plain light shirt like the relaxed vibe of the reference. Natural, warm, genuine smile, realistic skin texture, no plastic look.
+
+Icons: left icon = the orange Claude AI starburst logo on a rounded square (like the reference); right icon = the Instagram Reels logo (white clapperboard play icon on the Instagram purple-pink-orange gradient rounded square), instead of YouTube.
+
+Text, exactly and nothing else: the small grey uppercase label "MES VUES EN 1 MOIS" and the huge dark number "202 252" (French spacing). French accents must be correct.
+
+Style: photorealistic, crisp, high contrast, soft studio light, premium creator thumbnail, no extra text, no watermark, no other logos. Readable on a phone at small size.
