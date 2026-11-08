@@ -1,0 +1,11 @@
+# Brief Higgsfield « AI Video Model Showdown » (reçu 22/10/2026, usage perso, jamais à l'écran)
+- Vidéo dédiée ≥ 6 min. Tout générer À L'ÉCRAN sur higgsfield.ai. Assets Media Kit.
+- Lineup : Kling 4.0 (sur kling.ai, arrive sur Higgsfield) · Seedance 2.5 · Seedance 2.0 · MiniMax H3 · Wan 3.0 · Grok Imagine 1.5 · FLUX 3 · Gemini Omni 1.1 · Kling 3.0.
+- Même prompt, mêmes réglages, jamais d'aide au prompt ; si un modèle ne peut pas suivre (durée, ratio), LE DIRE à l'écran.
+- Résultats réels seulement, jamais de carte de chargement. Garder toutes les tentatives, dire les relances.
+- DIRE à l'oral : tous les modèles ont tourné sur Higgsfield avec exactement le même prompt et les mêmes réglages.
+- Flow conseillé : hook = montage rapide de résultats + défi « devine le meilleur » ; règles (prompt à l'écran lu à voix haute, critères) ; génération (sélecteur visible, attente accélérée) ; un par un, clip EN ENTIER avec nom à l'écran + réaction + note ; CTA.
+- Verdict par catégorie OK, pas de « meilleur modèle du monde ».
+- Description : intro énergique, même prompt dans les 8 modèles sur Higgsfield ; mots-clés : AI video model comparison, Seedance 2.5, Kling 4.0, best AI video generator, same prompt AI test, Higgsfield AI, text to video AI, AI video models ; UTM en 1res lignes ; ≥3 chapitres-questions ; liens optionnels Seedance 2.5 / Kling 4.0 ; commentaire épinglé.
+- Miniature : grille des 8 sorties ou split des 2 meilleurs, pas de texte du titre.
+- IP : aucun logo/marque/personnage tiers. Doublage auto anglais.

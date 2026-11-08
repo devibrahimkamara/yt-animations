@@ -1,0 +1,1263 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Cr\'e9e une composition Remotion d'animation de hook pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 150 frames (5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond transparent NON requis : fond plein d\'e9grad\'e9 sombre (bleu nuit #0B1020 vers #151B34, d\'e9grad\'e9 radial centr\'e9 l\'e9g\'e8rement au-dessus du milieu)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins), poids 600 \'e0 800 pour les titres. Texte principal blanc, accent vert #22C55E, accent secondaire bleu #3B82F6
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un document "Rapport de visibilit\'e9 IA" appara\'eet, se remplit, se retourne en 3D, et r\'e9v\'e8le au dos un compteur d'argent qui monte. Le message visuel : ce rapport se transforme en revenus.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. La feuille : rectangle blanc 620x820 px, coins arrondis 20 px, ombre port\'e9e douce et large (0 40px 80px rgba(0,0,0,0.45)), centr\'e9 \'e0 l'\'e9cran. Une fine bande bleue en haut de 14 px.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Les lignes de texte : 6 rectangles gris clair (#D5DAE5), hauteur 16 px, coins arrondis, largeurs vari\'e9es (92 %, 78 %, 85 %, 60 %, 88 %, 45 %) r\'e9partis dans la feuille sous le titre.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Le titre sur la feuille : "Rapport de visibilit\'e9 IA", 54 px, bold, couleur #0B1020, en haut de la feuille. Sous le titre, un petit badge arrondi bleu avec le texte "ChatGPT \'b7 Claude \'b7 Perplexity \'b7 Gemini" en 20 px.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. Un mini graphique sur la feuille : 4 petites barres verticales vertes de hauteurs croissantes, en bas \'e0 droite de la feuille.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. Le dos de la feuille : m\'eame taille, fond d\'e9grad\'e9 vert (#16A34A vers #22C55E), centr\'e9 : le texte "REVENUS G\'c9N\'c9R\'c9S" (28 px, lettres espac\'e9es, blanc 80 %), et en dessous le compteur g\'e9ant "[MONTANT] \'80" en 150 px, bold, blanc. Quelques petits symboles "+" ou "\'80" qui montent et s'estompent autour (8 \'e0 10 \'e9l\'e9ments, d\'e9termin\'e9s avec random() de Remotion pour rester d\'e9terministe).
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 12 : le fond appara\'eet en fondu, rien d'autre.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 8 \'e0 35 : la feuille entre par le bas (translateY de 300 px vers 0) avec une l\'e9g\'e8re rotation de -4\'b0 vers 0\'b0. Utiliser spring avec damping 14, stiffness 90, mass 0.9 pour un petit rebond naturel.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 30 \'e0 70 : les 6 lignes se dessinent une par une (largeur de 0 \'e0 la largeur finale), d\'e9cal\'e9es de 6 frames entre chaque, easing Easing.out(Easing.cubic).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 40 \'e0 62 : le titre appara\'eet (opacit\'e9 0 vers 1 et translateY de 14 px vers 0). Le badge appara\'eet \'e0 la frame 58 en scale 0.8 vers 1 avec spring.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 62 \'e0 80 : les 4 barres du mini graphique poussent (scaleY de 0 vers 1, origine en bas), d\'e9cal\'e9es de 4 frames.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 80 \'e0 82 : pause visuelle tr\'e8s courte, la feuille respire (scale 1 vers 1.03).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 82 \'e0 112 : la feuille se retourne en 3D (rotateY de 0 \'e0 180\'b0) avec perspective 1800 px, backface-visibility: hidden sur chaque face, easing Easing.inOut(Easing.cubic). Pendant le flip, la feuille monte l\'e9g\'e8rement puis redescend (translateY 0, -30, 0) et l'ombre s'\'e9tire.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 108 \'e0 138 : le compteur monte de 0 \'e0 [MONTANT] avec Math.round(interpolate(...)), easing Easing.out(Easing.expo). S\'e9parateur de milliers avec un espace ins\'e9cable. Les symboles "+" et "\'80" montent et s'estompent pendant cette phase.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 138 \'e0 150 : le compteur est fig\'e9 et lisible. Un l\'e9ger flash de lumi\'e8re verte passe derri\'e8re (glow qui pulse une seule fois). Maintenir l'image finale, sans sortie anim\'e9e (coupe franche pr\'e9vue au montage).
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Utiliser Sequence pour chaque phase, aucune animation bas\'e9e sur le temps r\'e9el, uniquement useCurrentFrame() et interpolate/spring avec extrapolateRight: "clamp".
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Activer un l\'e9ger motion blur visuel sur le flip si possible (sinon ignorer).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Garder toutes les marges de s\'e9curit\'e9 de 80 px autour du contenu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le rendu doit \'eatre net et professionnel, style SaaS moderne, sans logo de marque r\'e9el.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Exporter en MP4 (H.264) et en ProRes 4444 si tu veux pouvoir le superposer.
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Cr\'e9e une composition Remotion d'animation "\'e9cosyst\'e8me" pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 150 frames (5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : d\'e9grad\'e9 radial sombre (#0B1020 au bord vers #151B34 au centre), identique \'e0 l'animation 1 pour la coh\'e9rence visuelle de la vid\'e9o
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins), poids 600 \'e0 800. Texte blanc, accent vert #22C55E
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Au centre, "Ton entreprise". Les 4 moteurs de recherche IA arrivent un par un, se placent en orbite autour d'elle et se connectent avec des lignes pointill\'e9es sur lesquelles circulent des impulsions lumineuses. Message : ton entreprise doit \'eatre visible dans toutes les IA.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. Cercle central : diam\'e8tre 260 px, fond #1E2A52, bordure 4 px bleue #3B82F6, l\'e9ger glow bleu (box-shadow 0 0 60px rgba(59,130,246,0.5)). Texte \'e0 l'int\'e9rieur sur 2 lignes : "Ton" / "entreprise", 38 px, bold, blanc. Deux anneaux fins concentriques (rayons 170 px et 210 px, opacit\'e9 15 %) qui pulsent lentement en scale.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Les 4 pastilles d'IA : rectangles arrondis (border-radius 40 px), 300x84 px, texte 40 px bold blanc, petit point lumineux color\'e9 \'e0 gauche du texte.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- "ChatGPT" : fond #10A37F
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- "Claude" : fond #D97757
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- "Perplexity" : fond #1FB6C9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- "Gemini" : d\'e9grad\'e9 #4285F4 vers #9B72F2
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0Ombre port\'e9e douce sous chaque pastille. Le texte reste toujours horizontal (ne pas faire tourner les pastilles sur elles-m\'eames).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Les lignes de connexion : 4 lignes SVG entre le centre de chaque pastille et le bord du cercle central, trait pointill\'e9 (strokeDasharray 10 8), 3 px, couleur = celle de la pastille \'e0 70 % d'opacit\'e9. Elles suivent la position des pastilles en temps r\'e9el pendant l'orbite.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. Les impulsions : petit cercle lumineux de 14 px (couleur de la pastille, avec glow) qui voyage de la pastille vers le centre le long de la ligne. \'c0 l'arriv\'e9e, le cercle central \'e9met un mini flash (scale 1 vers 1.06 puis retour, 6 frames).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. Le texte de conclusion en bas, centr\'e9, 56 px, bold : "Visible dans toutes les IA", avec le mot "toutes" en vert #22C55E. Marge de 90 px depuis le bas.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 POSITIONS ET ORBITE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Orbite elliptique centr\'e9e \'e0 l'\'e9cran, rayon horizontal 520 px, rayon vertical 290 px, pour que tout reste dans le cadre avec 80 px de marge de s\'e9curit\'e9.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Angles de d\'e9part des pastilles : ChatGPT 200\'b0, Claude 340\'b0, Perplexity 160\'b0, Gemini 20\'b0 (r\'e9partition \'e9quilibr\'e9e gauche/droite, \'e9vite que deux pastilles se superposent).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Rotation lente et continue de toute l'orbite : angle = angleDepart + frame * 0.0045 radians (environ 39\'b0 sur les 5 secondes). Position : x = centreX + rx * cos(angle), y = centreY + ry * sin(angle).
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 10 : le fond appara\'eet en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 6 \'e0 30 : le cercle central entre en scale (0 vers 1) avec spring (damping 13, stiffness 110). Les deux anneaux apparaissent \'e0 la frame 20 et pulsent ensuite en boucle (cycle de 60 frames, Math.sin).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9es des pastilles, d\'e9cal\'e9es de 20 frames, chacune dure 24 frames :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- ChatGPT : frame 28
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Claude : frame 48
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Perplexity : frame 68
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Gemini : frame 88
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0Chaque pastille arrive depuis l'ext\'e9rieur de l'\'e9cran : son rayon d'orbite passe de 1.9x \'e0 1x avec spring (damping 14, stiffness 80), tout en passant de l'opacit\'e9 0 \'e0 1 et de scale 0.7 \'e0 1.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Connexions : pour chaque pastille, 8 frames apr\'e8s la fin de son entr\'e9e, la ligne se dessine vers le centre en 12 frames (strokeDashoffset). Ensuite les pointill\'e9s d\'e9filent en continu vers le centre (offset = -frame * 1.5).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Impulsions : \'e0 partir de la connexion, une impulsion part de la pastille toutes les 36 frames. Dur\'e9e du trajet 18 frames, easing Easing.inOut(Easing.quad). Flash du centre \'e0 chaque arriv\'e9e.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 112 \'e0 128 : toutes les 4 lignes \'e9mettent une impulsion en m\'eame temps. Au moment de l'arriv\'e9e (frame 128), le contour du cercle central passe du bleu au vert #22C55E, avec glow vert et un badge check blanc dans un cercle vert (48 px) en haut \'e0 droite du cercle, apparition en spring.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 118 \'e0 136 : le texte "Visible dans toutes les IA" appara\'eet (opacit\'e9 0 vers 1, translateY de 20 px vers 0, Easing.out(Easing.cubic)).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 136 \'e0 150 : image maintenue, orbite qui continue doucement, pas de sortie anim\'e9e (coupe franche au montage).
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est d\'e9terministe : uniquement useCurrentFrame(), interpolate() et spring() avec extrapolateRight: "clamp". Pas de Math.random() (utiliser random("seed") de Remotion si besoin).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Utiliser une composition SVG pour les lignes et des div positionn\'e9es en absolute pour les pastilles.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les noms doivent rester lisibles \'e0 chaque instant : ne jamais les faire passer derri\'e8re le cercle central ni d\'e9passer du cadre.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Style SaaS moderne, net, sans logo officiel de marque. Export MP4 H.264 (ou ProRes 4444 pour superposition).
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Cr\'e9e une composition Remotion d'animation "conversation avec une IA" pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 240 frames (8 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : d\'e9grad\'e9 radial sombre (#0B1020 au bord vers #151B34 au centre), identique aux animations 1 et 2
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins). Texte blanc, accent vert #22C55E, bleu #3B82F6
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Une interface de chat g\'e9n\'e9rique (sans copier l'UI d'une marque r\'e9elle). Un utilisateur pose une question, l'IA r\'e9fl\'e9chit, puis r\'e9pond avec une liste de 3 restaurants. Le n\'b01 s'illumine avec un badge "Recommand\'e9". Message : l'IA recommande, et \'eatre dans cette liste a une valeur \'e9norme.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. Fen\'eatre de chat : rectangle 1100x720 px, coins arrondis 28 px, fond #11172B, bordure 2 px #26304F, ombre port\'e9e large (0 40px 100px rgba(0,0,0,0.5)), centr\'e9e \'e0 l'\'e9cran. Barre du haut de 64 px avec 3 points (rouge, jaune, vert, 14 px) \'e0 gauche et le texte "Assistant IA" (22 px, gris #8A94B8) au centre.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Bulle utilisateur : align\'e9e \'e0 droite dans la fen\'eatre, fond bleu #3B82F6, texte blanc 34 px, padding 22x30 px, coins arrondis 28 px (coin bas droit \'e0 8 px). Texte exact : "O\'f9 manger un bon garba \'e0 Abidjan ?"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Indicateur de r\'e9flexion : 3 points de 14 px, gris clair, align\'e9s \'e0 gauche dans une bulle sombre (#1B2340), qui rebondissent en d\'e9cal\'e9 (translateY = Math.sin(frame * 0.35 + index * 0.9) * 8).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. R\'e9ponse de l'IA : bulle sombre #1B2340 align\'e9e \'e0 gauche, largeur 860 px, avec une ligne d'intro en 30 px : "Voici 3 adresses tr\'e8s bien not\'e9es :" puis 3 cartes de restaurant empil\'e9es (hauteur 100 px chacune, \'e9cart 14 px, coins arrondis 18 px, fond #232C4D). Chaque carte contient un rond num\'e9rot\'e9 \'e0 gauche (56 px), le nom (32 px, bold), et \'e0 droite une note en \'e9toiles (5 \'e9toiles SVG de 24 px).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Carte 1 : "Chez Tantie Marie" (fictif), 5 \'e9toiles, rond num\'e9ro 1
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Carte 2 : "Maquis Le Palmier" (fictif), 4 \'e9toiles, rond num\'e9ro 2
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Carte 3 : "Garba Express" (fictif), 4 \'e9toiles, rond num\'e9ro 3
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0Utiliser des noms fictifs uniquement, aucune vraie entreprise.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. Badge "Recommand\'e9" : pastille verte #22C55E, texte blanc 22 px bold, avec une ic\'f4ne check, positionn\'e9e sur le coin haut droit de la carte 1, l\'e9g\'e8rement qui d\'e9borde.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 6. L\'e9gende de bas d'\'e9cran, centr\'e9e, 48 px bold : "L'IA recommande. Tu es dedans ?" avec "Tu es dedans ?" en vert #22C55E. Marge basse 70 px.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 10 : fond en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 8 \'e0 36 : la fen\'eatre de chat entre (scale 0.92 vers 1, opacit\'e9 0 vers 1, spring damping 15, stiffness 100).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 40 \'e0 52 : la bulle utilisateur appara\'eet (translateX de 60 px vers 0, opacit\'e9 0 vers 1), avec le texte vide au d\'e9part.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 52 \'e0 100 : effet machine \'e0 \'e9crire dans la bulle : text.slice(0, Math.floor(interpolate(frame, [52, 100], [0, text.length]))). Curseur "|" clignotant (visible 1 frame sur 2 toutes les 8 frames) qui dispara\'eet \'e0 la fin. Vitesse d'environ 0,7 s pour tout lire \'e0 la fin, avec 40 frames (1,3 s) de lecture confortable apr\'e8s la frappe.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 112 \'e0 150 : la bulle avec les 3 points de r\'e9flexion appara\'eet (fade + translateY de 16 px). Les points rebondissent pendant 38 frames (environ 1,3 s). Elle dispara\'eet \'e0 la frame 150 (fade rapide de 6 frames).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 150 \'e0 172 : la bulle de r\'e9ponse appara\'eet (scale 0.95 vers 1, opacit\'e9 0 vers 1). La ligne d'intro est visible tout de suite.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 164 \'e0 200 : les 3 cartes entrent l'une apr\'e8s l'autre (spring, translateY de 30 px vers 0, opacit\'e9 0 vers 1), d\'e9cal\'e9es de 12 frames. Les \'e9toiles se remplissent une par une dans chaque carte (6 frames d'\'e9cart entre chaque \'e9toile).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 196 \'e0 214 : la carte 1 s'illumine : bordure verte #22C55E 3 px, glow vert (box-shadow 0 0 40px rgba(34,197,94,0.45)), scale 1 vers 1.03 avec spring. Les cartes 2 et 3 baissent \'e0 55 % d'opacit\'e9. Le badge "Recommand\'e9" appara\'eet en scale 0.6 vers 1 avec spring (damping 10) \'e0 la frame 204.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 212 \'e0 228 : la l\'e9gende du bas appara\'eet (opacit\'e9 0 vers 1, translateY de 20 px vers 0, Easing.out(Easing.cubic)).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 228 \'e0 240 : image maintenue, l\'e9g\'e8re respiration du glow de la carte 1 (Math.sin), pas de sortie anim\'e9e (coupe franche au montage).
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est d\'e9terministe : useCurrentFrame(), interpolate(), spring() avec extrapolateRight: "clamp". Pas de Math.random().
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Toute la zone de r\'e9ponse doit rester dans la fen\'eatre de chat : calculer les hauteurs pour que la bulle de r\'e9ponse + 3 cartes tiennent sans d\'e9border (pr\'e9voir 16 px de marge interne).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le texte de la question doit rester lisible au moins 1,3 s avant l'arriv\'e9e des points de r\'e9flexion.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Style SaaS moderne et net, aucun logo ni nom de marque r\'e9el. Export MP4 H.264 (ou ProRes 4444 pour superposition).
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Cr\'e9e une composition Remotion d'animation "d'o\'f9 l'IA tire ses r\'e9ponses" pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 210 frames (7 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : d\'e9grad\'e9 radial sombre (#0B1020 au bord vers #151B34 au centre), identique aux animations pr\'e9c\'e9dentes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins). Texte blanc, accent vert #22C55E, bleu #3B82F6
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Quatre sources de donn\'e9es sur la gauche envoient des particules lumineuses vers un noyau IA au centre. Le noyau dig\'e8re l'information et produit une seule carte "Recommandation" sur la droite. Message : l'IA ne devine pas, elle puise dans ce qui existe sur Internet, donc il faut y \'eatre pr\'e9sent.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. Les 4 sources (colonne de gauche) : cartes arrondies 380x96 px (border-radius 20 px, fond #1B2340, bordure 2 px #26304F), align\'e9es verticalement \'e0 x = 220 px (centre), positions Y : 270, 450, 630, 810. Chaque carte contient une ic\'f4ne SVG simple (48 px) \'e0 gauche et un label en 30 px bold :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- "Sites web" : ic\'f4ne globe, accent bleu #3B82F6
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- "Avis Google" : ic\'f4ne \'e9toile, accent jaune #FACC15
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- "Annuaires" : ic\'f4ne livre ouvert, accent violet #A78BFA
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- "Articles" : ic\'f4ne document, accent orange #FB923C
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0Utiliser des ic\'f4nes dessin\'e9es en SVG maison (pas de logo de marque, pas de logo Google : "Avis Google" reste un texte avec une \'e9toile g\'e9n\'e9rique).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Le noyau IA (centre, x = 960, y = 540) : cercle de 280 px de diam\'e8tre, d\'e9grad\'e9 #3B82F6 vers #8B5CF6, glow (box-shadow 0 0 90px rgba(99,102,241,0.6)). Au centre, un motif de r\'e9seau de neurones : 7 petits points blancs reli\'e9s par des lignes fines (opacit\'e9 60 %) qui pulsent. Sous le noyau, le label "IA" en 40 px bold. Trois anneaux fins autour qui tournent lentement dans des sens oppos\'e9s (rotation = frame * 0.8 degr\'e9s).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Les particules : cercles de 12 px, couleur de la source, avec glow l\'e9ger. Elles suivent une courbe de B\'e9zier quadratique de la carte source vers le noyau. Point de contr\'f4le d\'e9cal\'e9 de 120 px vers le haut ou le bas selon la source, pour un trajet courbe et organique. 5 particules par source en circulation continue, d\'e9cal\'e9es de 8 frames entre elles. Dur\'e9e de trajet : 36 frames, Easing.inOut(Easing.quad). \'c0 l'arriv\'e9e, la particule s'estompe (scale 1 vers 0) et le noyau fait un micro pulse (scale 1 vers 1.04, 5 frames).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. La carte de sortie (droite) : rectangle arrondi 440x220 px centr\'e9 \'e0 x = 1560, y = 540, fond blanc, coins 24 px, ombre port\'e9e large. Contenu : petit badge vert "Recommandation" (22 px bold, blanc sur #22C55E) en haut, puis le nom fictif "Ton entreprise" en 40 px bold noir (#0B1020), et 5 \'e9toiles dor\'e9es en dessous. Un trait de lumi\'e8re (ligne SVG avec dash anim\'e9) relie le noyau \'e0 cette carte.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. L\'e9gende basse, centr\'e9e, 52 px bold : "L'IA puise dans Internet" avec "Internet" en bleu #3B82F6. Marge basse 70 px.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 10 : fond en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 8 \'e0 56 : les 4 sources entrent depuis la gauche (translateX de -300 px vers 0, opacit\'e9 0 vers 1, spring damping 14, stiffness 100), d\'e9cal\'e9es de 10 frames chacune.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 40 \'e0 66 : le noyau IA appara\'eet (scale 0 vers 1, spring damping 12, stiffness 90). Les anneaux d\'e9marrent \'e0 la frame 56.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 66 \'e0 150 : les particules circulent. La premi\'e8re vague part simultan\'e9ment des 4 sources \'e0 la frame 66, puis chaque source en \'e9met toutes les 8 frames. Le noyau grossit l\'e9g\'e8rement et son glow s'intensifie progressivement (de 0,6 \'e0 1 d'intensit\'e9) pour montrer l'accumulation.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 100 \'e0 118 : la l\'e9gende du bas appara\'eet (opacit\'e9 0 vers 1, translateY de 20 px vers 0, Easing.out(Easing.cubic)).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 138 \'e0 160 : le trait de lumi\'e8re du noyau vers la droite se dessine (strokeDashoffset), puis une impulsion plus grosse (cercle de 20 px blanc) voyage le long du trait en 16 frames.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 154 \'e0 184 : la carte "Recommandation" entre depuis le noyau (scale 0.3 vers 1, translateX de -250 px vers 0, spring damping 13, stiffness 95). Les \'e9toiles se remplissent une par une, 5 frames d'\'e9cart. Le badge vert fait un petit pop en spring.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 150 \'e0 165 : les particules ralentissent et s'espacent (on arr\'eate d'en \'e9mettre \'e0 la frame 150, celles en vol terminent leur trajet).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 184 \'e0 210 : image maintenue, l\'e9g\'e8re respiration du noyau (Math.sin), la carte de sortie flotte de +/- 4 px (Math.sin(frame * 0.12)). Pas de sortie anim\'e9e (coupe franche au montage).
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est d\'e9terministe : useCurrentFrame(), interpolate(), spring() avec extrapolateRight: "clamp". Pour les d\'e9calages al\'e9atoires, utiliser random("seed-" + index) de Remotion, jamais Math.random().
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Formule B\'e9zier quadratique pour les particules : P = (1-t)\'b2 * P0 + 2(1-t)t * P1 + t\'b2 * P2, avec t = interpolate(frame, [start, start+36], [0, 1], \{ extrapolateLeft: "clamp", extrapolateRight: "clamp" \}).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les cartes sources et la carte de sortie doivent rester dans les marges de s\'e9curit\'e9 de 80 px.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Style SaaS moderne, net, sans logo officiel. Export MP4 H.264 (ou ProRes 4444 pour superposition).
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Cr\'e9e une composition Remotion d'animation "classement qui se r\'e9organise" pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 180 frames (6 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : d\'e9grad\'e9 radial sombre (#0B1020 au bord vers #151B34 au centre), identique aux animations pr\'e9c\'e9dentes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins). Texte blanc, accent vert #22C55E, bleu #3B82F6
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Une r\'e9ponse d'IA affiche une liste de 7 entreprises. "Ton entreprise" est en 7e position, gris\'e9e et discr\'e8te. Elle remonte ensuite une place apr\'e8s l'autre en doublant les concurrents, jusqu'\'e0 la 1re place o\'f9 elle s'illumine. Message : l'optimisation de ta visibilit\'e9 IA te fait passer de invisible \'e0 recommand\'e9.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. Panneau de liste : rectangle 1000x800 px, centr\'e9 \'e0 l'\'e9cran (x = 960, y = 520), coins arrondis 28 px, fond #11172B, bordure 2 px #26304F, ombre port\'e9e large. En-t\'eate de 72 px avec le texte "Meilleures entreprises recommand\'e9es" (28 px, gris #8A94B8) align\'e9 \'e0 gauche avec 36 px de marge, et une petite ic\'f4ne \'e9tincelle (SVG maison, 28 px) \'e0 droite.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Les 7 lignes : chacune 920x84 px, coins arrondis 18 px, \'e9cart 12 px, fond #1B2340. Contenu de chaque ligne : rond num\'e9rot\'e9 \'e0 gauche (52 px, fond #26304F, chiffre 28 px bold), nom de l'entreprise (32 px, semi-bold), et \'e0 droite une barre de "score de visibilit\'e9" (largeur 200 px, hauteur 10 px, coins arrondis, fond #26304F, remplissage color\'e9).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0Noms fictifs uniquement, de haut en bas \'e0 l'origine :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- 1 "Atelier Nova" (score 96 %)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- 2 "Studio Kora" (score 88 %)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- 3 "Digital Plus" (score 81 %)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- 4 "Agence Lumen" (score 73 %)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- 5 "WebPro Conseil" (score 64 %)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- 6 "M\'e9dia Express" (score 52 %)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- 7 "Ton entreprise" (score 18 %), gris\'e9e : opacit\'e9 45 %, texte gris #8A94B8, barre grise.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0Les 6 premi\'e8res lignes ont des barres bleues #3B82F6.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Indicateur de rang : un compteur "Position #" affich\'e9 en grand \'e0 droite du panneau (x = 1620, y = 520), 140 px bold, qui suit la position de "Ton entreprise" en temps r\'e9el (7, 6, 5, 4, 3, 2, 1). Sous le chiffre, le label "Ta position" en 26 px gris.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. Fl\'e8che montante : petite fl\'e8che verte SVG qui appara\'eet \'e0 gauche de la ligne de "Ton entreprise" \'e0 chaque mont\'e9e, et dispara\'eet apr\'e8s 10 frames.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. Badge final : pastille verte #22C55E avec check blanc et le texte "Recommand\'e9" (24 px bold), qui appara\'eet sur la ligne de "Ton entreprise" arriv\'e9e en 1re position.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 6. L\'e9gende basse, centr\'e9e, 52 px bold : "De invisible \'e0 recommand\'e9" avec "recommand\'e9" en vert #22C55E. Marge basse 70 px.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 10 : fond en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 8 \'e0 34 : le panneau entre (scale 0.94 vers 1, opacit\'e9 0 vers 1, spring damping 15, stiffness 100).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 30 \'e0 62 : les 7 lignes entrent l'une apr\'e8s l'autre (translateY de 24 px vers 0, opacit\'e9 0 vers 1), d\'e9cal\'e9es de 4 frames. Le compteur de position appara\'eet \'e0 la frame 56, avec "7".
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 62 \'e0 80 : pause lisible : le spectateur voit que "Ton entreprise" est derni\'e8re et gris\'e9e (18 frames, environ 0,6 s). L\'e9ger pulse de la ligne 7 (opacit\'e9 45 % vers 60 % puis retour) pour attirer l'oeil.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 80 \'e0 134 : la remont\'e9e en 6 \'e9tapes de 9 frames chacune (d\'e9but aux frames 80, 89, 98, 107, 116, 125). \'c0 chaque \'e9tape :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- la ligne "Ton entreprise" monte d'un rang et la ligne du dessus descend d'un rang, par \'e9change de positions Y avec spring (damping 16, stiffness 140) ;
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- le compteur de position change avec un petit pop (scale 1.15 vers 1) ;
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- la fl\'e8che verte appara\'eet ;
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- la barre de score de "Ton entreprise" avance par paliers (18 % vers 96 %), l'opacit\'e9 de la ligne augmente progressivement (45 % vers 100 %), et sa couleur passe du gris au vert #22C55E.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- La ligne passe au-dessus des autres (z-index plus \'e9lev\'e9) pour que le croisement soit propre.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 134 \'e0 150 : arriv\'e9e en 1re position : la ligne s'illumine (bordure verte 3 px, glow 0 0 40px rgba(34,197,94,0.45), scale 1 vers 1.03 avec spring). Le compteur affiche "1" en vert. Le badge "Recommand\'e9" appara\'eet (scale 0.6 vers 1, spring damping 10).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 148 \'e0 164 : la l\'e9gende du bas appara\'eet (opacit\'e9 0 vers 1, translateY de 20 px vers 0, Easing.out(Easing.cubic)).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 164 \'e0 180 : image maintenue, l\'e9g\'e8re respiration du glow (Math.sin). Pas de sortie anim\'e9e (coupe franche au montage).
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Calculer la position Y de chaque ligne avec une fonction du rang courant : y = topY + rang * (84 + 12). Pour l'\'e9change fluide, interpoler le rang de chaque ligne avec spring entre l'ancien et le nouveau rang \'e0 chaque \'e9tape, plut\'f4t que d'animer des Y ind\'e9pendants.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chaque \'e9tape doit durer assez longtemps pour que le spectateur voie la ligne monter (9 frames = 0,3 s par place, soit 1,8 s au total pour 6 places : c'est le minimum confortable, ne pas descendre en dessous).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est d\'e9terministe : useCurrentFrame(), interpolate(), spring() avec extrapolateRight: "clamp". Pas de Math.random().
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Garder toutes les marges de s\'e9curit\'e9 de 80 px. Le panneau et le compteur ne doivent pas se chevaucher.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Style SaaS moderne, net, sans logo ni nom d'entreprise r\'e9elle. Export MP4 H.264 (ou ProRes 4444 pour superposition).
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Cr\'e9e une composition Remotion d'animation "globe d'utilisateurs" pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 150 frames (5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : d\'e9grad\'e9 radial sombre (#0B1020 au bord vers #151B34 au centre), identique aux animations pr\'e9c\'e9dentes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins). Texte blanc, accent vert #22C55E, bleu #3B82F6
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un globe en points tourne doucement. Des points s'allument un peu partout et \'e9mettent des ondes, comme des requ\'eates qui partent vers l'IA, pendant qu'un gros compteur monte en dessous. Message : l'IA est devenue un outil de recherche utilis\'e9 par une \'e9norme partie de la plan\'e8te.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 DONN\'c9ES \'c0 REMPLACER AVANT LE RENDU (important)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - [CHIFFRE] : un chiffre r\'e9el et v\'e9rifi\'e9, par exemple le nombre d'utilisateurs hebdomadaires d'un outil d'IA publi\'e9 par l'\'e9diteur. Ne pas \'e9crire "des milliards" sans source.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - [LABEL] : ce que mesure le chiffre, par exemple "utilisateurs actifs chaque semaine".
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - [SOURCE] : la source et l'ann\'e9e, par exemple "Source : annonce officielle de l'\'e9diteur, 2026".
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Si le chiffre change, adapter la valeur finale du compteur et le label, sans toucher au reste.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. Le globe : sph\'e8re de points centr\'e9e en x = 960, y = 430, rayon 300 px. G\'e9n\'e9rer 900 points r\'e9partis sur la sph\'e8re avec la m\'e9thode de la spirale de Fibonacci (y = 1 - 2*(i+0.5)/N, rayon r = sqrt(1-y\'b2), angle = i * 2.39996). Chaque point a des coordonn\'e9es 3D (x, y, z). \'c0 chaque frame, appliquer une rotation autour de l'axe vertical : angle = frame * 0.012 radians (environ 0,36 rad sur 5 s, rotation lente). Projection orthographique : \'e9cran_x = centreX + rayon * x', \'e9cran_y = centreY + rayon * y. N'afficher que les points de face (z' > 0). Taille du point = 2 + 2.5 * z' (en px), opacit\'e9 = 0.25 + 0.6 * z'. Couleur de base #5B6B9A.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Le halo du globe : cercle de 640 px de diam\'e8tre derri\'e8re les points, d\'e9grad\'e9 radial bleu #3B82F6 \'e0 18 % d'opacit\'e9 au centre vers transparent au bord, plus un fin anneau de contour (2 px, #3B82F6 \'e0 30 %).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Les points allum\'e9s : s\'e9lectionner 70 points parmi les 900 avec random("lit-" + index) de Remotion (jamais Math.random()). Chacun s'allume \'e0 une frame de d\'e9part diff\'e9rente (r\'e9partie entre 50 et 118) : le point passe de sa couleur de base \'e0 #22C55E ou #3B82F6 (alternance), taille x2.2, avec un glow l\'e9ger. Il n'est visible que lorsqu'il est de face ; s'il tourne derri\'e8re la sph\'e8re, il dispara\'eet naturellement.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. Les ondes : \'e0 l'allumage de chaque point, un anneau de 2 px part de ce point, grandit de 8 px \'e0 46 px de rayon en 24 frames (Easing.out(Easing.cubic)) en s'estompant (opacit\'e9 0.8 vers 0).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. Le compteur : texte centr\'e9 en x = 960, y = 830, 130 px, bold, blanc, avec s\'e9parateur de milliers (espace ins\'e9cable). Valeur = Math.round(interpolate(frame, [58, 122], [0, [CHIFFRE]], \{ easing: Easing.out(Easing.expo), extrapolateLeft: "clamp", extrapolateRight: "clamp" \})). Le dernier chiffre peut avoir un l\'e9ger flou anim\'e9 pendant la mont\'e9e (filter: blur) qui dispara\'eet \'e0 l'arr\'eat.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 6. Le label sous le compteur : "[LABEL]", 40 px, semi-bold, gris clair #C7CEE6, centr\'e9 en y = 920.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 7. La source : "[SOURCE]", 24 px, gris #8A94B8, centr\'e9e en y = 990. Doit rester lisible dans la marge de s\'e9curit\'e9.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 8. Accroche haut de l'\'e9cran : "Des millions de recherches passent par l'IA", 48 px, bold, centr\'e9e en y = 90, avec "l'IA" en bleu #3B82F6. Adapter le texte \'e0 la source (ne pas d\'e9passer ce que le chiffre prouve).
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 10 : fond en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 6 \'e0 36 : le globe appara\'eet (scale 0.85 vers 1, opacit\'e9 0 vers 1, spring damping 16, stiffness 90). Le halo appara\'eet en m\'eame temps. La rotation d\'e9marre d\'e8s la frame 6.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 34 \'e0 52 : l'accroche du haut appara\'eet (opacit\'e9 0 vers 1, translateY de -16 px vers 0, Easing.out(Easing.cubic)).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 50 \'e0 118 : les points s'allument progressivement avec leurs ondes (rythme croissant : 1 point toutes les 3 frames au d\'e9but, 1 toutes les 1 frame vers la fin).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 56 \'e0 64 : le compteur et son label apparaissent (opacit\'e9 0 vers 1, translateY de 20 px vers 0).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 58 \'e0 122 : le compteur monte jusqu'\'e0 la valeur finale.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 122 \'e0 130 : le compteur est fig\'e9. Petit pop de scale 1 vers 1.05 puis retour (spring damping 12), et le chiffre passe du blanc au vert #22C55E.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 124 \'e0 136 : la source appara\'eet (opacit\'e9 0 vers 1).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 136 \'e0 150 : image maintenue (le globe continue de tourner doucement, les ondes continuent). Pas de sortie anim\'e9e (coupe franche au montage). Le compteur reste lisible pendant environ 1 s \'e0 sa valeur finale, ce qui est le minimum \'e0 ne pas r\'e9duire.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est d\'e9terministe : useCurrentFrame(), interpolate(), spring() avec extrapolateRight: "clamp". Aucun Math.random().
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pour la performance, rendre les points dans un seul SVG (ou un canvas) plut\'f4t que 900 div.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le globe est volontairement abstrait (pas de continents, pas de logo de pays ni de marque).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Garder toutes les marges de s\'e9curit\'e9 de 80 px. Le compteur, le label et la source ne doivent jamais chevaucher le globe (le globe finit \'e0 y = 730).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Style SaaS moderne, net. Export MP4 H.264 (ou ProRes 4444 pour superposition).
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Cr\'e9e une composition Remotion d'animation "recherches du quotidien" pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 240 frames (8 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : d\'e9grad\'e9 radial sombre (#0B1020 au bord vers #151B34 au centre), identique aux animations pr\'e9c\'e9dentes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins). Texte blanc, accent vert #22C55E, bleu #3B82F6
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Une seule barre de chat reste fixe au centre. Trois requ\'eates du quotidien s'y \'e9crivent l'une apr\'e8s l'autre (restaurant, coiffeur, universit\'e9). \'c0 chaque requ\'eate, une ic\'f4ne et une ville changent, et une petite carte de r\'e9sultat appara\'eet dessous. Message : on demande tout \'e0 l'IA, pour tout type de recherche et partout dans le monde.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. Barre de chat : rectangle arrondi 1200x120 px (border-radius 60 px), centr\'e9 en x = 960, y = 470. Fond #11172B, bordure 2 px #26304F, ombre port\'e9e large. \'c0 gauche, une petite ic\'f4ne \'e9tincelle (SVG maison, 36 px, bleu #3B82F6). \'c0 droite, un bouton rond d'envoi 72 px (fond #3B82F6, fl\'e8che blanche). Texte de la requ\'eate en 40 px, blanc, align\'e9 \'e0 gauche avec 100 px de marge interne.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Les 3 requ\'eates (texte exact) :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Requ\'eate A : "Meilleur restaurant pr\'e8s de moi" (ic\'f4ne fourchette et couteau, accent orange #FB923C, \'e9tiquette ville "Abidjan")
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Requ\'eate B : "Bon coiffeur \'e0 Paris" (ic\'f4ne ciseaux, accent violet #A78BFA, \'e9tiquette ville "Paris")
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Requ\'eate C : "Meilleures universit\'e9s au Canada" (ic\'f4ne toque de dipl\'f4m\'e9, accent bleu #3B82F6, \'e9tiquette ville "Montr\'e9al")
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0Ic\'f4nes dessin\'e9es en SVG maison, 64 px, sans logo de marque.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Pastille ic\'f4ne : cercle de 120 px \'e0 gauche au-dessus de la barre (x = 960, y = 270), fond = accent \'e0 18 % d'opacit\'e9, bordure 3 px de la couleur d'accent, ic\'f4ne au centre. Elle change \'e0 chaque requ\'eate.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. \'c9tiquette ville : petite pastille arrondie (fond #1B2340, texte 26 px gris clair #C7CEE6, avec une ic\'f4ne rep\'e8re de localisation SVG), centr\'e9e en x = 960, y = 640.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. Carte de r\'e9sultat : sous l'\'e9tiquette, rectangle arrondi 760x120 px, centr\'e9 en x = 960, y = 760, fond #1B2340, bordure 2 px accent. Contenu : rond num\'e9rot\'e9 "1" \'e0 gauche, nom fictif en 32 px bold, 5 \'e9toiles dor\'e9es \'e0 droite.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0Noms fictifs uniquement :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- A : "Chez Tantie Marie"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- B : "Salon \'c9clat"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- C : "Universit\'e9 Horizon"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 6. L\'e9gende basse, centr\'e9e, 52 px bold, en y = 960 : "Tout se passe dans l'IA" avec "l'IA" en bleu #3B82F6. Marge basse sup\'e9rieure \'e0 70 px.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 7. Indicateur de progression : 3 petits points (12 px) en y = 905, centr\'e9s, le point de la requ\'eate active est rempli avec la couleur d'accent, les autres gris #26304F.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 10 : fond en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 6 \'e0 28 : la barre de chat entre (scale 0.92 vers 1, opacit\'e9 0 vers 1, spring damping 15, stiffness 100). Les 3 points de progression apparaissent \'e0 la frame 24.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chaque requ\'eate dure 72 frames (2,4 s), avec 8 frames de chevauchement pour la transition. D\'e9but des blocs : A = 24, B = 96, C = 168.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - D\'e9coupage d'un bloc (en frames relatives au d\'e9but du bloc, t) :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- t 0 \'e0 14 : la pastille ic\'f4ne appara\'eet (scale 0.6 vers 1, spring damping 11, stiffness 120), l'\'e9tiquette ville appara\'eet \'e0 t 8 (opacit\'e9 0 vers 1, translateY de 12 px vers 0).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- t 8 \'e0 36 : effet machine \'e0 \'e9crire : text.slice(0, Math.floor(interpolate(frame, [start+8, start+36], [0, text.length]))), avec curseur "|" clignotant toutes les 8 frames.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- t 36 \'e0 46 : le bouton d'envoi pulse (scale 1 vers 1.12 puis retour) pour simuler l'envoi.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- t 44 \'e0 60 : la carte de r\'e9sultat entre (translateY de 30 px vers 0, opacit\'e9 0 vers 1, spring damping 14). Les 5 \'e9toiles se remplissent une par une, 3 frames d'\'e9cart.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- t 60 \'e0 72 : lecture finale du r\'e9sultat, puis effacement : le texte de la barre se vide rapidement (6 frames, effacement lettre par lettre invers\'e9), la carte et la pastille sortent en fondu et translateY de -16 px (8 frames), l'\'e9tiquette ville aussi.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le texte de chaque requ\'eate doit rester enti\'e8rement lisible au minimum 1 s avant son effacement (frappe termin\'e9e \'e0 t 36, effacement \'e0 t 66).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 24 \'e0 36 pour A, 96 \'e0 108 pour B, 168 \'e0 180 pour C : le point de progression correspondant se remplit avec la couleur d'accent (scale 1 vers 1.4 puis retour).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 196 \'e0 216 : la l\'e9gende du bas appara\'eet pendant le dernier bloc (opacit\'e9 0 vers 1, translateY de 20 px vers 0, Easing.out(Easing.cubic)).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 216 \'e0 240 : le dernier r\'e9sultat (C) reste affich\'e9 sans effacement. Image maintenue avec l\'e9ger flottement de la carte (Math.sin). Pas de sortie anim\'e9e (coupe franche au montage). Pour le bloc C, ignorer la phase d'effacement.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est d\'e9terministe : useCurrentFrame(), interpolate(), spring() avec extrapolateRight: "clamp". Pas de Math.random().
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Utiliser une Sequence par bloc (A, B, C) avec le m\'eame composant param\'e9tr\'e9 (texte, ic\'f4ne, couleur, ville, nom du r\'e9sultat) pour garder le code propre.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les couleurs d'accent changent par interpolation de couleur (interpolateColors de Remotion) pendant les 8 frames de chevauchement, pour \'e9viter un changement sec.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Garder toutes les marges de s\'e9curit\'e9 de 80 px. Rien ne doit chevaucher la barre de chat.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Style SaaS moderne, net, sans logo ni nom de marque r\'e9elle. Export MP4 H.264 (ou ProRes 4444 pour superposition).
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Cr\'e9e une composition Remotion d'animation "la balance Google vs IA" pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 180 frames (6 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : d\'e9grad\'e9 radial sombre (#0B1020 au bord vers #151B34 au centre), identique aux animations pr\'e9c\'e9dentes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins). Texte blanc, accent vert #22C55E, bleu #3B82F6
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Une balance \'e0 deux plateaux. Sur le plateau de gauche, une barre de recherche classique (g\'e9n\'e9rique, sans logo Google). Sur le plateau de droite, une bo\'eete de chat IA. Au d\'e9part la balance est \'e9quilibr\'e9e, puis le plateau IA descend lentement pendant que la barre de recherche classique remonte, r\'e9tr\'e9cit et perd sa couleur. Message : les gens passent de la recherche classique \'e0 l'IA.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. La balance : un pivot central (triangle arrondi, 90 px de large, 200 px de haut, couleur #26304F avec bordure #3B82F6 \'e0 40 %) dont la pointe est en x = 960, y = 520. Un fl\'e9au horizontal (barre de 1100 px x 14 px, coins arrondis, couleur #C7CEE6) fix\'e9 sur la pointe, qui pivote autour de son centre. Deux cha\'eenes fines (2 px, #8A94B8) descendent de chaque extr\'e9mit\'e9 du fl\'e9au vers un plateau (rectangle arrondi 460x24 px, couleur #26304F). Les plateaux restent toujours horizontaux (ne pas les faire tourner avec le fl\'e9au), leur position suit le bout du fl\'e9au : y_bout = 520 \'b1 550 * sin(angle).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Plateau de gauche : "recherche classique". Barre de recherche g\'e9n\'e9rique 400x84 px pos\'e9e sur le plateau, fond blanc, coins 42 px, une ic\'f4ne loupe grise SVG \'e0 gauche, texte placeholder "Rechercher sur le web" en 26 px gris #6B7280. En dessous, \'e9tiquette "Avant" (pastille #1B2340, texte 28 px bold gris clair).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Plateau de droite : "chat IA". Bo\'eete de chat 400x84 px, fond #11172B, bordure 2 px #3B82F6, coins 42 px, ic\'f4ne \'e9tincelle SVG bleue \'e0 gauche, texte "Demande \'e0 l'IA..." en 26 px blanc 80 %, bouton rond d'envoi bleu \'e0 droite. Petit glow bleu qui s'intensifie quand le plateau descend. En dessous, \'e9tiquette "Maintenant" (pastille bleue #3B82F6, texte 28 px bold blanc).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. Les "poids" : sur le plateau de droite, 6 petites ic\'f4nes rondes (36 px, couleur #3B82F6 puis #22C55E) repr\'e9sentant des utilisateurs (silhouette SVG simple) qui tombent une \'e0 une et se posent sur le plateau, ce qui justifie que la balance penche. Sur le plateau de gauche, 2 ic\'f4nes grises qui disparaissent progressivement.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. L\'e9gende basse, centr\'e9e, 52 px bold, en y = 960 : "Les gens passent \'e0 l'IA" avec "l'IA" en bleu #3B82F6. Marge basse sup\'e9rieure \'e0 70 px.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 10 : fond en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 6 \'e0 34 : le pivot et le fl\'e9au apparaissent (scale 0.9 vers 1, opacit\'e9 0 vers 1, spring damping 15). Angle initial 0 (\'e9quilibre).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 28 \'e0 56 : les deux plateaux avec leurs contenus entrent depuis le haut (translateY de -80 px vers 0, opacit\'e9 0 vers 1, spring damping 13, stiffness 100), d\'e9cal\'e9s de 8 frames. Les \'e9tiquettes "Avant" et "Maintenant" apparaissent \'e0 la frame 52 (opacit\'e9 0 vers 1, translateY de 12 px vers 0).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 56 \'e0 78 : pause lisible, balance \'e9quilibr\'e9e avec un l\'e9ger balancement naturel (angle = Math.sin(frame * 0.18) * 0.02 radians), pour que le spectateur voie bien les deux c\'f4t\'e9s (environ 0,7 s).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 78 \'e0 138 : la bascule. L'angle passe de 0 \'e0 0.24 radians (environ 14\'b0) avec Easing.inOut(Easing.cubic), le c\'f4t\'e9 droit descend. Pendant ce temps :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- les 6 ic\'f4nes utilisateurs tombent sur le plateau de droite, une toutes les 8 frames \'e0 partir de la frame 82 (translateY de -300 px vers sa position, spring damping 12, stiffness 110) ;
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- la barre de recherche de gauche (qui remonte avec le plateau) passe progressivement en niveaux de gris, scale 1 vers 0.82, opacit\'e9 1 vers 0.55 (filter: grayscale anim\'e9 de 0 \'e0 1) ;
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- les 2 ic\'f4nes grises de gauche disparaissent (opacit\'e9 vers 0, scale 0.6) \'e0 partir de la frame 100 ;
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- le glow bleu du chat IA passe de 0.2 \'e0 1 d'intensit\'e9 et la bo\'eete grossit l\'e9g\'e8rement (scale 1 vers 1.08).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 138 \'e0 150 : l\'e9ger rebond final de la balance (spring avec overshoot de 0.02 radians puis retour \'e0 0.24).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 142 \'e0 160 : la l\'e9gende du bas appara\'eet (opacit\'e9 0 vers 1, translateY de 20 px vers 0, Easing.out(Easing.cubic)).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 160 \'e0 180 : image maintenue (tr\'e8s l\'e9ger balancement r\'e9siduel). Pas de sortie anim\'e9e (coupe franche au montage). Le r\'e9sultat final doit rester lisible environ 1,5 s minimum.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est d\'e9terministe : useCurrentFrame(), interpolate(), spring() avec extrapolateRight: "clamp". Pas de Math.random().
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - G\'e9om\'e9trie : le fl\'e9au est un div avec transform: rotate(angle) et transformOrigin au centre. Calculer les positions des plateaux \'e0 partir de l'angle (x_bout = 960 \'b1 550 * cos(angle), y_bout = 520 \'b1 550 * sin(angle)) pour que les cha\'eenes restent reli\'e9es exactement aux extr\'e9mit\'e9s. Dessiner les cha\'eenes en SVG (lignes entre le bout du fl\'e9au et le plateau).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - V\'e9rifier que le plateau le plus bas reste dans le cadre : avec angle 0.24, y_bout \uc0\u8776  520 + 132 = 652, plus la cha\'eene (180 px) et le plateau, soit environ y = 860. L'\'e9tiquette et la l\'e9gende ne doivent pas chevaucher le plateau.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Aucun logo r\'e9el : la barre de gauche est volontairement g\'e9n\'e9rique (pas de couleurs ni de lettres de Google).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Style SaaS moderne, net. Export MP4 H.264 (ou ProRes 4444 pour superposition).
+\f1\fs24 \
+\
+\
+\
+
+\f0\fs29\fsmilli14667 Cr\'e9e une composition Remotion d'animation "de SEO \'e0 GEO" pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 180 frames (6 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : d\'e9grad\'e9 radial sombre (#0B1020 au bord vers #151B34 au centre), identique aux animations pr\'e9c\'e9dentes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins), poids 700 \'e0 800 pour les gros textes. Texte blanc, accent vert #22C55E, bleu #3B82F6
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Une timeline horizontale part de "2010" \'e0 gauche avec un gros "SEO" (le r\'e9f\'e9rencement Google d'avant). Un curseur avance vers "2026" \'e0 droite, et pendant le trajet le mot se transforme : "SEO" devient "GEO", puis le sous-titre "Generative Engine Optimization" s'\'e9crit en dessous. Message : le r\'e9f\'e9rencement classique a \'e9volu\'e9 vers l'optimisation pour les IA.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. Timeline : ligne horizontale de 1400 px x 6 px, coins arrondis, centr\'e9e en x = 960, y = 760. Fond #26304F. Une partie remplie (couleur d\'e9grad\'e9e #8A94B8 vers #3B82F6 vers #22C55E) qui progresse de gauche \'e0 droite. 4 rep\'e8res verticaux (4 px x 28 px) r\'e9partis r\'e9guli\'e8rement, avec leurs ann\'e9es en dessous (28 px, gris #8A94B8) : "2010", "2016", "2022", "2026". Le rep\'e8re de "2026" est plus grand (6 px x 40 px) et en vert.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Curseur : cercle de 28 px (blanc, avec un halo bleu 0 0 24px rgba(59,130,246,0.7)) qui voyage sur la ligne, au bout de la partie remplie.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Le gros mot : 3 lettres individuelles en 280 px, bold 800, lettres espac\'e9es de 20 px, centr\'e9es en x = 960, y = 430 (ligne de base \'e0 environ y = 520). Chaque lettre est dans son propre bloc pour pouvoir \'eatre transform\'e9e s\'e9par\'e9ment :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- D\'e9but : "S" "E" "O" en gris clair #C7CEE6.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Fin : "G" "E" "O" en d\'e9grad\'e9 bleu vers vert (#3B82F6 vers #22C55E).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0Seule la premi\'e8re lettre change (S vers G). Le "E" et le "O" restent identiques, mais changent de couleur avec le reste du mot.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. \'c9tiquette d'\'e9poque au-dessus du mot : petite pastille arrondie (28 px de texte). D\'e9but : "R\'e9f\'e9rencement Google" (fond #1B2340, texte gris clair). Fin : "R\'e9f\'e9rencement IA" (fond #3B82F6 \'e0 20 %, bordure 2 px bleue, texte blanc). Elle change par un crossfade.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. Sous-titre : "Generative Engine Optimization", 52 px, semi-bold, blanc, centr\'e9 en x = 960, y = 600. Les initiales G, E, O sont en vert #22C55E et plus grasses (800) pour faire le lien avec le gros mot.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 6. Particules de transformation : 18 petits points (8 px, couleurs bleu et vert) qui jaillissent de la lettre pendant la transformation S vers G, position et vitesse d\'e9termin\'e9es avec random("p-" + index) de Remotion.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 7. L\'e9gende basse, centr\'e9e, 48 px bold, en y = 960 : "Le nouveau r\'e9f\'e9rencement, c'est l'IA" avec "l'IA" en bleu #3B82F6. Marge basse sup\'e9rieure \'e0 70 px.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 10 : fond en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 6 \'e0 28 : la timeline appara\'eet (largeur de 0 \'e0 1400 px depuis la gauche, Easing.out(Easing.cubic)). Les rep\'e8res et ann\'e9es apparaissent progressivement (fondu, d\'e9cal\'e9s de 5 frames) de 14 \'e0 34.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 20 \'e0 44 : le mot "SEO" et l'\'e9tiquette "R\'e9f\'e9rencement Google" entrent (opacit\'e9 0 vers 1, translateY de 24 px vers 0, spring damping 14, stiffness 100), lettres d\'e9cal\'e9es de 4 frames.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 44 \'e0 62 : pause lisible sur "SEO" (environ 0,6 s) avec le curseur positionn\'e9 sur "2010", l\'e9ger flottement des lettres (Math.sin).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 62 \'e0 118 : le curseur avance de 2010 vers 2026 (Easing.inOut(Easing.cubic)), la partie remplie suit. Il passe "2016" vers la frame 80 et "2022" vers la frame 100. Chaque rep\'e8re travers\'e9 fait un petit pop (scale 1 vers 1.4 puis retour, 8 frames).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 86 \'e0 106 : la transformation S vers G, d\'e9clench\'e9e pendant le trajet :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- le "S" pivote en rotateX de 0 \'e0 90\'b0 et dispara\'eet (frames 86 \'e0 96) ;
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- le "G" arrive en rotateX de -90\'b0 \'e0 0\'b0 et appara\'eet (frames 96 \'e0 106), avec perspective 1200 px ;
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- les 18 particules jaillissent \'e0 la frame 94 et s'estompent en 16 frames ;
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- de 90 \'e0 108, la couleur du mot passe du gris au d\'e9grad\'e9 bleu-vert (interpolateColors) et l'\'e9tiquette fait son crossfade vers "R\'e9f\'e9rencement IA".
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 118 \'e0 126 : le curseur atteint "2026", le rep\'e8re devient vert, petit flash de glow vert.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 112 \'e0 146 : le sous-titre "Generative Engine Optimization" s'\'e9crit en effet machine \'e0 \'e9crire (text.slice avec interpolate), environ 1,1 s. Les initiales G, E, O se mettent en vert d\'e8s qu'elles apparaissent.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 142 \'e0 158 : la l\'e9gende du bas appara\'eet (opacit\'e9 0 vers 1, translateY de 20 px vers 0, Easing.out(Easing.cubic)).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 158 \'e0 180 : image maintenue (tr\'e8s l\'e9ger flottement du mot GEO, glow qui respire). Pas de sortie anim\'e9e (coupe franche au montage). Le sous-titre complet et le mot GEO restent lisibles pendant environ 1,3 s minimum, ce qui est le temps minimum pour lire "Generative Engine Optimization".
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est d\'e9terministe : useCurrentFrame(), interpolate(), spring() avec extrapolateRight: "clamp". Aucun Math.random() (utiliser random("seed") de Remotion).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pour le d\'e9grad\'e9 de texte : background-clip: text avec -webkit-text-fill-color: transparent. Les lettres sont des div s\'e9par\'e9s avec la m\'eame taille de police pour que le "G" prenne exactement la place du "S".
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Utiliser une largeur fixe par lettre (par exemple 190 px) pour \'e9viter tout d\'e9calage au changement de S vers G.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Garder toutes les marges de s\'e9curit\'e9 de 80 px. Le sous-titre ne doit pas chevaucher la timeline ni la l\'e9gende.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Style SaaS moderne, net, sans logo (aucun logo Google). Export MP4 H.264 (ou ProRes 4444 pour superposition).
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Cr\'e9e une composition Remotion d'animation "l'oc\'e9an bleu" pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 150 frames (5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : d\'e9grad\'e9 radial sombre (#0B1020 au bord vers #151B34 au centre), identique aux animations pr\'e9c\'e9dentes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins). Texte blanc, accent vert #22C55E, bleu #3B82F6
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 L'\'e9cran est coup\'e9 en deux zones. \'c0 gauche, "SEO" : une foule de petits points (les concurrents) qui s'entassent et se bousculent. \'c0 droite, "Visibilit\'e9 IA" : seulement 3 points et beaucoup d'espace vide. Un zoom lent part ensuite vers la zone de droite. Message : peu de gens se positionnent sur ce business, donc il reste \'e9norm\'e9ment de place.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. Deux panneaux : chacun 800x640 px, coins arrondis 28 px, bordure 2 px #26304F, ombre port\'e9e large.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Panneau gauche centr\'e9 en x = 500, y = 500. Fond #11172B. Titre en haut "SEO" (44 px, bold, gris clair #C7CEE6) avec sous-titre "March\'e9 satur\'e9" (24 px, gris #8A94B8).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Panneau droit centr\'e9 en x = 1420, y = 500. Fond #11172B, bordure bleue #3B82F6 \'e0 50 %, l\'e9ger glow bleu. Titre "Visibilit\'e9 IA" (44 px, bold, blanc) avec sous-titre "Presque personne" (24 px, bleu clair #93C5FD).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'a0\'a0\'a0- Un s\'e9parateur vertical fin (2 px, #26304F) au milieu, en x = 960, qui dispara\'eet pendant le zoom.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Les points du panneau gauche : 56 points de 20 px, gris #5B6B9A, r\'e9partis dans une grille serr\'e9e avec d\'e9calage al\'e9atoire (random("c-" + index)), \'e0 l'int\'e9rieur de la zone utile (marge interne 50 px). Chaque point vibre l\'e9g\'e8rement avec noise2D de @remotion/noise (amplitude 5 px, vitesse lente) pour donner l'effet de bousculade. Quelques collisions visuelles : de petits traits "choc" (2 px, gris) apparaissent bri\'e8vement entre points voisins.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Les points du panneau droit : 3 points seulement de 34 px, couleurs #3B82F6, #8B5CF6 et #22C55E, avec glow. Positionn\'e9s loin les uns des autres (par exemple en bas \'e0 gauche, au centre haut, \'e0 droite), avec un flottement lent (Math.sin). Le reste du panneau reste volontairement vide, avec un motif de grille tr\'e8s discret (lignes #1B2340) pour montrer l'espace disponible.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. Compteurs sous chaque panneau (y = 880) : \'e0 gauche "des milliers de concurrents" (30 px, gris), \'e0 droite "quelques acteurs" (30 px, bleu clair). Texte qualitatif, pas de chiffre pr\'e9cis non sourc\'e9.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. Le curseur "toi" : un 4e point vert #22C55E, 40 px, avec une \'e9tiquette "Toi" (pastille verte, texte blanc 24 px bold), qui arrive dans le panneau droit en fin d'animation et se place dans l'espace vide, avec un halo pulsant.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 6. L\'e9gende basse, centr\'e9e, 52 px bold, en y = 990 : "Peu de monde. Beaucoup de place." avec "Beaucoup de place" en vert #22C55E. Marge basse sup\'e9rieure \'e0 70 px.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 10 : fond en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 6 \'e0 32 : les deux panneaux entrent depuis leurs c\'f4t\'e9s (translateX de -120 px et +120 px vers 0, opacit\'e9 0 vers 1, spring damping 15, stiffness 100). Titres et sous-titres apparaissent \'e0 la frame 28 (fondu).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 30 \'e0 62 : les 56 points du panneau gauche apparaissent en cascade (scale 0 vers 1, 0,5 frame d'\'e9cart entre chaque), puis commencent \'e0 vibrer. Les petits traits de choc commencent \'e0 la frame 56.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 56 \'e0 76 : les 3 points du panneau droit apparaissent un par un (scale 0 vers 1, spring damping 11), d\'e9cal\'e9s de 8 frames.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 62 \'e0 82 : pause lisible : le spectateur compare les deux panneaux (environ 0,7 s). Les compteurs sous les panneaux apparaissent \'e0 la frame 70 (fondu, translateY de 12 px vers 0).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 82 \'e0 118 : zoom lent vers le panneau droit : scale du conteneur global de 1 vers 1.35, translateX qui centre le panneau droit (origine de transformation en x = 1420, y = 500), Easing.inOut(Easing.cubic). Le panneau gauche perd de l'opacit\'e9 (1 vers 0.35) et son flou augmente (blur 0 vers 6 px). Le s\'e9parateur dispara\'eet.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 104 \'e0 124 : le point "Toi" arrive dans le panneau droit (translateY de -200 px vers sa position, spring damping 12, stiffness 110), puis l'\'e9tiquette appara\'eet \'e0 la frame 118 en scale 0.6 vers 1.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 124 \'e0 138 : la l\'e9gende du bas appara\'eet (opacit\'e9 0 vers 1, translateY de 20 px vers 0, Easing.out(Easing.cubic)). Si le zoom la d\'e9cale, la placer hors du conteneur zoom\'e9.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 138 \'e0 150 : image maintenue, flottement des points et halo du point "Toi" qui pulse. Pas de sortie anim\'e9e (coupe franche au montage). Le r\'e9sultat final reste lisible environ 1 s.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est d\'e9terministe : useCurrentFrame(), interpolate(), spring() avec extrapolateRight: "clamp". Pour les positions, utiliser random("seed") de Remotion, jamais Math.random(). noise2D de @remotion/noise est d\'e9terministe, donc compatible.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Rendre les 56 points du panneau gauche dans un seul SVG, plus performant que 56 div.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les panneaux et la l\'e9gende restent dans les marges de s\'e9curit\'e9 de 80 px (avant le zoom). Apr\'e8s le zoom, le panneau droit peut d\'e9passer l\'e9g\'e8rement, c'est voulu, mais le texte important (titre, point "Toi") doit rester enti\'e8rement visible.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Style SaaS moderne, net, sans logo. Export MP4 H.264 (ou ProRes 4444 pour superposition).
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Cr\'e9e une composition Remotion d'animation "transition vers mes statistiques" pour une vid\'e9o YouTube.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 1920x1080, 30 fps, dur\'e9e exacte : 120 frames (4 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : d\'e9grad\'e9 radial sombre (#0B1020 au bord vers #151B34 au centre), identique aux animations pr\'e9c\'e9dentes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Inter (ou Poppins). Texte blanc, accent vert #22C55E, bleu #3B82F6
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONCEPT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un cadre de dashboard vide appara\'eet, ses barres poussent et une courbe se dessine, puis la cam\'e9ra zoome dans l'\'e9cran du dashboard pour encha\'eener directement sur ton vrai screen recording. Message : place aux vrais chiffres. Cette animation sert de pont, elle ne doit pas afficher de statistiques invent\'e9es.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 \'c9L\'c9MENTS
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 1. Fen\'eatre de dashboard : rectangle 1300x760 px, centr\'e9 en x = 960, y = 500, coins arrondis 28 px, fond #11172B, bordure 2 px #26304F, ombre port\'e9e large. Barre du haut de 64 px avec 3 points (14 px : rouge, jaune, vert) \'e0 gauche et le titre "Tableau de bord" (22 px, gris #8A94B8) au centre.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 2. Zone de graphique en barres (\'e0 gauche, 640x420 px) : 8 barres verticales de 52 px de large, \'e9cart 24 px, coins arrondis hauts 10 px, d\'e9grad\'e9 #3B82F6 vers #22C55E. Hauteurs croissantes avec l\'e9g\'e8re variation : 80, 120, 110, 170, 210, 260, 300, 360 px. Lignes de grille horizontales tr\'e8s discr\'e8tes (#1B2340). Aucune valeur num\'e9rique ni axe chiffr\'e9 : visuel volontairement abstrait.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 3. Courbe (\'e0 droite, 480x300 px) : trac\'e9 SVG de 5 px, vert #22C55E, qui monte avec des oscillations, avec une zone remplie en dessous (vert \'e0 15 % d'opacit\'e9). Un point lumineux (16 px, blanc avec glow vert) au bout de la courbe.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 4. Deux cartes indicateurs (en haut du dashboard, 280x110 px chacune, fond #1B2340, coins 18 px) contenant seulement des barres de chargement grises (formes, pas de chiffres) et une petite ic\'f4ne : fl\'e8che montante verte sur la premi\'e8re, \'e9tincelle bleue sur la seconde.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 5. Texte "Mes vrais chiffres" : 80 px, bold, blanc, centr\'e9 en x = 960, y = 140, avec "vrais" en vert #22C55E.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 6. Flash de transition : rectangle plein \'e9cran blanc cass\'e9 (#F5F7FF) pour le raccord final, opacit\'e9 pilot\'e9e par la timeline.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMELINE (en frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 0 \'e0 8 : fond en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 6 \'e0 30 : la fen\'eatre entre (scale 0.9 vers 1, opacit\'e9 0 vers 1, spring damping 15, stiffness 100). Les cartes indicateurs apparaissent \'e0 la frame 24 (fondu, translateY de 14 px vers 0), leurs barres grises se remplissent en 12 frames.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 24 \'e0 36 : le texte "Mes vrais chiffres" appara\'eet (opacit\'e9 0 vers 1, translateY de -16 px vers 0, Easing.out(Easing.cubic)).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 32 \'e0 62 : les 8 barres poussent (scaleY de 0 vers 1, origine en bas, spring damping 13, stiffness 110), d\'e9cal\'e9es de 3 frames.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 50 \'e0 80 : la courbe se dessine (strokeDashoffset, Easing.inOut(Easing.cubic)), la zone remplie suit en fondu. Le point lumineux accompagne le bout du trac\'e9, puis pulse une fois \'e0 la frame 80.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 80 \'e0 90 : pause lisible, tout est en place (environ 0,3 s). L\'e9ger flottement des barres (Math.sin, amplitude 3 px).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 90 \'e0 114 : zoom dans l'\'e9cran : scale du conteneur de 1 vers 3 (Easing.inOut(Easing.cubic)), origine au centre de la fen\'eatre. Le texte "Mes vrais chiffres" et le d\'e9cor ext\'e9rieur s'estompent \'e0 partir de la frame 90 (opacit\'e9 1 vers 0 en 10 frames).
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 106 \'e0 120 : fondu du flash de transition vers l'opacit\'e9 1 (couleur proche du fond de ton screen recording pour un raccord propre). Derni\'e8re frame = \'e9cran uni, pr\'eat pour la coupe sur ton enregistrement.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 NOTES DE R\'c9ALISATION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est d\'e9terministe : useCurrentFrame(), interpolate(), spring() avec extrapolateRight: "clamp". Aucun Math.random().
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Raccord : r\'e8gle la couleur du flash final sur la couleur dominante de ton screen recording (blanc, sombre, etc.), ou remplace le flash par un simple cut si le zoom suffit visuellement. Dans ton montage, pose l'enregistrement sur la V1 et superpose cette animation sur la V2 avec la sortie en fondu.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le dashboard est volontairement g\'e9n\'e9rique et sans chiffres, afin de ne pas laisser croire que ces valeurs sont tes vraies statistiques.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Garder toutes les marges de s\'e9curit\'e9 de 80 px avant le zoom.
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Style SaaS moderne, net, sans logo. Export MP4 H.264 (ou ProRes 4444 pour superposition).
+\f1\fs24 \
+}

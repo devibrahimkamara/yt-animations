@@ -158,7 +158,8 @@ export const ScreenStage: React.FC<{
   blur?: (t: number) => number; // flou de mise au point en px (chiffre héros posé dessus)
   tilt?: TiltKey[]; // inclinaison 3D (degrés), redressée au fil des clés
   masks?: BlurMask[]; // zones floutées (données personnelles), en pixels de la capture
-}> = ({ src, trimBefore, keys, win = WIN_DEFAULT, dim, blur, tilt, masks = [] }) => {
+  free?: boolean; // pas de recentrage automatique : (cx, cy) placent librement la zone (ex. panneau à gauche, carte à droite)
+}> = ({ src, trimBefore, keys, win = WIN_DEFAULT, dim, blur, tilt, masks = [], free }) => {
   const t = useT();
   const ts = keys.map((k) => k.t);
   const z = Math.exp(keyed(t, ts, keys.map((k) => Math.log(k.z))));
@@ -169,8 +170,8 @@ export const ScreenStage: React.FC<{
   };
   const rawCx = keyed(t, ts, keys.map((k) => k.cx));
   const rawCy = keyed(t, ts, keys.map((k) => k.cy));
-  const cx = z < 1 ? rawCx : clampAxis(rawCx, win.x, win.w, W);
-  const cy = z < 1 ? rawCy : clampAxis(rawCy, win.y, win.h, H);
+  const cx = z < 1 || free ? rawCx : clampAxis(rawCx, win.x, win.w, W);
+  const cy = z < 1 || free ? rawCy : clampAxis(rawCy, win.y, win.h, H);
   const left = W / 2 + (win.x - cx) * z;
   const top = H / 2 + (win.y - cy) * z;
   const d = dim ? dim(t) : 0;

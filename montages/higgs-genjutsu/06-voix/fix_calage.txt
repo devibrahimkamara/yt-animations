@@ -1,0 +1,11 @@
+  0.00-  2.76  x0.92  Tu perds deux heures chaque matin sans t'en rendre compte.
+  4.06-  5.64  x1.08  Trois habitudes pour les récupérer.
+  7.26-  9.26  x0.93  Un, pas de téléphone la première heure,
+  9.36- 11.37  x0.94  parce que juste deux minutes sur une appli,
+ 11.52- 13.18  x1.00  ça finit souvent en une demi-heure.
+ 15.00- 17.77  x1.06  Deux, tu choisis ta tâche la plus importante la veille,
+ 17.98- 20.14  x0.77 (borné)  comme ça au réveil tu attaques direct.
+ 22.08- 23.68  x1.24  Trois, tes mails et tes messages,
+ 23.90- 24.99  x0.68 (borné)  c'est à heure fixe,
+ 25.02- 25.74  x0.98  pas au réveil,
+ 25.98- 28.06  x1.02  sinon tu gères les urgences des autres.

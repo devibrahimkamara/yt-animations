@@ -1,0 +1,10 @@
+  0.00-  2.16  x0.94  Tu as l'impression d'être en retard sur tout le monde ?
+  3.08-  3.74  x0.86  Moi aussi.
+  4.08-  5.54  x1.80 (borné)  J'ai fait des études d'informatique…
+  6.36-  7.74  x0.80  et je détestais coder.
+  9.72- 12.91  x0.95  Aujourd'hui, je code tous les jours sans écrire une seule ligne,
+ 12.94- 14.70  x0.69 (borné)  et je vis entre l'Afrique,
+ 14.74- 16.26  x0.85  l'Europe et l'Indonésie.
+ 17.08- 17.85  x0.65 (borné)  Ton rythme,
+ 17.88- 18.80  x1.26  ce n'est pas celui des autres.
+ 19.20- 21.94  x1.04  Arrête de comparer ton chapitre 3 avec leur chapitre 20.

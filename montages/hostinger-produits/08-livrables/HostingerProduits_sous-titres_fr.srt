@@ -1,0 +1,1167 @@
+1
+00:00:00,000 --> 00:00:04,860
+Donc lorsque je créais mon premier produit
+digital, on était en 2021 et à l'époque,
+
+2
+00:00:04,900 --> 00:00:07,400
+il n'y avait pas d'IA, il n'y avait
+pas de ChatGPT. Donc vraiment, c'était
+
+3
+00:00:07,420 --> 00:00:11,000
+difficile. Il fallait faire des scripts,
+il fallait filmer des vidéos, etc. Et ce
+
+4
+00:00:11,020 --> 00:00:14,500
+premier produit digital m'avait rapporté à
+lui seul plusieurs milliers d'euros. Par
+
+5
+00:00:14,520 --> 00:00:17,520
+où est-ce que je vais commencer pour créer
+mon premier produit digital? Eh bien, c'est
+
+6
+00:00:17,540 --> 00:00:20,680
+le sujet de cette vidéo. Je vais partager
+à tous ceux qui sont débutants toutes les
+
+7
+00:00:20,700 --> 00:00:24,700
+étapes à suivre pour créer son premier
+produit digital grâce à l'intelligence
+
+8
+00:00:24,720 --> 00:00:27,760
+artificielle. Si tu es nouveau sur la
+chaîne, je m'appelle Ibrahim Kamara, je fais
+
+9
+00:00:27,780 --> 00:00:31,380
+des vidéos depuis 2020 et sur cette chaîne,
+je te partage toute l'aventure pour que
+
+10
+00:00:31,400 --> 00:00:35,120
+tu en profites et que tu te lances aussi
+sur Internet. Si ça t'intéresse, abonne-toi
+
+11
+00:00:35,140 --> 00:00:38,480
+à la chaîne, mets moi déjà un gros pouce
+bleu et on est parti. La difficulté qui
+
+12
+00:00:38,500 --> 00:00:41,960
+fatiguait beaucoup de personnes pour se
+lancer dans les produits digitaux, c'était à
+
+13
+00:00:41,980 --> 00:00:45,580
+deux niveaux. Le premier niveau, c'est la
+création même du produit digital, que ce
+
+14
+00:00:45,600 --> 00:00:49,300
+soit un e-book, que ce soit une formation
+vidéo, etc. Ça prend du temps, c'est
+
+15
+00:00:49,320 --> 00:00:53,640
+compliqué, etc. Et le deuxième point,
+c'est créer le site internet ou la page de
+
+16
+00:00:53,660 --> 00:00:56,620
+vente où tu vas vendre ton produit où les
+gens vont cliquer et acheter. Ces deux
+
+17
+00:00:56,640 --> 00:00:59,540
+choses-là fatiguent beaucoup de personnes.
+Donc, soit tu es obligé de payer des gens
+
+18
+00:00:59,560 --> 00:01:03,560
+qui vont créer ton produit, qui vont aussi
+créer ta page de vente, etc. Et si tu n'as
+
+19
+00:01:03,580 --> 00:01:06,340
+pas les moyens, tu es obligé de le faire
+tout seul. Et sachant que c'est compliqué,
+
+20
+00:01:06,360 --> 00:01:08,700
+tu ne le fais jamais. Donc, dans cette
+vidéo, je vais te montrer comment on va
+
+21
+00:01:08,720 --> 00:01:13,020
+utiliser l'IA et deux outils principaux
+pour régler ces deux problèmes-là. Donc, le
+
+22
+00:01:13,040 --> 00:01:16,800
+premier point, c'est déjà on va créer
+notre produit digital en quelques minutes.
+
+23
+00:01:16,980 --> 00:01:19,860
+Donc, créer un produit digital, ça ne prend
+plus des heures, ça prend des minutes.
+
+24
+00:01:19,880 --> 00:01:23,600
+On va aller sur Claude. Donc, tu peux
+utiliser Claude, tu peux utiliser ChatGPT.
+
+25
+00:01:23,680 --> 00:01:26,460
+Honnêtement, c'est deux agents qui
+fonctionnent très bien. Moi, dans mon cas, je
+
+26
+00:01:26,480 --> 00:01:30,160
+préfère Claude parce que je trouve qu'il
+est plus rapide et il est plus habile dans
+
+27
+00:01:30,180 --> 00:01:34,240
+ce que je demande. Je vais donc lancer un
+prompt comme ça dans Claude, lui demander
+
+28
+00:01:34,260 --> 00:01:38,960
+de faire des recherches sur Internet et
+de me proposer des idées de mini produits
+
+29
+00:01:38,980 --> 00:01:42,960
+digitaux à vendre. Donc, idéalement des PDF
+e-books parce qu'un produit digital, ça
+
+30
+00:01:42,980 --> 00:01:45,640
+peut être sous plusieurs formes. Ça peut
+être des templates, ça peut être des
+
+31
+00:01:45,660 --> 00:01:49,240
+vidéos, formations vidéo, ça peut être des
+PDF, des e-books. principalement des e-books
+
+32
+00:01:49,260 --> 00:01:53,080
+parce que ce format de produit digital, tu peux
+le créer de toute pièce avec l'intelligence
+
+33
+00:01:53,100 --> 00:01:55,740
+artificielle. Donc, c'est le plus simple.
+Et je lui ai dit de vraiment faire des
+
+34
+00:01:55,760 --> 00:01:58,560
+recherches sur Internet. C'est la première
+étape qu'il ne faut pas négliger. Il faut
+
+35
+00:01:58,580 --> 00:02:01,820
+créer des produits digitaux par rapport à
+ce qui fonctionne, par rapport à ce qui se
+
+36
+00:02:01,840 --> 00:02:05,720
+recherche en ce moment sur Internet. Et
+Claude, c'est vraiment l'agent idéal pour
+
+37
+00:02:05,740 --> 00:02:09,580
+faire ses recherches à ta place. Donc là,
+Claude me propose quelques idées. Donc là,
+
+38
+00:02:09,600 --> 00:02:13,200
+par exemple, il me dit un guide pour créer
+sa chaîne YouTube en français avec l'IA.
+
+39
+00:02:13,220 --> 00:02:15,400
+Voilà, il y a plein de personnes qui
+veulent se lancer sur YouTube en ce moment.
+
+40
+00:02:15,420 --> 00:02:18,760
+Donc, je pense que c'est pertinent. un guide
+pour monétiser sa chaîne YouTube depuis
+
+41
+00:02:18,780 --> 00:02:23,040
+l'Afrique. C'est même ultra pertinent.
+Voilà, parce que j'ai un article de blog sur
+
+42
+00:02:23,060 --> 00:02:25,780
+ça qui cartonne en ce moment. Je trouve
+que ça, c'est pertinent. Donc, ce que je
+
+43
+00:02:25,800 --> 00:02:28,340
+vais faire, on va aller sur cette idée.
+On ne va pas chercher loin. Je vais lui
+
+44
+00:02:28,360 --> 00:02:32,740
+dire, crée-moi donc un e-book professionnel
+vraiment ultra complet avec des infos
+
+45
+00:02:32,760 --> 00:02:36,340
+réelles que tu vas aller chercher sur
+Internet. Et c'est là aussi vraiment un point
+
+46
+00:02:36,360 --> 00:02:40,280
+important. Quand tu travailles avec l'IA,
+il faut toujours lui préciser de se baser
+
+47
+00:02:40,300 --> 00:02:43,280
+sur des infos réelles qu'il va aller
+rechercher sur Internet. Sinon, quand tu
+
+48
+00:02:43,300 --> 00:02:46,980
+oublies de faire ce genre de précision, l'IA
+a tendance à halluciner, à inventer des
+
+49
+00:02:47,000 --> 00:02:50,480
+informations. Et si tu es trop paresseux
+pour vérifier ces infos, il n'y aura juste
+
+50
+00:02:50,500 --> 00:02:54,060
+que des trucs qui n'existent pas. Donc, c'est
+important de préciser ça. Et quand c'est
+
+51
+00:02:54,080 --> 00:02:57,440
+fait, tu lances le prompt. Et là, c'est
+juste un prompt. Et à la fin, j'ai un PDF.
+
+52
+00:02:57,700 --> 00:03:00,840
+Donc, on va juste patienter. Et à la fin,
+je te montrerai le résultat PDF que j'ai
+
+53
+00:03:00,860 --> 00:03:03,600
+eu. Donc là, tu peux le voir. Il est en
+train de faire les recherches. Voilà, sur
+
+54
+00:03:03,620 --> 00:03:07,800
+comment on se fait payer sur YouTube,
+Payoneer, Wise. Vraiment, que des infos
+
+55
+00:03:07,820 --> 00:03:10,420
+réelles. Donc, je le laisse travailler
+et on revient. Donc là, Claude a fini de
+
+56
+00:03:10,440 --> 00:03:14,100
+bosser. et il m'a généré donc mon e-book
+PDF ici. Comment monétiser sa chaîne
+
+57
+00:03:14,120 --> 00:03:18,460
+YouTube depuis l'Afrique francophone, etc.
+C'est spécialement pour les créateurs en
+
+58
+00:03:18,480 --> 00:03:21,420
+Afrique francophone, Côte d'Ivoire,
+Sénégal, Cameroun. Le e-book, il est
+
+59
+00:03:21,440 --> 00:03:25,640
+professionnel honnêtement, avec une table
+de matière, plan d'action, etc. Donc
+
+60
+00:03:25,660 --> 00:03:28,840
+idéalement, quand tu génères un e-book
+pareil, tu veux vérifier les informations.
+
+61
+00:03:28,940 --> 00:03:32,140
+Donc moi, je suis expert dans le sujet.
+Donc si je relis, je peux savoir là où il a
+
+62
+00:03:32,160 --> 00:03:35,780
+inventé des choses ou pas. Mais si tu n'es
+pas expert dans le domaine et tu crées
+
+63
+00:03:35,800 --> 00:03:39,860
+par exemple un e-book sur un domaine en
+particulier, tu peux demander à Claude et
+
+64
+00:03:39,880 --> 00:03:43,600
+lui dire J'aimerais que tu relises ce
+document que tu m'as créé et que tu le
+
+65
+00:03:43,620 --> 00:03:48,600
+compares à des informations disponibles
+sur Internet. Et dis-moi, rassure-moi que
+
+66
+00:03:48,620 --> 00:03:51,440
+toutes les informations présentes dans ce
+e-book, elles sont réelles. Donc, c'est
+
+67
+00:03:51,460 --> 00:03:54,680
+des prompts comme ça que tu vas lui donner.
+Et lui-même, il va relire son travail
+
+68
+00:03:54,700 --> 00:03:58,220
+pour se rassurer qu'il n'a vraiment rien
+inventé. Dans mon cas, je pense que tout
+
+69
+00:03:58,240 --> 00:04:02,020
+est OK, tu vois. Là, par exemple, c'est très
+réel, tu vois. Le revenu pour 1000 vues
+
+70
+00:04:02,040 --> 00:04:05,560
+en Afrique, c'est très bas. Donc, tu vas
+gagner vraiment des centimes pour chaque
+
+71
+00:04:05,580 --> 00:04:09,360
+1000 vues. Donc, il a vraiment précisé pour
+que les créateurs africains sachent que
+
+72
+00:04:09,380 --> 00:04:13,220
+tu peux être monétisé. Mais si tu as une
+audience africaine et que tu as des vues
+
+73
+00:04:13,240 --> 00:04:16,260
+qui viennent d'Afrique, tu ne vas pas
+gagner autant d'argent qu'un YouTuber qui a
+
+74
+00:04:16,280 --> 00:04:19,620
+une audience européenne. Donc ça, c'est
+un point très, très important. Là,
+
+75
+00:04:19,640 --> 00:04:23,220
+maintenant, on a notre e-book qui est
+prêt. On peut juste le télécharger ici,
+
+76
+00:04:23,340 --> 00:04:27,540
+download et j'ai le PDF sur mon ordinateur.
+Je suis fin prêt pour passer à l'étape
+
+77
+00:04:27,560 --> 00:04:30,740
+suivante. Donc l'étape suivante, comme je
+t'ai dit, c'est de créer un site Internet,
+
+78
+00:04:30,820 --> 00:04:34,940
+une page où tu vas mettre ton e-book. Les
+gens vont pouvoir l'acheter et vont donc
+
+79
+00:04:34,960 --> 00:04:38,600
+pouvoir le télécharger là-bas lorsqu'ils
+l'auront acheté. pour que toute l'opération
+
+80
+00:04:38,620 --> 00:04:42,700
+soit automatisée, que tu n'aies pas toi-même
+à envoyer les PDF sur WhatsApp. Donc,
+
+81
+00:04:42,720 --> 00:04:47,080
+pour créer notre page, on va vendre notre
+e-book. On va se retrouver sur ce site-là,
+
+82
+00:04:47,100 --> 00:04:50,680
+donc Hostinger.com, qui est une plateforme
+qui te permet de créer des sites Internet
+
+83
+00:04:50,700 --> 00:04:54,080
+principalement. Donc, que ce soit des sites
+Internet e-commerce, des sites Internet
+
+84
+00:04:54,100 --> 00:04:57,680
+pour une entreprise, etc. Nous, dans notre
+cas, c'est un site Internet pour vendre
+
+85
+00:04:57,700 --> 00:05:00,800
+notre produit digital. Donc, le lien sera
+bien évidemment dans la description.
+
+86
+00:05:12,910 --> 00:05:16,070
+Donc une fois que tu choisis ça, tu peux
+maintenant cliquer sur continuer. Et quand
+
+87
+00:05:16,090 --> 00:05:19,870
+tu cliques sur continuer, tu vas devoir te
+connecter si tu n'as pas encore un compte
+
+88
+00:05:19,890 --> 00:05:23,610
+ou t'inscrire. Voilà, tu vas t'inscrire.
+Ensuite, tu vas mettre tes informations de
+
+89
+00:05:23,630 --> 00:05:26,270
+paiement. Je ne vais pas te montrer ça pour
+des raisons évidentes. Et une fois que
+
+90
+00:05:26,290 --> 00:05:28,850
+tu termines ton paiement, là maintenant
+tu passes à l'étape suivante. Donc
+
+91
+00:05:28,870 --> 00:05:33,210
+normalement, lorsque tu termines ton achat,
+tu termines tes paiements, etc., tu vas
+
+92
+00:05:33,230 --> 00:05:36,490
+te retrouver sur une page similaire à
+celle-ci. Donc arrivé là, tu vas maintenant
+
+93
+00:05:36,510 --> 00:05:40,510
+choisir si tu veux créer un site internet.
+Dans notre cas, on va créer un nouveau
+
+94
+00:05:40,530 --> 00:05:43,290
+site. On va cliquer sur ça. Et là, ici,
+très important, ils vont te demander
+
+95
+00:05:43,310 --> 00:05:47,070
+comment, quel genre de site internet tu
+veux créer. Donc tu peux créer un site
+
+96
+00:05:47,090 --> 00:05:51,490
+internet WordPress. Tu peux créer un site
+avec un code que tu as déjà créé. Toi-même,
+
+97
+00:05:51,510 --> 00:05:54,630
+tu vas juste copier le code ici. Il y a
+plusieurs moyens. Mais nous, dans notre cas,
+
+98
+00:05:54,650 --> 00:05:59,170
+on va choisir cette option. Décrivez-le. Nous
+le construisons. Donc on va utiliser l'outil
+
+99
+00:05:59,190 --> 00:06:03,390
+création de site internet directement
+de chez Hostinger avec l'IA. Donc on va
+
+100
+00:06:03,410 --> 00:06:06,690
+choisir cette option. On va faire suivant.
+Et là, important, ils vont nous demander
+
+101
+00:06:06,710 --> 00:06:09,870
+de quelle manière je souhaite justement
+créer mon site avec Hostinger. Soit
+
+102
+00:06:09,890 --> 00:06:13,190
+manuellement, c'est-à-dire moi-même, je
+vais cliquer sur des choses, drag and drop,
+
+103
+00:06:13,210 --> 00:06:17,750
+créer de toute pièce mon site, comme à
+l'ancienne. Ou alors avec l'IA. Donc, l'IA va
+
+104
+00:06:17,770 --> 00:06:21,210
+créer le site de toute pièce pour moi. Donc,
+on va aller sur IA. Et là, ils vont me
+
+105
+00:06:21,230 --> 00:06:24,190
+demander de choisir mon nom de domaine.
+Donc, ça, ce n'est pas quelque chose que tu
+
+106
+00:06:24,210 --> 00:06:27,150
+n'es pas obligé de le faire maintenant.
+Parce qu'il faut que déjà, tu aies un nom de
+
+107
+00:06:27,170 --> 00:06:29,910
+domaine pour ton site. Moi, dans mon
+cas, j'ai déjà un nom de domaine. C'est
+
+108
+00:06:29,930 --> 00:06:33,650
+ibrahimkamara.com. Mais le temps que tu
+te décides pour avoir un nom de domaine,
+
+109
+00:06:33,690 --> 00:06:36,570
+pour vendre ton produit, ça peut attendre.
+On peut juste utiliser un nom de domaine
+
+110
+00:06:36,590 --> 00:06:39,430
+temporaire. Sachant qu'on n'a même pas
+encore créé le site, je pense que ça peut
+
+111
+00:06:39,450 --> 00:06:43,010
+attendre. Arrivé là maintenant, c'est là
+que tu vas écrire un prompt, donc un prompt
+
+112
+00:06:43,030 --> 00:06:46,710
+explicatif et lui dire voici le site que
+j'ai besoin que tu crées. Pour ça, moi je
+
+113
+00:06:46,730 --> 00:06:49,950
+vais demander à Claude de m'écrire le
+prompt. Donc je lui demande de m'écrire un
+
+114
+00:06:49,970 --> 00:06:53,430
+prompt, donc le prompt que je vais donner
+derrière à Hostinger pour pouvoir générer
+
+115
+00:06:53,450 --> 00:06:57,350
+une page de vente pour pouvoir vendre mon
+e-book. Donc sachant que Claude ici, il a
+
+116
+00:06:57,370 --> 00:07:00,170
+déjà les informations du e-book que j'ai
+créé en question, c'est lui-même qu'il a
+
+117
+00:07:00,190 --> 00:07:03,850
+créé. Donc, il pourra directement générer
+le prompt en question qui va permettre à
+
+118
+00:07:03,870 --> 00:07:07,890
+Hostinger de créer la page de vente dans
+notre cas. Donc, il va réfléchir et il va
+
+119
+00:07:07,910 --> 00:07:11,390
+me donner un prompt, un bon prompt bien
+détaillé. Et il va même préciser tout ce qui
+
+120
+00:07:11,410 --> 00:07:16,450
+est visuel, les couleurs pour être sûr que ça
+correspond de manière identique à l'identité
+
+121
+00:07:16,470 --> 00:07:20,090
+qu'on a déjà ici avec le e-book en question.
+Claude, il est allé dans le détail.
+
+122
+00:07:20,110 --> 00:07:23,170
+Il a fait un long prompt. Donc là, il y a un
+problème par contre et je le savais. C'est
+
+123
+00:07:23,190 --> 00:07:27,390
+Hostinger ici, il donne une limite de 2000
+caractères. Donc, je vais préciser ça à
+
+124
+00:07:27,410 --> 00:07:30,630
+Claude. Je lui dis qu'il est trop long,
+j'ai une limite de 2000 caractères. Donc le
+
+125
+00:07:30,650 --> 00:07:34,090
+prompt, il ne peut pas dépasser 2000
+caractères. Claude va juste le réécrire en
+
+126
+00:07:34,110 --> 00:07:38,290
+patienté. Donc on la copie et on le colle
+dans Hostinger. Et là, tu lances le prompt
+
+127
+00:07:38,310 --> 00:07:42,630
+tout simplement. Et là, Hostinger va commencer
+à bosser avec le Website Builder. Il
+
+128
+00:07:42,650 --> 00:07:46,590
+va prendre quelques secondes. Donc en
+attendant, on va juste patienter. Donc là, il
+
+129
+00:07:46,610 --> 00:07:50,470
+est en train d'analyser ma demande que je
+lui ai faite. Donc là, il a commencé à
+
+130
+00:07:50,490 --> 00:07:54,770
+travailler et à me créer mon site internet.
+Et je vais patienter. Et lorsque j'aurai
+
+131
+00:07:54,790 --> 00:07:58,330
+la première version du site, je reviendrai.
+Donc ça va prendre un bon moment. ok
+
+132
+00:07:58,350 --> 00:08:02,810
+donc là Hostinger a fini et il y a la
+première version de ma page qui est prête et
+
+133
+00:08:02,830 --> 00:08:05,670
+honnêtement c'est très quali je vais
+mettre ça en plein écran donc voici à quoi
+
+134
+00:08:05,690 --> 00:08:09,510
+ressemble donc la page votre chaîne a des
+milliers de vues mais pourquoi 0 $ sur
+
+135
+00:08:09,530 --> 00:08:13,350
+votre compte votre AdSense est bloqué donc
+il a fait une bonne copie il y a un bouton
+
+136
+00:08:13,370 --> 00:08:17,470
+ici je veux le guide maintenant seulement
+19 $ il a choisi un prix au hasard c'est
+
+137
+00:08:17,490 --> 00:08:20,010
+pas moi qui lui ai donné le prix mais
+sachant que je lui ai parlé de mon audience
+
+138
+00:08:20,030 --> 00:08:22,830
+qui est une audience africaine mais il a
+mis un prix qui correspond à cette audience
+
+139
+00:08:22,850 --> 00:08:27,770
+19 $ c'est logique là il a donné il a mis
+une petite photo du guide etc quand tu
+
+140
+00:08:27,790 --> 00:08:31,770
+descends, tu as une description, le système
+qui ne fonctionne plus. C'est une vraie
+
+141
+00:08:31,790 --> 00:08:36,750
+page de vente de marketing bien pro. Les
+différents chapitres du livre. Et il a
+
+142
+00:08:36,770 --> 00:08:41,770
+précisé basé sur des données de 2026.
+Honnêtement, la page, déjà avec ce premier
+
+143
+00:08:41,790 --> 00:08:44,750
+template qu'il me donne là, elle est déjà
+carré. Même s'il y a plein de choses que
+
+144
+00:08:44,770 --> 00:08:48,150
+je vais changer. Idéalement, quand tu
+vends, par exemple, un produit, ça dépend.
+
+145
+00:08:48,170 --> 00:08:51,570
+Soit tu vends ça avec ton image personnelle.
+Donc, c'est-à-dire toi, ton nom. Donc,
+
+146
+00:08:51,590 --> 00:08:55,590
+tu veux mettre ton nom ou tes photos sur la
+page de vente. Moi, dans mon cas, je n'ai
+
+147
+00:08:55,610 --> 00:08:59,190
+pas mis, je ne me suis pas mis en avant.
+Il y a des personnes qui vendent des
+
+148
+00:08:59,210 --> 00:09:02,030
+produits digitaux sans forcément se mettre
+en avant. Mais honnêtement, ça fait
+
+149
+00:09:02,050 --> 00:09:04,710
+beaucoup moins de ventes que quand tu te
+mets en avant. Tout simplement parce que
+
+150
+00:09:04,730 --> 00:09:07,770
+les gens n'ont pas confiance. Donc, ils
+voient une page de vente, ils ne savent pas
+
+151
+00:09:07,790 --> 00:09:10,950
+qui vend de l'argent, donc ils ne savent
+pas qui vend le produit, etc. Donc, les
+
+152
+00:09:10,970 --> 00:09:14,510
+gens auront beaucoup moins confiance en
+ton produit si tu ne te montres pas. C'est
+
+153
+00:09:14,530 --> 00:09:17,550
+la logique des choses. Donc, idéalement,
+tu veux te montrer, tu veux mettre tes
+
+154
+00:09:17,570 --> 00:09:20,770
+photos, tu veux montrer que tu as une vraie
+expérience personnelle et que tu as eu
+
+155
+00:09:20,790 --> 00:09:24,010
+quand même tes propres résultats. Sinon,
+en dehors de ça, cette première version de
+
+156
+00:09:24,030 --> 00:09:27,550
+la page, je trouve qu'elle est très, très
+quali, elle est super. Maintenant, disons
+
+157
+00:09:27,570 --> 00:09:30,750
+que je veux faire des modifications sur
+cette page. Je peux tout simplement revenir
+
+158
+00:09:30,770 --> 00:09:34,370
+ici, dans cette barre de prompt, et lui
+dire exactement les modifications que je
+
+159
+00:09:34,390 --> 00:09:37,270
+souhaite faire. Et ces modifications-là,
+il va les appliquer directement. C'est du
+
+160
+00:09:37,290 --> 00:09:40,530
+prompting. Donc, j'ai créé un prompt et il
+fait les modifications directement sur le
+
+161
+00:09:40,550 --> 00:09:43,950
+site. Donc, je n'ai même pas besoin
+moi-même d'interagir ou de cliquer sur des
+
+162
+00:09:43,970 --> 00:09:48,410
+boutons, rien du tout. Juste, je mets un
+prompt et il change les informations sur la
+
+163
+00:09:48,430 --> 00:09:52,630
+page. Je lui dis concrètement que j'aimerais
+mettre à jour la copie. Donc, la copie,
+
+164
+00:09:52,650 --> 00:09:56,310
+c'est le texte qui est sur la page de vente.
+et faire en sorte que je me mette plus
+
+165
+00:09:56,330 --> 00:09:59,510
+en avant. Tu vois, c'est un mode, je ne
+vends pas forcément que le produit, je vends
+
+166
+00:09:59,530 --> 00:10:02,630
+aussi mon expérience personnelle et je lui
+dis mon nom, etc. Donc, je vais lancer
+
+167
+00:10:02,650 --> 00:10:06,370
+ça. Donc, moi, dans mon cas, ce n'est pas
+forcément changer le design ou quoi de la
+
+168
+00:10:06,390 --> 00:10:09,430
+page, c'est plus le contenu du texte de
+la page. Donc, je vais laisser travailler
+
+169
+00:10:09,450 --> 00:10:12,170
+sur ça. Et normalement, c'est une petite
+tâche, donc ça ne devrait pas durer trop
+
+170
+00:10:12,190 --> 00:10:15,750
+longtemps. Ok, donc là, il a terminé et
+je vais mettre encore une fois en plein
+
+171
+00:10:15,770 --> 00:10:19,670
+écran et je vais vérifier qu'il a bel et
+bien changé la copie. Il n'a pas forcément
+
+172
+00:10:19,690 --> 00:10:24,390
+changé tout le contenu de la page. Il a
+plus rajouté certains détails. il a mis par
+
+173
+00:10:24,410 --> 00:10:28,090
+Ibrahim Kamara. Et je veux voir ce qu'il
+a. Voilà, il a fait une section dédiée
+
+174
+00:10:28,110 --> 00:10:31,790
+Ibrahim Kamara et tout et tout avec mon
+histoire et tout. Donc, c'est vraiment pas
+
+175
+00:10:31,810 --> 00:10:35,570
+mal pour un début. Encore une fois, si je
+ne suis pas satisfait avec ce rendu, que
+
+176
+00:10:35,590 --> 00:10:38,770
+je veux mettre des informations spécifiques
+parce qu'il parle de moi, etc. Il ne me
+
+177
+00:10:38,790 --> 00:10:42,130
+connaît pas. Je peux venir ici dans cette
+section de prompt et lui dire, voici les
+
+178
+00:10:42,150 --> 00:10:45,290
+informations que j'aimerais que tu mettes
+sur la page. Voici qui je suis, etc. Et il
+
+179
+00:10:45,310 --> 00:10:46,310
+va le mettre à jour.
+
+180
+00:10:54,110 --> 00:10:57,210
+C'est comme ça que tu vas créer ton site
+internet, ta page de vente professionnelle.
+
+181
+00:10:57,230 --> 00:11:01,110
+Et cette page de vente là, je peux même te
+montrer la version mobile, tu vois, sur
+
+182
+00:11:01,130 --> 00:11:04,610
+mobile aussi. c'est très professionnel.
+Tu peux cliquer sur les boutons, aller
+
+183
+00:11:04,630 --> 00:11:07,410
+acheter le produit, etc. Donc, quand tu
+cliques sur le bouton, normalement, ça
+
+184
+00:11:07,430 --> 00:11:10,190
+fonctionne. Ça va t'envoyer dans le panier.
+Tu vois, donc la personne peut mettre
+
+185
+00:11:10,210 --> 00:11:14,250
+son email, son adresse, etc. Et faire
+l'achat pour ensuite télécharger ton e-book,
+
+186
+00:11:14,270 --> 00:11:15,270
+etc.
+
+187
+00:11:23,950 --> 00:11:27,210
+Il y a la version mobile, il y a la version
+ordinateur. Une fois que tu as terminé,
+
+188
+00:11:27,230 --> 00:11:30,550
+que tu es satisfait de ton site internet,
+tu peux le publier. Donc, il a y un bouton
+
+189
+00:11:30,570 --> 00:11:33,970
+publier ici pour le rendre public. Donc,
+quand tu cliques sur publier, tu patientes,
+
+190
+00:11:33,990 --> 00:11:37,890
+ça va le publier. Donc là, le site, il est
+publié sur un nom de domaine temporaire
+
+191
+00:11:37,910 --> 00:11:42,550
+qui est celui-là, monétiser YouTube Afrique.
+Voilà, pour beaucoup de choses là. C'est
+
+192
+00:11:42,570 --> 00:11:45,610
+un nom de domaine qui est temporaire. Donc,
+tu pourras le changer plus tard, je te
+
+193
+00:11:45,630 --> 00:11:48,450
+montrerai. Donc, quand tu vas sur ce nom
+de domaine, tu vois le site, c'est télé
+
+194
+00:11:48,470 --> 00:11:52,090
+public, les lives, n'importe qui peut y
+avoir accès. Maintenant, c'est là où c'est
+
+195
+00:11:52,110 --> 00:11:54,790
+important de mettre ton propre nom de
+domaine parce que tu ne vas pas envoyer les
+
+196
+00:11:54,810 --> 00:11:59,030
+gens sur monetiser-youtube-afrique-254202.
+Ce n'est pas professionnel. Donc,
+
+197
+00:11:59,050 --> 00:12:02,590
+idéalement, tu veux cliquer ici sur connecter
+un nom de domaine personnalisé. Et c'est
+
+198
+00:12:02,610 --> 00:12:05,350
+là que tu vas connecter ton propre nom de
+domaine. Donc, moi, dans mon cas, je peux
+
+199
+00:12:05,370 --> 00:12:10,590
+mettre ibrahimkamara.com. Je peux mettre
+monetiser-youtube.ibrahimkamara.com, un
+
+200
+00:12:10,610 --> 00:12:13,580
+truc du genre. Mais ça ne coûte vraiment
+rien. Si c'est trop, déjà, 10 euros par an
+
+201
+00:12:13,600 --> 00:12:16,600
+pour un nom de domaine. Et ensuite, tu
+choisis le nom de domaine youtubeafrique,
+
+202
+00:12:16,620 --> 00:12:19,580
+etc. Et tu suis les instructions, tu
+pourras directement connecter ton nom de
+
+203
+00:12:19,600 --> 00:12:23,340
+domaine. Une fois que tu as terminé de
+créer ta page de vente, tu as créé ton
+
+204
+00:12:23,360 --> 00:12:26,860
+produit déjà. Là, tu as ton nom de domaine
+personnalisé. T'es fin prêt, tu peux
+
+205
+00:12:26,880 --> 00:12:30,040
+envoyer du trafic sur ton site. Il ne te
+reste plus qu'à envoyer des personnes sur
+
+206
+00:12:30,060 --> 00:12:33,280
+le site pour cliquer pour acheter. Et c'est
+là que ça devient difficile parce que c'est
+
+207
+00:12:33,300 --> 00:12:36,940
+facile de créer un produit digital. C'est
+facile de créer une page de vente, mais c'est
+
+208
+00:12:36,960 --> 00:12:40,000
+encore plus difficile de trouver des gens
+qui vont venir acheter. Et c'est là où
+
+209
+00:12:40,020 --> 00:12:43,720
+beaucoup de personnes se trompent. Il y
+a deux manières principales d'envoyer du
+
+210
+00:12:43,740 --> 00:12:47,320
+trafic sur ton produit digital. La première
+manière, c'est de créer du contenu.
+
+211
+00:12:47,420 --> 00:12:51,520
+Voilà, être sur YouTube, être sur Instagram,
+etc. Et beaucoup de personnes vont te
+
+212
+00:12:51,540 --> 00:12:55,600
+donner ce conseil-là. C'est gratuit, crée
+juste du contenu, etc. C'est vrai, mais ça
+
+213
+00:12:55,620 --> 00:12:59,000
+prend énormément de temps. Lorsque tu vas
+lancer ta chaîne YouTube ou ton compte
+
+214
+00:12:59,020 --> 00:13:02,180
+Instagram, tu n'auras pas forcément des
+vues, tu n'auras pas forcément des abonnés.
+
+215
+00:13:02,200 --> 00:13:05,620
+Donc, il y aura très peu, voire personne, qui
+va cliquer sur ton lien pour s'intéresser
+
+216
+00:13:05,640 --> 00:13:09,540
+à ton produit digital. Donc, si tes ambitions
+sont, je veux créer un produit digital
+
+217
+00:13:09,560 --> 00:13:12,980
+et je veux gagner de l'argent rapidement,
+tu vas devoir oublier cet aspect-là parce
+
+218
+00:13:12,000 --> 00:13:15,960
+que le contenu, c'est vraiment pour du
+long terme. C'est possible de faire du
+
+219
+00:13:15,980 --> 00:13:19,620
+contenu et de percer en genre 2 mois, 3
+mois, 6 mois, mais la majorité des gens ne
+
+220
+00:13:19,640 --> 00:13:22,940
+percent pas rapidement. Je vais te proposer
+la deuxième alternative qui est la
+
+221
+00:13:22,960 --> 00:13:26,920
+publicité payante. La publicité payante reste
+de loin le moyen le plus efficace d'avoir
+
+222
+00:13:26,940 --> 00:13:30,660
+du trafic, notamment sur un produit digital
+sur ton site. Et pour cela, il faut
+
+223
+00:13:30,680 --> 00:13:34,220
+dépenser de l'argent, malheureusement. Donc la
+publicité payante, comme son nom l'indique,
+
+224
+00:13:34,240 --> 00:13:37,280
+ce n'est pas gratuit. Tu dois payer de
+l'argent. Donc il y a Facebook Ads, il y a
+
+225
+00:13:37,300 --> 00:13:41,300
+TikTok Ads, il y a YouTube Ads, il y a
+plusieurs plateformes publicitaires. Choisis-en
+
+226
+00:13:41,320 --> 00:13:44,500
+une, Facebook. C'est la plus simple, c'est
+là-bas qu'il y a beaucoup de personnes.
+
+227
+00:13:44,560 --> 00:13:47,860
+Et tu pourras directement promouvoir ton
+site internet dans notre cas qui est notre
+
+228
+00:13:47,880 --> 00:13:51,740
+produit digital. Et les gens iront sur ta
+page et tu auras l'occasion de faire des
+
+229
+00:13:51,760 --> 00:13:55,520
+ventes. Donc, si ça t'intéresse d'avoir
+une vidéo complète sur ce sujet, je te
+
+230
+00:13:55,540 --> 00:13:58,800
+mettrai ici un lien. J'ai fait une vidéo
+où je te partage comment lancer des
+
+231
+00:13:58,820 --> 00:14:01,800
+publicités sur Google Ads, qui est une
+plateforme publicitaire. Donc, clique
+
+232
+00:14:01,820 --> 00:14:05,560
+directement sur ce lien et tu seras
+redirigé. Et je te rappelle que le lien pour
+
+233
+00:14:05,580 --> 00:14:09,300
+Hostinger, il est dans la description, ainsi
+que dans le lien épinglé. Donc, je t'invite
+
+234
+00:14:09,320 --> 00:14:10,550
+à aller cliquer dessus. Allez, peace!
+

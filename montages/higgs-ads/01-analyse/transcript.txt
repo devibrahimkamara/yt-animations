@@ -1,0 +1,234 @@
+0:00.0 Ces 20 vidéos que tu vois à l'écran ainsi que cette vidéo-ci et la nouvelle version que j'ai générée avec un autre produit,
+0:06.8 eh bien, aucune d'entre elles n'a été shootée dans un vrai studio.
+0:09.5 Pas de photographe, pas de mannequin et j'ai tout créé avec une seule intelligence artificielle que je vais te partager dans cette vidéo.
+0:15.9 Donc, ce genre de pack publicitaire, c'est le genre de pack que les marques payent chaque mois.
+0:19.7 Et dans cette vidéo, je vais te partager comment est-ce que tu vas les créer et surtout comment est-ce que tu vas pouvoir les vendre.
+0:24.6 Donc, le business model en soi, il est très simple.
+0:26.5 Les marques qui font de la publicité sur Facebook, sur Instagram, sur TikTok, elles ont tout le temps besoin de nouvelles créatives publicitaires
+0:32.5 parce que leurs créatives s'épuisent rapidement.
+0:35.0 Donc, les gens ont marre de voir à chaque fois les mêmes publicités.
+0:37.8 Ils ont tout le temps besoin d'avoir une machine de contenu qui crée des nouvelles créatives publicitaires.
+0:41.6 Maintenant, le problème qu'ils rencontrent, c'est que ça peut devenir très, très cher lorsque tu dois engager des équipes avec des personnes,
+0:47.4 avec des équipements, des caméras et tout ça et filmer tout le temps des nouvelles publicités.
+0:51.1 Et c'est là où nous, on rentre en jeu, où on va utiliser l'IA pour faire des publicités qui sont super réalistes.
+0:56.8 Et ces marques-là vont avoir un gain de temps énorme et surtout un gain d'argent en juste nous payant pour créer les publicités
+1:02.1 et pour les alimenter de manière récurrente.
+1:04.7 Et pour pouvoir créer ces publicités, on va utiliser la plateforme Xfield qui a un nouvel outil qui s'appelle le Ad Studio.
+1:11.3 Et dans ce studio, tu peux à la fois créer des créatives publicitaires, non seulement,
+1:15.7 mais tu peux aussi facilement créer plusieurs variantes de ces créatives-là.
+1:18.8 Et c'est ce qu'on va tester dans cette vidéo.
+1:20.4 Concernant le fait de trouver des clients, je te partagerai une méthode qui est 100% gratuite.
+1:24.9 Donc reste jusqu'à la fin de la vidéo.
+1:26.3 Donc sur ma chaîne, je teste et je documente des outils d'intelligence artificielle.
+1:29.9 Et si ça t'intéresse, n'hésite pas à t'abonner, c'est pas déjà fait.
+1:32.5 Mets-moi un gros pouce bleu et on est parti.
+1:34.2 Donc avant même de toucher à l'outil d'IA, la première question que tu dois te poser, c'est
+1:38.6 à qui est-ce que je vais vendre tout ça ?
+1:40.3 Et c'est là que 90% des gens vont se planter.
+1:43.1 Donc la majorité des gens vont dire quoi ?
+1:44.5 Ils vont aller trouver des noms de marques sur les réseaux, aller les contacter à la volée,
+1:47.9 des marques qui le plus souvent n'ont jamais demandé ton service.
+1:50.7 Ils ont sûrement même pas besoin de ton service et tu vas perdre ton temps, tu n'auras jamais
+1:54.3 de clients.
+1:54.7 Et pour remédier à ce problème-là, il y a un outil qui est complètement gratuit qui
+1:58.3 s'appelle la bibliothèque publicitaire de Meta.
+2:01.0 Donc Meta, c'est la plateforme publicitaire de Facebook qui permet de faire des publicités
+2:04.7 sur Instagram et sur Facebook notamment.
+2:06.8 Et ici, tu peux voir les marques qui font des publicités de manière transparente parce
+2:11.1 que Meta donne accès à ces données-là.
+2:12.9 Et je vais t'expliquer pourquoi c'est vraiment pertinent.
+2:14.7 Donc si je viens sur leur site, je peux choisir par exemple le pays, on va mettre les Etats-Unis
+2:18.5 et là, on va mettre tout type de publicité et on va mettre le nom d'une marque par hasard.
+2:22.0 Je vais mettre par exemple Apple, c'est un exemple.
+2:23.8 Et là, je pourrais choisir la marque Apple ici.
+2:26.4 Et là, je verrais qu'en ce moment, Apple a 99 publicités qui sont actives, qui tournent
+2:30.9 en ce moment.
+2:31.4 Et je peux voir même les publicités qui tournent.
+2:33.3 Donc par exemple, là, il y a une pub sur l'iPhone 18 Pro.
+2:35.5 Je peux l'ouvrir.
+2:36.3 Voilà, je peux voir la pub, etc.
+2:38.3 Donc la bibliothèque de Meta nous donne accès aux publicités qui tournent sur leur plateforme.
+2:42.7 Ce sera pertinent parce qu'avant de contacter potentiellement une marque pour lui vendre
+2:46.7 ce service, tu pourras vérifier est-ce que cette marque fait déjà des publicités sur
+2:50.6 Meta.
+2:51.2 C'est la première question.
+2:52.0 Donc si la marque ne fait pas des publicités sur Meta, le service ne va pas forcément
+2:55.4 lui servir.
+2:56.0 Donc nous, on va chercher des marques qui sont déjà actives sur Meta.
+2:58.8 Mais par contre, on ne va pas aller contacter des marques comme Apple qui ont des centaines
+3:01.9 de publicités qui tournent.
+3:02.9 Donc ce genre de marques-là, ils ont forcément déjà une équipe bien huilée, ils ont assez
+3:06.6 de créatives, ils n'ont pas le problème.
+3:07.9 On va aller chercher des marques qui sont actives sur Meta, mais qui ont très peu de
+3:11.8 publicités qui tournent.
+3:12.9 Donc par exemple, une, deux, trois publicités qui tournent à la fois.
+3:16.1 Donc maintenant, considérons que tu as déjà trouvé un client et ce client t'a commandé
+3:19.6 des publicités.
+3:20.3 Donc là, l'étape suivante, c'est comment est-ce que tu vas créer des publicités
+3:23.8 qui vraiment auront l'air originales comme si tu les as créées vraiment pour ce client-là.
+3:28.0 Parce que le problème qu'il y a avec les vidéos IA, même les créatifs IA, c'est
+3:32.1 que le plus souvent, ils ont la même tête.
+3:33.7 Tu vois, quand tu vois ces créatifs, tu sens que c'est de l'IA, tu sens que c'est un truc
+3:37.0 générique qui a été généré à la volée.
+3:39.0 Et nous, on veut vraiment casser cette impression et créer des publicités.
+3:42.9 On veut vraiment créer des publicités qui sont originales.
+3:45.7 Donc c'est là qu'on va se retrouver sur le Xfield Ad Studio.
+3:48.8 Le lien se trouve dans la description.
+3:50.3 Comme je t'ai dit, c'est la nouvelle fonctionnalité de Xfield.
+3:52.4 Là, on va cliquer sur Get Winning Ads.
+3:54.5 Tu verras que là, on a deux fonctionnalités.
+3:56.6 Il y a la fonctionnalité Create Ads et à la créative, Create Try Ad Multiplier qui va créer
+4:01.5 plusieurs variantes d'une publicité.
+4:03.2 Donc on va d'abord créer une nouvelle publicité de toutes pièces.
+4:06.0 On va cliquer sur Create Ads.
+4:07.5 Et là, tu vas mettre le site internet de ton client.
+4:10.0 Donc là, tu vas mettre le site internet de la marque en question.
+4:12.9 Donc là, je mets le site d'une marque.
+4:14.9 Voilà, j'ai sélectionné une marque au hasard.
+4:16.9 Je précise que ce n'est pas de la publicité pour cette marque.
+4:19.2 Donc si possible, je vais même flouter leur nom.
+4:20.9 Et ensuite, on va cliquer sur Create My Brand.
+4:23.4 Donc là, normalement, il va aller récupérer tous les différents assets, toutes les infos
+4:27.3 nécessaires sur le site de la marque.
+4:28.9 Donc on va patienter.
+4:29.8 Ensuite, là, c'est très important.
+4:30.9 Lui, il a récupéré directement toutes les informations automatiquement sur le site de
+4:34.6 la marque.
+4:35.1 Maintenant, c'est à toi de les relire et de vérifier qu'elles sont correctes.
+4:37.9 Donc là, par exemple, le nom de la marque, il est correct.
+4:39.9 Le logo, il est correct.
+4:41.1 La description de la marque, leur positionnement, il est correct.
+4:44.0 Les couleurs principales, elles sont correctes.
+4:46.1 Il les a directement prises sur le site internet.
+4:48.6 Honnêtement, tout ça, c'est des infos qu'il a directement pris sur le site.
+4:51.1 Tout ça, c'est correct.
+4:52.1 Donc moi, à mon niveau, tout est correct.
+4:53.7 Par exemple, là, il a même récupéré les liens des réseaux sociaux.
+4:56.6 Donc je vais cliquer pour vérifier que c'est vraiment leur réseau social.
+4:59.1 C'est vraiment leur réseau social.
+5:00.5 Tout est correct.
+5:01.1 On va cliquer donc sur continuer.
+5:02.6 Donc maintenant, une fois que le kit de la marque, il est validé, on va maintenant
+5:06.0 choisir les produits pour lesquels on souhaite créer des créatifs.
+5:08.8 Ici, ce qui est cool vraiment avec Xfield, c'est que quand tu donnes le lien du site
+5:12.8 internet de la marque, eh bien, il te récupère directement tous les produits phares.
+5:16.1 Donc directement sur leur site.
+5:17.2 Donc là, j'ai une liste de produits phares et ça a moins de sélectionner les produits
+5:20.3 pour lesquels on va faire des publicités.
+5:21.7 Je vais par exemple garder celui-là qui est, je pense, un de leurs best-sellers.
+5:26.2 On va enlever ceux-là.
+5:27.1 On va garder celui-là.
+5:28.6 Celui-là, le Body Magic aussi, je pense que c'est un best-seller.
+5:31.5 Lui, je vais l'enlever.
+5:32.4 Donc je vais garder 1, 2, 3, 4 et 5 produits pour lesquels on va créer des publicités.
+5:37.1 Donc une fois que ça s'est fait, on clique sur le bouton continuer.
+5:39.3 Et là, maintenant, il nous demande combien de publicités je souhaite créer.
+5:42.6 Donc là, j'ai le choix pour donner un nombre total global.
+5:45.8 Ou même j'ai le choix de choisir en fonction de chaque produit, c'est-à-dire
+5:48.7 combien de pubs je veux directement par produit.
+5:50.7 Moi, je vais mettre 17 et ça va créer 4 pour celui-là, 4 pour celui-là, 3, 3, 3.
+5:55.4 Et je vais cliquer sur le bouton générer.
+5:57.0 Mais avant de cliquer, je vais me rassurer que je sais combien de crédits ça va utiliser sur mon compte.
+6:01.1 Xfeed, c'est une plateforme où tu as besoin d'un abonnement payant.
+6:03.6 Et quand tu as un abonnement, tu utilises des crédits pour générer.
+6:06.5 Ici, cette génération de 17 publicités va me coûter 68 crédits.
+6:10.7 Sur mon compte, en ce moment, j'ai plus de 3 000 crédits.
+6:13.1 Donc ça va largement suffire.
+6:14.4 Donc rassure-toi que tu as assez de crédits quand tu génères des choses.
+6:17.0 Je vais cliquer sur générer et on va patienter le temps qu'il fasse sa magie, qu'il fasse son travail.
+6:22.7 Donc là, il a commencé à directement travailler sur toutes les pubs d'un coup.
+6:26.3 Là, sur le côté, je peux voir le process.
+6:28.4 Ici, visuellement, je vois que les pubs sont en train de charger et je patiente.
+6:32.1 OK.
+6:32.5 Donc là, il a terminé de générer mes publicités.
+6:35.2 Je vérifie vraiment qu'il a terminé.
+6:37.3 Et là, on va les regarder une par une et on verra le résultat.
+6:39.5 Donc je précise que ce sont des static ads, c'est-à-dire que ce sont des publicités statiques.
+6:43.6 C'est des images, ce ne sont pas des publicités vidéo.
+6:45.6 Donc celle-là, elle est pas mal.
+6:47.9 Elles sont vraiment basiques.
+6:49.1 Voilà, celle-là, franchement, je sens la différence, tu vois.
+6:51.9 C'est le même produit, c'est une identité visuelle quasiment différente.
+6:54.7 C'est bien fait et ça ne ressemble pas du tout à des pubs qui ont été générées avec l'IA, tu vois.
+6:58.7 De nos jours, quand tu vois des affiches IA, tu le sais.
+7:02.1 Tu vois, et le pire même souvent, c'est qu'il y a des restaurants,
+7:04.4 quand ils font leur menu de nourriture, ils mettent des photos IA.
+7:07.0 Mais quand tu regardes ce genre de publicité, tu ne sens pas que ça a été fait avec de l'IA.
+7:10.3 Donc voilà, un designer peut avoir fait ça.
+7:12.3 Et c'est des pubs qui sont naturels, qui sont réellement intégrés dans l'esprit de la marque
+7:15.9 puisque la marque, elle a un branding très simple, très naturel.
+7:18.6 Et il n'est pas compliqué leur branding.
+7:20.2 Donc les visuels sont censés s'aligner avec ça.
+7:22.8 On regarde chaque visuel.
+7:23.9 Franchement, c'est parfait celui-là.
+7:25.2 Je le surkiffe.
+7:26.4 C'est le meilleur visuel, selon moi, parmi tous les autres.
+7:28.6 C'est parfait.
+7:29.0 Voilà, celui-là aussi, il est carré.
+7:30.8 Et tu peux remarquer que chaque visuel est différent.
+7:33.4 Maintenant, je vais te montrer comment est-ce qu'on va créer des créatifs publicitaires,
+7:37.0 mais en mode vidéo.
+7:38.1 Puisque là, c'était des publicités statiques.
+7:40.4 Là, on va faire des vidéos et tu verras que ça marche aussi très bien.
+7:43.2 Donc on va revenir dans Ad Studio, dans la partie Ad Studio.
+7:46.2 Et cette fois-ci, on va sélectionner le Ad Multiplier.
+7:49.0 Et c'est celui dont je t'avais parlé qui va te permettre de créer plusieurs variantes de créatifs publicitaires.
+7:53.9 Et ce sera vraiment assez cool.
+7:55.3 Donc là, le concept du Ad Multiplier, c'est disons par exemple qu'une marque a filmé une vidéo avec un produit
+8:01.5 et que la vidéo, elle a très, très bien marché.
+8:03.3 Mais elles veulent refaire la même vidéo, mais avec un autre produit.
+8:06.1 Donc en temps normal, ils vont devoir retourner toute la scène avec une équipe, etc.
+8:10.4 Ça va prendre du temps, ça va coûter plus d'argent.
+8:12.0 Mais avec la fonctionnalité de Ad Multiplier, c'est ce qu'on peut faire directement avec l'IA.
+8:16.3 C'est-à-dire, on peut prendre une vidéo avec un produit et remplacer le produit dans la vidéo par un autre produit.
+8:21.7 Donc arrivé ici, sur cette interface, on va cliquer sur Add Reference Video.
+8:25.5 C'est là qu'on va mettre la vidéo de référence.
+8:27.4 Donc aujourd'hui, je n'ai pas filmé de vidéo de moi-même pour l'essai.
+8:30.2 Donc on va juste aller dans leurs presets.
+8:31.7 Puisqu'il y a une galérie de presets que Xfield te donne.
+8:34.2 Je vais trouver des presets vraiment de vidéos, on va dire de publicité e-commerce.
+8:38.0 Donc celui-là, ce preset-là.
+8:40.2 Donc j'essaierai de te mettre en plein écran.
+8:41.8 C'est un preset assez cool et assez drôle.
+8:43.7 C'est une personne qui met en avant un sac assez cool d'une manière...
+8:47.4 En mots création de contenu.
+8:48.6 Donc ce n'est pas une publicité.
+8:49.8 C'est plus un créateur de contenu.
+8:51.3 Et ce genre de publicité marche très bien sur TikTok.
+8:53.5 C'est-à-dire, c'est des pubs un peu intégrées dans la création de contenu.
+8:56.2 Et ça ne ressemble pas à une pub.
+8:57.3 Donc on va utiliser ce preset-là.
+8:58.8 On le rajoute ici.
+8:59.7 Maintenant ici, on va rajouter les photos du produit en question qu'on souhaite remplacer dans la vidéo.
+9:05.8 Donc dans la vidéo, elle met en avant un sac.
+9:07.7 Donc nous, dans notre cas, on va trouver un produit sur le site de notre marque.
+9:11.9 Par exemple, je vais prendre un sac à main aussi.
+9:13.4 Mais un sac à main vraiment random d'une autre marque.
+9:15.3 Et je vais faire attention de ne pas promouvoir une quelconque marque.
+9:18.8 Dans ce que j'ai fait, je suis allé télécharger sur le site d'une marque.
+9:21.8 Et c'est lui qu'on va prendre pour remplacer dans la vidéo originale.
+9:24.2 Donc on revient ici.
+9:25.0 Et là, on clique sur Add Your Character.
+9:26.7 Dans notre cas, c'est la photo du produit en question.
+9:29.1 Donc on met le nouveau sac.
+9:30.6 Ça va charger.
+9:31.3 On sélectionne le sac.
+9:32.1 Et là, tu peux mettre le prompt ici.
+9:34.0 Tu peux lui dire, remplace le sac dans la vidéo originale par le sac que j'ai rajouté.
+9:38.3 Tout simplement.
+9:38.9 Tout le reste, je ne change pas.
+9:40.1 Mais si tu veux, tu peux changer certains éléments de la vidéo.
+9:42.4 Et là, tu choisis la qualité.
+9:43.8 Soit en 420p ou en 720p ou en 1080p.
+9:48.0 Donc en fonction de la qualité, ça te coûtera beaucoup plus de crédit.
+9:50.4 Donc on va aller dans la meilleure qualité, donc 1080p.
+9:52.8 Et cette vidéo, à elle seule, va coûter 128 crédits.
+9:55.2 Ce qui est vraiment beaucoup dans Xfield.
+9:56.4 Donc on va cliquer sur Générer.
+9:57.8 Et là, on va patienter.
+9:58.7 Donc je te rappelle que tous les liens importants se retrouvent dans la description.
+10:01.7 Et si tu veux aller plus loin, tu pourras créer un personnage IA que tu vas promouvoir sur tes réseaux sociaux.
+10:07.0 Et ce personnage IA pourra faire des publicités de produits comme ce qu'on vient de faire là.
+10:11.1 Si ça t'intéresse, j'ai fait une vidéo ici que je vais te lier ici.
+10:14.0 Et tu pourras aller directement regarder cette vidéo-là.
+10:16.2 Bisous.

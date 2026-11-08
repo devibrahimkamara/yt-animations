@@ -1,0 +1,13 @@
+Create a 16:9 YouTube thumbnail that recreates the FIRST image (the reference thumbnail) as faithfully as possible in structure, framing, hierarchy, spacing, lighting logic and visual rhythm, only changing the person, the text and the setting. It must feel like a premium high-CTR remake of the reference, not a new concept.
+
+Reference structure to keep exactly: 1) a solid black horizontal banner across the top (about 20% of the height, inset from the edges like the reference) containing one line of huge bold rounded sans-serif text; 2) on the left, a rectangular character-sheet card (light grey background, slightly larger than in the reference, about 40% of the width, vertically centered just under the banner) overlapping the background; 3) on the right, the same character as a large realistic cinematic close-up portrait (head and shoulders, face filling the right half, looking straight into the camera, calm confident expression, eyes sharp), the background behind her heavily blurred with warm bokeh.
+
+Character: use the woman from the SECOND image (the character sheet) and the THIRD image (full-body photo) as the exact identity: same face, same skin tone, same round tortoiseshell glasses, same mustard-yellow wax-print headwrap with blue patterns, small gold hoop earrings, light denim jacket over a white t-shirt, brown leather crossbody strap. Do not invent a different woman; keep every detail identical so the thumbnail itself proves the character stays the same.
+
+Left card: reproduce the SECOND image (her three-panel character sheet: front full body, side full body, face close-up) faithfully inside the card, clean and readable, with a thin white border and soft shadow.
+
+Right portrait setting: she stands in the warm night market of the FOURTH image (string lights, food stalls, bamboo, soft smoke), shallow depth of field, warm golden light on her face with a gentle rim light, the market reduced to warm bokeh so the face pops.
+
+Text in the top banner, exactly: "Personnage IA récurrent" with the words "Personnage IA" in a bright green-to-cyan gradient and the word "récurrent" in pure white, exactly like the two-tone treatment of the reference. French accents must be correct (récurrent). No other text anywhere.
+
+Style: photorealistic, crisp, high contrast, cinematic grading, realistic skin texture, no plastic look, no logos, no watermark, no extra UI, no arrows. Readable on a phone at small size.

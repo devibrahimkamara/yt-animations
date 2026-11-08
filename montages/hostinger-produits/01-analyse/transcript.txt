@@ -1,0 +1,346 @@
+[    0.0] Donc lorsque je créais mon premier produit digital, on était en 2021 et à l'époque, il n'y avait pas d'IA, il n'y avait pas de chat GPT.
+[    6.8] Donc vraiment, c'était difficile. Il fallait faire des scripts, il fallait filmer des vidéos, etc.
+[   10.7] Et ce premier produit digital m'avait rapporté à lui seul plusieurs milliers d'euros.
+[   14.4] Par où est-ce que je vais commencer pour créer mon premier produit digital?
+[   17.1] Eh bien, c'est le sujet de cette vidéo. Je vais partager à tous ceux qui sont débutants toutes les étapes à suivre pour créer son premier produit digital grâce à l'intelligence artificielle.
+[   25.2] Si tu es nouveau sur la chaîne, je m'appelle Ibrahim Kamara, je fais des vidéos depuis 2020 et sur cette chaîne, je te partage toute l'aventure pour que tu en profites et que tu te lances aussi sur Internet.
+[   33.8] Si ça t'intéresse, abonne-toi à la chaîne, mets moi déjà un gros pouce bleu et on est parti.
+[   37.6] La difficulté qui fatiguait beaucoup de personnes pour se lancer dans les produits digitaux, c'était à deux niveaux.
+[   42.5] Le premier niveau, c'est la création même du produit digital, que ce soit un e-book, que ce soit une formation vidéo, etc.
+[   48.0] Ça prend du temps, c'est compliqué, etc.
+[   50.0] Et le deuxième point, c'est créer le site internet ou la page de vente où tu vas vendre ton produit où les gens vont cliquer et acheter.
+[   56.4] Ces deux choses-là fatiguent beaucoup de personnes.
+[   58.1] Donc, soit tu es obligé de payer des gens qui vont créer ton produit, qui vont aussi créer ta page de vente, etc.
+[   63.2] Et si tu n'as pas les moyens, tu es obligé de le faire tout seul.
+[   65.3] Et sachant que c'est compliqué, tu ne le fais jamais.
+[   67.1] Donc, dans cette vidéo, je vais te montrer comment on va utiliser l'IA et deux outils principaux pour régler ces deux problèmes-là.
+[   72.7] Donc, le premier point, c'est déjà on va créer notre produit digital en quelques minutes.
+[   77.0] Donc, créer un produit digital, ça ne prend plus des heures, ça prend des minutes.
+[   79.9] On va aller sur Cloud. Donc, tu peux utiliser Cloud, tu peux utiliser ChatGPT. Honnêtement, c'est deux agents qui fonctionnent très bien.
+[   85.9] Moi, dans mon cas, je préfère Cloud parce que je trouve qu'il est plus rapide et il est plus habile dans ce que je demande.
+[   91.6] Je vais donc lancer un prompt comme ça dans Cloud, lui demander de faire des recherches sur Internet et de me proposer des idées de mini produits digitaux à vendre.
+[  100.2] Donc, idéalement des PDF e-books parce qu'un produit digital, ça peut être sous plusieurs formes.
+[  104.3] Ça peut être des templates, ça peut être des vidéos, formations vidéo, ça peut être des PDF, des e-books.
+[  108.3] principalement des e-books parce que ce format de produit digital,
+[  111.2] tu peux le créer de toute pièce avec l'intelligence artificielle.
+[  113.8] Donc, c'est le plus simple.
+[  114.5] Et je lui ai dit de vraiment faire des recherches sur Internet.
+[  116.7] C'est la première étape qu'il ne faut pas négliger.
+[  118.4] Il faut créer des produits digitaux par rapport à ce qui fonctionne,
+[  121.0] par rapport à ce qui se recherche en ce moment sur Internet.
+[  123.6] Et Claude, c'est vraiment l'agent idéal pour faire ses recherches à ta place.
+[  127.1] Donc là, Claude me propose quelques idées.
+[  129.3] Donc là, par exemple, il me dit un guide pour créer sa chaîne YouTube en français avec l'IA.
+[  133.2] Voilà, il y a plein de personnes qui veulent se lancer sur YouTube en ce moment.
+[  135.4] Donc, je pense que c'est pertinent.
+[  136.5] un guide pour monétiser sa chaîne YouTube depuis l'Afrique.
+[  139.4] C'est même ultra pertinent.
+[  140.9] Voilà, parce que j'ai un article de blog sur ça qui cartonne en ce moment.
+[  144.3] Je trouve que ça, c'est pertinent.
+[  145.4] Donc, ce que je vais faire, on va aller sur cette idée.
+[  147.2] On ne va pas chercher loin.
+[  148.1] Je vais lui dire, crée-moi donc un e-book professionnel vraiment ultra complet
+[  151.6] avec des infos réelles que tu vas aller chercher sur Internet.
+[  154.9] Et c'est là aussi vraiment un point important.
+[  156.9] Quand tu travailles avec l'IA, il faut toujours lui préciser
+[  159.5] de se baser sur des infos réelles qu'il va aller rechercher sur Internet.
+[  162.7] Sinon, quand tu oublies de faire ce genre de précision,
+[  164.8] l'IA a tendance à halluciner, à inventer des informations.
+[  167.8] Et si tu es trop paresseux pour vérifier ces infos,
+[  169.9] il n'y aura juste que des trucs qui n'existent pas.
+[  172.4] Donc, c'est important de préciser ça.
+[  173.8] Et quand c'est fait, tu lances le prompt.
+[  175.0] Et là, c'est juste un prompt.
+[  176.0] Et à la fin, j'ai un PDF.
+[  177.7] Donc, on va juste patienter.
+[  178.8] Et à la fin, je te montrerai le résultat PDF que j'ai eu.
+[  181.0] Donc là, tu peux le voir.
+[  181.9] Il est en train de faire les recherches.
+[  183.1] Voilà, sur comment on se fait payer sur YouTube, Payoneer, Wise.
+[  186.7] Vraiment, que des infos réelles.
+[  188.2] Donc, je le laisse travailler et on revient.
+[  189.5] Donc là, Claude a fini de bosser.
+[  190.7] et il m'a généré donc mon e-book PDF ici.
+[  193.2] Comment monétiser sa chaîne YouTube depuis l'Afrique francophone, etc.
+[  196.4] C'est spécialement pour les créateurs en Afrique francophone,
+[  199.3] Côte d'Ivoire, Sénégal, Cameroun.
+[  200.8] Le e-book, il est professionnel honnêtement,
+[  202.6] avec une table de matière, plan d'action, etc.
+[  205.5] Donc idéalement, quand tu génères un e-book pareil,
+[  207.6] tu veux vérifier les informations.
+[  208.9] Donc moi, je suis expert dans le sujet.
+[  210.3] Donc si je relis, je peux savoir là où il a inventé des choses ou pas.
+[  213.2] Mais si tu n'es pas expert dans le domaine
+[  215.2] et tu crées par exemple un e-book sur un domaine en particulier,
+[  218.4] tu peux demander à Claude et lui dire
+[  220.2] J'aimerais que tu relises ce document que tu m'as créé et que tu le compares à des informations disponibles sur Internet.
+[  226.9] Et dis-moi, rassure-moi que toutes les informations présentes dans ce e-book, elles sont réelles.
+[  231.2] Donc, c'est des prompts comme ça que tu vas lui donner.
+[  233.1] Et lui-même, il va relire son travail pour se rassurer qu'il n'a vraiment rien inventé.
+[  237.0] Dans mon cas, je pense que tout est OK, tu vois.
+[  239.2] Là, par exemple, c'est très réel, tu vois.
+[  241.0] Le revenu pour 1000 vues en Afrique, c'est très bas.
+[  243.2] Donc, tu vas gagner vraiment des centimes pour chaque 1000 vues.
+[  246.1] Donc, il a vraiment précisé pour que les créateurs africains sachent que tu peux être monétisé.
+[  250.2] Mais si tu as une audience africaine et que tu as des vues qui viennent d'Afrique, tu ne vas pas gagner autant d'argent qu'un YouTuber qui a une audience européenne.
+[  257.4] Donc ça, c'est un point très, très important.
+[  259.5] Là, maintenant, on a notre e-book qui est prêt.
+[  261.5] On peut juste le télécharger ici, download et j'ai le PDF sur mon ordinateur.
+[  266.2] Je suis fin prêt pour passer à l'étape suivante.
+[  268.0] Donc l'étape suivante, comme je t'ai dit, c'est de créer un site Internet, une page où tu vas mettre ton e-book.
+[  273.3] Les gens vont pouvoir l'acheter et vont donc pouvoir le télécharger là-bas lorsqu'ils l'auront acheté.
+[  277.4] pour que toute l'opération soit automatisée,
+[  279.5] que tu n'aies pas toi-même à envoyer les PDF sur WhatsApp.
+[  282.5] Donc, pour créer notre page, on va vendre notre e-book.
+[  285.5] On va se retrouver sur ce site-là, donc hostinger.com,
+[  288.3] qui est une plateforme qui te permet de créer des sites Internet principalement.
+[  291.8] Donc, que ce soit des sites Internet e-commerce,
+[  293.5] des sites Internet pour une entreprise, etc.
+[  295.8] Nous, dans notre cas, c'est un site Internet pour vendre notre produit digital.
+[  298.8] Donc, le lien sera bien évidemment dans la description.
+[  301.0] Donc, quand tu arrives sur cette page,
+[  302.5] tu verras les différents tarifs qu'ils proposent
+[  304.4] et tu verras les promotions qu'ils ont en ce moment.
+[  306.8] Il y a l'offre premium qui te permet de créer jusqu'à 3 sites internet.
+[  310.4] Et tu as l'offre ultime, unlimited, qui est illimitée, pardon,
+[  313.9] qui est à 3,99€ par mois,
+[  315.7] qui te permet de créer des sites internet en illimité.
+[  318.4] Donc ça, c'est une offre spéciale qu'ils ont en ce moment.
+[  320.1] C'est incroyable.
+[  320.6] Donc pour 3,99€ par mois,
+[  322.6] tu peux créer autant de sites internet que tu veux.
+[  325.1] Donc c'est vraiment incroyable.
+[  326.0] Donc si derrière, tu veux, tu crées par exemple une agence
+[  329.2] où tu vends des sites internet,
+[  330.9] eh bien là, tu as un asset ici qui te permet de créer des sites internet
+[  333.8] illimités à 3,99€ par mois.
+[  336.2] et derrière, tu peux le revendre autant que tu veux.
+[  338.5] En plus de ça, tu as accès à une boîte email professionnelle pendant un an,
+[  342.3] un nom de domaine gratuit pendant un an et plein d'autres avantages,
+[  345.9] notamment la création d'un site avec leur outil et l'intelligence artificielle.
+[  349.8] C'est ce qui nous intéresse.
+[  350.7] Donc, on va sélectionner cette option et arriver là au panier.
+[  353.6] Très important, il faut suivre vraiment les étapes.
+[  355.6] Ici, tu verras que tu pourras sélectionner la durée de ton abonnement.
+[  358.6] Tu peux choisir un mois.
+[  359.6] Mais si tu veux juste payer un mois, ça va te coûter 18 euros, limite 19 euros.
+[  363.1] Si tu payes 12 mois, qui est toute une année, ça te revient directement à 3,99€ par mois.
+[  367.7] Donc, la grosse promo que je t'ai partagée, c'est uniquement quand tu prends l'abonnement annuel.
+[  371.4] Mais même là, ça te revient vraiment de manière très abordable.
+[  374.2] Parce que pour un abonnement annuel, genre pour un an, à 53€.
+[  377.9] Et pour 53€, je peux créer autant de sites internet que je veux.
+[  381.5] Honnêtement, frère.
+[  382.2] Ça ne donne pas de nom.
+[  383.0] Voilà.
+[  383.3] En plus, tu cliques sur promo et tu rajoutes mon code promo.
+[  386.5] Tu mets Camara7.
+[  389.0] Et là, tu verras qu'on passe de 53€ à 47,83€.
+[  392.0] Donc pour toute une année, pour des sites illimités, honnêtement, au point où on est, c'est vraiment des centimes.
+[  396.8] Donc une fois que tu choisis ça, tu peux maintenant cliquer sur continuer.
+[  399.7] Et quand tu cliques sur continuer, tu vas devoir te connecter si tu n'as pas encore un compte ou t'inscrire.
+[  404.8] Voilà, tu vas t'inscrire.
+[  405.8] Ensuite, tu vas mettre tes informations de paiement.
+[  407.9] Je ne vais pas te montrer ça pour des raisons évidentes.
+[  409.7] Et une fois que tu termines ton paiement, là maintenant tu passes à l'étape suivante.
+[  412.6] Donc normalement, lorsque tu termines ton achat, tu termines tes paiements, etc.,
+[  416.8] tu vas te retrouver sur une page similaire à celle-ci.
+[  419.0] Donc arrivé là, tu vas maintenant choisir si tu veux créer un site internet.
+[  422.9] Dans notre cas, on va créer un nouveau site.
+[  424.7] On va cliquer sur ça.
+[  425.5] Et là, ici, très important, ils vont te demander comment, quel genre de site internet tu veux créer.
+[  429.8] Donc tu peux créer un site internet WordPress.
+[  432.3] Tu peux créer un site avec un code que tu as déjà créé.
+[  435.1] Toi-même, tu vas juste copier le code ici.
+[  436.6] Il y a plusieurs moyens.
+[  437.5] Mais nous, dans notre cas, on va choisir cette option.
+[  439.8] Décrivez-le.
+[  440.5] Nous le construisons.
+[  441.4] Donc on va utiliser l'outil création de site internet directement de chez Hostinger avec l'IA.
+[  446.9] Donc on va choisir cette option.
+[  448.1] On va faire suivant.
+[  449.2] Et là, important, ils vont nous demander de quelle manière je souhaite justement créer mon site avec Hostinger.
+[  453.6] Soit manuellement, c'est-à-dire moi-même, je vais cliquer sur des choses, drag and draw, créer de toute pièce mon site, comme à l'ancienne.
+[  459.4] Ou alors avec l'IA.
+[  460.6] Donc, l'IA va créer le site de toute pièce pour moi.
+[  463.5] Donc, on va aller sur IA.
+[  464.6] Et là, ils vont me demander de choisir mon nom de domaine.
+[  466.9] Donc, ça, ce n'est pas quelque chose que tu n'es pas obligé de le faire maintenant.
+[  469.4] Parce qu'il faut que déjà, tu aies un nom de domaine pour ton site.
+[  472.2] Moi, dans mon cas, j'ai déjà un nom de domaine.
+[  473.7] C'est ibrahimkamara.com.
+[  474.8] Mais le temps que tu te décides pour avoir un nom de domaine, pour vendre ton produit, ça peut attendre.
+[  479.1] On peut juste utiliser un nom de domaine temporaire.
+[  481.0] Sachant qu'on n'a même pas encore créé le site, je pense que ça peut attendre.
+[  483.6] Arrivé là maintenant, c'est là que tu vas écrire un prompt, donc un prompt explicatif et lui dire voici le site que j'ai besoin que tu crées.
+[  490.0] Pour ça, moi je vais demander à Claude de m'écrire le prompt.
+[  492.7] Donc je lui demande de m'écrire un prompt, donc le prompt que je vais donner derrière à Hostinger pour pouvoir générer une page de vente pour pouvoir vendre mon e-book.
+[  499.7] Donc sachant que Claude ici, il a déjà les informations du e-book que j'ai créé en question, c'est lui-même qu'il a créé.
+[  504.3] Donc, il pourra directement générer le prompt en question qui va permettre à Hostinger de créer la page de vente dans notre cas.
+[  510.5] Donc, il va réfléchir et il va me donner un prompt, un bon prompt bien détaillé.
+[  513.7] Et il va même préciser tout ce qui est visuel, les couleurs pour être sûr que ça correspond de manière identique à l'identité qu'on a déjà ici avec le e-book en question.
+[  522.6] Claude, il va m'aller dans le détail. Il a fait un long prompt.
+[  524.9] Donc là, il y a un problème par contre et je le savais.
+[  526.9] C'est Hostinger ici, il donne une limite de 2000 caractères.
+[  530.0] Donc, je vais préciser ça à Claude.
+[  531.6] Je lui dis qu'il est trop long, j'ai une limite de 2000 caractères.
+[  534.0] Donc le prompt, il ne peut pas dépasser 2000 caractères.
+[  536.5] Claude va juste le réécrire en patienté.
+[  538.5] Donc on le copie et on le colle dans Hostinger.
+[  540.9] Et là, tu lances le prompt tout simplement.
+[  543.1] Et là, Hostinger va commencer à bosser avec le website builder.
+[  546.4] Il va prendre quelques secondes.
+[  548.6] Donc en attendant, on va juste patienter.
+[  550.1] Donc là, il est en train d'analyser ma demande que je lui ai faite.
+[  553.0] Donc là, il a commencé à travailler et à me créer mon site internet.
+[  557.0] Et je vais patienter.
+[  558.1] Et lorsque j'aurai la première version du site, je reviendrai.
+[  560.8] Donc ça va prendre un bon moment.
+[  561.7] ok donc là hostinger a fini et il ya la première version de ma page qui est prête et honnêtement
+[  567.0] c'est très quali je vais mettre ça en plein écran donc voici à quoi ressemble donc la page votre
+[  570.9] chaîne a des milliers de vues mais pourquoi 0 $ sur votre compte votre ad cent est bloqué
+[  575.2] donc il a fait une bonne copie il ya un bouton ici je veux le guide maintenant seulement 19 $ il a
+[  580.3] choisi un prix au hasard c'est pas moi qui lui ai donné le prix mais sachant que je lui ai parlé
+[  583.3] de mon audience qui est une audience africaine mais il a mis un prix qui correspond à cette
+[  586.4] audience 19 $ c'est logique là il a donné il a mis une petite photo du guide etc quand tu
+[  591.6] descends, tu as une description, le système
+[  593.7] qui ne fonctionne plus. C'est une vraie
+[  595.6] page de vente de marketing
+[  597.6] bien pro. Les différents chapitres
+[  599.5] du livre. Et il a précisé basé sur
+[  601.6] des données de 2026. Honnêtement,
+[  603.6] la page, déjà avec ce premier
+[  605.6] template qu'il me donne là, elle est déjà carré.
+[  607.7] Même s'il y a plein de choses que je vais changer. Idéalement,
+[  609.8] quand tu vends, par exemple, un produit, ça
+[  611.6] dépend. Soit tu vends ça avec ton image personnelle.
+[  613.9] Donc, c'est-à-dire toi, ton nom. Donc, tu veux
+[  615.7] mettre ton nom ou tes photos
+[  617.7] sur la page de vente. Moi, dans mon cas, je n'ai pas
+[  619.6] mis, je ne me suis pas mis en avant.
+[  621.6] Il y a des personnes qui vendent des produits digitaux sans forcément se mettre en avant.
+[  624.9] Mais honnêtement, ça fait beaucoup moins de ventes que quand tu te mets en avant.
+[  627.9] Tout simplement parce que les gens n'ont pas confiance.
+[  629.5] Donc, ils voient une page de vente, ils ne savent pas qui vend de l'argent,
+[  632.6] donc ils ne savent pas qui vend le produit, etc.
+[  634.5] Donc, les gens auront beaucoup moins confiance en ton produit si tu ne te montres pas.
+[  638.1] C'est la logique des choses.
+[  639.3] Donc, idéalement, tu veux te montrer, tu veux mettre tes photos,
+[  642.0] tu veux montrer que tu as une vraie expérience personnelle
+[  644.2] et que tu as eu quand même tes propres résultats.
+[  645.8] Sinon, en dehors de ça, cette première version de la page,
+[  648.5] je trouve qu'elle est très, très quali, elle est super.
+[  650.3] Maintenant, disons que je veux faire des modifications sur cette page.
+[  653.6] Je peux tout simplement revenir ici, dans cette barre de prompt,
+[  656.2] et lui dire exactement les modifications que je souhaite faire.
+[  658.8] Et ces modifications-là, il va les appliquer directement.
+[  660.8] C'est du prompting.
+[  661.7] Donc, j'ai créé un prompt et il fait les modifications directement sur le site.
+[  664.7] Donc, je n'ai même pas besoin moi-même d'interagir ou de cliquer sur des boutons, rien du tout.
+[  668.7] Juste, je mets un prompt et il change les informations sur la page.
+[  672.7] Je lui dis concrètement que j'aimerais mettre à jour la copie.
+[  675.9] Donc, la copie, c'est le texte qui est sur la page de vente.
+[  678.1] et faire en sorte que je me mette plus en avant.
+[  680.8] Tu vois, c'est un mode, je ne vends pas forcément que le produit,
+[  683.2] je vends aussi mon expérience personnelle et je lui dis mon nom, etc.
+[  685.9] Donc, je vais lancer ça.
+[  686.8] Donc, moi, dans mon cas, ce n'est pas forcément changer le design ou quoi de la page,
+[  690.6] c'est plus le contenu du texte de la page.
+[  692.5] Donc, je vais laisser travailler sur ça.
+[  693.8] Et normalement, c'est une petite tâche, donc ça ne devrait pas durer trop longtemps.
+[  696.5] Ok, donc là, il a terminé et je vais mettre encore une fois en plein écran
+[  700.0] et je vais vérifier qu'il a bel et bien changé le copie.
+[  702.8] Il n'a pas forcément changé tout le contenu de la page.
+[  705.5] Il a plus rajouté certains détails.
+[  707.6] il a mis par Ibrahim Kamara.
+[  709.3] Et je veux voir ce qu'il a.
+[  710.1] Voilà, il a fait une section dédiée Ibrahim Kamara et tout et tout avec mon histoire et tout.
+[  714.7] Donc, c'est vraiment pas mal pour un début.
+[  716.6] Encore une fois, si je ne suis pas satisfait avec ce rendu,
+[  719.4] que je veux mettre des informations spécifiques parce qu'il parle de moi, etc.
+[  722.3] Il ne me connaît pas.
+[  723.1] Je peux venir ici dans cette section de prompt et lui dire,
+[  725.5] voici les informations que j'aimerais que tu mettes sur la page.
+[  727.7] Voici qui je suis, etc.
+[  729.0] Et il va le mettre à jour.
+[  730.0] C'est comme ça que tu vas créer ton site internet, ta page de vente professionnelle.
+[  733.1] Et cette page de vente là, je peux même te montrer la version mobile, tu vois, sur mobile aussi.
+[  737.6] c'est très professionnel.
+[  738.7] Tu peux cliquer sur les boutons, aller acheter le produit, etc.
+[  741.8] Donc, quand tu cliques sur le bouton, normalement, ça fonctionne.
+[  743.8] Ça va t'envoyer dans le panier.
+[  745.1] Tu vois, donc la personne peut mettre son email, son adresse, etc.
+[  747.8] Et faire l'achat pour ensuite télécharger ton e-book, etc.
+[  750.8] Il y a la version mobile, il y a la version ordinateur.
+[  753.2] Une fois que tu as terminé, que tu es satisfait de ton site internet,
+[  755.9] tu peux le publier.
+[  756.8] Donc, il y a un bouton publier ici pour le rendre public.
+[  759.0] Donc, quand tu cliques sur publier, tu patientes, ça va le publier.
+[  761.9] Donc là, le site, il est publié sur un nom de domaine temporaire
+[  764.8] qui est celui-là, monétiser YouTube Afrique.
+[  768.0] Voilà, pour beaucoup de choses là.
+[  769.3] C'est un nom de domaine qui est temporaire.
+[  771.2] Donc, tu pourras le changer plus tard, je te montrerai.
+[  773.0] Donc, quand tu vas sur ce nom de domaine, tu vois le site,
+[  775.1] c'est télé public, les lives, n'importe qui peut y avoir accès.
+[  778.0] Maintenant, c'est là où c'est important de mettre ton propre nom de domaine
+[  780.6] parce que tu ne vas pas envoyer les gens sur monétiser YouTube Afrique.256782.
+[  784.8] Ce n'est pas professionnel.
+[  785.7] Donc, idéalement, tu veux cliquer ici sur connecter un nom de domaine personnalisé.
+[  789.3] Et c'est là que tu vas connecter ton propre nom de domaine.
+[  791.4] Donc, moi, dans mon cas, je peux mettre ibrahimkamara.com.
+[  793.9] Je peux mettre monétiser YouTube, Ibrahimkamara.com, un truc du genre.
+[  798.1] Et normalement, dans l'abonnement que tu as pris pour Hostinger,
+[  801.1] si tu as pris l'abonnement annuel, ils t'ont donné un nom de domaine gratuit.
+[  804.2] Donc, tu pourras sélectionner un nom de domaine, par exemple, ici, YouTubeAfrique.fr, etc.
+[  809.1] Et ce sera gratuit.
+[  810.3] Tu ne vas rien payer.
+[  811.1] En tout cas, pour la première année, ce sera gratuit.
+[  813.0] Maintenant, après, un nom de domaine, ça se renouvelle chaque année.
+[  815.2] Tu pourras payer le frais après.
+[  816.5] Mais ça ne coûte vraiment rien.
+[  817.5] Si c'est trop, déjà, 10 euros par an pour un nom de domaine.
+[  819.7] Et ensuite, tu choisis le nom de domaine YouTubeAfrique, etc.
+[  822.1] Et tu suis les instructions, tu pourras directement connecter ton nom de domaine.
+[  825.1] Une fois que tu as terminé de créer ta page de vente, tu as créé ton produit déjà.
+[  829.6] Là, tu as ton nom de domaine personnalisé.
+[  831.4] Tes fins prêtes, tu peux envoyer du trafic sur ton site.
+[  833.6] On quitterait juste qu'à envoyer des personnes sur le site pour cliquer pour acheter.
+[  836.8] Et c'est là que ça devient difficile parce que c'est facile de créer un produit digital.
+[  840.4] C'est facile de créer une page de vente, mais c'est encore plus difficile de trouver des gens qui vont venir acheter.
+[  844.8] Et c'est là où beaucoup de personnes se trompent.
+[  847.2] Il y a deux manières principales d'envoyer du trafic sur ton produit digital.
+[  850.3] La première manière, c'est de créer du contenu.
+[  852.7] Voilà, être sur YouTube, être sur Instagram, etc.
+[  855.8] Et beaucoup de personnes vont te donner ce conseil-là.
+[  857.7] C'est gratuit, crée juste du contenu, etc.
+[  860.0] C'est vrai, mais ça prend énormément de temps.
+[  862.0] Lorsque tu vas lancer ta chaîne YouTube ou ton compte Instagram,
+[  864.9] tu n'auras pas forcément des vues, tu n'auras pas forcément des abonnés.
+[  867.5] Donc, il y aura très peu, voire personne,
+[  869.2] qui va cliquer sur ton lien pour s'intéresser à ton produit digital.
+[  872.0] Donc, si tes ambitions sont, je veux créer un produit digital
+[  874.9] et je veux gagner de l'argent rapidement,
+[  876.4] tu vas devoir oublier cet aspect-là
+[  878.1] parce que le contenu, c'est vraiment pour du long terme.
+[  880.5] C'est possible de faire du contenu et de percer en genre 2 mois, 3 mois, 6 mois,
+[  883.9] mais la majorité des gens ne percent pas rapidement.
+[  885.8] Je vais te proposer la deuxième alternative qui est la publicité payante.
+[  889.3] La publicité payante reste de loin le moyen le plus efficace d'avoir du trafic,
+[  893.1] notamment sur un produit digital sur ton site.
+[  895.4] Et pour cela, il faut dépenser de l'argent, malheureusement.
+[  897.3] Donc la publicité payante, comme son nom l'indique, ce n'est pas gratuit.
+[  900.3] Tu dois payer de l'argent.
+[  901.3] Donc il y a Facebook Ads, il y a TikTok Ads, il y a YouTube Ads,
+[  904.6] il y a plusieurs plateformes publicitaires.
+[  906.1] Choisis-en une, Facebook.
+[  907.7] C'est la plus simple, c'est là-bas qu'il y a beaucoup de personnes.
+[  909.9] Et tu pourras directement promouvoir ton site internet dans notre cas qui est notre produit digital.
+[  914.1] Et les gens iront sur ta page et tu auras l'occasion de faire des ventes.
+[  917.4] Donc, si ça t'intéresse d'avoir une vidéo complète sur ce sujet, je te mettrai ici un lien.
+[  921.8] J'ai fait une vidéo où je te partage comment lancer des publicités sur Google Ads,
+[  925.5] qui est une plateforme publicitaire.
+[  926.8] Donc, clique directement sur ce lien et tu seras redirigé.
+[  929.1] Et je te rappelle que le lien pour Hostinger, il est dans la description,
+[  932.5] ainsi que dans le lien épinglé.
+[  934.2] Donc, je t'invite à aller cliquer dessus.
+[  935.4] Allez, pis ça !

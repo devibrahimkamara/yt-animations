@@ -1,0 +1,27 @@
+[
+ {
+  "src_in": 0,
+  "src_out_or_dur": 300.9,
+  "out": 0
+ },
+ {
+  "src_in": 396.75,
+  "src_out_or_dur": 729.95,
+  "out": 312.9
+ },
+ {
+  "src_in": 729.95,
+  "src_out_or_dur": 750.5,
+  "out": 654.1
+ },
+ {
+  "src_in": 750.5,
+  "src_out_or_dur": 798.0,
+  "out": 683.65
+ },
+ {
+  "src_in": 816.45,
+  "src_out_or_dur": 935.728,
+  "out": 731.15
+ }
+]

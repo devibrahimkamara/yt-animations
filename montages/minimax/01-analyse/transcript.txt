@@ -1,0 +1,200 @@
+[0:00.00] Ce jeu que tu vois à mon écran n'existait pas il y a 15 minutes.
+[0:03.44] Donc je n'ai pas écrit une seule ligne de code, j'ai créé tous les visuels de moi-même.
+[0:07.70] Et à la fin de cette vidéo-là, tu auras exactement la méthode pour créer ton propre jeu.
+[0:12.34] Donc je vais aller droit au but, ce jeu que je viens de te partager, je l'ai créé grâce à la plateforme Minimax Code.
+[0:17.54] Donc sur cette plateforme, j'ai designé le jeu, je l'ai codé directement avec l'IA bien évidemment.
+[0:22.08] Je l'ai testé directement sur un écran mobile, écran navigateur.
+[0:25.64] Et je l'ai publié tout au même endroit et ça ne m'a même pas pris plus de 15 minutes.
+[0:30.42] Et sache que ce genre de jeu, tu peux les créer pour générer de l'argent en les postant sur des plateformes comme Poki ou Crazy Games.
+[0:36.78] Donc on en parlera plus tard dans la vidéo.
+[0:38.92] Donc on se retrouve sur mon ordinateur.
+[0:40.68] La première étape de notre tutoriel, c'est de télécharger la plateforme Minimax Code.
+[0:45.48] Comme je t'ai dit, c'est la plateforme tout en un qui m'a permis de générer ce jeu-là.
+[0:49.08] Donc le lien sera bien évidemment dans la description et il est disponible.
+[0:52.78] C'est une plateforme qui est disponible sur ordinateur.
+[0:55.40] Donc Macbook ou Windows.
+[0:56.80] Donc dans mon cas, j'ai un Macbook.
+[0:57.94] Donc je vais la télécharger directement sur mon PC.
+[1:00.20] Ok, maintenant que ça a fini de télécharger, je vais l'installer.
+[1:03.08] Donc là, Minimax Code, il est téléchargé et installé.
+[1:06.22] Je vais devoir maintenant me connecter.
+[1:07.90] Moi, j'ai déjà un compte.
+[1:09.26] Donc toi, si tu n'as pas de compte, c'est maintenant que tu vas devoir te créer un compte.
+[1:12.04] Donc dans tous les cas, tu cliques sur Sign In.
+[1:13.88] Et ça va normalement t'ouvrir une page dans le navigateur.
+[1:16.26] Et c'est là que ça te demandera de t'inscrire, de te créer un compte.
+[1:19.58] Moi, dans mon cas, j'ai déjà créé un compte.
+[1:20.86] Je suis déjà connecté sur mon navigateur.
+[1:22.42] Donc ça va juste se connecter à mon compte.
+[1:24.68] Autoriser.
+[1:25.24] Et là, si je reviens dans Minimax Coding, normalement, je serai connecté.
+[1:29.08] Donc maintenant, connecté à la plateforme.
+[1:30.96] La prochaine étape, ce sera donc de cliquer ici où c'est écrit Select a Folder.
+[1:35.18] On va cliquer sur ça.
+[1:36.18] On va cliquer sur Ajouter un nouveau projet.
+[1:38.32] Et là, ça va nous envoyer donc sur notre ordinateur.
+[1:40.66] Et là, ce que j'aimerais que tu fasses, tu peux créer le dossier peu importe où tu veux.
+[1:44.32] Mais moi, idéalement, j'aime le créer dans mon dossier utilisateur.
+[1:46.70] Donc par exemple, ici dans les parmi camara, je fais Nouveau dossier.
+[1:49.50] Et là, c'est dans ce dossier-là que tout ce qu'on va créer dans ce jeu vidéo,
+[1:52.74] eh bien, il sera directement stocké ici.
+[1:55.38] Idéalement, à chaque nouveau projet, voilà, à chaque nouveau jeu
+[1:58.00] ou chaque nouvelle application que tu développes, crée un dossier séparé.
+[2:01.48] Donc là, on va appeler Jeux Mobile V1.
+[2:05.72] Voilà.
+[2:06.16] On va faire Créer.
+[2:07.24] Et là, on va sélectionner.
+[2:08.22] Et là, maintenant, la configuration initiale, elle est prête.
+[2:10.64] Et on peut débuter le travail.
+[2:12.00] Donc maintenant, la première étape pour la création de notre jeu,
+[2:15.28] c'est une étape que beaucoup de personnes oublient.
+[2:17.14] Et ils se retrouvent avec un jeu vraiment qui est très moche et laid.
+[2:19.98] Il faut d'abord concevoir le visuel de ton jeu avant de le créer.
+[2:23.82] Donc ce qu'on va faire, on va donner un prompt ici à Minimax.
+[2:26.30] On va lui dire, génère les éléments graphiques d'un jeu mobile.
+[2:29.56] Et là, je lui donne le type de jeu que je veux faire.
+[2:31.64] C'est un jeu appelé Stack Up avec où on va stacker des blocs, etc.
+[2:35.62] Et je veux deux visuels différents que je vais comparer.
+[2:38.60] Après, je vais faire un choix.
+[2:39.30] Un style bonbon avec des couleurs pastels.
+[2:41.70] Un style néon un peu comme Tetris, etc.
+[2:43.84] Et pour chacun de ces styles avec un fond et trois styles de blocs et un logo titre.
+[2:48.62] Donc ça, ce prompt-là va servir de déterminer deux identités visuelles pour mon jeu.
+[2:53.56] Et je vais les comparer et ensuite choisir et construire à partir de ça.
+[2:56.68] Donc une fois qu'on met ce prompt, on va choisir le modèle de l'IA ici.
+[3:00.58] Et on va aller sur le modèle le plus récent qui est le modèle M3.1.
+[3:04.20] Donc c'est le modèle le plus puissant en ce moment.
+[3:06.22] Donc on va aller sur celui-là.
+[3:07.34] Et par rapport au contexte et tout ça, on va juste garder ce qui est par défaut.
+[3:13.52] Donc on ne va pas changer ça.
+[3:14.44] On va juste laisser ça.
+[3:15.28] Et ensuite, une fois que ça s'est fait, tu lances le prompt et on patiente.
+[3:18.94] Donc après quelques minutes, il a fini de bosser.
+[3:20.96] Et il m'a généré l'identité visuelle que je lui ai demandé.
+[3:23.80] On va ensemble regarder les deux versions.
+[3:25.60] Donc ça, c'est la première version avec des couleurs bonbons, pastels.
+[3:30.00] C'est vraiment pas mal.
+[3:30.76] Et ça, c'est la deuxième couleur que je lui ai demandé en mode néon.
+[3:32.92] Donc honnêtement, la première couleur, pastels, honnêtement, elle me va plus, je trouve qu'elle est beaucoup plus épurée que la deuxième néon.
+[3:39.26] Après, il a généré les arrière-plan que je lui ai demandé.
+[3:41.94] Il a aussi généré les blocs que je lui ai demandé.
+[3:45.00] Donc il a généré tout ce que je lui ai demandé.
+[3:46.52] En fonction de ça, moi, mon choix, il est clair.
+[3:48.86] Donc c'est cette version-là que je vais choisir.
+[3:50.42] Maintenant, il y a une fonctionnalité aussi assez cool que je vais te présenter.
+[3:53.50] C'est le mode Infinite Canvas.
+[3:55.54] Donc quand, par exemple, il te génère, par exemple, des visuels, tu peux cliquer ici sur ce bouton-là où c'est écrit Canvas.
+[4:00.88] Quand je clique dessus, là, ça va m'ouvrir une fenêtre où je peux vraiment regarder mon visuel vraiment de plusieurs angles différents.
+[4:07.44] Tu vois, je peux zoomer.
+[4:08.58] Pour ceux qui sont habitués à des plateformes de création, de design, avoir un canvas comme ça pour analyser tes visuels, c'est vraiment pas mal.
+[4:14.32] Tu vois, donc je peux zoomer, je peux le déplacer de gauche à droite, etc.
+[4:17.76] Et ça, donc, c'est vraiment pas mal.
+[4:19.00] Donc je peux faire ça aussi avec tous les différents visuels.
+[4:21.32] Donc je peux rajouter tous les visuels à mon canvas, tu vois.
+[4:23.72] Le nom Infinite Canvas veut dire que c'est un canvas illimité, tu vois.
+[4:26.98] Donc tout ce qui est visuel, à chaque fois, je pourrais le rajouter à mon canvas.
+[4:30.28] Je clique juste sur Canvas, Canvas.
+[4:31.98] Et après, je peux regarder tous les visuels.
+[4:33.72] Je peux faire des comparatifs.
+[4:35.16] Je peux faire des zooms, etc., etc.
+[4:37.04] Donc maintenant, il est temps de transformer cette identité visuelle en un vrai jeu mobile.
+[4:41.88] Et pour cela, on va d'abord venir ici et on va aller dans les plugins.
+[4:45.30] On va cliquer sur plugins et on va rajouter un plugin qui s'appelle Game Studio.
+[4:49.96] C'est ce plugin-là.
+[4:50.74] Donc ce plugin Game Studio, il a été créé spécialement par l'équipe de Minimax pour créer des jeux.
+[4:56.64] Une fois que tu rajoutes ce plugin, tu reviens à ton chat où tu travailles tes assets.
+[5:00.78] Et là, normalement, si je clique sur le petit plus, je verrai plugin et j'aurai le plugin Game Studio.
+[5:05.78] Donc tous les prompts que je vais lui demander, il va directement utiliser le plugin Game Studio pour développer tout ce qu'il va développer.
+[5:11.34] Une fois que j'active le plugin Game Studio, je lui donne le prompt qui va créer le jeu.
+[5:15.10] Je vais lui demander de me créer un jeu mobile qui est jouable dans le navigateur avec une seule touche.
+[5:19.68] Et le jeu, il s'appelle Stack Up.
+[5:20.80] Et il va utiliser les éléments graphiques qu'on a créés tantôt.
+[5:23.62] Et je lui précise que je veux qu'il utilise la direction A, bonbon pastel, parce que c'est elle que j'ai aimée.
+[5:28.50] Et là, je lui donne une description vraiment des fonctionnalités du jeu.
+[5:31.64] Donc ça, c'est vraiment propre au jeu que je veux développer.
+[5:33.64] Ensuite, je lui dis un critère important, le jeu doit être jouable sur téléphone avec genre le pouce, tu vois.
+[5:39.94] Donc une fois que ça c'est fait, je me rassure que ici, j'ai activé le modèle 3.1, donc le M3.1 important.
+[5:46.14] Ici, par contre, je vais changer l'autorisation.
+[5:48.52] Je vais mettre Full Access parce que je veux qu'il travaille directement.
+[5:52.18] Mais tu as le choix.
+[5:52.92] Soit tu lui donnes Ask for Approval, c'est-à-dire à chaque changement ou chaque chose qu'il doit faire, il va demander ton autorisation pour la sécurité.
+[6:00.22] Soit si tu lui donnes toute l'autorisation, là, il va juste travailler sans arrêt.
+[6:03.38] On va faire ça.
+[6:04.22] Et ensuite, une fois que ça c'est fait, on lance le prompt et on le laisse travailler.
+[6:07.44] Ok, donc là, le jeu a terminé d'être développé.
+[6:10.42] Ça a pris quelques minutes.
+[6:11.66] Donc là, il m'a fait un petit résumé de ce qui a été développé, de ce qui ne marchait pas et qu'il a fixé, tu vois.
+[6:16.56] Donc il a lui-même développé le jeu, il a testé, il a identifié des vulnérabilités, des choses qui ne marchaient pas et les a fixées.
+[6:22.44] Et maintenant, le jeu, il est disponible et je peux le tester localement sur mon PC.
+[6:26.06] Je l'ai déjà testé, mais je vais encore le tester pour toi.
+[6:28.42] Lorsque tu développes une application localement sur ton PC comme ça avec Minimax Code,
+[6:32.92] tu pourras la tester localement avec un URL comme ça qui ressemble à un truc du genre localhost avec un chiffre à la fin.
+[6:39.20] Eh bien, cette URL, il est uniquement disponible localement, tu vois.
+[6:42.52] Donc si une autre personne met ça sur son ordinateur, ça ne va pas marcher.
+[6:45.12] Donc voici à quoi ressemble le jeu, voilà, sur le navigateur.
+[6:48.08] Et c'est un jeu simple, tu dois juste stacker, c'est-à-dire empiler les morceaux de gâteau.
+[6:55.26] Et si tu n'empiles pas, tu as perdu, tu vois.
+[6:58.30] C'est un jeu assez simple.
+[6:59.90] Donc mon meilleur score, c'était 15.
+[7:01.92] On sort le jeu, il allait très simple, mais c'est plus tu avances, plus ça devient difficile.
+[7:06.22] Jusque là, c'est assez simple.
+[7:07.42] Plus ça avance, plus ça devient de plus en plus rapide, tu vois.
+[7:10.96] Et là, tu peux faire des erreurs.
+[7:12.12] La vitesse, elle augmente et aussi les morceaux, ils deviennent de plus en plus petits, tu vois.
+[7:17.30] Le jeu, il est assez cool.
+[7:18.50] Maintenant, c'est un jeu mobile qu'on a développé.
+[7:20.46] Donc à quoi ça ressemble sur mobile ?
+[7:22.34] Si tu veux voir à quoi ça ressemble sur mobile, tu as deux manières de le faire.
+[7:25.02] Tu reviens sur Minimax Code.
+[7:26.68] Et là, normalement, lorsqu'il va démarrer le jeu, il va te donner un URL de ce genre-là.
+[7:30.54] Tu vas cliquer dessus et tu vas ouvrir ça dans son propre navigateur dans Minimax.
+[7:35.12] Donc Minimax a son propre navigateur intégré.
+[7:37.20] Et dans ce navigateur intégré-là, tu peux cliquer ici en haut à droite et sélectionner la vue responsive.
+[7:42.60] Donc responsive, c'est à quoi ça ressemble sur téléphone.
+[7:44.92] Et aussi, il y a d'autres vues.
+[7:46.10] Il y a une vue mobile.
+[7:47.28] Donc ça, c'est une autre dimension.
+[7:48.58] Il y a aussi une vue iPhone XR, spécialement pour les iPhone XR.
+[7:52.70] Ainsi de suite.
+[7:53.28] Donc tu peux tester plusieurs vues différentes directement ici.
+[7:56.38] Maintenant, tu as une autre manière de le faire.
+[7:58.08] C'est vraiment de le tester directement sur ton téléphone.
+[8:01.06] Et pour cela, c'est très simple.
+[8:02.12] Je vais d'abord partager l'écran de mon téléphone.
+[8:04.72] Donc normalement, lorsque tu as développé l'application au local,
+[8:08.30] eh bien Minimax va te donner l'URL que tu peux lancer sur mobile.
+[8:11.92] Donc pour pouvoir avoir accès à cette application.
+[8:14.12] Mais attention, il faut que ton ordinateur et ton téléphone portable soient connectés sur le même Wi-Fi pour que ça fonctionne.
+[8:19.98] Parce que ça fonctionne en réseau.
+[8:21.56] Donc on va juste copier cette URL qu'il m'a donnée là.
+[8:25.16] Et je vais coller ça directement ici.
+[8:27.22] Et lorsque tu as collé l'URL sur téléphone, tu le lances.
+[8:29.94] Ok, l'application fonctionne.
+[8:31.24] Je vais cliquer sur jouer.
+[8:32.20] Et on va la tester.
+[8:33.10] Voilà.
+[8:33.32] Ça fonctionne comme sur des roulettes.
+[8:35.36] C'est vraiment un simple jeu, mais addictif.
+[8:37.58] Tu vois, tu dois juste staker.
+[8:38.98] Et plus ça avance, plus ça devient difficile.
+[8:41.30] Limite impossible.
+[8:42.68] Mon meilleur score, ce l'ordi, c'est 23 si c'est 22.
+[8:45.56] C'est comme ça que tu pourras tester l'application sur ton ordinateur directement,
+[8:49.64] sur le navigateur dans Minimax avec la version mobile et directement sur ton propre téléphone.
+[8:54.80] Maintenant, comme promis, comment gagner de l'argent avec des mini-jeux comme ça que tu vas développer ?
+[8:59.00] Eh bien, c'est principalement grâce à des plateformes comme Crazy Games et Poki.com.
+[9:03.98] Donc, ces deux plateformes que je t'ai pris par exemple,
+[9:05.88] c'est des plateformes où tu peux t'inscrire et publier tes propres jeux sur ces plateformes-là.
+[9:09.76] Donc, c'est des plateformes où des utilisateurs viennent jouer au quotidien.
+[9:12.36] Tu peux t'inscrire sur ces plateformes, poster tes jeux,
+[9:14.40] et eux, ils vont s'occuper de mettre des publicités, etc.
+[9:17.02] Et derrière, tu vas récolter des revenus lorsque des utilisateurs vont jouer à tes jeux sur ces plateformes-là.
+[9:22.98] Donc, des plateformes comme ça, il en existe plusieurs.
+[9:25.36] Tu peux rechercher.
+[9:26.18] Mais moi, je te conseille ces deux-là qui fonctionnent très bien.
+[9:28.38] Donc, je te rappelle que dans la description,
+[9:30.62] tu trouveras le lien pour pouvoir aller télécharger et tester Minimax Code gratuitement.
+[9:35.28] Donc, ce sera dans la description et aussi dans le lien épinglé.
+[9:37.80] N'hésite pas de me mettre en commentaire si tu as des questions par rapport à ce tutoriel.
+[9:40.94] Et on se dira à la prochaine vidéo.
+[9:42.50] Peace out.

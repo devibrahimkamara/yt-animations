@@ -1,0 +1,272 @@
+[0:00.00] Dans cette vidéo je vais te partager comment est-ce que j'arrive à faire de l'argent grâce à des rapports de visibilité IA.
+[0:05.76] Donc un rapport de visibilité IA c'est tout simplement un document comme celui que je t'affiche à l'écran
+[0:10.28] et dans ce document là on va proposer à une entreprise d'améliorer donc sa visibilité dans les moteurs de recherche IA.
+[0:16.72] Donc que ce soit ChargeGPT, Claude, Per, Per, Plek City ou Gemini.
+[0:20.60] Donc lorsque au quotidien toi par exemple en tant qu'un utilisateur tu poses des questions à l'IA.
+[0:25.92] L'IA va te faire des propositions, souvent il peut te faire des propositions de restaurant,
+[0:30.06] il peut te faire des propositions de logiciel à utiliser et ces propositions que l'IA te fait
+[0:34.54] eh bien elle les trouve le plus souvent dans des bases de données qui sont directement sur internet et sur des moteurs de recherche comme Google.
+[0:41.18] Donc il y a un business qui est né grâce à ça du coup c'est comment optimiser ton business pour que tu sois recommandé dans les IA comme ChargeGPT et Claude.
+[0:49.46] Du coup c'est ça qu'on va parler aujourd'hui et moi je vais te partager ma propre approche par rapport à ce business.
+[0:53.96] Comment j'arrive à générer de l'argent avec ça et comment toi aussi tu pourras le faire.
+[0:57.62] En soi je pense que ce business modèle il est assez clair et simple et tu comprends pourquoi une entreprise voudrait te payer pour ça.
+[1:03.56] Parce que de nos jours il y a des milliards de personnes au quotidien qui utilisent l'intelligence artificielle comme outil de recherche.
+[1:09.46] Donc que tu sois, que tu recherches un restaurant ou manger, ou est-ce que tu vas le te coiffer, si tu cherches les meilleures universités ou allées etc.
+[1:16.14] Tout se passe directement dans ChargeGPT et dans Claude.
+[1:18.36] Donc limite il y a très peu de personnes maintenant, moi y compris, qui vont directement sur Google et faire des recherches sur Google.
+[1:23.84] C'est en train de disparaître progressivement.
+[1:25.78] Le référencement sur Google qu'on faisait à l'époque où tu voulais vraiment sortir dans les recherches sur Google,
+[1:30.96] eh bien il a transitionné maintenant sur l'intelligence artificielle et je vois très peu de personnes parler de ce business-là sachant qu'il est assez nouveau.
+[1:37.22] Et là je vais te montrer un exemple des statistiques que j'ai pu avoir avec mon propre business.
+[1:41.44] Donc là je viens dans cet outil qui s'appelle Bing Webmaster Tool.
+[1:45.08] C'est un outil de Microsoft qui t'aide à traquer notamment des performances de, est-ce que tu es cité dans l'IA etc. pour ton site internet.
+[1:52.78] Et moi dans mon cas c'est pour mon site internet IbrahimKamara.com.
+[1:55.68] J'ai plusieurs autres sites internet aussi que je traque ici.
+[1:58.06] Mais on va se concentrer sur ça.
+[1:59.24] Quand je viens ici je vais dans la partie AI Performance et là dans la partie AI Performance.
+[2:03.60] Et donc la Microsoft me donne des données de citations dans l'IA par rapport à mon site internet et certaines pages de mon site internet.
+[2:10.20] Et là juste quand tu vois les données générales, les derniers 3 mois, mon site internet a été cité plus de 51 000 fois dans l'intelligence artificielle.
+[2:18.52] C'est à dire qu'il y a des personnes qui ont posé des questions à l'IA et dans les réponses que l'IA a donné j'ai apparu près de 51 000 fois.
+[2:25.32] C'est énorme tu vois.
+[2:26.38] Sachant que c'est mon site IbrahimKamara.com sur lequel j'ai pas mal d'articles de blog aussi donc ça joue un rôle.
+[2:32.08] Si je mets par exemple les derniers 6 mois tu verras que c'est encore plus énorme.
+[2:35.40] 64 000 citations dans l'IA et en moyenne j'ai 71 pages de mon site qui reviennent à chaque fois quand des personnes posent des questions sur l'IA.
+[2:43.52] Et ça c'est les données générales si je descends tu pourras voir vraiment les données plus spécifiques qui font que des gens tombent sur mon site dans l'IA.
+[2:51.30] Et là il y a des mots-clés comme par exemple comment télécharger de la musique.
+[2:55.18] Je pense que j'ai des articles de blog sur ça que j'ai écrit.
+[2:58.68] Si je clique sur ça j'aurai encore plus de données spécifiques voilà.
+[3:02.02] J'ai un article sur mon blog qui s'appelle comment télécharger de la musique légalement sur Youtube.
+[3:06.60] Donc quand des personnes font des recherches sur ça dans l'IA donc sur l'IA ou Claude.
+[3:09.82] Et bien Claude les références, mon article de blog ce qui est vraiment incroyable.
+[3:13.24] Donc là si tu cliques sur le lien tu verras l'article en question que j'ai rédigé.
+[3:16.24] Je pense que depuis le mois de mai donc ça fait plusieurs mois que j'ai rédigé cet article là.
+[3:20.42] Donc là il y a plusieurs autres articles qui sont aussi cités par exemple.
+[3:23.54] Donc j'ai des articles sur comment écrire un résumé, comment créer une boutique Shopify,
+[3:27.70] comment être éligi pour la monetisation Youtube etc.
+[3:30.30] Tout ça ce sont des articles de blog que j'ai créé sur mon site internet qui sont super optimisés
+[3:34.72] et qui me permettent d'être cités de manière régulière dans l'intelligence artificielle.
+[3:38.64] Et quand tu vois cette courbe de graphique tu vois que depuis le mois d'août là je suis dans une période vraiment haussière tu vois.
+[3:44.80] Et limite ça avance assez rapidement donc plus les jours avancent plus je suis cité dans les IA.
+[3:48.62] Et dans cette vidéo je vais te partager exactement comment est-ce que tu vas créer un rapport pour présenter
+[3:52.86] à une entreprise, cette idée de business et surtout comment est-ce qu'ils vont te payer pour cela.
+[3:57.22] Un point important que tu dois savoir sur comment est-ce qu'on crée un rapport de visibilité pour le partager à une entreprise.
+[4:03.38] Déjà le premier point c'est on a besoin de données réelles.
+[4:06.50] Le dashboard que je t'ai partagé sur mon site internet etc. sur la visibilité.
+[4:10.22] Et bien ce sont des données réelles pareilles dont tu as besoin pour pouvoir créer le rapport d'une entreprise.
+[4:15.08] Et ces données réelles là on y a accès grâce à plusieurs outils notamment comme par exemple
+[4:19.04] Data for SEO qui est un outil qui permet d'analyser vraiment les performances SEO dans le site internet.
+[4:24.12] Il y a aussi SameRush qui fait à peu près la même chose.
+[4:26.42] Il y a Href, SimilarWeb etc.
+[4:28.84] Dans notre cas on va regrouper plusieurs outils et on va utiliser ces outils pour analyser donc le business, le site internet, les pages Instagram de notre client
+[4:36.98] pour pouvoir créer ce rapport complet.
+[4:39.04] Dans cette vidéo on va utiliser une intelligence artificielle qui s'appelle isa.one et c'est cette IALA qui va nous permettre d'avoir accès
+[4:45.90] à toutes ces différentes données sur ces plateformes séparées tu vois.
+[4:49.12] Au lieu d'aller directement sur SameRush, sur data.seo, tous ces logiciels de manière séparée
+[4:53.76] ce qui prendrait beaucoup trop de temps et serait assez complexe.
+[4:56.70] On va juste utiliser isa donc il y a une IALA qui regroupe tous ces logiciels là et plein d'autres aussi.
+[5:02.00] Et nous permet d'avoir accès aux données qui transitent dans ces logiciels là.
+[5:05.34] On va débuter le tutoriel et se retrouver sur le site de isa.one.
+[5:09.38] Le lien sera dans la description.
+[5:10.94] Donc quand tu arrives tu cliques sur tu peux le mettre en français dans mon cas il est en anglais
+[5:15.22] tu cliques sur commencer et là normalement ils vont te demander de te connecter.
+[5:18.84] Donc moi je pense que j'ai déjà un compte donc tu peux te connecter avec Google ou avec ton adresse email
+[5:23.16] et là directement ça va te mettre ce dashboard là.
+[5:25.98] Maintenant important lorsque tu vas ouvrir ce dashboard là il va falloir que tu t'active un abonnement
+[5:31.10] parce que si tu n'as pas d'abonnement tu ne pourras pas l'utiliser.
+[5:33.30] Normalement si tu viens dans billing tu verras les différents plans.
+[5:36.08] Il y a un plan qui s'appelle pay as you go c'est-à-dire tu vas juste recharger
+[5:40.38] donc de l'argent dans ton compte genre 10 dollars un truc comme ça et ça va progressivement
+[5:44.18] juste utiliser ton argent c'est pas un abonnement quand juste tu recharges ton compte.
+[5:47.82] Il y a un abonnement qui commence à partir de 39 dollars par mois et tu as le plan à 200 dollars par
+[5:52.18] mois donc tu as le choix donc idéalement tu peux commencer si tu veux faire des tests
+[5:55.74] avec le pay as you go et tu recharges ton compte de voilà 10 dollars pour recharger le compte c'est
+[6:00.08] très simple il y a aussi un bouton pour ça ad credits tu mets le montant que tu veux rajouter
+[6:03.86] tu mets ta carte bancaire et tu rajoutes des credits sur ton compte donc jusque là c'est le setup
+[6:07.88] initial à faire par rapport à aissa ensuite le deuxième outil dont on aura besoin c'est cloud
+[6:12.80] code donc cloud code ce sera notre agent ia qui va utiliser donc aissa qui est tous les outils
+[6:18.96] pour faire l'analyse donc en soi c'est cloud code qui va faire le travail et il va juste utiliser
+[6:22.70] les outils que aissa donc aissa lui donne pour pouvoir faire les différentes c'est analyser
+[6:27.92] les rapports ia donc cloud code il y a la version en ligne et moi je préfère la version desktop
+[6:33.28] parce qu'elle est beaucoup plus efficace donc tu télécharges la version cloud code desktop
+[6:37.36] t'écris juste ça sur google cloud code desktop et tu télécharges qui te convient si c'est pour
+[6:41.84] mac si c'est pour windows et ensuite quand tu ouvriras ton cloud code il ressemblera à ça et là
+[6:47.20] maintenant on va se rassurer qu'on est bien bel et bien dans la partie code parce qu'il y a la partie
+[6:51.24] cloud chat où tu discutes normalement avec la partie code est ce qui nous intéresse la partie code
+[6:56.48] ensuite avant de débuter tout travail dans le cloud code moi je te conseille de créer un dossier
+[7:01.44] dans lequel tu vas bosser ensuite on va aller dans notre dossier utilisateur donc dans mon cas
+[7:05.84] ybrem camera et je crée un nouveau dossier et je vais l'appeler par exemple audit ia je crée ce
+[7:11.32] dossier là ensuite je reviens dans cloud code et là ici je laisse local ici c'est là que
+[7:16.68] je vais aller chercher le dossier en question et ce sera le dossier audit ia tout le travail qu'on
+[7:20.82] va faire dans cloud code sera enregistré dans ce dossier là pendant cette session donc à chaque
+[7:25.48] fois que tu travailles sur un nouveau projet avec cloud code rassure toi que tu changes à chaque
+[7:29.34] fois le dossier ensuite maintenant on va donner un prompt à claude donc on va lui donner ce prompt
+[7:33.74] là on va lui dire li à la c'est une documentation que je lui donnais donc il va aller lire cette
+[7:37.86] documentation là et je vais lui demander de connecter donc aissa à cloud code pour qu'on puisse
+[7:42.54] travailler et là pour le modèle alors on peut laisser sonnette parce que si tu mets opus 5.5 ça
+[7:47.40] va ça va bouffer très vite donc on va laisser sur sonnette 5 pour l'effort on va laisser sur
+[7:52.28] sur medium en soi ça va ici pour le mode on va mettre le mode accepte edit et on va lancer donc
+[7:58.60] là ce que cloud code va faire il va faire les recherches par rapport à la documentation de aissa
+[8:03.08] donc comment ça fonctionne etc et lui-même il va connecter il va se connecter à aissa pour qu'on
+[8:08.18] puisse faire les différentes analyses donc là on va accepter tout ce qu'il nous demande et on le
+[8:11.98] laisse connecter tout ça donc là il a fini la configuration initiale il faut maintenant que
+[8:23.64] moi je connecte mon compte aissa à cloud code donc sachant que j'ai déjà fait mon compte et
+[8:28.00] pour ça il m'a dit de lancer cette commande dans le terminage je lui dis ok lance la commande
+[8:32.66] donc il va lancer la commande et normalement ça va ouvrir une fenêtre pour que je puisse me connecter
+[8:36.46] donc je vais patienter donc là ça a réussi ça a ouvert la commande ok je veux dire autoriser
+[8:44.88] et normalement il a pu se connecter avec succès donc on attend de voir super là il me dit aissa est
+[8:51.10] connecté le serveur est authentifié donc là on a terminé les étapes de configuration on peut
+[8:56.14] maintenant faire notre première analyse de visibilité on va donner un prompt à cloud et on
+[9:00.36] va faire notre première analyse de visibilité voici le prompt que je vais donner tu pourras le copier
+[9:04.30] coller je lui demandais évalue la visibilité de la marque shine shine pour affaire c'est une néo
+[9:09.08] banque c'est une banque en ligne et j'aimerais que tu compares cette visibilité à trois de ses
+[9:13.68] concurrents donc il y a revolute il ya quanto et il y a blinque qui sont trois gros concurrents de
+[9:18.92] shine il va analyser donc les moteurs de recherche il ya notamment par rapport au marché français
+[9:23.86] et je vais donner dix questions clients sur lesquelles il doit se baser pour cette analyse là
+[9:27.64] donc quelle est la meilleure banque en ligne en france et quoi comment créer un compte pro pour
+[9:31.12] freelance etc etc ce prompt que je lui donne c'est de me faire une analyse bien évidemment en
+[9:36.74] utilisant l'outil aissa donc je vais lancer ça et on va voir qu'est ce qu'il va nous fourner donc
+[9:41.02] là il me dit que je dois d'abord redémarrer mon cloud parce que quand il a installé aissa
+[9:46.48] j'ai pas encore redémarré le cloud du coup ça fonctionne pas encore bah du coup je vais le faire
+[9:50.64] je vais fermer complètement le cloud je vais dire je peux réessayer normalement ça devrait
+[9:56.08] fonctionner voilà donc là ça fonctionne les outils sont maintenant chargés donc là il peut bosser
+[10:06.78] donc là très pertinent ce qui l'a fait c'est que il m'a donné une estimation de combien cette
+[10:10.96] analyse complète va me coûter avant même de l'affaire comme je t'ai dit dans les débuts par
+[10:15.02] rapport à aissa donc tu auras besoin de mettre des crédits dans ton compte aissa donc de l'argent
+[10:19.08] ou alors de prendre un abonnement et donc à chaque fois que tu vas utiliser pour faire des
+[10:22.24] analyses ça va utiliser donc ta balance de crédit et là il me fait comprendre que en tout ça va
+[10:26.68] dépenser environ 1,2$ sachant que moi je pense j'ai plus de 50$ sur le compte non normalement ça
+[10:32.22] devrait suffire donc je vais lui dire oui lance les 12 ok donc là mon cloud code a fini avec
+[10:37.52] mon rapport de visibilité premièrement il m'a donné ce rapport sous forme d'un fichier md
+[10:42.58] qui était un fichier qui n'était pas forcément ouvrable à mon niveau parce que c'était juste un
+[10:46.36] fichier avec eux du texte comme ça donc ce que je lui ai fait je lui ai dit de me générer un PDF
+[10:50.14] pour ce rapport comme ça ce sera beaucoup plus visuel donc c'est quelque chose que tu peux aussi
+[10:54.04] faire tu peux aussi lui demander donc il m'a généré le PDF et voici le PDF ici et on va l'ouvrir
+[10:58.42] ensemble et on verra à quoi ça ressemble donc voici le rapport de visibilité pour la marque
+[11:02.88] shine dans les moteurs de recherche il ya donc il a 30 points de mesure il a mesuré trois moteurs
+[11:08.10] différents visiblement ici on a un très bon résultat pour cette marque parce que c'est pas une
+[11:15.04] 47% donc à 97% des cas elle est citée dans l'IA par rapport à ses compétiteurs donc limite
+[11:20.74] ils dominent vraiment les moteurs ya donc si tu descends en bas il a précisé qu'il a analysé trois
+[11:25.86] moteurs par peck city google ai et aussi jp t donc là il a expliqué un peu de la méthodologie on s'est
+[11:31.82] basé sur dix questions différentes etc etc et là comparé ça à ses trois concurrents et là il a
+[11:37.92] fait l'analyse détaillée question par question donc la première question c'était quel est le meilleur
+[11:41.74] la meilleure banque pour un auto-entrepreneur le plus souvent sur charge et pt il ya shine qui
+[11:46.22] sera en premier ensuite indie etc donc c'est l'ordre avec lequel le plus souvent ils sont cités donc
+[11:50.86] le plus souvent quand une personne va demander c'est quoi la meilleure banque pour un auto-entrepreneur
+[11:54.10] un auto-entrepreneur en france et bien shine qui sera en premier c'est super donc google ai shine
+[11:58.70] sera en deuxième donc dans tous les cas ils sont cités pour cette question donc c'est super donc
+[12:02.82] par exemple quel est le compte pro à choisir quand on est freelance dans charge et pt ils sont
+[12:07.10] cités en deuxième dans google ai mode ils sont cités en deuxième dans perplexity ils sont cités
+[12:11.78] en premier tu vois donc pour cette question ils sont cités donc limite pour toutes les questions qu'on
+[12:15.58] analysait et bien ils sont tout le temps cités dans lia et ça c'est une très bonne chose donc
+[12:19.50] ils sont déjà super optimisés donc c'est un rapport comme ça que tu vas présenter à une marque
+[12:23.84] pour ensuite pouvoir lui vendre le service donc dans notre cas shine aura pas forcément besoin
+[12:27.86] du service tout simplement parce qu'ils sont déjà ultra optimisé mais ce business model que je
+[12:31.94] te partage c'est pas pour aller cibler des grosses entreprises forcément que eux ils auront pas
+[12:36.24] besoin de ça c'est plus vraiment pour aller cibler des entreprises locales qui n'auront pas
+[12:40.30] forcément optimisé leur site ou leur entreprise dans lia donc c'est vraiment un business que tu
+[12:45.82] vas faire localement pour les entreprises autour de toi donc ça c'est le rapport que tu vas
+[12:49.86] présenter à une entreprise et une chose que j'aimerais préciser Claude a pu faire toute cette
+[12:54.66] analyse et présenter tous ses résultats limite en mode automatique sans que j'ai affaire à la
+[12:59.66] des configurations manuelle tout simplement parce qu'il a accès à plusieurs donc de ses bases
+[13:03.96] de données là donc chat gpt google ai perplexity etc grâce à des connexions qu'il a dans aissa donc
+[13:11.20] sans ça ce serait pas possible sans ça j'aurais dû avoir manuellement à connecter perplexity
+[13:16.66] connecter tout ça pour pouvoir avoir accès à ces données là donc c'est vraiment un point
+[13:19.82] important à préciser ici donc maintenant l'étape suivante c'est quoi lorsque tu présentes un rapport
+[13:23.98] de visibilité il ya un client c'est bien beau tu lui dis voici là où ton site ou ton business
+[13:29.16] perform dans l'IA et voici les lacunes mais par rapport à ce rapport là et bien il ne peut pas
+[13:34.04] prendre des actions donc la suite c'est aussi de lui donner un rapport SEO c'est à dire un rapport
+[13:38.34] de qu'est ce qu'il faut réellement mettre en place pour améliorer sa visibilité dans les moteurs
+[13:42.94] de recherche il ya et pour ça on va continuer toujours avec notre cloud code on va lui donner un
+[13:47.72] prompt et on va lui dire de faire un audit de la performance SEO de toujours la même marque donc
+[13:52.14] shine.fr sur le marché francophone et de la comparer à ses concurrents quant au blank et
+[13:57.26] aussi révolution il va utiliser les données officielles qui se trouvent dans six millards web
+[14:01.12] six millards web c'est une grosse plateforme qui regroupe beaucoup de données SEO sur les sites
+[14:05.22] internet etc et nous on a accès à cette plateforme notamment grâce à Aisa donc il y aura six millards
+[14:10.70] web et aussi data for SEO qui va data for SEO lui il va nous donner plus les mots clés et aussi
+[14:16.78] les données SEO provenant de google tout ça on aura accès à ça grâce à Aisa donc on n'a rien
+[14:21.72] à configurer de nouveau tout ça c'est déjà fait et ensuite donc on va identifier cinq problèmes
+[14:26.02] prioritaires on va avoir un plan SEO à mettre en place par rapport à cette marque là donc le
+[14:31.38] prompt tu peux le copier coller et tu lances juste le prompt et là tu le laisse travailler donc là
+[14:35.52] encore une fois avant de faire les recherches SEO il me présente le coût de toute l'opération donc là
+[14:41.02] dans ce cas là l'opération va coûter 10 dollars donc beaucoup plus que l'état précédent donc
+[14:45.94] c'est un plus gros travail il m'a donné un peu les coûts détaillés donc six millards web,
+[14:51.34] SEM rush, data for SEO etc rassure toi que tu as assez donc de crédit dans ton compte Aisa pour
+[14:57.74] couvrir à chaque fois les opérations donc moi dans mon cas j'ai assez de crédit donc je vais
+[15:00.84] lui dire lance lance tous les appels et là il va bosser sur tout ça ça va ça va prendre beaucoup
+[15:05.54] plus de temps que l'étape première donc on va patienter de voir le résultat donc là mon
+[15:09.30] cloud a terminé avec le rapport SEO et normalement il m'a mis à jour cela dans le même pas dans le
+[15:15.50] même fichier PDF donc je vais ouvrir le même dossier PDF le même fichier PDF désolé et je vais
+[15:20.68] descendre tout en bas pour voir la partie de la nouvelle analyse SEO qu'il m'a fait donc
+[15:25.30] voici les cinq opportunités de contenu pour l'entreprise shine donc combler le vide sur
+[15:30.14] les requêtes pris pur ok donc il y a un vide au niveau des requêtes donc il y a des gens qui
+[15:35.38] se demandent combien ça coûte sûrement en termes de frais les tarifs par rapport à shine donc
+[15:40.92] ça c'est une opportunité de contenu à créer créer des pages de comparatives entre shine et
+[15:46.48] d'autres concurrents comme par exemple bling quanto revolute etc renforcer la narrative le
+[15:53.30] narrative d'introduction sur quanto shine c'est à dire ok donc ça c'est toujours du contenu
+[15:58.36] comparatif du contenu au niveau des dépôts de capitaux donc ça c'est vraiment une partie plus
+[16:03.62] juridique etc donc là il m'a analysé vraiment tout ce qu'il y avait comme requêtes SEO et là où
+[16:09.20] il y avait des opportunités donc visiblement c'est là où il y a des opportunités c'est voir quoi
+[16:12.88] d'autre et là il me propose donc un plan d'action SEO comme ce que je lui ai demandé et c'est
+[16:16.90] vraiment un plan d'action assez complet donc déjà il nous présente des différentes analyses
+[16:20.40] qu'il a fait au niveau du trafic donc là tu peux voir que shine donc a environ un million de visiteurs
+[16:25.62] un million de cent par mois comparé à quanto qui a beaucoup plus plein qui a presque pas du tout de
+[16:31.38] visiteurs 4 300 et revolute qui vraiment domine grave le marché mais par contre quand on revient
+[16:36.38] sur l'analyse ya il bien tu vois que shine est beaucoup plus cité dans l'ya par rapport aux autres
+[16:40.88] même s'ils ont moins de trafic ils ont moins de trafic notamment ici avec comparé à revolute donc
+[16:46.42] là il m'a si il a comparé un peu différents cas de nos d'acquisition les gens qui vont directement
+[16:51.20] sur le site les recherches organiques la publicité payante vraiment c'est assez détaillé performance
+[16:56.72] en france les différents mots clés les mots clés les comparaisons etc et là il a identifié des
+[17:02.62] problèmes prioritaires au niveau du SEO et là il a proposé des nouvelles pages à créer donc sur le
+[17:08.14] site de shine pour pouvoir capturer du trafic SEO donc gris tarifaire comparaison avec blank donc ça
+[17:15.74] on a parlé de ça au préalable dépôt de capital etc etc quand tu présentes un rapport comme ça
+[17:21.12] à une marque vraiment c'est ultra détaillé tu vois non seulement c'est basé sur leur sur leurs
+[17:25.96] vraies chiffres sur leurs vraies trafic etc donc c'est pas des données que tu as inventé et encore
+[17:31.24] une fois je te précise que en temps normal tu ne pourras pas avoir accès à des détails à des
+[17:35.26] rapports aussi détaillés si tu n'avais pas des connexions qu'on a notamment ici avec aissa maintenant
+[17:40.52] le dernier point qui est aussi de loin le plus important c'est lorsqu'on finit d'avoir cette
+[17:44.90] compétence qu'on sait maintenant comment générer ce genre de rapport comment est-ce qu'on va trouver
+[17:48.54] des clients et bien on va trouver des clients utilisant aussi clott code et aissa donc on va
+[17:53.16] lui donner un prompt comme ça et on va lui dire trouve 10 entreprises en france qui pourraient acheter
+[17:57.78] ce type de rapport donc fin tech éditeur de logiciels etc et pour chacune tu vas trouver
+[18:03.06] donc les contacts des personnes dans l'entreprise grâce à apolo apolo qui est un outil de
+[18:07.20] prospection donc grâce à ce prompt clott code va directement aller te trouver des clients à qui
+[18:12.00] tu peux présenter ces rapports là et à qui tu peux vendre ce service maintenant un point important
+[18:15.60] je t'ai précisé dans la vidéo que ce genre de business model il va beaucoup plus marcher avec
+[18:21.06] des entreprises vraiment au niveau local pas des grosses entreprises donc moi je vais le préciser
+[18:25.26] dans le prompt voilà je lui précise que ça c'est à rien de me dire que voilà je peux présenter
+[18:29.58] ce rapport à des grosses entreprises comme revolue ça c'est à rien parce que un prestataire de
+[18:33.44] service vraiment qui n'est pas ne peut pas vendre comme ça des grosses entreprises donc
+[18:36.82] logiquement faut se concentrer sur des radires des PME vraiment au niveau local donc je vais lancer
+[18:42.38] ce prompt là il va aller me rechercher des clients et il va me présenter ça dans un fichier CSV
+[18:47.52] avec les différents prospects les contacts des prospects etc etc donc normalement je vais
+[18:52.02] patienter il devrait aussi me présenter la liste des coûts avant de débuter genre combien toute
+[18:56.44] opération va me coûter en termes de crédit donc le coût total ça va me coûter 0,24 dollars de
+[19:02.06] crédit dans aissa ce qui notamment mon niveau est très très très abordable donc je vais lui dire de
+[19:08.26] lancer et d'aller faire les recherches donc là mon clod a terminé de me trouver des entreprises à
+[19:13.26] qui présenter ce de vie là donc il m'a trouvé dix entreprises donc des entreprises locales en
+[19:17.68] France en fonction des bas des spécificités que je vais demander ensuite dans ces entreprises là
+[19:23.24] il a recherché donc des personnes qu'on peut contacter donc idéalement des personnes qui
+[19:27.06] bosse dans le marketing etc et il a eu accès à des données grâce à LinkedIn Apollo aussi qui
+[19:32.74] vient directement de aissa donc il a fait des recherches etc le premier document qui m'avait
+[19:39.10] donné il a eu un problème il n'avait pas pu avoir accès aux adresses simée de ces personnes là
+[19:44.14] même s'il a trouvé donc des contacts de personnes par exemple ici ça c'est le fichier CSV qu'il
+[19:52.94] a trouvé l'orant qui visiblement est le directeur du marketing mobile mais il n'a pas pu avoir accès
+[19:58.90] à l'adresse email de l'orant du coup ni son compte LinkedIn donc là on pourra pas le contacter
+[20:03.92] donc c'est des choses qui peuvent arriver donc il n'aura pas forcément accès à toutes les données
+[20:07.80] à certains données qui peuvent être manquantes par contre ici pour la banque memo banque il a
+[20:12.08] trouvé pricilia qui est head of marketing and communication et il a trouvé son LinkedIn donc
+[20:18.30] je peux aller sur son LinkedIn le voir réellement est-ce que c'est vraiment ben vrai ok c'est
+[20:22.42] vraiment vrai pricilia cavrois qui travaille à memo banque et qui est head of marketing tu vois
+[20:28.58] donc il a trouvé je pense sur 10 personnes il a trouvé le contact de 5 ou 6 personnes tu vois
+[20:34.00] donc 1 2 3 4 5 6 7 donc il y a 7 personnes pour lesquelles il a trouvé les contacts et
+[20:40.74] malheureusement il y en a trois pour lesquelles il n'a pas trouvé le contact donc c'est des
+[20:44.60] choses qui peuvent arriver donc dans ce cas là tu lui dis de chercher des contacts d'autres entreprises
+[20:48.08] donc c'est comme ça que tu pourras trouver des contacts et la suite c'est de les
+[20:51.60] contacter et pour les contacter tu peux directement le faire encore une fois dans ton cloud code
+[20:56.14] donc tu peux donner accès à ta boîte gmail et contacter ces contacts directement par email
+[21:01.64] si tu as accès à leurs emails si tu n'as pas accès à leurs emails comme dans mon cas tu peux
+[21:06.34] aussi donner l'accès à LinkedIn donc ton compte LinkedIn à ton cloud code et il pourra faire la
+[21:11.38] prospection directement sur LinkedIn je te rappelle que le lien pour la plateforme isa et se
+[21:15.90] retrouve dans la description si tu as des questions par rapport à tout ce workflow complet
+[21:19.72] n'hésite pas à me les poser directement en commentaire et on va se dire à la prochaine pour
+[21:23.64] une nouvelle vidéo à l'épisode

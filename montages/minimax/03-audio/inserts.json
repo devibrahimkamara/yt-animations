@@ -1,0 +1,16 @@
+{
+ "V1_M3.1": {
+  "after": "-là.",
+  "end": 187.34,
+  "next_start": 187.34,
+  "next": "Et",
+  "cut_at": 187.47
+ },
+ "V2_avis": {
+  "after": "bien.",
+  "end": 568.38,
+  "next_start": 568.38,
+  "next": "Donc,",
+  "cut_at": 568.5
+ }
+}

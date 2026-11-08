@@ -1,6 +1,6 @@
 #!/bin/bash
 # Envoie au serveur le code + les médias d'une vidéo (rsync : seuls les fichiers modifiés partent).
-# Usage : sync.sh <IP> <slug>   (ex. sync.sh 204.168.149.62 hostinger)
+# Usage : sync.sh <IP> <slug>   (ex. sync.sh 77.42.82.162 hostinger)
 set -euo pipefail
 IP=$1; SLUG=$2
 KEY=~/.ssh/hetzner_remotion

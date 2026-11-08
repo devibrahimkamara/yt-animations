@@ -1,0 +1,1111 @@
+1
+00:00:00,000 --> 00:00:01,560
+Cette vidéo, il y a que tu vois à l'écran,
+
+2
+00:00:01,680 --> 00:00:03,980
+elle m'a coûté 20 crédits sur Higgsfield pour la
+
+3
+00:00:03,980 --> 00:00:04,300
+générer.
+
+4
+00:00:04,440 --> 00:00:06,480
+Donc, c'est ce que Higgsfield affiche lorsque tu
+
+5
+00:00:06,480 --> 00:00:07,220
+génères une vidéo.
+
+6
+00:00:07,380 --> 00:00:09,840
+Sauf qu'en vrai, le vrai prix, c'est les 20
+
+7
+00:00:09,840 --> 00:00:12,460
+crédits multipliés par le nombre de fois où
+
+8
+00:00:12,460 --> 00:00:15,000
+j'ai dû relancer cette génération pour que
+
+9
+00:00:15,000 --> 00:00:16,120
+la vidéo soit parfaite.
+
+10
+00:00:16,240 --> 00:00:18,440
+Et selon Higgsfield eux-mêmes, ce chiffre-là, tu
+
+11
+00:00:18,440 --> 00:00:21,740
+peux le multiplier x3, x10 en fonction de
+
+12
+00:00:21,740 --> 00:00:24,140
+ton niveau de maîtrise de leur outil.
+
+13
+00:00:24,140 --> 00:00:26,440
+Donc, une simple vidéo qui devrait coûter
+
+14
+00:00:26,440 --> 00:00:29,060
+20 crédits pourrait coûter 60, 100, voire
+
+15
+00:00:29,060 --> 00:00:31,360
+même 200 si tu ne sais pas bien t'y prendre.
+
+16
+00:00:31,560 --> 00:00:33,020
+Du coup, dans cette vidéo, je vais te partager
+
+17
+00:00:33,020 --> 00:00:34,860
+cette astuce pour te permettre d'utiliser
+
+18
+00:00:34,860 --> 00:00:36,960
+énormément de crédits et d'argent quand tu
+
+19
+00:00:36,960 --> 00:00:38,120
+génères des vidéos sur Higgsfield.
+
+20
+00:00:38,320 --> 00:00:40,660
+Et certaines générations vont même être complètement
+
+21
+00:00:40,660 --> 00:00:41,400
+gratuites.
+
+22
+00:00:41,560 --> 00:00:43,320
+Donc, si tu as déjà essayé de générer des
+
+23
+00:00:43,320 --> 00:00:45,160
+vidéos avec l'intelligence artificielle, tu
+
+24
+00:00:45,160 --> 00:00:46,520
+t'es sûrement déjà posé cette question.
+
+25
+00:00:46,540 --> 00:00:48,720
+Mais pourquoi les vidéos IA coûtent autant
+
+26
+00:00:48,720 --> 00:00:49,920
+d'argent, coûtent aussi cher?
+
+27
+00:00:49,920 --> 00:00:51,840
+Donc, le problème n'est pas forcément le prix
+
+28
+00:00:51,840 --> 00:00:54,300
+des générations, mais c'est le prix des essais
+
+29
+00:00:54,300 --> 00:00:54,860
+ratés.
+
+30
+00:00:55,060 --> 00:00:57,320
+Maintenant, est-ce qu'on peut générer du contenu
+
+31
+00:00:57,320 --> 00:00:59,480
+gratuitement avec certains modèles IA?
+
+32
+00:00:59,760 --> 00:01:00,220
+C'est possible.
+
+33
+00:01:00,400 --> 00:01:01,800
+Je t'en parlerai tout à l'heure, donc jusqu
+
+34
+00:01:01,800 --> 00:01:02,500
+'à la fin de la vidéo.
+
+35
+00:01:02,740 --> 00:01:04,300
+Et toutes les astuces que je vais te partager
+
+36
+00:01:04,300 --> 00:01:06,100
+aujourd'hui, elles vont toutes tourner sur
+
+37
+00:01:06,100 --> 00:01:07,900
+la plateforme Higgsfield, bien évidemment, qui
+
+38
+00:01:07,900 --> 00:01:09,000
+est le partenaire de cette vidéo.
+
+39
+00:01:09,220 --> 00:01:10,960
+Donc, Higgsfield, c'est la plateforme d'intelligence
+
+40
+00:01:10,960 --> 00:01:13,460
+artificielle qui regroupe le plus de modèles
+
+41
+00:01:13,460 --> 00:01:14,260
+d'IA au monde.
+
+42
+00:01:14,380 --> 00:01:16,000
+Tu vois, donc que ce soit les modèles de génération
+
+43
+00:01:16,000 --> 00:01:18,000
+d'images comme de génération de vidéos.
+
+44
+00:01:18,000 --> 00:01:20,280
+Et c'est justement ce qui te permettra d'économiser
+
+45
+00:01:20,280 --> 00:01:22,060
+pas mal d'argent si tu apprends à maîtriser
+
+46
+00:01:22,060 --> 00:01:22,700
+cette plateforme-là.
+
+47
+00:01:22,820 --> 00:01:24,880
+La première astuce qui va te faire économiser
+
+48
+00:01:24,880 --> 00:01:27,820
+énormément de crédits grâce à Higgsfield, eh bien,
+
+49
+00:01:27,940 --> 00:01:29,740
+c'est la plus simple, la plus logique, mais
+
+50
+00:01:29,740 --> 00:01:31,000
+beaucoup de personnes l'oublient.
+
+51
+00:01:31,100 --> 00:01:33,040
+Lorsque tu veux générer du contenu, par exemple,
+
+52
+00:01:33,040 --> 00:01:34,880
+là, je veux générer une vidéo avec Higgsfield,
+
+53
+00:01:34,980 --> 00:01:37,360
+ils vont toujours m'afficher combien de crédits
+
+54
+00:01:37,360 --> 00:01:37,900
+ça va me coûter.
+
+55
+00:01:38,020 --> 00:01:40,040
+Donc, sur le bouton générer, tu verras, c
+
+56
+00:01:40,040 --> 00:01:41,340
+'est écrit ici 56 crédits.
+
+57
+00:01:41,440 --> 00:01:42,440
+Donc, c'est la première chose à faire.
+
+58
+00:01:42,560 --> 00:01:44,560
+Il faut savoir combien va te coûter la génération
+
+59
+00:01:44,560 --> 00:01:45,340
+avant de la faire.
+
+60
+00:01:45,340 --> 00:01:47,340
+Et le nombre de crédits va dépendre de plein
+
+61
+00:01:47,340 --> 00:01:47,800
+de paramètres.
+
+62
+00:01:47,940 --> 00:01:49,960
+Donc là, j'ai mis le modèle Higgsfield Genjutsu.
+
+63
+00:01:50,080 --> 00:01:52,800
+Pour une vidéo en 720p, ça va me coûter 56
+
+64
+00:01:52,800 --> 00:01:53,280
+crédits.
+
+65
+00:01:53,400 --> 00:01:55,300
+Si je mets, par exemple, le modèle Seedance
+
+66
+00:01:55,300 --> 00:01:57,540
+2.5 qui est un peu plus cher, tu verras que
+
+67
+00:01:57,540 --> 00:02:00,720
+pour une vidéo de 5 secondes, en 1080p, ça
+
+68
+00:02:00,720 --> 00:02:01,680
+coûte 80 crédits.
+
+69
+00:02:01,760 --> 00:02:03,300
+Donc, si je change la qualité, je peux mettre
+
+70
+00:02:03,300 --> 00:02:05,800
+en 720p, ça revient limite deux fois moins
+
+71
+00:02:05,800 --> 00:02:06,860
+cher, 35 crédits.
+
+72
+00:02:07,060 --> 00:02:09,560
+Pareil, si je descends encore à 480p, ça revient
+
+73
+00:02:09,560 --> 00:02:11,560
+à 15 crédits, tu vois, mais c'est 5 secondes
+
+74
+00:02:11,560 --> 00:02:12,020
+bien évidemment.
+
+75
+00:02:12,160 --> 00:02:13,920
+Plusieurs paramètres vont agir sur le prix
+
+76
+00:02:13,920 --> 00:02:14,700
+de ta vidéo finale.
+
+77
+00:02:14,700 --> 00:02:17,020
+Donc, c'est très important de regarder ce
+
+78
+00:02:17,020 --> 00:02:19,040
+bouton généré et de voir combien de crédits
+
+79
+00:02:19,040 --> 00:02:20,080
+ta génération, elle va faire.
+
+80
+00:02:20,260 --> 00:02:22,180
+Ensuite, l'astuce numéro 2 qui va aussi te
+
+81
+00:02:22,180 --> 00:02:23,420
+faire économiser beaucoup de crédits.
+
+82
+00:02:23,540 --> 00:02:25,900
+Lorsque tu veux générer une vidéo avec Higgsfield,
+
+83
+00:02:26,080 --> 00:02:27,980
+il faut savoir que tes premiers essais ne
+
+84
+00:02:27,980 --> 00:02:29,140
+seront jamais parfaits, tu vois.
+
+85
+00:02:29,280 --> 00:02:31,360
+Donc, tu vas sûrement faire 2, 3 essais avant
+
+86
+00:02:31,360 --> 00:02:32,940
+d'avoir vraiment la vidéo que tu souhaites
+
+87
+00:02:32,940 --> 00:02:33,140
+avoir.
+
+88
+00:02:33,320 --> 00:02:34,860
+Et chaque essai va te coûter des crédits.
+
+89
+00:02:34,980 --> 00:02:36,900
+Donc, pour économiser, ce qui est intelligent
+
+90
+00:02:36,900 --> 00:02:38,500
+à faire, c'est pour tes périodes d'essais,
+
+91
+00:02:38,640 --> 00:02:39,660
+pour tes premières générations,
+
+92
+00:02:39,800 --> 00:02:41,740
+utilise des modèles qui sont moins chers,
+
+93
+00:02:41,840 --> 00:02:42,840
+donc des modèles de génération.
+
+94
+00:02:42,840 --> 00:02:44,360
+Je te donne un exemple. Ici, quand je prends
+
+95
+00:02:44,360 --> 00:02:46,440
+le modèle Seedance 2.5, que je le mets par
+
+96
+00:02:46,440 --> 00:02:47,500
+exemple en 1080p,
+
+97
+00:02:47,660 --> 00:02:49,900
+tu verras que pour 5 secondes de vidéo, ça
+
+98
+00:02:49,900 --> 00:02:51,240
+va me coûter 80 crédits.
+
+99
+00:02:51,360 --> 00:02:53,300
+Mais là, si je reviens sur un modèle un peu
+
+100
+00:02:53,300 --> 00:02:54,800
+moins cher qui a aussi performance, c'est
+
+101
+00:02:54,800 --> 00:02:56,400
+le modèle Kling 3.0.
+
+102
+00:02:56,440 --> 00:02:58,920
+Et je mets les mêmes 1080, 5 secondes, ça
+
+103
+00:02:58,920 --> 00:03:00,000
+revient à 12 crédits.
+
+104
+00:03:00,120 --> 00:03:01,720
+Donc, limite, c'est 4 fois moins cher.
+
+105
+00:03:01,860 --> 00:03:04,060
+Donc, si tu veux générer une vidéo et que
+
+106
+00:03:04,060 --> 00:03:05,960
+tu ne sais pas si le résultat sera vraiment
+
+107
+00:03:05,960 --> 00:03:06,900
+comme tu le souhaites,
+
+108
+00:03:06,980 --> 00:03:08,680
+fais des tests avec des modèles moins chers,
+
+109
+00:03:08,720 --> 00:03:10,240
+comme par exemple Kling 3.0.
+
+110
+00:03:10,240 --> 00:03:11,780
+Tu vois, tu peux faire plusieurs tests avec
+
+111
+00:03:11,780 --> 00:03:12,440
+ce modèle-là.
+
+112
+00:03:12,560 --> 00:03:14,440
+Lorsque tu as perfectionné ton prompt, là
+
+113
+00:03:14,440 --> 00:03:16,860
+maintenant, tu peux passer à Seedance 2.5 pour
+
+114
+00:03:16,860 --> 00:03:18,160
+avoir un meilleur rendu vidéo.
+
+115
+00:03:18,300 --> 00:03:20,080
+Mais là, tu es sûr que la génération, elle
+
+116
+00:03:20,080 --> 00:03:21,280
+sera réellement comme tu le souhaites.
+
+117
+00:03:21,340 --> 00:03:23,020
+Et tu ne vas pas faire plein d'essais inutiles.
+
+118
+00:03:23,140 --> 00:03:24,480
+C'est là que beaucoup de personnes font des
+
+119
+00:03:24,480 --> 00:03:24,740
+erreurs.
+
+120
+00:03:24,860 --> 00:03:26,600
+Ils vont faire plein d'essais avec des modèles
+
+121
+00:03:26,600 --> 00:03:27,200
+ultra chers.
+
+122
+00:03:27,260 --> 00:03:28,740
+Ils vont perdre énormément d'argent.
+
+123
+00:03:28,880 --> 00:03:30,340
+Maintenant, ça peut arriver que tu veuilles
+
+124
+00:03:30,340 --> 00:03:32,960
+faire des essais avec par exemple le Seedance
+
+125
+00:03:32,960 --> 00:03:33,460
+2.5.
+
+126
+00:03:33,540 --> 00:03:35,740
+Pour ça, garde le modèle, mais réduis la qualité.
+
+127
+00:03:35,740 --> 00:03:37,980
+Tu peux la réduire par exemple à 480p.
+
+128
+00:03:38,120 --> 00:03:39,380
+Tu vois, ça revient quatre fois moins cher.
+
+129
+00:03:39,380 --> 00:03:41,220
+Et c'est largement suffisant pour faire des
+
+130
+00:03:41,220 --> 00:03:41,460
+tests.
+
+131
+00:03:41,620 --> 00:03:43,320
+Et lorsque tu es satisfait de tes tests, maintenant,
+
+132
+00:03:43,340 --> 00:03:44,780
+tu augmentes la qualité au maximum.
+
+133
+00:03:45,020 --> 00:03:46,520
+Et là, tu pourras avoir une vidéo de très
+
+134
+00:03:46,520 --> 00:03:46,960
+bonne qualité.
+
+135
+00:03:47,240 --> 00:03:49,160
+Maintenant, l'astuce numéro 3, c'est celle
+
+136
+00:03:49,160 --> 00:03:51,100
+qui va te faire économiser le plus d'argent.
+
+137
+00:03:51,220 --> 00:03:52,440
+Donc, lorsque je viens dans Higgsfield, que je
+
+138
+00:03:52,440 --> 00:03:53,800
+viens par exemple ici dans Upgrade,
+
+139
+00:03:53,900 --> 00:03:55,860
+je vais voir les différentes offres d'abonnement.
+
+140
+00:03:55,960 --> 00:03:58,180
+Tu verras ici une offre spéciale qui s'appelle
+
+141
+00:03:58,180 --> 00:03:58,860
+ACCESS ILLIMITÉ.
+
+142
+00:03:58,860 --> 00:04:01,300
+Donc, si je clique sur Get Unlimited Access,
+
+143
+00:04:01,520 --> 00:04:03,480
+tu verras qu'ils ont une option où tu peux
+
+144
+00:04:03,480 --> 00:04:06,540
+acheter un accès illimité aux différents modèles
+
+145
+00:04:06,540 --> 00:04:07,240
+que tu souhaites avoir.
+
+146
+00:04:07,420 --> 00:04:09,400
+Donc là, si je clique sur Browse All Models,
+
+147
+00:04:09,500 --> 00:04:11,260
+là, ils vont me mettre tous les modèles qui
+
+148
+00:04:11,260 --> 00:04:11,840
+sont disponibles.
+
+149
+00:04:11,960 --> 00:04:13,760
+Donc, il y a des modèles d'images, Nano Banana
+
+150
+00:04:13,760 --> 00:04:15,980
+Pro, Nano Banana Pro 4K, etc.
+
+151
+00:04:16,320 --> 00:04:18,520
+Il y a des modèles de vidéos, Seedance 2.0,
+
+152
+00:04:18,800 --> 00:04:21,820
+Kling 3.0, Seedance 2.5 en 1080p.
+
+153
+00:04:21,820 --> 00:04:23,700
+Et là, par exemple, si je clique sur le Seedance
+
+154
+00:04:23,700 --> 00:04:27,720
+2.5 en 1080p, tu verras que pour 180$, j'ai
+
+155
+00:04:27,720 --> 00:04:30,640
+une journée illimitée avec Seedance 2.5.
+
+156
+00:04:30,860 --> 00:04:32,120
+C'est-à-dire que pendant une journée, je peux
+
+157
+00:04:32,120 --> 00:04:34,920
+générer autant de vidéos que je veux avec
+
+158
+00:04:34,920 --> 00:04:36,020
+Seedance 2.5.
+
+159
+00:04:36,120 --> 00:04:37,820
+Maintenant, chaque vidéo sera limitée à 30
+
+160
+00:04:37,820 --> 00:04:40,320
+secondes, mais tu as des générations illimitées.
+
+161
+00:04:40,360 --> 00:04:42,680
+Et ça s'applique à tous les différents modèles
+
+162
+00:04:42,680 --> 00:04:43,760
+qui sont disponibles ici.
+
+163
+00:04:43,900 --> 00:04:45,540
+Donc ça, c'est vraiment lorsque tu es prêt
+
+164
+00:04:45,540 --> 00:04:47,160
+vraiment à passer à un autre niveau, à créer
+
+165
+00:04:47,160 --> 00:04:48,780
+beaucoup de contenu en masse
+
+166
+00:04:48,780 --> 00:04:50,820
+et surtout à économiser pas mal d'argent sur
+
+167
+00:04:50,820 --> 00:04:51,240
+le long terme.
+
+168
+00:04:51,240 --> 00:04:53,620
+Tu viens ici, tu achètes une offre illimitée.
+
+169
+00:04:53,760 --> 00:04:55,300
+Il y a plusieurs modèles d'images et de vidéos.
+
+170
+00:04:55,480 --> 00:04:57,340
+En fonction de toi, si tu veux une journée,
+
+171
+00:04:57,620 --> 00:04:59,340
+si tu veux trois jours, si tu veux une semaine,
+
+172
+00:04:59,560 --> 00:05:01,480
+tu pourras générer autant de contenu sur la
+
+173
+00:05:01,480 --> 00:05:03,680
+plateforme Higgsfield grâce à cette offre-là pour
+
+174
+00:05:03,680 --> 00:05:04,720
+le modèle que tu auras choisi.
+
+175
+00:05:04,920 --> 00:05:06,960
+Maintenant, l'astuce numéro 4 qu'il faut vraiment
+
+176
+00:05:06,960 --> 00:05:09,880
+savoir avant de surtout utiliser le mode illimité,
+
+177
+00:05:09,960 --> 00:05:11,920
+c'est que le mode illimité, il s'applique
+
+178
+00:05:11,920 --> 00:05:14,480
+uniquement aux générations que tu fais directement
+
+179
+00:05:14,480 --> 00:05:15,060
+dans Higgsfield
+
+180
+00:05:15,060 --> 00:05:16,840
+quand tu viens ici, par exemple, dans générer
+
+181
+00:05:16,840 --> 00:05:18,840
+une vidéo ou générer une image, tu vois.
+
+182
+00:05:18,840 --> 00:05:20,640
+C'est-à-dire que ce mode illimité, il ne va
+
+183
+00:05:20,640 --> 00:05:23,060
+pas fonctionner avec les intégrations MCP
+
+184
+00:05:23,060 --> 00:05:24,920
+comme sur Claude ou sur ChatGPT.
+
+185
+00:05:25,100 --> 00:05:26,440
+Il ne va pas fonctionner quand tu prends le
+
+186
+00:05:26,440 --> 00:05:27,160
+mode supercomputer.
+
+187
+00:05:27,280 --> 00:05:29,240
+Il ne va pas fonctionner dans ces différents
+
+188
+00:05:29,240 --> 00:05:29,580
+modes-là.
+
+189
+00:05:29,760 --> 00:05:31,380
+Donc si tu prends le mode illimité que tu
+
+190
+00:05:31,380 --> 00:05:34,020
+utilises le MCP sur Claude ou sur ChatGPT,
+
+191
+00:05:34,200 --> 00:05:35,600
+ça va toujours utiliser tes crédits.
+
+192
+00:05:35,680 --> 00:05:36,840
+Donc, il faut vraiment être conscient de ça.
+
+193
+00:05:36,960 --> 00:05:38,740
+Le mode illimité, c'est uniquement pour venir
+
+194
+00:05:38,740 --> 00:05:40,540
+faire des générations directement dans la
+
+195
+00:05:40,540 --> 00:05:41,300
+plateforme Higgsfield.
+
+196
+00:05:41,400 --> 00:05:43,500
+Donc ça, c'est bien à savoir avant de payer
+
+197
+00:05:43,500 --> 00:05:44,480
+cet abonnement illimité-là.
+
+198
+00:05:44,480 --> 00:05:46,880
+Maintenant, astuce numéro 5 qui va aussi te
+
+199
+00:05:46,880 --> 00:05:48,720
+faire économiser pas mal de crédits, c'est
+
+200
+00:05:48,720 --> 00:05:50,420
+l'erreur que beaucoup de débutants font
+
+201
+00:05:50,420 --> 00:05:51,860
+quand ils veulent générer une vidéo IA.
+
+202
+00:05:51,980 --> 00:05:53,400
+Ils vont directement aller dans Higgsfield, aller
+
+203
+00:05:53,400 --> 00:05:55,720
+dans Vidéo, générer la vidéo et écrire le
+
+204
+00:05:55,720 --> 00:05:57,760
+prompt pour générer la vidéo ou peu importe.
+
+205
+00:05:57,900 --> 00:05:59,520
+Donc, c'est bien lorsque tu veux générer une
+
+206
+00:05:59,520 --> 00:06:01,760
+vidéo de toute pièce, mais tu risques d'être
+
+207
+00:06:01,760 --> 00:06:02,760
+déçu sur le résultat.
+
+208
+00:06:02,860 --> 00:06:04,440
+Tu risques de faire plusieurs essais et perdre
+
+209
+00:06:04,440 --> 00:06:04,900
+beaucoup d'argent.
+
+210
+00:06:05,040 --> 00:06:06,940
+Le workflow idéal, c'est tu vas d'abord dans
+
+211
+00:06:06,940 --> 00:06:09,940
+Images et tu génères d'abord les scènes de
+
+212
+00:06:09,940 --> 00:06:10,360
+ta vidéo.
+
+213
+00:06:10,360 --> 00:06:12,720
+Tu génères les images des différentes scènes
+
+214
+00:06:12,720 --> 00:06:15,360
+de ta vidéo et ensuite, tu prendras ces images
+
+215
+00:06:15,360 --> 00:06:17,620
+-là et tu vas les transformer en ta vidéo.
+
+216
+00:06:17,780 --> 00:06:19,200
+Tu vois, donc c'est un peu comme un storyboard.
+
+217
+00:06:19,300 --> 00:06:21,380
+Tu vas d'abord créer le storyboard de ta vidéo
+
+218
+00:06:21,380 --> 00:06:23,600
+en images, plusieurs photos et ensuite, tu
+
+219
+00:06:23,600 --> 00:06:24,440
+prendras ces photos-là
+
+220
+00:06:24,440 --> 00:06:26,260
+et tu iras maintenant générer les vidéos avec
+
+221
+00:06:26,260 --> 00:06:26,460
+ça.
+
+222
+00:06:26,820 --> 00:06:29,760
+Et là, tu seras sûr que le rendu sera directement
+
+223
+00:06:29,760 --> 00:06:31,700
+fidèle à tes images que tu auras générées.
+
+224
+00:06:31,800 --> 00:06:33,100
+Et là où tu vas économiser de l'argent, c
+
+225
+00:06:33,100 --> 00:06:35,260
+'est que pour générer des images, ça coûte
+
+226
+00:06:35,260 --> 00:06:35,940
+presque rien.
+
+227
+00:06:35,940 --> 00:06:38,360
+Ça peut te coûter un, deux crédits, trois
+
+228
+00:06:38,360 --> 00:06:40,180
+crédits, souvent cinq crédits pour générer
+
+229
+00:06:40,180 --> 00:06:40,620
+des images.
+
+230
+00:06:40,760 --> 00:06:42,220
+Donc, tu peux faire beaucoup d'essais, beaucoup
+
+231
+00:06:42,220 --> 00:06:44,680
+d'erreurs et vraiment avoir le set d'images
+
+232
+00:06:44,680 --> 00:06:45,020
+parfait
+
+233
+00:06:45,020 --> 00:06:47,020
+que tu vas utiliser pour générer ensuite tes
+
+234
+00:06:47,020 --> 00:06:47,300
+vidéos.
+
+235
+00:06:47,500 --> 00:06:49,820
+Astuce numéro 6, c'est au niveau du prompt.
+
+236
+00:06:50,160 --> 00:06:52,340
+Lorsque tu génères des vidéos, le prompt que
+
+237
+00:06:52,340 --> 00:06:52,920
+tu vas utiliser,
+
+238
+00:06:53,160 --> 00:06:55,180
+il faudrait que tu sois le plus descriptif
+
+239
+00:06:55,180 --> 00:06:57,400
+possible dans le prompt pour éviter vraiment
+
+240
+00:06:57,400 --> 00:06:58,740
+de faire trop d'essais.
+
+241
+00:06:58,840 --> 00:07:00,280
+Donc, il faut préciser comment tu veux que
+
+242
+00:07:00,280 --> 00:07:02,040
+les personnages soient, les différents angles
+
+243
+00:07:02,040 --> 00:07:02,680
+de caméra,
+
+244
+00:07:02,680 --> 00:07:04,620
+l'ajustement des lumières, il faut aller le
+
+245
+00:07:04,620 --> 00:07:06,780
+plus possible dans les détails quand tu écris
+
+246
+00:07:06,780 --> 00:07:07,100
+tes prompts.
+
+247
+00:07:07,260 --> 00:07:09,360
+Et l'idéal, c'est d'utiliser un ChatGPT
+
+248
+00:07:09,360 --> 00:07:11,300
+ou un cloud pour t'aider à perfectionner tes
+
+249
+00:07:11,300 --> 00:07:11,480
+prompts.
+
+250
+00:07:11,580 --> 00:07:13,280
+Parce que sans ça, eh bien, crois-moi que
+
+251
+00:07:13,280 --> 00:07:15,220
+tu feras plein d'essais, tu ne seras pas satisfait,
+
+252
+00:07:15,360 --> 00:07:15,600
+etc.
+
+253
+00:07:15,900 --> 00:07:17,500
+Et chaque essai va te coûter de l'argent.
+
+254
+00:07:17,600 --> 00:07:19,340
+Et à chaque nouvel essai, tu te rends compte
+
+255
+00:07:19,340 --> 00:07:20,760
+que la vidéo, elle va changer, elle ne sera
+
+256
+00:07:20,760 --> 00:07:21,380
+pas fidèle.
+
+257
+00:07:21,500 --> 00:07:23,600
+Donc, c'est vraiment important de bien perfectionner
+
+258
+00:07:23,600 --> 00:07:24,120
+tes prompts.
+
+259
+00:07:24,360 --> 00:07:25,900
+Maintenant, astuce numéro 7 qui n'est pas
+
+260
+00:07:25,900 --> 00:07:27,940
+forcément une astuce, mais plus une information,
+
+261
+00:07:27,940 --> 00:07:30,040
+c'est que lorsque tu lances une génération
+
+262
+00:07:30,040 --> 00:07:32,260
+dans la vidéo image dans Higgsfield et que la
+
+263
+00:07:32,260 --> 00:07:33,200
+génération bug,
+
+264
+00:07:33,300 --> 00:07:34,840
+on va dire qu'il y a genre un bug technique
+
+265
+00:07:34,840 --> 00:07:36,740
+de leur niveau et que ça n'arrive pas à générer
+
+266
+00:07:36,740 --> 00:07:37,300
+ton contenu,
+
+267
+00:07:37,360 --> 00:07:39,380
+tu seras automatiquement remboursé tes crédits.
+
+268
+00:07:39,460 --> 00:07:40,640
+Donc, sachant que ce n'est pas de ta faute.
+
+269
+00:07:40,780 --> 00:07:41,980
+Donc, ça, c'est une chose aussi à savoir.
+
+270
+00:07:42,140 --> 00:07:43,360
+Alors, ce n'est pas une astuce, mais c'est
+
+271
+00:07:43,360 --> 00:07:44,820
+plus une information bonne à savoir.
+
+272
+00:07:45,020 --> 00:07:46,480
+Donc, je te rappelle que le lien pour pouvoir
+
+273
+00:07:46,480 --> 00:07:48,860
+utiliser Higgsfield se retrouvera dans la description.
+
+274
+00:07:48,860 --> 00:07:50,500
+C'est le premier lien dans la description
+
+275
+00:07:50,500 --> 00:07:52,700
+et aussi le premier lien du commentaire épinglé.
+
+276
+00:07:52,820 --> 00:07:54,140
+Et à la fin de la vidéo aussi, je te mettrai
+
+277
+00:07:54,140 --> 00:07:56,020
+une autre vidéo que je t'invite à aller regarder.
+
+278
+00:07:56,280 --> 00:07:56,580
+Peace out.

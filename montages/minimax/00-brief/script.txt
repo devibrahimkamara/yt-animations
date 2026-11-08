@@ -1,0 +1,48 @@
+TITLE: I Built a Mobile Game With AI in 15 Minutes (Zero Coding)
+
+HOOK
+[Screen: the finished game running in the iPhone preview, blocks stacking, score going up]
+This game didn't exist 15 minutes ago. I didn't write a single line of code, I designed every visual myself, and it already runs on a phone. By the end of this video, you'll know exactly how to build your own.
+INTRO
+So yes, you can build a game without coding. I used MiniMax Code, an AI workspace where you can design your game's look, build it, test it on a phone screen and share it, all in one place. The whole thing took me about 15 minutes.
+And this isn't just for fun. Simple browser games like this one are published on platforms like Poki and CrazyGames, which share their ad revenue with the people who make the games.
+I'll show you every step, and the full prompt is in the description so you can copy it.
+VALUE
+Step 1: Design the game before you build it
+Re-hook: Most AI games look cheap. That's because people skip this step.
+Story:
+ [Screen: download page, sign in, Coding mode, empty folder attached as workspace]
+ I download the MiniMax Code desktop app (link in the pinned comment), sign in, choose Coding mode, and attach an empty folder where the game will live.
+[Screen: right panel → + → Canvas]
+ Now I open the Infinite Canvas. I ask the AI to generate two visual directions for my game:
+Generate game assets for a one-tap mobile stacking game called "Stack Up", in two visual directions: A) soft pastel candy style, B) neon night style. For each: a background, 3 block styles, and a title logo.
+[Screen: both directions laid out side by side on the canvas, zooming in]
+ Both directions are now side by side on the canvas. I zoom in, compare them, and the pastel version reads much better on a small screen. I select those assets and click Add to chat, so they go straight into the build.
+Payout: Your game now has a real visual identity before a single line of code exists, which is what separates a game people remember from one they close in 5 seconds.
+Step 2: Let the Game Studio build it
+Re-hook: Now the fun part. We turn these images into a real, playable game.
+Story:
+ [Screen: Plugin Marketplace → install Game Studio → + beside the message box → Plugins → Game Studio]
+ I install the Game Studio plugin from the Plugin Marketplace, then select it next to the message box. It gives the AI specialized skills for building games, not just generic code.
+[Screen: model selector → M3.1, reasoning level]
+ For the model, I pick M3.1, MiniMax's newest model. I set reasoning to high, because we're building a full game from scratch. For quick fixes later, a lower level is faster.
+[Screen: Goal set, full prompt pasted and readable]
+ I set a Goal so the AI knows exactly what "finished" means, then I paste my prompt:
+Build a one-tap mobile browser game called "Stack Up" using the attached assets. A block slides left and right; tapping drops it onto the tower. The overhanging part gets cut off, so blocks get smaller. The game ends when a block misses completely.
+ Required: start screen with the logo, live score, best score saved on the device, game over screen with a "Play again" button, simple sound effects.
+ Success criteria: works with one thumb on a phone, no layout issues in portrait mode, restarts instantly.
+Payout: Because the AI knows what "done" looks like and has game-specific skills, it builds and checks its own work instead of stopping halfway.
+Step 3: Test it on a phone and share it
+Re-hook: The game works on my computer. But almost everyone will play it on a phone.
+Story:
+ [Screen: built-in Browser, device menu → Responsive → iPhone XR, playing a round]
+ The game opens in the built-in browser. I switch from Responsive to iPhone XR, and there's a problem: the "Play again" button is tiny, and blocks move way too fast on a small screen. So I name the exact fix:
+On mobile, make the "Play again" button twice as big and centered, and reduce the starting block speed by 30%.
+[Screen: updated version, replaying, then Site → copy share link]
+ Replay, and it feels right. I open Site, check the saved version, and copy the share link. Anyone can now play it on their phone.
+To make money, you submit a game like this to web game platforms. They host it for free, show ads, and share the revenue with you. On Poki, when players come from your own audience, you keep 100% of that revenue. To be honest, one small game won't make you rich. The winners test many ideas fast, and that's exactly what this workflow allows: one idea, one afternoon.
+Payout: You now have a designed, tested, shareable game, ready for its first players.
+CTA
+You can try MiniMax Code for free and claim daily check-in points for coding, design, research, video creation and more, including H3 and H3 Max. Normal days give you 400 points, days 4 and 7 give you 1,000, so that's 4,000 points over a full week. All the links are in my pinned comment.
+ENDSCREEN
+Now you know how to build a game. But a game is the fun version. If you want something that pays you every single month, watch this video next, where I show you how to build a SaaS with AI. It's the exact same skill, pointed at a business.

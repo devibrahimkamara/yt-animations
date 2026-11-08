@@ -1,0 +1,24 @@
+P0_hook|151185|duban|Thip Trong|118|Dreamy/Restless|https://audiocdn.epidemicsound.com/lqmp3/01KTGNWF6HRBNT6E3VJVV1Z0QA.mp3
+P0_hook|3545|4am|Carl Henriksson|120|Mysterious/Restless|https://audiocdn.epidemicsound.com/lqmp3/01KTGNCTX4RX6515DCC4VVZ23Z.mp3
+P0_hook|276212|bakka|Taelimb, Molife|96|Dark/Laid Back|https://audiocdn.epidemicsound.com/lqmp3/01KTE5GPYYRP1TKMP2PY6W0NHM.mp3
+P0_hook|151196|seven_eyes|Thip Trong|117|Dark/Restless|https://audiocdn.epidemicsound.com/lqmp3/01KJK56J8NN4CTZGS5S4KK02H1.mp3
+P1_offre|283724|where_it_all_happened|Dian Shuai|118|Dark/Suspense|https://audiocdn.epidemicsound.com/lqmp3/01KK3Y3XSA6FGVFW9GYYNBASTF.mp3
+P1_offre|253287|deception_uncovered|Experia|89|Dark/Mysterious|https://audiocdn.epidemicsound.com/lqmp3/01KTGMKK4RS72T37JCKF34M7C4.mp3
+P1_offre|253212|out_there|Out To The World|99|Dark/Suspense|https://audiocdn.epidemicsound.com/lqmp3/01KTGJZG1GK3Y7DP379M23H7A9.mp3
+P1_offre|150755|ramo_s_game_is_on|Playtown|120|Suspense/Restless|https://audiocdn.epidemicsound.com/lqmp3/01KTGN4BGQ2W35TQVX8XKMCZDF.mp3
+P2_prompt|253600|axon_terminal|Out To The World|120|Dark/Restless|https://audiocdn.epidemicsound.com/lqmp3/01KTGG194974EQACCCDQ72SGGC.mp3
+P2_prompt|284812|trace|Lennon Hutton|156|Dreamy/Suspense|https://audiocdn.epidemicsound.com/lqmp3/01KVZN1J8ZN4E99Q3760886KNF.mp3
+P2_prompt|283919|77_cycles|Lennon Hutton|170|Dark/Mysterious|https://audiocdn.epidemicsound.com/lqmp3/01KK81WZPHMXEZ5PSPKBCV2ZHW.mp3
+P2_prompt|253285|behind_the_curtain|Blue Saga|75|Dreamy/Suspense|https://audiocdn.epidemicsound.com/lqmp3/01KTGMCH8QAD7X9W94K7JZ7WR1.mp3
+P3_site|285081|nucleus|Hampus Naeselius|80|Epic/Sentimental/Elegant|https://audiocdn.epidemicsound.com/lqmp3/01KZNPP1KTZAWZD97M40891H61.mp3
+P3_site|284868|vital|Christoffer Moe Ditlevsen|130|Epic/Sentimental/Elegant|https://audiocdn.epidemicsound.com/lqmp3/01KWY05KB9ND3VGAV1AS0MEGS7.mp3
+P3_site|284296|baring|Hampus Naeselius|90|Epic/Mysterious/Suspense|https://audiocdn.epidemicsound.com/lqmp3/01KM2KFCNZ382ZV53SSSENJPS1.mp3
+P3_site|284679|fable|Jakob Ahlbom|147|Epic/Hopeful/Elegant|https://audiocdn.epidemicsound.com/lqmp3/01M0T1RMRQ9A5TE7EBQ97ZJF9K.mp3
+P4_modifier|249475|riddle|Shiruky|120|Hopeful/Dreamy|https://audiocdn.epidemicsound.com/lqmp3/01KTGXWP2S25K6493YS7SP4T7S.mp3
+P4_modifier|249457|eighties_lawyer|Shiruky|112|Dreamy/Laid Back|https://audiocdn.epidemicsound.com/lqmp3/01KTJJV7Q659PD9X33ZVCC3HEZ.mp3
+P4_modifier|150489|aftermath|Harbours & Oceans|96|Dreamy/Eccentric|https://audiocdn.epidemicsound.com/lqmp3/01KTGGDHDRWSZ7TTX92HEBGD6Y.mp3
+P4_modifier|150011|rain|Pableno|120|Dreamy/Sentimental|https://audiocdn.epidemicsound.com/lqmp3/01KTGCV1S1338GST8F6G7ER7RJ.mp3
+P5_clients|285339|shadowfall|Henry Miles|83|Epic/Dark/Mysterious|https://audiocdn.epidemicsound.com/lqmp3/01M116QPQESA1JJ2BNBEP250P3.mp3
+P5_clients|285051|treasure_hunt|Johan Landqvist|106|Epic/Hopeful|https://audiocdn.epidemicsound.com/lqmp3/01KZ60HAMK43GMKV1STY8NFH83.mp3
+P5_clients|283850|blade_of_light|Dian Shuai|118|Epic/Suspense|https://audiocdn.epidemicsound.com/lqmp3/01KJTEKSR5J0K1S7J05A64CMM9.mp3
+P5_clients|283181|alta|Christoffer Moe Ditlevsen|95|Hopeful/Elegant|https://audiocdn.epidemicsound.com/lqmp3/01KK830P7N570NFG90K56WY3K1.mp3

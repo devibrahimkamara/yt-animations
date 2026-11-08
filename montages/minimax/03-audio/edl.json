@@ -1,0 +1,35 @@
+{
+ "duration": 610.844,
+ "items": [
+  {
+   "type": "src",
+   "out": 0.0,
+   "src_in": 0.0,
+   "src_out": 187.47
+  },
+  {
+   "type": "vo",
+   "out": 187.47,
+   "dur": 14.35,
+   "label": "V1"
+  },
+  {
+   "type": "src",
+   "out": 201.82,
+   "src_in": 187.47,
+   "src_out": 568.5
+  },
+  {
+   "type": "vo",
+   "out": 582.85,
+   "dur": 13.5,
+   "label": "V2"
+  },
+  {
+   "type": "src",
+   "out": 596.35,
+   "src_in": 568.5,
+   "src_out": 582.9935625
+  }
+ ]
+}

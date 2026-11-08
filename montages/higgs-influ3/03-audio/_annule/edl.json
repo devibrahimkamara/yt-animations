@@ -1,0 +1,183 @@
+{
+ "duration": 593.905,
+ "speed_final": 1.1,
+ "items": [
+  {
+   "type": "insert",
+   "out": 0.0,
+   "dur": 3.0,
+   "label": "R1 cold open : référence ↔ chat",
+   "voice_src": [
+    493.55,
+    495.4
+   ],
+   "voice_at": 1.05
+  },
+  {
+   "type": "src",
+   "out": 3.0,
+   "src_in": 0.0,
+   "src_out": 69.52
+  },
+  {
+   "type": "src",
+   "out": 72.52,
+   "src_in": 69.625,
+   "src_out": 70.0
+  },
+  {
+   "type": "insert",
+   "out": 72.895,
+   "dur": 1.0,
+   "label": "Carton · Format 1"
+  },
+  {
+   "type": "src",
+   "out": 73.895,
+   "src_in": 70.0,
+   "src_out": 76.19
+  },
+  {
+   "type": "src",
+   "out": 80.085,
+   "src_in": 76.33,
+   "src_out": 90.555
+  },
+  {
+   "type": "src",
+   "out": 94.31,
+   "src_in": 90.685,
+   "src_out": 119.735
+  },
+  {
+   "type": "src",
+   "out": 123.36,
+   "src_in": 119.945,
+   "src_out": 125.45
+  },
+  {
+   "type": "insert",
+   "out": 128.865,
+   "dur": 1.0,
+   "label": "Carton · Format 2"
+  },
+  {
+   "type": "src",
+   "out": 129.865,
+   "src_in": 125.45,
+   "src_out": 165.45
+  },
+  {
+   "type": "src",
+   "out": 169.865,
+   "src_in": 167.4,
+   "src_out": 196.45
+  },
+  {
+   "type": "insert",
+   "out": 198.915,
+   "dur": 1.0,
+   "label": "Carton · Format 3"
+  },
+  {
+   "type": "src",
+   "out": 199.915,
+   "src_in": 196.45,
+   "src_out": 245.0
+  },
+  {
+   "type": "src",
+   "out": 248.465,
+   "src_in": 246.1,
+   "src_out": 255.105
+  },
+  {
+   "type": "src",
+   "out": 257.47,
+   "src_in": 255.19,
+   "src_out": 258.5
+  },
+  {
+   "type": "insert",
+   "out": 260.78,
+   "dur": 1.0,
+   "label": "Carton · Format mort"
+  },
+  {
+   "type": "src",
+   "out": 261.78,
+   "src_in": 258.5,
+   "src_out": 273.515
+  },
+  {
+   "type": "src",
+   "out": 276.795,
+   "src_in": 273.63,
+   "src_out": 310.46
+  },
+  {
+   "type": "src",
+   "out": 313.625,
+   "src_in": 310.56,
+   "src_out": 317.2
+  },
+  {
+   "type": "insert",
+   "out": 320.265,
+   "dur": 1.0,
+   "label": "Carton · La pratique"
+  },
+  {
+   "type": "src",
+   "out": 321.265,
+   "src_in": 317.2,
+   "src_out": 482.68
+  },
+  {
+   "type": "src",
+   "out": 486.745,
+   "src_in": 486.3,
+   "src_out": 559.93
+  },
+  {
+   "type": "insert",
+   "out": 560.375,
+   "dur": 8.5,
+   "label": "R9 showcase : original + 4 rendus"
+  },
+  {
+   "type": "src",
+   "out": 568.875,
+   "src_in": 559.93,
+   "src_out": 569.31
+  },
+  {
+   "type": "src",
+   "out": 578.255,
+   "src_in": 569.4,
+   "src_out": 585.05
+  }
+ ],
+ "cuts": [
+  [
+   245.0,
+   246.1,
+   "répétition « et les gens vont suivre »"
+  ],
+  [
+   165.45,
+   167.4,
+   "R5 « chaque jour il y a des nouvelles parties »"
+  ],
+  [
+   482.68,
+   486.3,
+   "R7 « j'ai fait une erreur… deux fois »"
+  ],
+  [
+   585.05,
+   9999,
+   "R10 « Allez, peace out »"
+  ]
+ ]
+}

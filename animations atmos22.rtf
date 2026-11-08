@@ -1,0 +1,1651 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 ANIMATION 1 : "LA QUESTION QUI SE R\'c9\'c9CRIT"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, dur\'e9e 150 frames (5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond plein \'e9cran : #0B0B0F, avec un l\'e9ger d\'e9grad\'e9 radial au centre (#15151C) et une vignette discr\'e8te sur les bords
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Montserrat ExtraBold (800), via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Couleurs : texte principal #FFFFFF, trait de barrage #FF3B30, mot accent #FFD60A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Aucun \'e9l\'e9ment 3D, tout en HTML/CSS/SVG
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tous les textes restent dans une zone de s\'e9curit\'e9 de 120 px depuis les bords
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Illustrer la phrase : "La question, ce n'est plus : est-ce que je suis capable de lancer un business ? Mais c'est : lequel choisir ?"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Effet : l'ancienne question est barr\'e9e, repouss\'e9e vers le haut, puis remplac\'e9e par la vraie question.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 1 : \'e9criture de l'ancienne question (frames 0 \'e0 45)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Texte : "Est-ce que je suis capable ?"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Taille 96 px, blanc, centr\'e9 horizontalement, l\'e9g\'e8rement au-dessus du centre vertical (y = 45 % de la hauteur)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Apparition mot par mot, d\'e9calage de 6 frames entre chaque mot : "Est-ce" (f0), "que" (f6), "je" (f12), "suis" (f18), "capable" (f24), "?" (f30)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chaque mot : opacity 0 \uc0\u8594  1 et translateY 24 px \u8594  0 sur 12 frames, spring (damping 14, stiffness 110)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - La phrase est enti\'e8rement lisible \'e0 partir de la frame 42
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 2 : le barrage (frames 45 \'e0 69)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Un trait SVG rouge #FF3B30, \'e9paisseur 10 px, bords arrondis, traverse le texte de gauche \'e0 droite \'e0 mi-hauteur des lettres
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - L\'e9ger angle de -2 degr\'e9s pour un effet "trac\'e9 \'e0 la main"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Animation du strokeDashoffset de 100 % \'e0 0 % sur 24 frames, easing Easing.out(Easing.cubic)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pendant le trac\'e9, l'opacit\'e9 du texte descend de 1 \'e0 0.4
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - \'c0 la frame 69 : petit "shake" horizontal du texte (\'b16 px sur 4 frames) pour l'impact
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 3 : l'ancienne question s'efface vers le haut (frames 69 \'e0 90)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le bloc (texte + trait) se d\'e9place de y = 45 % vers y = 22 %
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Scale 1 \uc0\u8594  0.7, opacity 0.4 \u8594  0.2
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Dur\'e9e 21 frames, interpolate avec Easing.inOut(Easing.cubic)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 4 : la vraie question (frames 72 \'e0 138)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Texte sur deux lignes, centr\'e9, positionn\'e9 autour de y = 60 %
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ligne 1 : "Lequel" en 150 px, couleur accent #FFD60A, entre \'e0 la frame 72
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ligne 2 : "choisir ?" en 150 px, blanc, entre \'e0 la frame 80
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e de chaque ligne : scale 0.6 \uc0\u8594  1, opacity 0 \u8594  1, translateY 40 px \u8594  0, spring (damping 12, stiffness 120, mass 0.8) pour un petit rebond
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Derri\'e8re "Lequel" : halo lumineux jaune (text-shadow 0 0 40px rgba(255,214,10,0.5)) qui s'intensifie entre les frames 84 et 100
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - De la frame 100 \'e0 138 : respiration tr\'e8s l\'e9g\'e8re de l'ensemble (scale 1 \uc0\u8594  1.03 \u8594  1, sinuso\'efdale), pour que l'image ne soit pas fig\'e9e
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - La vraie question est lisible et stable de la frame 90 \'e0 la frame 138, soit environ 1,6 s
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 5 : sortie (frames 138 \'e0 150)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fondu de tout le contenu vers 0 sur 12 frames, scale 1 \uc0\u8594  0.97
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - La derni\'e8re frame est enti\'e8rement vide (fond uniquement) pour un encha\'eenement propre avec la suite
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OPTION OVERLAY
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Si l'animation doit se superposer \'e0 la face cam, rends-la en fond transparent (codec ProRes 4444 ou WebM VP9 avec alpha) et remplace le fond sombre par un voile noir \'e0 55 % d'opacit\'e9.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES DE QUALIT\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Aucun texte ne doit \'eatre en mouvement pendant les 20 derni\'e8res frames de lecture (stabilit\'e9 = lisibilit\'e9)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Garder les deux couleurs d'accent uniquement (rouge pour barrer, jaune pour choisir), rien d'autre
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pas d'effet de blur sur le texte
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les animations doivent utiliser spring() et interpolate() de Remotion, pas de CSS transitions
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 ANIMATION 2 : "L'AVALANCHE D'ID\'c9ES"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, dur\'e9e 150 frames (5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond plein \'e9cran : #0B0B0F avec d\'e9grad\'e9 radial discret au centre (#15151C) et vignette l\'e9g\'e8re, identique \'e0 l'animation 1 pour garder une coh\'e9rence visuelle
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Police : Montserrat Bold (700) pour les cartes, Montserrat ExtraBold (800) pour la l\'e9gende, via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Palette des cartes (6 couleurs d'accent, attribu\'e9es par random(`color-$\{i\}`)) : #FFD60A, #FF3B30, #30D158, #0A84FF, #BF5AF2, #FF9F0A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout en HTML/CSS/SVG, aucun \'e9l\'e9ment 3D
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout le hasard passe par random() de Remotion avec une seed fixe par carte (jamais Math.random), pour un rendu identique \'e0 chaque export
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Illustrer : "on est juste submerg\'e9 par une montagne d'id\'e9es business". Des cartes d'id\'e9es tombent et s'empilent en pyramide pendant que la cam\'e9ra d\'e9zoome, pour donner une vraie sensation de masse \'e9crasante. Le spectateur n'a pas besoin de lire chaque carte, c'est l'effet de volume qui compte.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 LES 36 CARTES (ordre d'apparition, de la rang\'e9e du bas vers le haut)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Dropshipping, SaaS, Newsletter, Agence IA, Ebook, Freelancing, Print on demand, Cha\'eene YouTube, Formation en ligne, Affiliation, Template Notion, Coaching, Podcast, Application mobile, Marketplace, Traduction, Montage vid\'e9o, Cr\'e9ation de logos, Community, Revente, Voix off IA, Consulting, G\'e9n\'e9rateur d'images, Chatbot, Newsletter payante, Automatisation, Site de niche, R\'e9seaux sociaux, Prompts \'e0 vendre, Webinaire, Micro-SaaS, Boutique Etsy, Blog SEO, Service client IA, Cours Udemy, Id\'e9e n\'b047
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 STRUCTURE DE LA PYRAMIDE (coordonn\'e9es dans le "monde", avant la cam\'e9ra)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Carte : 240 x 84 px, border-radius 16 px, fond #1A1A22, bordure gauche de 8 px dans la couleur d'accent de la carte, bordure fine 1 px rgba(255,255,255,0.08)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Texte : 30 px, blanc, align\'e9 \'e0 gauche avec 24 px de padding, une seule ligne (r\'e9duire \'e0 26 px si le texte d\'e9passe)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Rang\'e9e r (0 = bas) contient n = 8 - r cartes : 8, 7, 6, 5, 4, 3, 2, 1 (total 36)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Position finale de la carte j dans la rang\'e9e r : x = 960 + (j - (n-1)/2) * 252, y = 880 - r * 96
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Rotation finale r\'e9siduelle : (random(`rot-$\{i\}`) - 0.5) * 3 degr\'e9s, pour un c\'f4t\'e9 "empil\'e9 \'e0 la main" sans que la pyramide devienne illisible
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ligne de sol tr\'e8s fine \'e0 y = 926 : trait rgba(255,255,255,0.12), 1 px, pleine largeur
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TIMING DES CHUTES (frames 6 \'e0 110)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ordre : carte i = 0 \'e0 35, rang\'e9e du bas d'abord, de gauche \'e0 droite
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame de d\'e9part de la carte i : spawn(i) = 6 + round(99 * (1 - (1 - i/35)^1.3)), avec un minimum de 1 frame d'\'e9cart entre deux cartes. R\'e9sultat : les premi\'e8res cartes tombent doucement (environ une toutes les 4 frames), puis le rythme s'acc\'e9l\'e8re jusqu'\'e0 l'avalanche
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Position de d\'e9part : y = -200 (hors \'e9cran en haut), x = x_final + (random(`dx-i`)-0.5)*80,rotationded\'e9part=(random(`r0-\{i\}`) - 0.5) * 24 degr\'e9s
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chute : spring sur translateY, config damping 13, stiffness 140, mass 0.9, ce qui donne un petit rebond \'e0 l'atterrissage
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Rotation : interpolate de la rotation de d\'e9part vers la rotation finale pendant la chute
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Opacit\'e9 : 1 d\'e8s le d\'e9part, pas de fondu \'e0 l'entr\'e9e
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 IMPACT
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Quand une rang\'e9e est compl\'e8te (derni\'e8re carte pos\'e9e), micro-shake de l'ensemble du monde : translateY de \'b13 px sur 4 frames, amorti. Ne pas shaker \'e0 chaque carte
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pour les 3 derni\'e8res rang\'e9es (r = 5, 6, 7), shake un peu plus marqu\'e9 (\'b15 px)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CAM\'c9RA (frames 0 \'e0 110)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Conteneur "monde" avec transformOrigin \'e0 (960px, 880px)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Scale : 1.25 \uc0\u8594  0.8 sur les frames 0 \'e0 110, Easing.out(Easing.cubic)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Au scale final de 0.8, la rang\'e9e du bas mesure 8 x 252 x 0.8 = 1613 px de large, donc la pyramide enti\'e8re tient \'e0 l'\'e9cran avec de la marge
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - L\'e9ger translateY de la cam\'e9ra : +60 px \uc0\u8594  0 pour accompagner le d\'e9zoom
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - De la frame 110 \'e0 138 : la cam\'e9ra reste fixe, avec une tr\'e8s l\'e9g\'e8re respiration (scale 0.8 \uc0\u8594  0.81 \u8594  0.8)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CARTE FINALE "ID\'c9E N\'b047"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - C'est la carte du sommet (r = 7). Elle re\'e7oit \'e0 la frame 112 un halo jaune : box-shadow 0 0 40px rgba(255,214,10,0.45), qui pulse une fois (opacit\'e9 du halo 0 \uc0\u8594  1 \u8594  0.6 sur 18 frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - \'c7a cr\'e9e un point d'accroche pour l'encha\'eenement avec l'animation 3 (o\'f9 l'IA donne 47 id\'e9es)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 L\'c9GENDE (frames 104 \'e0 138)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Texte : "Une montagne d'id\'e9es", 88 px, blanc, ExtraBold, centr\'e9 horizontalement
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Position : y = 140 px depuis le haut, hors de la pyramide
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e : opacity 0 \uc0\u8594  1 et translateY 30 px \u8594  0 sur 14 frames, spring (damping 14, stiffness 110)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le mot "montagne" en jaune #FFD60A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Lisible et stable de la frame 120 \'e0 la frame 138, soit 0,6 s de lecture sur 4 mots. Comme la phrase est dite en voix off au m\'eame moment, c'est suffisant
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SORTIE (frames 138 \'e0 150)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fondu global vers 0 sur 12 frames, scale 1 \uc0\u8594  0.97
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Derni\'e8re frame : fond seul
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OPTION OVERLAY
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Si l'animation se superpose \'e0 la face cam : export en fond transparent (ProRes 4444 ou WebM VP9 avec alpha) et remplacer le fond par un voile noir \'e0 60 % d'opacit\'e9.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES DE QUALIT\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pas de flou, pas de motion blur sur les cartes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Aucune carte ne doit sortir de la zone de s\'e9curit\'e9 de 120 px sur les bords \'e0 l'\'e9tat final
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les cartes se chevauchent l\'e9g\'e8rement pendant la chute, c'est voulu (effet de chaos), mais \'e0 l'\'e9tat final aucune superposition ne doit cacher du texte
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Utiliser spring() et interpolate() de Remotion, pas de CSS transitions
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 ANIMATION 3 : "LE PROMPT ET LES 47 ID\'c9ES"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, dur\'e9e 210 frames (7 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond plein \'e9cran : #0B0B0F avec d\'e9grad\'e9 radial discret au centre (#15151C) et vignette l\'e9g\'e8re, identique aux animations 1 et 2
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Polices : Inter (500 et 600) pour l'interface de chat, Montserrat ExtraBold (800) pour le compteur, via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Couleurs : fen\'eatre #14141B, bulle du prompt #26262F, texte #FFFFFF, texte secondaire #9A9AA8, accent #FFD60A, num\'e9ros de liste #FFD60A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout en HTML/CSS/SVG, aucun logo de marque d'IA, interface volontairement g\'e9n\'e9rique
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout le hasard passe par random() de Remotion avec une seed fixe, jamais Math.random
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Illustrer : "j'ai demand\'e9 \'e0 l'intelligence artificielle de me donner des id\'e9es de business r\'e9alistes que je pouvais lancer sans budget, et elle m'en a donn\'e9 quarante-sept". Le prompt doit \'eatre lisible en entier, puis la r\'e9ponse d\'e9file tr\'e8s vite pendant qu'un gros compteur monte jusqu'\'e0 47.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 DISPOSITION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fen\'eatre de chat : x = 120 \'e0 1240 (largeur 1120 px), y = 120 \'e0 960 (hauteur 840 px), border-radius 28 px, fond #14141B, bordure 1 px rgba(255,255,255,0.08), ombre port\'e9e douce
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Barre de titre de la fen\'eatre : 3 points gris (rouge, jaune, vert \'e0 40 % d'opacit\'e9) \'e0 gauche, texte "Assistant IA" en 22 px #9A9AA8 au centre
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Zone du prompt : en haut de la fen\'eatre, marge de 40 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Zone de r\'e9ponse : un viewport de 520 px de hauteur sous le prompt, avec masque (overflow hidden) et fondu de 40 px en haut et en bas (linear-gradient mask)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Compteur : colonne de droite, centr\'e9 sur x = 1580, y = 540
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 1 : ouverture de la fen\'eatre (frames 0 \'e0 12)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - La fen\'eatre entre avec opacity 0 \uc0\u8594  1, scale 0.94 \u8594  1, translateY 30 px \u8594  0
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Spring (damping 15, stiffness 120)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 2 : frappe du prompt (frames 12 \'e0 68)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Bulle align\'e9e \'e0 droite dans la fen\'eatre, largeur max 900 px, padding 28 x 36 px, border-radius 24 px, fond #26262F
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Texte (32 px, Inter 500, blanc) : "Donne-moi des id\'e9es de business r\'e9alistes \'e0 lancer sans budget"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frappe lettre par lettre : nombre de caract\'e8res visibles = floor(interpolate(frame, [12, 66], [0, 62], clamp)), soit environ une lettre par frame. Le texte reste lisible car il est complet d\'e8s la frame 66 et tenu ensuite
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Curseur "|" jaune #FFD60A \'e0 la fin du texte, clignote toutes les 8 frames, dispara\'eet \'e0 la frame 70
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le texte est lisible en entier de la frame 66 \'e0 la frame 78, soit 0,4 s de lecture, compl\'e9t\'e9e par les 2 s de frappe elle-m\'eame
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 3 : envoi (frames 68 \'e0 78)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Un bouton rond jaune avec une fl\'e8che vers le haut appara\'eet en bas \'e0 droite de la bulle (frame 66)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame 70 : scale 1 \uc0\u8594  0.88 \u8594  1 sur 6 frames (effet de clic)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame 72 : la bulle du prompt monte l\'e9g\'e8rement (translateY -12 px) et passe \'e0 85 % d'opacit\'e9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame 74 : apparition de trois points "..." anim\'e9s (opacit\'e9 d\'e9cal\'e9e de 3 frames chacun) \'e0 l'endroit de la r\'e9ponse, qui disparaissent \'e0 la frame 80
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 4 : la liste d\'e9file (frames 78 \'e0 150)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Liste de 47 lignes, hauteur de ligne 56 px, hauteur totale 2632 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chaque ligne : num\'e9ro en jaune (28 px, Montserrat 800, largeur fixe 64 px, align\'e9 \'e0 droite) puis texte blanc (30 px, Inter 500) et une fine ligne de s\'e9paration rgba(255,255,255,0.06)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Contenu des lignes 1 \'e0 46 : les 35 premiers noms de l'animation 2 (Dropshipping, SaaS, Newsletter, Agence IA, Ebook, Freelancing, Print on demand, Cha\'eene YouTube, Formation en ligne, Affiliation, Template Notion, Coaching, Podcast, Application mobile, Marketplace, Traduction, Montage vid\'e9o, Cr\'e9ation de logos, Community, Revente, Voix off IA, Consulting, G\'e9n\'e9rateur d'images, Chatbot, Newsletter payante, Automatisation, Site de niche, R\'e9seaux sociaux, Prompts \'e0 vendre, Webinaire, Micro-SaaS, Boutique Etsy, Blog SEO, Service client IA, Cours Udemy) puis ces 11 lignes : Sous-titrage, Banque d'images IA, Gestion Instagram, R\'e9daction de CV, Sites vitrines, Agence de contenu, Newsletter locale, Calendrier \'e9ditorial, Audit SEO, Miniatures YouTube, Scripts vid\'e9o
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ligne 47 : "Id\'e9e n\'b047" (m\'eame texte que la derni\'e8re carte de l'animation 2, pour la continuit\'e9)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Progression p = interpolate(frame, [78, 150], [0, 1], \{ easing: Easing.bezier(0.5, 0, 0.2, 1), extrapolate clamp \}). Cette courbe d\'e9marre doucement (on lit les 4 ou 5 premi\'e8res id\'e9es) puis acc\'e9l\'e8re fortement, puis ralentit \'e0 la fin pour que les derni\'e8res lignes soient lisibles
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - translateY de la liste = -p * (2632 - 520) px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Apparition des lignes : pas d'animation individuelle, seulement un l\'e9ger fondu de 6 frames \'e0 l'entr\'e9e dans le viewport via le masque
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pas de motion blur sur le texte
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 COMPTEUR (frames 78 \'e0 150, puis tenu)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Gros chiffre en Montserrat 800, 320 px, blanc, centr\'e9 dans la colonne de droite
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Valeur = round(47 * p), avec le m\'eame p que le scroll pour que le chiffre soit synchronis\'e9 avec la liste
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Sous le chiffre : "id\'e9es" en 56 px #9A9AA8
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e du compteur \'e0 la frame 76 : opacity 0 \uc0\u8594  1 et scale 0.9 \u8594  1 sur 10 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les chiffres ne doivent pas faire "sauter" la mise en page : font-variant-numeric: tabular-nums et largeur fixe de 3 chiffres
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - \'c0 la frame 150, le compteur affiche exactement 47
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 5 : le moment "47" (frames 150 \'e0 198)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame 150 : le "47" passe en jaune #FFD60A avec un pulse unique (scale 1 \uc0\u8594  1.12 \u8594  1 sur 12 frames, spring damping 10, stiffness 160)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Halo derri\'e8re le chiffre : cercle flou jaune (rgba(255,214,10,0.25), rayon 260 px) qui s'allume entre les frames 150 et 165
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - La liste reste fig\'e9e sur les derni\'e8res lignes, la ligne 47 est surlign\'e9e (fond rgba(255,214,10,0.12), trait jaune de 4 px \'e0 gauche)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - De la frame 165 \'e0 198 : respiration tr\'e8s l\'e9g\'e8re de l'ensemble (scale 1 \uc0\u8594  1.015 \u8594  1) pour \'e9viter l'image statique
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le 47 final est lisible et stable pendant 1,6 s (frames 150 \'e0 198)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 6 : sortie (frames 198 \'e0 210)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fondu global vers 0 sur 12 frames, scale 1 \uc0\u8594  0.97
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Derni\'e8re frame : fond seul, pour encha\'eener proprement avec l'animation 4
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OPTION OVERLAY
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Si l'animation se superpose \'e0 la face cam : export en fond transparent (ProRes 4444 ou WebM VP9 avec alpha), fond remplac\'e9 par un voile noir \'e0 60 % d'opacit\'e9, et la fen\'eatre de chat reste opaque.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES DE QUALIT\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Aucun texte ne doit \'eatre en mouvement pendant les 20 derni\'e8res frames de lecture du prompt
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Rester sur deux couleurs d'accent seulement (jaune pour les chiffres et le moment cl\'e9, gris pour le secondaire)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Utiliser spring() et interpolate() de Remotion, pas de CSS transitions
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - V\'e9rifier que la ligne 47 est bien align\'e9e avec le bas du viewport \'e0 la frame 150
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 ANIMATION 4 : "L'\'c9LIMINATION : 47 \uc0\u8594  1"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, dur\'e9e 165 frames (5,5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond plein \'e9cran : #0B0B0F avec d\'e9grad\'e9 radial discret au centre (#15151C) et vignette l\'e9g\'e8re, identique aux animations 1 \'e0 3
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Polices : Montserrat ExtraBold (800) pour les chiffres et la l\'e9gende, Inter 600 pour le texte flout\'e9, via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Couleurs : tuile #1A1A22, bordure rgba(255,255,255,0.08), texte #FFFFFF, secondaire #9A9AA8, flash d'\'e9limination #FF3B30, tuile \'e9limin\'e9e #121216 avec chiffre #4A4A55, accent final #FFD60A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout en HTML/CSS/SVG, aucun \'e9l\'e9ment 3D
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout le hasard passe par random() de Remotion avec une seed fixe, jamais Math.random
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Illustrer : "dans ces quarante-sept, j'en ai choisi une". 47 tuiles num\'e9rot\'e9es s'\'e9teignent par vagues et tombent, jusqu'\'e0 ce qu'il n'en reste qu'une. Elle s'illumine, se centre et grossit, avec un titre flout\'e9 et un "?" pour cr\'e9er une boucle de curiosit\'e9 sans r\'e9v\'e9ler l'id\'e9e.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 LA GRILLE (47 tuiles)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tuile : 160 x 100 px, border-radius 16 px, fond #1A1A22, bordure 1 px rgba(255,255,255,0.08)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Num\'e9ro centr\'e9, Montserrat 800, 44 px, blanc
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 6 rang\'e9es : 5 rang\'e9es de 8 tuiles (num\'e9ros 1 \'e0 40) et une derni\'e8re rang\'e9e de 7 tuiles (num\'e9ros 41 \'e0 47), num\'e9rot\'e9es en lecture normale
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Espacement : 18 px entre tuiles, pas horizontal 178 px, pas vertical 118 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Centre de la tuile de colonne c (0 \'e0 7), rang\'e9e r (0 \'e0 5) : y = 180 + 118 * r. Pour r de 0 \'e0 4, x = 337 + 178 * c. Pour la derni\'e8re rang\'e9e (r = 5), x = 426 + 178 * c, ce qui la centre
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tuile survivante : la num\'e9ro 28 (rang\'e9e 3, colonne 3, centre en x = 871, y = 534). Elle est presque au centre de l'\'e9cran, donc son d\'e9placement final est court et fluide
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 COMPTEUR (en bas)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Texte : "47" en Montserrat 800, 96 px, blanc, suivi de "id\'e9es restantes" en 40 px #9A9AA8
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Position : centr\'e9 horizontalement, centre vertical \'e0 y = 900. Il est plac\'e9 au-dessus des tuiles (z-index sup\'e9rieur) pour que les tuiles qui tombent passent derri\'e8re lui
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - font-variant-numeric: tabular-nums et largeur fixe de 2 chiffres, pour \'e9viter que la mise en page saute
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Valeur \'e0 chaque frame = 47 moins le nombre de tuiles dont la frame de d\'e9clenchement est inf\'e9rieure ou \'e9gale \'e0 la frame courante. Le compteur est donc parfaitement synchronis\'e9 avec les chutes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e : fondu 0 \uc0\u8594  1 sur les frames 14 \'e0 26
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Quand la valeur atteint 1 (frame 78) : le chiffre passe en jaune #FFD60A et le label devient "id\'e9e restante"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Sortie : fondu vers 0 sur les frames 96 \'e0 106
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 1 : entr\'e9e de la grille (frames 2 \'e0 32)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chaque tuile entre avec un d\'e9calage en diagonale : delay = 2 + (rang\'e9e + colonne) * 1.2 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e : opacity 0 \uc0\u8594  1, scale 0.6 \u8594  1, translateY 20 px \u8594  0, spring (damping 14, stiffness 130)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Toutes les tuiles sont enti\'e8rement visibles \'e0 la frame 32
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pendant cette phase, l'ensemble de la grille passe de scale 0.98 \'e0 1 pour \'e9viter l'effet fig\'e9
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 2 : l'\'e9limination par vagues (frames 38 \'e0 80)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Ordre d'\'e9limination : trier les 46 tuiles non survivantes par random(`order-$\{num\'e9ro\}`) croissant. Les 17 premi\'e8res forment la vague 1, les 15 suivantes la vague 2, les 9 suivantes la vague 3, les 4 suivantes la vague 4, la derni\'e8re la vague 5.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 - Vague 1 : 17 tuiles, d\'e9marre \'e0 la frame 38, d\'e9calage de 0,6 frame entre chaque tuile. Reste 30
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Vague 2 : 15 tuiles, d\'e9marre \'e0 la frame 50, d\'e9calage de 0,6 frame. Reste 15
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Vague 3 : 9 tuiles, d\'e9marre \'e0 la frame 62, d\'e9calage de 0,8 frame. Reste 6
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Vague 4 : 4 tuiles, d\'e9marre \'e0 la frame 70, d\'e9calage de 1,5 frame. Reste 2
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Vague 5 : 1 tuile, frame 78. Reste 1 (le survivant)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 S\'e9quence d'une tuile \'e9limin\'e9e (t = frames \'e9coul\'e9es depuis son d\'e9clenchement) :
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - t = 0 \'e0 4 : flash rouge. Bordure et lueur int\'e9rieure passent \'e0 #FF3B30 (1 \uc0\u8594  3 px de bordure), l\'e9g\'e8re secousse horizontale de \'b14 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - t = 4 \'e0 8 : la tuile passe en gris. Fond #121216, chiffre #4A4A55, bordure grise
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - t = 8 \'e0 24 : chute. translateY de 0 \'e0 +1300 px avec Easing.in(Easing.quad) pour simuler la gravit\'e9, rotation de 0 \'e0 \'b125 degr\'e9s (signe et valeur via random(`rot-num\'e9ro`)),d\'e9rivehorizontalede\'b140px(viarandom(`drift-\{num\'e9ro\}`)). L'opacit\'e9 passe de 1 \'e0 0 sur les 6 derni\'e8res frames de la chute
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les tuiles qui tombent passent derri\'e8re le compteur
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 TENSION VISUELLE (frames 70 \'e0 80)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - \'c0 partir de la frame 70, la bordure de la tuile 28 passe progressivement du gris au jaune #FFD60A sur 10 frames (3 px). C'est discret mais \'e7a permet \'e0 l'\'9cil de la suivre
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 3 : la tuile survivante prend le centre (frames 86 \'e0 106)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - D\'e9clenchement \'e0 la frame 86, spring (damping 14, stiffness 100, mass 1), stable vers la frame 106
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Taille : largeur 160 \uc0\u8594  560 px, hhauteur 100 \u8594  380 px (animer width et height, pas scale, pour garder un texte net)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Position du centre : (871, 534) \uc0\u8594  (960, 500)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Border-radius 16 \uc0\u8594  28 px, bordure jaune #FFD60A de 3 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Lueur : box-shadow 0 0 60px rgba(255,214,10,0.45)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le num\'e9ro "28" r\'e9tr\'e9cit et se d\'e9place en badge en haut \'e0 gauche de la tuile (#28, jaune, Montserrat 800, 36 px, marge 28 px)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Anneau d'onde de choc : cercle SVG centr\'e9 en (960, 500), contour jaune de 4 px, rayon 200 \uc0\u8594  720 px sur les frames 98 \'e0 118, opacit\'e9 0.6 \u8594  0
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTENU DE LA TUILE FINALE (frames 92 \'e0 106)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Titre flout\'e9 : deux lignes de texte g\'e9n\'e9rique ("Business secret" puis "\'e0 r\'e9v\'e9ler"), Inter 600, 44 px, blanc \'e0 70 % d'opacit\'e9, filter: blur(14px), de fa\'e7on \'e0 ce que le texte soit totalement illisible. Il appara\'eet en fondu sur 10 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Gros point d'interrogation "?" au centre, Montserrat 800, 170 px, jaune #FFD60A, non flout\'e9 et plac\'e9 au-dessus du texte flout\'e9. Entr\'e9e \'e0 la frame 96 : scale 0 \uc0\u8594  1.15 \u8594  1, spring (damping 10, stiffness 170)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ici, le flou est voulu : c'est la seule exception \'e0 la r\'e8gle "pas de blur sur le texte"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 4 : l\'e9gende (frames 100 \'e0 153)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Texte : "J'en ai choisi une", Montserrat 800, 72 px, blanc, centr\'e9 horizontalement, centre vertical \'e0 y = 800
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le mot "une" est en jaune #FFD60A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e : opacity 0 \uc0\u8594  1 et translateY 30 px \u8594  0 sur 14 frames, spring (damping 14, stiffness 110)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Lisible et stable de la frame 112 \'e0 la frame 153, soit 1,4 s pour 4 mots
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 5 : respiration et mise en valeur (frames 106 \'e0 153)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - La tuile reste stable pendant plus de 1,5 s (de la frame 106 \'e0 la frame 153)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pulse de la lueur \'e0 la frame 108 : l'opacit\'e9 du halo passe de 0.45 \'e0 0.8 puis \'e0 0.55 sur 20 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - De la frame 124 \'e0 la frame 153 : respiration tr\'e8s l\'e9g\'e8re de la tuile (scale 1 \uc0\u8594  1.015 \u8594  1, sinuso\'efdale)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 6 : sortie (frames 153 \'e0 165)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fondu global vers 0 sur 12 frames, scale 1 \uc0\u8594  0.97
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Derni\'e8re frame : fond seul, pour encha\'eener proprement avec l'animation 5
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OPTION OVERLAY
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Si l'animation se superpose \'e0 la face cam : export en fond transparent (ProRes 4444 ou WebM VP9 avec alpha), fond remplac\'e9 par un voile noir \'e0 60 % d'opacit\'e9, tuiles et l\'e9gende restent opaques.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES DE QUALIT\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Deux couleurs d'accent seulement : rouge pour \'e9liminer, jaune pour le survivant
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Aucune tuile ne doit rester visible apr\'e8s la frame 104
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les chiffres des tuiles ne sont pas faits pour \'eatre lus, c'est l'effet de masse qui compte, mais le "47" initial et le compteur doivent toujours rester parfaitement lisibles
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Utiliser spring() et interpolate() de Remotion, pas de CSS transitions
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - V\'e9rifier que le compteur affiche exactement 1 \'e0 la frame 78 et que la tuile 28 n'est jamais d\'e9clench\'e9e dans les vagues
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 ANIMATION 5 : "LA TIMELINE DOCUMENT\'c9E"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, 120 frames (4 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : #0B0B0F avec d\'e9grad\'e9 radial discret (#15151C) et vignette l\'e9g\'e8re
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Polices : Montserrat ExtraBold (800) pour les titres, Inter 500 pour les sous-titres, via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Couleurs : piste #2A2A33, texte #FFFFFF, secondaire #9A9AA8, accent #FFD60A, REC #FF3B30
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout en HTML/CSS/SVG, spring() et interpolate() uniquement, pas de CSS transitions
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Illustrer "je vais tout te documenter du d\'e9but jusqu'\'e0 la fin" : une timeline \'e0 3 jalons, un curseur qui avance, et un dernier jalon myst\'e9rieux.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 DISPOSITION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Piste horizontale : x de 240 \'e0 1680, y = 540, \'e9paisseur 8 px, bords arrondis
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 3 jalons (cercles de 56 px) \'e0 x = 240, 960, 1680
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Labels sous les jalons : titre \'e0 y = 620 (44 px, Montserrat 800), sous-titre \'e0 y = 676 (28 px, Inter 500, #9A9AA8)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Indicateur REC en haut \'e0 gauche : centre \'e0 (120, 110)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 1 : la piste (frames 0 \'e0 20)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - La piste se trace de gauche \'e0 droite : scaleX 0 \uc0\u8594  1, transformOrigin left, Easing.out(Easing.cubic)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Indicateur REC : pastille rouge de 22 px + texte "REC" 34 px blanc. Apparition en fondu entre les frames 4 et 10, puis clignotement (opacit\'e9 1 / 0.2) toutes les 15 frames jusqu'\'e0 la fin
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 2 : jalon 1 (frames 14 \'e0 24)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Cercle jaune rempli, spring scale 0 \uc0\u8594  1 (damping 12, stiffness 150), \'e0 la frame 14
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Label "Jour 1" \'e0 la frame 18, sous-titre "Le choix de l'id\'e9e"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e des labels : opacity 0 \uc0\u8594  1 et translateY 16 px \u8594  0 sur 10 frames
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 3 : le curseur avance (frames 22 \'e0 90)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Curseur : petit triangle jaune de 36 px pointant vers le bas, au-dessus de la piste (y = 480), avec une barre de remplissage jaune de 8 px qui le suit sur la piste
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 22 \'e0 56 : x de 240 \'e0 960, Easing.inOut(Easing.quad)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Jalon 2 : visible en gris (#2A2A33) d\'e8s la frame 30, label "Lancement" et sous-titre "La mise en ligne" en gris d\'e8s la frame 34. \'c0 la frame 56 (arriv\'e9e du curseur) : le cercle passe en jaune avec un pop (scale 1 \uc0\u8594  1.25 \u8594  1) et le label passe en blanc
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 56 \'e0 90 : le curseur continue de 960 \'e0 1440 avec Easing.out(Easing.cubic), donc il ralentit et s'arr\'eate aux deux tiers du chemin vers le jalon 3
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 4 : le jalon myst\'e8re (frames 46 \'e0 108)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Jalon 3 : cercle en pointill\'e9s (stroke-dasharray 8 8, contour #9A9AA8, 4 px) qui tourne lentement (1 tour toutes les 4 secondes), apparition \'e0 la frame 46
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Un "?" jaune de 40 px au centre, avec pulsation douce (scale 1 \uc0\u8594  1.15 \u8594  1 toutes les 20 frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Label "R\'e9sultats" \'e0 la frame 62 (blanc \'e0 70 %), sous-titre "Le verdict" en gris
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - De la frame 90 \'e0 108 : le curseur pulse doucement (scale 1 \uc0\u8594  1.15 \u8594  1) comme s'il attendait
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SORTIE (frames 108 \'e0 120)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fondu global vers 0 sur 12 frames, scale 1 \uc0\u8594  0.97, derni\'e8re frame : fond seul
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Aucun texte ne bouge pendant les 15 derni\'e8res frames avant la sortie
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Seulement 2 couleurs d'accent (jaune, rouge uniquement pour REC)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SON SUGG\'c9R\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un "tick" l\'e9ger \'e0 l'allumage de chaque jalon (frames 14 et 56), un "whoosh" doux pendant le d\'e9placement du curseur.
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 ANIMATION 6 : "LOWER THIRD AVEC COMPTEUR D'ANN\'c9ES"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, 150 frames (5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - FOND TRANSPARENT : export ProRes 4444 ou WebM VP9 avec alpha, \'e0 poser par-dessus ta face cam
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Polices : Montserrat ExtraBold (800), Inter 600, via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Couleurs : panneau rgba(11,11,15,0.88), nom #FFFFFF, secondaire #9A9AA8, accent #FFD60A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Zone de s\'e9curit\'e9 : 120 px depuis les bords
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Illustrer "je m'appelle Ibrahim Kamara, je fais du business sur Internet depuis 2020" avec un lower third pro et un compteur d'ann\'e9es qui d\'e9file de 2020 \'e0 2026.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 DISPOSITION (en bas \'e0 gauche)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Barre d'accent jaune : x = 120, largeur 10 px, hauteur 300 px (y de 630 \'e0 930)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Panneau : x de 130 \'e0 910 (780 px de large), y de 630 \'e0 930, border-radius 0 24 24 0
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ligne 1 : nom, padding gauche 44 px, 28 px depuis le haut du panneau
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ligne 2 : compteur, 118 px depuis le haut
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ligne 3 : label, 214 px depuis le haut
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 1 : entr\'e9e (frames 0 \'e0 28)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Barre jaune : scaleY 0 \uc0\u8594  1, transformOrigin bottom, frames 0 \'e0 12, spring (damping 14, stiffness 140)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Panneau : scaleX 0 \uc0\u8594  1, transformOrigin left, frames 4 \'e0 22, spring (damping 16, stiffness 120)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Nom "Ibrahim Kamara" : Montserrat 800, 68 px, blanc. R\'e9v\'e9lation de gauche \'e0 droite avec clipPath inset (droite 100% \uc0\u8594  0%) sur les frames 14 \'e0 28, Easing.out(Easing.cubic)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 2 : le compteur (frames 30 \'e0 90)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Compteur de type odom\'e8tre : 4 colonnes de chiffres, chacune de 52 px de large et 80 px de haut visible (overflow hidden), Montserrat 800, 76 px, jaune #FFD60A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les trois premiers chiffres "202" restent fixes. Le dernier chiffre est une colonne verticale contenant 0, 1, 2, 3, 4, 5, 6 empil\'e9s (hauteur de cellule 80 px)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Valeur du dernier chiffre = interpolate(frame, [36, 84], [0, 6], Easing.out(Easing.cubic)), translateY de la colonne = -valeur * 80 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le compteur appara\'eet en fondu entre les frames 30 et 36 avec "2020" affich\'e9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - \'c0 la frame 84 (arriv\'e9e sur 2026) : petit pop du dernier chiffre (scale 1 \uc0\u8594  1.15 \u8594  1 sur 8 frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - tabular-nums et largeur fixe pour \'e9viter tout d\'e9calage
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 3 : le label (frames 88 \'e0 100)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Texte : "6 ans de business en ligne", Inter 600, 36 px, blanc, "6 ans" en jaune
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e : opacity 0 \uc0\u8594  1 et translateY 12 px \u8594  0 sur 12 frames
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 MAINTIEN (frames 100 \'e0 132)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout reste stable. Seule animation autoris\'e9e : un l\'e9ger shine (reflet blanc \'e0 8 %) qui traverse le panneau de gauche \'e0 droite sur les frames 100 \'e0 118
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SORTIE (frames 132 \'e0 150)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Panneau : translateX 0 \uc0\u8594  -100 px, opacity \u8594  0, Easing.in(Easing.cubic)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - La barre jaune part 4 frames apr\'e8s le panneau
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le nom doit rester lisible plus de 3 s
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - V\'e9rifier l'orthographe : "Kamara" avec un K, pas "Camara"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Aucun flou, spring() et interpolate() uniquement
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SON SUGG\'c9R\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un "whoosh" doux \'e0 l'ouverture (frame 4), un "tick" m\'e9canique \'e0 chaque chiffre qui passe, un "ding" discret \'e0 la frame 84.
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 ANIMATION 7 : "ABONNE-TOI, VERSION CIN\'c9TIQUE"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, 105 frames (3,5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - FOND TRANSPARENT : export ProRes 4444 ou WebM VP9 avec alpha, \'e0 poser sur ta face cam
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Polices : Inter 700, via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Couleurs : bouton #FF3B30 puis #2A2A33 apr\'e8s le clic, texte #FFFFFF, pouce #0A84FF, cloche #FFD60A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout en SVG/CSS. Bouton et ic\'f4nes enti\'e8rement g\'e9n\'e9riques, aucun logo de plateforme
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout le hasard passe par random() de Remotion avec une seed fixe
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un clic sur "S'abonner", une cloche qui sonne, puis un pouce bleu qui explose. Court et efficace, sans faire d\'e9crocher le spectateur.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 DISPOSITION (en bas \'e0 droite, centr\'e9 verticalement sur y = 820)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pouce : cercle de 120 px, centre x = 1103
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Bouton : pilule 420 x 110 px, radius 55, centre x = 1413, texte "S'abonner" 40 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Cloche : cercle de 110 px, fond #2A2A33, centre x = 1702, ic\'f4ne de cloche SVG de 56 px au centre
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Rien ne d\'e9passe x = 1757 (zone de s\'e9curit\'e9)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 1 : le bouton arrive (frames 0 \'e0 14)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Bouton et cloche : opacity 0 \uc0\u8594  1, scale 0.7 \u8594  1, spring (damping 13, stiffness 140). Le pouce n'est pas encore visible
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 2 : le curseur (frames 10 \'e0 40)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Curseur de souris en SVG (fl\'e8che blanche, contour noir 3 px, 64 px) qui part de (1800, 1100) et arrive en (1430, 840)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Trajectoire en courbe de B\'e9zier quadratique (point de contr\'f4le en (1650, 960)), Easing.inOut(Easing.cubic)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 3 : le clic (frames 40 \'e0 56)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame 40 : le curseur passe \'e0 scale 0.9, le bouton \'e0 scale 0.92, puis retour \'e0 1 sur 8 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Cercle d'onde au point du clic : rayon 0 \uc0\u8594  60 px, opacit\'e9 0.5 \u8594  0, frames 40 \'e0 52
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame 44 : le bouton passe de rouge \'e0 #2A2A33 par fondu encha\'een\'e9 de 6 frames, le texte devient "Abonn\'e9" suivi d'un check SVG blanc qui se dessine (strokeDashoffset, 8 frames)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le curseur sort frames 56 \'e0 70 : d\'e9placement vers le bas \'e0 droite, opacit\'e9 \uc0\u8594  0
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 4 : la cloche (frames 50 \'e0 80)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - La cloche passe en jaune \'e0 la frame 50
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Oscillation amortie, transformOrigin en haut de la cloche : angle = 22 * sin((frame - 50) * 0.7) * exp(-(frame - 50) / 10) degr\'e9s
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 5 : le pouce bleu (frames 60 \'e0 95)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Cercle bleu #0A84FF avec ic\'f4ne de pouce blanc, pop \'e0 la frame 60 : scale 0 \uc0\u8594  1.2 \u8594  1, spring (damping 9, stiffness 180)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 8 particules (petits cercles de 10 px, jaune et bleu en alternance) qui partent du centre du pouce dans des directions via random(`angle-$\{i\}`), distance 0 \uc0\u8594  90 px, opacit\'e9 1 \u8594  0 sur 16 frames
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SORTIE (frames 95 \'e0 105)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fondu global vers 0 sur 10 frames, scale 1 \uc0\u8594  0.97
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - L'animation reste volontairement br\'e8ve : ne pas rallonger
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - spring() et interpolate() uniquement
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SON SUGG\'c9R\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un "clic" de souris \'e0 la frame 40, une clochette l\'e9g\'e8re \'e0 la frame 50, un "pop" \'e0 la frame 60.
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 ANIMATION 8 : "LES TROIS FAUSSES EXCUSES"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, 180 frames (6 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : #0B0B0F avec d\'e9grad\'e9 radial discret et vignette l\'e9g\'e8re
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Polices : Montserrat ExtraBold (800 et 900), Inter 500, via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Couleurs : carte #1A1A22, bordure rgba(255,255,255,0.08), ic\'f4nes #FFD60A puis #4A4A55 apr\'e8s \'e9limination, tampon #FF3B30
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ic\'f4nes en SVG inline, style trait de 4 px (pas d'emojis)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Illustrer "c'est pas qu'ils ont pas d'id\'e9es, ou pas les outils, ou pas de budget". Trois cartes arrivent au rythme de ta voix, puis un tampon rouge les \'e9crase.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 DISPOSITION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 3 cartes de 480 x 420 px, border-radius 28 px, espacement 60 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Centres en x : 420, 960, 1500. Centre vertical : y = 500
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chaque carte contient : une ic\'f4ne de 120 px en haut, un titre en Montserrat 800 56 px, un sous-titre en Inter 500 28 px gris #9A9AA8
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Carte 1 : ic\'f4ne ampoule, titre "ID\'c9ES", sous-titre "Pas d'id\'e9es ?"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Carte 2 : ic\'f4ne cl\'e9 \'e0 molette, titre "OUTILS", sous-titre "Pas d'outils ?"
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Carte 3 : ic\'f4ne pi\'e8ce, titre "BUDGET", sous-titre "Pas de budget ?"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SYNCHRO AVEC LA VOIX
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 D\'e9finir les frames d'arriv\'e9e dans un tableau modifiable : CARD_START = [8, 40, 72], pour pouvoir recaler facilement sur ta voix dans le montage.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 1 : les cartes (frames 8 \'e0 100)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e de chaque carte : translateY 80 px \uc0\u8594  0, scale 0.9 \u8594  1, opacity 0 \u8594  1, spring (damping 13, stiffness 130)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - L'ic\'f4ne pop 6 frames apr\'e8s sa carte : scale 0 \uc0\u8594  1.15 \u8594  1
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Pendant que les cartes sont pos\'e9es, l\'e9g\'e8re flottaison (translateY \'b14 px, sinuso\'efdale d\'e9cal\'e9e entre les cartes)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 2 : le tampon (frames 104 \'e0 122)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tampon : texte "PLUS UN PROBL\'c8ME", Montserrat 900, 110 px, lettres espac\'e9es de 4 px, couleur #FF3B30, bordure rouge de 8 px, radius 12, fond rgba(11,11,15,0.85), padding 24 x 48 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Centre (960, 500), rotation -8 degr\'e9s, au-dessus des cartes
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame 104 \'e0 112 : scale 2.4 \uc0\u8594  1, opacity 0 \u8594  1, Easing.in(Easing.quad). Impact \'e0 la frame 112
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 112 \'e0 120 : shake de tout l'\'e9cran \'b18 px, amorti. Flash rouge plein \'e9cran de 0.15 \uc0\u8594  0 d'opacit\'e9 sur 6 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 112 \'e0 122 : les 3 cartes se d\'e9saturent (ic\'f4nes de #FFD60A vers #4A4A55) et passent \'e0 55 % d'opacit\'e9
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 MAINTIEN (frames 122 \'e0 168)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout est stable pendant 1,5 s, sauf une tr\'e8s l\'e9g\'e8re respiration du tampon (scale 1 \uc0\u8594  1.02 \u8594  1)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SORTIE (frames 168 \'e0 180)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fondu global vers 0 sur 12 frames, scale 1 \uc0\u8594  0.97
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le tampon doit rester lisible au moins 1,5 s
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - spring() et interpolate() uniquement
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SON SUGG\'c9R\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un "pop" par carte (frames 8, 40, 72), un impact sec et grave \'e0 la frame 112 (tampon).
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 ANIMATION 9 : "LA BARRE DE CHARGEMENT BLOQU\'c9E"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, 150 frames (5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : #0B0B0F avec d\'e9grad\'e9 radial discret et vignette l\'e9g\'e8re
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Polices : Montserrat ExtraBold (800), Inter 500, via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Couleurs : piste #1A1A22, remplissage #FFD60A, texte #FFFFFF, gris #4A4A55, alerte #FF3B30
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout en HTML/CSS/SVG
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Illustrer "le vrai probl\'e8me, c'est de passer \'e0 l'action et de faire un choix" : "R\'e9fl\'e9chir" se remplit vite jusqu'\'e0 99 % puis se bloque, "Agir" reste \'e0 0 %.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 DISPOSITION
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Deux barres de 1200 x 56 px (radius 28), x de 360 \'e0 1560
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Barre 1 "R\'e9fl\'e9chir" : y = 400. Barre 2 "Agir" : y = 600
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Au-dessus de chaque barre : label \'e0 gauche (44 px, Montserrat 800), pourcentage \'e0 droite (44 px, tabular-nums)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 1 : entr\'e9e (frames 0 \'e0 14)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les deux blocs entrent en fondu avec translateY 30 px \uc0\u8594  0, d\'e9calage de 4 frames entre les deux
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 2 : la barre se remplit (frames 14 \'e0 54)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Barre 1 : remplissage de 0 \'e0 99 %, Easing.out(Easing.cubic), donc rapide au d\'e9part puis ralentissement. Pourcentage affich\'e9 = floor(valeur)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Barre 2 : reste \'e0 0 %, pourcentage en gris #4A4A55
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 3 : le blocage (frames 54 \'e0 100)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - \'c0 99 %, un petit spinner (anneau SVG de 36 px qui tourne) appara\'eet \'e0 c\'f4t\'e9 du pourcentage
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tremblement : translateX du remplissage \'b12 px, toutes les 3 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Le pourcentage h\'e9site : 98 affich\'e9 sur les frames 70 \'e0 74, puis revient \'e0 99
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame 84 : \'e9tiquette rouge "BLOQU\'c9" (pilule avec bordure #FF3B30, texte rouge 32 px, petit triangle d'avertissement SVG) \'e0 droite du label "Agir". Entr\'e9e avec petit shake de \'b16 px sur 6 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame 84 : pulsation rouge sur la bordure de la piste 2 (opacit\'e9 0 \uc0\u8594  0.8 \u8594  0.3 sur 12 frames)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 4 : la conclusion (frames 92 \'e0 138)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - L\'e9gende centr\'e9e \'e0 y = 860 : "R\'e9fl\'e9chir \uc0\u8800  Agir", Montserrat 800, 80 px, "Agir" en jaune
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e : opacity 0 \uc0\u8594  1 et translateY 30 px \u8594  0 sur 14 frames, spring (damping 14, stiffness 110)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Stable de la frame 108 \'e0 la frame 138
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SORTIE (frames 138 \'e0 150)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fondu global vers 0 sur 12 frames, scale 1 \uc0\u8594  0.97
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - La barre doit visiblement rester coinc\'e9e au moins 1,5 s : c'est le gag visuel
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - spring() et interpolate() uniquement
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SON SUGG\'c9R\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un "riser" de chargement pendant le remplissage (frames 14 \'e0 54), un "glitch" sec \'e0 la frame 54, un buzzer d'erreur discret \'e0 la frame 84.
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 ANIMATION 10 : "DISPERSION \uc0\u8594  FOCUS"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, 150 frames (5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : #0B0B0F avec d\'e9grad\'e9 radial discret et vignette l\'e9g\'e8re
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Polices : Montserrat ExtraBold (800), via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Couleurs : fl\'e8ches #FFFFFF (opacit\'e9 0.5), fl\'e8che finale #FFD60A, cible blanche et centre rouge #FF3B30
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout en SVG. Tout le hasard passe par random() de Remotion avec seed fixe
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Illustrer "tous les business sont profitables, mais il faut en choisir un et se d\'e9dier \'e0 \'e7a". Beaucoup de fl\'e8ches dans tous les sens, puis une seule qui fonce vers la cible.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 1 : dispersion (frames 0 \'e0 44)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 12 fl\'e8ches (trait de 8 px, pointe triangulaire), centre de d\'e9part (960, 500)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Angle de la fl\'e8che i : 30 * i degr\'e9s, plus un jitter via random(`jit-$\{i\}`) de \'b16 degr\'e9s
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 0 \'e0 22 : chaque fl\'e8che s'allonge du rayon 40 \'e0 un rayon de 300 * (0.8 + 0.4 * random(`len-$\{i\}`)), d\'e9calage de 1 frame entre chaque fl\'e8che, Easing.out(Easing.cubic)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 22 \'e0 44 : elles "h\'e9sitent" en tournant lentement de \'b14 degr\'e9s (sinuso\'efdale, phases diff\'e9rentes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - L\'e9gende en haut (y = 150) : "Tous les business sont profitables", 56 px blanc. Entr\'e9e frames 6 \'e0 18, sortie frames 44 \'e0 52
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 2 : la cible appara\'eet (frames 40 \'e0 56)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Cible \'e0 droite, centre (1560, 500) : 3 cercles de rayons 140, 90 et 40 px, contour blanc de 8 px, centre rempli en rouge
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e : scale 0.5 \uc0\u8594  1, opacity 0 \u8594  1, spring
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 3 : convergence (frames 44 \'e0 72)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chaque fl\'e8che se r\'e9tracte vers le centre en pivotant vers l'angle 0 (vers la droite), sur 16 frames, d\'e9calage de 0,8 frame par fl\'e8che, Easing.inOut(Easing.cubic)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les fl\'e8ches deviennent jaunes en convergeant
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 64 \'e0 72 : 11 fl\'e8ches sur 12 s'effacent en fondu, la fl\'e8che restante s'\'e9paissit (trait de 8 \'e0 22 px), longueur 420 px, centr\'e9e sur (960, 500)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 4 : le tir (frames 72 \'e0 90)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 72 \'e0 86 : la fl\'e8che file vers la droite, translateX de 0 \'e0 +390 px, Easing.in(Easing.cubic). 3 tra\'een\'e9es fines (lignes blanches \'e0 30 %) derri\'e8re elle
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frame 86 : impact au centre de la cible. Recul : rotation \'b13 degr\'e9s et translateX -8 px, amortis sur 10 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Onde de choc : cercle jaune de 6 px, rayon 40 \uc0\u8594  260 px, opacit\'e9 0.7 \u8594  0, frames 86 \'e0 104
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Micro-shake de l'\'e9cran de \'b15 px sur 4 frames
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PHASE 5 : texte final (frames 90 \'e0 138)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - "Un choix." entre \'e0 la frame 90, "\'c0 fond." \'e0 la frame 98, centr\'e9s \'e0 y = 830, Montserrat 800, 120 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - "\'c0 fond." en jaune. Entr\'e9e de chaque mot : scale 0.7 \uc0\u8594  1, opacity 0 \u8594  1, spring (damping 12, stiffness 130)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Stable de la frame 104 \'e0 la frame 138
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tr\'e8s l\'e9g\'e8re respiration de la cible (scale 1 \uc0\u8594  1.02 \u8594  1)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SORTIE (frames 138 \'e0 150)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fondu global vers 0 sur 12 frames, scale 1 \uc0\u8594  0.97
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les 12 fl\'e8ches doivent bien se lire comme du "chaos" mais rester propres (pas de superpositions illisibles)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - spring() et interpolate() uniquement
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SON SUGG\'c9R\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un "whoosh" doux pendant la dispersion, un "swoosh" rapide pour le tir (frame 72), un impact sec \'e0 la frame 86.
+\f1\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 ANIMATION 11 : "LA R\'c8GLE DU JEU + COMPTE \'c0 REBOURS"
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 FORMAT TECHNIQUE
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Composition : 1920x1080, 30 fps, 195 frames (6,5 secondes)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Fond : #0B0B0F avec d\'e9grad\'e9 radial discret et vignette l\'e9g\'e8re
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Polices : Montserrat ExtraBold (800), Inter 600, via @remotion/google-fonts
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Couleurs : carte #14141B, bordure rgba(255,255,255,0.08), texte #FFFFFF, gris #9A9AA8, accent #FFD60A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Tout en HTML/CSS/SVG, spring() et interpolate() uniquement
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 OBJECTIF
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Illustrer "je vais juste utiliser l'IA et rien d'autre, et lancer un business sous tes yeux" : une fiche de r\'e8gles coch\'e9es une \'e0 une, puis un compte \'e0 rebours 3-2-1 qui sert de transition vers la suite.
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PARTIE A : LA FICHE (frames 0 \'e0 128)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 Disposition
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Carte centr\'e9e (960, 540), 1100 x 620 px, radius 28, bandeau jaune de 10 px en haut
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - En-t\'eate : "R\'c8GLES DU D\'c9FI", Montserrat 800, 40 px, gris #9A9AA8, lettres espac\'e9es de 6 px
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 3 lignes de 120 px de haut, espac\'e9es de 140 px, \'e0 partir de 190 px depuis le haut de la carte
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chaque ligne : case de 64 px (radius 14, bordure grise 4 px) \'e0 gauche, texte Montserrat 700 58 px \'e0 droite
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ligne 1 : "Budget : 0 \'80" ("0 \'80" en jaune)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ligne 2 : "\'c9quipe : personne" ("personne" en jaune)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Ligne 3 : "Outils : IA uniquement" ("IA uniquement" en jaune)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 Animation
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 0 \'e0 20 : la carte se d\'e9plie, scaleY 0.05 \uc0\u8594  1 depuis le centre, spring (damping 15, stiffness 120), opacit\'e9 0 \u8594  1. L'en-t\'eate appara\'eet \'e0 la frame 14
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - ROW_START = [22, 52, 82] (tableau modifiable pour recaler sur ta voix). Chaque ligne entre avec translateX -40 px \uc0\u8594  0 et opacity 0 \u8594  1 sur 12 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - 14 frames apr\'e8s l'arriv\'e9e de chaque ligne (frames 36, 66, 96) : la case se coche. Le check SVG se dessine (strokeDashoffset, 10 frames), la case se remplit en jaune avec un pop (scale 1 \uc0\u8594  1.2 \u8594  1), et la coche devient sombre #0B0B0F
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Toutes les r\'e8gles sont coch\'e9es et lisibles de la frame 106 \'e0 la frame 114 (maintien)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 114 \'e0 128 : la carte se r\'e9tracte (scaleY 1 \uc0\u8594  0, opacity \u8594  0), Easing.in(Easing.cubic)
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 PARTIE B : LE COMPTE \'c0 REBOURS (frames 130 \'e0 195)
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chiffres centr\'e9s (960, 540), Montserrat 800, 520 px, blanc. Le "1" est en jaune #FFD60A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chaque chiffre dure 18 frames : "3" de 130 \'e0 148, "2" de 148 \'e0 166, "1" de 166 \'e0 184
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Entr\'e9e de chaque chiffre : scale 1.6 \uc0\u8594  1 en 8 frames avec spring (damping 11, stiffness 170), opacit\'e9 0 \u8594  1 sur 4 frames
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Sortie de chaque chiffre : sur les 4 derni\'e8res frames, scale 1 \uc0\u8594  0.85 et opacit\'e9 \u8594  0
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Anneau derri\'e8re le chiffre : cercle SVG de rayon 300 px, contour jaune de 10 px, qui se vide fa\'e7on horloge (strokeDashoffset) sur toute la dur\'e9e de chaque chiffre
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Frames 184 \'e0 195 : flash blanc plein \'e9cran (opacit\'e9 0 \uc0\u8594  0.9 \u8594  0 sur 11 frames), qui sert de transition vers la suite. Derni\'e8re frame : fond seul
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 CONTRAINTES
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Chaque chiffre reste net (aucun flou), pas de d\'e9calage de mise en page entre 3, 2 et 1
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - Les r\'e8gles doivent \'eatre lisibles : ne pas descendre sous 4 s pour la partie A
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 - spring() et interpolate() uniquement
+\f1\fs24 \
+\
+
+\f0\fs29\fsmilli14667 SON SUGG\'c9R\'c9
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 Un "tick" sur chaque coche (frames 36, 66, 96), un "bip" sur chaque chiffre du d\'e9compte (frames 130, 148, 166), un impact plus grave avec "whoosh" sur le flash final (frame 184).
+\f1\fs24 \
+\
+}

@@ -1,0 +1,197 @@
+[   0.0] Donc le site internet que tu vois à mon écran, c'est un site internet professionnel que j'ai créé pour une entreprise
+[   5.5] et un site internet pareil si je dois le facturer, c'est minimum 1000 euros et pas moins.
+[  10.0] Et pour te dire, ce genre de site internet, je peux en créer 10, 20 par jour
+[  13.8] parce que la manière dont je les crée, elle est très simple.
+[  16.5] Certes le site, il est ultra professionnel, mais derrière, c'est l'intelligence artificielle qui m'aide à avoir un résultat pareil.
+[  22.0] Et bien évidemment que j'ai aussi utilisé cette même méthode pour créer mon propre site internet.
+[  26.4] Donc quand tu vas sur mon site internet ybrahimecamara.com, tu trouveras un site ultra cali professionnel que j'ai fait moi-même.
+[  32.9] J'ai pas eu besoin d'un développeur web ou quoi que ce soit, c'est un site très simple qui convertit, qui est simple, professionnel, à mon image.
+[  38.8] Et dans ces vidéos, je vais te montrer comment est-ce que tu pourras créer un tel site internet
+[  43.0] et surtout comment est-ce que tu pourras faire de l'argent avec cette compétence-là.
+[  46.4] Donc soit en toi-même mettant à jour tes propres sites internet et en arrêtant de payer des développeurs pour ça
+[  51.4] ou alors en faisant des sites internet pour des entreprises qui te payeront de l'argent.
+[  55.3] Pour ceux qui me découvrent aujourd'hui, je m'appelle Ibrahimecamara, je fais des vidéos sur YouTube depuis maintenant 6 ans
+[  60.0] et sur cette chaîne je te documente toutes mes aventures entrepreneuriales pour que tu en profites et que tu génères de l'argent.
+[  65.7] Si ça t'intéresse, n'hésite pas à t'abonner à la chaîne, mets-moi un gros pouce bleu et on est parti.
+[  69.4] Donc la création de sites internet, c'est un sujet que j'ai longtemps abordé depuis la création de ma première chaîne YouTube
+[  74.7] tout simplement parce que c'est l'un des outils les plus utilisés en ligne.
+[  78.2] Donc toutes les entreprises ont un site internet, tous les entrepreneurs qui se lancent ont besoin d'un site internet.
+[  82.4] Donc c'est vraiment quelque chose de primordial, mais avant, pour créer des sites internet,
+[  86.3] il fallait vraiment avoir un minimum de connaissances en développement informatique et tout ça.
+[  90.3] Mais de nos jours, ce n'est plus le cas avec l'IA comme je vais te montrer tout à l'heure.
+[  93.7] Donc on va aller sur ce site-là, le lien sera dans la description et également le premier lien, c'est hostinger.com.
+[  99.7] Donc hostinger, c'est une plateforme qui te permet de créer des sites internet.
+[ 104.0] Et notamment de nos jours, grâce à leur plateforme, on peut le faire avec l'IA qui est directement intégrée et ça devient encore plus facile.
+[ 109.8] Donc t'arrives, tu cliques sur voir les packs et là tu verras les différentes offres d'abonnement qu'ils ont.
+[ 114.7] Ils ont une offre à 2,99 par mois, une offre à 3,99 par mois et 7,99.
+[ 119.2] Moi je te conseillerais l'offre 3,99 parce que c'est celle qu'ils ont le plus boosté parce que c'est une offre illimitée.
+[ 124.5] Pour 3,99 par mois, eh bien tu peux créer autant de sites que tu veux.
+[ 128.4] Limite c'est écrit ici, site web illimitée.
+[ 130.1] Et je pense que c'est vraiment une promo qui sont en train de faire, je pense pas que ça va durer pour toujours.
+[ 133.6] Donc autant profiter, tu peux avoir autant de boîtes mails que tu veux pendant un an.
+[ 138.3] Donc des boîtes mails professionnels, tu peux avoir un on-domain personnalisé, etc.
+[ 142.5] Support 24 heures ce 24.
+[ 144.3] Vraiment c'est une offre vraiment à ne pas rater, 3,99, c'est vraiment des centimes.
+[ 148.8] Donc on va sélectionner cette offre-là.
+[ 150.4] Maintenant très important ici, quand t'arrives au panier, tu vas devoir choisir la durée de ton abonnement.
+[ 154.3] Si tu prends juste un mois d'abonnement, ça va te revenir à très cher.
+[ 157.0] Je te conseillerais de prendre minimum 12 mois d'abonnement et tu verras que là ça revient à 3,99 par mois.
+[ 163.1] Et honnêtement, pour 12 mois d'abonnement, ça te revient à environ à 47,88 euros,
+[ 167.4] genre un an d'abonnement où tu peux créer autant de sites que tu veux.
+[ 170.7] Vraiment c'est presque rien.
+[ 172.4] Et en plus, si tu rajoutes le code promo, Kamara7, tu auras une réduction supplémentaire.
+[ 177.0] Moi dans mon cas, ça fonctionne pas parce que je l'ai déjà rajouté à mon panier.
+[ 179.5] Sinon, ton normal, ce serait beaucoup plus cher que ça.
+[ 181.5] Donc une fois que tu rajoutes mon code, et bien tu peux juste passer à l'étape du paiement,
+[ 185.3] tu mets des informations de paiement, tu te crée un compte au Stinger, c'est pas déjà fait.
+[ 189.0] Et ensuite, tu peux passer à l'étape suivante de la vidéo.
+[ 190.7] Maintenant arrivés sur cette interface, on va choisir le mot de création,
+[ 194.0] soit manuel, soit IA.
+[ 195.1] Bien évidemment, on va utiliser IA.
+[ 196.7] Et celle-là maintenant, tu vas mettre une description du site que tu souhaites créer.
+[ 199.6] Donc idéalement, si tu veux créer un site internet pour ta propre société,
+[ 202.9] tu vas mettre la description de ta société, tes informations et tout.
+[ 205.6] Maintenant si tu es un prestataire, tu veux créer le site internet pour une société,
+[ 209.1] et bien tu vas mettre toutes les informations de la société,
+[ 211.6] parce que la société t'a donnée, pour pouvoir créer leur site.
+[ 213.9] Donc moi dans mon cas, je vais mettre dans la peau d'un prestataire qui crée le site pour une société.
+[ 217.7] Et ce que je vais faire, je vais écrire un prompt.
+[ 219.1] Je vais demander à Claude de me créer un prompt vraiment juste de test avec des infos factices.
+[ 224.2] Donc là, je vais demander à Claude de me créer un prompt.
+[ 226.6] Et ce sera un prompt disons une société qui vend des kits pour des voitures,
+[ 231.4] tu vas avoir des kits pour personnaliser des voitures etc.
+[ 233.6] Disons qu'une société du genre m'a contacté pour créer leur site.
+[ 236.7] On part avec ce concept-là.
+[ 238.1] Donc je donne ce prompt-là à mon agent.
+[ 240.0] Tu verras que c'est très simple.
+[ 240.9] Honnêtement, cette vidéo, elle fera même pas 10 minutes,
+[ 243.3] tout simplement parce que c'est très simple ce processus-là.
+[ 245.3] Donc je mets le prompt ici, je le lance, j'attends qu'il travaille.
+[ 247.6] Et en attendant, je te précise aussi que c'est disponible sur téléphone.
+[ 251.4] Donc la manipulation que je suis en train de faire sur mon ordinateur,
+[ 253.8] tu peux aussi la faire avec un téléphone.
+[ 255.2] Donc tu peux créer des sites internet avec ton téléphone.
+[ 257.4] Donc cette compétence, tu n'auras pas d'excuse.
+[ 259.1] Voilà, donc je sais que beaucoup de mes abonnés n'ont pas d'ordinateur.
+[ 262.0] Donc vous pourrez aussi en profiter.
+[ 263.5] Donc là, il est en train de bosser.
+[ 264.8] On va lui donner le temps.
+[ 265.7] Et lorsque la première version du site, elle est prête, on reviendra.
+[ 268.5] Donc là, il est en train de traiter ma demande.
+[ 270.6] Là, il m'a posé une question, il me demande,
+[ 271.9] est-ce que je souhaite ajouter une fonctionnalité de réservation en ligne ?
+[ 275.1] Donc moi, dans mon cas, ce n'est pas forcément pertinent.
+[ 277.3] Mais dans ton cas, si ton client souhaite avoir une telle fonctionnalité,
+[ 280.1] tu pourras facilement le rajouter ici.
+[ 281.5] Donc là, il est en train de bosser sur le site.
+[ 283.1] On va faire une pause et on reviendra quand la première version sera prête.
+[ 286.2] Donc là, le single a fini de bosser.
+[ 288.4] Et on va voir ensemble un aperçu de cette première version de mon site.
+[ 291.3] Il n'y a même pas de mon site, du site de mon client.
+[ 293.2] La page d'accueil est OK.
+[ 294.8] Votre voiture, notre obsession, douze ans d'expérience.
+[ 298.3] J'aime bien l'animation avec les chiffres qui augmentent.
+[ 300.6] Cinq poles au niveau de la voiture, le covering.
+[ 302.9] C'est très calis.
+[ 304.0] Il a généré des très belles images.
+[ 305.5] Il y a les jantes et le pneumatique, un kit de carrosserie.
+[ 309.5] Il a même généré des très, très belles images.
+[ 311.7] Honnêtement, le site, il est très épuré.
+[ 313.5] J'aime bien l'ambiance noire rouge.
+[ 315.5] Ça marche bien avec l'ambiance automobile et surtout très, très,
+[ 319.1] ça fait très luxe en tout cas.
+[ 320.5] Donc là, il met en après, sachant que tu vas mettre en avant une société.
+[ 323.3] Donc, idéalement, tu vas mettre les vraies images.
+[ 325.3] Donc là, c'est des images.
+[ 326.4] Il y a donc ce n'est pas forcément les images de leur vrai travail.
+[ 329.3] Tu vois, donc tu ne vas pas forcément vendre ça.
+[ 331.0] Mais idéalement, tu as les vraies images de ton client pour mettre en avant.
+[ 334.9] Mais honnêtement, le rendu, il est cali.
+[ 337.1] C'est-à-dire le rendu, premier rendu, après juste un seul prompt, il est cali.
+[ 340.7] Un client, s'il a ça, il est satisfait.
+[ 342.7] Donc si je viens dans la partie service,
+[ 344.8] voilà les différents services qu'ils offrent.
+[ 346.8] Non, rien à dire.
+[ 347.8] La seule chose qui reste à changer sur ce site, ce sont le contenu.
+[ 351.1] Donc par rapport au client, mettre son vrai contenu,
+[ 353.0] donc c'est vrai service, c'est vrais images.
+[ 354.8] On va à la partie galerie, la partie galerie, pareil.
+[ 357.2] Les vraies images, le produit du client.
+[ 358.9] Après, il y a une section à propos, pareil avec les vraies informations de leur atelier.
+[ 363.8] Et ensuite, une partie contact.
+[ 365.0] Idealement, c'est avec leur vraie adresse, leur vrai numéro.
+[ 367.3] Et une partie maps, ce qui est aussi super.
+[ 369.1] Donc juste en un seul prompt, j'ai eu ce site internet professionnel.
+[ 372.1] Donc tu comprends pourquoi je te disais au début que cette vidéo ne va même pas durer.
+[ 375.4] Parce qu'on soit de la manipulation, elle est aussi simple que ça.
+[ 378.2] Tu peux créer des sites comme ça, je peux en créer 20 par jour, honnêtement.
+[ 381.8] Donc on vit dans une ère où tout est devenu facile.
+[ 384.0] Du coup, si je veux faire des modifications sur ce site,
+[ 386.5] tout se passe ici, la section prend.
+[ 389.0] Donc je demande des modifs à faire et il est fait.
+[ 391.1] Je vois par exemple une chose que j'aimerais changer.
+[ 393.2] Disons que j'aime bien l'ambiance, voilà, noir rouge, etc.
+[ 396.6] Qui l'a choisi, mais je vais lui demander de me changer ça.
+[ 398.9] Donc là, je lui ai dit, j'aimerais que tu changes les couleurs principales.
+[ 401.9] Là, on est sûr du noir rouge et moi, j'aimerais du noir blanc.
+[ 405.2] Donc là, il va redesigner tout ce qui est couleur
+[ 407.0] pour s'accorder avec cette nouvelle ambiance noire et blanc.
+[ 409.8] Et là, on va patienter et je te montrerai le rendu.
+[ 412.0] Donc là, il a terminé.
+[ 413.1] Je vais mettre ça en plein écran et tu verras la différence.
+[ 415.8] Honnêtement, moi, je trouve que en noir et blanc, c'est aussi pas mal.
+[ 418.2] Donc tout ce qui était rouge a disparu, c'est devenu du blanc.
+[ 420.6] Et c'est même seulement beaucoup plus qualitatif en noir et blanc.
+[ 423.5] Donc il n'a rien changé d'autre que les couleurs.
+[ 425.5] Donc c'est aussi simple que ça.
+[ 426.7] Donc le site, tu vas le créer de cette manière, tu vas le configurer de cette manière.
+[ 429.9] Tous les changements, tu le feras dans la section prompting ici.
+[ 432.6] Et quand tu termines que tu es satisfait de ton site,
+[ 434.7] tu cliques sur le bouton publier, tu publie.
+[ 436.8] Donc là, il a terminé de publier le site,
+[ 438.4] sauf qu'il y a un endommène, une adresse URL temporaire.
+[ 442.0] Donc Marseille Auto, Customisation, etc.
+[ 443.7] Donc si je clique sur ça, ça m'enverra direct sur le site.
+[ 446.9] Franchement, Cali, Professionnel.
+[ 448.6] Ensuite, ce qui est important, c'est que dans ton cas,
+[ 451.1] si tu veux livrer ça à un client,
+[ 452.9] faudrait qu'il y ait son propre nom de domaine.
+[ 454.9] Donc par exemple, MarseilleAuto.com,
+[ 456.9] genre si c'est ça, le nom de leur société.
+[ 458.9] Et pour cela, tu peux connecter un nom de domaine personnalisé,
+[ 461.4] tu peux cliquer sur ça.
+[ 462.4] Et là, ça va te rediriger vers cette interface ici.
+[ 464.9] Et là, tu pourras connecter le vrai site internet du client.
+[ 468.3] Donc si c'est par exemple MarseilleAuto.com, etc.
+[ 472.1] Tu pourras directement le mettre et le connecter.
+[ 474.5] Mais tu auras besoin de ton client.
+[ 475.9] Si ici, tu n'as pas accès au nom de domaine,
+[ 477.3] il va te donner certains accès pour pouvoir le connecter.
+[ 479.6] Mais c'est quelque chose de très, très simple.
+[ 481.0] Donc une fois que tu as publié le site,
+[ 482.6] là tu as rajouté un nom de domaine personnalisé.
+[ 484.3] Le site est fin.
+[ 485.2] Fin prêt, il est public.
+[ 486.6] Les gens peuvent aller le visiter sans site pro.
+[ 488.4] Si demain, il y a des bugs, quelque chose ne marche pas.
+[ 490.9] Tu utilises juste Hostinger pour fixer ça avec l'IA.
+[ 493.7] Donc tu écris des prompts,
+[ 494.8] il y a d'Hostinger fixe le site internet, il est carré.
+[ 497.5] Donc cette compétence, elle va t'aider à toi.
+[ 499.1] Si toi là, tu as besoin de site internet,
+[ 501.7] si tu es un entrepreneur que tu veux mettre à jour ton propre site,
+[ 504.6] tu as plus besoin de payer des développeurs pour ça.
+[ 506.7] Maintenant si tu as un jeune qui a eu une agence de création de site internet
+[ 509.8] ou alors tu souhaites en créer une,
+[ 511.9] c'est une compétence qui va te faciliter la vie.
+[ 514.1] Ensuite, lorsque tu auras besoin d'avoir des clients,
+[ 516.4] ce serait important pour toi de maîtriser une compétence
+[ 518.5] qu'on appelle la publicité.
+[ 519.8] Donc la publicité, c'est le fait de faire des promotions sur internet
+[ 522.6] payantes, bien évidemment, pour avoir des clients.
+[ 525.7] Par exemple là, si tu as un service de création de site internet.
+[ 528.6] Donc j'ai déjà fait une vidéo sur ça,
+[ 530.2] où je t'explique comment configurer les publicités Google.
+[ 533.0] Je te mettrai la vidéo ici, donc le lien de la vidéo ici.
+[ 535.4] Clique sur la vidéo et tu seras directement redirigé là-bas.
+[ 538.0] Allez, bisous.

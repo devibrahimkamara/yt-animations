@@ -1,0 +1,1631 @@
+1
+00:00:11,800 --> 00:00:13,699
+Dans la vidéo d'aujourd'hui, on va tester
+
+2
+00:00:13,700 --> 00:00:16,419
+9 IA différentes qui génèrent des vidéos.
+
+3
+00:00:16,640 --> 00:00:18,699
+Et pour chacune de ces IA, on va donner exactement
+
+4
+00:00:18,700 --> 00:00:21,439
+le même prompt pour générer une vidéo en français.
+
+5
+00:00:21,620 --> 00:00:24,179
+Et on verra laquelle ou lesquelles donnent
+
+6
+00:00:24,180 --> 00:00:26,299
+le meilleur résultat, le plus naturel.
+
+7
+00:00:26,420 --> 00:00:27,899
+Et normalement, à la fin de cette vidéo, tu
+
+8
+00:00:27,900 --> 00:00:30,199
+sauras quel modèle d'IA utiliser en fonction
+
+9
+00:00:30,200 --> 00:00:31,159
+de ce que tu souhaites faire
+
+10
+00:00:31,160 --> 00:00:33,039
+et surtout combien ça va te coûter.
+
+11
+00:00:33,180 --> 00:00:34,839
+Donc j'ai fait pas mal de recherches et la
+
+12
+00:00:34,840 --> 00:00:36,639
+majorité des vidéos comparatives
+
+13
+00:00:36,640 --> 00:00:39,139
+qui comparent des modèles d'IA de génération
+
+14
+00:00:39,140 --> 00:00:39,699
+de vidéos,
+
+15
+00:00:39,700 --> 00:00:42,119
+ces vidéos-là, en général, elles sont en anglais.
+
+16
+00:00:42,300 --> 00:00:44,099
+C'est difficile de trouver des vidéos qui
+
+17
+00:00:44,100 --> 00:00:45,599
+comparent la qualité des IA
+
+18
+00:00:45,600 --> 00:00:47,659
+quand elles génèrent des vidéos avec une narrative
+
+19
+00:00:47,660 --> 00:00:48,119
+en français.
+
+20
+00:00:48,300 --> 00:00:49,739
+C'est ce qu'on va tester dans cette vidéo
+
+21
+00:00:49,740 --> 00:00:49,899
+-là.
+
+22
+00:00:50,020 --> 00:00:51,919
+Donc à la fois, ça va régler le problème que
+
+23
+00:00:51,920 --> 00:00:53,299
+moi-même j'ai eu parce que j'ai pas trouvé
+
+24
+00:00:53,300 --> 00:00:53,779
+cette vidéo
+
+25
+00:00:53,780 --> 00:00:55,639
+et ça va sûrement t'aider toi parce que tu
+
+26
+00:00:55,640 --> 00:00:57,519
+veux voir laquelle des IA est meilleure par
+
+27
+00:00:57,520 --> 00:00:58,279
+rapport à ton projet.
+
+28
+00:00:58,420 --> 00:00:59,699
+Donc comme je t'ai dit, on va utiliser le
+
+29
+00:00:59,700 --> 00:01:01,359
+même prompt pour toutes les IA.
+
+30
+00:01:01,500 --> 00:01:03,419
+Le prompt, je vais l'afficher à l'écran.
+
+31
+00:01:03,560 --> 00:01:05,579
+C'est un prompt pour générer une publicité,
+
+32
+00:01:05,680 --> 00:01:07,639
+donc une vidéo publicitaire en français.
+
+33
+00:01:07,640 --> 00:01:10,479
+Et j'ai fait exprès de mettre un mot difficile
+
+34
+00:01:10,480 --> 00:01:11,359
+dans ce prompt-là
+
+35
+00:01:11,360 --> 00:01:13,799
+pour voir laquelle les IA vont mieux prononcer
+
+36
+00:01:13,800 --> 00:01:14,319
+ce mot-là.
+
+37
+00:01:14,440 --> 00:01:15,659
+Maintenant, un point que je veux mentionner,
+
+38
+00:01:15,760 --> 00:01:17,379
+c'est que tous les modèles d'IA qu'on va tester
+
+39
+00:01:17,380 --> 00:01:18,039
+dans cette vidéo
+
+40
+00:01:18,040 --> 00:01:20,479
+sont disponibles directement sur Higgsfield qui
+
+41
+00:01:20,480 --> 00:01:22,239
+est la plateforme sponsor de cette vidéo.
+
+42
+00:01:22,620 --> 00:01:24,779
+Donc Higgsfield, c'est de loin le meilleur outil
+
+43
+00:01:24,780 --> 00:01:26,439
+de génération de contenu IA,
+
+44
+00:01:26,500 --> 00:01:28,479
+donc que ce soit des images, des vidéos et
+
+45
+00:01:28,480 --> 00:01:29,759
+tout ce qui concerne l'IA.
+
+46
+00:01:29,920 --> 00:01:31,899
+Maintenant, le seul modèle qui n'était pas
+
+47
+00:01:31,900 --> 00:01:33,119
+encore présent sur Higgsfield
+
+48
+00:01:33,120 --> 00:01:34,759
+ou peut-être qui sera présent lorsque cette
+
+49
+00:01:34,760 --> 00:01:37,259
+vidéo va sortir, c'est le modèle Kling 4.0
+
+50
+00:01:37,260 --> 00:01:38,459
+qui vient tout de suite de sortir.
+
+51
+00:01:38,660 --> 00:01:40,419
+Donc par rapport à celui-là, on va le tester
+
+52
+00:01:40,420 --> 00:01:42,639
+directement sur la plateforme de Kling.
+
+53
+00:01:42,780 --> 00:01:44,279
+Mais par contre, tous les autres modèles,
+
+54
+00:01:44,280 --> 00:01:46,379
+ils seront disponibles sur Higgsfield directement.
+
+55
+00:01:46,840 --> 00:01:49,059
+Ok, donc on va se retrouver sur mon ordinateur
+
+56
+00:01:49,060 --> 00:01:50,439
+et on va commencer notre test.
+
+57
+00:01:50,600 --> 00:01:51,599
+On va aller sur Higgsfield.
+
+58
+00:01:51,840 --> 00:01:53,379
+Le lien pour Higgsfield sera dans la description.
+
+59
+00:01:53,660 --> 00:01:56,039
+On va aller dans la partie vidéo et créer
+
+60
+00:01:56,040 --> 00:01:56,719
+une vidéo.
+
+61
+00:01:56,720 --> 00:01:57,099
+Voilà.
+
+62
+00:01:57,280 --> 00:01:58,799
+Et là maintenant, le premier modèle qu'on
+
+63
+00:01:58,800 --> 00:02:01,719
+va tester, ce sera le modèle Seedance 2.0.
+
+64
+00:02:01,900 --> 00:02:03,959
+Donc ça, c'est les modèles de l'ancienne génération,
+
+65
+00:02:04,200 --> 00:02:05,339
+pas du côté de Seedance.
+
+66
+00:02:05,540 --> 00:02:06,739
+Donc on choisit ce modèle.
+
+67
+00:02:06,940 --> 00:02:09,119
+Au niveau de la durée, on va faire tous les
+
+68
+00:02:09,120 --> 00:02:10,299
+tests avec la même durée.
+
+69
+00:02:10,420 --> 00:02:11,639
+Donc ça sera 8 secondes.
+
+70
+00:02:11,720 --> 00:02:13,819
+Au niveau du format, on va choisir le format
+
+71
+00:02:13,820 --> 00:02:14,639
+16:9.
+
+72
+00:02:14,800 --> 00:02:16,459
+Ensuite, au niveau de la qualité visuelle,
+
+73
+00:02:16,600 --> 00:02:18,319
+on va s'aligner sur 1080p
+
+74
+00:02:18,320 --> 00:02:20,399
+et ce sera la même qualité pour tous les autres
+
+75
+00:02:20,400 --> 00:02:20,759
+modèles.
+
+76
+00:02:20,920 --> 00:02:23,259
+Ensuite, concernant le bitrate, on va le mettre
+
+77
+00:02:23,260 --> 00:02:25,059
+sur standard, pas forcément high.
+
+78
+00:02:25,060 --> 00:02:27,299
+On va le mettre sur standard et ensuite, ici,
+
+79
+00:02:27,420 --> 00:02:28,759
+on va coller notre prompt
+
+80
+00:02:28,760 --> 00:02:30,419
+qui sera le même prompt que je vais donner
+
+81
+00:02:30,420 --> 00:02:31,079
+à eux tous.
+
+82
+00:02:31,300 --> 00:02:33,559
+Ensuite, le son, on va bien activer le son.
+
+83
+00:02:33,700 --> 00:02:35,499
+Donc on va mettre on et je vérifie que tout
+
+84
+00:02:35,500 --> 00:02:35,879
+est OK.
+
+85
+00:02:36,020 --> 00:02:39,119
+Donc le prompt, le modèle, la durée, le format,
+
+86
+00:02:39,560 --> 00:02:40,059
+la qualité.
+
+87
+00:02:40,400 --> 00:02:41,879
+Et ensuite, je clique sur générer.
+
+88
+00:02:42,060 --> 00:02:44,439
+Donc déjà, par rapport à Seedance 2.0, ça
+
+89
+00:02:44,440 --> 00:02:47,459
+va coûter 96 crédits pour ces 8 secondes là.
+
+90
+00:02:47,620 --> 00:02:48,559
+Donc je lance la génération.
+
+91
+00:02:49,660 --> 00:02:49,839
+OK.
+
+92
+00:02:50,060 --> 00:02:51,899
+Donc là ensuite, on va garder toujours le
+
+93
+00:02:51,900 --> 00:02:52,439
+même prompt.
+
+94
+00:02:52,440 --> 00:02:54,659
+On garde le son, mais on va changer le modèle
+
+95
+00:02:54,660 --> 00:02:58,039
+et on va aller tester le modèle du Kling 3.0.
+
+96
+00:02:58,200 --> 00:02:58,359
+Voilà.
+
+97
+00:02:58,740 --> 00:03:00,559
+Pareil, on va mettre 8 secondes.
+
+98
+00:03:00,700 --> 00:03:01,559
+16:9.
+
+99
+00:03:01,700 --> 00:03:03,519
+La qualité, on va mettre 1080p.
+
+100
+00:03:03,740 --> 00:03:05,699
+Et là, la génération, elle va coûter un peu
+
+101
+00:03:05,700 --> 00:03:06,879
+moins cher que le Seedance.
+
+102
+00:03:07,000 --> 00:03:09,579
+Elle va coûter seulement 20 crédits pour exactement
+
+103
+00:03:09,580 --> 00:03:10,899
+la même génération.
+
+104
+00:03:11,040 --> 00:03:12,959
+Donc on verra bien le résultat à la fin.
+
+105
+00:03:13,060 --> 00:03:14,159
+Donc je clique sur générer.
+
+106
+00:03:14,480 --> 00:03:16,319
+Donc là, on continue avec le prochain modèle.
+
+107
+00:03:16,500 --> 00:03:18,099
+Ce sera le modèle de chez MiniMax.
+
+108
+00:03:18,200 --> 00:03:20,559
+Donc ce sera le modèle MiniMax H3.
+
+109
+00:03:20,560 --> 00:03:21,879
+Sauf que là, il y en a deux versions.
+
+110
+00:03:21,980 --> 00:03:23,799
+Il y a la version H3 simple et il y a la version
+
+111
+00:03:23,800 --> 00:03:24,479
+H3 max.
+
+112
+00:03:24,960 --> 00:03:27,399
+Donc on va aller avec la version H3 simple.
+
+113
+00:03:27,500 --> 00:03:28,459
+Toujours le même prompt.
+
+114
+00:03:28,680 --> 00:03:29,099
+Je descends.
+
+115
+00:03:29,340 --> 00:03:30,699
+On met 8 secondes.
+
+116
+00:03:30,960 --> 00:03:32,759
+Là par contre, au niveau du format, on n'a
+
+117
+00:03:32,760 --> 00:03:33,279
+pas le choix.
+
+118
+00:03:33,420 --> 00:03:34,759
+Ils ne nous permettent pas de choisir soit
+
+119
+00:03:34,760 --> 00:03:36,799
+le format vertical ou le format horizontal.
+
+120
+00:03:37,200 --> 00:03:38,379
+Pareil au niveau de la qualité.
+
+121
+00:03:38,560 --> 00:03:39,619
+On ne peut pas changer la qualité.
+
+122
+00:03:39,880 --> 00:03:41,219
+C'est bloqué à 2K.
+
+123
+00:03:41,340 --> 00:03:42,219
+C'est un petit bémol.
+
+124
+00:03:42,380 --> 00:03:44,459
+Mais en tout cas, chaque modèle a ses spécificités.
+
+125
+00:03:44,620 --> 00:03:46,579
+Au niveau de la génération, ça va coûter 18
+
+126
+00:03:46,580 --> 00:03:47,019
+crédits.
+
+127
+00:03:47,140 --> 00:03:48,239
+Donc on va cliquer sur générer.
+
+128
+00:03:48,240 --> 00:03:50,319
+On continue avec le prochain modèle.
+
+129
+00:03:50,520 --> 00:03:52,339
+C'est le modèle Wan 3.0.
+
+130
+00:03:52,500 --> 00:03:54,659
+On met les mêmes 8 secondes.
+
+131
+00:03:55,140 --> 00:03:57,339
+Là aussi, pareil avec le modèle Wan 3.0.
+
+132
+00:03:57,400 --> 00:03:58,659
+On ne peut pas changer l'orientation.
+
+133
+00:03:58,940 --> 00:04:00,059
+C'est bloqué à auto.
+
+134
+00:04:00,240 --> 00:04:01,559
+Par contre, la qualité, on peut la changer.
+
+135
+00:04:01,740 --> 00:04:02,979
+Donc là, on met 1080p.
+
+136
+00:04:03,180 --> 00:04:04,759
+Et là, la même génération, elle va nous coûter
+
+137
+00:04:04,760 --> 00:04:05,519
+28 crédits.
+
+138
+00:04:05,820 --> 00:04:06,519
+Donc on va lancer.
+
+139
+00:04:06,840 --> 00:04:08,859
+Le prochain modèle, c'est celui de Grok.
+
+140
+00:04:08,960 --> 00:04:10,799
+Donc on va aller dans le Grok 1.5.
+
+141
+00:04:10,900 --> 00:04:12,079
+On va mettre 8 secondes.
+
+142
+00:04:12,160 --> 00:04:14,159
+L'orientation aussi, elle est en mode automatique.
+
+143
+00:04:14,240 --> 00:04:14,879
+On ne peut pas la changer.
+
+144
+00:04:15,040 --> 00:04:16,439
+Par contre, la qualité, on peut la changer.
+
+145
+00:04:16,440 --> 00:04:18,039
+On va la mettre à 1080p.
+
+146
+00:04:18,040 --> 00:04:19,219
+Donc on va cliquer sur générer.
+
+147
+00:04:19,480 --> 00:04:21,359
+Ensuite, le prochain modèle, c'est le modèle
+
+148
+00:04:21,360 --> 00:04:22,379
+de chez FLUX.
+
+149
+00:04:22,540 --> 00:04:24,539
+Le modèle FLUX 3.
+
+150
+00:04:24,960 --> 00:04:27,119
+Ici, on peut bel et bien changer l'orientation.
+
+151
+00:04:27,200 --> 00:04:28,259
+Donc on va mettre 16:9.
+
+152
+00:04:28,560 --> 00:04:29,999
+Et la qualité aussi, on peut la modifier.
+
+153
+00:04:30,120 --> 00:04:31,179
+On va mettre 1080p.
+
+154
+00:04:31,300 --> 00:04:31,999
+Et là, ça coûte.
+
+155
+00:04:32,440 --> 00:04:34,039
+On active l'audio comme d'habitude.
+
+156
+00:04:34,180 --> 00:04:35,659
+Et là, ça coûte 64 crédits.
+
+157
+00:04:35,740 --> 00:04:36,559
+Donc on va générer ça.
+
+158
+00:04:36,560 --> 00:04:39,039
+Le prochain modèle, c'est de chez Gemini.
+
+159
+00:04:39,380 --> 00:04:42,339
+Donc ce sera le Gemini Omni Flash 1.1.
+
+160
+00:04:42,480 --> 00:04:43,639
+8 secondes, 16:9.
+
+161
+00:04:44,020 --> 00:04:45,999
+Et on va mettre 1.080p.
+
+162
+00:04:46,180 --> 00:04:48,159
+Et là, ça va nous coûter 36 crédits.
+
+163
+00:04:48,280 --> 00:04:49,199
+On clique sur générer.
+
+164
+00:04:49,400 --> 00:04:51,579
+Ensuite, le prochain modèle, c'est vraiment
+
+165
+00:04:51,580 --> 00:04:52,799
+les modèles les plus chers maintenant.
+
+166
+00:04:53,000 --> 00:04:55,399
+Ce sera le modèle Seedance 2.5, qui est le
+
+167
+00:04:55,400 --> 00:04:58,039
+meilleur modèle à date depuis un bon moment.
+
+168
+00:04:58,120 --> 00:04:59,219
+Et vraiment le plus cher aussi.
+
+169
+00:04:59,340 --> 00:05:00,519
+Donc on va mettre les 8 secondes.
+
+170
+00:05:00,600 --> 00:05:02,339
+Tu verras que lui, pour les mêmes paramètres,
+
+171
+00:05:02,420 --> 00:05:03,719
+ça va coûter un peu plus cher que les autres.
+
+172
+00:05:03,720 --> 00:05:06,119
+Donc 8 secondes, 16:9, 1080p.
+
+173
+00:05:06,300 --> 00:05:07,659
+Pour le bitrate, on va mettre standard.
+
+174
+00:05:07,940 --> 00:05:09,839
+Donc je vois que ça va coûter 128 crédits.
+
+175
+00:05:09,960 --> 00:05:11,619
+Donc c'est de loin le plus cher jusqu'à présent.
+
+176
+00:05:11,760 --> 00:05:13,359
+Maintenant, le dernier modèle pour lequel
+
+177
+00:05:13,360 --> 00:05:15,319
+on va lancer la génération, ce sera le modèle
+
+178
+00:05:15,320 --> 00:05:16,599
+Kling 4.0,
+
+179
+00:05:16,640 --> 00:05:18,239
+qui est un modèle qui vient tout juste de
+
+180
+00:05:18,240 --> 00:05:18,539
+sortir.
+
+181
+00:05:18,740 --> 00:05:20,699
+Donc il n'est pas encore disponible sur Higgsfield.
+
+182
+00:05:20,840 --> 00:05:22,639
+Du coup, pour celui-là, je vais aller directement
+
+183
+00:05:22,640 --> 00:05:24,999
+le tester sur le site de Kling AI.
+
+184
+00:05:25,180 --> 00:05:27,099
+Donc il sera très certainement disponible
+
+185
+00:05:27,100 --> 00:05:28,779
+dans les prochains jours dans Higgsfield.
+
+186
+00:05:28,920 --> 00:05:30,539
+Donc on va sur la plateforme directement de
+
+187
+00:05:30,540 --> 00:05:30,999
+Kling AI.
+
+188
+00:05:31,140 --> 00:05:32,319
+Donc je ne vais pas leur faire de la promotion,
+
+189
+00:05:32,500 --> 00:05:33,119
+mais c'est assez simple.
+
+190
+00:05:33,120 --> 00:05:34,559
+Et on va mettre le même prompt.
+
+191
+00:05:34,760 --> 00:05:35,619
+On va mettre vidéo.
+
+192
+00:05:35,860 --> 00:05:36,699
+On va choisir Kling.
+
+193
+00:05:36,880 --> 00:05:38,599
+La durée, on va se rassurer que c'est la même
+
+194
+00:05:38,600 --> 00:05:38,939
+durée.
+
+195
+00:05:39,080 --> 00:05:40,399
+Donc désolé, 8 secondes.
+
+196
+00:05:41,140 --> 00:05:42,379
+1080p, 16:9.
+
+197
+00:05:42,800 --> 00:05:44,919
+Là, ça va coûter 120 crédits, mais c'est 120
+
+198
+00:05:44,920 --> 00:05:46,439
+crédits de chez Kling.
+
+199
+00:05:46,640 --> 00:05:48,059
+En tout cas, on prend ça comme référence et
+
+200
+00:05:48,060 --> 00:05:49,139
+on va cliquer sur générer.
+
+201
+00:05:49,380 --> 00:05:51,079
+Donc là, maintenant que j'ai généré, j'ai
+
+202
+00:05:51,080 --> 00:05:52,279
+lancé toutes les générations.
+
+203
+00:05:52,560 --> 00:05:54,779
+Je vais juste patienter que toutes elles finissent.
+
+204
+00:05:54,980 --> 00:05:55,979
+Et on va toutes les regarder.
+
+205
+00:05:56,160 --> 00:05:58,279
+Et on va les juger une par une et voir un
+
+206
+00:05:58,280 --> 00:05:59,079
+peu ce qu'on obtient.
+
+207
+00:05:59,140 --> 00:06:01,259
+Donc là, toutes les générations ont terminé.
+
+208
+00:06:01,260 --> 00:06:02,819
+On va les regarder une par une.
+
+209
+00:06:03,000 --> 00:06:03,639
+Je vais les juger.
+
+210
+00:06:03,760 --> 00:06:05,419
+Et je te les mettrai directement en plein
+
+211
+00:06:05,420 --> 00:06:06,619
+écran avec le son et tout.
+
+212
+00:06:06,780 --> 00:06:08,919
+Et surtout, pour chaque génération, quand
+
+213
+00:06:08,920 --> 00:06:09,859
+je vais te l'afficher à l'écran,
+
+214
+00:06:10,000 --> 00:06:11,619
+je vais non seulement t'afficher le nom du
+
+215
+00:06:11,620 --> 00:06:11,959
+modèle,
+
+216
+00:06:12,080 --> 00:06:14,399
+mais aussi le tarif, combien ça a coûté en
+
+217
+00:06:14,400 --> 00:06:14,799
+crédit.
+
+218
+00:06:14,900 --> 00:06:16,879
+Et avec une estimation en euros.
+
+219
+00:06:16,980 --> 00:06:18,199
+Voilà, pour qu'il y ait une idée de combien
+
+220
+00:06:18,200 --> 00:06:19,819
+ça coûte la génération en euros.
+
+221
+00:06:20,000 --> 00:06:21,519
+Donc, on commence par la première qui était
+
+222
+00:06:21,520 --> 00:06:23,119
+Seedance 2.0.
+
+223
+00:06:23,460 --> 00:06:24,939
+Malheureusement, on a eu une mauvaise surprise.
+
+224
+00:06:25,200 --> 00:06:27,039
+Quand j'ai donné le prompt à Seedance, il a
+
+225
+00:06:27,040 --> 00:06:28,799
+détecté comme si c'était, voilà,
+
+226
+00:06:29,220 --> 00:06:30,899
+il m'a dit problème de copyright.
+
+227
+00:06:31,220 --> 00:06:32,719
+C'est comme si j'essayais de répliquer la
+
+228
+00:06:32,720 --> 00:06:34,179
+marque de quelqu'un ou je ne sais pas.
+
+229
+00:06:34,400 --> 00:06:36,439
+Donc, bizarrement, il a refusé le prompt et
+
+230
+00:06:36,440 --> 00:06:37,719
+il m'a dit problème de copyright.
+
+231
+00:06:37,860 --> 00:06:40,459
+Donc, Seedance 2.0, à date, il est éliminé
+
+232
+00:06:40,460 --> 00:06:40,979
+à cause de ça.
+
+233
+00:06:41,140 --> 00:06:43,739
+Donc, le prochain, c'était Kling 3.0.
+
+234
+00:06:43,920 --> 00:06:45,519
+Donc, lui, il m'a bel et bien généré la vidéo.
+
+235
+00:06:45,660 --> 00:06:46,979
+Donc, on va la regarder ensemble.
+
+236
+00:06:46,980 --> 00:06:58,009
+Le Kling 3.0, il y a plusieurs choses qui
+
+237
+00:06:58,010 --> 00:06:58,569
+sont pas mal.
+
+238
+00:06:58,730 --> 00:07:00,849
+Par exemple, la qualité du sac, elle est pas
+
+239
+00:07:00,850 --> 00:07:00,989
+mal.
+
+240
+00:07:01,070 --> 00:07:04,549
+Le décor et tout, les tasses de thé, le verre
+
+241
+00:07:04,550 --> 00:07:05,989
+d'eau, franchement, tout ça, c'est carré.
+
+242
+00:07:06,190 --> 00:07:08,929
+Mais le visage de la personne, à mon goût,
+
+243
+00:07:09,110 --> 00:07:10,489
+il n'a pas l'air très naturel.
+
+244
+00:07:10,570 --> 00:07:12,109
+Même s'il est très bien fait, n'empêche que
+
+245
+00:07:12,110 --> 00:07:13,169
+le visage, il est très bien fait.
+
+246
+00:07:13,270 --> 00:07:14,149
+Il n'a pas l'air très naturel.
+
+247
+00:07:14,250 --> 00:07:16,609
+Mais par contre, la voix, c'est une catastrophe,
+
+248
+00:07:16,810 --> 00:07:16,989
+tu vois.
+
+249
+00:07:17,090 --> 00:07:18,549
+La voix, on a l'impression que c'est quelqu
+
+250
+00:07:18,550 --> 00:07:20,689
+'un qui a un accent italien qui essaie de
+
+251
+00:07:20,690 --> 00:07:21,269
+parler français.
+
+252
+00:07:21,270 --> 00:07:23,629
+Mais sinon, quelqu'un qui veut générer du
+
+253
+00:07:23,630 --> 00:07:26,569
+contenu sans forcément voix et qui veut économiser
+
+254
+00:07:26,570 --> 00:07:26,989
+de l'argent,
+
+255
+00:07:27,210 --> 00:07:29,429
+Kling 3.0 peut générer des très bonnes vidéos.
+
+256
+00:07:33,670 --> 00:07:34,409
+On passe au suivant.
+
+257
+00:07:34,530 --> 00:07:36,649
+Le suivant, c'était le MiniMax H3.
+
+258
+00:07:46,790 --> 00:07:46,889
+OK.
+
+259
+00:07:47,390 --> 00:07:50,869
+Concernant le MiniMax H3, le visuel, il est
+
+260
+00:07:50,870 --> 00:07:51,169
+super.
+
+261
+00:07:51,370 --> 00:07:53,409
+Le sac, le décor, tout ça, c'est très bien
+
+262
+00:07:53,410 --> 00:07:53,569
+fait.
+
+263
+00:07:53,710 --> 00:07:55,949
+Le personnage en lui-même, la personne, on
+
+264
+00:07:55,950 --> 00:07:57,089
+sent que c'est de l'IA, tu vois.
+
+265
+00:07:57,250 --> 00:07:58,529
+On sent que c'est de l'IA, donc c'est assez
+
+266
+00:07:58,530 --> 00:07:59,469
+très travaillé.
+
+267
+00:07:59,550 --> 00:08:01,489
+Je dirais, ça a l'air trop parfait, donc on
+
+268
+00:08:01,490 --> 00:08:02,089
+sent que c'est de l'IA.
+
+269
+00:08:02,090 --> 00:08:04,269
+La voix française, elle est bien, elle parle
+
+270
+00:08:04,270 --> 00:08:04,829
+bien le français.
+
+271
+00:08:04,990 --> 00:08:06,909
+On ne sent pas que la voix fait vraiment partie
+
+272
+00:08:06,910 --> 00:08:07,369
+de la vidéo.
+
+273
+00:08:07,510 --> 00:08:08,629
+Donc ça, c'est vraiment moi, mon avis.
+
+274
+00:08:08,830 --> 00:08:10,369
+Donc encore une fois, ça peut servir.
+
+275
+00:08:10,550 --> 00:08:13,009
+Un peu comme Kling 3.0, c'est un modèle aussi
+
+276
+00:08:13,010 --> 00:08:13,529
+qui est moins cher,
+
+277
+00:08:13,570 --> 00:08:15,109
+qui permet vraiment de générer des vidéos
+
+278
+00:08:15,110 --> 00:08:16,629
+tant qu'il n'y aura pas des paroles.
+
+279
+00:08:16,730 --> 00:08:18,189
+Sinon, à part ça, je pense que c'est carré.
+
+280
+00:08:22,310 --> 00:08:24,469
+Le prochain, c'est le Wan 3.0.
+
+281
+00:08:33,280 --> 00:08:36,519
+Franchement, le Wan 3.0, il m'a agréablement
+
+282
+00:08:36,520 --> 00:08:36,899
+surpris.
+
+283
+00:08:37,020 --> 00:08:38,799
+Le décor, c'est super.
+
+284
+00:08:39,060 --> 00:08:41,459
+Le personnage en lui-même, c'est ultra réaliste.
+
+285
+00:08:41,840 --> 00:08:43,459
+Honnêtement, l'éclairage est très bien fait.
+
+286
+00:08:43,560 --> 00:08:45,479
+On sent ici la lumière du soleil.
+
+287
+00:08:45,640 --> 00:08:47,259
+La qualité visuelle, elle est super.
+
+288
+00:08:47,460 --> 00:08:49,799
+Et la voix aussi, jusqu'à présent, c'est la
+
+289
+00:08:49,800 --> 00:08:50,699
+meilleure voix française.
+
+290
+00:08:50,940 --> 00:08:52,659
+Jusqu'à présent des modèles qu'on a testés,
+
+291
+00:08:52,840 --> 00:08:53,819
+c'est la meilleure voix française.
+
+292
+00:08:54,080 --> 00:08:55,939
+Et aussi, je sens qu'ils ont essayé de faire
+
+293
+00:08:55,940 --> 00:08:57,059
+une voix vraiment naturelle
+
+294
+00:08:57,060 --> 00:08:59,719
+où il y a des bruits de fond, vraiment d'une
+
+295
+00:08:59,720 --> 00:09:00,939
+vraie personne qui est dans un restaurant.
+
+296
+00:09:01,220 --> 00:09:03,959
+Honnêtement, jusqu'à présent, le Wan 3.0,
+
+297
+00:09:04,080 --> 00:09:05,339
+c'est le meilleur modèle.
+
+298
+00:09:05,340 --> 00:09:11,699
+Donc, le prochain, c'est le Grok Imagine
+
+299
+00:09:11,700 --> 00:09:12,379
+1.5.
+
+300
+00:09:21,040 --> 00:09:22,219
+Visuellement, c'est pas mal.
+
+301
+00:09:22,380 --> 00:09:24,159
+Le sac, il m'a pas léa très réaliste, on va
+
+302
+00:09:24,160 --> 00:09:24,759
+pas se mentir.
+
+303
+00:09:24,880 --> 00:09:26,839
+La personne en soi, elle est bien faite, mais
+
+304
+00:09:26,840 --> 00:09:28,599
+ça n'a pas léa très naturel.
+
+305
+00:09:28,780 --> 00:09:30,299
+Ça ressemble encore pas mal à de l'IA.
+
+306
+00:09:30,480 --> 00:09:32,239
+La voix française, elle est OK.
+
+307
+00:09:32,480 --> 00:09:33,719
+Elle n'est pas très naturelle.
+
+308
+00:09:33,780 --> 00:09:35,559
+On sent un peu un côté robotique.
+
+309
+00:09:35,740 --> 00:09:37,639
+Donc, je pense que dans mon classement, lui,
+
+310
+00:09:37,800 --> 00:09:38,919
+par contre, il descend un peu.
+
+311
+00:09:43,060 --> 00:09:43,699
+Donc, on continue.
+
+312
+00:09:43,820 --> 00:09:45,639
+Le prochain modèle, c'est le FLUX 3.
+
+313
+00:09:54,280 --> 00:09:56,639
+Le FLUX 3, c'est le meilleur modèle jusqu
+
+314
+00:09:56,640 --> 00:09:57,859
+'à présent que j'ai testé.
+
+315
+00:09:57,860 --> 00:10:00,379
+Honnêtement, la voix française, elle est super
+
+316
+00:10:00,380 --> 00:10:00,899
+naturelle.
+
+317
+00:10:01,080 --> 00:10:02,959
+À part qu'au lieu de dire Ghislaine, elle a
+
+318
+00:10:02,960 --> 00:10:04,439
+dit Ghislaine.
+
+319
+00:10:04,720 --> 00:10:05,579
+Mais après, ça, ça va.
+
+320
+00:10:05,700 --> 00:10:07,939
+Le décor, il est ultra cinématique, comme
+
+321
+00:10:07,940 --> 00:10:09,079
+je l'ai demandé dans mon prompt.
+
+322
+00:10:09,240 --> 00:10:10,019
+Ultra naturel.
+
+323
+00:10:10,140 --> 00:10:11,459
+Honnêtement, pour une personne qui n'a jamais
+
+324
+00:10:11,460 --> 00:10:13,399
+vu une vidéo IA, il ne saurait pas que c'est
+
+325
+00:10:13,400 --> 00:10:13,699
+de l'IA.
+
+326
+00:10:13,840 --> 00:10:14,919
+Honnêtement, c'est même flippant.
+
+327
+00:10:15,080 --> 00:10:16,239
+Le décor, tout est parfait.
+
+328
+00:10:16,340 --> 00:10:18,479
+Le sac, franchement, c'est la meilleure vidéo
+
+329
+00:10:18,480 --> 00:10:19,919
+que j'ai vue jusque-là.
+
+330
+00:10:20,040 --> 00:10:22,239
+Donc, normalement, à l'écran ici, tu verras
+
+331
+00:10:22,240 --> 00:10:24,239
+que progressivement, je te mettrais un classement
+
+332
+00:10:24,240 --> 00:10:24,819
+interactif
+
+333
+00:10:24,820 --> 00:10:27,219
+où il y a mon classement des différents modèles
+
+334
+00:10:27,220 --> 00:10:29,359
+ainsi que les meilleurs modèles en termes
+
+335
+00:10:29,360 --> 00:10:30,619
+de rapport qualité-prix, etc.
+
+336
+00:10:30,920 --> 00:10:33,239
+Plus on avance, plus mon classement, il va
+
+337
+00:10:33,240 --> 00:10:34,479
+progressivement changer.
+
+338
+00:10:34,700 --> 00:10:36,079
+Sinon, FLUX 3.1.
+
+339
+00:10:36,160 --> 00:10:38,119
+Le FLUX 3, désolé, c'est le meilleur modèle
+
+340
+00:10:38,120 --> 00:10:39,679
+jusqu'à présent que j'ai testé.
+
+341
+00:10:43,780 --> 00:10:46,559
+Le prochain, c'est le Gemini Omni Flash 1.1.
+
+342
+00:10:55,110 --> 00:10:57,729
+Honnêtement, le modèle Gemini Omni Flash,
+
+343
+00:10:57,830 --> 00:10:58,589
+il n'est pas mal.
+
+344
+00:10:58,730 --> 00:11:01,369
+Je le mettrais au même niveau que le Wan 3.0.
+
+345
+00:11:01,450 --> 00:11:02,289
+La voix, elle est bien.
+
+346
+00:11:02,510 --> 00:11:03,609
+Elle est bien, honnêtement, il n'y a pas de
+
+347
+00:11:03,610 --> 00:11:03,829
+souci.
+
+348
+00:11:03,830 --> 00:11:06,369
+Le visuel, tout est bien, mais je sens qu
+
+349
+00:11:06,370 --> 00:11:07,309
+'il y a un truc qui manque.
+
+350
+00:11:07,430 --> 00:11:08,909
+Je ne sais pas comment l'expliquer, mais sinon,
+
+351
+00:11:09,030 --> 00:11:09,949
+c'est un très bon modèle.
+
+352
+00:11:10,150 --> 00:11:10,669
+Il n'y a rien à dire.
+
+353
+00:11:14,830 --> 00:11:17,169
+Le prochain, avant-dernier, qui est selon
+
+354
+00:11:17,170 --> 00:11:18,789
+moi le meilleur, je ne l'ai pas encore regardé,
+
+355
+00:11:18,870 --> 00:11:20,009
+mais je sais qu'il est le meilleur, c'est
+
+356
+00:11:20,010 --> 00:11:21,269
+le Seedance 2.5.
+
+357
+00:11:29,960 --> 00:11:32,919
+Honnêtement, le Seedance 2.5, il est de
+
+358
+00:11:32,920 --> 00:11:35,619
+loin le meilleur modèle au niveau du visuel.
+
+359
+00:11:35,760 --> 00:11:38,519
+Le décor, le personnage en lui-même, le sac,
+
+360
+00:11:38,680 --> 00:11:40,739
+tout est parfait, super naturel.
+
+361
+00:11:40,880 --> 00:11:43,019
+La voix, l'intonation de la voix, elle est
+
+362
+00:11:43,020 --> 00:11:43,459
+parfaite.
+
+363
+00:11:43,460 --> 00:11:45,419
+C'est juste que la voix, elle a un petit accent
+
+364
+00:11:45,420 --> 00:11:47,279
+où elle prononce mal certains mots.
+
+365
+00:11:47,480 --> 00:11:48,779
+C'est vraiment là le bémol.
+
+366
+00:11:49,080 --> 00:11:50,379
+Sinon, la voix, elle est parfaite.
+
+367
+00:11:50,720 --> 00:11:52,479
+Elle s'intègre tellement à la vidéo, c'est
+
+368
+00:11:52,480 --> 00:11:53,399
+100% naturel.
+
+369
+00:11:53,560 --> 00:11:54,779
+Franchement, je suis grave bluffé.
+
+370
+00:11:54,940 --> 00:11:56,739
+Donc, Seedance 2.5, il est de loin le plus
+
+371
+00:11:56,740 --> 00:11:57,719
+cher, donc c'est normal.
+
+372
+00:11:57,960 --> 00:11:58,919
+Donc, c'était un peu logique qu'il allait
+
+373
+00:11:58,920 --> 00:11:59,799
+être au top du classement.
+
+374
+00:11:59,900 --> 00:12:06,119
+Maintenant, la dernière vidéo que j'ai eue
+
+375
+00:12:06,120 --> 00:12:07,959
+à générer directement sur la plateforme de
+
+376
+00:12:07,960 --> 00:12:08,279
+Kling,
+
+377
+00:12:08,420 --> 00:12:10,419
+avec le modèle Kling 4.0.
+
+378
+00:12:10,600 --> 00:12:11,119
+On va la regarder.
+
+379
+00:12:19,880 --> 00:12:22,679
+Honnêtement, le modèle de chez Kling 4.0,
+
+380
+00:12:22,860 --> 00:12:24,219
+la voix, elle a l'air robotique.
+
+381
+00:12:24,360 --> 00:12:25,059
+Je ne la valide pas.
+
+382
+00:12:25,220 --> 00:12:27,219
+Le décor visuel et tout, c'est pas mal, mais
+
+383
+00:12:27,220 --> 00:12:28,039
+ça a l'air ia.
+
+384
+00:12:28,220 --> 00:12:29,719
+Surtout, le sac, il n'est pas bien fait.
+
+385
+00:12:29,880 --> 00:12:31,199
+Limite, il est quasiment au même niveau que
+
+386
+00:12:31,200 --> 00:12:32,119
+le Kling 3.0.
+
+387
+00:12:32,180 --> 00:12:35,859
+Je ne vois aucune amélioration entre le 4.0 et le 3.0 au niveau de Kling.
+
+388
+00:12:35,980 --> 00:12:36,419
+Je suis désolé.
+
+389
+00:12:36,540 --> 00:12:38,459
+À la fin de cette vidéo ici, normalement à
+
+390
+00:12:38,460 --> 00:12:40,079
+l'écran, moi, je te mettrais mon classement
+
+391
+00:12:40,080 --> 00:12:42,259
+des meilleurs modèles en termes de rapport
+
+392
+00:12:42,260 --> 00:12:43,019
+qualité-prix.
+
+393
+00:12:43,180 --> 00:12:45,019
+Et surtout, je te mettrais en quoi chaque
+
+394
+00:12:45,020 --> 00:12:46,179
+modèle est le meilleur.
+
+395
+00:12:46,340 --> 00:12:47,659
+Tu vois, je vais t'afficher ça à l'écran.
+
+396
+00:12:47,780 --> 00:12:49,499
+Et ce sera donc à toi de décider lequel des
+
+397
+00:12:49,500 --> 00:12:51,779
+modèles sera le mieux adapté pour ta propre
+
+398
+00:12:51,780 --> 00:12:52,339
+utilisation.
+
+399
+00:12:52,500 --> 00:12:54,639
+Donc, je te rappelle que le lien de Higgsfield,
+
+400
+00:12:54,680 --> 00:12:55,979
+il est directement dans la description.
+
+401
+00:12:56,140 --> 00:12:57,919
+Tu pourras cliquer et aller tester ces différents
+
+402
+00:12:57,920 --> 00:12:58,339
+modèles.
+
+403
+00:12:58,500 --> 00:12:59,559
+Dis-moi dans les commentaires ce que tu as
+
+404
+00:12:59,560 --> 00:13:00,339
+pensé de cette vidéo.
+
+405
+00:13:00,560 --> 00:13:01,319
+Mets un gros pouce bleu.
+
+406
+00:13:01,380 --> 00:13:02,399
+Abonne-toi si ce n'est pas déjà fait.
+
+407
+00:13:02,480 --> 00:13:03,599
+Et on se dit à la prochaine vidéo.
+
+408
+00:13:03,740 --> 00:13:04,179
+Peace out.

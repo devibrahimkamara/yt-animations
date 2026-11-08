@@ -1,0 +1,320 @@
+[00:00.00] Donc la personne que tu vois à l'écran, elle n'existe pas.
+[00:02.24] Je l'ai créée avec l'intelligence artificielle.
+[00:04.24] Elle s'appelle Awa.
+[00:05.16] Et là, elle est au marché d'Abidjan.
+[00:06.56] Et sur la prochaine vidéo, elle sera à Bali.
+[00:08.62] C'est deux vidéos complètement différentes.
+[00:10.32] Mais ça reste exactement le même personnage, le même visage, les mêmes lunettes, les mêmes accessoires.
+[00:15.14] Et c'est ça le vrai problème que beaucoup de personnes ont avec les vidéos IA.
+[00:18.84] C'est que c'est facile de créer un personnage réaliste et tout.
+[00:21.76] Pour pouvoir répliquer ce même personnage identique sur plusieurs vidéos, ça devient extrêmement difficile.
+[00:27.00] Donc aujourd'hui, je te partage ma méthode étape par étape.
+[00:30.00] Et tu verras que c'est assez simple, même si tu n'as jamais créé aucune vidéo auparavant.
+[00:34.50] Donc avant de débuter, il y a un point qu'il faut que tu comprennes.
+[00:36.98] C'est qu'il y a deux familles d'IA qui existent.
+[00:39.56] Il y a les modèles d'images, qui sont ceux qui génèrent logiquement des images IA.
+[00:43.86] Et il y a les modèles de vidéos, qui sont ceux qui génèrent des vidéos IA.
+[00:47.88] C'est deux types d'IA complètement distincts, complètement différents.
+[00:51.32] Donc du côté des images, d'abord on a Nando Banana.
+[00:53.88] Lui, il est très fort pour retoucher des photos qui existent déjà.
+[00:56.96] Changer une tenue, changer un décor, etc.
+[00:59.38] Ensuite, on a...
+[01:00.00] Un GPT Image 2.5.
+[01:01.46] Lui, par contre, il est très fort pour suivre des consignes assez précises.
+[01:05.40] Il est fort pour tout ce qui est créé, des photos de produits, avec des textiles, des textes, etc.
+[01:10.26] Bien lisible. Il est très fort pour ça.
+[01:12.04] Ensuite, il y a un autre modèle qui s'appelle Soul Cinema.
+[01:14.38] Lui, c'est un modèle qui fait des images qui ressemblent à un film.
+[01:17.68] Donc c'est ça sa spécialité.
+[01:18.98] Et ensuite, le dernier modèle, il y a le modèle qui s'appelle Seed Dream.
+[01:21.66] Lui, c'est un modèle à tout faire.
+[01:23.38] Donc il peut générer des personnages, des vraies personnes.
+[01:25.84] Il peut générer des lieux, il peut générer des scènes détaillées, etc.
+[01:30.02] Ensuite, passons maintenant au modèle vidéo.
+[01:32.14] Le premier que je vais te présenter, c'est le modèle One.
+[01:34.16] Donc lui, il est très fort pour tout ce qui est créé, des mouvements entre une première et une dernière image.
+[01:38.10] C'est-à-dire que tu lui donnes une première image, une dernière image.
+[01:40.34] Et lui, il te crée vraiment la scène et les mouvements qui mènent à la dernière image, si tu comprends ce que je veux dire.
+[01:45.06] Ensuite, tu as Kling.
+[01:46.06] Donc Kling, lui, il est très fort pour générer les actions, les mouvements des personnages.
+[01:50.68] Vraiment aller dans les détails d'une histoire.
+[01:53.00] Il est très fort pour générer ça.
+[01:54.28] À partir d'images que tu lui donnes, justement.
+[01:56.68] Ensuite, tu as Seedance.
+[01:57.84] Seedance qui est de loin le meilleur.
+[01:59.18] Lui, il peut prendre...
+[02:00.00] Un personnage, une scène et lui, il crée tout.
+[02:02.66] Voilà, que ce soit les mouvements, le son, en temps réel.
+[02:06.34] Et vraiment, tu peux faire des super vidéos assez réalistes qui vont jusqu'à 30 secondes.
+[02:10.56] Donc pour la vidéo d'aujourd'hui, on va faire un choix.
+[02:12.58] Et je vais te recommander, au niveau de l'image, on va aller sur GPT Image 2.5.
+[02:17.18] Et au niveau de la vidéo, on va aller sur Seedance 2.5.
+[02:20.30] Et selon moi, c'est la meilleure combinaison à faire pour avoir un résultat constant comme ce qu'on recherche.
+[02:25.18] Donc maintenant que tu sais les deux modèles qu'on va utiliser, il est temps de savoir où est-ce qu'on va pouvoir les avoir.
+[02:29.52] Sur quelles plateformes, etc.
+[02:31.22] Sur quelles applications.
+[02:32.20] De nos jours, la majorité de ces modèles, sinon tous ces modèles-là, ils ont leur propre site, leur propre plateforme.
+[02:37.30] Cling, ils ont leur propre plateforme.
+[02:39.10] GPT, donc chaque GPT, il a sa propre plateforme, etc.
+[02:41.82] Donc si tu souhaites aller directement utiliser les modèles sur leur propre plateforme, ça peut très vite devenir assez cher.
+[02:47.84] Parce que chaque plateforme, elle a un prix différent.
+[02:49.96] Tu vas payer plusieurs abonnements.
+[02:51.24] Et ça va créer aussi beaucoup de complexité à avoir à gérer plusieurs plateformes à la fois.
+[02:54.82] C'est pour ça que moi, je te recommanderais d'aller sur des plateformes comme Xfield.
+[02:58.62] Qui sont des plateformes...
+[02:59.52] Qui vont regrouper tous les modèles qui existent.
+[03:01.78] Comme ça, tu n'as pas besoin d'avoir un abonnement sur GPT ou sur Nano Banana.
+[03:05.56] Tous les modèles sont directement dans Xfield.
+[03:07.96] Et c'est celui qu'on va utiliser pour cette vidéo-là.
+[03:10.14] Donc le lien pour Xfield, il sera directement dans la description et dans le premier commentaire épinglé.
+[03:14.54] Tu vas cliquer sur le lien et ça va te rediriger vers cette page-là qui va s'ouvrir sur mon écran.
+[03:18.82] C'est donc la page Xfield pour créer ta première vidéo IA.
+[03:22.32] Donc lorsque tu vas cliquer sur le lien qui est dans la description ou dans le commentaire épinglé,
+[03:26.10] tu tomberas sur cette page de Xfield qui est un tutoriel qu'ils ont créé.
+[03:29.52] Pour te permettre de créer ta première vidéo IA.
+[03:31.66] Donc si tu n'as pas déjà un compte sur Xfield, tu vas cliquer sur le bouton s'inscrire, donc sign up.
+[03:35.86] Et tu vas créer ton compte.
+[03:37.06] Et là, tu as le choix en créant un compte directement avec Google ou avec ta propre adresse e-mail.
+[03:42.10] Donc le plus souvent avec Google, c'est rapide parce que tout le monde a une adresse e-mail Google.
+[03:45.78] Je vais accepter leurs conditions importantes et on va cliquer sur Google.
+[03:48.70] Et là, je vais choisir un de mes comptes Google.
+[03:50.84] Donc moi, j'ai plusieurs comptes Google.
+[03:52.48] Donc je vais prendre un au hasard.
+[03:53.96] Donc là, je vais accepter les différentes conditions pour qu'ils aient accès à mon compte Google.
+[03:58.44] Ok.
+[03:59.52] Ta première inscription sur Xfield, ils vont te poser certaines questions.
+[04:02.20] Donc voilà, quel type d'utilisation tu auras.
+[04:04.34] Moi, c'est personnel.
+[04:05.40] Ensuite, quel genre de vidéo tu vas créer.
+[04:07.24] Tu peux dire, voilà, je vais juste explorer.
+[04:09.20] Voilà, c'était juste ça pour explorer.
+[04:10.66] Ton niveau débutant, intermédiaire, on peut mettre, par exemple, intermédiaire.
+[04:14.64] Qu'est-ce que tu veux essayer sur Xfield ?
+[04:16.92] Donc nous, on veut essayer déjà Seedens 2.5.
+[04:19.00] Non seulement, mais aussi TachGPT.
+[04:20.98] Donc on va mettre, par exemple, AI Influenceur.
+[04:22.94] On va faire continuer.
+[04:24.00] Et là, quelle fonctionnalité est-ce que tu as envie d'essayer ?
+[04:26.30] La fonctionnalité, par exemple, vidéo génération.
+[04:29.52] C'est ce qu'on va faire.
+[04:30.26] On va faire continuer.
+[04:31.36] Comment est-ce que tu as entendu parler de Xfield ?
+[04:33.50] Nous, dans notre cas, c'est YouTube.
+[04:35.26] Grâce à Ibrahim Tamarad, on va mettre YouTube.
+[04:37.46] Là, ils vont te demander une question assez personnelle.
+[04:39.14] C'est quelles sont les différentes frustrations ou difficultés que tu as avec les vidéos d'IA générative en général.
+[04:44.46] Et c'est le problème qu'on essaie de résoudre aujourd'hui.
+[04:46.34] C'est le fait que ça manque de constance vraiment dans les générations, surtout avec un personnage.
+[04:51.02] Donc on va cliquer sur ça.
+[04:52.12] Et là, maintenant, on va faire continuer.
+[04:53.98] Et normalement, ton inscription, elle est terminée.
+[04:56.22] Là, ils vont te demander, est-ce que tu as un code promo ?
+[04:58.48] Donc nous, dans notre cas,
+[04:59.52] on n'a pas forcément un code promo.
+[05:00.88] Mais si tu t'inscris sur Xfield grâce à mon lien dans la description,
+[05:04.10] tu auras accès à 50% de réduction directement sur ton premier mois d'abonnement.
+[05:08.10] Donc déjà, c'est déjà inclus.
+[05:09.14] Donc on va faire skip ici.
+[05:10.10] Et là, comme je t'ai dit directement, tu as accès à 50% de réduction grâce directement à mon lien Ibrahim Tamarad.
+[05:17.04] Donc c'est important de cliquer sur mon lien.
+[05:18.54] Car sans ça, tu n'auras pas la promo de 50%.
+[05:20.94] Tu cliques sur le bouton claim, discount.
+[05:22.86] Et ensuite, tu vas choisir ton abonnement, celui que tu souhaites avoir.
+[05:26.06] Tu as le choix entre prendre un abonnement annuel ou un abonnement mensuel.
+[05:29.02] Donc deux.
+[05:29.52] Dans les deux cas, tu as accès aux 50% de réduction.
+[05:32.18] Donc là, tu as deux abonnements qui te sont présentés.
+[05:34.64] L'abonnement pro, l'abonnement max.
+[05:36.50] Donc l'abonnement pro, c'est vraiment pour quelqu'un qui débute,
+[05:38.68] qui n'a pas forcément une idée claire de ce qu'il veut faire avec les vidéos IA.
+[05:41.96] Il débute, il teste un peu.
+[05:43.40] C'est 29$ par mois.
+[05:44.72] Donc je pense que c'est un petit risque.
+[05:46.00] Mais lorsque vraiment, tu commences vraiment à, par exemple, créer un compte YouTube faceless ou TikTok
+[05:50.16] et que tu commences à avoir quelques résultats,
+[05:51.92] que vraiment tu veux créer du contenu de manière constante,
+[05:54.66] là, vraiment, l'abonnement max, tu verras que ce sera l'option logique pour toi.
+[05:57.92] Tu prends l'abonnement pro, tu fais sélectionner l'offre
+[06:00.26] et là, ils vont te demander tes informations bancaires, tout simplement.
+[06:03.34] Donc tu mets des différentes informations bancaires et tu fais sur acheter.
+[06:06.30] Donc voilà, je vais bien évidemment flouter ça pour ne pas que tu vois mes informations.
+[06:09.50] Donc maintenant qu'on a fini de s'inscrire, qu'on a pris notre abonnement,
+[06:12.08] il est temps maintenant de commencer notre tutoriel.
+[06:14.00] La première étape pour générer notre vidéo IA, c'est de générer d'abord le personnage.
+[06:18.38] Donc tu peux le faire directement dans Xfield.
+[06:20.34] Dans notre cas, on va aller ici dans l'onglet images.
+[06:22.42] Tu verras que sur Xfield, il y a un menu en haut avec plusieurs options.
+[06:25.56] On va aller dans images, on va aller dans create image.
+[06:27.92] On va cliquer sur ça et c'est là que tu pourras donc créer des images.
+[06:30.88] Tu verras dans mon compte que j'ai déjà plusieurs images que j'ai eu à créer.
+[06:34.10] Voilà parce que j'utilise activement Xfield pour plusieurs, plusieurs contenus marketing,
+[06:38.20] pour plusieurs de mes business.
+[06:39.56] Donc ici, tu vas mettre le prompt que tu vas utiliser pour créer ton image.
+[06:43.28] Donc moi, j'ai déjà créé un prompt.
+[06:44.90] Donc c'est vraiment un prompt très, très, très descriptif, désolé, du personnage que je veux,
+[06:49.18] comment et à quoi il ressemble physiquement, son âge, son ethnie.
+[06:52.32] Donc c'est une femme africaine.
+[06:54.08] Qu'est-ce qu'elle porte comme habit, etc.
+[06:55.86] J'ai mis en anglais tout simplement.
+[06:57.54] Parce que je suis à l'aise à faire les choses en anglais.
+[06:59.24] Mais tu peux le faire totalement en français.
+[07:00.70] Ça ne change absolument rien.
+[07:01.88] Ensuite, au niveau du modèle, on va choisir donc notre modèle qui est le GPT image 2.5.
+[07:07.22] Ensuite, là où c'est écrit auto, c'est le format.
+[07:09.44] On va cliquer sur ça.
+[07:10.40] On va aller sur un format 3 quarts.
+[07:12.54] C'est le format idéal pour le profil d'un personnage.
+[07:15.68] Ensuite, tout le reste, on ne change rien.
+[07:17.92] Et avant de cliquer sur générer, je vais te donner un conseil.
+[07:20.90] C'est moi, le prompt, je l'ai écrit avec Claude.
+[07:23.60] Tu vois, donc si tu ne sais pas comment formuler un prompt pour tes personnages,
+[07:27.54] eh bien, tu peux directement utiliser Claude au chat GPT.
+[07:29.84] Tu lui donnes une description du personnage que tu veux générer.
+[07:32.80] Et lui, il va vraiment te faire un bon prompt complet comme celui-là.
+[07:35.58] La génération, elle va coûter 2.75 crédits.
+[07:38.32] C'est très important de regarder combien de crédits va faire une génération avant de la générer sur XFIT.
+[07:43.06] Parce que ça utilise tes crédits qui sont la monnaie de ton compte.
+[07:46.50] Tu vois, donc c'est très important.
+[07:47.84] Donc, on va cliquer sur générer.
+[07:49.22] Et là, normalement, ça devrait prendre une quinzaine, voire une vingtaine de secondes.
+[07:52.70] On va juste patienter.
+[07:53.60] OK, donc là, notre personnage, il a fini d'être généré.
+[07:56.34] Désolé, je vais l'ouvrir.
+[07:57.54] Je te mettrai ça en grand à l'écran.
+[07:59.02] Franchement, c'est parfait.
+[08:00.04] Il respecte exactement ce que je lui ai demandé.
+[08:02.04] Et il est hyper réaliste.
+[08:03.56] Tu aurais dit, c'est une vraie personne.
+[08:04.68] Donc, c'est incroyable.
+[08:05.34] C'est exactement ce qu'on recherchait.
+[08:06.90] Ça peut arriver que quand tu génères ton personnage, tu n'es pas satisfait du rendu.
+[08:10.44] Si c'est le cas, tu relances le même prompt, exactement le même prompt,
+[08:14.46] et tu auras une génération souvent meilleure.
+[08:17.16] Donc, juste, tu relances le même prompt, tu ne changes rien, tu peux le régénérer plusieurs fois.
+[08:20.74] Maintenant qu'on a créé notre personnage, la prochaine étape, ce sera de créer la fiche personnage.
+[08:25.34] Donc, c'est cette fiche-là qui va nous aider.
+[08:27.54] Dans les prochaines vidéos qu'on va générer, pour garder justement cette constance de notre personnage à chaque vidéo.
+[08:32.64] Donc, on va revenir ici, toujours dans la partie création d'image dans XFIT.
+[08:35.88] On va supprimer le prompt qu'on avait mis auparavant.
+[08:37.88] On va cliquer sur le bouton plus.
+[08:39.66] Voilà, il va dire référence.
+[08:41.30] On va cliquer dessus.
+[08:42.12] Et là, on va aller dans génération.
+[08:43.66] Et on va choisir l'image de notre personnage qu'on vient juste de générer.
+[08:47.92] On va la choisir, comme la référence ici.
+[08:50.02] Ensuite, pour le modèle, on va le changer.
+[08:51.88] On va venir ici et on va choisir GPT image 2.5 Sunburst.
+[08:55.80] C'est celui-là qu'on va choisir.
+[08:56.94] Ici, par rapport au format, on va enlever auto.
+[08:59.26] On va mettre 16 neuvième.
+[09:00.72] Et ensuite, on va coller ce prompt-là, qui est un prompt que je vais te donner.
+[09:04.60] Voilà, c'est un prompt que je vais te donner, que tu vas réutiliser.
+[09:06.88] Parce que c'est le prompt mère qui va créer notre fiche personnage.
+[09:09.92] Donc, quand ça s'est fait, on clique sur générer.
+[09:11.64] Ça va encore nous utiliser 2.75 crédit.
+[09:14.82] Et on patiente quelques secondes pour la génération de notre image.
+[09:17.56] OK, c'est super.
+[09:19.02] Donc, voici à quoi ressemble notre fiche personnage.
+[09:21.78] Tu verras que c'est exactement la même image de référence.
+[09:24.28] Sauf qu'il nous la montre sur plusieurs angles.
+[09:26.12] De face.
+[09:26.94] De profil.
+[09:27.84] Et vraiment, une version plus close-up.
+[09:30.06] Comment dire ?
+[09:30.50] Plus rapprochée de son visage.
+[09:32.46] Et c'est ça qu'on va utiliser pour les générations de vidéos.
+[09:35.06] Pour être sûr que quand on anime notre personnage,
+[09:37.24] même s'il bouge, on le voit de profil, etc.
+[09:39.72] La cohérence reste toujours.
+[09:41.66] Maintenant, il est temps d'aller faire animer notre personnage.
+[09:44.38] Le faire bouger.
+[09:45.18] Pour cela, on va aller dans vidéos.
+[09:47.20] On va cliquer sur vidéos.
+[09:48.14] On va aller dans create a video.
+[09:49.62] Et ici, on va garder le mot de référence.
+[09:52.26] Et on va cliquer sur add a reference.
+[09:54.06] Et on va aller dans images génération.
+[09:56.94] Et la référence, ce sera notre fiche personnage.
+[09:59.84] C'est elle qu'on va prendre.
+[10:00.90] Et ensuite, dans la partie prompt, on va faire arrobase image 1.
+[10:04.22] Et normalement, ce sera directement notre fiche qui est là.
+[10:06.70] Et on va coller un prompt.
+[10:07.88] Le prompt en question, c'est l'animation ou la vidéo qu'on souhaite générer.
+[10:12.22] C'est ça le prompt.
+[10:13.04] Moi, j'ai déjà créé un prompt type de mon personnage dans les rues d'habitants, etc.
+[10:17.62] Donc, j'ai déjà collé le prompt.
+[10:18.80] J'ai bien évidemment mis l'arrobase, l'élément en question.
+[10:21.62] J'ai ajouté le son.
+[10:22.86] Au niveau du modèle, on l'avait déjà choisi au début de la vidéo.
+[10:25.98] C'est Seedens.
+[10:26.94] 2.5.
+[10:27.62] Pour la durée, on va aller sur 15 secondes.
+[10:30.00] Comme ça, il a le temps de faire ma vidéo.
+[10:32.64] Ensuite, le format, on va aller sur 16.9.
+[10:34.78] La qualité, on va mettre 720p.
+[10:36.56] Et si je mets 720p, c'est parce que c'est une très bonne qualité, mais qui n'est pas trop chère.
+[10:40.62] Parce que quand tu mets 1080p, c'est limite plus du double.
+[10:44.26] Et ce n'est pas forcément nécessaire.
+[10:45.80] Donc, 720p, c'est largement suffisant.
+[10:47.46] Le reste, on ne le touche pas et on clique sur le bouton générer.
+[10:50.06] Et là, ça va me coûter 105 crédits pour pouvoir générer cette vidéo de 15 secondes.
+[10:55.48] Et c'est vraiment beaucoup.
+[10:56.94] 15 crédits, c'est beaucoup.
+[10:58.44] Sachant que là, on a utilisé le meilleur modèle de génération de vidéo qui est Seedens.
+[11:01.72] 2.5.
+[11:02.44] Donc, c'est quand même normal.
+[11:03.64] Mais là, ce qu'il faut savoir, c'est que les vidéos, elles prennent beaucoup plus de temps à générer par rapport aux images.
+[11:07.82] Donc, il faut s'attendre à ça.
+[11:09.00] Donc, si ça prend du temps, il faut savoir que c'est normal.
+[11:11.14] Il ne faut pas paniquer.
+[11:11.90] Donc là, la génération de la vidéo, elle est terminée.
+[11:14.16] Je la mettrai à l'écran.
+[11:15.10] D'abord, tu vas la regarder en entier.
+[11:16.76] Donc, maintenant qu'on a regardé la vidéo qu'on a généré, qui est une très bonne vidéo, qui est super réaliste.
+[11:21.44] Là, maintenant, il est temps de comparer la vidéo qu'on vient de générer à notre fiche personnage du départ.
+[11:26.42] Sachant que le but, c'était de savoir comment est-ce qu'on va générer des vidéos qui vont conserver vraiment les caractéristiques identiques de notre personnage.
+[11:33.18] Donc là, on va faire une comparaison directe des différents éléments.
+[11:36.26] Regarder au niveau du visage, est-ce que c'est pareil ?
+[11:38.12] Au niveau de la tenue, au niveau du sac à main, parce qu'elle avait un sac à main, etc.
+[11:42.40] Et normalement, si tu as bien suivi les instructions, tu verras que tout est identique.
+[11:46.36] Maintenant, ça peut arriver qu'il y ait des erreurs, qu'il y ait des éléments qui ne sont pas identiques à ton personnage.
+[11:51.44] De départ, dans ce cas-là, tu seras obligé de refaire une génération de vidéos.
+[11:55.98] Donc la vidéo, tu vas la régénérer.
+[11:57.48] Et rassure-toi que dans le prompt, tu vas mettre un accent sur l'élément qui n'avait pas fonctionné.
+[12:01.66] Donc d'où l'importance quand tu génères tes premières vidéos.
+[12:04.16] C'est pour ça qu'on va réduire toujours la qualité.
+[12:06.24] Pour être sûr que les premières générations ne vont pas coûter trop.
+[12:08.64] Parce que ça peut ne pas marcher.
+[12:10.62] Donc l'erreur que beaucoup de débutants font, c'est que dès leur première génération, ils vont générer des vidéos en qualité maximale.
+[12:16.10] Et ça va utiliser tout leur crédit.
+[12:17.50] Et ils vont devoir régénérer ces mêmes vidéos plusieurs fois.
+[12:19.92] Maintenant, le test ultime.
+[12:21.28] On va essayer de régénérer une deuxième vidéo.
+[12:23.70] Toujours avec le même personnage.
+[12:25.20] Pour voir si les caractéristiques du personnage vont rester intactes.
+[12:29.38] Donc on revient toujours dans XFILT sur la page où on générait la première vidéo.
+[12:33.92] Et ce qu'on va faire, c'est qu'on va tout garder pareil.
+[12:35.90] Et on va juste changer le prompt.
+[12:37.22] Et mettre un nouveau prompt.
+[12:38.50] Et là, dans ce nouveau prompt, moi j'ai mis le personnage à Bali.
+[12:41.30] Dans le premier point, il était à Abidjan.
+[12:43.12] Et là, je le mets à Bali.
+[12:44.42] Donc c'est la même référence, le même personnage.
+[12:46.84] Tout est pareil, la même durée, etc.
+[12:48.60] Et on va cliquer sur générer.
+[12:50.42] Après, encore une fois, 105 crédits.
+[12:52.30] Maintenant, la dernière astuce que je vais te partager.
+[12:54.48] Tu l'as sûrement déjà vu quelque part sur TikTok.
+[12:56.58] C'est qu'on prend un personnage.
+[12:57.86] On le remplace dans une autre vidéo d'une trend.
+[13:00.58] Tu vois, par exemple, souvent il y a des gars qui prennent l'Aminyamal.
+[13:03.26] Et qui le mettent dans une trend ivoirienne.
+[13:05.24] Et il fait une danse ivoirienne.
+[13:06.48] Donc moi, je vais te montrer comment utiliser ton propre personnage que tu as créé là.
+[13:09.70] Et lui faire participer à certaines trends.
+[13:12.70] Certaines tendances, des danses assez populaires.
+[13:15.22] Et ça te permettra d'avoir des vues sur TikTok.
+[13:16.86] Tu vas venir toujours sur XFILT.
+[13:18.36] On va aller dans Genjutsu.
+[13:20.50] Genjutsu dans le menu d'en haut.
+[13:33.76] Genjutsu.

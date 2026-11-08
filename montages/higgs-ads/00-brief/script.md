@@ -1,0 +1,3 @@
+# Script : « Le business IA que les commerçants vont te payer » (reçu le 15/10/2026)
+Structure : Hook (résultat) → Intro (business + Higgsfield + « statique et vidéo au même endroit ») → Étape 1 Meta Ad Library → Étape 2 kit de marque (Lunéa, manuel) → Étape 3 Static Ads (produits, nombre, devis 4 crédits/pub, 3 angles bénéfice/problème/situation, 3-4 s par visuel) → Étape 4 Ad Multiplier (preset Handbag Slide, crop/trim, refs, prompt ↔ hook/CTA exclusifs, 480p/1080p + devis, split-screen) → Étape 5 offre mensuelle + chat → Endscreen (récap, lien description + épinglé, vidéo influenceur IA).
+Texte complet : message d'Ibrahim du 15/10/2026 (conversation).
